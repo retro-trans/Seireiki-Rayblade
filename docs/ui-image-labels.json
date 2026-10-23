@@ -1,0 +1,79 @@
+{
+  "version": "0.1.20",
+  "source_build": "0.1.19",
+  "status": "35 English image-label sprites integrated and locally packaged; native PRS/texture checks and protected-pixel checks pass; live appearance/selection pending",
+  "label_sprites": 35,
+  "distinct_display_strings": 30,
+  "texture_members": [
+    2,
+    6,
+    88
+  ],
+  "translation_map": "work/translation/en/ui/image-labels.en.json",
+  "source_sprite_map": "work/ui/asset-audit/ui-sprites/rectangles.json",
+  "resources": [
+    {
+      "member": 2,
+      "decoded_bytes": 524320,
+      "dimensions": [
+        512,
+        512
+      ],
+      "native_format": "0xd00",
+      "native_PRS_instructions": 8984136,
+      "native_texture_info_instructions": 190,
+      "selected_sprites": 5,
+      "changed_pixels": 780
+    },
+    {
+      "member": 6,
+      "decoded_bytes": 131104,
+      "dimensions": [
+        256,
+        256
+      ],
+      "native_format": "0xd00",
+      "native_PRS_instructions": 2538067,
+      "native_texture_info_instructions": 184,
+      "selected_sprites": 14,
+      "changed_pixels": 6396
+    },
+    {
+      "member": 88,
+      "decoded_bytes": 131104,
+      "dimensions": [
+        256,
+        256
+      ],
+      "native_format": "0x100",
+      "native_PRS_instructions": 2312130,
+      "native_texture_info_instructions": 186,
+      "selected_sprites": 16,
+      "changed_pixels": 2696
+    }
+  ],
+  "protected_sprite_count": 277,
+  "unrelated_archive_members": 87,
+  "native_PRS_instructions": 13834333,
+  "native_texture_info_instructions": 560,
+  "independent_font_mask_pixels": 3565,
+  "archive_spare_bytes": 52136,
+  "unchanged": "Executable, integrated normal-text font, sprite DAT records and every text component exact 0.1.19",
+  "proof": "work/output/0.1.20/ui-image-native-test.json",
+  "chapter_proof": "work/output/0.1.20/chapter-card-native-test.json",
+  "preview": "work/output/0.1.20/ui-image-labels-preview.png",
+  "disc": "work/output/0.1.20/disc/Rayblade English Test 0.1.20.gdi",
+  "packaging": {
+    "reextracted_files": "all 5 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "in_game": "pending"
+  },
+  "limits": [
+    "Native PRS and texture-info execute in an interpreter with guarded buffers",
+    "Full resource I/O, actual sprite selection/navigation and GPU drawing are not executed",
+    "Tiny image labels use fixed native dimensions; integrated normal-text font is unchanged",
+    "Other image/movie text and independent meaning review remain incomplete"
+  ],
+  "story_library_draft_credit": 0
+}

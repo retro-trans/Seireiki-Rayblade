@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_035.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_035.o006a7.l00",
+      "block_id": "scenario.s_035.o006a7",
+      "member": "s_035.bin",
+      "line_index": 0,
+      "en": "Ai: \"Whew... Even if it's virtual combat,",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "cb944ace9a7c0c5074a9704eb306cc48c16a36e8b55657bf7abbabc0bda1a14d",
+      "block_source_sha256": "650bb5cca1d53fb6e855f9c702db3a8ede892603dd8a379dc45366eae420a029",
+      "source_command_id": "scenario.s_035.o006a7",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.002",
+      "speaker_label_en": "Ai",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_035.o006a7.l01",
+      "block_id": "scenario.s_035.o006a7",
+      "member": "s_035.bin",
+      "line_index": 1,
+      "en": "back-to-back battles really wear you out...",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "0e3877482a6d9bd60778e427a996a48f22af76b69e7a1e6333bdf178451e7aba",
+      "block_source_sha256": "650bb5cca1d53fb6e855f9c702db3a8ede892603dd8a379dc45366eae420a029",
+      "source_command_id": "scenario.s_035.o006a7",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.002",
+      "speaker_label_en": "Ai",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_035.o006a7.l02",
+      "block_id": "scenario.s_035.o006a7",
+      "member": "s_035.bin",
+      "line_index": 2,
+      "en": "Let's call it a day.\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "eae589a1a49b5d8610d5b898e2a772a769e1d8c0ab8b9f62f8a3a3c31ec50318",
+      "block_source_sha256": "650bb5cca1d53fb6e855f9c702db3a8ede892603dd8a379dc45366eae420a029",
+      "source_command_id": "scenario.s_035.o006a7",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.002",
+      "speaker_label_en": "Ai",
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_035.o006a7.l00",
+      "last_id": "scenario.s_035.o006a7.l02",
+      "rows_examined": 3,
+      "context": "Read the full three-row member and s_034's 38 outcome/replay rows. Ai ends repeated virtual combat for the day.",
+      "decisions": "Retain fatigue despite simulation, not actual wounds or deaths. Preserve one source row to one English row and the shared sentence boundary.",
+      "row_decisions": {
+        "scenario.s_035.o006a7.l00": "Exhalation and dependent even-if clause deliberately continue into next row."
+      },
+      "row_count": 3
+    }
+  ]
+}

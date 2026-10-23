@@ -1,0 +1,1078 @@
+{
+  "version": "0.1.12",
+  "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+  "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+  "font_sha256": "9875205e2ee55c01c6446aa27e383e07a3fd879356fbe3e4a7b41f69771276ed",
+  "word_wrap": {
+    "font_sha256": "9875205e2ee55c01c6446aa27e383e07a3fd879356fbe3e4a7b41f69771276ed",
+    "target_width": 240,
+    "maximum_pen_width": 236,
+    "word_wrapped_commands": 50107,
+    "automatic_breaks": 40193,
+    "special_control_commands": 166,
+    "forced_word_breaks": 0,
+    "special_control_fallbacks": [
+      {
+        "id": "scenario.s_001.o01e22",
+        "FC": [
+          61
+        ]
+      },
+      {
+        "id": "scenario.s_012.o0134c",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_028.o002f2",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_028.o00551",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_053.o0046f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_053.o008bc",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_056.o00a11",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_057.o0029b",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_057.o00402",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_057.o004ec",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_057.o00660",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_05d.o005d9",
+        "FC": [
+          72
+        ]
+      },
+      {
+        "id": "scenario.s_05d.o00795",
+        "FC": [
+          64
+        ]
+      },
+      {
+        "id": "scenario.s_05e.o00357",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_05e.o00659",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_05f.o002b5",
+        "FC": [
+          83
+        ]
+      },
+      {
+        "id": "scenario.s_061.o005b4",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_061.o00772",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_062.o002d0",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_062.o003dd",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_063.o00453",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_063.o004b0",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_063.o007f0",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_067.o00a4d",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_067.o00b33",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_067.o00cb4",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_067.o00e03",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_067.o00f33",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_067.o00fb5",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_06b.o00601",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_06b.o0093e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_06b.o00d14",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_070.o0055e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_070.o006d5",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_072.o00cc2",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_072.o00e3c",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_072.o017d7",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_072.o0185f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_072.o01a8e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o00e44",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o01059",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o0113e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o011d1",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o01502",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o01732",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o018aa",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o01d3d",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_07c.o01db6",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_092.o019af",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_096.o0029b",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_096.o00402",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_096.o004ec",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_096.o00660",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0a1.o00838",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0a1.o010c2",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0a1.o023a5",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0a1.o0240e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0ab.o00842",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0ab.o00b77",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0c3.o0153c",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0d5.o00160",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0d7.o0044e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0e4.o009f0",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0e9.o002f0",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0f6.o0147b",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_0f7.o00190",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_102.o00dc3",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_102.o01666",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_102.o01eb3",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_106.o01f23",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_106.o02004",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_106.o02309",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_107.o017b3",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_107.o0190d",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_107.o01ad9",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_107.o02752",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_107.o02f9f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_112.o02153",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_116.o01cc6",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_116.o02157",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_116.o021eb",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_117.o01d5e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_119.o018a6",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_11b.o0085b",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_11b.o00a3e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_11b.o00b21",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_121.o01d1b",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_121.o021ac",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_121.o02240",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_122.o01ce2",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_12d.o0101a",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_12f.o00705",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_12f.o00c4a",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_131.o01ca0",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_131.o01e83",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_131.o01f66",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_132.o016cd",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_133.o01440",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_133.o01646",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_133.o01890",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_135.o007ce",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_135.o00955",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_135.o00ca5",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_135.o00e25",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_137.o02350",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_139.o0140a",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_139.o016ff",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_139.o01833",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_139.o01c5c",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_13e.o0025c",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_140.o002dd",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_142.o0091e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_142.o00b14",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_142.o00b84",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_142.o00cef",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_142.o00d74",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_144.o00126",
+        "FC": [
+          66,
+          68
+        ]
+      },
+      {
+        "id": "scenario.s_14f.o001bf",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_14f.o00339",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_16b.o00af5",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_16b.o00bd6",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_16b.o00edb",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_16c.o021c4",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_16c.o0316d",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_16c.o039ba",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_188.o0096f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_188.o00b72",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_188.o00dcc",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_188.o01152",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_189.o0177f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_18c.o00b7d",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_18c.o00ef8",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_18e.o00a66",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_18e.o00ae1",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_191.o00e89",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_191.o0107c",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_192.o00ba6",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_192.o00c2e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_192.o00e5d",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_192.o0196b",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19a.o0079e",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19a.o00925",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19a.o00c75",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19a.o00df5",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19b.o01b69",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19b.o01d4c",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19b.o01e2f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19c.o01efc",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19c.o02076",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19e.o01846",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19e.o01b3b",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19e.o01c6f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_19e.o02093",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1a9.o004ed",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1b5.o01cc6",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1b5.o02157",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1b5.o021eb",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1b6.o01d66",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1b8.o018a6",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1bb.o01ca0",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1bb.o01e83",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1bb.o01f66",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1bc.o016cd",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1bd.o01439",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1bd.o0163f",
+        "FC": [
+          60
+        ]
+      },
+      {
+        "id": "scenario.s_1bd.o01889",
+        "FC": [
+          60
+        ]
+      }
+    ],
+    "whitespace": "Automatic line breaks replace spaces in compiled presentation only; all other glyph/control bytes and original FE boundaries retained",
+    "working_translation_rows": "unchanged",
+    "native_verification": "All compiled payloads/flags/line metrics checked; 50,273 native lookups, 87 formatter/VM and 14 pagination witnesses pass",
+    "live_verification": "Opening s_001 bank and word breaks observed; other commands/UI remain unverified"
+  },
+  "native_lookup_cases": 50273,
+  "native_loader_cases": 13,
+  "native_formatter_VM_cases": 87,
+  "native_pagination_cases": 14,
+  "all_compiled_lines_checked": 122286,
+  "maximum_formatted_bytes": 1380,
+  "archive_spare_bytes": 208,
+  "dynamic_PRS_members": [
+    {
+      "member": "s_119.bin",
+      "prior_bytes": 8201,
+      "optimized_bytes": 7912,
+      "sectors_saved": 1
+    },
+    {
+      "member": "s_1b8.bin",
+      "prior_bytes": 8210,
+      "optimized_bytes": 7918,
+      "sectors_saved": 1
+    },
+    {
+      "member": "s_095.bin",
+      "prior_bytes": 8215,
+      "optimized_bytes": 7906,
+      "sectors_saved": 1
+    },
+    {
+      "member": "s_160.bin",
+      "prior_bytes": 12312,
+      "optimized_bytes": 11815,
+      "sectors_saved": 1
+    }
+  ],
+  "scope": "All command banks and line metrics checked in Python; native lookup executed on every entry, native formatting/VM advancement on 87 cases, native pagination on 14 witnesses. File I/O/allocation/cache remain bounded stubs offline; one opening bank checked live.",
+  "live_validation": {
+    "build": "0.1.12",
+    "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+    "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+    "runtime_evidence": "work/ui/0.1.12/dialogue-runtime.json",
+    "screenshot": "work/ui/0.1.12/word-wrap-teacher.png",
+    "stage": "Measured word wrapping inserted for 50,107 ordinary story commands; opening dialogue observed in-game; special-control layouts and full-game validation pending",
+    "layout_issue": "Decode and fit the 166 special-display-control English commands",
+    "boot": "Opening story and classroom reached in approved local Flycast",
+    "native_hooks": "Loaded RBS2 loader and RBSCEN02 formatter bytes match exact candidate",
+    "script_bank": "s_001 bank byte-exact, including 126 wrapped entries and one special-control entry; original VM prefix/address retained",
+    "visual_observation": "Opening teacher-warning dialogue breaks at spaces and keeps Touya together; a later display page was loaded while the original VM advanced. This does not prove every command or continuation prompt.",
+    "input": "No successful automated game-button sequence claimed; live scene advanced externally",
+    "pending": [
+      "Decode and fit the 166 special-display-control English commands",
+      "Measure library/battle/menu layouts and review continuation-icon spacing",
+      "Later scenario transitions, save/load and long-session memory checks",
+      "503 held story rows, full VM text coverage, independent meaning review and remaining image UI/movie text"
+    ]
+  },
+  "pending": [
+    "Decode and fit the 166 special-display-control English commands",
+    "Measure library/battle/menu layouts and review continuation-icon spacing",
+    "Later scenario transitions, save/load and long-session memory checks",
+    "503 held story rows, full VM text coverage, independent meaning review and remaining image UI/movie text"
+  ]
+}

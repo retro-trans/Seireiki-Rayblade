@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_039.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_039.o00181.l00",
+      "block_id": "scenario.s_039.o00181",
+      "member": "s_039.bin",
+      "line_index": 0,
+      "en": "Steinies: \"Thora... Kururu... Where are you...?\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "0b548ba3e938da8f62ac6dfe00beefdf64c83a8173965fc4ee51fdad7d76f14f",
+      "block_source_sha256": "40edecdab4d94853b17d05388cf420a6fae8b1e0258876a1881cf867312d09db",
+      "source_command_id": "scenario.s_039.o00181",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.045",
+      "speaker_label_en": "Steinies",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_039.o001b8.l00",
+      "block_id": "scenario.s_039.o001b8",
+      "member": "s_039.bin",
+      "line_index": 0,
+      "en": "Steinies: \"...There you are...\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "5f32afba4828788f974cc2c797a5eec20aaddb49d712019a4f0dbf9cafd93a6a",
+      "block_source_sha256": "b5af6c5b7205618cbe602e87a7095b3dab92278afbe696f6a9ffeaf1e7010edf",
+      "source_command_id": "scenario.s_039.o001b8",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.045",
+      "speaker_label_en": "Steinies",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_039.o00209.l00",
+      "block_id": "scenario.s_039.o00209",
+      "member": "s_039.bin",
+      "line_index": 0,
+      "en": "Steinies: \"...Tch!\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "fefc45e5c296cc017ef60533ef0ebf1cdbb4f10364fea8c05c390271a349b121",
+      "block_source_sha256": "4941b41da47cca29fc3dfef76fcfdb4709d72fb77a6d91b1505550fa52b5b4c2",
+      "source_command_id": "scenario.s_039.o00209",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.045",
+      "speaker_label_en": "Steinies",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_039.o0025b.l00",
+      "block_id": "scenario.s_039.o0025b",
+      "member": "s_039.bin",
+      "line_index": 0,
+      "en": "Yamato: \"Oh...\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "4f2e2a23cdd938cb5704021facae8e28844920c605edb74bdbc8535688cd3579",
+      "block_source_sha256": "ba631c83580ee327464bfd8e86ab418b70e20e152f5f58bef87cc2556e9c01ec",
+      "source_command_id": "scenario.s_039.o0025b",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.019",
+      "speaker_label_en": "Yamato",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_039.o0026e.l00",
+      "block_id": "scenario.s_039.o0026e",
+      "member": "s_039.bin",
+      "line_index": 0,
+      "en": "Touya: \"He got away...\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "d5bf45ef1ac5695b859b742967dc506dd13fe578f6c9f9824f8137f99911dd97",
+      "block_source_sha256": "372ac93c956d96d25da4da92246a1958de7d35dcd3eb42030e09d3bfc6bdac25",
+      "source_command_id": "scenario.s_039.o0026e",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.001",
+      "speaker_label_en": "Touya",
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_039.o00181.l00",
+      "last_id": "scenario.s_039.o0026e.l00",
+      "rows_examined": 5,
+      "context": "Read all five rows and s_038's matching aftermath for context. Separate Steinies search/discovery/escape variant.",
+      "decisions": "Retain repeated member as a separate branch, not deduplicated or forced to confirm all preceding hostage actions. Gender of named Steinies is established; no death or target injury is added.",
+      "row_decisions": {
+        "scenario.s_039.o00181.l00": "Names and deictic searching question, no invented location.",
+        "scenario.s_039.o001b8.l00": "Found-you exclamation without invented target action.",
+        "scenario.s_039.o00209.l00": "Tongue click.",
+        "scenario.s_039.o0025b.l00": "Wordless surprised exclamation."
+      },
+      "row_count": 5
+    }
+  ]
+}

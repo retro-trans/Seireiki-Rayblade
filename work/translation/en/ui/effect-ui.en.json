@@ -1,0 +1,471 @@
+{
+  "source": "Original EFFECT.AFS member 250 map_dc",
+  "source_archive_sha256": "0db7a4981110ffb26ac0c17bd6561dc9644eeb327c8502e90f100ede097bb9c4",
+  "source_decoded_sha256": "14545495eefb0aad85e7e269f0e5265b8c3b9df148bf192d090ea542e55d26a5",
+  "source_geometry_map": "work/ui/asset-audit/EFFECT/ui-250/rectangles.json",
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "source_preview_palette_bank": 4,
+  "rows": [
+    {
+      "id": "effect.250.057",
+      "sprite": 57,
+      "record_offset": 1428,
+      "draw_size": [
+        24,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source_box": [
+        230,
+        64,
+        254,
+        80
+      ],
+      "texture_parameter_raw_hex": "00000000",
+      "parameter_words_raw": [
+        0,
+        0
+      ],
+      "source_pixel_sha256": "d9b2ec55a0a6c5eb4c79b0a8f39c2e62471faa1ed425acaef7b6b77d520a5aaf",
+      "source_index_sha256": "a6f01952f075c31e1787f5029b3c4522e2574d4e7d5275d600e102f8a7ef62c7",
+      "ja": "プラーナ",
+      "en": "Prana",
+      "glossary_id": "term.013",
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "9137ee4d0c72c1389fd50ad83fd26727570c947720f03405e3dcc7c636316fc7",
+      "font_scale_denominator": 3,
+      "draft_mask_size": [
+        20,
+        8
+      ]
+    },
+    {
+      "id": "effect.250.089",
+      "sprite": 89,
+      "record_offset": 2068,
+      "draw_size": [
+        72,
+        16
+      ],
+      "anchor": [
+        36,
+        8
+      ],
+      "source_box": [
+        0,
+        96,
+        72,
+        112
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "7cdafa2790fda92d826385c89815c5be231d1423573dde51c73dace770e0cf6d",
+      "source_index_sha256": "e69e78e5f2f9c3bb14a5cd0dd49db35929e2ed7edda2b33fa007fb900fe5da4f",
+      "ja": "クリティカル",
+      "en": "Critical",
+      "glossary_id": null,
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "2aaaec3b464e5f7dc5f8f73bce2a697287c3a2a0ee712e40620fd207ab9d0561",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        24,
+        12
+      ]
+    },
+    {
+      "id": "effect.250.090",
+      "sprite": 90,
+      "record_offset": 2088,
+      "draw_size": [
+        32,
+        16
+      ],
+      "anchor": [
+        16,
+        8
+      ],
+      "source_box": [
+        72,
+        96,
+        104,
+        112
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "7ec650de7c396adfde1cf497be154f8e898d0bea62e637eeb8c3d0052d061531",
+      "source_index_sha256": "2cea5c1728e581e26fe9470b08d64ec6ac7217a79585094937d338f12247f64a",
+      "ja": "回避",
+      "en": "Evade",
+      "glossary_id": "term.098",
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "8bd105c9dd7a13bdb5fdc606833f99da9e0cc158258ecce934d974dd2414f0e0",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        21,
+        12
+      ],
+      "decision": "Battle-result action wording; glossary stat noun is retained separately"
+    },
+    {
+      "id": "effect.250.091",
+      "sprite": 91,
+      "record_offset": 2108,
+      "draw_size": [
+        32,
+        16
+      ],
+      "anchor": [
+        16,
+        8
+      ],
+      "source_box": [
+        0,
+        80,
+        32,
+        96
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "d30cb216c8274550578e03dd01bdf34c561de63bed126042a9aaf50118389494",
+      "source_index_sha256": "eacd9b363962f9190aaa645cce4b107dfb14b0edb3bae3e63418aaa03dbf23e6",
+      "ja": "防御",
+      "en": "Guard",
+      "glossary_id": "term.096",
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "33249ca8a34455c9f5bd02a6a611717e86632fb5b004972907c2133d3e5f9a1c",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        21,
+        12
+      ],
+      "decision": "Battle-result action wording; glossary stat noun is retained separately"
+    },
+    {
+      "id": "effect.250.092",
+      "sprite": 92,
+      "record_offset": 2128,
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        8
+      ],
+      "source_box": [
+        32,
+        80,
+        128,
+        96
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "ea0499bc48000664782a52130a5d09b863efd1efd7fb89cbd886489f152b1213",
+      "source_index_sha256": "89dfdeec42aba7402ea8feb5e27ab289176a2ac40e1f4dbfab9d48b01ea99f90",
+      "ja": "プラズマコート",
+      "en": "Plasma Coating",
+      "glossary_id": "term.101",
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "8fa3ae00e7bc5040b15824224a564a9548f5d95c84ce5f912e6a62fdf4840538",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        53,
+        12
+      ]
+    },
+    {
+      "id": "effect.250.093",
+      "sprite": 93,
+      "record_offset": 2148,
+      "draw_size": [
+        104,
+        16
+      ],
+      "anchor": [
+        52,
+        8
+      ],
+      "source_box": [
+        0,
+        112,
+        104,
+        128
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "847c36c2d90c044495c9beb20d3a13c8dd6897b3fb0e19a8b32eca5e2ac4315c",
+      "source_index_sha256": "7cadd0e884f2cd599106d7f65391bc3e7d18080f9181f82282e0cad1d5fca61c",
+      "ja": "プラズマバリア",
+      "en": "Plasma Barrier",
+      "glossary_id": "term.099",
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "17dc882c63c0393dce6ef63f4b1892e6b18417fa2f04abd4f61336b6d3e3353f",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        48,
+        12
+      ]
+    },
+    {
+      "id": "effect.250.094",
+      "sprite": 94,
+      "record_offset": 2168,
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        8
+      ],
+      "source_box": [
+        0,
+        128,
+        96,
+        144
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "057c686b6e946cc79fa0e95fabb6f850fe7451e8c85b75b1a80875a783364149",
+      "source_index_sha256": "9bba6f20232c7d0dccbe127a11b4567704c60767ed2179ee0aa0269679520e7b",
+      "ja": "対実弾バリア",
+      "en": "Ballistic Barrier",
+      "glossary_id": "term.100",
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "fd358715401a46df240a27c131defb7300a56c2ff841a3d55ef39eec15f0e584",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        50,
+        12
+      ]
+    },
+    {
+      "id": "effect.250.095",
+      "sprite": 95,
+      "record_offset": 2188,
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        8
+      ],
+      "source_box": [
+        104,
+        64,
+        200,
+        80
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "47f7f3658aa0a477e7e11f1269d4fd56aad1f82129eb85a1b228aba5f61d9c61",
+      "source_index_sha256": "e8aed5def3086094e33f47e69861ebeecde47b6ab4bdb18d95693607ede14273",
+      "ja": "特殊フィールド",
+      "en": "Special Field",
+      "glossary_id": "term.233",
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "0447817a1ef159fca1f7073b94bd9dfb36af1faa6cb539fe520b4d4c025cb9db",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        42,
+        12
+      ]
+    },
+    {
+      "id": "effect.250.107",
+      "sprite": 107,
+      "record_offset": 2428,
+      "draw_size": [
+        48,
+        16
+      ],
+      "anchor": [
+        24,
+        8
+      ],
+      "source_box": [
+        48,
+        128,
+        96,
+        144
+      ],
+      "texture_parameter_raw_hex": "00100000",
+      "parameter_words_raw": [
+        4096,
+        0
+      ],
+      "source_pixel_sha256": "21c200a2375e869cf5e90607f39c359b85a0c6f5129550f8725508dfd82e7f2e",
+      "source_index_sha256": "c6b84237c3906c928f01be4606881388510b8a30307f3da0e3c96c82e29558c4",
+      "ja": "バリア",
+      "en": "Barrier",
+      "glossary_id": null,
+      "status": "editorial_draft_not_inserted",
+      "source_bank_04_pixel_sha256": "f7679ceecb5f094f01714eb4a61d8148f450be13f12ef0f40d0a53620c3c4b72",
+      "font_scale_denominator": 2,
+      "draft_mask_size": [
+        23,
+        12
+      ],
+      "decision": "Shares the rightmost 48 pixels of sprite 094. Insertion must preserve a common Barrier suffix"
+    }
+  ],
+  "context_holds": [
+    {
+      "id": "effect.250.059",
+      "sprite": 59,
+      "record_offset": 1468,
+      "draw_size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source_box": [
+        104,
+        48,
+        120,
+        64
+      ],
+      "texture_parameter_raw_hex": "00140000",
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_pixel_sha256": "7e0ee81066eb1ffe53b022ef81fb428f45032583488f34eb7b7fe9428460511a",
+      "source_index_sha256": "7be26c9e5fd5f37b50a4f9e227ad12d262abd8f779794ef1878b9463f3bbcba8",
+      "ja": "反",
+      "en": null,
+      "status": "context_hold",
+      "reason": "Counter / retaliation; confirm this icon state and use before assigning English"
+    },
+    {
+      "id": "effect.250.060",
+      "sprite": 60,
+      "record_offset": 1488,
+      "draw_size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source_box": [
+        120,
+        48,
+        136,
+        64
+      ],
+      "texture_parameter_raw_hex": "00140000",
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_pixel_sha256": "213f07626e5f1c75a41c6f2281b7af0a7af88141d39cdf1a85bf9c1e99e07c59",
+      "source_index_sha256": "31cbf4f9404555a055cdcf16224f8358e6a3379446cfb321ce3b879c82814a53",
+      "ja": "潜",
+      "en": null,
+      "status": "context_hold",
+      "reason": "Submerged / submerge; confirm state versus command and water context"
+    },
+    {
+      "id": "effect.250.061",
+      "sprite": 61,
+      "record_offset": 1508,
+      "draw_size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source_box": [
+        200,
+        32,
+        216,
+        48
+      ],
+      "texture_parameter_raw_hex": "00140000",
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_pixel_sha256": "720bba0d7e8c08caa7a2b430f3e802c57b1f9f64318f434b8f90944ba2203a89",
+      "source_index_sha256": "07910572ca049e794d0b81eac8cc932c24e6167ece5b4e548a11f47c7d37d273",
+      "ja": "無",
+      "en": null,
+      "status": "context_hold",
+      "reason": "None / disabled; determine what this absence marker qualifies"
+    },
+    {
+      "id": "effect.250.062",
+      "sprite": 62,
+      "record_offset": 1528,
+      "draw_size": [
+        16,
+        16
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "source_box": [
+        216,
+        32,
+        232,
+        48
+      ],
+      "texture_parameter_raw_hex": "00140000",
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_pixel_sha256": "b6c8dc36efbc9f2e7307d6fd37fceaf7f0e554e3411ce61552c6357ad9334e87",
+      "source_index_sha256": "6f99a2a62503393e9ae6086ba2bd5f1894e91def1bac84f3e1785bf37a91a95f",
+      "ja": "防",
+      "en": null,
+      "status": "context_hold",
+      "reason": "Defense / guard; determine status versus command before assigning abbreviation"
+    }
+  ],
+  "pending": [
+    "Native texture parameter and palette binding",
+    "Shared 094/107 suffix layout and protected sprite overlap checks",
+    "Source palette/index preservation and native decoding/insertion",
+    "Independent meaning review and live battle UI validation"
+  ],
+  "other_candidates": [
+    "Sprite 088 ornament/glyph remains unclassified; no guessed translation"
+  ],
+  "story_library_draft_credit": 0,
+  "game_build_changed": false
+}

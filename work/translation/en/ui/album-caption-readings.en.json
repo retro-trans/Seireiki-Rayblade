@@ -1,0 +1,95 @@
+{
+  "source": "Original ALBUM.AFS DAT214 caption cells; exact source hashes retained",
+  "source_archive_sha256": "c2bae6b229d75f64128cda79acd804daffd4f744f046224136e8a7521e4d2f3f",
+  "caption_count": 2,
+  "rows": [
+    {
+      "id": "album.214.082",
+      "sprite": 82,
+      "record_offset": 2184,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "d8d403c1a0b3ee19ac597d7412f7e20390e92821b50afa5e4e37ee3defb38529",
+      "source_tile_sha256": "4a6d0471d8d044d21f2d54b2b3bb38a7e5358b89e03ff431814abb5f95fffeeb",
+      "ja_ui": "裸のトウヤ",
+      "en": "Naked Touya",
+      "wrapped_lines": [
+        "Naked Touya"
+      ],
+      "status": "Manual glyph-shape reading; editorial draft, independent review pending",
+      "first_glyph_reference": {
+        "character": "裸",
+        "original_game_glyph_id": 2075,
+        "bitmap_sha256": "6cfc8c877c12d1e20adf715758e5d69f2335d82af733a3724115defdbb0705fe",
+        "source_caption_local_box": [
+          4,
+          1,
+          14,
+          10
+        ]
+      },
+      "decision": "The first character has the clothing radical and fruit-shaped right component: 裸. The earlier 裏/影/素 guesses do not match that structure. Literal non-graphic caption only; no erotic or anatomical detail added."
+    },
+    {
+      "id": "album.214.102",
+      "sprite": 102,
+      "record_offset": 2584,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "00886fba1c6f4f61f49ff92329b23a7c629390e7821bd6ce4fd7b225f1a8b42c",
+      "source_tile_sha256": "29091b7c5fb3eca7bbba1aea45848be536af3dbd01853ae0f863f9eb739b0f0b",
+      "ja_ui": "弱々しい目のアルフォリナ",
+      "en": "Alforina's Feeble Gaze",
+      "wrapped_lines": [
+        "Alforina's",
+        "Feeble Gaze"
+      ],
+      "status": "Manual glyph-shape reading; editorial draft, independent review pending",
+      "first_glyph_reference": {
+        "character": "弱",
+        "original_game_glyph_id": 1332,
+        "bitmap_sha256": "a608d1b34a5ae595b1fdcbc8d47cff248341829b1d88188d5646f0ef7d21d831",
+        "source_caption_local_box": [
+          4,
+          1,
+          14,
+          10
+        ]
+      },
+      "decision": "The first character is the repeated bow-shaped structure 弱, followed by 々しい目の. Feeble Gaze retains the weakened eyes/gaze detail without adding a cause or new scene event."
+    }
+  ],
+  "source_font_reference": "Original WIN00 member 0 and reviewed original-charmap.json",
+  "scope": "Manual source shape reading supported by original-game and local Japanese-font reference forms; no exact pixel font match or automatic OCR proof",
+  "historical_recipe": "work/translation/en/ui/album-captions.en.json remains unchanged (201 captions and two original reading holds)",
+  "normal_font_changed": false,
+  "story_library_draft_credit": 0,
+  "pending": [
+    "Independent caption readings/wording review",
+    "Native insertion and actual album appearance/navigation"
+  ]
+}

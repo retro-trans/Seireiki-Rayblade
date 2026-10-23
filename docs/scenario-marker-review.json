@@ -1,0 +1,84 @@
+{
+  "version": "0.1.20",
+  "kind": "Native resolution of two source-signature review items; no game changes",
+  "source_executable_sha256": "08f34a6a8b55a04c03bfe4e6d3a294792d8113e67f79c7759f9efbaeff29b9a5",
+  "tested_executable_sha256": "2dd7db544333127e3e100a912473fa1d4b2ea1c7c82d7b079b44a18540507f57",
+  "native_code_ranges": [
+    {
+      "start": "0x2f23e",
+      "end": "0x2f4c4",
+      "sha256": "a64d71e0b0f2e62daa6ec84a04f7b16d21baa08fe9e5efa73b116bc6f061e94e"
+    },
+    {
+      "start": "0x83790",
+      "end": "0x83838",
+      "sha256": "828946088ed17d0486c59531e36097689d2dda1956b458400d6de8e54540b297"
+    },
+    {
+      "start": "0x7a06c",
+      "end": "0x7a174",
+      "sha256": "86241db4616173f85e2b1aa9eb414f1e55462901c09e4fdcd3331b5e159b7552"
+    }
+  ],
+  "native_instructions": 476,
+  "resolutions": [
+    {
+      "member": "s_086.bin",
+      "member_sha256": "1bc9903332f1028375ea11b896b6d357ff0870f200ff0b9aa1547a66099a8053",
+      "marker_offset": 35,
+      "command_start": 29,
+      "command_end": 43,
+      "command_sha256": "7352a8dc444026840b30755b2d25c9e35ffb221702638a4cc00351c0010f2b83",
+      "opcode": 191,
+      "classification": "six signed callback-pointer operands",
+      "not_text": "8A 06 occupies native operands; native VM skips or branches without dispatching it as a dialogue opcode",
+      "witnesses": [
+        {
+          "unit_query_fixture": null,
+          "return": "0x600d",
+          "next_opcode_offset": "0x2b",
+          "next_opcode": "0xb7",
+          "native_instructions": 247
+        }
+      ]
+    },
+    {
+      "member": "s_161.bin",
+      "member_sha256": "a0eec8406f54ada2d23c13c0b7168c01b229fead93246454bbf1eb4f4b0920fa",
+      "marker_offset": 3533,
+      "command_start": 3528,
+      "command_end": 3535,
+      "command_sha256": "0d9186e521c7ecbff07ef9e795125f89be41676f772a1a0d8dc00333222ad0d2",
+      "opcode": 210,
+      "classification": "signed conditional-branch displacement",
+      "not_text": "8A 06 occupies native operands; native VM skips or branches without dispatching it as a dialogue opcode",
+      "witnesses": [
+        {
+          "unit_query_fixture": 0,
+          "return": "0x5004",
+          "next_opcode_offset": "0x1457",
+          "next_opcode": "0xb6",
+          "native_instructions": 80
+        },
+        {
+          "unit_query_fixture": 19,
+          "return": "0x5004",
+          "next_opcode_offset": "0x1457",
+          "next_opcode": "0xb6",
+          "native_instructions": 80
+        },
+        {
+          "unit_query_fixture": 20,
+          "return": "0x6006",
+          "next_opcode_offset": "0xdcf",
+          "next_opcode": "0xd2",
+          "native_instructions": 69
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "D2 unit-stat query is a controlled fixture; game-state evaluation is not proved",
+    "These two marker resolutions do not prove full VM/opcode or runtime text coverage"
+  ]
+}

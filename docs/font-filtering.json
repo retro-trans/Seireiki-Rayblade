@@ -1,0 +1,82 @@
+{
+  "version": "0.1.22",
+  "source_build": "0.1.21",
+  "source_executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+  "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+  "dispatcher_address": "0x8c07b800",
+  "dispatcher_bytes": 36,
+  "changed_executable_bytes": 35,
+  "callee_pointer_offset": "0x20f44",
+  "caller_load_addresses": [
+    "0x8c030e68",
+    "0x8c030e74"
+  ],
+  "allowed_ranges": [
+    [
+      440320,
+      440356
+    ],
+    [
+      134980,
+      134984
+    ]
+  ],
+  "selection": "Only object resource word at +38 equal to 63 selects native filter mode 1; other resources keep their input mode",
+  "unchanged": "All font/translation/image/archive payloads, advances, raster and allocator code, story helpers, resource IDs and texture dimensions",
+  "native_validation": {
+    "selection_encoder_cases": 72,
+    "real_caller_comparisons": 12,
+    "state_transitions": [
+      [
+        63,
+        1
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        63,
+        1
+      ],
+      [
+        64,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "native_instructions": 24837
+  },
+  "live_appearance": "pending",
+  "reference": "https://raw.githubusercontent.com/KallistiOS/KallistiOS/master/kernel/arch/dreamcast/include/dc/pvr/pvr_header.h",
+  "status": "Native text-specific bilinear filtering integrated and locally packaged; live appearance pending",
+  "source_trace": {
+    "font_resource_registration": "8c076e96 registers 8c16f92c (resource 63) with the dynamic texture/sprite tables",
+    "text_object_submission": "8c078bc0 passes resource 63 to the native sprite object constructor",
+    "native_filter_setter": "8c0a78d0: mode 0 -> context +84=0; mode 1 -> +84=2",
+    "command_encoder": "8c0d0340 selects from [0,2,1,3] and stores filtering in mode2 bits 14:13",
+    "sprite_state_copy": "8c0c7d34 retains command filter bits",
+    "texture_bind": "8c0c8a9e changes size/address fields, retaining filter bits"
+  },
+  "proof": "work/output/0.1.22/text-filter-native-test.json",
+  "disc": "work/output/0.1.22/disc/Rayblade English Test 0.1.22.gdi",
+  "packaging": {
+    "reextracted_files": "all 5 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "in_game": "pending"
+  },
+  "historical_evidence": "13 unchanged 0.1.21 native reports retain their original executable hashes and actual coverage; previous full-packager gates rerun against that build",
+  "limits": [
+    "State finalizer 8c0d0b00 is a recorded no-op fixture",
+    "Native command creation is verified; full sprite pipeline, GPU blending and live appearance are not",
+    "Prior font/text/regression reports remain historical; they were not rerun by this test"
+  ],
+  "bitmap_detail": "Source bitmap still has finite contour detail; no vector reconstruction or preblur added",
+  "story_library_draft_credit": 0
+}

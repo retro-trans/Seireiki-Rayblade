@@ -1,0 +1,108 @@
+{
+  "version": "0.1.15",
+  "font_build": "0.1.14",
+  "rows": {
+    "names.g00.001": {
+      "en": "End Phase<NL>Unit List<NL>Counter Orders<NL>Objectives<NL><FC:FF:FF>System<NL>Save",
+      "source_sha256": "0485901b4190400e6d9d4b55e1a4fd028b2bb5af3e0df26f9d3ea0d5e8a5a844",
+      "prior_en_sha256": "e8a80fffa29355cb8b6716f66b14121357503a3671db4cedd05d6df20e08c66b",
+      "reason": "Explicit compact display labels in the tactical menu; full terminology retained in translation/glossary"
+    },
+    "names.g00.003": {
+      "en": "<FC:FF:FF><NL><ASCII:ON>Lv<FC:FF:FF> Exp<FC:FF:FF><NL><ASCII:OFF><FC:FF:FF><NL><ASCII:ON>HP <FC:FF:FF>/<FC:FF:FF><ASCII:OFF><FC:90:80>Spirit<FC:93:80><FC:FF:FF><FC:97:80>Prana<FC:9A:80><FC:FF:FF>/<FC:FF:FF>",
+      "source_sha256": "ed45df20568371899af40517effae74bd4c776e7995ad77af28a259ecc05d915",
+      "prior_en_sha256": "b0e34631412d124fc78b8ddf9abb2e3b5ea3102d5c35b73cfa0cdd11a5bdfe90",
+      "reason": "Spirit fits the 24-pixel label field; Prana explicitly starts at x184 before its x208 value"
+    },
+    "names.g00.160": {
+      "en": "<FC:FF:FF><NL><ASCII:ON>Lv<FC:FF:FF> Exp<FC:FF:FF><NL><ASCII:OFF><FC:FF:FF><NL><ASCII:ON>HP <FC:FF:FF>/<FC:FF:FF><ASCII:OFF><FC:90:80>Spirit<FC:93:80><FC:FF:FF><FC:FF:FF>",
+      "source_sha256": "1b9185cf63b6db318a9862347449911df3fc629d947879ed0fc2492ecfaed621",
+      "prior_en_sha256": "790c259e348911ff00c0dc7db8086e04d07b3d6544f21be9c31ca3cb94de6be5",
+      "reason": "Spirit fits the 24-pixel label field; Prana explicitly starts at x184 before its x208 value"
+    },
+    "names.g00.162": {
+      "en": "Ht Diff<FC:85:80><FC:FF:FF>",
+      "source_sha256": "94baf77b08717bc0505134bfc5fd806e2e552cfc1e112e2c10801c6438bac2e7",
+      "prior_en_sha256": "106219365aa8b22896b79173c7665663f57982a10795e357c33ec7f91a7b201b",
+      "reason": "Height Difference display abbreviation before the unchanged x40 value anchor"
+    },
+    "names.g00.166": {
+      "en": "Cut-In <FC:FF:FF>",
+      "source_sha256": "c66bda3e613fceb410af324c604a1ded1ccb3e714ddc1a106e4b3be2ece6283d",
+      "prior_en_sha256": "0226c54e098e4b5fdff3b21667a5741bc2700bd782b5486b860313095af6210f",
+      "reason": "Visible gap before the unchanged dynamic ON/OFF value"
+    },
+    "names.g00.212": {
+      "en": "FILE<FC:FF:FF>  Touya      LV<FC:FF:FF>  Turns --<NL>Cleared Ch. <FC:FF:FF>: \"<FC:FF:FF>\"",
+      "source_sha256": "a06e7cf55ecfc07f008237b44eaf8e60234cba32ee2a625f8228cdc97be91039",
+      "prior_en_sha256": "518be9a55a160b2a39ed0171a0cab8e30bb78e6afc8d1e7ca100c8062605a136",
+      "reason": "Compact completed-chapter label retains chapter number and complete title"
+    },
+    "names.g00.225": {
+      "en": "Cleared Ch. <FC:FF:FF>: \"<FC:FF:FF>\"",
+      "source_sha256": "ed6a4ecd29db2112d87619eb51439ee8f5f54701ac09337381e24fdba901f945",
+      "prior_en_sha256": "0017babb641a7f2cebd33d1827e4e656a5ea6265b9292efcf7657a685320b7af",
+      "reason": "Compact completed-chapter label retains chapter number and complete title"
+    },
+    "names.g00.235": {
+      "en": "FILE<FC:FF:FF>  Touya      LV<FC:FF:FF>  Private Phase<NL>Cleared Ch. <FC:FF:FF>: \"<FC:FF:FF>\"",
+      "source_sha256": "194c639d8dcd4d023be80a1644b5f99181aa24dcfd741ec88ff12ff5add8c934",
+      "prior_en_sha256": "8af7f57cac00977210039ee332e29f8c08fec5fb07b2d846b56c06a867b58511",
+      "reason": "Compact completed-chapter label retains chapter number and complete title"
+    },
+    "names.g01.032": {
+      "en": "<FC:81:80>Show Obscured Units<FC:94:80>ON<FC:9A:80>OFF<NL><FC:81:82>Unit Color Coding<FC:94:82>ON<FC:9A:82>OFF<NL><FC:81:84>Grid Display<FC:94:84>ON<FC:9A:84>OFF<NL><FC:81:86>Sound<FC:94:86>Stereo<FC:9A:86>Mono<NL><FC:81:88>Sound Test<NL><FC:81:8A>Character Profiles<NL><FC:81:8C>Unit Profiles<NL><FC:81:8E>Memory Album",
+      "source_sha256": "c97a4051f38067d90bddd4b8f6e256e323fdd9e9f381d3e0acd1510d248c9abe",
+      "prior_en_sha256": "39d162fdd063812e45532f9b121a525784332e997a3db980692ffc7fb552becb",
+      "reason": "Choice columns anchored at local x160/x208; each 16-pixel row explicitly restores x8 because FC positioning also changes the native newline origin"
+    },
+    "names.g01.034": {
+      "en": "Units can be hidden by buildings or other objects, depending<NL>on their location. Turn this setting ON to keep them visible<NL>at all times.",
+      "source_sha256": "a11f4245dcc3d3fc612c9f353ca62188129c51b2bb3d1f6e5970ca9eea8b4468",
+      "prior_en_sha256": "06e904e38a2b863e4636aeaba41eec6ca4527e4a6198be2047d82993bd38f9ba",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    },
+    "names.g01.035": {
+      "en": "Turn this setting ON to color allied units blue, enemy units<NL>red, and NPC units yellow or green.",
+      "source_sha256": "6ec0d83e38b8a88eb2419192bd070fd1051d8a7391c3e54912435b856191c23c",
+      "prior_en_sha256": "eeec7385d9c74c2328431e06620f91f66f75e5d6d37d7090ed84f7da73664e73",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    },
+    "names.g01.036": {
+      "en": "Turn this setting ON to display grid squares on the tactical<NL>map that indicate movement range.",
+      "source_sha256": "70b3132151ffc781d0fa598da31f99d75ee37ba99d00d095d0f0cda934722e0b",
+      "prior_en_sha256": "a65d06bcc05cdb0e446ba1ba5041ea10b3028196a7c00278c8d9efd175049147",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    },
+    "names.g01.037": {
+      "en": "Switches BGM between stereo and mono.",
+      "source_sha256": "519c68cf0da5cd2ffba44789865b75c561c9fc046b6fdbca49b7fdbf2f2449ce",
+      "prior_en_sha256": "f525fda5caaf4f727f0fd044884056981ff67c4d0c5b629b8efd72e4bb79e263",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    },
+    "names.g01.038": {
+      "en": "Listen to the BGM used in the game.",
+      "source_sha256": "417c97b1998e80579f8cdc18e9c9109d8684be23596da7ed8b9a63014a00d94e",
+      "prior_en_sha256": "f9eee44fe7e1744c86f1f9bc153202a68031b76371679236ea09cdbe51a69a1e",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    },
+    "names.g01.039": {
+      "en": "View information about the characters who appear in the<NL>game. Some information may change as the story progresses.",
+      "source_sha256": "d4a9f8ec37ecdf6832b6c6bced3ab275d85b994e520bcdcce32ec60ba6ac5bc2",
+      "prior_en_sha256": "ff7c75d9c68ae3172e46d9ad06c3b684b831069f1feff82f4d28140e87fcc2c9",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    },
+    "names.g01.040": {
+      "en": "View information about the Spirit Mechs and Armored Mechs<NL>that appear in the game. Entries are added as new machines<NL>appear.",
+      "source_sha256": "6afe2ffd10cb725846f30c0868f25b3e425071407f81023ecbc31afe8931a244",
+      "prior_en_sha256": "942eec5256d489810bf6fdcd843094600db7ad49f2e64f152eab1f58a0737400",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    },
+    "names.g01.041": {
+      "en": "View Touya's Memory Album. Entries are added when events<NL>increase your companions' Trust or Affection.",
+      "source_sha256": "f00a423d55b0a638f3f28a98f7687fc2a73915b3dd17627343eec99cfe040ff6",
+      "prior_en_sha256": "2c3f152c33c7ecb6205b08731811afc3ab9f563828d80158797b65a15e702e84",
+      "reason": "Font-measured three-line settings help; every word/punctuation retained"
+    }
+  }
+}

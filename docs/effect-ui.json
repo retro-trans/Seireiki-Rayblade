@@ -1,0 +1,164 @@
+{
+  "version": "0.1.32",
+  "source_build": "0.1.31",
+  "status": "Nine English effect/UI image label drafts packaged; four status icons and attack calligraphy remain untranslated, live/meaning/full-game review incomplete",
+  "disc": "work/output/0.1.32/disc/Rayblade English Test 0.1.32.gdi",
+  "archive": "EFFECT.AFS",
+  "archive_sha256": "be90e3942d0c4ecd36665914854ef53f27c8f559e6d7eea115c80a6e9013151a",
+  "changed_member": 250,
+  "label_count": 9,
+  "labels": [
+    {
+      "id": "effect.250.057",
+      "en": "Prana",
+      "glossary_id": "term.013"
+    },
+    {
+      "id": "effect.250.089",
+      "en": "Critical",
+      "glossary_id": null
+    },
+    {
+      "id": "effect.250.090",
+      "en": "Evade",
+      "glossary_id": "term.098"
+    },
+    {
+      "id": "effect.250.091",
+      "en": "Guard",
+      "glossary_id": "term.096"
+    },
+    {
+      "id": "effect.250.092",
+      "en": "Plasma Coating",
+      "glossary_id": "term.101"
+    },
+    {
+      "id": "effect.250.093",
+      "en": "Plasma Barrier",
+      "glossary_id": "term.099"
+    },
+    {
+      "id": "effect.250.094",
+      "en": "Ballistic Barrier",
+      "glossary_id": "term.100"
+    },
+    {
+      "id": "effect.250.095",
+      "en": "Special Field",
+      "glossary_id": "term.233"
+    },
+    {
+      "id": "effect.250.107",
+      "en": "Barrier",
+      "glossary_id": null
+    }
+  ],
+  "translation_map": "work/translation/en/ui/effect-ui.en.json",
+  "recipe_status_scope": "The source-linked draft recipe retains its pre-insertion preparation status/hash; this build record is the current insertion status",
+  "previews": [
+    {
+      "path": "work/output/0.1.32/effect-ui-labels-before-after.png",
+      "sha256": "2326bc8f4f2167e2dd7fe0a11fe009a45c04d7c6c603274e80dd29e4e6a30337"
+    },
+    {
+      "path": "work/output/0.1.32/effect-ui-atlas-bank-04-4x.png",
+      "sha256": "b62ca2fc3c5878a581d4d65c841d0c13426ca48dd8256b9cbb60e1da31434bdf"
+    }
+  ],
+  "artwork_review": "All nine before/after native-index text witnesses reviewed using explicit bank 4 and Prana bank 0; live palette selection is unverified",
+  "texture_dimensions": [
+    256,
+    256
+  ],
+  "packed_bytes": 10156,
+  "original_slot_capacity": 12288,
+  "shared_suffix_resolution": "Standalone Barrier stays centered in its original cell; full Ballistic Barrier moves to unused atlas rectangle [0,208,96,224] with original screen size/center/raw parameter",
+  "preservation": [
+    "All 16 stored palettes, NJTL declarations and packed texture parameters exact original",
+    "All 125 screen sizes/anchors, 124 complete sprite records, 116 other source sprites and 459 other archive members exact",
+    "Only sprite 094 UV coordinates and declared label indices change inside the decoded resource",
+    "All eleven preceding game payloads, including the normal font and both selected-logo subtitle movies, exact 0.1.31"
+  ],
+  "native_proof": {
+    "source_build": "0.1.31",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archive_sha256": "be90e3942d0c4ecd36665914854ef53f27c8f559e6d7eea115c80a6e9013151a",
+    "label_count": 9,
+    "geometry_records": 125,
+    "protected_sprites": 116,
+    "unchanged_member_payloads_and_offsets": 459,
+    "source_font_mask_pixels_checked": 3544,
+    "independent_scalar_index_pixels": 65536,
+    "independent_palette_entries": 256,
+    "native_PRS_instructions": 812606,
+    "native_decoded_bytes": 36288,
+    "native_texture_info_instructions": 175,
+    "native_texture_info_words": [
+      83886082,
+      1,
+      671088640,
+      256,
+      256,
+      32768,
+      36
+    ],
+    "native_guard_and_ABI": "pass",
+    "archive_bytes_outside_declared_edits": "exact",
+    "decoded_bytes_outside_texture_indices_and_one_UV_record": "exact",
+    "pixels_outside_declared_label_rectangles": "exact",
+    "all_palettes": "byte-exact original",
+    "native_texture_parameter_and_palette_selection": "raw parameters and NJTL declarations preserved; runtime binding not executed",
+    "geometry_UV_changed_sprites": [
+      94
+    ],
+    "all_draw_sizes_anchors_and_raw_parameters": "byte-exact original",
+    "native_file_loading": false,
+    "native_sprite_submission": false,
+    "GPU": false,
+    "live_palette_and_battle_appearance": "pending"
+  },
+  "validation": {
+    "reextracted_files": "all 12 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "new_changed_sectors": 6,
+  "changed_sector_locations_from_original": 28396,
+  "normal_text_font_changed": false,
+  "story_library_draft_credit": 0,
+  "pending": [
+    "Live native effect loading/palette selection and translated battle result/ability label appearance",
+    "Four single-kanji status icons and attack calligraphy readings/context",
+    "Remaining image formats/text discovery and independent translation/artwork review",
+    "Live inferred-font appearance, blending/pixel alignment and matched Skies comparison",
+    "Independent outline shape fidelity and all-context font review",
+    "Native relocated album note loading, unlock/selection/navigation and live artwork appearance",
+    "Independent meaning/artwork review and estimated paper/thumbnail cleanup review",
+    "Two unresolved album caption readings and remaining game translation/review",
+    "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+    "Live relocated letter-archive loading, image selection and appearance",
+    "Paper-estimate artwork review and development-placeholder reachability",
+    "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+    "Seven credit-name readings and independent confirmation of reference romanizations",
+    "Live credit timing/order, appearance, alignment and overlaps",
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "release": false,
+  "current_archive_layout": {
+    "current_build": "0.1.38",
+    "archive_sha256": "b39be7142f8ba458b2a3c32c9e9a5ddf201abe82aedf16bdc78640aecb3a269f",
+    "member_payloads_unchanged_from": "0.1.37",
+    "member_count": 460,
+    "native_lookups": "all offsets/sector lengths match physical layout",
+    "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+  },
+  "archive_identity_note": "Earlier archive hashes/proofs remain historical payload-origin evidence; current layout identity above supersedes file placement only."
+}

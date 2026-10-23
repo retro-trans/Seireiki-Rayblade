@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_110.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_110.o000a9.l00",
+      "block_id": "scenario.s_110.o000a9",
+      "member": "s_110.bin",
+      "line_index": 0,
+      "en": "\"Flag 1B0 has not been set. To play this private",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "d61adf108763eb2e86616f34c95b7ebc667c5471a54bb51bf648545f0bdf5c7f",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_110.o000a9",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_110.o000a9.l01",
+      "block_id": "scenario.s_110.o000a9",
+      "member": "s_110.bin",
+      "line_index": 1,
+      "en": "event, set flag 1B0 and try again.",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "5f6e5bca667f19e6d37a84e2789c3632ba09d62c52a521f348cfb0ac7af1cbb1",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_110.o000a9",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_110.o000a9.l02",
+      "block_id": "scenario.s_110.o000a9",
+      "member": "s_110.bin",
+      "line_index": 2,
+      "en": "Otherwise, the event will be forcibly terminated.\"<FC:B4:3E>",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "345907ccb1580479646130248377d82d6805e86def807cf42e869ef8f71b40b5",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_110.o000a9",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_110.o000a9.l00",
+      "last_id": "scenario.s_110.o000a9.l02",
+      "rows_examined": 683,
+      "context": "Slice 0-2; all643 source rows in s_108-s_111, preceding s_107 rows368-387 and following s_112 rows0-19 read (683 distinct rows examined). Developer private-event guard only, instructions not executed.",
+      "decisions": "One physical source row per English row, no byte budget. Canonical source-row names/titles/numbers, exact controls/native marks/timing waits, quote/thought boundaries and unlabelled choices. Restore settled subjects/verbs/help direction and flag genuine fragments/unknown references. Claims, implied events and diagnoses not elevated into narrator fact; no invented sexual contact, substance/dose, mechanism or specific violent action. Ordinary nonexplicit affection/family/friendship and full-force comic insults preserved. Own current exact-source repeats only after equality checks, no pasted older saved translation. Developer guard instructions are game text, never executed. No new holds. Meaning review, VM coverage, glyphs, relocation/insertion and runtime layout pending.",
+      "row_decisions": {
+        "scenario.s_110.o000a9.l00": "Own new s_108 developer guard source-equal0-2, opaque1B0/exact control retained and no real flag/retry/termination executed."
+      },
+      "row_count": 3
+    }
+  ]
+}

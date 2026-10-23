@@ -1,0 +1,2128 @@
+{
+  "format": 1,
+  "movie": "MOV072.SFD",
+  "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+  "status": "Timed UI overlay candidate; native playback and whole-movie review pending",
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "source_dimensions": [
+    320,
+    192
+  ],
+  "intervals": {
+    "status_commands": [
+      2397,
+      2427
+    ],
+    "unit_commands": [
+      2469,
+      2487
+    ],
+    "weapon_list": [
+      2489,
+      2515
+    ],
+    "battle_preview": [
+      2563,
+      2623
+    ]
+  },
+  "rows": [
+    {
+      "id": "movie.MOV072.ui.status_commands.name",
+      "en": "Touya",
+      "status": "draft",
+      "reference_id": "character.001",
+      "reference_source_sha256": null,
+      "witness_frame": 2400,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02400.png",
+      "witness_sha256": "ead822edd1b6fb145ab715d3f32202825e7085c48bb5b0e3342917ec74e6c901",
+      "candidate_box": [
+        70,
+        120,
+        113,
+        134
+      ],
+      "x": 70,
+      "y": 120,
+      "width": 43,
+      "height": 14,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 22,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Touya",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        70,
+        120,
+        113,
+        134
+      ],
+      "initial_candidate_box": [
+        71,
+        121,
+        113,
+        134
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        72,
+        121
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 22,
+      "width_fit": true,
+      "start_frame": 2397,
+      "end_frame_exclusive": 2427,
+      "boundary_evidence": [
+        {
+          "frame": 2396,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02396.png",
+          "pts": 7195273,
+          "sha256": "3ff9fddbac1d2e97473a0b518321b96f0940536c04e17bb00d774f5c4cee19a5"
+        },
+        {
+          "frame": 2397,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02397.png",
+          "pts": 7198279,
+          "sha256": "5c1150bbad61ec19ed259975404d4a3b87c4b60002461e0cbf93ae6ca5e54e6b"
+        },
+        {
+          "frame": 2426,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02426.png",
+          "pts": 7285363,
+          "sha256": "fb93b8342cbb9c4cb4f0e733f93950be6d72f4b1d445a5426e5d22e29456a174"
+        },
+        {
+          "frame": 2427,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02427.png",
+          "pts": 7288369,
+          "sha256": "a3ac3160a36cc5a6e0f67ac96d42e6c721e97148589a0f7b139788d4d9a568dc"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          115,
+          146
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.status_commands.spirit",
+      "en": "Spirit",
+      "status": "draft",
+      "reference_id": "names.g00.003",
+      "reference_source_sha256": "ed45df20568371899af40517effae74bd4c776e7995ad77af28a259ecc05d915",
+      "witness_frame": 2400,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02400.png",
+      "witness_sha256": "ead822edd1b6fb145ab715d3f32202825e7085c48bb5b0e3342917ec74e6c901",
+      "candidate_box": [
+        14,
+        178,
+        37,
+        192
+      ],
+      "x": 14,
+      "y": 178,
+      "width": 23,
+      "height": 14,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 18,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Spirit",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        14,
+        178,
+        37,
+        192
+      ],
+      "initial_candidate_box": [
+        15,
+        178,
+        44,
+        192
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        15,
+        179
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 18,
+      "width_fit": true,
+      "start_frame": 2397,
+      "end_frame_exclusive": 2427,
+      "boundary_evidence": [
+        {
+          "frame": 2396,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02396.png",
+          "pts": 7195273,
+          "sha256": "3ff9fddbac1d2e97473a0b518321b96f0940536c04e17bb00d774f5c4cee19a5"
+        },
+        {
+          "frame": 2397,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02397.png",
+          "pts": 7198279,
+          "sha256": "5c1150bbad61ec19ed259975404d4a3b87c4b60002461e0cbf93ae6ca5e54e6b"
+        },
+        {
+          "frame": 2426,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02426.png",
+          "pts": 7285363,
+          "sha256": "fb93b8342cbb9c4cb4f0e733f93950be6d72f4b1d445a5426e5d22e29456a174"
+        },
+        {
+          "frame": 2427,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02427.png",
+          "pts": 7288369,
+          "sha256": "a3ac3160a36cc5a6e0f67ac96d42e6c721e97148589a0f7b139788d4d9a568dc"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          58,
+          65
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.status_commands.prana",
+      "en": "Prana",
+      "status": "draft",
+      "reference_id": "names.g00.003",
+      "reference_source_sha256": "ed45df20568371899af40517effae74bd4c776e7995ad77af28a259ecc05d915",
+      "witness_frame": 2400,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02400.png",
+      "witness_sha256": "ead822edd1b6fb145ab715d3f32202825e7085c48bb5b0e3342917ec74e6c901",
+      "candidate_box": [
+        72,
+        178,
+        102,
+        192
+      ],
+      "x": 72,
+      "y": 178,
+      "width": 30,
+      "height": 14,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 21,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Prana",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        72,
+        178,
+        102,
+        192
+      ],
+      "initial_candidate_box": [
+        73,
+        178,
+        102,
+        192
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        74,
+        179
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 21,
+      "width_fit": true,
+      "start_frame": 2397,
+      "end_frame_exclusive": 2427,
+      "boundary_evidence": [
+        {
+          "frame": 2396,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02396.png",
+          "pts": 7195273,
+          "sha256": "3ff9fddbac1d2e97473a0b518321b96f0940536c04e17bb00d774f5c4cee19a5"
+        },
+        {
+          "frame": 2397,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02397.png",
+          "pts": 7198279,
+          "sha256": "5c1150bbad61ec19ed259975404d4a3b87c4b60002461e0cbf93ae6ca5e54e6b"
+        },
+        {
+          "frame": 2426,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02426.png",
+          "pts": 7285363,
+          "sha256": "fb93b8342cbb9c4cb4f0e733f93950be6d72f4b1d445a5426e5d22e29456a174"
+        },
+        {
+          "frame": 2427,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02427.png",
+          "pts": 7288369,
+          "sha256": "a3ac3160a36cc5a6e0f67ac96d42e6c721e97148589a0f7b139788d4d9a568dc"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          146,
+          150
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.status_commands.move",
+      "en": "Move",
+      "status": "draft",
+      "reference_id": "names.g00.009",
+      "reference_source_sha256": "90d86806866619be0895c19db28b0e0da41f1adc7003a46286169ff6127c176b",
+      "witness_frame": 2400,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02400.png",
+      "witness_sha256": "ead822edd1b6fb145ab715d3f32202825e7085c48bb5b0e3342917ec74e6c901",
+      "candidate_box": [
+        270,
+        144,
+        299,
+        160
+      ],
+      "x": 270,
+      "y": 144,
+      "width": 29,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 19,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Move",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        270,
+        144,
+        299,
+        160
+      ],
+      "initial_candidate_box": [
+        272,
+        144,
+        297,
+        160
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        273,
+        146
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 19,
+      "width_fit": true,
+      "start_frame": 2397,
+      "end_frame_exclusive": 2427,
+      "boundary_evidence": [
+        {
+          "frame": 2396,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02396.png",
+          "pts": 7195273,
+          "sha256": "3ff9fddbac1d2e97473a0b518321b96f0940536c04e17bb00d774f5c4cee19a5"
+        },
+        {
+          "frame": 2397,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02397.png",
+          "pts": 7198279,
+          "sha256": "5c1150bbad61ec19ed259975404d4a3b87c4b60002461e0cbf93ae6ca5e54e6b"
+        },
+        {
+          "frame": 2426,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02426.png",
+          "pts": 7285363,
+          "sha256": "fb93b8342cbb9c4cb4f0e733f93950be6d72f4b1d445a5426e5d22e29456a174"
+        },
+        {
+          "frame": 2427,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02427.png",
+          "pts": 7288369,
+          "sha256": "a3ac3160a36cc5a6e0f67ac96d42e6c721e97148589a0f7b139788d4d9a568dc"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          270,
+          272
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.status_commands.trust",
+      "en": "Trust",
+      "status": "draft",
+      "reference_id": "names.g00.011",
+      "reference_source_sha256": "4388ec0fd3414a1b9e65a98bf66e6e033e009a45265c06955029574d125398cc",
+      "witness_frame": 2400,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02400.png",
+      "witness_sha256": "ead822edd1b6fb145ab715d3f32202825e7085c48bb5b0e3342917ec74e6c901",
+      "candidate_box": [
+        270,
+        160,
+        299,
+        176
+      ],
+      "x": 270,
+      "y": 160,
+      "width": 29,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 19,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Trust",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        270,
+        160,
+        299,
+        176
+      ],
+      "initial_candidate_box": [
+        272,
+        160,
+        297,
+        176
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        273,
+        162
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 19,
+      "width_fit": true,
+      "start_frame": 2397,
+      "end_frame_exclusive": 2427,
+      "boundary_evidence": [
+        {
+          "frame": 2396,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02396.png",
+          "pts": 7195273,
+          "sha256": "3ff9fddbac1d2e97473a0b518321b96f0940536c04e17bb00d774f5c4cee19a5"
+        },
+        {
+          "frame": 2397,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02397.png",
+          "pts": 7198279,
+          "sha256": "5c1150bbad61ec19ed259975404d4a3b87c4b60002461e0cbf93ae6ca5e54e6b"
+        },
+        {
+          "frame": 2426,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02426.png",
+          "pts": 7285363,
+          "sha256": "fb93b8342cbb9c4cb4f0e733f93950be6d72f4b1d445a5426e5d22e29456a174"
+        },
+        {
+          "frame": 2427,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02427.png",
+          "pts": 7288369,
+          "sha256": "a3ac3160a36cc5a6e0f67ac96d42e6c721e97148589a0f7b139788d4d9a568dc"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          270,
+          272
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.status_commands.abilities",
+      "en": "Abilities",
+      "status": "draft",
+      "reference_id": "names.g00.016",
+      "reference_source_sha256": "612cc7f541c5f2acaf4017fa92279187484a03df7d26c741214c3623b3d9d863",
+      "witness_frame": 2400,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02400.png",
+      "witness_sha256": "ead822edd1b6fb145ab715d3f32202825e7085c48bb5b0e3342917ec74e6c901",
+      "candidate_box": [
+        269,
+        176,
+        299,
+        192
+      ],
+      "x": 269,
+      "y": 176,
+      "width": 30,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 27,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Abilities",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        269,
+        176,
+        299,
+        192
+      ],
+      "initial_candidate_box": [
+        272,
+        176,
+        297,
+        192
+      ],
+      "initial_full_term_width_fit": false,
+      "text_origin": [
+        270,
+        178
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 27,
+      "width_fit": true,
+      "start_frame": 2397,
+      "end_frame_exclusive": 2427,
+      "boundary_evidence": [
+        {
+          "frame": 2396,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02396.png",
+          "pts": 7195273,
+          "sha256": "3ff9fddbac1d2e97473a0b518321b96f0940536c04e17bb00d774f5c4cee19a5"
+        },
+        {
+          "frame": 2397,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02397.png",
+          "pts": 7198279,
+          "sha256": "5c1150bbad61ec19ed259975404d4a3b87c4b60002461e0cbf93ae6ca5e54e6b"
+        },
+        {
+          "frame": 2426,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02426.png",
+          "pts": 7285363,
+          "sha256": "fb93b8342cbb9c4cb4f0e733f93950be6d72f4b1d445a5426e5d22e29456a174"
+        },
+        {
+          "frame": 2427,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02427.png",
+          "pts": 7288369,
+          "sha256": "a3ac3160a36cc5a6e0f67ac96d42e6c721e97148589a0f7b139788d4d9a568dc"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          270,
+          272
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.unit_commands.attack",
+      "en": "Attack",
+      "status": "draft",
+      "reference_id": "names.g00.010",
+      "reference_source_sha256": "e08a1f1937b9bdfbc51144417dae46022e2d6981021e509c0d2d9f1e0bea495d",
+      "witness_frame": 2475,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02475.png",
+      "witness_sha256": "f2145c57ead03de6f69e17981e2427c8e6e04454da359f921949855fc9697cc5",
+      "candidate_box": [
+        270,
+        162,
+        299,
+        178
+      ],
+      "x": 270,
+      "y": 162,
+      "width": 29,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 25,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Attack",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        270,
+        162,
+        299,
+        178
+      ],
+      "initial_candidate_box": [
+        273,
+        163,
+        297,
+        178
+      ],
+      "initial_full_term_width_fit": false,
+      "text_origin": [
+        271,
+        164
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 25,
+      "width_fit": true,
+      "start_frame": 2469,
+      "end_frame_exclusive": 2487,
+      "boundary_evidence": [
+        {
+          "frame": 2468,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02468.png",
+          "pts": 7411435,
+          "sha256": "145fc1b0027a96f21c0fd4973455aede469708ee20b8bad7be36113ae87e3279"
+        },
+        {
+          "frame": 2469,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02469.png",
+          "pts": 7414438,
+          "sha256": "087ece9d0ce87a5904713fa262bedf78a2ec4d5a64495fe905882fa9cc80de80"
+        },
+        {
+          "frame": 2486,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02486.png",
+          "pts": 7465544,
+          "sha256": "1a4a08a1f07e4882297645a9799068d6615019ce34546b24ab095df700ebe757"
+        },
+        {
+          "frame": 2487,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02487.png",
+          "pts": 7468550,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          270,
+          272
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.unit_commands.wait",
+      "en": "Wait",
+      "status": "draft",
+      "reference_id": "names.g00.017",
+      "reference_source_sha256": "7626d8e92b609499c9af51eabf81511233ace641ae67bb6169f8fc77b5c3df2e",
+      "witness_frame": 2475,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02475.png",
+      "witness_sha256": "f2145c57ead03de6f69e17981e2427c8e6e04454da359f921949855fc9697cc5",
+      "candidate_box": [
+        270,
+        178,
+        299,
+        192
+      ],
+      "x": 270,
+      "y": 178,
+      "width": 29,
+      "height": 14,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 15,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Wait",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        270,
+        178,
+        299,
+        192
+      ],
+      "initial_candidate_box": [
+        273,
+        178,
+        297,
+        192
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        273,
+        179
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 15,
+      "width_fit": true,
+      "start_frame": 2469,
+      "end_frame_exclusive": 2487,
+      "boundary_evidence": [
+        {
+          "frame": 2468,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02468.png",
+          "pts": 7411435,
+          "sha256": "145fc1b0027a96f21c0fd4973455aede469708ee20b8bad7be36113ae87e3279"
+        },
+        {
+          "frame": 2469,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02469.png",
+          "pts": 7414438,
+          "sha256": "087ece9d0ce87a5904713fa262bedf78a2ec4d5a64495fe905882fa9cc80de80"
+        },
+        {
+          "frame": 2486,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02486.png",
+          "pts": 7465544,
+          "sha256": "1a4a08a1f07e4882297645a9799068d6615019ce34546b24ab095df700ebe757"
+        },
+        {
+          "frame": 2487,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02487.png",
+          "pts": 7468550,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          270,
+          272
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.weapon",
+      "en": "Weapon",
+      "status": "draft",
+      "reference_id": "names.g00.096",
+      "reference_source_sha256": "3b8e24d17de0017e18f0d84927a5e34b0327f25c26d0bbb262aa0e226433c8fe",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        79,
+        24,
+        118,
+        40
+      ],
+      "x": 79,
+      "y": 24,
+      "width": 39,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 28,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Weapon",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        79,
+        24,
+        118,
+        40
+      ],
+      "initial_candidate_box": [
+        69,
+        24,
+        118,
+        40
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        80,
+        26
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 28,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.power",
+      "en": "Power",
+      "status": "draft",
+      "reference_id": "names.g00.096",
+      "reference_source_sha256": "3b8e24d17de0017e18f0d84927a5e34b0327f25c26d0bbb262aa0e226433c8fe",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        192,
+        24,
+        219,
+        40
+      ],
+      "x": 192,
+      "y": 24,
+      "width": 27,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 22,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Power",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        192,
+        24,
+        219,
+        40
+      ],
+      "initial_candidate_box": [
+        188,
+        24,
+        219,
+        40
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        194,
+        26
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 22,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.range",
+      "en": "Range",
+      "status": "draft",
+      "reference_id": "names.g00.096",
+      "reference_source_sha256": "3b8e24d17de0017e18f0d84927a5e34b0327f25c26d0bbb262aa0e226433c8fe",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        231,
+        24,
+        259,
+        40
+      ],
+      "x": 231,
+      "y": 24,
+      "width": 28,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 23,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Range",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        231,
+        24,
+        259,
+        40
+      ],
+      "initial_candidate_box": [
+        224,
+        24,
+        255,
+        40
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        233,
+        26
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 23,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.accuracy",
+      "en": "Accuracy",
+      "status": "draft",
+      "reference_id": "names.g00.096",
+      "reference_source_sha256": "3b8e24d17de0017e18f0d84927a5e34b0327f25c26d0bbb262aa0e226433c8fe",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        272,
+        24,
+        299,
+        40
+      ],
+      "x": 272,
+      "y": 24,
+      "width": 27,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 33,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Acc.",
+      "layout_decision": "Standard abbreviation for Accuracy in the fixed column.",
+      "replace_rect": [
+        272,
+        24,
+        299,
+        40
+      ],
+      "initial_candidate_box": [
+        268,
+        24,
+        299,
+        40
+      ],
+      "initial_full_term_width_fit": false,
+      "text_origin": [
+        274,
+        26
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 16,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.weapon_name",
+      "en": "Mighty Sword Zeulear",
+      "status": "draft",
+      "reference_id": "names.g04.001",
+      "reference_source_sha256": "45f303dc1b19a8e4947f161945f6acc3890ddf9c5002639f2de6f1c6d9e6e81b",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        38,
+        41,
+        133,
+        58
+      ],
+      "x": 38,
+      "y": 41,
+      "width": 95,
+      "height": 17,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 72,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Mighty Sword Zeulear",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        38,
+        41,
+        133,
+        58
+      ],
+      "initial_candidate_box": [
+        38,
+        41,
+        158,
+        57
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        40,
+        43
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 72,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      },
+      "icon_moves": [
+        {
+          "source_rect": [
+            109,
+            47,
+            118,
+            56
+          ],
+          "destination": [
+            121,
+            47
+          ],
+          "reason": "Move the original small P attribute marker right of the longer English name; source pixels retained."
+        }
+      ]
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.ammo",
+      "en": "Ammo",
+      "status": "draft",
+      "reference_id": "names.g00.098",
+      "reference_source_sha256": "ac59a857fee81ff9e15ab3bddae3e66869fc4676cc94e2dbad23549214afb420",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        23,
+        120,
+        65,
+        136
+      ],
+      "x": 23,
+      "y": 120,
+      "width": 42,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 22,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Ammo",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        23,
+        120,
+        65,
+        136
+      ],
+      "initial_candidate_box": [
+        23,
+        120,
+        65,
+        136
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        24,
+        122
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 22,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.spirit_required",
+      "en": "Required Fighting Spirit",
+      "status": "draft",
+      "reference_id": "names.g00.097",
+      "reference_source_sha256": "0f3925414bee3a68bcf94b4a0ffa20392e9a1ff467bcf5a1b1ea5103c92926c8",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        167,
+        120,
+        226,
+        136
+      ],
+      "x": 167,
+      "y": 120,
+      "width": 59,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 79,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Spirit Req.",
+      "layout_decision": "Compact label retains the required Spirit stat; full term remains in en.",
+      "replace_rect": [
+        167,
+        120,
+        226,
+        136
+      ],
+      "initial_candidate_box": [
+        168,
+        120,
+        230,
+        136
+      ],
+      "initial_full_term_width_fit": false,
+      "text_origin": [
+        169,
+        122
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 35,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.weapon_list.prana_cost",
+      "en": "Prana Cost",
+      "status": "draft",
+      "reference_id": "names.g00.097",
+      "reference_source_sha256": "0f3925414bee3a68bcf94b4a0ffa20392e9a1ff467bcf5a1b1ea5103c92926c8",
+      "witness_frame": 2490,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02490.png",
+      "witness_sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0",
+      "candidate_box": [
+        167,
+        136,
+        226,
+        152
+      ],
+      "x": 167,
+      "y": 136,
+      "width": 59,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 39,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Prana Cost",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        167,
+        136,
+        226,
+        152
+      ],
+      "initial_candidate_box": [
+        168,
+        136,
+        230,
+        152
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        169,
+        138
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 39,
+      "width_fit": true,
+      "start_frame": 2489,
+      "end_frame_exclusive": 2515,
+      "boundary_evidence": [
+        {
+          "frame": 2488,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+          "pts": 7471556,
+          "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+        },
+        {
+          "frame": 2489,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02489.png",
+          "pts": 7474559,
+          "sha256": "e967a97be75dd0d2f6c07e146d7449982fd204ce65e13d2269f52687749ef5a0"
+        },
+        {
+          "frame": 2514,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02514.png",
+          "pts": 7549622,
+          "sha256": "c11d2b70087a38793e3173bfa32786c1c41fb51dd6f86f6eabef2086d5d88daf"
+        },
+        {
+          "frame": 2515,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02515.png",
+          "pts": 7552628,
+          "sha256": "d8da4987cfe1fd6fcbcc66dc64f694c9ede261df169cf24ea637c7fb6fb994cb"
+        }
+      ],
+      "background": {
+        "mode": "clean_source_panel",
+        "frame": 2488,
+        "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02488.png",
+        "sha256": "24a65b4692c593a8258675ca86db0fdcfc3fdce4db7e8400e1c2700948aa693d"
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.name",
+      "en": "Touya",
+      "status": "draft",
+      "reference_id": "character.001",
+      "reference_source_sha256": null,
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        70,
+        0,
+        113,
+        14
+      ],
+      "x": 70,
+      "y": 0,
+      "width": 43,
+      "height": 14,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 22,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Touya",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        70,
+        0,
+        113,
+        14
+      ],
+      "initial_candidate_box": [
+        71,
+        0,
+        113,
+        14
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        72,
+        1
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 22,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          115,
+          146
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.spirit_left",
+      "en": "Spirit",
+      "status": "draft",
+      "reference_id": "names.g00.160",
+      "reference_source_sha256": "1b9185cf63b6db318a9862347449911df3fc629d947879ed0fc2492ecfaed621",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        14,
+        56,
+        37,
+        72
+      ],
+      "x": 14,
+      "y": 56,
+      "width": 23,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 18,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Spirit",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        14,
+        56,
+        37,
+        72
+      ],
+      "initial_candidate_box": [
+        14,
+        55,
+        43,
+        72
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        15,
+        58
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 18,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          59,
+          68
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.hit_rate_left",
+      "en": "Hit Rate",
+      "status": "draft",
+      "reference_id": "names.g01.049",
+      "reference_source_sha256": "5b53503d3a3cb049f377460a2812158dbc1fe4505337d4d2425caf55fd92bbeb",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        78,
+        56,
+        115,
+        72
+      ],
+      "x": 78,
+      "y": 56,
+      "width": 37,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 28,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Hit Rate",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        78,
+        56,
+        115,
+        72
+      ],
+      "initial_candidate_box": [
+        78,
+        55,
+        119,
+        72
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        80,
+        58
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 28,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          59,
+          68
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.spirit_right",
+      "en": "Spirit",
+      "status": "draft",
+      "reference_id": "names.g00.160",
+      "reference_source_sha256": "1b9185cf63b6db318a9862347449911df3fc629d947879ed0fc2492ecfaed621",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        168,
+        56,
+        190,
+        72
+      ],
+      "x": 168,
+      "y": 56,
+      "width": 22,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 18,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Spirit",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        168,
+        56,
+        190,
+        72
+      ],
+      "initial_candidate_box": [
+        170,
+        55,
+        200,
+        72
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        169,
+        58
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 18,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          212,
+          226
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.hit_rate_right",
+      "en": "Hit Rate",
+      "status": "draft",
+      "reference_id": "names.g01.049",
+      "reference_source_sha256": "5b53503d3a3cb049f377460a2812158dbc1fe4505337d4d2425caf55fd92bbeb",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        231,
+        56,
+        270,
+        72
+      ],
+      "x": 231,
+      "y": 56,
+      "width": 39,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 28,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Hit Rate",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        231,
+        56,
+        270,
+        72
+      ],
+      "initial_candidate_box": [
+        231,
+        55,
+        272,
+        72
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        233,
+        58
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 28,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          212,
+          226
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.weapon_left",
+      "en": "Mighty Sword Zeulear",
+      "status": "draft",
+      "reference_id": "names.g04.001",
+      "reference_source_sha256": "45f303dc1b19a8e4947f161945f6acc3890ddf9c5002639f2de6f1c6d9e6e81b",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        14,
+        86,
+        153,
+        103
+      ],
+      "x": 14,
+      "y": 86,
+      "width": 139,
+      "height": 17,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 72,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Mighty Sword Zeulear",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        14,
+        86,
+        153,
+        103
+      ],
+      "initial_candidate_box": [
+        15,
+        87,
+        152,
+        103
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        16,
+        89
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 72,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          125,
+          145
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.weapon_right",
+      "en": "Divine Sword Daifozon",
+      "status": "draft",
+      "reference_id": "names.g04.002",
+      "reference_source_sha256": "436846487f3ea66dfa697a9eb48f98d10900e615d70c559f82d59dec80c8ae83",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        168,
+        86,
+        306,
+        103
+      ],
+      "x": 168,
+      "y": 86,
+      "width": 138,
+      "height": 17,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 77,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Divine Sword Daifozon",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        168,
+        86,
+        306,
+        103
+      ],
+      "initial_candidate_box": [
+        168,
+        87,
+        305,
+        103
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        170,
+        89
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 77,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          276,
+          298
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.cut_in",
+      "en": "Cut-In",
+      "status": "draft",
+      "reference_id": "names.g00.166",
+      "reference_source_sha256": "c66bda3e613fceb410af324c604a1ded1ccb3e714ddc1a106e4b3be2ece6283d",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        14,
+        119,
+        56,
+        135
+      ],
+      "x": 14,
+      "y": 119,
+      "width": 42,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 24,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Cut-In",
+      "layout_decision": "Full English term retained at one uniform font scale.",
+      "replace_rect": [
+        14,
+        119,
+        56,
+        135
+      ],
+      "initial_candidate_box": [
+        15,
+        119,
+        61,
+        135
+      ],
+      "initial_full_term_width_fit": true,
+      "text_origin": [
+        16,
+        121
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 24,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          72,
+          76
+        ]
+      }
+    },
+    {
+      "id": "movie.MOV072.ui.battle_preview.height_difference",
+      "en": "Height Difference",
+      "status": "draft",
+      "reference_id": "names.g00.162",
+      "reference_source_sha256": "94baf77b08717bc0505134bfc5fd806e2e552cfc1e112e2c10801c6438bac2e7",
+      "witness_frame": 2565,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/dense/frame-02565.png",
+      "witness_sha256": "cd1946ad343284979a62f1a67a5655e3c6f0bbac9ea2e88397e6b7dd133e2d75",
+      "candidate_box": [
+        239,
+        119,
+        279,
+        135
+      ],
+      "x": 239,
+      "y": 119,
+      "width": 40,
+      "height": 16,
+      "geometry_status": "Pixel-reviewed erase bounds exclude neighboring values, borders, portraits, arrows and HP bars",
+      "twelve_pixel_font_width": 61,
+      "width_fit_candidate": true,
+      "timing": "All UI-present frames and transition boundaries visually inspected in consecutive source contact sheets",
+      "reinsertion": "offline movie overlay; not yet in game",
+      "display_en": "Ht. Diff.",
+      "layout_decision": "Standard Height Difference abbreviation; preserve the adjacent signed value.",
+      "replace_rect": [
+        239,
+        119,
+        279,
+        135
+      ],
+      "initial_candidate_box": [
+        240,
+        119,
+        283,
+        135
+      ],
+      "initial_full_term_width_fit": false,
+      "text_origin": [
+        241,
+        121
+      ],
+      "font_denominator": 2,
+      "font_cell_height": 12,
+      "measured_width": 27,
+      "width_fit": true,
+      "start_frame": 2563,
+      "end_frame_exclusive": 2623,
+      "boundary_evidence": [
+        {
+          "frame": 2562,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02562.png",
+          "pts": 7693730,
+          "sha256": "a384b61f6e56e9125949987dabbc826e7ccf487e9e4af862c65c0866b6f1423f"
+        },
+        {
+          "frame": 2563,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02563.png",
+          "pts": 7696736,
+          "sha256": "124f5472f96465d876cc680c6233715ebd44137555931ce10d58cb0446fafc9c"
+        },
+        {
+          "frame": 2622,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02622.png",
+          "pts": 7873910,
+          "sha256": "6043de1c33cd3c889a8f2753430ce1360354cdea4775157e74ec33d35de8ca5a"
+        },
+        {
+          "frame": 2623,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-2310-2635/frame-02623.png",
+          "pts": 7876916,
+          "sha256": "a5b207661a323bf3fea54119c84283313c1d079ddd37885de2ae2730b164303e"
+        }
+      ],
+      "background": {
+        "mode": "same_row_median",
+        "sample_x": [
+          279,
+          283
+        ]
+      }
+    }
+  ],
+  "full_terms_preserved_in_en": true,
+  "source_panel_clean_frame": 2488,
+  "protected": [
+    "Original HP/level/experience and numeric values",
+    "Original question-mark concealment labels",
+    "Attack icons, health bars and selection indicators",
+    "Original ON state, signed Spirit/height values, accuracy values and small weapon attribute marker"
+  ],
+  "limits": [
+    "Movie text is a lossy 320x192 recording; source-level game UI translation remains a separate component",
+    "Same-row background reconstruction replaces only declared text rectangles",
+    "Source and native playback timing, English caption reading speed and two title sequences remain review items"
+  ],
+  "story_library_draft_credit": 0
+}

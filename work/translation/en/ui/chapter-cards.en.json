@@ -1,0 +1,558 @@
+{
+  "source": "D_NAMES group 10 English chapter drafts",
+  "status": "Mapped to original image slots; English pixels not inserted yet",
+  "titles": [
+    {
+      "id": "names.g10.000",
+      "en": "Everyday Detours and Entanglements",
+      "source_sha256": "22eecbf5a211cd4749df8b6ec62977147e7b671b982f8a64a5d2c1f643c0accd",
+      "member": 36,
+      "main_rectangle": 0,
+      "reading_rectangle": 1
+    },
+    {
+      "id": "names.g10.001",
+      "en": "Agarthia, Another World",
+      "source_sha256": "164bb81f890f976563bd610fc804480a6ed2ded318f47951db9308ff1e6db719",
+      "member": 36,
+      "main_rectangle": 2,
+      "reading_rectangle": 3
+    },
+    {
+      "id": "names.g10.002",
+      "en": "A Girl's Resolve",
+      "source_sha256": "354ad29c57bb33d4a54ed100c1cfb8372fc6f60f757776e4936f6aa36a2dd12e",
+      "member": 36,
+      "main_rectangle": 4,
+      "reading_rectangle": 5
+    },
+    {
+      "id": "names.g10.003",
+      "en": "The Rain in Flamuelk Never Stops",
+      "source_sha256": "84bcf54134ead7413cd0a8fc06f9cb6db77251da2e18eaa3dd810975ae29fcfd",
+      "member": 36,
+      "main_rectangle": 6,
+      "reading_rectangle": 7
+    },
+    {
+      "id": "names.g10.004",
+      "en": "A New Heartbeat",
+      "source_sha256": "0ab11e79e87959035f37640cf74cd3de022e059508a8edbd7b3b1cd3b0cdbb47",
+      "member": 36,
+      "main_rectangle": 8,
+      "reading_rectangle": 9
+    },
+    {
+      "id": "names.g10.005",
+      "en": "The Breath of Change",
+      "source_sha256": "7388a4d018e98e3e34bcc8c919eacb86e5843e8cc8fb4f30bffdf9c7d9bb2f28",
+      "member": 36,
+      "main_rectangle": 10,
+      "reading_rectangle": 11
+    },
+    {
+      "id": "names.g10.006",
+      "en": "Ghosts of a Century Past (Part 1)",
+      "source_sha256": "b7a29f90edfde657b039b47a572f6a64403f94316a42b43774a64d6a97900dec",
+      "member": 36,
+      "main_rectangle": 12,
+      "reading_rectangle": 13
+    },
+    {
+      "id": "names.g10.007",
+      "en": "Ghosts of a Century Past (Part 2)",
+      "source_sha256": "e19c9b1ca6ad192f4bb9d6fbc6c1c566fb4feb56f9b4a3e791e92dafa88cc86c",
+      "member": 36,
+      "main_rectangle": 14,
+      "reading_rectangle": 15
+    },
+    {
+      "id": "names.g10.008",
+      "en": "A Less Than Peaceful Holiday",
+      "source_sha256": "e9ff1c51417534b8bba254acc789a30bc56c0a5e5354675cbc817175c15e13d8",
+      "member": 36,
+      "main_rectangle": 16,
+      "reading_rectangle": 17
+    },
+    {
+      "id": "names.g10.009",
+      "en": "Hearts That Meet",
+      "source_sha256": "78fda1fa19f4f13c9df12013c98a7d7cb0abb70b887881912430e042a0331af8",
+      "member": 36,
+      "main_rectangle": 18,
+      "reading_rectangle": 19
+    },
+    {
+      "id": "names.g10.010",
+      "en": "The Reason We Are Here Now",
+      "source_sha256": "a2f3ee0fe957739a2c5751f8762af96e6ffd381dcce79191c4ae8e15ca2a6e69",
+      "member": 36,
+      "main_rectangle": 20,
+      "reading_rectangle": 21
+    },
+    {
+      "id": "names.g10.011",
+      "en": "The Promise",
+      "source_sha256": "543a6b423c659fe08e8f0e9a2f522f2f77680ccb2c9f5c8020189bf3a108ff33",
+      "member": 36,
+      "main_rectangle": 22,
+      "reading_rectangle": 23
+    },
+    {
+      "id": "names.g10.012",
+      "en": "Burst Prana",
+      "source_sha256": "f668caebd6ec9ea7dad12767f8f75eae85a32d384a6a062514adea12beef88e8",
+      "member": 36,
+      "main_rectangle": 24,
+      "reading_rectangle": 25
+    },
+    {
+      "id": "names.g10.013",
+      "en": "The Solitary Visitor",
+      "source_sha256": "e2178f1970f48ea5a1daf01414551f60860fb491793d35c0247a1bff39fea3eb",
+      "member": 36,
+      "main_rectangle": 26,
+      "reading_rectangle": 27
+    },
+    {
+      "id": "names.g10.014",
+      "en": "A New Tide",
+      "source_sha256": "684fd29348c0bc9d15dc1fa72a3d5ea7e8d84317572d063c75afa40f9cca2a10",
+      "member": 36,
+      "main_rectangle": 28,
+      "reading_rectangle": 29
+    },
+    {
+      "id": "names.g10.015",
+      "en": "A Perfect Absence",
+      "source_sha256": "46a2b00c403f424ece5e3dc82cf89ffd1e71de037c7541309317586d29578ff5",
+      "member": 36,
+      "main_rectangle": 30,
+      "reading_rectangle": 31
+    },
+    {
+      "id": "names.g10.016",
+      "en": "The One Who Comes Next",
+      "source_sha256": "0922088e65a94974e722c8db9037a593fd8ec803a87b236507f99c6db2921512",
+      "member": 36,
+      "main_rectangle": 32,
+      "reading_rectangle": 33
+    },
+    {
+      "id": "names.g10.017",
+      "en": "",
+      "source_sha256": "0798894c11d91d9e1d0d2d79f633ec6976daa5e970d81ff7b825725137cf70bc",
+      "member": 36,
+      "main_rectangle": 34,
+      "reading_rectangle": 35
+    },
+    {
+      "id": "names.g10.018",
+      "en": "The Unwanted Arbiter",
+      "source_sha256": "26068f61a8f8421146d971a0ff9014925ee5d8485ac65c47cd1374daae21051e",
+      "member": 36,
+      "main_rectangle": 36,
+      "reading_rectangle": 37
+    },
+    {
+      "id": "names.g10.019",
+      "en": "Droplets of the Heart",
+      "source_sha256": "8c16b3fcd5725f07a46cc53650589d49d338a5f121d4ac77d2cdf0ba1654dfa7",
+      "member": 36,
+      "main_rectangle": 38,
+      "reading_rectangle": 39
+    },
+    {
+      "id": "names.g10.020",
+      "en": "A Portrait of Madness",
+      "source_sha256": "d142e261ae281c4da664662775b9a8eb0aeab20c1087bd0f0e6a9c793ff420de",
+      "member": 40,
+      "main_rectangle": 0,
+      "reading_rectangle": 1
+    },
+    {
+      "id": "names.g10.021",
+      "en": "The Value of Existence",
+      "source_sha256": "b383ec75cd2680d18475d4c49ba5ce7a1c4ef35f8c746c315af360cad9a9ee9e",
+      "member": 40,
+      "main_rectangle": 2,
+      "reading_rectangle": 3
+    },
+    {
+      "id": "names.g10.022",
+      "en": "Where Fates Cross",
+      "source_sha256": "0823338aadcb87d73bd3478d6e19046d40a63ba43c475083e53d87d3abe03548",
+      "member": 40,
+      "main_rectangle": 4,
+      "reading_rectangle": 5
+    },
+    {
+      "id": "names.g10.023",
+      "en": "The One Who Pulls the Strings",
+      "source_sha256": "7b33f98cbfba7c3d714da7510ca074bdbcc9485ace633da7228220d04edb9835",
+      "member": 40,
+      "main_rectangle": 6,
+      "reading_rectangle": 7
+    },
+    {
+      "id": "names.g10.024",
+      "en": "Bonds That Cannot Be Severed",
+      "source_sha256": "f057c84f92cf1ea82d71c042b2e19c60e6f5eb7d1f05f1ef32cbcff9d92f25a6",
+      "member": 40,
+      "main_rectangle": 8,
+      "reading_rectangle": 9
+    },
+    {
+      "id": "names.g10.025",
+      "en": "What It Means to Be Human",
+      "source_sha256": "68f5a745afbdc5889ceaf47f251a3ef479c7f7dc728c93c688076f88d8c40c2a",
+      "member": 40,
+      "main_rectangle": 10,
+      "reading_rectangle": 11
+    },
+    {
+      "id": "names.g10.026",
+      "en": "Dawn's End",
+      "source_sha256": "fd7d1d6e45c5a2d0ab648c73c80eaccc2d5b25732d2508632588f5d7f74aa6cd",
+      "member": 40,
+      "main_rectangle": 12,
+      "reading_rectangle": 13
+    },
+    {
+      "id": "names.g10.027",
+      "en": "An Unfulfilled Promise",
+      "source_sha256": "2628c78e4c3c32f40205c30e23eaaf27e6e147bd2d784bff58c0f080dc21f172",
+      "member": 40,
+      "main_rectangle": 14,
+      "reading_rectangle": 15
+    },
+    {
+      "id": "names.g10.028",
+      "en": "Father, Daughter, and...",
+      "source_sha256": "4e2b4ca772f13d561fb681c9624935bb20dfb3d5f9b5886972f81c12d6be20c7",
+      "member": 40,
+      "main_rectangle": 16,
+      "reading_rectangle": 17
+    },
+    {
+      "id": "names.g10.029",
+      "en": "Beyond the Unveiled Realm",
+      "source_sha256": "9fce075d636971ff8a5480890403f6f12c5c164a84e3b7abb0e1571a7ca986f3",
+      "member": 40,
+      "main_rectangle": 18,
+      "reading_rectangle": 19
+    },
+    {
+      "id": "names.g10.030",
+      "en": "Hearts Afar",
+      "source_sha256": "b03596c3df72445ec118f25d7bfcafbc7e1ce3768c5486e0106ee56739be6303",
+      "member": 40,
+      "main_rectangle": 20,
+      "reading_rectangle": 21
+    },
+    {
+      "id": "names.g10.031",
+      "en": "A Promise for Tomorrow",
+      "source_sha256": "39f071b34176d0c74f1b941ae57b2f309b7cb71db1930265ff169995e43832bc",
+      "member": 40,
+      "main_rectangle": 22,
+      "reading_rectangle": 23
+    },
+    {
+      "id": "names.g10.032",
+      "en": "At the End of Our Wandering",
+      "source_sha256": "7b061a140b5a7fc4f42a3616e52a82252881a6ef3a00789d015de9c6bbc2bb57",
+      "member": 40,
+      "main_rectangle": 24,
+      "reading_rectangle": 25
+    },
+    {
+      "id": "names.g10.033",
+      "en": "Toward Our Own Futures",
+      "source_sha256": "c813bf1f1bbaf18e08d1c3b6dabb930d14eaff650864c0206c6a3598267a75e6",
+      "member": 40,
+      "main_rectangle": 26,
+      "reading_rectangle": 27
+    },
+    {
+      "id": "names.g10.034",
+      "en": "Launch! Liebhofen!!",
+      "source_sha256": "3a1a9795bf05a5daa99559aafcc740273b0c7b4800288769c1256e8f6acebcb2",
+      "member": 40,
+      "main_rectangle": 28,
+      "reading_rectangle": 29
+    },
+    {
+      "id": "names.g10.035",
+      "en": "Silver Wolf",
+      "source_sha256": "76e2f3ac20670dc63276b049945ff5a0496a90d577c8e475dc5a22bae859d0e0",
+      "member": 40,
+      "main_rectangle": 30,
+      "reading_rectangle": 31
+    },
+    {
+      "id": "names.g10.036",
+      "en": "In the Name of Sword Radiance",
+      "source_sha256": "ea45904a6ac0746bbf8b7ae2a977517d1ca85569871fce93309bbe22cf615815",
+      "member": 40,
+      "main_rectangle": 32,
+      "reading_rectangle": 33
+    },
+    {
+      "id": "names.g10.037",
+      "en": "Beyond Sorrow",
+      "source_sha256": "6e0b897c2cc5dc37065b6afc4e1d9ce4c220ee824a09aba40b0c3447e7a0e052",
+      "member": 40,
+      "main_rectangle": 34,
+      "reading_rectangle": 35
+    },
+    {
+      "id": "names.g10.038",
+      "en": "Ghosts of a Century Past (Part 1)",
+      "source_sha256": "e1ebdc6fb77527e64401739927b9304ce0a5a9850a53fa25cab5f1bea26d3078",
+      "member": 40,
+      "main_rectangle": 36,
+      "reading_rectangle": 37
+    },
+    {
+      "id": "names.g10.039",
+      "en": "Ghosts of a Century Past (Part 2)",
+      "source_sha256": "2c035c8391baa570ce20b93e34376e1220e3e83cd0b5889324e273c43ddfd241",
+      "member": 40,
+      "main_rectangle": 38,
+      "reading_rectangle": 39
+    },
+    {
+      "id": "names.g10.040",
+      "en": "Quiet Passion",
+      "source_sha256": "d229a66b77e77e93bb3f6aeac0d1d3c37013178f6c8896a4b6b7034c05c8e7cc",
+      "member": 44,
+      "main_rectangle": 0,
+      "reading_rectangle": 1
+    },
+    {
+      "id": "names.g10.041",
+      "en": "The Right Direction",
+      "source_sha256": "6b7c67d247194af0a26b2db1042d9bab4eb6ddf958218ff7bd35e85a226f06f7",
+      "member": 44,
+      "main_rectangle": 2,
+      "reading_rectangle": 3
+    },
+    {
+      "id": "names.g10.042",
+      "en": "Those Who Use and Those Who Are Used",
+      "source_sha256": "72607246c32eddf922cabb32e25e8b0a12f78479fa801dd49d57debd3f1be7c7",
+      "member": 44,
+      "main_rectangle": 4,
+      "reading_rectangle": 5
+    },
+    {
+      "id": "names.g10.043",
+      "en": "The Arrow of Beginnings",
+      "source_sha256": "d0dd6948b6b88cab0e1ecb7c339a234a335cdfc46db0ecca3b222997b6d64558",
+      "member": 44,
+      "main_rectangle": 6,
+      "reading_rectangle": 7
+    },
+    {
+      "id": "names.g10.044",
+      "en": "Wavering Hearts",
+      "source_sha256": "c89a6373046dfd30c70bf5c02338b789b59f9d28ce57ef53a5b6d93e7997fb0b",
+      "member": 44,
+      "main_rectangle": 8,
+      "reading_rectangle": 9
+    },
+    {
+      "id": "names.g10.045",
+      "en": "The Last Knight",
+      "source_sha256": "5364bb22311a49404ee8120a52f732d9162ea95bbd691b1b41a99798401bd68d",
+      "member": 44,
+      "main_rectangle": 10,
+      "reading_rectangle": 11
+    },
+    {
+      "id": "names.g10.046",
+      "en": "An Unsettled Past",
+      "source_sha256": "f32c104c71ba6ecf8ab45efd12ba3d7cd71a3794edec66dc2068f3259845adcf",
+      "member": 44,
+      "main_rectangle": 12,
+      "reading_rectangle": 13
+    },
+    {
+      "id": "names.g10.047",
+      "en": "",
+      "source_sha256": "fdfc583b9b53e87dc20f4fab58ccf3f3b950eb46651ab49b48187aa05a38a297",
+      "member": 44,
+      "main_rectangle": 14,
+      "reading_rectangle": 15
+    },
+    {
+      "id": "names.g10.048",
+      "en": "Burst Prana",
+      "source_sha256": "074f60f11e2a830b417c3f6ea0bd3e2fa2dc52f0dd57a762cdc738bd6c6507f1",
+      "member": 44,
+      "main_rectangle": 16,
+      "reading_rectangle": 17
+    },
+    {
+      "id": "names.g10.049",
+      "en": "Where That Path Will Lead",
+      "source_sha256": "5d3597ff06b54f86d7ffd4a1ebf3c23ba6b151f0ff295fdc10d704b67da270b5",
+      "member": 44,
+      "main_rectangle": 18,
+      "reading_rectangle": 19
+    },
+    {
+      "id": "names.g10.050",
+      "en": "Unhappy Happiness",
+      "source_sha256": "ac7a652806c50b87c5a5890a76bd5d518a6ca8e1294331556d6d7e2ec365e112",
+      "member": 44,
+      "main_rectangle": 20,
+      "reading_rectangle": 21
+    },
+    {
+      "id": "names.g10.051",
+      "en": "For Whom Are These Feelings?",
+      "source_sha256": "5db8f728b2fb81dc98f58dcd2e859493511fa6d247342cafed8b013cad03a53f",
+      "member": 44,
+      "main_rectangle": 22,
+      "reading_rectangle": 23
+    },
+    {
+      "id": "names.g10.052",
+      "en": "Bonds That Cannot Be Severed",
+      "source_sha256": "c5df04853f896f32c054c2ba3d581c44257fcfbda92c5a5ffba788d298b8d59d",
+      "member": 44,
+      "main_rectangle": 24,
+      "reading_rectangle": 25
+    },
+    {
+      "id": "names.g10.053",
+      "en": "The Black Prince",
+      "source_sha256": "6bc77bde01e1b067b27f4fc47d37637ab4995e8b44b7fa063bee9449ac5014b3",
+      "member": 44,
+      "main_rectangle": 26,
+      "reading_rectangle": 27
+    },
+    {
+      "id": "names.g10.054",
+      "en": "Father, Daughter, and...",
+      "source_sha256": "49de1e6e94ba8134396d0bccd1c82a534a3ba94a0b6316d122af6e3b5b1700c0",
+      "member": 44,
+      "main_rectangle": 28,
+      "reading_rectangle": 29
+    },
+    {
+      "id": "names.g10.055",
+      "en": "For Those Feelings Alone",
+      "source_sha256": "5e96190427ecb7f111f649f4f61a591667c5f31875e963c391667bb281ce27f7",
+      "member": 44,
+      "main_rectangle": 30,
+      "reading_rectangle": 31
+    },
+    {
+      "id": "names.g10.056",
+      "en": "Beyond the Unveiled Realm",
+      "source_sha256": "10f8b5c722a24129b77246e94502ebff9d9a4ffaa0c36f68c1a95730c7fe0728",
+      "member": 44,
+      "main_rectangle": 32,
+      "reading_rectangle": 33
+    },
+    {
+      "id": "names.g10.057",
+      "en": "Hearts Afar",
+      "source_sha256": "21d9904333a1920ec76c52e77a8f0b0c033341372e0a9746115bbc7a4f6457c0",
+      "member": 44,
+      "main_rectangle": 34,
+      "reading_rectangle": 35
+    },
+    {
+      "id": "names.g10.058",
+      "en": "A Promise for Tomorrow",
+      "source_sha256": "ec337e60d84513be0d3723763ed8599759b8e91fba0b07db4c01a14d2f3df5cb",
+      "member": 44,
+      "main_rectangle": 36,
+      "reading_rectangle": 37
+    },
+    {
+      "id": "names.g10.059",
+      "en": "At the End of Our Wandering",
+      "source_sha256": "d5a7d1ed93b61c5406f3ab2b08b40491fd8eb85933319bcf8573b9c688e5d826",
+      "member": 44,
+      "main_rectangle": 38,
+      "reading_rectangle": 39
+    },
+    {
+      "id": "names.g10.060",
+      "en": "Toward Our Own Futures",
+      "source_sha256": "ea7478b5761246758d317a9dba1d49eca230e136e3678e01fe56e3d04173c2ff",
+      "member": 48,
+      "main_rectangle": 0,
+      "reading_rectangle": 1
+    },
+    {
+      "id": "names.g10.061",
+      "en": "The Twilight Bow",
+      "source_sha256": "d592243869e95b3b8463d8d9137df112dfb04304d7b111f573c17186f2bbb772",
+      "member": 48,
+      "main_rectangle": 2,
+      "reading_rectangle": 3
+    },
+    {
+      "id": "names.g10.062",
+      "en": "A False Heart, True Feelings",
+      "source_sha256": "ef2f21c8df3741405496b459ac08ef6dc05331129c4d179aacf8fa3b7c38f4bc",
+      "member": 48,
+      "main_rectangle": 4,
+      "reading_rectangle": 5
+    },
+    {
+      "id": "names.g10.063",
+      "en": "Subtitle TBD",
+      "source_sha256": "25176dd1a4ec70da65a0399677c4c57471b82d3e80e6831e41feffe39a8bb7b9",
+      "member": 48,
+      "main_rectangle": 6,
+      "reading_rectangle": 7
+    },
+    {
+      "id": "names.g10.064",
+      "en": "Subtitle TBD",
+      "source_sha256": "26a053f383f46a4a6efe8e63828807a61c51745f24c0d3f5f0370282d8880ef2",
+      "member": 48,
+      "main_rectangle": 8,
+      "reading_rectangle": 9
+    },
+    {
+      "id": "names.g10.065",
+      "en": "Subtitle TBD",
+      "source_sha256": "80309864f0b676cb2f7b8b5fa3ebf9e7ead1dc49015809692c837130ec81ee31",
+      "member": 48,
+      "main_rectangle": 10,
+      "reading_rectangle": 11
+    },
+    {
+      "id": "names.g10.066",
+      "en": "Subtitle TBD",
+      "source_sha256": "856011a759d708b0e7cfa9624a2d7ab5a1411adf5c365b80828524329ba19240",
+      "member": 48,
+      "main_rectangle": 12,
+      "reading_rectangle": 13
+    },
+    {
+      "id": "names.g10.067",
+      "en": "Subtitle TBD",
+      "source_sha256": "18e6349a03113259aa0a7830414418359df10f7ba49c19137ea85f0ae82fbeae",
+      "member": 48,
+      "main_rectangle": 14,
+      "reading_rectangle": 15
+    },
+    {
+      "id": "names.g10.068",
+      "en": "Subtitle TBD",
+      "source_sha256": "b8f8df3ae074f6527af55b00929f123e4144241b991f144676b3987d888cfa3c",
+      "member": 48,
+      "main_rectangle": 16,
+      "reading_rectangle": null
+    }
+  ]
+}

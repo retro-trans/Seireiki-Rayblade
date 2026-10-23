@@ -1,0 +1,38 @@
+{
+  "status": "Four effect status-icon meanings still on context hold; native literal coincidences rejected",
+  "UI_text_context": [
+    {
+      "id": "names.g00.124",
+      "meaning": "Counterattack selection offers Counterattack, Select Weapon, Evade and Defend"
+    },
+    {
+      "id": "names.g00.174",
+      "meaning": "Counterattack orders include Manual, Always Counterattack, Be Aggressive, Play It Safe and Always Defend"
+    },
+    {
+      "ids": [
+        "names.g01.024",
+        "names.g01.028",
+        "names.g01.029",
+        "names.g01.030",
+        "names.g01.031"
+      ],
+      "meaning": "Help explains manual reactions and automatic counterattack/evade/defend policies"
+    }
+  ],
+  "native_search_limits": [
+    "Small immediates 59..62 occur as unrelated parser thresholds and stack byte offsets; no direct atlas-icon use established.",
+    "PC-relative words 0x33b..0x33e at 0x8c024daa..0x8c024dbc and 0x8c0258c4..0x8c0259ea are stack offsets, not proven global sprite IDs. Do not use them as semantic evidence."
+  ],
+  "external_manual_candidate": "https://psinstructionmanual.com/rayblade/",
+  "manual_version": "PlayStation; not assumed identical to Dreamcast",
+  "manual_images_verified": false,
+  "access_limit": "Web image opens unavailable; Windows browser inspection stopped because URL-policy enforcement is unsupported. No further computer input or media-download workaround used.",
+  "icon_ids": [
+    "effect.250.059",
+    "effect.250.060",
+    "effect.250.061",
+    "effect.250.062"
+  ],
+  "next_evidence_needed": "Native icon selection path or readable in-game/manual context matching each icon; script choice text alone does not bind icons to meanings"
+}

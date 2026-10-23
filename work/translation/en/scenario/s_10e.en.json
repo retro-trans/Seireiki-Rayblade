@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_10e.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_10e.o00062.l00",
+      "block_id": "scenario.s_10e.o00062",
+      "member": "s_10e.bin",
+      "line_index": 0,
+      "en": "Leone: \"Cough, cough!",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "31af75e34a6999caf4db94cc6054f3537c1e793b9987a93d82c9667b304d0c4b",
+      "block_source_sha256": "97dcce8ac12861fe700cf6c20e4b863ba8e9f982cb8b2201b52a4e35eaf96529",
+      "source_command_id": "scenario.s_10e.o00062",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.013",
+      "speaker_label_en": "Leone",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_10e.o00062.l01",
+      "block_id": "scenario.s_10e.o00062",
+      "member": "s_10e.bin",
+      "line_index": 1,
+      "en": "Wheeze, wheeze...\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "48c7f3d1d9e50eff79b868a3b854b268c5bf742992764a5df280c55c5357651d",
+      "block_source_sha256": "97dcce8ac12861fe700cf6c20e4b863ba8e9f982cb8b2201b52a4e35eaf96529",
+      "source_command_id": "scenario.s_10e.o00062",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.013",
+      "speaker_label_en": "Leone",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_10e.o00086.l00",
+      "block_id": "scenario.s_10e.o00086",
+      "member": "s_10e.bin",
+      "line_index": 0,
+      "en": "Leone: \"I... What's going to happen to me...?\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "0f4b8db0d8a59e74863188986634948bc9c959996ef6370d351139b9cc1a7bf1",
+      "block_source_sha256": "9e6961e1234b1c9b22fe4e0c6d1146e2155cb01b5d321fe178cfde35d09e7469",
+      "source_command_id": "scenario.s_10e.o00086",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.013",
+      "speaker_label_en": "Leone",
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_10e.o00062.l00",
+      "last_id": "scenario.s_10e.o00086.l00",
+      "rows_examined": 683,
+      "context": "Slice 0-2; all643 source rows in s_108-s_111, preceding s_107 rows368-387 and following s_112 rows0-19 read (683 distinct rows examined). Leone cough/wheeze and uncertain future fear.",
+      "decisions": "One physical source row per English row, no byte budget. Canonical source-row names/titles/numbers, exact controls/native marks/timing waits, quote/thought boundaries and unlabelled choices. Restore settled subjects/verbs/help direction and flag genuine fragments/unknown references. Claims, implied events and diagnoses not elevated into narrator fact; no invented sexual contact, substance/dose, mechanism or specific violent action. Ordinary nonexplicit affection/family/friendship and full-force comic insults preserved. Own current exact-source repeats only after equality checks, no pasted older saved translation. Developer guard instructions are game text, never executed. No new holds. Meaning review, VM coverage, glyphs, relocation/insertion and runtime layout pending.",
+      "row_decisions": {
+        "scenario.s_10e.o00062.l00": "Leone coughing/choking/wheezing sounds, no blood, vomit, illness name or specific medical diagnosis added. Her what-will-happen2 question stays fearful/unfinished."
+      },
+      "row_count": 3
+    }
+  ]
+}

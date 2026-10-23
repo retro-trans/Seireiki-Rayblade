@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "base_game_build": "0.1.37",
+  "status": "Reviewed English wording; pending game integration",
+  "rows": {
+    "library.character.004.s00.l02": {
+      "id": "library.character.004.s00.l02",
+      "source_sha256": "a07a8f7c0c9c6b24d1abb3d6c6349625176c77ab1b70b225bbef7da43a2b08b8",
+      "prior_en_sha256": "b65cf10408c0bd0301eae05fa1aa0963f71f2aaeed6efa51379dba589da9acb3",
+      "prior_en": "A childhood friend, glasses, long straight black hair, quiet devotion...",
+      "en": "A childhood friend, glasses, straight black hair, quiet devotion...",
+      "reason": "The source specifies straight black hair without specifying length; remove the unsupported long",
+      "integration": "pending; not inserted in build 0.1.37"
+    }
+  }
+}

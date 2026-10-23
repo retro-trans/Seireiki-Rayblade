@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "id": "movie.MOV072.title.ending",
+  "movie": "MOV072.SFD",
+  "en": "Seireiki Rayblade",
+  "display_lines": [
+    "SEIREIKI",
+    "RAYBLADE"
+  ],
+  "status": "artwork/animation draft",
+  "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+  "source_dimensions": [
+    320,
+    192
+  ],
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "uniform_source_scales": {
+    "SEIREIKI": 1,
+    "RAYBLADE": 3
+  },
+  "artwork": "work/ui/movies/MOV072/english-title/title.png",
+  "artwork_pixel_sha256": "05ee62d983de4fbb6f9caf9aebdb5230e23db1881a8449ddfae19029aba36abe",
+  "start_frame": 2961,
+  "end_frame_exclusive": 3084,
+  "replace_rect": [
+    0,
+    0,
+    320,
+    192
+  ],
+  "boundary_evidence": [
+    {
+      "frame": 2960,
+      "pts": 8888949,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-02960.png",
+      "sha256": "9b07ab40d33bc964d1e2c34110b16571bf13283cb1a4b4ba5dfc42bb72954432"
+    },
+    {
+      "frame": 2961,
+      "pts": 8891952,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-02961.png",
+      "sha256": "6c1594db857a319d28e21ad25c6bc7e86cb0a644389cf4ecaea5456f62d88f9d"
+    },
+    {
+      "frame": 3083,
+      "pts": 9258327,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-03083.png",
+      "sha256": "26cfca1672334ab52de40008bd73e23d4ef5e3c4f9df2118e780095cc2f00d9d"
+    }
+  ],
+  "witness_frames": [
+    2961,
+    2965,
+    2969,
+    2980,
+    3000,
+    3045,
+    3065,
+    3083
+  ],
+  "animation": "Uniform 2.1x-to-1x zoom over first 10 frames; source bottom-left flash envelope; least-squares source-template fade from frame 3039",
+  "background_sample": [
+    0,
+    191
+  ],
+  "scope": "Plain-background ending only. Rebuilt English graphics, not a translated original 3D mesh.",
+  "remaining": [
+    "Original moving-art title in MOV072 frames 1489..1536",
+    "Original initial 3D logo in MOV072 frames 1417..1448",
+    "Corresponding title sequence found in opening movie MOV055",
+    "Animation/design/full-motion review and native playback"
+  ],
+  "story_library_draft_credit": 0
+}

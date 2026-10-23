@@ -1,0 +1,43 @@
+{
+  "project": "Seireiki Rayblade Dreamcast",
+  "status": "Source-linked UI editorial drafts",
+  "source_archive_sha256": "0db7a4981110ffb26ac0c17bd6561dc9644eeb327c8502e90f100ede097bb9c4",
+  "entries": [
+    {
+      "id": "ui.effect.critical",
+      "category": "ui",
+      "ja": "クリティカル",
+      "en": "Critical",
+      "source_ids": [
+        "effect.250.089"
+      ],
+      "source_box": [
+        0,
+        96,
+        72,
+        112
+      ],
+      "source_index_sha256": "e69e78e5f2f9c3bb14a5cd0dd49db35929e2ed7edda2b33fa007fb900fe5da4f",
+      "status": "editorial_draft",
+      "inserted_build": "0.1.32"
+    },
+    {
+      "id": "ui.effect.barrier",
+      "category": "ui",
+      "ja": "バリア",
+      "en": "Barrier",
+      "source_ids": [
+        "effect.250.107"
+      ],
+      "source_box": [
+        48,
+        128,
+        96,
+        144
+      ],
+      "source_index_sha256": "c6b84237c3906c928f01be4606881388510b8a30307f3da0e3c96c82e29558c4",
+      "status": "editorial_draft",
+      "inserted_build": "0.1.32"
+    }
+  ]
+}

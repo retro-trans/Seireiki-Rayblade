@@ -1,0 +1,2176 @@
+{
+  "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
+  "last_packaged_build": "0.1.29",
+  "movies": 116,
+  "source_bytes": 438339584,
+  "decoded_video_frames": 36123,
+  "initial_discovery_samples": 928,
+  "initial_visual_review": "All 15 eight-sample contact sheets reviewed across this thread. MOV072 contains visible Japanese; absence of text in other sampled frames does not establish absence throughout those streams.",
+  "initial_contacts": [
+    {
+      "path": "work/ui/asset-audit/movies/contact-00.png",
+      "sha256": "770fb4270282253bdbe68af76c3bba1cb9a9061d7f062ee4d31d6e5eb4057d4d"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-01.png",
+      "sha256": "594347ea856d1a012cb20b162819292c2cd6757bc3b26f72b04bc384a5f1b6b2"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-02.png",
+      "sha256": "cf5ba563983ef157f70fa3dbd09a21f27d53738182a84feb0fdc6dcba8327039"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-03.png",
+      "sha256": "8bcc4e408d038d24c4e7e5bea3e6241635f7491d7983e2bfb67d1f9aa85de41d"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-04.png",
+      "sha256": "8c52d489f614adda9913ae78f5f2ff5adaa1431b185df2791f5f0f682a0dc4e0"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-05.png",
+      "sha256": "422adaf4d455f6916c67678849df728864d027e0777201014287360d757345b2"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-06.png",
+      "sha256": "3687c302cb7fdf7d9f9328abc9c5114151599057ce0a24d4d6430f05a8ea1e78"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-07.png",
+      "sha256": "4e3cb3153c9d49b6c7133d2b3f5c903b5b9f41d0210571dd37d483448c68deec"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-08.png",
+      "sha256": "0b152bc45e7328a73b3cdc2cd0da50fe5f4b6d0b25ffce0910f1f08d2a4ce88e"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-09.png",
+      "sha256": "a5fd9c00e61f3e32de9f0dbb5d2cb902cd23c4e05f495b92284bd9b889104c0e"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-10.png",
+      "sha256": "7329d5e0e54dede65a5e37cd4f073988e77c76818a92c178973e80ef9ffba99a"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-11.png",
+      "sha256": "2f598a8cc6050765e8065db9c0156f9eb0b843a1700c32ab15142aa7a185007b"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-12.png",
+      "sha256": "14fb699280843deb1b92ec02c44fefaffd819099e334169f5f22ef49231ae576"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-13.png",
+      "sha256": "0e7013e981580d22b54fe9223fef16ff002eefd2125cc5db71d67210242ae884"
+    },
+    {
+      "path": "work/ui/asset-audit/movies/contact-14.png",
+      "sha256": "2a08d66d31550b923d684d1bb0b141fd37b9eda66a598a9299a1e3165ad4f6d2"
+    }
+  ],
+  "streams": [
+    {
+      "kind": "audio",
+      "codec": "adpcm_adx",
+      "movies": 116
+    },
+    {
+      "kind": "video",
+      "codec": "mpeg1video",
+      "movies": 116
+    }
+  ],
+  "movie_index": "work/ui/asset-audit/movies/movie-index.json",
+  "MOV072": {
+    "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+    "frames": 3084,
+    "denser_discovery_frames": 462,
+    "interval_samples_reviewed": 206,
+    "interval_contact_pages_reviewed": [
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-00.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-01.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-02.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-03.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-04.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-05.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-06.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-07.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-08.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-09.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-10.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-11.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-12.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-13.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-14.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-15.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-16.png",
+      "work/ui/asset-audit/movies/MOV072/dense/interval-contact-17.png"
+    ],
+    "consecutive_caption_frames_reviewed": 477,
+    "consecutive_ranges": [
+      [
+        1530,
+        1935
+      ],
+      [
+        2630,
+        2700
+      ]
+    ],
+    "consecutive_caption_contacts": [
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-00.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-01.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-02.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-03.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-04.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-05.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-06.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-07.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-08.png",
+      "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/caption-contact-09.png"
+    ],
+    "caption_drafts": 13,
+    "movie_specific_wording_variants": 2,
+    "timing": "Each caption start/end checked against consecutive decoded frames and exact input PTS",
+    "caption_recipe": "work/translation/en/movies/MOV072.en.json",
+    "subtitle_review_copy": "work/translation/en/movies/MOV072.en.srt",
+    "captured_UI_label_occurrences": 25,
+    "initial_UI_terms_needing_width_review": 5,
+    "UI_terms_needing_width_review": 0,
+    "UI_recipe": "work/translation/en/movies/MOV072-ui.en.json",
+    "initial_UI_geometry": "work/ui/movies/MOV072/layout.json",
+    "UI_geometry": "work/ui/movies/MOV072/timed-layout.json",
+    "previews": [
+      "work/ui/movies/MOV072/english-caption-drafts/comparison-00.png",
+      "work/ui/movies/MOV072/english-caption-drafts/comparison-01.png",
+      "work/ui/movies/MOV072/english-caption-drafts/comparison-02.png",
+      "work/ui/movies/MOV072/english-caption-drafts/comparison-03.png"
+    ],
+    "preview_scope": "Static offline drafts using supplied bitmap at uniform 1/2 scale; wrapping preserves every English word, and pixels outside the declared caption rectangle are unchanged. All four comparison sheets visually inspected.",
+    "title_logo_sequences": 2,
+    "reading_speed": "Original demo cuts are very fast, including captions under one second. English timing/presentation remains a review requirement.",
+    "remaining": [
+      "Independent meaning, full-motion and English caption reading-speed review",
+      "Frame-complete movie/content/audio audit",
+      "Native playback/buffering/A-V synchronization verification"
+    ],
+    "native_movie_translation_inserted": true,
+    "captioned_movie_candidate": {
+      "candidate": "work/output/movie-drafts/MOV072/attempt-02/MOV072-captions-candidate.SFD",
+      "sha256": "e00dd71beaed9d53b6a5ed3a1c7944bdcb4ec26a821659580b3ad0748f126af5",
+      "software_decoded_frames": 3084,
+      "captioned_frames": 405,
+      "cues": 13,
+      "original_audio": "All 2531 audio packs and complete ADX payload remain exact; decoded PCM also matches",
+      "preservation": [
+        "All original audio sector bytes and elementary payload",
+        "All pack SCRs/mux rate, system headers, Sofdec metadata and file length",
+        "All sectors outside original video slots"
+      ],
+      "scheduling": {
+        "all_coded_units_delivered": true,
+        "peak_compressed_bytes": 31160,
+        "limit_bytes": 47104,
+        "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+      },
+      "encoded_contacts_reviewed": [
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/comparison-00.png",
+          "sha256": "a990b07a1728d8ce671ef88db237298d563bab8ad97092d6c540410fc778af9e"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/comparison-01.png",
+          "sha256": "60402b16f9233d686254af56e462bbd6dc0503c82314dfe5059188870e16feb5"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/comparison-02.png",
+          "sha256": "9139dbeb1598f22f6d1d2a4fa9c65d7a9bfdc74aefbdf69ed15a2726aa35cffd"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/comparison-03.png",
+          "sha256": "f061b99f08291186f12041251c4e6209d8e116c67d17316b19a0c313f02ca3a2"
+        }
+      ],
+      "visual_review_scope": "All four encoded comparison sheets inspected: thirteen witness frames, not a full-motion review",
+      "watchable_preview": {
+        "path": "work\\output\\movie-drafts\\MOV072\\attempt-02\\MOV072-captions-preview.mp4",
+        "sha256": "6966f1e8d3065f58216bd6346f4ac198139c5b15795af05bd4f876cef01292ae",
+        "audio": "AAC preview copy; native original ADX retained separately"
+      },
+      "render_proof": "work/output/movie-drafts/MOV072/attempt-02/render-report.json",
+      "container_proof": "work/output/movie-drafts/MOV072/attempt-02/sfd-candidate-report.json",
+      "decoded_comparison": "work/output/movie-drafts/MOV072/attempt-02/decoded-comparison.json",
+      "limitations": [
+        "Original metadata still names original encoder; this is a template-based derivative",
+        "Original 3006-tick timing convention retained approximately for new video units",
+        "Native runtime buffering, A/V sync and playback remain unverified",
+        "Captured UI, logos, reading speed and whole-movie review remain unfinished"
+      ],
+      "timing_note": "Source contains nonmonotonic mux timestamps. Frame-index rendering resets output timestamps while preserving decoded frame order; native candidate approximates original 3006-tick frame timing.",
+      "not_in_game_build": true
+    },
+    "latest_captions_UI_candidate": {
+      "candidate": "work/output/movie-drafts/MOV072/captions-ui-02/MOV072-captions-candidate.SFD",
+      "sha256": "2e2467d7f39ed55c288ebd42efe775eb741aca186b337943ddfe308ef8682c86",
+      "recipe": "work/translation/en/movies/MOV072-ui-layout.en.json",
+      "recipe_sha256": "b0c363adcd2f7070674a851c76f587924900e38c20bbe1295e5516394f8a01ba",
+      "source_frames_indexed": 326,
+      "source_UI_frames_present": 134,
+      "timed_intervals": {
+        "status_commands": [
+          2397,
+          2427
+        ],
+        "unit_commands": [
+          2469,
+          2487
+        ],
+        "weapon_list": [
+          2489,
+          2515
+        ],
+        "battle_preview": [
+          2563,
+          2623
+        ]
+      },
+      "labels": 25,
+      "label_frame_edits": 964,
+      "compact_labels": [
+        "Acc.",
+        "Spirit Req.",
+        "Ht. Diff."
+      ],
+      "layout": "One uniform half-source font scale; all fields fit. Full terms retained in en. Signed/numeric values and ON remain source pixels; small P marker moves right of the English weapon name.",
+      "repairs": [
+        "Expanded Cut-In erase bound after a remaining Japanese character was found in the first preview",
+        "Consecutive extraction now records source PTS before resetting output timestamps; no VFR frame loss"
+      ],
+      "software_decoded_video_frames": 3084,
+      "original_ADX_and_decoded_PCM": "exact",
+      "source_schedule_peak_compressed_bytes": 30079,
+      "encoded_contacts_reviewed": [
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-02/comparison-00.png",
+          "sha256": "a990b07a1728d8ce671ef88db237298d563bab8ad97092d6c540410fc778af9e",
+          "reviewed_identical_contact": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-01/comparison-00.png"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-02/comparison-01.png",
+          "sha256": "60402b16f9233d686254af56e462bbd6dc0503c82314dfe5059188870e16feb5",
+          "reviewed_identical_contact": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-01/comparison-01.png"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-02/comparison-02.png",
+          "sha256": "9139dbeb1598f22f6d1d2a4fa9c65d7a9bfdc74aefbdf69ed15a2726aa35cffd",
+          "reviewed_identical_contact": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-01/comparison-02.png"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-02/comparison-03.png",
+          "sha256": "416ffc1c393596ac508d3820221e9bea735c66e8661e147abaa6f3e1e4e5221d",
+          "reviewed_identical_contact": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-01/comparison-03.png"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-02/comparison-04.png",
+          "sha256": "f061b99f08291186f12041251c4e6209d8e116c67d17316b19a0c313f02ca3a2",
+          "reviewed_identical_contact": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-01/comparison-04.png"
+        }
+      ],
+      "review_scope": "Five contact sheets / 17 witness frames reviewed; final contacts byte-exact those reviewed in the preceding metadata-identical rendering",
+      "watchable_preview": {
+        "path": "work\\output\\movie-drafts\\MOV072\\captions-ui-02\\MOV072-captions-preview.mp4",
+        "sha256": "5c77725d4da5582d0229800886f0ee8cd169fc6cd19d31455d463d509bef64b5",
+        "audio": "AAC preview copy; native original ADX retained separately"
+      },
+      "render_proof": "work/output/movie-drafts/MOV072/captions-ui-02/render-report.json",
+      "container_proof": "work/output/movie-drafts/MOV072/captions-ui-02/sfd-candidate-report.json",
+      "decoded_comparison": "work/output/movie-drafts/MOV072/captions-ui-02/decoded-comparison.json",
+      "not_in_game_build": true,
+      "live_playback": "pending"
+    },
+    "latest_caption_UI_ending_title_candidate": {
+      "candidate": "work/output/movie-drafts/MOV072/captions-ui-endtitle-01/MOV072-captions-candidate.SFD",
+      "sha256": "eac6c42faf0dd4c2b4cb95f18211139bf0be10710c264a5112ff7f79ba4167ac",
+      "ending_title_recipe": "work/translation/en/movies/MOV072-ending-title.en.json",
+      "title": "Seireiki Rayblade",
+      "ending_interval": [
+        2961,
+        3084
+      ],
+      "ending_frames": 123,
+      "source_index_matches": 123,
+      "design": "Rebuilt English bitmap wordmark with uniform zoom and source-derived flash/fade; not original 3D mesh translation",
+      "moving_mech_art": "unchanged; its Japanese title remains pending",
+      "software_decoded_video_frames": 3084,
+      "original_ADX_and_decoded_PCM": "exact",
+      "encoded_contacts_reviewed": [
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-endtitle-01/comparison-00.png",
+          "sha256": "a990b07a1728d8ce671ef88db237298d563bab8ad97092d6c540410fc778af9e"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-endtitle-01/comparison-01.png",
+          "sha256": "60402b16f9233d686254af56e462bbd6dc0503c82314dfe5059188870e16feb5"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-endtitle-01/comparison-02.png",
+          "sha256": "9139dbeb1598f22f6d1d2a4fa9c65d7a9bfdc74aefbdf69ed15a2726aa35cffd"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-endtitle-01/comparison-03.png",
+          "sha256": "416ffc1c393596ac508d3820221e9bea735c66e8661e147abaa6f3e1e4e5221d"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-endtitle-01/comparison-04.png",
+          "sha256": "dbed9542018dd6f42445440184a4972542eeb8b74a2597d335383bfaadf4a500"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-endtitle-01/comparison-05.png",
+          "sha256": "dbf2acc55f20f9a8b66518205671d51d93eb6cdf8fdd14b4184c2ae279059bb2"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-endtitle-01/comparison-06.png",
+          "sha256": "f646451b0f915929da5b085d549a45767b9a80dd2ab90d289870eff12a5c4c83"
+        }
+      ],
+      "review_scope": "Seven contact sheets, 25 witness frames; complete movie motion/audio/design review remains pending",
+      "watchable_preview": {
+        "path": "work\\output\\movie-drafts\\MOV072\\captions-ui-endtitle-01\\MOV072-captions-preview.mp4",
+        "sha256": "fa4cd5c757c10a94841871dc6aac94c9988f6318068b3aa8d961d85674242254",
+        "audio": "AAC preview copy; native original ADX retained separately"
+      },
+      "render_proof": "work/output/movie-drafts/MOV072/captions-ui-endtitle-01/render-report.json",
+      "container_proof": "work/output/movie-drafts/MOV072/captions-ui-endtitle-01/sfd-candidate-report.json",
+      "decoded_comparison": "work/output/movie-drafts/MOV072/captions-ui-endtitle-01/decoded-comparison.json",
+      "not_in_game_build": false,
+      "live_playback": "pending",
+      "packaged_build": "0.1.23",
+      "disc": "work/output/0.1.23/disc/Rayblade English Test 0.1.23.gdi"
+    },
+    "native_movie_playback_verified": false,
+    "latest_intro_title_candidate": {
+      "movie": "MOV072.SFD",
+      "candidate": "work/output/movie-drafts/MOV072/captions-ui-titles-01/MOV072-captions-candidate.SFD",
+      "sha256": "934690028b33145a3cd855d34d49ad8d41590cd629336e71f8f0f0259f5936f4",
+      "bytes": 37392384,
+      "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+      "recipe": "work/translation/en/movies/MOV072-intro-title.en.json",
+      "recipe_sha256": "f4fb4cc78395804b10d8433c5f65976e9d99c2c18cd7cf8ab16d0be6ec57f33f",
+      "English_intro_interval": [
+        1417,
+        1449
+      ],
+      "English_intro_frames": 32,
+      "matched_indexed_source_frames": 32,
+      "source_boundary_witnesses": [
+        {
+          "index": 1416,
+          "time": 47.247444,
+          "pts": 4252270,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01416.png"
+        },
+        {
+          "index": 1417,
+          "time": 47.280844,
+          "pts": 4255276,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01417.png"
+        },
+        {
+          "index": 1448,
+          "time": 48.315244,
+          "pts": 4348372,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01448.png"
+        },
+        {
+          "index": 1449,
+          "time": 48.348611,
+          "pts": 4351375,
+          "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01449.png"
+        }
+      ],
+      "software_decoded_frames": 3084,
+      "original_ADX_and_decoded_PCM": "exact",
+      "source_schedule_occupancy": {
+        "all_coded_units_delivered": true,
+        "peak_compressed_bytes": 30079,
+        "limit_bytes": 47104,
+        "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+      },
+      "watchable_preview": {
+        "path": "work\\output\\movie-drafts\\MOV072\\captions-ui-titles-01\\MOV072-captions-preview.mp4",
+        "sha256": "60b181f3ac3dc27cbc576a6471dc4de92ade5184733135042aebe2b413de68f4",
+        "audio": "AAC preview copy; native original ADX retained separately"
+      },
+      "encoded_contacts_reviewed": [
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-00.png",
+          "sha256": "0d496e9b6c5a21e668efc465219cb4d9884a3167903b38ef1a5134785f0bc167"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-01.png",
+          "sha256": "994f7084241219070bc70138e3386c5a202e41e24f02a6c60d19f8f7197ea4c4"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-02.png",
+          "sha256": "a990b07a1728d8ce671ef88db237298d563bab8ad97092d6c540410fc778af9e"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-03.png",
+          "sha256": "60402b16f9233d686254af56e462bbd6dc0503c82314dfe5059188870e16feb5"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-04.png",
+          "sha256": "9139dbeb1598f22f6d1d2a4fa9c65d7a9bfdc74aefbdf69ed15a2726aa35cffd"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-05.png",
+          "sha256": "416ffc1c393596ac508d3820221e9bea735c66e8661e147abaa6f3e1e4e5221d"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-06.png",
+          "sha256": "dbed9542018dd6f42445440184a4972542eeb8b74a2597d335383bfaadf4a500"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-07.png",
+          "sha256": "dbf2acc55f20f9a8b66518205671d51d93eb6cdf8fdd14b4184c2ae279059bb2"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-08.png",
+          "sha256": "f646451b0f915929da5b085d549a45767b9a80dd2ab90d289870eff12a5c4c83"
+        }
+      ],
+      "encoded_witness_frames": 33,
+      "render_proof": "work/output/movie-drafts/MOV072/captions-ui-titles-01/render-report.json",
+      "mux_proof": "work/output/movie-drafts/MOV072/captions-ui-titles-01/sfd-candidate-report.json",
+      "decoded_proof": "work/output/movie-drafts/MOV072/captions-ui-titles-01/decoded-comparison.json",
+      "moving_art_title": "Original Japanese remains; surrounding moving artwork retained before encoding",
+      "in_game_build": true,
+      "native_playback": "pending",
+      "packaged_build": "0.1.24",
+      "disc": "work/output/0.1.24/disc/Rayblade English Test 0.1.24.gdi"
+    },
+    "translation_inserted": true,
+    "latest_moving_title_subtitle": {
+      "movie": "MOV072.SFD",
+      "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530",
+      "source_interval": [
+        1489,
+        1537
+      ],
+      "subtitle_frames": 48,
+      "recipe": "work/translation/en/movies/MOV072-moving-title.en.json",
+      "recipe_sha256": "4b1a4aff7bee8897c39515f71fd4c68151f2ceda7a5fd6f57dbea1de2d4db3ee",
+      "prepared_previews": [
+        "work/ui/movies/MOV072/moving-title-subtitle/comparison-00.png",
+        "work/ui/movies/MOV072/moving-title-subtitle/comparison-01.png",
+        "work/ui/movies/MOV072/moving-title-subtitle/comparison-02.png"
+      ],
+      "encoded_contacts_reviewed": [
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-00.png",
+          "sha256": "0d496e9b6c5a21e668efc465219cb4d9884a3167903b38ef1a5134785f0bc167"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-01.png",
+          "sha256": "994f7084241219070bc70138e3386c5a202e41e24f02a6c60d19f8f7197ea4c4"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-02.png",
+          "sha256": "42a54fcdf3a9cc6284c3588dde763bacfe1acc310a312080ce187c1b114a696a"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-03.png",
+          "sha256": "6187c73037808c716b20f4b5fca8388ce11a593bfc289438ac41f3998fc9c007"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-04.png",
+          "sha256": "16cbc95ca326b4f7d5a660712dc69aca42b12ce858b1dd61ee26359e8e044081"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-05.png",
+          "sha256": "14b5e7ff3baef25dde49a5f5f2b2e2e8d6f1ad3b2919f9574a0cfaad11fc1194"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-06.png",
+          "sha256": "4af6b60a6dce067d5b397181a262e894f44be893045dc65ac57ca5e01ebad060"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-07.png",
+          "sha256": "05b20c2eec3327b02aece67412e800905e249c220fd11abfea9ca8076e53e3f2"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-08.png",
+          "sha256": "fdedd03faf46e5ec757c5cdace6e67eba84daea905dac3217ea60676ec7a34c6"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-09.png",
+          "sha256": "a060957b0afbef90fe487ae488221e7bee7adb85360241ce73db96ac9ee3c50e"
+        },
+        {
+          "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-10.png",
+          "sha256": "4ecc8572050b2de4ed0da687c9987ed6b60b8287ff7205584387504a0dba3eaa"
+        }
+      ],
+      "encoded_witness_frames": [
+        1417,
+        1421,
+        1425,
+        1429,
+        1433,
+        1439,
+        1443,
+        1448,
+        1489,
+        1490,
+        1492,
+        1500,
+        1515,
+        1524,
+        1525,
+        1535,
+        1536,
+        1560,
+        1620,
+        1680,
+        1695,
+        1710,
+        1755,
+        1800,
+        1815,
+        1830,
+        1860,
+        1890,
+        1920,
+        2400,
+        2475,
+        2490,
+        2565,
+        2655,
+        2961,
+        2965,
+        2969,
+        2980,
+        3000,
+        3045,
+        3065,
+        3083
+      ],
+      "software_frames": 3084,
+      "audio_PCM_exact": true,
+      "source_schedule": {
+        "all_coded_units_delivered": true,
+        "peak_compressed_bytes": 30079,
+        "limit_bytes": 47104,
+        "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+      }
+    }
+  },
+  "MOV055": {
+    "source_sha256": "d2a8fe52bd4f0b3e70d7fec9299a2891ad244ddb7f68a479bd571ce8628e6518",
+    "denser_discovery_frames": 471,
+    "review": "All eleven regular-interval sheets reviewed; Japanese title sequence found. Dense frame-complete and audio review remain pending.",
+    "regular_interval_samples_reviewed": 123,
+    "regular_interval_contacts_reviewed": [
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-00.png",
+        "sha256": "c6682cae0686e44dcabac9d4fa5ba0ae3c6ff2570e25b6ab009a15de146148ec"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-01.png",
+        "sha256": "409482e042ffaee94aae35ae61a44652be05f778f9433e5fe84dad5804c26fe1"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-02.png",
+        "sha256": "1519f4f5b93234774ee46190c53736314e20bd7b8bad7fbfd23f5b576428d933"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-03.png",
+        "sha256": "1e5915caed603ac37e3f4b7ca18b91989cb16afc06cd3fb89c1fc22644a5a468"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-04.png",
+        "sha256": "3e233966719549a3cbe4733e28c1bfb35abb8d546aec6c57761504c3c2ee2afd"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-05.png",
+        "sha256": "a94b6e8fdd4f1fb49602ebffd6209a11d42e4a3364bd17567c69c5a6906f7511"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-06.png",
+        "sha256": "f2642d1e292e8c8b438801d52885750c3359e574c5e6e41c221001fd6b5f68a3"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-07.png",
+        "sha256": "17486bbc4bc00dd589c546e2a9ff2e610e6cc7530671f743387a3318f0ca0065"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-08.png",
+        "sha256": "0f97caf278b97abc1925a5090b30f15e0704e3b361794d76689b37a013414747"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-09.png",
+        "sha256": "4adf626a902d3713d161fd654b633497e78d8dbee193a7c414895547cb873763"
+      },
+      {
+        "path": "work/ui/asset-audit/movies/MOV055/dense/interval-contact-10.png",
+        "sha256": "ee2c7d46156d4bf30636b35f43edd1a81e38c2d6eb954368a94ce9575f5ebea5"
+      }
+    ],
+    "Japanese_title_found": true,
+    "title_witnesses": [
+      285,
+      300,
+      360,
+      375,
+      390,
+      405
+    ],
+    "consecutive_title_frames_indexed": 181,
+    "consecutive_title_index": "work/ui/asset-audit/movies/MOV055/frames-240-420/index.json",
+    "shared_footage_comparison": "docs/movie-title-sources.json",
+    "comparison_scope": "32x20 RGB thumbnail nearest matches locate shared imagery; no exact equivalence, temporal alignment or full-audio review claimed",
+    "translation_inserted": true,
+    "index": "work/ui/asset-audit/movies/MOV055/dense/index.json",
+    "latest_intro_title_candidate": {
+      "movie": "MOV055.SFD",
+      "candidate": "work/output/movie-drafts/MOV055/intro-title-01/MOV055-english-candidate.SFD",
+      "sha256": "cfc2bc7f299ce513ad81d957c55617e716fa5133eef5a63672d1cd7852b2bd75",
+      "bytes": 22302720,
+      "source_sha256": "d2a8fe52bd4f0b3e70d7fec9299a2891ad244ddb7f68a479bd571ce8628e6518",
+      "recipe": "work/translation/en/movies/MOV055-intro-title.en.json",
+      "recipe_sha256": "8491ddb8ef25ad5d418a1d98c3cdc063ca9c308b481be11de0e19557437788b8",
+      "English_intro_interval": [
+        277,
+        309
+      ],
+      "English_intro_frames": 32,
+      "matched_indexed_source_frames": 32,
+      "source_boundary_witnesses": [
+        {
+          "index": 276,
+          "time": 9.209411,
+          "pts": 828847,
+          "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00276.png"
+        },
+        {
+          "index": 277,
+          "time": 9.242811,
+          "pts": 831853,
+          "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00277.png"
+        },
+        {
+          "index": 308,
+          "time": 10.277211,
+          "pts": 924949,
+          "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00308.png"
+        },
+        {
+          "index": 309,
+          "time": 10.310578,
+          "pts": 927952,
+          "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00309.png"
+        }
+      ],
+      "software_decoded_frames": 1840,
+      "original_ADX_and_decoded_PCM": "exact",
+      "source_schedule_occupancy": {
+        "all_coded_units_delivered": true,
+        "peak_compressed_bytes": 28252,
+        "limit_bytes": 47104,
+        "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+      },
+      "watchable_preview": {
+        "path": "work/output/movie-drafts/MOV055/intro-title-01/MOV055-title-preview.mp4",
+        "sha256": "7e6ca11a000aed51aa94f2b6d223386b19ce606758f17732371447fc38d4b7aa",
+        "audio": "AAC review copy; original ADX retained for native candidate"
+      },
+      "encoded_contacts_reviewed": [
+        {
+          "path": "work/ui/movies/MOV055/encoded-caption-review/intro-title-01/comparison-00.png",
+          "sha256": "7bdc1d64f775b86107692c82e7fda528cb9fd94949001074efc91c959775583f"
+        },
+        {
+          "path": "work/ui/movies/MOV055/encoded-caption-review/intro-title-01/comparison-01.png",
+          "sha256": "d7842ee7d96cb0d52418650de82e6418f393dbb9eebbc5708dfb9ce03caed12a"
+        }
+      ],
+      "encoded_witness_frames": 8,
+      "render_proof": "work/output/movie-drafts/MOV055/intro-title-01/render-report.json",
+      "mux_proof": "work/output/movie-drafts/MOV055/intro-title-01/sfd-candidate-report.json",
+      "decoded_proof": "work/output/movie-drafts/MOV055/intro-title-01/decoded-comparison.json",
+      "moving_art_title": "Original Japanese remains; surrounding moving artwork retained before encoding",
+      "in_game_build": true,
+      "native_playback": "pending",
+      "packaged_build": "0.1.24",
+      "disc": "work/output/0.1.24/disc/Rayblade English Test 0.1.24.gdi"
+    },
+    "native_movie_playback_verified": false,
+    "latest_moving_title_subtitle": {
+      "movie": "MOV055.SFD",
+      "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451",
+      "source_interval": [
+        349,
+        409
+      ],
+      "subtitle_frames": 60,
+      "recipe": "work/translation/en/movies/MOV055-moving-title.en.json",
+      "recipe_sha256": "5e04805ab31c6ceab2659a6a8aaec6d83c4537f2a51c983cad1e72964bf5ca52",
+      "prepared_previews": [
+        "work/ui/movies/MOV055/moving-title-subtitle/comparison-00.png",
+        "work/ui/movies/MOV055/moving-title-subtitle/comparison-01.png",
+        "work/ui/movies/MOV055/moving-title-subtitle/comparison-02.png"
+      ],
+      "encoded_contacts_reviewed": [
+        {
+          "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-00.png",
+          "sha256": "7bdc1d64f775b86107692c82e7fda528cb9fd94949001074efc91c959775583f"
+        },
+        {
+          "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-01.png",
+          "sha256": "d7842ee7d96cb0d52418650de82e6418f393dbb9eebbc5708dfb9ce03caed12a"
+        },
+        {
+          "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-02.png",
+          "sha256": "f44f8729d31f77a83d6d3b18c43de02e86d4ea34f6b00dc3fd9488317163b261"
+        },
+        {
+          "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-03.png",
+          "sha256": "17bb6c099714351494477adc51f5e96da7bd4ec6be567de3779ec26365ba5c16"
+        },
+        {
+          "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-04.png",
+          "sha256": "2c263b4cfabd931fafe6b9fa482970c52f58bd99391614d192d6928404e1a3bb"
+        }
+      ],
+      "encoded_witness_frames": [
+        277,
+        281,
+        285,
+        289,
+        293,
+        299,
+        303,
+        308,
+        349,
+        350,
+        352,
+        360,
+        375,
+        404,
+        405,
+        407,
+        408
+      ],
+      "software_frames": 1840,
+      "audio_PCM_exact": true,
+      "source_schedule": {
+        "all_coded_units_delivered": true,
+        "peak_compressed_bytes": 28252,
+        "limit_bytes": 47104,
+        "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+      }
+    }
+  },
+  "limits": [
+    "Sampled discovery does not prove frame-complete caption coverage",
+    "Only the specified MOV072 caption intervals have consecutive-frame review",
+    "Software MPEG-1/SFD encoding and exact original audio pass; audio content, movie selection, timing and native playback remain unverified",
+    "The English SRT and static previews do not change the game or establish reinsertion",
+    "Japanese transcription remains local in ignored work/source; English export contains no Japanese prose"
+  ],
+  "story_library_draft_credit": 0,
+  "local_movie_insertion": {
+    "version": "0.1.29",
+    "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
+    "scope": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
+    "live_playback": "pending"
+  },
+  "movie_intro_title_candidates": {
+    "status": "English intro stages retained in combined 0.1.29 movies; selected moving-title subtitles inserted, native playback pending",
+    "last_packaged_build": "0.1.29",
+    "movies": [
+      {
+        "movie": "MOV055.SFD",
+        "candidate": "work/output/movie-drafts/MOV055/intro-title-01/MOV055-english-candidate.SFD",
+        "sha256": "cfc2bc7f299ce513ad81d957c55617e716fa5133eef5a63672d1cd7852b2bd75",
+        "bytes": 22302720,
+        "source_sha256": "d2a8fe52bd4f0b3e70d7fec9299a2891ad244ddb7f68a479bd571ce8628e6518",
+        "recipe": "work/translation/en/movies/MOV055-intro-title.en.json",
+        "recipe_sha256": "8491ddb8ef25ad5d418a1d98c3cdc063ca9c308b481be11de0e19557437788b8",
+        "English_intro_interval": [
+          277,
+          309
+        ],
+        "English_intro_frames": 32,
+        "matched_indexed_source_frames": 32,
+        "source_boundary_witnesses": [
+          {
+            "index": 276,
+            "time": 9.209411,
+            "pts": 828847,
+            "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00276.png"
+          },
+          {
+            "index": 277,
+            "time": 9.242811,
+            "pts": 831853,
+            "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00277.png"
+          },
+          {
+            "index": 308,
+            "time": 10.277211,
+            "pts": 924949,
+            "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00308.png"
+          },
+          {
+            "index": 309,
+            "time": 10.310578,
+            "pts": 927952,
+            "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00309.png"
+          }
+        ],
+        "software_decoded_frames": 1840,
+        "original_ADX_and_decoded_PCM": "exact",
+        "source_schedule_occupancy": {
+          "all_coded_units_delivered": true,
+          "peak_compressed_bytes": 28252,
+          "limit_bytes": 47104,
+          "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+        },
+        "watchable_preview": {
+          "path": "work/output/movie-drafts/MOV055/intro-title-01/MOV055-title-preview.mp4",
+          "sha256": "7e6ca11a000aed51aa94f2b6d223386b19ce606758f17732371447fc38d4b7aa",
+          "audio": "AAC review copy; original ADX retained for native candidate"
+        },
+        "encoded_contacts_reviewed": [
+          {
+            "path": "work/ui/movies/MOV055/encoded-caption-review/intro-title-01/comparison-00.png",
+            "sha256": "7bdc1d64f775b86107692c82e7fda528cb9fd94949001074efc91c959775583f"
+          },
+          {
+            "path": "work/ui/movies/MOV055/encoded-caption-review/intro-title-01/comparison-01.png",
+            "sha256": "d7842ee7d96cb0d52418650de82e6418f393dbb9eebbc5708dfb9ce03caed12a"
+          }
+        ],
+        "encoded_witness_frames": 8,
+        "render_proof": "work/output/movie-drafts/MOV055/intro-title-01/render-report.json",
+        "mux_proof": "work/output/movie-drafts/MOV055/intro-title-01/sfd-candidate-report.json",
+        "decoded_proof": "work/output/movie-drafts/MOV055/intro-title-01/decoded-comparison.json",
+        "moving_art_title": "Original Japanese logo retained by selected A; English subtitle added in the combined 0.1.29 movie",
+        "in_game_build": true,
+        "native_playback": "pending",
+        "packaged_build": "0.1.24",
+        "disc": "work/output/0.1.24/disc/Rayblade English Test 0.1.24.gdi"
+      },
+      {
+        "movie": "MOV072.SFD",
+        "candidate": "work/output/movie-drafts/MOV072/captions-ui-titles-01/MOV072-captions-candidate.SFD",
+        "sha256": "934690028b33145a3cd855d34d49ad8d41590cd629336e71f8f0f0259f5936f4",
+        "bytes": 37392384,
+        "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+        "recipe": "work/translation/en/movies/MOV072-intro-title.en.json",
+        "recipe_sha256": "f4fb4cc78395804b10d8433c5f65976e9d99c2c18cd7cf8ab16d0be6ec57f33f",
+        "English_intro_interval": [
+          1417,
+          1449
+        ],
+        "English_intro_frames": 32,
+        "matched_indexed_source_frames": 32,
+        "source_boundary_witnesses": [
+          {
+            "index": 1416,
+            "time": 47.247444,
+            "pts": 4252270,
+            "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01416.png"
+          },
+          {
+            "index": 1417,
+            "time": 47.280844,
+            "pts": 4255276,
+            "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01417.png"
+          },
+          {
+            "index": 1448,
+            "time": 48.315244,
+            "pts": 4348372,
+            "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01448.png"
+          },
+          {
+            "index": 1449,
+            "time": 48.348611,
+            "pts": 4351375,
+            "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01449.png"
+          }
+        ],
+        "software_decoded_frames": 3084,
+        "original_ADX_and_decoded_PCM": "exact",
+        "source_schedule_occupancy": {
+          "all_coded_units_delivered": true,
+          "peak_compressed_bytes": 30079,
+          "limit_bytes": 47104,
+          "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+        },
+        "watchable_preview": {
+          "path": "work\\output\\movie-drafts\\MOV072\\captions-ui-titles-01\\MOV072-captions-preview.mp4",
+          "sha256": "60b181f3ac3dc27cbc576a6471dc4de92ade5184733135042aebe2b413de68f4",
+          "audio": "AAC preview copy; native original ADX retained separately"
+        },
+        "encoded_contacts_reviewed": [
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-00.png",
+            "sha256": "0d496e9b6c5a21e668efc465219cb4d9884a3167903b38ef1a5134785f0bc167"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-01.png",
+            "sha256": "994f7084241219070bc70138e3386c5a202e41e24f02a6c60d19f8f7197ea4c4"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-02.png",
+            "sha256": "a990b07a1728d8ce671ef88db237298d563bab8ad97092d6c540410fc778af9e"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-03.png",
+            "sha256": "60402b16f9233d686254af56e462bbd6dc0503c82314dfe5059188870e16feb5"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-04.png",
+            "sha256": "9139dbeb1598f22f6d1d2a4fa9c65d7a9bfdc74aefbdf69ed15a2726aa35cffd"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-05.png",
+            "sha256": "416ffc1c393596ac508d3820221e9bea735c66e8661e147abaa6f3e1e4e5221d"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-06.png",
+            "sha256": "dbed9542018dd6f42445440184a4972542eeb8b74a2597d335383bfaadf4a500"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-07.png",
+            "sha256": "dbf2acc55f20f9a8b66518205671d51d93eb6cdf8fdd14b4184c2ae279059bb2"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-01/comparison-08.png",
+            "sha256": "f646451b0f915929da5b085d549a45767b9a80dd2ab90d289870eff12a5c4c83"
+          }
+        ],
+        "encoded_witness_frames": 33,
+        "render_proof": "work/output/movie-drafts/MOV072/captions-ui-titles-01/render-report.json",
+        "mux_proof": "work/output/movie-drafts/MOV072/captions-ui-titles-01/sfd-candidate-report.json",
+        "decoded_proof": "work/output/movie-drafts/MOV072/captions-ui-titles-01/decoded-comparison.json",
+        "moving_art_title": "Original Japanese logo retained by selected A; English subtitle added in the combined 0.1.29 movie",
+        "in_game_build": true,
+        "native_playback": "pending",
+        "packaged_build": "0.1.24",
+        "disc": "work/output/0.1.24/disc/Rayblade English Test 0.1.24.gdi"
+      }
+    ],
+    "English_intro_frames_total": 64,
+    "complete_decoded_video_frames": 4924,
+    "encoded_contacts_reviewed": 11,
+    "encoded_witness_frames": 41,
+    "animation": "Shared rebuilt 2D English zoom/white-blue logo/rays/bloom, not the original 3D mesh",
+    "texture_dimensions": "320x192 output; largest intermediate 960x576; one uniform scale for complete wordmark",
+    "preservation_scope": "Pre-encoding source RGB is retained outside each intro interval; re-encoding the complete video is lossy",
+    "remaining": [
+      "Whole-motion/design and source-content/audio review",
+      "Native startup/completion/sync/skipping/looping checks",
+      "Whole-game translation/review, held passages and font/live validation remain incomplete"
+    ],
+    "story_library_draft_credit": 0,
+    "release": false,
+    "latest_combined_movie_build": {
+      "version": "0.1.29",
+      "source_build": "0.1.28",
+      "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
+      "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
+      "treatment": "A \u2014 Original artwork + English subtitle",
+      "user_selection": "Explicit user answer received 2026-10-23",
+      "movies": [
+        {
+          "movie": "MOV055.SFD",
+          "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451",
+          "source_interval": [
+            349,
+            409
+          ],
+          "subtitle_frames": 60,
+          "recipe": "work/translation/en/movies/MOV055-moving-title.en.json",
+          "recipe_sha256": "5e04805ab31c6ceab2659a6a8aaec6d83c4537f2a51c983cad1e72964bf5ca52",
+          "prepared_previews": [
+            "work/ui/movies/MOV055/moving-title-subtitle/comparison-00.png",
+            "work/ui/movies/MOV055/moving-title-subtitle/comparison-01.png",
+            "work/ui/movies/MOV055/moving-title-subtitle/comparison-02.png"
+          ],
+          "encoded_contacts_reviewed": [
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-00.png",
+              "sha256": "7bdc1d64f775b86107692c82e7fda528cb9fd94949001074efc91c959775583f"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-01.png",
+              "sha256": "d7842ee7d96cb0d52418650de82e6418f393dbb9eebbc5708dfb9ce03caed12a"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-02.png",
+              "sha256": "f44f8729d31f77a83d6d3b18c43de02e86d4ea34f6b00dc3fd9488317163b261"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-03.png",
+              "sha256": "17bb6c099714351494477adc51f5e96da7bd4ec6be567de3779ec26365ba5c16"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-04.png",
+              "sha256": "2c263b4cfabd931fafe6b9fa482970c52f58bd99391614d192d6928404e1a3bb"
+            }
+          ],
+          "encoded_witness_frames": [
+            277,
+            281,
+            285,
+            289,
+            293,
+            299,
+            303,
+            308,
+            349,
+            350,
+            352,
+            360,
+            375,
+            404,
+            405,
+            407,
+            408
+          ],
+          "software_frames": 1840,
+          "audio_PCM_exact": true,
+          "source_schedule": {
+            "all_coded_units_delivered": true,
+            "peak_compressed_bytes": 28252,
+            "limit_bytes": 47104,
+            "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+          }
+        },
+        {
+          "movie": "MOV072.SFD",
+          "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530",
+          "source_interval": [
+            1489,
+            1537
+          ],
+          "subtitle_frames": 48,
+          "recipe": "work/translation/en/movies/MOV072-moving-title.en.json",
+          "recipe_sha256": "4b1a4aff7bee8897c39515f71fd4c68151f2ceda7a5fd6f57dbea1de2d4db3ee",
+          "prepared_previews": [
+            "work/ui/movies/MOV072/moving-title-subtitle/comparison-00.png",
+            "work/ui/movies/MOV072/moving-title-subtitle/comparison-01.png",
+            "work/ui/movies/MOV072/moving-title-subtitle/comparison-02.png"
+          ],
+          "encoded_contacts_reviewed": [
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-00.png",
+              "sha256": "0d496e9b6c5a21e668efc465219cb4d9884a3167903b38ef1a5134785f0bc167"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-01.png",
+              "sha256": "994f7084241219070bc70138e3386c5a202e41e24f02a6c60d19f8f7197ea4c4"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-02.png",
+              "sha256": "42a54fcdf3a9cc6284c3588dde763bacfe1acc310a312080ce187c1b114a696a"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-03.png",
+              "sha256": "6187c73037808c716b20f4b5fca8388ce11a593bfc289438ac41f3998fc9c007"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-04.png",
+              "sha256": "16cbc95ca326b4f7d5a660712dc69aca42b12ce858b1dd61ee26359e8e044081"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-05.png",
+              "sha256": "14b5e7ff3baef25dde49a5f5f2b2e2e8d6f1ad3b2919f9574a0cfaad11fc1194"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-06.png",
+              "sha256": "4af6b60a6dce067d5b397181a262e894f44be893045dc65ac57ca5e01ebad060"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-07.png",
+              "sha256": "05b20c2eec3327b02aece67412e800905e249c220fd11abfea9ca8076e53e3f2"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-08.png",
+              "sha256": "fdedd03faf46e5ec757c5cdace6e67eba84daea905dac3217ea60676ec7a34c6"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-09.png",
+              "sha256": "a060957b0afbef90fe487ae488221e7bee7adb85360241ce73db96ac9ee3c50e"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-10.png",
+              "sha256": "4ecc8572050b2de4ed0da687c9987ed6b60b8287ff7205584387504a0dba3eaa"
+            }
+          ],
+          "encoded_witness_frames": [
+            1417,
+            1421,
+            1425,
+            1429,
+            1433,
+            1439,
+            1443,
+            1448,
+            1489,
+            1490,
+            1492,
+            1500,
+            1515,
+            1524,
+            1525,
+            1535,
+            1536,
+            1560,
+            1620,
+            1680,
+            1695,
+            1710,
+            1755,
+            1800,
+            1815,
+            1830,
+            1860,
+            1890,
+            1920,
+            2400,
+            2475,
+            2490,
+            2565,
+            2655,
+            2961,
+            2965,
+            2969,
+            2980,
+            3000,
+            3045,
+            3065,
+            3083
+          ],
+          "software_frames": 3084,
+          "audio_PCM_exact": true,
+          "source_schedule": {
+            "all_coded_units_delivered": true,
+            "peak_compressed_bytes": 30079,
+            "limit_bytes": 47104,
+            "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+          }
+        }
+      ],
+      "Japanese_logo_artwork": "Intentionally retained by the selected treatment; English title is added below",
+      "source_pixels_before_encoding": "Exact outside English subtitle/shadow strokes during moving-title intervals; prior English intro/caption/UI/ending treatments retained",
+      "subtitle_timing": "Opening [349,409), demo [1489,1537); separate fades/holds, not one fixed frame offset",
+      "font": "Supplied Latin bitmap at one uniform source scale; normal text font unchanged",
+      "software_movie_checks": {
+        "all_video_frames_and_order": 4924,
+        "original_ADX_and_decoded_PCM": "exact for both movies",
+        "encoded_witnesses_reviewed": 59,
+        "encoded_contact_sheets_reviewed": 16,
+        "new_subtitle_witnesses": 18,
+        "scope": "Software decoding/static witnesses and disc preservation; no native movie execution or full-motion review"
+      },
+      "packaging": {
+        "reextracted_files": "all 11 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "unrelated_track_bytes": "all unchanged",
+        "track_bytes_compared": 1188856032,
+        "audio_movie_sectors": "all 4041 original sectors exact",
+        "in_game": "pending"
+      },
+      "inherited_components": "All nine non-movie game payloads exact 0.1.28",
+      "historical_native_evidence": [
+        {
+          "file": "battle-english-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "918cf98a2028187eab3d5ba039cba2845c4326917b851add39d6743cccc1593e"
+        },
+        {
+          "file": "chapter-card-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "ba271f3ba7fbea899235f2be8a3290288a11198f42080682280c708fe170ca41"
+        },
+        {
+          "file": "embedded-dialogue-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "aaa30a6f8203e8f33d004a6a929086e9ddf64f429ca687137e891dcc9d6e74b7"
+        },
+        {
+          "file": "genei-font-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "6871b3789cfb4b39188634b84607cf483bfd2c1f84c28820d35ca686c7e86ea1"
+        },
+        {
+          "file": "genei-surface-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "36ed92ce64ed8215f758047bb2f870074628d6d28f9dc8bdd42e6bd7b4c5ecf0"
+        },
+        {
+          "file": "inline-control-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "06d99580641a42823880c90d3a46b7510d07e6b9ff24bdd76804b8b96dadc4e4"
+        },
+        {
+          "file": "library-header-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "e5d417a211b77735e1dc6f65c3b4c0f319918a1ee0a5df513570b58db0ae058f"
+        },
+        {
+          "file": "library-layout-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "b90921d7d6b1af2a23dd35ab96c4bf93f03fe8e94864e8dde125ee95adeb8a4f"
+        },
+        {
+          "file": "library-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "7da54d6a68ef4a019d76c0c55021b498bf5bf54c773198dcf3a6f0edeadcef66"
+        },
+        {
+          "file": "scenario-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "21ee65b177472d49774443237f9ff0d0d90ffcdd9dee13c4cb5160e28a1b50b5"
+        },
+        {
+          "file": "text-filter-native-test.json",
+          "actual_tested_build": "0.1.22",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "sha256": "781157b4ca86b0d911e5efa783f335d8e9ce2a1f536dd90f0e459a507cd77616"
+        },
+        {
+          "file": "ui-image-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "72ba210489272a6f1ba9a4b107a66b671dc0d551968c4ffec8e333d472afa58b"
+        },
+        {
+          "file": "ui-layout-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "b20a28c142e4703bb1f3dbd7bebd2237c37207cfb9a52e10a7048503ef9a0f01"
+        },
+        {
+          "file": "word-wrap-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "41d17c5c81adfe5b0c657cc5e513e2cc6a453de34d541b5bc91bdbb134aca305"
+        },
+        {
+          "file": "worldmap-native-test.json",
+          "sha256": "d24f7684f4a5116eeb3d0a40e91081d35e80f8358bd2534b8cbb5f6632ffa596",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "actual_tested_build": "0.1.24",
+          "scope": "World-map archive PRS/texture and structural checks; no live I/O or GPU proof"
+        },
+        {
+          "file": "credits-native-test.json",
+          "sha256": "846f18300ecc001dc2d3910f2d9e5f7340d8364f875627b3c3006054165ab068",
+          "actual_tested_build": "0.1.25",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "scope": "Historical image-archive decoding/structure report; original scope and limitations retained"
+        },
+        {
+          "file": "story-images-native-test.json",
+          "sha256": "6518230c874c6e73da086891f2bdc9d49388cc81cec80189d0c561606b0734c8",
+          "actual_tested_build": "0.1.26",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "scope": "Historical image-archive decoding/structure report; original scope and limitations retained"
+        },
+        {
+          "file": "album-captions-native-test.json",
+          "sha256": "4674380bc63cceabcad0136d4989deb95caec2f20bbf783ff5b3038006ddc129",
+          "actual_tested_build": "0.1.27",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "scope": "Historical album decoding/structure report; original scope and limitations retained"
+        }
+      ],
+      "new_changed_sectors": 332,
+      "changed_sector_locations_from_original": 28326,
+      "native_playback_checks": {
+        "MOV055.SFD": {
+          "startup": "pending",
+          "complete_video": "pending",
+          "English_title": "pending",
+          "audio_sync": "pending",
+          "skip": "pending",
+          "loop_or_return": "pending"
+        },
+        "MOV072.SFD": {
+          "startup": "pending",
+          "complete_video": "pending",
+          "English_title": "pending",
+          "audio_sync": "pending",
+          "skip": "pending",
+          "loop_or_return": "pending"
+        }
+      },
+      "remaining": [
+        "Two unclear album captions and independent caption meaning/context review",
+        "Album full-size pictured note and Japanese New Year artwork plus matching thumbnail images",
+        "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+        "Live relocated letter-archive loading, image selection and appearance",
+        "Paper-estimate artwork review and development-placeholder reachability",
+        "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+        "Seven credit-name readings and independent confirmation of reference romanizations",
+        "Live credit timing/order, appearance, alignment and overlaps",
+        "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+        "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+        "Full-motion/design/content/audio and independent translation review",
+        "Held passages, live font/UI/library/battle/save/load and full-game validation"
+      ],
+      "normal_text_font_changed": false,
+      "release": false,
+      "story_library_draft_credit": 0
+    }
+  },
+  "moving_title_artwork": {
+    "status": "Recovery study retained as historical evidence; user selected original artwork plus English subtitle, now packaged in 0.1.29",
+    "analysis": "work/ui/movies/MOV072/background-recovery/analysis.json",
+    "analysis_sha256": "68ae2f676c24bf9470d7994094ad6031dfec6687e1bcda0b6bc27b403ddb90dc",
+    "methods": [
+      "SIFT ratio correspondences",
+      "Forward/backward Lucas-Kanade background tracking",
+      "Affine RANSAC with held-out geometric errors",
+      "Visible-region robust per-channel color fit"
+    ],
+    "coverage": [
+      {
+        "target_frame": 1491,
+        "mask_pixels": 4001,
+        "source_estimate_pixels": 0,
+        "unresolved_pixels": 4001,
+        "source_estimate_fraction": 0.0,
+        "accepted_registrations": 0
+      },
+      {
+        "target_frame": 1499,
+        "mask_pixels": 19481,
+        "source_estimate_pixels": 8918,
+        "unresolved_pixels": 10563,
+        "source_estimate_fraction": 0.45778,
+        "accepted_registrations": 2
+      },
+      {
+        "target_frame": 1507,
+        "mask_pixels": 33263,
+        "source_estimate_pixels": 4535,
+        "unresolved_pixels": 28728,
+        "source_estimate_fraction": 0.13634,
+        "accepted_registrations": 2
+      },
+      {
+        "target_frame": 1515,
+        "mask_pixels": 33263,
+        "source_estimate_pixels": 6086,
+        "unresolved_pixels": 27177,
+        "source_estimate_fraction": 0.18297,
+        "accepted_registrations": 5
+      },
+      {
+        "target_frame": 1523,
+        "mask_pixels": 32549,
+        "source_estimate_pixels": 2926,
+        "unresolved_pixels": 29623,
+        "source_estimate_fraction": 0.0899,
+        "accepted_registrations": 4
+      },
+      {
+        "target_frame": 1531,
+        "mask_pixels": 32549,
+        "source_estimate_pixels": 1413,
+        "unresolved_pixels": 31136,
+        "source_estimate_fraction": 0.04341,
+        "accepted_registrations": 5
+      }
+    ],
+    "best_estimated_mask_fraction": 0.45778,
+    "acceptance_scope": "Accepted warps estimate some hidden pixels; they do not prove those pixels equal the hidden original artwork",
+    "visual_review": "Both diagnostic sheets and both static treatment comparisons inspected",
+    "no_game_movie_edits": true,
+    "treatment_options": {
+      "status": "Unselected artwork-treatment comparisons; no movie/game change",
+      "comparisons": [
+        {
+          "movie": "MOV055",
+          "frame": 375,
+          "source_file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00375.png",
+          "source_sha256": "e0c1f0ac24597b8241f533ab7ea16ff6f5d664472d67b2dec8e48e2df5187300",
+          "comparison": "work/ui/movies/title-treatment-options/MOV055-comparison.png",
+          "sha256": "b7e9089f8e7caaee3df78f9774e823a5d5e2034e567d7d6f456514e0a5a06bb0"
+        },
+        {
+          "movie": "MOV072",
+          "frame": 1515,
+          "source_file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01515.png",
+          "source_sha256": "683c86d2b7ed0dfa66295b7119929e2fd7b7894d483037a1d958671c83453818",
+          "comparison": "work/ui/movies/title-treatment-options/MOV072-comparison.png",
+          "sha256": "6ce298d82fef332672af4b898db1cdad07205931b33f13f61c3f15e0506a554c"
+        }
+      ],
+      "A": "Original Japanese title artwork retained, English title added below at one common source font scale",
+      "B": "English wordmark on an opaque plaque, covering the original logo and underlying mech pixels in its rectangle",
+      "scope": "Two static design witnesses; timing/animation and final treatment not selected",
+      "game_build_changed": false,
+      "native_playback": "pending"
+    },
+    "user_preference": {
+      "choice": "A",
+      "treatment": "A \u2014 Original artwork + English subtitle",
+      "source": "Explicit user answer received 2026-10-23"
+    },
+    "limits": [
+      "Template exclusion masks need pixel review",
+      "Visible-pixel registration does not prove accuracy behind opaque lettering",
+      "An affine scene model may fail for a rotating/deforming three-dimensional mech",
+      "No guessed/spatial/generative fills; unresolved pixels remain magenta",
+      "No game/video changes"
+    ],
+    "next_work": [
+      "Native movie playback/sync/skip/loop/return and full-motion design/content review"
+    ],
+    "story_library_draft_credit": 0,
+    "current_treatment": {
+      "version": "0.1.29",
+      "source_build": "0.1.28",
+      "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
+      "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
+      "treatment": "A \u2014 Original artwork + English subtitle",
+      "user_selection": "Explicit user answer received 2026-10-23",
+      "movies": [
+        {
+          "movie": "MOV055.SFD",
+          "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451",
+          "source_interval": [
+            349,
+            409
+          ],
+          "subtitle_frames": 60,
+          "recipe": "work/translation/en/movies/MOV055-moving-title.en.json",
+          "recipe_sha256": "5e04805ab31c6ceab2659a6a8aaec6d83c4537f2a51c983cad1e72964bf5ca52",
+          "prepared_previews": [
+            "work/ui/movies/MOV055/moving-title-subtitle/comparison-00.png",
+            "work/ui/movies/MOV055/moving-title-subtitle/comparison-01.png",
+            "work/ui/movies/MOV055/moving-title-subtitle/comparison-02.png"
+          ],
+          "encoded_contacts_reviewed": [
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-00.png",
+              "sha256": "7bdc1d64f775b86107692c82e7fda528cb9fd94949001074efc91c959775583f"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-01.png",
+              "sha256": "d7842ee7d96cb0d52418650de82e6418f393dbb9eebbc5708dfb9ce03caed12a"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-02.png",
+              "sha256": "f44f8729d31f77a83d6d3b18c43de02e86d4ea34f6b00dc3fd9488317163b261"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-03.png",
+              "sha256": "17bb6c099714351494477adc51f5e96da7bd4ec6be567de3779ec26365ba5c16"
+            },
+            {
+              "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-04.png",
+              "sha256": "2c263b4cfabd931fafe6b9fa482970c52f58bd99391614d192d6928404e1a3bb"
+            }
+          ],
+          "encoded_witness_frames": [
+            277,
+            281,
+            285,
+            289,
+            293,
+            299,
+            303,
+            308,
+            349,
+            350,
+            352,
+            360,
+            375,
+            404,
+            405,
+            407,
+            408
+          ],
+          "software_frames": 1840,
+          "audio_PCM_exact": true,
+          "source_schedule": {
+            "all_coded_units_delivered": true,
+            "peak_compressed_bytes": 28252,
+            "limit_bytes": 47104,
+            "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+          }
+        },
+        {
+          "movie": "MOV072.SFD",
+          "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530",
+          "source_interval": [
+            1489,
+            1537
+          ],
+          "subtitle_frames": 48,
+          "recipe": "work/translation/en/movies/MOV072-moving-title.en.json",
+          "recipe_sha256": "4b1a4aff7bee8897c39515f71fd4c68151f2ceda7a5fd6f57dbea1de2d4db3ee",
+          "prepared_previews": [
+            "work/ui/movies/MOV072/moving-title-subtitle/comparison-00.png",
+            "work/ui/movies/MOV072/moving-title-subtitle/comparison-01.png",
+            "work/ui/movies/MOV072/moving-title-subtitle/comparison-02.png"
+          ],
+          "encoded_contacts_reviewed": [
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-00.png",
+              "sha256": "0d496e9b6c5a21e668efc465219cb4d9884a3167903b38ef1a5134785f0bc167"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-01.png",
+              "sha256": "994f7084241219070bc70138e3386c5a202e41e24f02a6c60d19f8f7197ea4c4"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-02.png",
+              "sha256": "42a54fcdf3a9cc6284c3588dde763bacfe1acc310a312080ce187c1b114a696a"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-03.png",
+              "sha256": "6187c73037808c716b20f4b5fca8388ce11a593bfc289438ac41f3998fc9c007"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-04.png",
+              "sha256": "16cbc95ca326b4f7d5a660712dc69aca42b12ce858b1dd61ee26359e8e044081"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-05.png",
+              "sha256": "14b5e7ff3baef25dde49a5f5f2b2e2e8d6f1ad3b2919f9574a0cfaad11fc1194"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-06.png",
+              "sha256": "4af6b60a6dce067d5b397181a262e894f44be893045dc65ac57ca5e01ebad060"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-07.png",
+              "sha256": "05b20c2eec3327b02aece67412e800905e249c220fd11abfea9ca8076e53e3f2"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-08.png",
+              "sha256": "fdedd03faf46e5ec757c5cdace6e67eba84daea905dac3217ea60676ec7a34c6"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-09.png",
+              "sha256": "a060957b0afbef90fe487ae488221e7bee7adb85360241ce73db96ac9ee3c50e"
+            },
+            {
+              "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-10.png",
+              "sha256": "4ecc8572050b2de4ed0da687c9987ed6b60b8287ff7205584387504a0dba3eaa"
+            }
+          ],
+          "encoded_witness_frames": [
+            1417,
+            1421,
+            1425,
+            1429,
+            1433,
+            1439,
+            1443,
+            1448,
+            1489,
+            1490,
+            1492,
+            1500,
+            1515,
+            1524,
+            1525,
+            1535,
+            1536,
+            1560,
+            1620,
+            1680,
+            1695,
+            1710,
+            1755,
+            1800,
+            1815,
+            1830,
+            1860,
+            1890,
+            1920,
+            2400,
+            2475,
+            2490,
+            2565,
+            2655,
+            2961,
+            2965,
+            2969,
+            2980,
+            3000,
+            3045,
+            3065,
+            3083
+          ],
+          "software_frames": 3084,
+          "audio_PCM_exact": true,
+          "source_schedule": {
+            "all_coded_units_delivered": true,
+            "peak_compressed_bytes": 30079,
+            "limit_bytes": 47104,
+            "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+          }
+        }
+      ],
+      "Japanese_logo_artwork": "Intentionally retained by the selected treatment; English title is added below",
+      "source_pixels_before_encoding": "Exact outside English subtitle/shadow strokes during moving-title intervals; prior English intro/caption/UI/ending treatments retained",
+      "subtitle_timing": "Opening [349,409), demo [1489,1537); separate fades/holds, not one fixed frame offset",
+      "font": "Supplied Latin bitmap at one uniform source scale; normal text font unchanged",
+      "software_movie_checks": {
+        "all_video_frames_and_order": 4924,
+        "original_ADX_and_decoded_PCM": "exact for both movies",
+        "encoded_witnesses_reviewed": 59,
+        "encoded_contact_sheets_reviewed": 16,
+        "new_subtitle_witnesses": 18,
+        "scope": "Software decoding/static witnesses and disc preservation; no native movie execution or full-motion review"
+      },
+      "packaging": {
+        "reextracted_files": "all 11 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "unrelated_track_bytes": "all unchanged",
+        "track_bytes_compared": 1188856032,
+        "audio_movie_sectors": "all 4041 original sectors exact",
+        "in_game": "pending"
+      },
+      "inherited_components": "All nine non-movie game payloads exact 0.1.28",
+      "historical_native_evidence": [
+        {
+          "file": "battle-english-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "918cf98a2028187eab3d5ba039cba2845c4326917b851add39d6743cccc1593e"
+        },
+        {
+          "file": "chapter-card-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "ba271f3ba7fbea899235f2be8a3290288a11198f42080682280c708fe170ca41"
+        },
+        {
+          "file": "embedded-dialogue-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "aaa30a6f8203e8f33d004a6a929086e9ddf64f429ca687137e891dcc9d6e74b7"
+        },
+        {
+          "file": "genei-font-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "6871b3789cfb4b39188634b84607cf483bfd2c1f84c28820d35ca686c7e86ea1"
+        },
+        {
+          "file": "genei-surface-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "36ed92ce64ed8215f758047bb2f870074628d6d28f9dc8bdd42e6bd7b4c5ecf0"
+        },
+        {
+          "file": "inline-control-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "06d99580641a42823880c90d3a46b7510d07e6b9ff24bdd76804b8b96dadc4e4"
+        },
+        {
+          "file": "library-header-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "e5d417a211b77735e1dc6f65c3b4c0f319918a1ee0a5df513570b58db0ae058f"
+        },
+        {
+          "file": "library-layout-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "b90921d7d6b1af2a23dd35ab96c4bf93f03fe8e94864e8dde125ee95adeb8a4f"
+        },
+        {
+          "file": "library-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "7da54d6a68ef4a019d76c0c55021b498bf5bf54c773198dcf3a6f0edeadcef66"
+        },
+        {
+          "file": "scenario-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "21ee65b177472d49774443237f9ff0d0d90ffcdd9dee13c4cb5160e28a1b50b5"
+        },
+        {
+          "file": "text-filter-native-test.json",
+          "actual_tested_build": "0.1.22",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "sha256": "781157b4ca86b0d911e5efa783f335d8e9ce2a1f536dd90f0e459a507cd77616"
+        },
+        {
+          "file": "ui-image-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "72ba210489272a6f1ba9a4b107a66b671dc0d551968c4ffec8e333d472afa58b"
+        },
+        {
+          "file": "ui-layout-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "b20a28c142e4703bb1f3dbd7bebd2237c37207cfb9a52e10a7048503ef9a0f01"
+        },
+        {
+          "file": "word-wrap-native-test.json",
+          "actual_tested_build": "0.1.21",
+          "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+          "sha256": "41d17c5c81adfe5b0c657cc5e513e2cc6a453de34d541b5bc91bdbb134aca305"
+        },
+        {
+          "file": "worldmap-native-test.json",
+          "sha256": "d24f7684f4a5116eeb3d0a40e91081d35e80f8358bd2534b8cbb5f6632ffa596",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "actual_tested_build": "0.1.24",
+          "scope": "World-map archive PRS/texture and structural checks; no live I/O or GPU proof"
+        },
+        {
+          "file": "credits-native-test.json",
+          "sha256": "846f18300ecc001dc2d3910f2d9e5f7340d8364f875627b3c3006054165ab068",
+          "actual_tested_build": "0.1.25",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "scope": "Historical image-archive decoding/structure report; original scope and limitations retained"
+        },
+        {
+          "file": "story-images-native-test.json",
+          "sha256": "6518230c874c6e73da086891f2bdc9d49388cc81cec80189d0c561606b0734c8",
+          "actual_tested_build": "0.1.26",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "scope": "Historical image-archive decoding/structure report; original scope and limitations retained"
+        },
+        {
+          "file": "album-captions-native-test.json",
+          "sha256": "4674380bc63cceabcad0136d4989deb95caec2f20bbf783ff5b3038006ddc129",
+          "actual_tested_build": "0.1.27",
+          "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+          "scope": "Historical album decoding/structure report; original scope and limitations retained"
+        }
+      ],
+      "new_changed_sectors": 332,
+      "changed_sector_locations_from_original": 28326,
+      "native_playback_checks": {
+        "MOV055.SFD": {
+          "startup": "pending",
+          "complete_video": "pending",
+          "English_title": "pending",
+          "audio_sync": "pending",
+          "skip": "pending",
+          "loop_or_return": "pending"
+        },
+        "MOV072.SFD": {
+          "startup": "pending",
+          "complete_video": "pending",
+          "English_title": "pending",
+          "audio_sync": "pending",
+          "skip": "pending",
+          "loop_or_return": "pending"
+        }
+      },
+      "remaining": [
+        "Two unclear album captions and independent caption meaning/context review",
+        "Album full-size pictured note and Japanese New Year artwork plus matching thumbnail images",
+        "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+        "Live relocated letter-archive loading, image selection and appearance",
+        "Paper-estimate artwork review and development-placeholder reachability",
+        "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+        "Seven credit-name readings and independent confirmation of reference romanizations",
+        "Live credit timing/order, appearance, alignment and overlaps",
+        "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+        "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+        "Full-motion/design/content/audio and independent translation review",
+        "Held passages, live font/UI/library/battle/save/load and full-game validation"
+      ],
+      "normal_text_font_changed": false,
+      "release": false,
+      "story_library_draft_credit": 0
+    },
+    "no_game_movie_edits_scope": "The recovery analysis and original static comparisons made no game edits; the separately recorded selected treatment now does."
+  },
+  "selected_moving_title_build": {
+    "version": "0.1.29",
+    "source_build": "0.1.28",
+    "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
+    "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
+    "treatment": "A \u2014 Original artwork + English subtitle",
+    "user_selection": "Explicit user answer received 2026-10-23",
+    "movies": [
+      {
+        "movie": "MOV055.SFD",
+        "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451",
+        "source_interval": [
+          349,
+          409
+        ],
+        "subtitle_frames": 60,
+        "recipe": "work/translation/en/movies/MOV055-moving-title.en.json",
+        "recipe_sha256": "5e04805ab31c6ceab2659a6a8aaec6d83c4537f2a51c983cad1e72964bf5ca52",
+        "prepared_previews": [
+          "work/ui/movies/MOV055/moving-title-subtitle/comparison-00.png",
+          "work/ui/movies/MOV055/moving-title-subtitle/comparison-01.png",
+          "work/ui/movies/MOV055/moving-title-subtitle/comparison-02.png"
+        ],
+        "encoded_contacts_reviewed": [
+          {
+            "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-00.png",
+            "sha256": "7bdc1d64f775b86107692c82e7fda528cb9fd94949001074efc91c959775583f"
+          },
+          {
+            "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-01.png",
+            "sha256": "d7842ee7d96cb0d52418650de82e6418f393dbb9eebbc5708dfb9ce03caed12a"
+          },
+          {
+            "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-02.png",
+            "sha256": "f44f8729d31f77a83d6d3b18c43de02e86d4ea34f6b00dc3fd9488317163b261"
+          },
+          {
+            "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-03.png",
+            "sha256": "17bb6c099714351494477adc51f5e96da7bd4ec6be567de3779ec26365ba5c16"
+          },
+          {
+            "path": "work/ui/movies/MOV055/encoded-caption-review/intro-moving-subtitle-01/comparison-04.png",
+            "sha256": "2c263b4cfabd931fafe6b9fa482970c52f58bd99391614d192d6928404e1a3bb"
+          }
+        ],
+        "encoded_witness_frames": [
+          277,
+          281,
+          285,
+          289,
+          293,
+          299,
+          303,
+          308,
+          349,
+          350,
+          352,
+          360,
+          375,
+          404,
+          405,
+          407,
+          408
+        ],
+        "software_frames": 1840,
+        "audio_PCM_exact": true,
+        "source_schedule": {
+          "all_coded_units_delivered": true,
+          "peak_compressed_bytes": 28252,
+          "limit_bytes": 47104,
+          "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+        }
+      },
+      {
+        "movie": "MOV072.SFD",
+        "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530",
+        "source_interval": [
+          1489,
+          1537
+        ],
+        "subtitle_frames": 48,
+        "recipe": "work/translation/en/movies/MOV072-moving-title.en.json",
+        "recipe_sha256": "4b1a4aff7bee8897c39515f71fd4c68151f2ceda7a5fd6f57dbea1de2d4db3ee",
+        "prepared_previews": [
+          "work/ui/movies/MOV072/moving-title-subtitle/comparison-00.png",
+          "work/ui/movies/MOV072/moving-title-subtitle/comparison-01.png",
+          "work/ui/movies/MOV072/moving-title-subtitle/comparison-02.png"
+        ],
+        "encoded_contacts_reviewed": [
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-00.png",
+            "sha256": "0d496e9b6c5a21e668efc465219cb4d9884a3167903b38ef1a5134785f0bc167"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-01.png",
+            "sha256": "994f7084241219070bc70138e3386c5a202e41e24f02a6c60d19f8f7197ea4c4"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-02.png",
+            "sha256": "42a54fcdf3a9cc6284c3588dde763bacfe1acc310a312080ce187c1b114a696a"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-03.png",
+            "sha256": "6187c73037808c716b20f4b5fca8388ce11a593bfc289438ac41f3998fc9c007"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-04.png",
+            "sha256": "16cbc95ca326b4f7d5a660712dc69aca42b12ce858b1dd61ee26359e8e044081"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-05.png",
+            "sha256": "14b5e7ff3baef25dde49a5f5f2b2e2e8d6f1ad3b2919f9574a0cfaad11fc1194"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-06.png",
+            "sha256": "4af6b60a6dce067d5b397181a262e894f44be893045dc65ac57ca5e01ebad060"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-07.png",
+            "sha256": "05b20c2eec3327b02aece67412e800905e249c220fd11abfea9ca8076e53e3f2"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-08.png",
+            "sha256": "fdedd03faf46e5ec757c5cdace6e67eba84daea905dac3217ea60676ec7a34c6"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-09.png",
+            "sha256": "a060957b0afbef90fe487ae488221e7bee7adb85360241ce73db96ac9ee3c50e"
+          },
+          {
+            "path": "work/ui/movies/MOV072/encoded-caption-review/captions-ui-titles-subtitle-01/comparison-10.png",
+            "sha256": "4ecc8572050b2de4ed0da687c9987ed6b60b8287ff7205584387504a0dba3eaa"
+          }
+        ],
+        "encoded_witness_frames": [
+          1417,
+          1421,
+          1425,
+          1429,
+          1433,
+          1439,
+          1443,
+          1448,
+          1489,
+          1490,
+          1492,
+          1500,
+          1515,
+          1524,
+          1525,
+          1535,
+          1536,
+          1560,
+          1620,
+          1680,
+          1695,
+          1710,
+          1755,
+          1800,
+          1815,
+          1830,
+          1860,
+          1890,
+          1920,
+          2400,
+          2475,
+          2490,
+          2565,
+          2655,
+          2961,
+          2965,
+          2969,
+          2980,
+          3000,
+          3045,
+          3065,
+          3083
+        ],
+        "software_frames": 3084,
+        "audio_PCM_exact": true,
+        "source_schedule": {
+          "all_coded_units_delivered": true,
+          "peak_compressed_bytes": 30079,
+          "limit_bytes": 47104,
+          "scope": "Occupancy against original coded-unit delivery sectors; not an MPEG STD/VBV simulator"
+        }
+      }
+    ],
+    "Japanese_logo_artwork": "Intentionally retained by the selected treatment; English title is added below",
+    "source_pixels_before_encoding": "Exact outside English subtitle/shadow strokes during moving-title intervals; prior English intro/caption/UI/ending treatments retained",
+    "subtitle_timing": "Opening [349,409), demo [1489,1537); separate fades/holds, not one fixed frame offset",
+    "font": "Supplied Latin bitmap at one uniform source scale; normal text font unchanged",
+    "software_movie_checks": {
+      "all_video_frames_and_order": 4924,
+      "original_ADX_and_decoded_PCM": "exact for both movies",
+      "encoded_witnesses_reviewed": 59,
+      "encoded_contact_sheets_reviewed": 16,
+      "new_subtitle_witnesses": 18,
+      "scope": "Software decoding/static witnesses and disc preservation; no native movie execution or full-motion review"
+    },
+    "packaging": {
+      "reextracted_files": "all 11 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "inherited_components": "All nine non-movie game payloads exact 0.1.28",
+    "historical_native_evidence": [
+      {
+        "file": "battle-english-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "918cf98a2028187eab3d5ba039cba2845c4326917b851add39d6743cccc1593e"
+      },
+      {
+        "file": "chapter-card-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "ba271f3ba7fbea899235f2be8a3290288a11198f42080682280c708fe170ca41"
+      },
+      {
+        "file": "embedded-dialogue-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "aaa30a6f8203e8f33d004a6a929086e9ddf64f429ca687137e891dcc9d6e74b7"
+      },
+      {
+        "file": "genei-font-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "6871b3789cfb4b39188634b84607cf483bfd2c1f84c28820d35ca686c7e86ea1"
+      },
+      {
+        "file": "genei-surface-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "36ed92ce64ed8215f758047bb2f870074628d6d28f9dc8bdd42e6bd7b4c5ecf0"
+      },
+      {
+        "file": "inline-control-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "06d99580641a42823880c90d3a46b7510d07e6b9ff24bdd76804b8b96dadc4e4"
+      },
+      {
+        "file": "library-header-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "e5d417a211b77735e1dc6f65c3b4c0f319918a1ee0a5df513570b58db0ae058f"
+      },
+      {
+        "file": "library-layout-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "b90921d7d6b1af2a23dd35ab96c4bf93f03fe8e94864e8dde125ee95adeb8a4f"
+      },
+      {
+        "file": "library-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "7da54d6a68ef4a019d76c0c55021b498bf5bf54c773198dcf3a6f0edeadcef66"
+      },
+      {
+        "file": "scenario-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "21ee65b177472d49774443237f9ff0d0d90ffcdd9dee13c4cb5160e28a1b50b5"
+      },
+      {
+        "file": "text-filter-native-test.json",
+        "actual_tested_build": "0.1.22",
+        "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+        "sha256": "781157b4ca86b0d911e5efa783f335d8e9ce2a1f536dd90f0e459a507cd77616"
+      },
+      {
+        "file": "ui-image-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "72ba210489272a6f1ba9a4b107a66b671dc0d551968c4ffec8e333d472afa58b"
+      },
+      {
+        "file": "ui-layout-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "b20a28c142e4703bb1f3dbd7bebd2237c37207cfb9a52e10a7048503ef9a0f01"
+      },
+      {
+        "file": "word-wrap-native-test.json",
+        "actual_tested_build": "0.1.21",
+        "executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+        "sha256": "41d17c5c81adfe5b0c657cc5e513e2cc6a453de34d541b5bc91bdbb134aca305"
+      },
+      {
+        "file": "worldmap-native-test.json",
+        "sha256": "d24f7684f4a5116eeb3d0a40e91081d35e80f8358bd2534b8cbb5f6632ffa596",
+        "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+        "actual_tested_build": "0.1.24",
+        "scope": "World-map archive PRS/texture and structural checks; no live I/O or GPU proof"
+      },
+      {
+        "file": "credits-native-test.json",
+        "sha256": "846f18300ecc001dc2d3910f2d9e5f7340d8364f875627b3c3006054165ab068",
+        "actual_tested_build": "0.1.25",
+        "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+        "scope": "Historical image-archive decoding/structure report; original scope and limitations retained"
+      },
+      {
+        "file": "story-images-native-test.json",
+        "sha256": "6518230c874c6e73da086891f2bdc9d49388cc81cec80189d0c561606b0734c8",
+        "actual_tested_build": "0.1.26",
+        "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+        "scope": "Historical image-archive decoding/structure report; original scope and limitations retained"
+      },
+      {
+        "file": "album-captions-native-test.json",
+        "sha256": "4674380bc63cceabcad0136d4989deb95caec2f20bbf783ff5b3038006ddc129",
+        "actual_tested_build": "0.1.27",
+        "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+        "scope": "Historical album decoding/structure report; original scope and limitations retained"
+      }
+    ],
+    "new_changed_sectors": 332,
+    "changed_sector_locations_from_original": 28326,
+    "native_playback_checks": {
+      "MOV055.SFD": {
+        "startup": "pending",
+        "complete_video": "pending",
+        "English_title": "pending",
+        "audio_sync": "pending",
+        "skip": "pending",
+        "loop_or_return": "pending"
+      },
+      "MOV072.SFD": {
+        "startup": "pending",
+        "complete_video": "pending",
+        "English_title": "pending",
+        "audio_sync": "pending",
+        "skip": "pending",
+        "loop_or_return": "pending"
+      }
+    },
+    "remaining": [
+      "Two unclear album captions and independent caption meaning/context review",
+      "Album full-size pictured note and Japanese New Year artwork plus matching thumbnail images",
+      "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+      "Live relocated letter-archive loading, image selection and appearance",
+      "Paper-estimate artwork review and development-placeholder reachability",
+      "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+      "Seven credit-name readings and independent confirmation of reference romanizations",
+      "Live credit timing/order, appearance, alignment and overlaps",
+      "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+      "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+      "Full-motion/design/content/audio and independent translation review",
+      "Held passages, live font/UI/library/battle/save/load and full-game validation"
+    ],
+    "normal_text_font_changed": false,
+    "release": false,
+    "story_library_draft_credit": 0
+  }
+}

@@ -1,0 +1,604 @@
+{
+  "version": "0.1.20",
+  "source": "Original WIN00.AFS sprite/PVR pairs 1/2, 5/6, 87/88",
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_scale": {
+    "medium": "uniform 1/2 source scale (12-pixel cell height)",
+    "icon_and_tab": "uniform 1/3 source scale (8-pixel cell height)",
+    "small_red": "uniform 1/4 source scale (6-pixel cell height), retaining red event-label color"
+  },
+  "notes": [
+    "Ctr/Sup/Def are compact display labels for Counterattack/Resupply/Defend in 16-pixel icon cells; Nil means None",
+    "Small labels retain source stroke coverage per uniformly scaled block and use one-pixel letter gaps; glyphs are padded, never stretched",
+    "Gen and Xiujian follow the short labels printed in the original atlas",
+    "Sprite 107 reuses the Barrier half of sprite 94; both keep the same translated pixels",
+    "Image text does not add story/library draft credit"
+  ],
+  "rows": [
+    {
+      "id": "win00.01.059",
+      "texture_member": 2,
+      "sprite": 59,
+      "source_box": [
+        32,
+        88,
+        48,
+        104
+      ],
+      "source_pixels_sha256": "10cbf866665d5b1d87f76c24a97d2eb1427fc9212e9bf37ca3231a6e580b545c",
+      "en": "Ctr",
+      "style": "icon",
+      "meaning": "Counterattack"
+    },
+    {
+      "id": "win00.01.060",
+      "texture_member": 2,
+      "sprite": 60,
+      "source_box": [
+        48,
+        88,
+        64,
+        104
+      ],
+      "source_pixels_sha256": "549e6d8359bb1ea127ca6ca5adf5eb8351d20910a01215bcc15d373a7249f249",
+      "en": "Sup",
+      "style": "icon",
+      "meaning": "Resupply"
+    },
+    {
+      "id": "win00.01.061",
+      "texture_member": 2,
+      "sprite": 61,
+      "source_box": [
+        64,
+        88,
+        80,
+        104
+      ],
+      "source_pixels_sha256": "9d421a5bc9153cbfeacd7c72718a855dda705a33d0f53812a1891c4f42b12f74",
+      "en": "Nil",
+      "style": "icon",
+      "meaning": "None"
+    },
+    {
+      "id": "win00.01.062",
+      "texture_member": 2,
+      "sprite": 62,
+      "source_box": [
+        80,
+        88,
+        96,
+        104
+      ],
+      "source_pixels_sha256": "2107bca901f664e647081b2cd73fc057a61321ad81f7d3d74c94a5fe2f4502a8",
+      "en": "Def",
+      "style": "icon",
+      "meaning": "Defend"
+    },
+    {
+      "id": "win00.01.057",
+      "texture_member": 2,
+      "sprite": 57,
+      "source_box": [
+        0,
+        72,
+        24,
+        88
+      ],
+      "source_pixels_sha256": "d9b2ec55a0a6c5eb4c79b0a8f39c2e62471faa1ed425acaef7b6b77d520a5aaf",
+      "en": "Prana",
+      "style": "medium",
+      "meaning": "Prana"
+    },
+    {
+      "id": "win00.05.059",
+      "texture_member": 6,
+      "sprite": 59,
+      "source_box": [
+        104,
+        48,
+        120,
+        64
+      ],
+      "source_pixels_sha256": "95912f72419916e4783b6708065176638b72b4ddd9dbb0e38d52129c72378d68",
+      "en": "Ctr",
+      "style": "icon",
+      "meaning": "Counterattack"
+    },
+    {
+      "id": "win00.05.060",
+      "texture_member": 6,
+      "sprite": 60,
+      "source_box": [
+        120,
+        48,
+        136,
+        64
+      ],
+      "source_pixels_sha256": "186c6824c3ebc13408a42f5ec5b0ff4f9aed880741d7a8cac1857ad72660cf87",
+      "en": "Sup",
+      "style": "icon",
+      "meaning": "Resupply"
+    },
+    {
+      "id": "win00.05.061",
+      "texture_member": 6,
+      "sprite": 61,
+      "source_box": [
+        200,
+        32,
+        216,
+        48
+      ],
+      "source_pixels_sha256": "a496d03928259d365340ac673068bf6848585252986bda1e461e4603731a0009",
+      "en": "Nil",
+      "style": "icon",
+      "meaning": "None"
+    },
+    {
+      "id": "win00.05.062",
+      "texture_member": 6,
+      "sprite": 62,
+      "source_box": [
+        216,
+        32,
+        232,
+        48
+      ],
+      "source_pixels_sha256": "25e6bccee157c3533ac50c49b7a2c0ac664e1f00719a286fbb2f2d912bc744ca",
+      "en": "Def",
+      "style": "icon",
+      "meaning": "Defend"
+    },
+    {
+      "id": "win00.05.057",
+      "texture_member": 6,
+      "sprite": 57,
+      "source_box": [
+        230,
+        64,
+        254,
+        80
+      ],
+      "source_pixels_sha256": "d9b2ec55a0a6c5eb4c79b0a8f39c2e62471faa1ed425acaef7b6b77d520a5aaf",
+      "en": "Prana",
+      "style": "medium",
+      "meaning": "Prana"
+    },
+    {
+      "id": "win00.05.116",
+      "texture_member": 6,
+      "sprite": 116,
+      "source_box": [
+        16,
+        72,
+        41,
+        80
+      ],
+      "source_pixels_sha256": "b8cf46babac20c500362697450491b4e4b204ab9b5c7d2a2c9971bf4746ef95d",
+      "en": "EVENT",
+      "style": "small_red",
+      "meaning": "Event"
+    },
+    {
+      "id": "win00.05.089",
+      "texture_member": 6,
+      "sprite": 89,
+      "source_box": [
+        0,
+        96,
+        72,
+        112
+      ],
+      "source_pixels_sha256": "2aaaec3b464e5f7dc5f8f73bce2a697287c3a2a0ee712e40620fd207ab9d0561",
+      "en": "Critical",
+      "style": "medium",
+      "meaning": "Critical"
+    },
+    {
+      "id": "win00.05.090",
+      "texture_member": 6,
+      "sprite": 90,
+      "source_box": [
+        72,
+        96,
+        104,
+        112
+      ],
+      "source_pixels_sha256": "8bd105c9dd7a13bdb5fdc606833f99da9e0cc158258ecce934d974dd2414f0e0",
+      "en": "Evade",
+      "style": "medium",
+      "meaning": "Evade"
+    },
+    {
+      "id": "win00.05.091",
+      "texture_member": 6,
+      "sprite": 91,
+      "source_box": [
+        0,
+        80,
+        32,
+        96
+      ],
+      "source_pixels_sha256": "33249ca8a34455c9f5bd02a6a611717e86632fb5b004972907c2133d3e5f9a1c",
+      "en": "Defend",
+      "style": "medium",
+      "meaning": "Defend"
+    },
+    {
+      "id": "win00.05.092",
+      "texture_member": 6,
+      "sprite": 92,
+      "source_box": [
+        32,
+        80,
+        128,
+        96
+      ],
+      "source_pixels_sha256": "8fa3ae00e7bc5040b15824224a564a9548f5d95c84ce5f912e6a62fdf4840538",
+      "en": "Plasma Coating",
+      "style": "medium",
+      "meaning": "Plasma Coating",
+      "name_source_id": "names.g00.028",
+      "name_source_sha256": "5eaea586d91487535f825e638093784b846a6c227a13ceca70bffd7288581d93"
+    },
+    {
+      "id": "win00.05.093",
+      "texture_member": 6,
+      "sprite": 93,
+      "source_box": [
+        0,
+        112,
+        104,
+        128
+      ],
+      "source_pixels_sha256": "17dc882c63c0393dce6ef63f4b1892e6b18417fa2f04abd4f61336b6d3e3353f",
+      "en": "Plasma Barrier",
+      "style": "medium",
+      "meaning": "Plasma Barrier",
+      "name_source_id": "names.g00.025",
+      "name_source_sha256": "c2f5f0a7527476cc5e26caabbf727b63d07d0035a043466847b2072728f863ee"
+    },
+    {
+      "id": "win00.05.095",
+      "texture_member": 6,
+      "sprite": 95,
+      "source_box": [
+        104,
+        64,
+        200,
+        80
+      ],
+      "source_pixels_sha256": "0447817a1ef159fca1f7073b94bd9dfb36af1faa6cb539fe520b4d4c025cb9db",
+      "en": "Special Field",
+      "style": "medium",
+      "meaning": "Special Field",
+      "name_source_id": "names.g00.026",
+      "name_source_sha256": "e0a2738720daeed629de6e916b703db5ce6dc481519cd63f3f45ffe7929788e8"
+    },
+    {
+      "id": "win00.05.107",
+      "texture_member": 6,
+      "sprite": 107,
+      "source_box": [
+        48,
+        128,
+        96,
+        144
+      ],
+      "source_pixels_sha256": "f7679ceecb5f094f01714eb4a61d8148f450be13f12ef0f40d0a53620c3c4b72",
+      "en": "Barrier",
+      "style": "medium",
+      "meaning": "Barrier",
+      "name_source_id": "names.g00.029",
+      "name_source_sha256": "a0d74b2d2bc2f4fa6fc90e5ef667dbf660d02146f3200578f9a9535d78eedfb8"
+    },
+    {
+      "id": "win00.05.094",
+      "texture_member": 6,
+      "sprite": 94,
+      "source_box": [
+        0,
+        128,
+        96,
+        144
+      ],
+      "source_pixels_sha256": "fd358715401a46df240a27c131defb7300a56c2ff841a3d55ef39eec15f0e584",
+      "en": "Ballistic Barrier",
+      "style": "medium",
+      "meaning": "Ballistic Barrier",
+      "name_source_id": "names.g00.027",
+      "name_source_sha256": "84a8e08a9c5eb0b9a55f733645b2551efc1a6f4c1ff31cc0c0a5cf4e2c7807f8",
+      "parts": [
+        {
+          "text": "Ballistic",
+          "box": [
+            0,
+            0,
+            48,
+            16
+          ]
+        },
+        {
+          "text": "Barrier",
+          "box": [
+            48,
+            0,
+            96,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "win00.87.000",
+      "texture_member": 88,
+      "sprite": 0,
+      "source_box": [
+        0,
+        144,
+        80,
+        160
+      ],
+      "source_pixels_sha256": "2107e0bec3ea1d37564f241192e49a34a8c85033e0a39c06c6c7d682f19a1572",
+      "en": "Trust Gauge",
+      "style": "tab",
+      "meaning": "Trust Gauge"
+    },
+    {
+      "id": "win00.87.002",
+      "texture_member": 88,
+      "sprite": 2,
+      "source_box": [
+        152,
+        144,
+        200,
+        160
+      ],
+      "source_pixels_sha256": "5e96002d41be8512d9c2ffeeb3d3aab5d5800d51c58a7d19c5a50331b7e79950",
+      "en": "Ai",
+      "style": "tab",
+      "meaning": "Ai",
+      "name_source_id": "names.g11.002",
+      "name_source_sha256": "fd886ed15ade958da31776af8849933309de742c15309ff5962e813250817e80"
+    },
+    {
+      "id": "win00.87.003",
+      "texture_member": 88,
+      "sprite": 3,
+      "source_box": [
+        200,
+        144,
+        248,
+        160
+      ],
+      "source_pixels_sha256": "6e26f60be3d7c2f315d10ebf38e013b18155525bd4b2c343471eb8d7a290ee25",
+      "en": "Ymir",
+      "style": "tab",
+      "meaning": "Ymir",
+      "name_source_id": "names.g11.003",
+      "name_source_sha256": "830d278e43cb756ad751ddf1f734e5122b7d56f3e94a425ebe816269bfe26737"
+    },
+    {
+      "id": "win00.87.004",
+      "texture_member": 88,
+      "sprite": 4,
+      "source_box": [
+        0,
+        160,
+        48,
+        176
+      ],
+      "source_pixels_sha256": "9b46c99e71a89ba725d9d1b4b7d2243e24fa1090dacf3c7528a86632c1bc49f1",
+      "en": "Kasumi",
+      "style": "tab",
+      "meaning": "Kasumi",
+      "name_source_id": "names.g11.004",
+      "name_source_sha256": "787be4014cd26d948eca8876af2076f947119aa886bee941cca2d9e9a067aa7a"
+    },
+    {
+      "id": "win00.87.005",
+      "texture_member": 88,
+      "sprite": 5,
+      "source_box": [
+        48,
+        160,
+        96,
+        176
+      ],
+      "source_pixels_sha256": "b6b0fe8e8d5cd8b7ff3c5e9c1e321c7089a399e6555eca5568498c1ddf3d92df",
+      "en": "Xiujian",
+      "style": "tab",
+      "meaning": "Xiujian",
+      "name_source_id": "names.g11.005",
+      "name_source_sha256": "c746c19a16a8267c991fa22fcd1522b922339af9f7a1169b43a80919aa687885"
+    },
+    {
+      "id": "win00.87.006",
+      "texture_member": 88,
+      "sprite": 6,
+      "source_box": [
+        96,
+        160,
+        144,
+        176
+      ],
+      "source_pixels_sha256": "c6266be27ddfd7413ef73e820f77136d9394398215a3a28bbaa712fea22ce50d",
+      "en": "Clovis",
+      "style": "tab",
+      "meaning": "Clovis",
+      "name_source_id": "names.g11.006",
+      "name_source_sha256": "8ef7724e44f53382b2f41e209bfdc9726fc513f5b64cc9444795bb9fc05b688e"
+    },
+    {
+      "id": "win00.87.007",
+      "texture_member": 88,
+      "sprite": 7,
+      "source_box": [
+        144,
+        160,
+        192,
+        176
+      ],
+      "source_pixels_sha256": "c5a50ad19b94441a1b19ff3f91b72cc5d8aee5aa31d3adb7e96fc85918b2abbc",
+      "en": "Fain",
+      "style": "tab",
+      "meaning": "Fain",
+      "name_source_id": "names.g11.007",
+      "name_source_sha256": "b7c32e3be8ef7eed1be0830a72c792f33b455e9f6c4fbbab8fa98d44f14e073c"
+    },
+    {
+      "id": "win00.87.008",
+      "texture_member": 88,
+      "sprite": 8,
+      "source_box": [
+        192,
+        160,
+        240,
+        176
+      ],
+      "source_pixels_sha256": "55aa90623b16e2534f81fc53645b1100a9d437571346e312bb6876b8ccd204ed",
+      "en": "Rosalie",
+      "style": "tab",
+      "meaning": "Rosalie",
+      "name_source_id": "names.g11.008",
+      "name_source_sha256": "4af24b88b8a95221441424818b22953ff94b13d0a8bea354cf61100a7e8ba1f0"
+    },
+    {
+      "id": "win00.87.009",
+      "texture_member": 88,
+      "sprite": 9,
+      "source_box": [
+        0,
+        176,
+        48,
+        192
+      ],
+      "source_pixels_sha256": "aecc6c458bf937a6fc327e957e9bce95261a8e800685a0ef5fe808a3abdcc7e6",
+      "en": "Gen",
+      "style": "tab",
+      "meaning": "Gen",
+      "name_source_id": "names.g11.009",
+      "name_source_sha256": "f28d2d8c06b9b098a87db5caf50e9552a6323f1a1d56c707bff563da872331c8"
+    },
+    {
+      "id": "win00.87.010",
+      "texture_member": 88,
+      "sprite": 10,
+      "source_box": [
+        48,
+        176,
+        96,
+        192
+      ],
+      "source_pixels_sha256": "d95c7a3642683c05ccec82598725a15db043ecc51cb4ca0e87ca846da1370b49",
+      "en": "Aurelie",
+      "style": "tab",
+      "meaning": "Aurelie",
+      "name_source_id": "names.g11.010",
+      "name_source_sha256": "6318f3c3bdf2a91c77353e7449274888513bdf634b36f7739e2eb021806e3795"
+    },
+    {
+      "id": "win00.87.011",
+      "texture_member": 88,
+      "sprite": 11,
+      "source_box": [
+        96,
+        176,
+        144,
+        192
+      ],
+      "source_pixels_sha256": "4db772e8260f3a28da20fa16e4d4e6936b4008fdc3997719eb2ce2d1d2c435c6",
+      "en": "Arthur",
+      "style": "tab",
+      "meaning": "Arthur",
+      "name_source_id": "names.g11.011",
+      "name_source_sha256": "25994506ee2883db1cbf1b54e39c3f005ef4c7ff06721c0b8b9b00c8a6f208df"
+    },
+    {
+      "id": "win00.87.012",
+      "texture_member": 88,
+      "sprite": 12,
+      "source_box": [
+        144,
+        176,
+        192,
+        192
+      ],
+      "source_pixels_sha256": "009d7b8899ea1378aeac65da7ade5e406c05d6e2b0c0d11bcf1d99ac95a18603",
+      "en": "Melvi",
+      "style": "tab",
+      "meaning": "Melvi",
+      "name_source_id": "names.g11.012",
+      "name_source_sha256": "1665aa0c3ec5180b8b372d63d057be62d2d1e82b755dee41c97879a9509b461c"
+    },
+    {
+      "id": "win00.87.013",
+      "texture_member": 88,
+      "sprite": 13,
+      "source_box": [
+        192,
+        176,
+        240,
+        192
+      ],
+      "source_pixels_sha256": "8671bbcbe7c8a8cf4f21ee32f21e369d16b50524428f6c172698cbc5faf3ff07",
+      "en": "Leone",
+      "style": "tab",
+      "meaning": "Leone",
+      "name_source_id": "names.g11.013",
+      "name_source_sha256": "89b33f1e51dbd535f827428fb0fab76ac96933c54f52c578f7b88e9053b35200"
+    },
+    {
+      "id": "win00.87.014",
+      "texture_member": 88,
+      "sprite": 14,
+      "source_box": [
+        0,
+        192,
+        48,
+        208
+      ],
+      "source_pixels_sha256": "88fa7fa3176897bd3a6f8d1dfc9582a32fb35c863a33dc4c001fda2b2419edf7",
+      "en": "Kururu",
+      "style": "tab",
+      "meaning": "Kururu",
+      "name_source_id": "names.g11.014",
+      "name_source_sha256": "09b4c2dd7aaad881edee8e6e4e2fbde45b6422f59b959c42552c8fbaf7992ec0"
+    },
+    {
+      "id": "win00.87.015",
+      "texture_member": 88,
+      "sprite": 15,
+      "source_box": [
+        48,
+        192,
+        96,
+        208
+      ],
+      "source_pixels_sha256": "0ca9eba3ee6d21f6c6dbfa342213eeaa39d9dbc3d6625771df881bee3837d6ef",
+      "en": "Melissa",
+      "style": "tab",
+      "meaning": "Melissa",
+      "name_source_id": "names.g11.015",
+      "name_source_sha256": "14bcd933c7d37ef3df92fd11470360e29b7fff6e03674d477bdacb2990d9eff5"
+    },
+    {
+      "id": "win00.87.016",
+      "texture_member": 88,
+      "sprite": 16,
+      "source_box": [
+        96,
+        192,
+        144,
+        208
+      ],
+      "source_pixels_sha256": "3fcb70db848da4e855b6b34b012455c3ec90a989c7ee148eee16b241e64f4bfb",
+      "en": "Celica",
+      "style": "tab",
+      "meaning": "Celica",
+      "name_source_id": "names.g11.016",
+      "name_source_sha256": "5bf2a04caace5aa9f0220d69f6662541d3b57b40bd4d3f21d63c355645986bca"
+    }
+  ]
+}

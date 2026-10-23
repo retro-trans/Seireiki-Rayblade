@@ -1,0 +1,815 @@
+{
+  "version": "0.1.37",
+  "source_build": "0.1.36",
+  "archive": "ALBUM.AFS",
+  "status": "All 203 nonblank source album captions have inserted English drafts; independent reading/meaning and live review incomplete",
+  "disc": "work/output/0.1.37/disc/Rayblade English Test 0.1.37.gdi",
+  "archive_sha256": "4b6be59322fd64a1877f9850bd1699a678fd28e255ed0f399c9cc3c8ff9f25cf",
+  "caption_count": 203,
+  "source_caption_count": 203,
+  "new_caption_count": 2,
+  "unresolved_caption_ids": [],
+  "new_captions": [
+    {
+      "id": "album.214.082",
+      "en": "Naked Touya"
+    },
+    {
+      "id": "album.214.102",
+      "en": "Alforina's Feeble Gaze"
+    }
+  ],
+  "translation_map": "work/translation/en/ui/album-captions-current.en.json",
+  "override_recipe": "work/translation/en/ui/album-caption-readings.en.json",
+  "caption_preview": "work/output/0.1.37/album-caption-readings-before-after.png",
+  "caption_preview_sha256": "302517194216adf44b915035a354e15dc85e399597d896b0c7e4d5417ff02fe9",
+  "glyph_reading_reference": "work/ui/asset-audit/ALBUM/captions/readings-01/source-glyph-references.png",
+  "glyph_reading_reference_sha256": "f5e89e3c31edf1181f7aa103b16f2186be10b18f7c35b1161df17618a9b9bd7a",
+  "reading_scope": "Manual shape reading with original-game and local Japanese-font reference forms, not an exact-pixel OCR/font identity proof",
+  "native_report": "work/output/0.1.37/album-caption-readings-native-test.json",
+  "native_report_sha256": "1494f67fee7bc6bde78de1ecbb2221f55a2ef429625e085b95600553c669dd5f",
+  "native_PRS_instructions": 5936625,
+  "native_scalar_texture_pixels": 131072,
+  "preservation": "Other 201 English captions, 21 Coming Soon cells, all 224 photos, all geometry and other 242 members exact previous build",
+  "normal_text_font_changed": false,
+  "new_changed_sectors": 15,
+  "changed_locations_from_original": 28450,
+  "validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "pending": [
+    "Independent newly resolved album caption readings and wording review",
+    "Live updated album caption appearance, selection/unlock/navigation review",
+    "Dreamcast/Flycast disc-icon subtitle appearance and small-caption readability",
+    "Independent disc-icon subtitle layout/artwork review",
+    "Actual D_SYSTEM archive use/loading, legacy selection/viewer layout and loader-capacity validation",
+    "Independent additional-profile meaning, source lore differences and La=Dis category review",
+    "Live five-order icon/initial discoverability and EFFECT palette/selection review",
+    "Independent corrected order wording review",
+    "Whole-attack English BREAK artwork, actual sprite transforms and live palette/timing review",
+    "Independent attack wording and reauthored glow/trail fidelity review",
+    "Live native effect loading/palette selection and translated battle result/ability label appearance",
+    "Remaining image formats/text discovery and independent translation/artwork review",
+    "Live inferred-font appearance, blending/pixel alignment and matched Skies comparison",
+    "Independent outline shape fidelity and all-context font review",
+    "Native relocated album note loading, unlock/selection/navigation and live artwork appearance",
+    "Independent meaning/artwork review and estimated paper/thumbnail cleanup review",
+    "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+    "Live relocated letter-archive loading, image selection and appearance",
+    "Paper-estimate artwork review and development-placeholder reachability",
+    "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+    "Seven credit-name readings and independent confirmation of reference romanizations",
+    "Live credit timing/order, appearance, alignment and overlaps",
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "story_library_draft_credit": 0,
+  "release": false,
+  "source_readings": [
+    {
+      "id": "album.214.082",
+      "ja_ui": "\u88f8\u306e\u30c8\u30a6\u30e4",
+      "en": "Naked Touya",
+      "source_caption_sha256": "d8d403c1a0b3ee19ac597d7412f7e20390e92821b50afa5e4e37ee3defb38529",
+      "first_glyph_reference": {
+        "character": "\u88f8",
+        "original_game_glyph_id": 2075,
+        "bitmap_sha256": "6cfc8c877c12d1e20adf715758e5d69f2335d82af733a3724115defdbb0705fe",
+        "source_caption_local_box": [
+          4,
+          1,
+          14,
+          10
+        ]
+      },
+      "decision": "The first character has the clothing radical and fruit-shaped right component: \u88f8. The earlier \u88cf/\u5f71/\u7d20 guesses do not match that structure. Literal non-graphic caption only; no erotic or anatomical detail added."
+    },
+    {
+      "id": "album.214.102",
+      "ja_ui": "\u5f31\u3005\u3057\u3044\u76ee\u306e\u30a2\u30eb\u30d5\u30a9\u30ea\u30ca",
+      "en": "Alforina's Feeble Gaze",
+      "source_caption_sha256": "00886fba1c6f4f61f49ff92329b23a7c629390e7821bd6ce4fd7b225f1a8b42c",
+      "first_glyph_reference": {
+        "character": "\u5f31",
+        "original_game_glyph_id": 1332,
+        "bitmap_sha256": "a608d1b34a5ae595b1fdcbc8d47cff248341829b1d88188d5646f0ef7d21d831",
+        "source_caption_local_box": [
+          4,
+          1,
+          14,
+          10
+        ]
+      },
+      "decision": "The first character is the repeated bow-shaped structure \u5f31, followed by \u3005\u3057\u3044\u76ee\u306e. Feeble Gaze retains the weakened eyes/gaze detail without adding a cause or new scene event."
+    }
+  ],
+  "native_proof": {
+    "source_build": "0.1.36",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archive_sha256": "4b6be59322fd64a1877f9850bd1699a678fd28e255ed0f399c9cc3c8ff9f25cf",
+    "new_caption_count": 2,
+    "combined_caption_count": 203,
+    "unresolved_caption_ids": [],
+    "protected_existing_English_caption_cells": 201,
+    "protected_Coming_Soon_cells": 21,
+    "protected_photo_regions": 224,
+    "geometry_member_214": "exact preceding build",
+    "unchanged_member_payloads_and_offsets": 242,
+    "source_font_mask_samples": 936,
+    "independent_scalar_texture_pixels": 131072,
+    "native_PRS_streams": [
+      {
+        "member": 225,
+        "native_PRS_instructions": 2932818,
+        "decoded_bytes": 131104,
+        "packed_sha256": "3ebfd18b398dfd9bac416c106e5e5c32aaaea40085f20837cefe8d84960ee549",
+        "decoded_sha256": "247970fd43dcaea206347b55f67090dd6b23feae76b1c0ea9fa7d2f7905a6c04"
+      },
+      {
+        "member": 227,
+        "native_PRS_instructions": 3003807,
+        "decoded_bytes": 131104,
+        "packed_sha256": "ad1732b9e753b0d4d64d600b69a5583c1cef9248d64fdd29933572ec097b68ff",
+        "decoded_sha256": "850eb8863d4896f0bd0e6ab5141e5cfd69313a3a91d770f538c6732530ebdd09"
+      }
+    ],
+    "native_PRS_instructions": 5936625,
+    "native_texture_header_instructions": 372,
+    "native_guard_and_ABI": "pass",
+    "archive_bytes_outside_declared_edits": "exact",
+    "source_pixels_outside_two_caption_cells": "exact preceding build",
+    "normal_font_changed": false,
+    "limits": [
+      "Manual glyph readings/wording are editorial decisions; byte/native tests do not prove Japanese meaning",
+      "Native file loading, actual album selection/unlock/navigation and GPU/live appearance remain unverified"
+    ]
+  },
+  "resources": [
+    {
+      "member": 225,
+      "offset": 21905408,
+      "source_packed_bytes": 30061,
+      "packed_bytes": 30018,
+      "slot_capacity": 30720,
+      "decoded_bytes": 131104,
+      "packed_sha256": "3ebfd18b398dfd9bac416c106e5e5c32aaaea40085f20837cefe8d84960ee549",
+      "decoded_sha256": "247970fd43dcaea206347b55f67090dd6b23feae76b1c0ea9fa7d2f7905a6c04",
+      "changed_pixels": 318,
+      "id": "album.214.082",
+      "en": "Naked Touya",
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "background_pixel": 63421,
+      "draws": [
+        {
+          "en": "Naked Touya",
+          "box": [
+            129,
+            56,
+            172,
+            64
+          ],
+          "mask_sha256": "38c4888a26bf56b47cd4262d3c72d51394556085fc290912f0b74f45e603710a"
+        }
+      ]
+    },
+    {
+      "member": 227,
+      "offset": 21966848,
+      "source_packed_bytes": 32044,
+      "packed_bytes": 31742,
+      "slot_capacity": 32768,
+      "decoded_bytes": 131104,
+      "packed_sha256": "ad1732b9e753b0d4d64d600b69a5583c1cef9248d64fdd29933572ec097b68ff",
+      "decoded_sha256": "850eb8863d4896f0bd0e6ab5141e5cfd69313a3a91d770f538c6732530ebdd09",
+      "changed_pixels": 502,
+      "id": "album.214.102",
+      "en": "Alforina's Feeble Gaze",
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "background_pixel": 63421,
+      "draws": [
+        {
+          "en": "Alforina's",
+          "box": [
+            129,
+            124,
+            162,
+            132
+          ],
+          "mask_sha256": "12040aa30eff1dd52e7f58688707db3394237bf9cf5f9eac52490457f028ebe2"
+        },
+        {
+          "en": "Feeble Gaze",
+          "box": [
+            129,
+            132,
+            170,
+            140
+          ],
+          "mask_sha256": "10a052e7b68d1666bc9e3264e69cca58976b9c49cf6b7cbe49fd1b7a3383ad06"
+        }
+      ]
+    }
+  ],
+  "historical_201_caption_build": {
+    "version": "0.1.28",
+    "source_build": "0.1.27",
+    "status": "201 English caption drafts retained unchanged in 0.1.30; two readings, independent meaning review and live album checks remain incomplete",
+    "disc": "work/output/0.1.28/disc/Rayblade English Test 0.1.28.gdi",
+    "archive": "ALBUM.AFS",
+    "archive_sha256": "1117448b31083e7f1cd8b7d89c7e26a83f4681f23c0a984cfa711c3359ab8630",
+    "translation_map": "work/translation/en/ui/album-captions.en.json",
+    "geometry_map": "work/ui/asset-audit/ALBUM/captions/rectangles.json",
+    "caption_count": 201,
+    "source_caption_count": 203,
+    "unresolved_caption_ids": [
+      "album.214.082",
+      "album.214.102"
+    ],
+    "protected_photograph_regions": 224,
+    "protected_Coming_Soon_cells": 21,
+    "protected_unreadable_caption_cells": 2,
+    "font_sampling": "Uniform 1/3 source scale, independently area-averaged 3x3 coverage; no individual glyph stretching",
+    "font_review": "Rejected max-pool caption sample as heavy; reviewed averaged gallery comparison and all seven English sheets. This does not change normal-text font smoothing.",
+    "previews": [
+      {
+        "path": "work/output/0.1.28/album-captions-gallery-before-after.png",
+        "sha256": "d41aa06377bf1f6be8a27ae3780de890689299c86e739c873f4825f337657634"
+      },
+      {
+        "path": "work/output/0.1.28/English-captions-00.png",
+        "sha256": "afa6a82d72369a77c721fbff136fe0836b10f61bbbe02b4ad4b05aba16662c60"
+      },
+      {
+        "path": "work/output/0.1.28/English-captions-01.png",
+        "sha256": "569bb6ca23bdbcfa6e9d8014456b1daf48d06d16386a2a8c006f15bb9537e744"
+      },
+      {
+        "path": "work/output/0.1.28/English-captions-02.png",
+        "sha256": "6a69ce7752b7b4c2f09b34978cdc8f91733e2b3d6113a87137f6e1ba209b8833"
+      },
+      {
+        "path": "work/output/0.1.28/English-captions-03.png",
+        "sha256": "0c30d917fe3d8c0441dbb229996ad80c62c4f4777e54367a1c3b0c277659857b"
+      },
+      {
+        "path": "work/output/0.1.28/English-captions-04.png",
+        "sha256": "3ff7e8f84ffa295730ee14d227f3a1506f7920776ac19875a5e234a8d6a30d7c"
+      },
+      {
+        "path": "work/output/0.1.28/English-captions-05.png",
+        "sha256": "403680495fe0ac20fb218550dc15db51ed6c36962ee2a4bee54ddcd79f3a9f9b"
+      },
+      {
+        "path": "work/output/0.1.28/English-captions-06.png",
+        "sha256": "828b7eca61dd760c1a004459101eb5f7822f05220cc8fae960a115117ccb7e35"
+      }
+    ],
+    "native_proof": {
+      "source_build": "0.1.27",
+      "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+      "archive_sha256": "1117448b31083e7f1cd8b7d89c7e26a83f4681f23c0a984cfa711c3359ab8630",
+      "caption_count": 201,
+      "archive_members": 244,
+      "changed_texture_members": 28,
+      "native_PRS_streams": [
+        {
+          "member": 215,
+          "stream_sha256": "03041bb904a4709d2d585a57289197133daea3b6e366835eab1f0f8ef7671671",
+          "decoded_sha256": "c2fd10e2b0076079843bb00b1802c222a118e55fa43bf77b06d10556aa129a89",
+          "decoded_bytes": 131104,
+          "instructions": 3108576,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 216,
+          "stream_sha256": "bd0d89dac662d18242208b82925c979604ad623604dd6876cee379a48514ebdf",
+          "decoded_sha256": "e6f4f9ea95a5b3aab137d06cdfc4389d1e14dd66e50483ed20bbae12b7c0d4e5",
+          "decoded_bytes": 131104,
+          "instructions": 3011014,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 217,
+          "stream_sha256": "b738d85d38fef2e78298a504994742f4df190c2cd0f79cff1800f37b68430e1e",
+          "decoded_sha256": "58c43165522ec510729c81d583e27a42e128c634ea58be2bc47cf49804b9b081",
+          "decoded_bytes": 131104,
+          "instructions": 2533813,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 218,
+          "stream_sha256": "1c5b281bb5445423201c60402d57f31b1e8a272107217e6e77bc2a761f8fb076",
+          "decoded_sha256": "2e0a9e5d84f271f9438e3a27684a7c2c43f7bcdfd5877a2b7f3de95bfa4c0638",
+          "decoded_bytes": 131104,
+          "instructions": 2527952,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 219,
+          "stream_sha256": "eb1d20ff3d93b370490353999dcab649f96cbfd968230dd7fe8b5812295c7da6",
+          "decoded_sha256": "452baaef24b773560b81a41f174684b2367c5d7e9153c4bf8b7de4c50684a99e",
+          "decoded_bytes": 131104,
+          "instructions": 3062426,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 220,
+          "stream_sha256": "dffd6822c79156f2f50150fec79a8d1c57364f3dee5531187464d561422e8d69",
+          "decoded_sha256": "0abd5984a250aa9a39863a43915f10f38eddec7003debfb52ec1cd0f72168838",
+          "decoded_bytes": 131104,
+          "instructions": 3042269,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 221,
+          "stream_sha256": "362800848339132e791a91434b9e6d7982b6e3a08c788fc1108677fafbe3e658",
+          "decoded_sha256": "3b86cde71330bd460c94553ef9a436e140851c74724d2ed514b55b880d71977e",
+          "decoded_bytes": 131104,
+          "instructions": 2974421,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 222,
+          "stream_sha256": "18accd34590b41df46ce0eb2004d3afbc9c7775a26c7b1ba61453ef70eee608d",
+          "decoded_sha256": "c25ed595d399c47f0195eabed6be796841e09fb1b7436a041b1f1c6cc9193c4f",
+          "decoded_bytes": 131104,
+          "instructions": 2500490,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 223,
+          "stream_sha256": "1b5172302b2c4717a5a7cbd1601f08a4bd4b41203e970eca36a9f2ec07f2dd6a",
+          "decoded_sha256": "697c737a709bd40bb554acfc60918ec12c7bfb457b945e2fa44180389db0a39f",
+          "decoded_bytes": 131104,
+          "instructions": 3012788,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 224,
+          "stream_sha256": "b202af5379276fd1a3fc93d94efc91f4c8d1fd8f65ea27b1205d83f88b5a1c87",
+          "decoded_sha256": "be7745102c4468731bdc15b0311dd07baa4f829a5acec93b7404fe67c54cbcc6",
+          "decoded_bytes": 131104,
+          "instructions": 2974653,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 225,
+          "stream_sha256": "717a3335be3554c97024c2fb79341f6795ce6dedc364106b296ae66dd2201ac6",
+          "decoded_sha256": "52343b998f7933383b76836185ca4fc91d3197449fabc07f74ea92dd74afb411",
+          "decoded_bytes": 131104,
+          "instructions": 2944535,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 226,
+          "stream_sha256": "2110203c9214e73bd5b025c522b58e49454a190104d8f38928df9c747b776fc5",
+          "decoded_sha256": "8b88c888854531d9821342d395dc0a786fe239d9034749f245790e7c6e4bd46a",
+          "decoded_bytes": 131104,
+          "instructions": 2931207,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 227,
+          "stream_sha256": "caeef6b760307e717e13dbfd28394a48224936f8c46d1b167e9ee2e349e470c9",
+          "decoded_sha256": "16ad0a555d17e020ccfba66c7c4bac8f1f7264bf3eee47700dc35b0e1473f907",
+          "decoded_bytes": 131104,
+          "instructions": 3015049,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 228,
+          "stream_sha256": "ebbdf475d8b36aa69c70eff9a25b334ee5b74e9bbf04490fde34658796e3e4ab",
+          "decoded_sha256": "d03b1d357c92c1291a334788c18586ca1b5e89dbbfc14ad2df4ae9ce101fcd15",
+          "decoded_bytes": 131104,
+          "instructions": 2894143,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 229,
+          "stream_sha256": "1d1ff0dfddbdbcf75f33dc60fe078d05e7623ccf0834e1f4a9a1e924ce32eaba",
+          "decoded_sha256": "eb9c178d8d9f8f5c6b23f1e591af38c794721b9afcb63e6cba7f8bd9bba3d441",
+          "decoded_bytes": 131104,
+          "instructions": 2963154,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 230,
+          "stream_sha256": "6b6efaec62bf594bfbbf31919d702698bb9bacef1ee60dce02bbf4bc12e3242a",
+          "decoded_sha256": "d3b910f7b24ded04e26ecbc1c9e1eb4918f9b585d93da3447f4042e95054f588",
+          "decoded_bytes": 131104,
+          "instructions": 2985783,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 231,
+          "stream_sha256": "9b3cc8964a7b1521a8f123e2c54621f38d39f9fab9adbad0080bfe0eabe39469",
+          "decoded_sha256": "f1611219b8babc5b7d7f696dcb464eff79f31c3951a558a8fcbc1b8655ae4f03",
+          "decoded_bytes": 131104,
+          "instructions": 3014518,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 232,
+          "stream_sha256": "477a366e27710fba99dcd596a8371793510486d84d73f9d6869feca2955f7163",
+          "decoded_sha256": "ead0c40323b1d3d94f305c7be538a95796f8d706ff1a46f9695afc6886734715",
+          "decoded_bytes": 131104,
+          "instructions": 3016382,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 233,
+          "stream_sha256": "eebbdca594608ff1330ad1cd0673cee0eb18d341c36774bb4ef5963d7cae0108",
+          "decoded_sha256": "bc7a15bb22af52888befdae2a5bfbac5ebecd8817841b8004af11b004a930b7f",
+          "decoded_bytes": 131104,
+          "instructions": 3025473,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 234,
+          "stream_sha256": "a70ff463891f06187f0f37f47ee9385ca79a276c0db3c533b0297d6f18ba13bc",
+          "decoded_sha256": "99adada6900fc2f2d1152c4a9fc92b6613f3ff555207960d3db78ad247af39ad",
+          "decoded_bytes": 131104,
+          "instructions": 3084821,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 235,
+          "stream_sha256": "2c40ff46542659f709cb5fa14eb051f6741dd49ddabe75e9662764ba8b19eee1",
+          "decoded_sha256": "1a47a0935283140428f35c5737baed874742e588ba42225c77c93739e5c44ab6",
+          "decoded_bytes": 131104,
+          "instructions": 3060933,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 236,
+          "stream_sha256": "0ee200f9a6d76e9926440f9a07a44244dec158e1af811dcbb3fcd4c7543eca89",
+          "decoded_sha256": "f94e29dc2dea9251881fe4435db2b21dde0b8926196987921bdf1acf52f4b247",
+          "decoded_bytes": 131104,
+          "instructions": 2897512,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 237,
+          "stream_sha256": "070259bfcd051b0cc7ac8b43a10d0bb98ea81543b52275687f12104b054b74b7",
+          "decoded_sha256": "339be85fd6f0be8b159fcfa16a1f3a7da38166f3fc41ed01a61ae1b06d69ce20",
+          "decoded_bytes": 131104,
+          "instructions": 2992365,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 238,
+          "stream_sha256": "213562667f12fe2acb078450da5e9ed17dc9f33ecd4a9ebca205650c5158aac0",
+          "decoded_sha256": "47dbe591135b1cd594729ed573e0a280e3400ef6054e75356775a8b7dc88c505",
+          "decoded_bytes": 131104,
+          "instructions": 3079274,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 239,
+          "stream_sha256": "7423040e9e4e4572ae06b7dcfef58b47a812dc867173dc8fb193f947bf9f6391",
+          "decoded_sha256": "2c16b7cb9eabb381299d493a120bb3803ce9f89326db917bc2a7b6a4fd496fd9",
+          "decoded_bytes": 131104,
+          "instructions": 3087857,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 240,
+          "stream_sha256": "98c66cb7c39e9d931d41264f0365adf934f179bc7595562ca8bbc3aceb411acf",
+          "decoded_sha256": "7be19e7e247fb47b04d709699afa8bd6826153bc9113c7d6d0292bf92b7de4a1",
+          "decoded_bytes": 131104,
+          "instructions": 2987637,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 241,
+          "stream_sha256": "f2656004e749c81086df470b17a51e333065b3d99dffc7269caf022324fd2899",
+          "decoded_sha256": "e636c45b938aae0710ef9f1b971cc070d65915683ac12d5b16a84965bf2652d1",
+          "decoded_bytes": 131104,
+          "instructions": 2955759,
+          "guard_ABI_exact_output": "pass"
+        },
+        {
+          "member": 242,
+          "stream_sha256": "b6bbb97a43c8989e724404bfb26fef2ac8051e8688afb76ed58bc07166b4b032",
+          "decoded_sha256": "f65f7d334b2d78325191bdd4c28091653b09b092d3b75306e938cfc9c57ceec1",
+          "decoded_bytes": 131104,
+          "instructions": 2569317,
+          "guard_ABI_exact_output": "pass"
+        }
+      ],
+      "native_texture_info": {
+        "dimensions": [
+          256,
+          256
+        ],
+        "format": "0x100",
+        "instructions": 186
+      },
+      "independent_scalar_pixel_addressing_and_font_coverage": "pass",
+      "independent_font_pixels": 44522,
+      "all_English_words_retained": true,
+      "protected_photo_areas": 224,
+      "protected_whole_cells": 23,
+      "DAT_0_and_DAT_214_sprite_geometry": "exact",
+      "unchanged_member_payloads": 216,
+      "relocated_members_in_verified_zero_padding": [
+        217,
+        219,
+        222,
+        231,
+        240,
+        241
+      ],
+      "archive_bytes_outside_declared_edits": "exact",
+      "native_guard_and_ABI": "pass",
+      "normal_text_font_changed": false,
+      "native_file_loading": false,
+      "GPU": false,
+      "live_album_unlock_navigation_selection_and_appearance": "pending",
+      "meaning_review": "English image-caption drafts; independent review pending",
+      "unresolved_caption_ids": [
+        "album.214.082",
+        "album.214.102"
+      ],
+      "story_library_draft_credit": 0
+    },
+    "validation": {
+      "reextracted_files": "all 11 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "preservation": "216 other member payloads and both DAT geometry members exact; all 224 thumbnail photographs exact. Six atlases move into checked zero prefix padding, with all other member offsets and the archive extent retained.",
+    "changed_members": [
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242
+    ],
+    "relocated_members": [
+      217,
+      219,
+      222,
+      231,
+      240,
+      241
+    ],
+    "meaning_notes": [
+      "Full caption wording/sequence numbers retained; project glossary spellings reused.",
+      "IDs 174/175 retain a provisional becoming-Debish interpretation requiring story-context review.",
+      "Unclear caption source readings remain original rather than guessed."
+    ],
+    "new_changed_sectors": 432,
+    "changed_sector_locations_from_original": 28326,
+    "normal_text_font_changed": false,
+    "story_library_draft_credit": 0,
+    "pending": [
+      "Two unresolved source caption readings",
+      "Independent caption meaning/context review",
+      "Native album loading/unlocks/selection/navigation and live caption appearance"
+    ],
+    "release": false,
+    "latest_combined_album_picture_build": {
+      "version": "0.1.30",
+      "source_build": "0.1.29",
+      "status": "English New Year greeting, Kasumi album note and three matching thumbnails packaged; source-estimated cleanup, independent review and live album behavior remain unverified",
+      "disc": "work/output/0.1.30/disc/Rayblade English Test 0.1.30.gdi",
+      "archive": "ALBUM.AFS",
+      "archive_sha256": "34b2ca5bc558f221acdf1c9b3d987205d0ff6e09748bab4a6f7bdc4f2e79ae90",
+      "translation_map": "work/translation/en/ui/album-picture-text.en.json",
+      "full_picture_members": [
+        15,
+        81
+      ],
+      "thumbnail_ids": [
+        "album.214.014",
+        "album.214.025",
+        "album.214.086"
+      ],
+      "changed_texture_members": [
+        15,
+        81,
+        216,
+        218,
+        225
+      ],
+      "previews": [
+        {
+          "path": "work/output/0.1.30/album-pictures-picture-015-before-after.png",
+          "sha256": "0551532831faff37187fc7c3a666cb6333a6073b45b01d312d62f94fe2223b2a"
+        },
+        {
+          "path": "work/output/0.1.30/album-pictures-picture-081-before-after.png",
+          "sha256": "d69240b5ef7b41802534df317f9df9ad9308553fbb58f70890fb2f272dc50d02"
+        },
+        {
+          "path": "work/output/0.1.30/album-pictures-thumbnail-before-after.png",
+          "sha256": "0c313fe93d531a7b9afae50d6b1e84cbce0c3ac047b6342f729d1cdbe0bb7eb5"
+        }
+      ],
+      "meaning": [
+        "The greeting is Happy New Year!, year 2000, with the original heart.",
+        "All ten existing source-fingerprinted story note rows are reused; only outer quotes/signature spacing become image layout.",
+        "The album note is rescaled independently from the story image. No new story/library row credit."
+      ],
+      "artwork_review": [
+        "Reviewed both full pictures and the three thumbnail witnesses.",
+        "The first note cleanup left faint old-letter fragments. Enlarged bounded ink regions and removed faint fragments without requiring a nearby dark core.",
+        "The independently authored thumbnail needs its own paper estimate; mapped text regions plus a one-pixel phase margin are cleaned against that source.",
+        "Revised full note and thumbnail previews reviewed. Estimated hidden paper and tiny thumbnail text still require independent/live review."
+      ],
+      "preservation": [
+        "239 unrelated member payloads and original DAT geometry exact.",
+        "All 224 caption areas, including 201 English captions and two original reading holds, exact.",
+        "Other 221 thumbnail photographs exact; only three matching photo regions change.",
+        "Greeting portrait/outside-header bytes and the original heart pairs exact.",
+        "All original note chroma/headers exact, luma edits limited to the visible 320x224 picture."
+      ],
+      "relocated_note": {
+        "member": 81,
+        "offset": 239616,
+        "packed_bytes": 75958,
+        "source_slot_bytes": 73728,
+        "prefix_source_bytes": "verified zero"
+      },
+      "native_proof": {
+        "source_build": "0.1.29",
+        "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+        "archive_sha256": "34b2ca5bc558f221acdf1c9b3d987205d0ff6e09748bab4a6f7bdc4f2e79ae90",
+        "image_resource_count": 5,
+        "full_pictures": 2,
+        "thumbnail_photographs": 3,
+        "native_PRS_streams": [
+          {
+            "member": 15,
+            "stream_sha256": "46b0fe55396598a2218fc298913650167e7f59d40c3a14e25245e5b372a3c9bd",
+            "decoded_sha256": "4b03793b06ec7ed8fb5e68ccccc6208f3ed58677f742a043b55ab1cecb2af23a",
+            "decoded_bytes": 262176,
+            "instructions": 4408713,
+            "guard_ABI_exact_output": "pass"
+          },
+          {
+            "member": 81,
+            "stream_sha256": "ff31ac4a8f933c5027bba4a0d8e90c3bad808b48b142267774c020303bfe3cf0",
+            "decoded_sha256": "a9783a0ff158aa65dd1a2e57a98447184cf60247742cb2edb23b2453480bc5c9",
+            "decoded_bytes": 262176,
+            "instructions": 6186170,
+            "guard_ABI_exact_output": "pass"
+          },
+          {
+            "member": 216,
+            "stream_sha256": "e21661b9c9087506dfe446e16375169da1fc5b4f94dcd1d6f2c3e9950f56daf5",
+            "decoded_sha256": "40bb4f8f54cb34d5b5ad205a2e251bffa13351a37c023af2385aaf91a24d9ef6",
+            "decoded_bytes": 131104,
+            "instructions": 3006013,
+            "guard_ABI_exact_output": "pass"
+          },
+          {
+            "member": 218,
+            "stream_sha256": "e7d5938fbce31b9476a7248872ea1d856bdf45ed6229a487af2497a5e46fb35d",
+            "decoded_sha256": "6dbc0ff21f39f41aa078f53c72467ac11d3251f4ff98ffd466f6081508a21b1b",
+            "decoded_bytes": 131104,
+            "instructions": 2521765,
+            "guard_ABI_exact_output": "pass"
+          },
+          {
+            "member": 225,
+            "stream_sha256": "7d1395220bf0708589fe142d1f0056575ff50954abf5b5b1365e12a152991ce5",
+            "decoded_sha256": "491cf9d724b0696ff1287b7dad26f72908d52302900446b90f2bc36e477470f3",
+            "decoded_bytes": 131104,
+            "instructions": 2935920,
+            "guard_ABI_exact_output": "pass"
+          }
+        ],
+        "native_texture_info": [
+          {
+            "dimensions": [
+              512,
+              256
+            ],
+            "format": "0x903",
+            "GPU_pixel_bits": "0x18000000",
+            "instructions": 185
+          },
+          {
+            "dimensions": [
+              256,
+              256
+            ],
+            "format": "0x100",
+            "instructions": 186
+          }
+        ],
+        "archive_members": 244,
+        "unchanged_member_payloads": 239,
+        "archive_bytes_outside_declared_edits": "exact",
+        "original_DAT_geometry": "exact",
+        "all_224_caption_areas": "exact",
+        "other_221_thumbnail_photographs": "exact",
+        "greeting_original_heart_and_outside_header": "exact",
+        "note_original_chroma_and_headers": "exact",
+        "note_changes_within_visible_320x224": true,
+        "independent_source_font_masks": "pass",
+        "linked_story_note_rows": 10,
+        "relocated_member": 81,
+        "source_prefix_padding": "verified zero",
+        "native_guard_and_ABI": "pass",
+        "native_file_loading": false,
+        "GPU": false,
+        "paper_and_thumbnail_cleanup": "Local estimates; no exact hidden-pixel recovery or source resampling equivalence proof",
+        "live_album_unlock_selection_navigation_and_appearance": "pending",
+        "normal_text_font_changed": false,
+        "story_library_draft_credit": 0
+      },
+      "validation": {
+        "reextracted_files": "all 11 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "unrelated_track_bytes": "all unchanged",
+        "track_bytes_compared": 1188856032,
+        "audio_movie_sectors": "all 4041 original sectors exact",
+        "in_game": "pending"
+      },
+      "new_changed_sectors": 84,
+      "changed_sector_locations_from_original": 28390,
+      "changed_album_sector_locations": {
+        "before": 432,
+        "after": 496,
+        "new_locations": 64
+      },
+      "normal_text_font_changed": false,
+      "pending": [
+        "Native relocated album note loading, unlock/selection/navigation and live artwork appearance",
+        "Independent meaning/artwork review and estimated paper/thumbnail cleanup review",
+        "Two unresolved album caption readings and remaining game translation/review",
+        "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+        "Live relocated letter-archive loading, image selection and appearance",
+        "Paper-estimate artwork review and development-placeholder reachability",
+        "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+        "Seven credit-name readings and independent confirmation of reference romanizations",
+        "Live credit timing/order, appearance, alignment and overlaps",
+        "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+        "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+        "Full-motion/design/content/audio and independent translation review",
+        "Held passages, live font/UI/library/battle/save/load and full-game validation"
+      ],
+      "release": false,
+      "story_library_draft_credit": 0
+    }
+  },
+  "history_scope": "Original 0.1.28 recipe/proof retained under its actual tested identity; two fresh changed-stream/pixel checks cover this build. No full native album loading/reachability proof is claimed.",
+  "current_archive_layout": {
+    "current_build": "0.1.38",
+    "archive_sha256": "b33aee617043c84c8ec78831f740a4d2e08d7b3bdc06358f4ec34077f88d52b8",
+    "member_payloads_unchanged_from": "0.1.37",
+    "member_count": 244,
+    "native_lookups": "all offsets/sector lengths match physical layout",
+    "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+  },
+  "archive_identity_note": "Earlier archive hashes/proofs remain historical payload-origin evidence; current layout identity above supersedes file placement only."
+}

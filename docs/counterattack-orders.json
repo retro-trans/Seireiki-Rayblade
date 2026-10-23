@@ -1,0 +1,2201 @@
+{
+  "version": "0.1.34",
+  "source_build": "0.1.33",
+  "status": "Five counterattack-order icons corrected in all three atlas copies; independent wording/initial discoverability and live review pending",
+  "disc": "work/output/0.1.34/disc/Rayblade English Test 0.1.34.gdi",
+  "archives": {
+    "WIN00.AFS": "7c6fa84dc013ff5df2f9301002a192bdfaa1260491e39716274232824c0a1e87",
+    "EFFECT.AFS": "208acd52bd6b5fe72dc9b83c2338f17a04e4985e09fc524dc4add78665fd80aa"
+  },
+  "icon_cells": 15,
+  "orders": [
+    {
+      "order": 0,
+      "sprite": 58,
+      "ja_ui": "マ",
+      "en": "Manual",
+      "initial": "M"
+    },
+    {
+      "order": 1,
+      "sprite": 59,
+      "ja_ui": "反",
+      "en": "Always Counterattack",
+      "initial": "C"
+    },
+    {
+      "order": 2,
+      "sprite": 60,
+      "ja_ui": "積",
+      "en": "Be Aggressive",
+      "initial": "A"
+    },
+    {
+      "order": 3,
+      "sprite": 61,
+      "ja_ui": "無",
+      "en": "Play It Safe",
+      "initial": "S"
+    },
+    {
+      "order": 4,
+      "sprite": 62,
+      "ja_ui": "防",
+      "en": "Always Defend",
+      "initial": "D"
+    }
+  ],
+  "historical_correction": "0.1.20 Sup/Resupply and Nil/None for sprites 60/61 were incorrect. Superseded in all three copies; Manual 58 was also missing.",
+  "recipe": "work/translation/en/ui/counterattack-orders.en.json",
+  "recipe_sha256": "be178d8ad80312d8a0fc4caf34355c239d62fd595ceaa93358c691ac7665fa16",
+  "preview": "work/output/0.1.34/order-icons-before-after.png",
+  "preview_sha256": "2a6fcee69ec63610c5f406aa20e5599e833d95683523972cc216e51b86c31227",
+  "native_report": "work/output/0.1.34/order-icons-native-test.json",
+  "native_report_sha256": "5f24c5a81c8c8ff8adbad09e50fa43f6dd950a710ca5ce71fa785b2636cc2ce4",
+  "native_selector_cases": 80,
+  "native_selector_instructions": 3120,
+  "native_PRS_instructions": 12332869,
+  "scalar_texture_pixels": 393216,
+  "normal_font_changed": false,
+  "story_library_draft_credit": 0,
+  "new_changed_sectors": 24,
+  "changed_locations_from_original": 28441,
+  "validation": {
+    "reextracted_files": "all 12 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "pending": [
+    "Live five-order icon/initial discoverability and EFFECT palette/selection review",
+    "Independent corrected order wording review",
+    "Whole-attack English BREAK artwork, actual sprite transforms and live palette/timing review",
+    "Independent attack wording and reauthored glow/trail fidelity review",
+    "Live native effect loading/palette selection and translated battle result/ability label appearance",
+    "Remaining image formats/text discovery and independent translation/artwork review",
+    "Live inferred-font appearance, blending/pixel alignment and matched Skies comparison",
+    "Independent outline shape fidelity and all-context font review",
+    "Native relocated album note loading, unlock/selection/navigation and live artwork appearance",
+    "Independent meaning/artwork review and estimated paper/thumbnail cleanup review",
+    "Two unresolved album caption readings and remaining game translation/review",
+    "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+    "Live relocated letter-archive loading, image selection and appearance",
+    "Paper-estimate artwork review and development-placeholder reachability",
+    "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+    "Seven credit-name readings and independent confirmation of reference romanizations",
+    "Live credit timing/order, appearance, alignment and overlaps",
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "release": false,
+  "source_evidence": {
+    "context_id": "names.g00.174",
+    "context_source_sha256": "b04682fc4a36aa3a97c09462951fea5c61bea2fea1dc407cb8e1d914f228fc45",
+    "full_menu": "Manual<NL>Always Counterattack<NL>Be Aggressive<NL>Play It Safe<NL>Always Defend",
+    "native_selection": {
+      "start": "0x8c0627d8",
+      "stop": "0x8c062810",
+      "order_byte": "unit record + 8, bits 5:3",
+      "sprite": "58 + order",
+      "resource": 3
+    },
+    "native_selector_report": "work/ui/asset-audit/EFFECT/counterattack-icons/native-selection.json"
+  },
+  "corrections": [
+    "Source sprite 60 is 積, not 潜. Its menu policy is Be Aggressive.",
+    "Source sprite 61 無 means Play It Safe in this policy menu, not a generic None label.",
+    "Added sprite 58 Manual, previously mistaken for a nontext checkmark.",
+    "Old WIN00 icon editing erased bevels. Source Manual frame is restored; texture 2 artwork is one pixel left of the other copies."
+  ],
+  "native_proof": {
+    "source_build": "0.1.33",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archives": {
+      "WIN00.AFS": "7c6fa84dc013ff5df2f9301002a192bdfaa1260491e39716274232824c0a1e87",
+      "EFFECT.AFS": "208acd52bd6b5fe72dc9b83c2338f17a04e4985e09fc524dc4add78665fd80aa"
+    },
+    "icon_cells": 15,
+    "archive_bytes_outside_declared_edits": "exact",
+    "native_guard_and_ABI": "pass",
+    "unchanged_member_payloads_and_offsets": {
+      "WIN00.AFS": 88,
+      "EFFECT.AFS": 459
+    },
+    "protected_sprite_records_and_pixels": 360,
+    "independent_scalar_texture_pixels": 393216,
+    "palette_entries": 256,
+    "native_font_samples": 10240,
+    "normal_font": "exact 0.1.33",
+    "native_PRS_streams": [
+      {
+        "archive": "WIN00.AFS",
+        "member": 2,
+        "instructions": 8983881,
+        "decoded_bytes": 524320
+      },
+      {
+        "archive": "WIN00.AFS",
+        "member": 6,
+        "instructions": 2539621,
+        "decoded_bytes": 131104
+      },
+      {
+        "archive": "EFFECT.AFS",
+        "member": 250,
+        "instructions": 809367,
+        "decoded_bytes": 36288
+      }
+    ],
+    "native_PRS_instructions": 12332869,
+    "native_texture_header_instructions": 549,
+    "native_PVM_wrapper_cases": [
+      {
+        "chunk": 0,
+        "instructions": 132
+      },
+      {
+        "chunk": 1,
+        "instructions": 161
+      },
+      {
+        "chunk": 2,
+        "instructions": 190
+      }
+    ],
+    "native_order_selector": {
+      "source_build": "0.1.33",
+      "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+      "native_interval": [
+        "0x8c0627d8",
+        "0x8c062810"
+      ],
+      "code_sha256": "e5080af158d61ead14535e20d0abdb6296dc09da8a049933fbfbe67fbf11eeb9",
+      "context_id": "names.g00.174",
+      "context_source_sha256": "b04682fc4a36aa3a97c09462951fea5c61bea2fea1dc407cb8e1d914f228fc45",
+      "menu_order": "Manual<NL>Always Counterattack<NL>Be Aggressive<NL>Play It Safe<NL>Always Defend",
+      "native_query": "Actual 0x8c0938e0 unsigned byte field descriptor 0x203: bits 5:3 at unit+8",
+      "sprite_rule": "resource 3, sprite 58 + policy",
+      "case_count": 80,
+      "native_instructions": 3120,
+      "cases": [
+        {
+          "order": 0,
+          "unrelated_bits": 0,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 0,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 0,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 0,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 7,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 7,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 7,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 7,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 192,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 192,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 192,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 192,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 199,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 199,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 199,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 0,
+          "unrelated_bits": 199,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            58,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 0,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 0,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 0,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 0,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 7,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 7,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 7,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 7,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 192,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 192,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 192,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 192,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 199,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 199,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 199,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 1,
+          "unrelated_bits": 199,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            59,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 0,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 0,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 0,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 0,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 7,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 7,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 7,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 7,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 192,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 192,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 192,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 192,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 199,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 199,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 199,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 2,
+          "unrelated_bits": 199,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            60,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 0,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 0,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 0,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 0,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 7,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 7,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 7,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 7,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 192,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 192,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 192,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 192,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 199,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 199,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 199,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 3,
+          "unrelated_bits": 199,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            61,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 0,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 0,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 0,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 0,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 7,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 7,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 7,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 7,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 192,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 192,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 192,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 192,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 199,
+          "row": 0,
+          "first": 0,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            88
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 199,
+          "row": 5,
+          "first": 2,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            160
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 199,
+          "row": 14,
+          "first": 10,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            184
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        },
+        {
+          "order": 4,
+          "unrelated_bits": 199,
+          "row": 32766,
+          "first": 32764,
+          "arguments": [
+            255,
+            3,
+            62,
+            0
+          ],
+          "stack_xy": [
+            32,
+            136
+          ],
+          "instructions": 39,
+          "minimum_changed_stack_offset": -16
+        }
+      ],
+      "native_guard_and_ABI": "pass",
+      "only_stub": "0x8c075c50 sprite constructor; captures R4..R7 and stack x/y",
+      "EFFECT_copy": "Exact original art/coordinate duplicate; separate EFFECT runtime selection not executed",
+      "native_sprite_allocation_submission": false,
+      "GPU": false,
+      "live_validation": "pending"
+    },
+    "limits": [
+      "Frame reconstruction uses the original Manual frame; WIN00 texture 2 is one pixel left of the other copies",
+      "PVM walker uses existing bounded memcmp; sprite constructor is captured, not executed",
+      "Actual archive loading, EFFECT runtime palette/selection, GPU/live appearance and initial discoverability remain unverified"
+    ]
+  },
+  "resources": [
+    {
+      "archive": "WIN00.AFS",
+      "member": 2,
+      "dat_member": 1,
+      "dimensions": [
+        512,
+        512
+      ],
+      "draws": [
+        {
+          "order": 0,
+          "sprite": 58,
+          "ja_ui": "マ",
+          "en": "Manual",
+          "initial": "M",
+          "source_box": [
+            16,
+            88,
+            32,
+            104
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              2,
+              2,
+              12,
+              15
+            ],
+            "ink_xy": [
+              4,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "3ce8006802ac03420b3b7163e890edd78f38900e30ecbd54df68e979e067ad2d",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 1,
+          "sprite": 59,
+          "ja_ui": "反",
+          "en": "Always Counterattack",
+          "initial": "C",
+          "source_box": [
+            32,
+            88,
+            48,
+            104
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              2,
+              2,
+              12,
+              15
+            ],
+            "ink_xy": [
+              4,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "ada8c3257e62fa3451d42cb6abaac42f34ef132daf53e1801f5a6c050953d01d",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 2,
+          "sprite": 60,
+          "ja_ui": "積",
+          "en": "Be Aggressive",
+          "initial": "A",
+          "source_box": [
+            48,
+            88,
+            64,
+            104
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              2,
+              2,
+              12,
+              15
+            ],
+            "ink_xy": [
+              4,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "7362be56b78ce5b6fa6d56518cd393bc63b3219666e9bdd7ddd481ddec64deb6",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 3,
+          "sprite": 61,
+          "ja_ui": "無",
+          "en": "Play It Safe",
+          "initial": "S",
+          "source_box": [
+            64,
+            88,
+            80,
+            104
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              2,
+              2,
+              12,
+              15
+            ],
+            "ink_xy": [
+              4,
+              3
+            ],
+            "mask_size": [
+              4,
+              10
+            ],
+            "mask_sha256": "88fde2c0f60d837479feb1db9da4781389c6b55d1b1522e62857372cca2f87ec",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 4,
+          "sprite": 62,
+          "ja_ui": "防",
+          "en": "Always Defend",
+          "initial": "D",
+          "source_box": [
+            80,
+            88,
+            96,
+            104
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              2,
+              2,
+              12,
+              15
+            ],
+            "ink_xy": [
+              4,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "a41a64acd2b822483cc38c7b396ca7264c748b6bd4a6739c08125d96e0f83b20",
+            "frame_template_sprite": 58
+          }
+        }
+      ],
+      "decoded_sha256": "bcf47279e9db58f218c9a97a27e56798f1b63edf94c0cc3361139cc3b20f22e9",
+      "decoded_bytes": 524320,
+      "changed_pixels": 632
+    },
+    {
+      "archive": "WIN00.AFS",
+      "member": 6,
+      "dat_member": 5,
+      "dimensions": [
+        256,
+        256
+      ],
+      "draws": [
+        {
+          "order": 0,
+          "sprite": 58,
+          "ja_ui": "マ",
+          "en": "Manual",
+          "initial": "M",
+          "source_box": [
+            88,
+            48,
+            104,
+            64
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "3ce8006802ac03420b3b7163e890edd78f38900e30ecbd54df68e979e067ad2d",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 1,
+          "sprite": 59,
+          "ja_ui": "反",
+          "en": "Always Counterattack",
+          "initial": "C",
+          "source_box": [
+            104,
+            48,
+            120,
+            64
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "ada8c3257e62fa3451d42cb6abaac42f34ef132daf53e1801f5a6c050953d01d",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 2,
+          "sprite": 60,
+          "ja_ui": "積",
+          "en": "Be Aggressive",
+          "initial": "A",
+          "source_box": [
+            120,
+            48,
+            136,
+            64
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "7362be56b78ce5b6fa6d56518cd393bc63b3219666e9bdd7ddd481ddec64deb6",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 3,
+          "sprite": 61,
+          "ja_ui": "無",
+          "en": "Play It Safe",
+          "initial": "S",
+          "source_box": [
+            200,
+            32,
+            216,
+            48
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              4,
+              10
+            ],
+            "mask_sha256": "88fde2c0f60d837479feb1db9da4781389c6b55d1b1522e62857372cca2f87ec",
+            "frame_template_sprite": 58
+          }
+        },
+        {
+          "order": 4,
+          "sprite": 62,
+          "ja_ui": "防",
+          "en": "Always Defend",
+          "initial": "D",
+          "source_box": [
+            216,
+            32,
+            232,
+            48
+          ],
+          "rendering": {
+            "background": 42283,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "a41a64acd2b822483cc38c7b396ca7264c748b6bd4a6739c08125d96e0f83b20",
+            "frame_template_sprite": 58
+          }
+        }
+      ],
+      "decoded_sha256": "bf6a6a75fd9468257bcda61b00850ee4ff434806c36841dced5f2f5941022988",
+      "decoded_bytes": 131104,
+      "changed_pixels": 613
+    },
+    {
+      "archive": "EFFECT.AFS",
+      "member": 250,
+      "dimensions": [
+        256,
+        256
+      ],
+      "draws": [
+        {
+          "order": 0,
+          "sprite": 58,
+          "ja_ui": "マ",
+          "en": "Manual",
+          "initial": "M",
+          "source_box": [
+            88,
+            48,
+            104,
+            64
+          ],
+          "rendering": {
+            "background": 5,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "3ce8006802ac03420b3b7163e890edd78f38900e30ecbd54df68e979e067ad2d"
+          }
+        },
+        {
+          "order": 1,
+          "sprite": 59,
+          "ja_ui": "反",
+          "en": "Always Counterattack",
+          "initial": "C",
+          "source_box": [
+            104,
+            48,
+            120,
+            64
+          ],
+          "rendering": {
+            "background": 5,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "ada8c3257e62fa3451d42cb6abaac42f34ef132daf53e1801f5a6c050953d01d"
+          }
+        },
+        {
+          "order": 2,
+          "sprite": 60,
+          "ja_ui": "積",
+          "en": "Be Aggressive",
+          "initial": "A",
+          "source_box": [
+            120,
+            48,
+            136,
+            64
+          ],
+          "rendering": {
+            "background": 5,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "7362be56b78ce5b6fa6d56518cd393bc63b3219666e9bdd7ddd481ddec64deb6"
+          }
+        },
+        {
+          "order": 3,
+          "sprite": 61,
+          "ja_ui": "無",
+          "en": "Play It Safe",
+          "initial": "S",
+          "source_box": [
+            200,
+            32,
+            216,
+            48
+          ],
+          "rendering": {
+            "background": 5,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              4,
+              10
+            ],
+            "mask_sha256": "88fde2c0f60d837479feb1db9da4781389c6b55d1b1522e62857372cca2f87ec"
+          }
+        },
+        {
+          "order": 4,
+          "sprite": 62,
+          "ja_ui": "防",
+          "en": "Always Defend",
+          "initial": "D",
+          "source_box": [
+            216,
+            32,
+            232,
+            48
+          ],
+          "rendering": {
+            "background": 5,
+            "interior_box": [
+              3,
+              2,
+              13,
+              15
+            ],
+            "ink_xy": [
+              5,
+              3
+            ],
+            "mask_size": [
+              5,
+              10
+            ],
+            "mask_sha256": "a41a64acd2b822483cc38c7b396ca7264c748b6bd4a6739c08125d96e0f83b20"
+          }
+        }
+      ],
+      "decoded_sha256": "348964137ac66ade94b3bf323956119bf0072c992c61a2b13a6f866bac2f1a23",
+      "decoded_bytes": 36288,
+      "palette_sha256": "487849f3be26c4fe7252d4b4f1f2d3f444ca5a097a43dbc8c4677f36382ec8b3",
+      "preview_palette_bank": 4,
+      "changed_pixels": 367
+    }
+  ],
+  "archive_placements": {
+    "WIN00.AFS": {
+      "source_archive_sha256": "2fef776838a92d4e279efde89af7cce65a8c4d237538fa6c48bdc6cdc4239cd2",
+      "target_archive_sha256": "7c6fa84dc013ff5df2f9301002a192bdfaa1260491e39716274232824c0a1e87",
+      "archive_bytes": 1677312,
+      "placements": [
+        {
+          "member": 2,
+          "offset": 563200,
+          "source_packed_bytes": 22288,
+          "packed_bytes": 22271,
+          "slot_capacity": 22528,
+          "packed_sha256": "c2d1fbba437b0cb9afa99b24f05d09ce342451ce2101a45898232cf5d4484408"
+        },
+        {
+          "member": 6,
+          "offset": 649216,
+          "source_packed_bytes": 15664,
+          "packed_bytes": 15690,
+          "slot_capacity": 16384,
+          "packed_sha256": "124f5e7590c9355ffa1b7c96cea6b336fca427ed2ccae7873d993733b706e9f9"
+        }
+      ]
+    },
+    "EFFECT.AFS": {
+      "source_archive_sha256": "9f1dcdf479fb3c5c2a20a9548b4ffa113cdee2a6fdd8d167cf64262c33ac76b4",
+      "target_archive_sha256": "208acd52bd6b5fe72dc9b83c2338f17a04e4985e09fc524dc4add78665fd80aa",
+      "archive_bytes": 9922560,
+      "placements": [
+        {
+          "member": 250,
+          "offset": 4474880,
+          "source_packed_bytes": 10156,
+          "packed_bytes": 10128,
+          "slot_capacity": 12288,
+          "packed_sha256": "a043e17851163f1a433d62558c12ac2da5f73b4a85eb1e0f7ce1230687f9dc94"
+        }
+      ]
+    }
+  },
+  "historical_recipe_policy": "0.1.20 image-labels.en.json and 0.1.32 effect-ui.en.json remain byte-exact for proof/build reproducibility. This source-linked five-order map supersedes their wrong/held order-icon entries. Historical reports keep their tested archive identities."
+}

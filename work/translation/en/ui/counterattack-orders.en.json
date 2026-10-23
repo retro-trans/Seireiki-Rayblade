@@ -1,0 +1,53 @@
+{
+  "status": "Source-linked correction; offline native/packaging checks required",
+  "source_build": "0.1.33",
+  "context_id": "names.g00.174",
+  "context_source_sha256": "b04682fc4a36aa3a97c09462951fea5c61bea2fea1dc407cb8e1d914f228fc45",
+  "full_menu": "Manual<NL>Always Counterattack<NL>Be Aggressive<NL>Play It Safe<NL>Always Defend",
+  "native_selection": {
+    "start": "0x8c0627d8",
+    "stop": "0x8c062810",
+    "order_byte": "unit record + 8, bits 5:3",
+    "sprite": "58 + order",
+    "resource": 3
+  },
+  "historical_correction": "0.1.20 Sup/Resupply and Nil/None for sprites 60/61 were incorrect. Superseded in all three copies; Manual 58 was also missing.",
+  "rows": [
+    {
+      "order": 0,
+      "sprite": 58,
+      "ja_ui": "マ",
+      "en": "Manual",
+      "initial": "M"
+    },
+    {
+      "order": 1,
+      "sprite": 59,
+      "ja_ui": "反",
+      "en": "Always Counterattack",
+      "initial": "C"
+    },
+    {
+      "order": 2,
+      "sprite": 60,
+      "ja_ui": "積",
+      "en": "Be Aggressive",
+      "initial": "A"
+    },
+    {
+      "order": 3,
+      "sprite": 61,
+      "ja_ui": "無",
+      "en": "Play It Safe",
+      "initial": "S"
+    },
+    {
+      "order": 4,
+      "sprite": 62,
+      "ja_ui": "防",
+      "en": "Always Defend",
+      "initial": "D"
+    }
+  ],
+  "limits": "Native selector binds the five WIN00 order sprites. EFFECT copy shares exact source art/coordinates; its live selection/palette binding is not proved."
+}

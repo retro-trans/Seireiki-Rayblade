@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "id": "movie.MOV055.moving-title.subtitle",
+  "movie": "MOV055.SFD",
+  "en": "SEIREIKI RAYBLADE",
+  "treatment": "A \u2014 Original artwork + English subtitle",
+  "selection": "Explicit user reply received 2026-10-23; keep original Japanese logo artwork",
+  "source_sha256": "d2a8fe52bd4f0b3e70d7fec9299a2891ad244ddb7f68a479bd571ce8628e6518",
+  "source_index": "work/ui/asset-audit/movies/MOV055/frames-240-420/index.json",
+  "source_index_sha256": "636de3ecc4247a18ad269e4873c56bd5a6e50ff0b5514f35e77c0383fa2dc825",
+  "start_frame": 349,
+  "end_frame_exclusive": 409,
+  "fade_in_frames": 4,
+  "fade_out_frames": 4,
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "font_scale": "Uniform source scale, consistent with selected static treatment A",
+  "subtitle_origin_y": 167,
+  "output_dimensions": [
+    320,
+    192
+  ],
+  "edit_scope": "Only English foreground/shadow strokes below row 167; no opaque plaque or background reconstruction",
+  "witnesses": [
+    {
+      "frame": 349,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00349.png",
+      "pts": 1048105,
+      "sha256": "09f429c3868ebc1ccbf6b790f78145b42546acb95de6b91bc00eecd62b95b093"
+    },
+    {
+      "frame": 350,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00350.png",
+      "pts": 1051111,
+      "sha256": "09f429c3868ebc1ccbf6b790f78145b42546acb95de6b91bc00eecd62b95b093"
+    },
+    {
+      "frame": 352,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00352.png",
+      "pts": 1057123,
+      "sha256": "ba5b160d50835e61ccbb45751cf7f0a5bb21cf9fcc9cc81f4b2b2dd6f37e549b"
+    },
+    {
+      "frame": 360,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00360.png",
+      "pts": 1081081,
+      "sha256": "72e25f8876489b17c4f4ec1640a665b719f272404423d58db177eea2ece35135"
+    },
+    {
+      "frame": 375,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00375.png",
+      "pts": 1126168,
+      "sha256": "e0c1f0ac24597b8241f533ab7ea16ff6f5d664472d67b2dec8e48e2df5187300"
+    },
+    {
+      "frame": 404,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00404.png",
+      "pts": 1213255,
+      "sha256": "36cd51df6d96f5cab5e3671b648562eacce0ab6a9c0918e6b6e2ebda6fc8870c"
+    },
+    {
+      "frame": 405,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00405.png",
+      "pts": 1216258,
+      "sha256": "d5f6e825e87dcc586019a8d0c6ff69b8ba0d1489e574edcfc85ec66155cce98d"
+    },
+    {
+      "frame": 407,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00407.png",
+      "pts": 1222270,
+      "sha256": "b5e27af841ac01e59287c54343b5195ac2911b018a051a0a2651b8462d85f161"
+    },
+    {
+      "frame": 408,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00408.png",
+      "pts": 1225279,
+      "sha256": "b5e27af841ac01e59287c54343b5195ac2911b018a051a0a2651b8462d85f161"
+    }
+  ],
+  "boundary_evidence": [
+    {
+      "index": 348,
+      "time": 11.612211,
+      "pts": 1045099,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00348.png"
+    },
+    {
+      "index": 349,
+      "time": 11.645611,
+      "pts": 1048105,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00349.png"
+    },
+    {
+      "index": 408,
+      "time": 13.614211,
+      "pts": 1225279,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00408.png"
+    },
+    {
+      "index": 409,
+      "time": 13.647578,
+      "pts": 1228282,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00409.png"
+    }
+  ],
+  "remaining": [
+    "Full-motion/design review and native movie playback/sync/skip/loop/return"
+  ],
+  "story_library_draft_credit": 0
+}

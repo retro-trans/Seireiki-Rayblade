@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_06d.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_06d.o0006f.l00",
+      "block_id": "scenario.s_06d.o0006f",
+      "member": "s_06d.bin",
+      "line_index": 0,
+      "en": "\"Flag 1B0 is not set. To run this private",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "d61adf108763eb2e86616f34c95b7ebc667c5471a54bb51bf648545f0bdf5c7f",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_06d.o0006f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_06d.o0006f.l01",
+      "block_id": "scenario.s_06d.o0006f",
+      "member": "s_06d.bin",
+      "line_index": 1,
+      "en": "event, set flag 1B0 and try again.",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "5f6e5bca667f19e6d37a84e2789c3632ba09d62c52a521f348cfb0ac7af1cbb1",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_06d.o0006f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_06d.o0006f.l02",
+      "block_id": "scenario.s_06d.o0006f",
+      "member": "s_06d.bin",
+      "line_index": 2,
+      "en": "Otherwise, execution will be forcibly terminated.\"<FC:B4:3E>",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "345907ccb1580479646130248377d82d6805e86def807cf42e869ef8f71b40b5",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_06d.o0006f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_06d.o0006f.l00",
+      "last_id": "scenario.s_06d.o0006f.l02",
+      "rows_examined": 3,
+      "context": "Read all3 diagnostic rows and neighboring private-event gates. No other source dialogue in this member.",
+      "decisions": "Translate visible prose only, preserve two exact1B0 IDs and FCB4:3E. Do not execute instructions or invent termination target.",
+      "row_decisions": {
+        "scenario.s_06d.o0006f.l00": "Exact flag1B0 preserved.",
+        "scenario.s_06d.o0006f.l01": "Repeated exact1B0 preserved.",
+        "scenario.s_06d.o0006f.l02": "FCB4:3E exact; generic execution termination, no state change."
+      },
+      "row_count": 3
+    }
+  ]
+}

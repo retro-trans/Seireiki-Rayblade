@@ -1,0 +1,210 @@
+{
+  "status": "69 English chapter-title image slots and Chapter label integrated in local 0.1.16; offline native checks and packaging pass; live appearance pending",
+  "source_archive": "WIN00.AFS",
+  "resources": [
+    {
+      "member": 32,
+      "resource_name": "S_TITLE0.PVM",
+      "packed_bytes": 4036,
+      "decoded_bytes": 33728,
+      "packed_sha256": "46956e457a2a99e9fcec6086ec28da2b852d99a3f06abd59692eb03fc01b0e55",
+      "decoded_sha256": "0613b882cc7b3e0a1250623fba82fbbabc0961000fb43400e045e22c84820367",
+      "texture_size": [
+        256,
+        256
+      ],
+      "palette_entries": 112,
+      "rect_start": 304
+    },
+    {
+      "member": 36,
+      "resource_name": "S_TITLE1.PVM",
+      "packed_bytes": 25287,
+      "decoded_bytes": 66720,
+      "packed_sha256": "37b50c294b936d4f068111c0c78aae3fe94ad4f5f9687b03b2b220088a9a49a6",
+      "decoded_sha256": "8f7eaa5116c7ddaa0f5d3474ffeeefa15d7508bd13c08bb02450172f6dc0fc27",
+      "texture_size": [
+        512,
+        256
+      ],
+      "palette_entries": 48,
+      "rect_start": 224
+    },
+    {
+      "member": 40,
+      "resource_name": "S_TITLE2.PVM",
+      "packed_bytes": 23541,
+      "decoded_bytes": 66720,
+      "packed_sha256": "40ddf482493a58ce68847b7baf5da11f709ea505ec4180c4b86b82c1ed5c6129",
+      "decoded_sha256": "f29bd1d0322a83cd48e5faa1ff8652c61276006121f83e7e5e43afb7961c3563",
+      "texture_size": [
+        512,
+        256
+      ],
+      "palette_entries": 48,
+      "rect_start": 224
+    },
+    {
+      "member": 44,
+      "resource_name": "S_TITLE3.PVM",
+      "packed_bytes": 23844,
+      "decoded_bytes": 66720,
+      "packed_sha256": "4c186c375cbf483ba600cb4c771665277765f37038c7326d70e1e92dfe070046",
+      "decoded_sha256": "65422e131a313b6534fe9a2ef22424efcb56cd86d731684f45c9466148fff29c",
+      "texture_size": [
+        512,
+        256
+      ],
+      "palette_entries": 48,
+      "rect_start": 224
+    },
+    {
+      "member": 48,
+      "resource_name": "S_TITLE4.PVM",
+      "packed_bytes": 5808,
+      "decoded_bytes": 33440,
+      "packed_sha256": "ad5443086e2155fb747c84f2bcc9377d4c353c0dd93260ac2486b34fbc84455b",
+      "decoded_sha256": "d53042a99677737b65c8a94b168dff4de075675bc30e99419de80e00f6e234c0",
+      "texture_size": [
+        256,
+        256
+      ],
+      "palette_entries": 16,
+      "rect_start": 224
+    }
+  ],
+  "title_mapping": {
+    "entries": 69,
+    "source_indices": [
+      0,
+      68
+    ],
+    "English_map": "work/translation/en/ui/chapter-cards.en.json",
+    "basis": "All 69 native chapter resource selections match the English slot mapping; native submissions cover all 69 indices and episode numbers 1..99",
+    "unused_slots": "Original Subtitle TBD/development entries remain explicit; no fabricated chapter names"
+  },
+  "format": {
+    "container": "Rayblade MSB-first PRS compressed PVMH; fake PVRT wrappers contain Ninja sprite data and a PVPL palette; real PVRT contains indexed texels",
+    "texels": "4-bit indexed, twiddled; low nibble first; ARGB1555 palette",
+    "sprite_records": "20 bytes: width/height, signed anchor pair, four 256-based UV values, texture ID, flags",
+    "main_and_reading": "Each main title has an optional separate reading/furigana sprite; final title lacks the reading record"
+  },
+  "pending": [
+    "Live chapter-card appearance, animation timing, palette behavior and actual sprite rendering",
+    "Full background/system image-text review and remaining movie-text audit"
+  ],
+  "background_audit": {
+    "archive": "ADV00.AFS",
+    "decoded_textures": 388,
+    "unsupported": 0,
+    "evidence": "work/ui/asset-audit/ADV00/texture-index.json",
+    "coverage": "Contact sheets produced; image text still requires full review"
+  },
+  "system_audit": {
+    "archive": "WIN00.AFS",
+    "standalone_decoded_textures": 17,
+    "evidence": "work/ui/asset-audit/WIN00/texture-index.json",
+    "coverage": "Standalone GBIX textures decoded; PVM-contained resources require separate handling"
+  },
+  "sampled_movie": {
+    "file": "MOV073.SFD",
+    "video": "160x160 MPEG-1",
+    "observation": "The decoded sample is a mech cut-in; this sample does not locate chapter cards"
+  },
+  "format_reference": "https://github.com/nickworonekin/puyotools/wiki/PVR-Texture",
+  "candidate_build": {
+    "version": "0.1.16",
+    "title_slots": 69,
+    "episode_label": "Chapter",
+    "archive_sha256": "f2c87a488925bc6d01e5cbff924f6a414b6f50882253a6cf48d9686a508a927e",
+    "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+    "native_cases": {
+      "PRS": 5,
+      "PVM": 15,
+      "selection": 69,
+      "submission": 99
+    },
+    "native_instructions": {
+      "PRS": 5861181,
+      "PVM": 2415,
+      "selection": 4761,
+      "submission": 78102
+    },
+    "proof": "work/output/0.1.16/chapter-card-native-test.json",
+    "preview": "work/output/0.1.16/chapter-card-preview.png",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "in_game": "pending"
+    },
+    "test_disc": "work/output/0.1.16/disc/Rayblade English Test 0.1.16.gdi",
+    "limits": [
+      "SDK quotient/remainder, memcmp, file-loader and sprite-submission endpoints are bounded fixtures",
+      "Sprite fit uses decoded rectangle/anchor semantics; the native GPU vertex/raster path is not executed",
+      "No live chapter appearance, animation timing or complete game validation is claimed"
+    ]
+  },
+  "target_resources": [
+    {
+      "member": 32,
+      "resource_name": "S_TITLE0.PVM",
+      "texture_size": [
+        256,
+        256
+      ],
+      "packed_bytes": 4137,
+      "decoded_bytes": 33728,
+      "packed_sha256": "913b1c9a2c1484213cd90b39d1bebc03daeb0fcf447117d80ee551f03481e2d4",
+      "decoded_sha256": "fdd1af2a2f1a0512d732a953aea0d75d3a345563e995330131b8df443f5e8ddd"
+    },
+    {
+      "member": 36,
+      "resource_name": "S_TITLE1.PVM",
+      "texture_size": [
+        512,
+        256
+      ],
+      "packed_bytes": 15598,
+      "decoded_bytes": 66720,
+      "packed_sha256": "9dca2ff29f57dc1b5638f789d5ab5f06a51b0d376b2d1140a1392a04218a786c",
+      "decoded_sha256": "7bc27198307bd56d312507c5025e63a8a0c06763cf6a73e1c05bab275aa432e7"
+    },
+    {
+      "member": 40,
+      "resource_name": "S_TITLE2.PVM",
+      "texture_size": [
+        512,
+        256
+      ],
+      "packed_bytes": 17091,
+      "decoded_bytes": 66720,
+      "packed_sha256": "f1372270fc0fc2e2f9777b9dc42940b285b8e071edb914229556182797fd8dc6",
+      "decoded_sha256": "98127a8cd6536832f5b776450f4056d7514d5a9dfda0e30ac081d0f121512d2e"
+    },
+    {
+      "member": 44,
+      "resource_name": "S_TITLE3.PVM",
+      "texture_size": [
+        512,
+        256
+      ],
+      "packed_bytes": 15564,
+      "decoded_bytes": 66720,
+      "packed_sha256": "cb85d888b0a418ff0bd7e84d151707efc079ea554c666e7c933612576e42d11b",
+      "decoded_sha256": "42b4ed2cc5dd1826b365b2ffe37cd6e70037e548bcf6d68eb8f6e99987dd2abe"
+    },
+    {
+      "member": 48,
+      "resource_name": "S_TITLE4.PVM",
+      "texture_size": [
+        256,
+        256
+      ],
+      "packed_bytes": 5982,
+      "decoded_bytes": 33440,
+      "packed_sha256": "59342e09e2834e58e5e13e49d3a224f075adab3edcda1a727865d0dfde136c7d",
+      "decoded_sha256": "c148da771682c21a0112e76b2b446e7bef6a2cf04055a7ed90b2c743d53e31f9"
+    }
+  ]
+}

@@ -1,0 +1,1633 @@
+{
+  "version": "0.1.18",
+  "source_build": "0.1.17",
+  "font_sha256": "d35edf9c6344a19cc627ab2c8df7d11601b62094d5a265ec4eb463e7a713dcb9",
+  "pen_pixels": 236,
+  "ink_pixels": 240,
+  "sections_examined": 248,
+  "changed_sections": 231,
+  "inserted_breaks": 1067,
+  "joined_breaks": 1183,
+  "nonempty_line_count": 1433,
+  "maximum_prior_line_pixels": 403,
+  "maximum_line_pixels": 236,
+  "sections": {
+    "library.character.001.s00": {
+      "prior_en_sha256": "15a0cee176ceb342b9b0e556fd843febb21d34ad90cdff4260c1670981ee4bb9",
+      "en": "A handsome young man with a somewhat brooding air. Deep<NL>down, he has quite a hot-blooded streak. He can be rather<NL>brusque and foul-mouthed, though it doesn't bother him. He<NL>is athletic and handles most sports with ease. That ability<NL>comes from the grueling training at his grandfather's dojo<NL>that he endured as a child. \"However painful childhood<NL>experiences may be, they become treasures later in life.\" He<NL>may be a fine example of that saying. He is an only child. His<NL>parents were caught in a terrorist bombing at an airport and<NL>killed. Afterward, he lived with his pet cat, Yamato. Then,<NL>without warning, he became caught up in an anomaly in<NL>causality that all but forced him to travel to another world,<NL>Agarthia. What will he see there, and what will he feel? The<NL>answers have yet to be found...",
+      "inserted_breaks": 12,
+      "joined_breaks": 13,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.001.s01": {
+      "prior_en_sha256": "527159f54f3a577722c55cb96a14a29eefaec36c0f4e149b6489379fca4c66b8",
+      "en": "<NL>He was closely involved in activating Rayblade, the Spirit<NL>Mech sealed in the Holy Land, and has also been aboard it.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.001.s02": {
+      "prior_en_sha256": "d9da9e7899c7facf4598aaab4057e4617855229268994c4062ac5f11e3b2ac2b",
+      "en": "<NL>Pilot of the Spirit Mech Rayblade. He handles the main<NL>controls.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.002.s00": {
+      "prior_en_sha256": "e16460d489746f944cb761de4fbd2bbb0e3cfadb8471a82bbd507423a847a9dd",
+      "en": "Pilot of the Spirit Mech Vishal. Like Touya, she was caught<NL>up in an anomaly in causality. ...Though she doesn't seem<NL>particularly bothered by it. An utterly carefree,<NL>happy-go-lucky high school girl. When she does get depressed,<NL>however, she sinks very low indeed. She plans things out<NL>carefully when they hardly matter, yet acts before she thinks<NL>precisely when it counts. Either way, she doesn't think very<NL>far ahead. She isn't shy around strangers and has a special<NL>talent for making friends with anyone. Perhaps starved for<NL>her family's affection, she is easily won over by kind words<NL>and quick to fall in love. She can be surprisingly<NL>old-fashioned, too.",
+      "inserted_breaks": 10,
+      "joined_breaks": 10,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.002.s01": {
+      "prior_en_sha256": "85aa0555d13ed0b31c1d00f78ebda5dfb3e025ef311d7187760b47de5066815f",
+      "en": "<NL>She had a faint crush on Touya, but Kasumi's arrival may<NL>make her begin to recognize her true feelings... Or perhaps it<NL>won't.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.002.s02": {
+      "prior_en_sha256": "370afef216ee31abb8fd233eae5b6974a93e70b8a95e6764a5393724ecabbd0f",
+      "en": "<NL>It turns out she actually attends an all-girls school. She<NL>seems to have a bit of a crush on Touya, but...",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.003.s00": {
+      "prior_en_sha256": "bd333ad97841d27d3c25b6f6184b126597a533b4c8e0a110e70b04f8eb1d4756",
+      "en": "A gifted alchemist regarded as one of the Holy Land's most<NL>promising talents. Her current title is Chief First-Class<NL>Scholar of the Holy Alchemical Society. She was also among<NL>the first to sense signs of Ze=Ode's return and sound the<NL>alarm. She takes part in the Spirit Mech Development Project<NL>by providing technical support. Gentle as an angel, she has a<NL>pure and generous heart. She looks very mature, yet<NL>sometimes reveals a rather childlike side. Men might find her<NL>an exceptionally endearing woman. She falls in love quite<NL>easily, but reason holds her back from taking the plunge, and<NL>her fear of being hurt makes her put an end to those feelings<NL>without ever acting on them. She tends to lose her nerve at<NL>the crucial moment, fail, and then hate herself for it.",
+      "inserted_breaks": 11,
+      "joined_breaks": 15,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.003.s01": {
+      "prior_en_sha256": "0a4dbb725549180af939b27ee7d5bb9e1448b1084e2f9b71bfbc7081cb974f5a",
+      "en": "<NL>She is in fact the daughter of Wenimas Latia, one of those<NL>responsible for the Terror of Ze=Ode 109 years ago.<NL>Learning the truth leaves her shaken, but encouragement<NL>from her companions helps her regain her composure and<NL>resolve to face it.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.003.s02": {
+      "prior_en_sha256": "5575cb41c29ffa6279db11545d304717fdbff21cf4c10a8637572a1e35891079",
+      "en": "<NL>Then Lyle, now revealed to be her father, dies before her eyes<NL>while protecting her, plunging her into profound grief. Yet the<NL>bond with her companions that she had felt growing through<NL>all their battles helps her find her feet again. She emerged<NL>with a firm resolve in her heart, and the face of a warrior.",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.004.s00": {
+      "prior_en_sha256": "54fc66a2a5570182f359635d656d9ec75113814261be2af5449a9bcfe07e0162",
+      "en": "Touya's childhood friend. She is reserved and good at looking<NL>after a home. She is also shy, quiet, and reluctant to come<NL>out of her shell. A childhood friend, glasses, long straight<NL>black hair, quiet devotion... She certainly ticks quite a few<NL>boxes. Apparently, though, she loses sight of everything<NL>around her when she snaps. Since Touya's parents died in an<NL>accident, she has looked after him even more devotedly than<NL>before, and harbors special feelings for him. For now, she<NL>keeps them tucked away in her heart, but they are painfully<NL>obvious to everyone else. Perhaps out of habit since<NL>childhood, she still calls him \"Touya-chan.\"",
+      "inserted_breaks": 10,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.004.s01": {
+      "prior_en_sha256": "9ca064665171d4f0a87f9f1f5ef10fe2a22a076b1a2358063a6ee3fab9a7cfd9",
+      "en": "<NL>Like Touya, she is caught up in an anomaly in causality and<NL>ends up in Agarthia.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.005.s00": {
+      "prior_en_sha256": "c58254f6c7a2884b81459e86144d9455ff2cae0f2174fcc3250c4df608487aed",
+      "en": "Pilot of the Spirit Mech Hongshenguang, the Crimson Flash.<NL>A man devoted to justice who prizes the chivalrous code. By<NL>nature, he is extremely courteous. He is demanding of others<NL>and equally hard on himself. For better or worse, he is a<NL>warrior through and through. Two and a half years ago, he<NL>met Melissa when they were summoned together and they<NL>became lovers. During Spirit Mech training, however, they<NL>were caught in a skirmish with Zigrim, and Melissa went<NL>missing. Ever since, the thoughts \"I couldn't save her. I<NL>abandoned her\" have bound him in remorse and left him a<NL>man of few words.",
+      "inserted_breaks": 9,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.006.s00": {
+      "prior_en_sha256": "bc34d5c6d5752d2973a9957dfc6626061b38b72bb321b149412e2b9c6bc9f5df",
+      "en": "Pilot of the Spirit Mech Baldock. He was also the first pilot<NL>selected for the current Spirit Mech Development Project. A<NL>former Brazilian Air Force pilot, he once served with the<NL>Smoke Squadron aerobatic team. He is generally cheerful and<NL>friendly, and quick to make a pass at women. But that is<NL>only his outward face. Surprisingly, he cannot handle a<NL>single drop of alcohol. Apparently, drinking sends him straight<NL>to sleep. He grew up in poverty and has had more than his<NL>share of hardship. He dislikes cats, particularly black ones,<NL>though nobody knows why.",
+      "inserted_breaks": 8,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.006.s01": {
+      "prior_en_sha256": "8e905ef176c72263153b6f8c0d42e1fba2535bdabc11e4a6b3d323896b7a1d7b",
+      "en": "<NL>After losing his wife and child in an accident, he left the<NL>military. Later, while living alone, he became caught up in an<NL>anomaly in causality and found himself in Agarthia.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.007.s00": {
+      "prior_en_sha256": "76ead19388ca8bc9c3d7e5d434fa904e63b6d08e6259bd9c16b4024e82ab92f7",
+      "en": "A hot-blooded young man who tends to get carried away by<NL>his own convictions. An old-fashioned code of chivalry was<NL>drilled into him from childhood, shaping the person he is<NL>today. Recently, though, he has begun to take it in a<NL>somewhat different direction. His Prana level is high for a<NL>native of Agarthia, and in that one area, his natural gifts<NL>are virtually unmatched within the Knights of the Kingdom of<NL>Agarthia. Once he gets an idea into his head, he loses sight<NL>of everything else and charges straight ahead. People like him<NL>are simple souls, and easily fooled. He lost his parents in the<NL>accident that revived Ze=Ode three years ago. Afterward,<NL>Major Rest of the Agarthian Army, his swordsmanship<NL>instructor, took him in. He is utterly helpless around older<NL>women and admires those who are quiet and delicate. He<NL>seems to have feelings for Ymir, but...",
+      "inserted_breaks": 14,
+      "joined_breaks": 16,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.007.s01": {
+      "prior_en_sha256": "1869d9a99d5902d42c11cd6787276a805a03cdc6ac932b242ceae9be6b2555b5",
+      "en": "<NL>The arrival of Ymir's junior colleague, Emy, shatters his<NL>tender hopes of romance.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.007.s02": {
+      "prior_en_sha256": "7623826418c79886f50094fc67ac7f1323034353471e1993a98767e29ba3f4cf",
+      "en": "<NL>...Yet meeting Kasumi mends his broken heart in no time. New<NL>feelings begin to blossom...",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.008.s00": {
+      "prior_en_sha256": "95041f96419cf67119cbb02f13fcd58ef8a0063960a815e613242b2673ec4856",
+      "en": "A redheaded girl with braids and freckles. She is always<NL>looking after others and never minces words. Having lost her<NL>parents when she was little, she has spent years looking<NL>after her younger brother, Gen. Perhaps that explains her<NL>oddly strict and overbearing streak.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.008.s01": {
+      "prior_en_sha256": "5113b2bda5ee249fd80c0105ab6e30500d3624b1189b888113df2efa23408e00",
+      "en": "<NL>During a terrorist incident, Rayblade happened to destroy her<NL>shop. She boards the Liebhofen to collect compensation<NL>from Touya and earn enough to get by. She works mainly as<NL>the cook, but handles all sorts of odd jobs with ease.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.009.s00": {
+      "prior_en_sha256": "4cab13816d81eb2977085fda4e057c3f1a7b9b7eaa484e80175788056d2032a8",
+      "en": "Rosalie's younger brother. Energetic and fond of pranks. He<NL>is quite a cheeky brat. Being lovable anyway must be a child's<NL>privilege!? Even so, he wouldn't dare stand up to his sister<NL>Rosalie. He is self-conscious about being short. His full<NL>name is so long that people usually just call him \"Gen.\"",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.009.s01": {
+      "prior_en_sha256": "6463d3179e92780028e69d7b546e2aea0e7d5d276f6ea9e33fb2c082d4dea57b",
+      "en": "<NL>Ever since he saw Touya in the news about Rayblade's<NL>activation, he has looked up to him with fierce admiration.<NL>Following the incident in the royal capital, he boards the<NL>Liebhofen with his sister Rosalie.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.009.s02": {
+      "prior_en_sha256": "5fd476c6b58a9259239757b0e301235f52fe0b07d7081a7e8e07cd1e12ecece9",
+      "en": "<NL>He dreamed of becoming a Spirit Mech pilot and kept a sharp<NL>eye out for his chance.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.009.s03": {
+      "prior_en_sha256": "2cec6995c4480cb768e06c3aa5f4a3895c58cb190aecbf306ea36416ab192862",
+      "en": "<NL>His hard work and natural aptitude were eventually<NL>recognized, and he became the pilot of the Spirit Mech<NL>Zeifon.",
+      "inserted_breaks": 2,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.010.s00": {
+      "prior_en_sha256": "98987c89d0aebde8c95a6551d23a8afeaaf2acd1103a36c7d2b187827319951c",
+      "en": "Pilot of the Spirit Mech Parikar. Beautiful, but with a cold,<NL>unapproachable air. People often think she is older than she<NL>really is. She is actually quite friendly and has a playful side,<NL>but her tendency to keep people at a distance makes it<NL>difficult for her to find friends. She loves small animals. Her<NL>attitude changes so completely around them that she seems<NL>like a different person. Though she hasn't realized it, she also<NL>seems to prefer older partners.",
+      "inserted_breaks": 6,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.011.s00": {
+      "prior_en_sha256": "edeb9b1f7303414f5e299b12865a95006323d6aab9f4aee351b3f0fd943e8035",
+      "en": "Pilot of the Spirit Mech Drydes. Calm and collected. He is<NL>highly intellectual as well as physically gifted. He is also a<NL>talented cook who serves up delicately flavored dishes.<NL>Usually inconspicuous, he serves as the group's voice of<NL>reason and a source of wise advice. In short, he is the<NL>unsung hero supporting everyone behind the scenes. Only<NL>Clovis has been in Agarthia longer than he has. Perhaps<NL>because they get along so well, the two often spend time<NL>together.",
+      "inserted_breaks": 7,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.012.s00": {
+      "prior_en_sha256": "095c78941d03143a4bb23262a019fcd43aecc8d238b6c11951fe246923075df8",
+      "en": "The daughter of Forzen and Paldia, and Ymir's niece. Quietly<NL>affectionate. Her hobby is apparently fortune-telling... She<NL>gives everything her best effort and has a heart capable of<NL>caring deeply about others. She is so kindhearted that she<NL>isn't quite sure how to approach people, which makes her a<NL>little shy around strangers. Yet with Touya, she felt at ease<NL>right away. She greatly respects Ymir and, inspired by that<NL>admiration, studies alchemy. Her real gifts, however, lie less in<NL>alchemy than in her natural aptitude as a pilot. She also<NL>played an active role as a test pilot in the Spirit Mech<NL>Development Project. Paldia apparently knew nothing about<NL>this. She also has a hopeless sense of direction, the sort<NL>that sends her in exactly the opposite direction from her<NL>destination.",
+      "inserted_breaks": 13,
+      "joined_breaks": 14,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.012.s01": {
+      "prior_en_sha256": "5ed826415bdfbe4ecfe1246141fddfcb7f9da07115552e5ae8fe47267bddd005",
+      "en": "<NL>She joins the Liebhofen's crew and becomes the pilot of the<NL>Spirit Mech Forstin.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.013.s00": {
+      "prior_en_sha256": "e3144d5496e93c0d3d4be8231751d53f5bb342020e59d13eac57f3f86cf118fa",
+      "en": "A girl whose appealing features are her unruly hair and eyes<NL>brimming with curiosity. She is simplehearted and, for that<NL>very reason, utterly straightforward. An outstanding athlete,<NL>she is much stronger than she looks.",
+      "inserted_breaks": 3,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.013.s01": {
+      "prior_en_sha256": "39d3d6c2f0f2d70fabefdec0a2aa322b9b59c9f5b1f99bc3ecd16ceeb074ac3b",
+      "en": "<NL>She took part in the research on Ze=Ode. In her case,<NL>though, she was neither a collaborator nor an assistant.<NL>Instead, she was treated as a substitute to be used in<NL>experiments. Unaware of this, she cooperated with the<NL>single-minded wish to be useful. The distortion in space-time<NL>caused by the explosion 109 years ago threw her forward to<NL>three years before the present, where she has lived since. She<NL>is Eleana's pilot.",
+      "inserted_breaks": 6,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.013.s02": {
+      "prior_en_sha256": "4e310c61f9785f52c68fc3d993b2d61908ee7f5bde5dd30b517d98d384e2c305",
+      "en": "<NL>She is Debish's daughter, but was apparently treated very<NL>poorly. Now, however, she has become one of Touya's<NL>companions.",
+      "inserted_breaks": 2,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.013.s03": {
+      "prior_en_sha256": "38d43573e38634decb581f94b61de9b05ed029a5e5522321531df2a45eae4b0b",
+      "en": "<NL>She is not an ordinary human after all, but a human being<NL>created artificially. Though distraught, she is persuaded by<NL>Touya to try to forge new bonds. However...",
+      "inserted_breaks": 2,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.014.s00": {
+      "prior_en_sha256": "1f8870f03bafc1edb01fe9513e78bbb7f2ede6f961d8e09834625877da7f0b73",
+      "en": "Grad's daughter. She isn't shy with strangers, but has so<NL>little experience of being scolded that she doesn't know how<NL>to handle anger directed at her and sometimes runs away.<NL>Usually bright and lively, she is lonely at heart. She is<NL>interested in romance and eagerly gathers information from<NL>books and elsewhere. Her favorite phrase is \"You perv!\"",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.014.s01": {
+      "prior_en_sha256": "5ed826415bdfbe4ecfe1246141fddfcb7f9da07115552e5ae8fe47267bddd005",
+      "en": "<NL>She joins the Liebhofen's crew and becomes the pilot of the<NL>Spirit Mech Forstin.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.015.s00": {
+      "prior_en_sha256": "8e2585979fbeb7923dea981dfe9b68496967c12529b18ea00d48327bfda5fab0",
+      "en": "A mature woman with a calm manner and an air of<NL>elegance. She was summoned two and a half years ago<NL>alongside Xiujian and Aurelie. She and Xiujian met then and<NL>became lovers, but during Armored Mech training, she was<NL>caught in a conflict with Zigrim and her mech was shot<NL>down. She escaped the wreck, only to collapse from her<NL>injuries, and was rescued by Dr. Baio. Thanks to his care, she<NL>survived, but perhaps because of the terror of battle, she<NL>lost all memory of her time in Agarthia. Since then, she has<NL>worked as a test pilot for Dr. Baio's Armored Mechs while<NL>living with him.",
+      "inserted_breaks": 10,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.015.s01": {
+      "prior_en_sha256": "9a2daa89fe0473060334034e240bd906cf933d020709e871fdd5658b70030086",
+      "en": "<NL>Xiujian's words restore her memories, and she returns to the<NL>man she loves. Pilot of the Spirit Mech Ahti.",
+      "inserted_breaks": 1,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.015.s02": {
+      "prior_en_sha256": "16fb4dba1e19e7a0ca974d723291153eab9ae3a1abbf5967fa6ad05063341568",
+      "en": "<NL>Touched by Dr. Baio's kindness, Melissa chooses to stay. He<NL>is sincerely happy, yet he knows that it cannot last forever.<NL>Even so, he chooses to remain with her, if only for a little<NL>while. Until the moment Melissa realizes that what she feels<NL>is pity, rather than love.",
+      "inserted_breaks": 3,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.016.s00": {
+      "prior_en_sha256": "6f273ef5b0d74bd5ece497054fc6f392e771b0b0a7b39c806d85b2520d08e4d0",
+      "en": "A princess of Agarthia, and an absolute machinery fanatic.<NL>Women have no claim to Agarthia's throne. That, combined<NL>with her natural temperament, let her grow up free of<NL>restraint. Full of curiosity, she wants to stick her nose into<NL>everything. She is frank, open, and refreshingly<NL>straightforward. More often found in work clothes than a<NL>dress, she never strikes anyone as a princess at first<NL>meeting. Brilliantly intelligent, she handles everything from<NL>designing Spirit Mechs to programming computers.",
+      "inserted_breaks": 7,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.016.s01": {
+      "prior_en_sha256": "5d2120293e2ccf06f1d14d8df8bbc711160a3f2044183ce6e871016ce2bd2f54",
+      "en": "<NL>Aboard the Liebhofen, she finds one excuse after another to<NL>help service the machinery herself. The mechanics place great<NL>trust in her.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.017.s00": {
+      "prior_en_sha256": "d9715e33d612b597e8b18d3194fdc2cf44bef383702e5a473afecd814a8c37f6",
+      "en": "Crown Prince of the Kingdom of Agarthia. First in line to<NL>the throne of Agarthia. A fine young man with a strong<NL>sense of responsibility and a gift for taking action. Despite<NL>his position as crown prince, he is easygoing and<NL>unconcerned with formalities. His one flaw is his utter lack<NL>of restraint where women are concerned. Rumor has it that<NL>he has lovers everywhere, and apparently those rumors aren't<NL>entirely baseless... He accepted Ymir's warning that Ze=Ode<NL>would return and launched the Spirit Mech Development<NL>Project.",
+      "inserted_breaks": 9,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.018.s00": {
+      "prior_en_sha256": "6829bceab1e9c938a984b5aec5b7c6d10d21616b8c4b5b2f21410beb43f02a83",
+      "en": "The younger brother of Lodis and Celica. Quiet, kind, and<NL>exceptionally intelligent. Second in line to the throne of<NL>Agarthia. He deeply respects his older brother Lodis, yet<NL>envies him at the same time. He secretly has feelings for<NL>Queen Alforina of York.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.019.s00": {
+      "prior_en_sha256": "ce42e9cdf8a6a356716ed9c3e6607477d6c8de47ef8a9cb10f09eaeff977b210",
+      "en": "A cat Touya found shortly after she was born and has lived<NL>with ever since. Though of mixed breed, she has a glossy coat<NL>of which she herself(?) seems rather proud. She used to<NL>sneak into Touya's bag every day and accompany him to<NL>school.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.019.s01": {
+      "prior_en_sha256": "ed67cb04448e0e8433df125a9d85791d5ec40ca8ba370ffe849fcb1738c7ac74",
+      "en": "<NL>When Touya was summoned, she came to Agarthia along<NL>with him. Touya cherishes her as family, rather than as a pet.<NL>After she was gravely injured and underwent extensive<NL>resuscitation surgery, Gabon's kindness(?) left her able to<NL>understand and speak human language, a cyborg cat with<NL>intelligence on a human level. For some reason, though, she<NL>says \"nya\" whenever she means \"na.\" Always by Touya's<NL>side, she understands him well. She seems to think of herself<NL>as his older sister. She knows more about Agarthia and the<NL>Spirit Mechs than Touya does.",
+      "inserted_breaks": 8,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.020.s00": {
+      "prior_en_sha256": "860682b942e47ea58494c3c91d99501d0acbbbae282c3d97c66d50522627b40a",
+      "en": "A knight of York bearing the title \"Sword Radiance,\" which<NL>denotes the strongest knights in Agarthia. He wields an<NL>immense sword nearly twice his own height and can<NL>overpower an Armored Mech without piloting one himself. It<NL>is said that the only person who can match him in combat is<NL>Marie Christil, another holder of the Sword Radiance title. Of<NL>all the knights who hold that title, Garyud alone appears in<NL>public, so he can be called the strongest warrior on the<NL>continent. Every knight aspires to be like him, regardless of<NL>nationality.",
+      "inserted_breaks": 8,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.021.s00": {
+      "prior_en_sha256": "49b38b11130b915a6f911adb392a5f1a1d46a905fb0874da82585ee3b848296c",
+      "en": "A knight of York's royal guard, one of the so-called Three<NL>Sword Knights. Known as Reduce the Silver, his movements<NL>on the battlefield are likened to a silver wolf. With his speed<NL>and destructive power, he has repelled countless threats and<NL>helped defend York. Earnest by nature, he believes in fighting<NL>fairly and openly.",
+      "inserted_breaks": 5,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.022.s00": {
+      "prior_en_sha256": "e209ac8d2af82decbdcc46dd7deec44f9f14f5061374f062ab9bf92d909856a0",
+      "en": "A knight of York's royal guard, one of the so-called Three<NL>Sword Knights. An enormous knight with a gentle heart. At<NL>the palace, he can always be found tending the flowers. The<NL>flowers blooming in the gardens are the fruits of his hard<NL>work. He judges situations calmly and sees the bigger picture:<NL>a knight with the makings of a commander. It would be no<NL>exaggeration to call him York's military strategist.",
+      "inserted_breaks": 5,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.023.s00": {
+      "prior_en_sha256": "aad8c6a91392edaeca2af7a0c40a8aee1b3148cce2c5c30ae15869c8fa954b79",
+      "en": "A knight of York's royal guard, one of the so-called Three<NL>Sword Knights. Her hair and eyes are the color of molten<NL>rubies, and her fierce-looking features and slender figure<NL>bring a predatory cat to mind. She feels an aversion toward<NL>men. Perhaps that explains why there has never been a<NL>whisper of romance about her, a fact that clearly worries<NL>her father, Garyud. In her own words, \"I have no intention of<NL>getting married.\" It seems Garyud will have plenty to worry<NL>about for some time yet.",
+      "inserted_breaks": 7,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.023.s01": {
+      "prior_en_sha256": "639625aaedb14387188302550084222f497d64a937109ea5d6e22a7b356b5e7d",
+      "en": "<NL>It is revealed that she is descended from both the former<NL>ruling house of Falmight and the royal house of Istarsh. To<NL>everyone's surprise, she and Alforina turn out to be cousins.<NL>Now that Queen Alforina has fallen to an assassin's blade,<NL>Ciel is chosen as the new leader.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.024.s00": {
+      "prior_en_sha256": "bd4d3c8a1ddf4d7353190f1cc1fce721de83479391fa910bc8e2a3bcee646b72",
+      "en": "The son of Grand Duke Gaharin Lang Mestina, who was the<NL>younger brother of Reginal Lang Mestina. He was not born<NL>to Gaharin's lawful wife, however, and is an illegitimate child.<NL>After his father Gaharin, his greatest protector, died,<NL>hostility toward him within the court grew stronger, leaving<NL>him increasingly isolated. At that point, Crown Prince Lodis<NL>reached out to him. From then on, they lived as the closest<NL>of friends. Until the day Lodis's words made Rayfon shut his<NL>heart against him... Later, Rayfon volunteered for an<NL>investigation team. When Ze=Ode revived, he was caught in<NL>the explosion and presumed dead. In fact, he was caught in<NL>the space-time distortion opened by the blast and lost<NL>between moments of time. There he encountered a<NL>disembodied mind named Grauzer, who was also wandering<NL>that void. Grauzer saved his life in exchange for a body and<NL>a place for his consciousness. Rayfon retained his own<NL>sense of self while sharing his existence with Grauzer's<NL>consciousness. Now, the two minds have fused. Grauzer<NL>designed the Ultra-Offensive Shell Units known as Shinkaio.<NL>He is an alien from the planet Lin Karma, rather than Earth.<NL>As the pilot of the Shinkaio Aidion, he fought a desperate<NL>battle against Vorlia with two companions 4,000 years<NL>ago, then slept in the void between moments of time.",
+      "inserted_breaks": 19,
+      "joined_breaks": 20,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.025.s00": {
+      "prior_en_sha256": "307db0761e6b93ba80793044b82e3e1b12fa82997812e6abcc2e8c09555890f3",
+      "en": "A colonel in the Agarthian Army. Marshal Revios's devoted<NL>right-hand man. Fiercely patriotic and conscious of his elite<NL>status, he would not hesitate to give his life for Agarthia.<NL>He is better at intrigue within and beyond the organization<NL>than frontline combat.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.026.s00": {
+      "prior_en_sha256": "3933e51cf03d8925e738ef7115c7648f51c4b3c13dec109ebd3db1781144b4b8",
+      "en": "A lieutenant colonel in the Agarthian Army. An officer<NL>personally groomed by Marshal Revios. He has sworn absolute<NL>loyalty to the marshal. Extremely belligerent.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.026.s01": {
+      "prior_en_sha256": "d71cbbe7ad218c2945e0917f01ca6b296d2f9d057fb65e56a984e95c96a59b3c",
+      "en": "<NL>He seems to have feelings for Rosalie, but she pays him no<NL>attention whatsoever.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.027.s00": {
+      "prior_en_sha256": "f1526e163cba4b71daa6898053835e6f5423a876fdc280a966520caa014b3a9e",
+      "en": "A major in the Agarthian Army. He is not merely one of the<NL>kingdom's finest Armored Mech pilots, but one of the<NL>greatest knights on the continent. He also holds the Royal<NL>Knights' sacred rank of \"Phoenix,\" a title awarded to<NL>Agarthia's most outstanding knight. He is famous as the<NL>only knight to have studied under Marie Christil, a Sword<NL>Radiance knight. There are even rumors that they were lovers.<NL>He values honor and duty, and holds himself to lofty ideals.<NL>Fain's mentor, and as close to him as an older brother. Three<NL>years ago, he took in Fain after the boy lost his parents.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.027.s01": {
+      "prior_en_sha256": "9db9c8d3fe0b93a3d12e52234d19d0da03c0a65f6ed44c1b3349d9639504024d",
+      "en": "<NL>Incidentally, he seems to be in an intimate relationship with<NL>the freelance journalist Maki.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.032.s00": {
+      "prior_en_sha256": "c8c68c0eb6e2f739a24512e639838db4d1b76798cda5f457b1892b1e22827895",
+      "en": "Outwardly, she is a girl with clear azure eyes and brown skin.<NL>In fact, she is an alien from the planet Lin Karma. Together<NL>with Grauzer and Valga, she fought a desperate battle<NL>against Vorlia on Earth 4,000 years ago. Afterward, she<NL>was flung to Linga, a remote island in Earth's southern<NL>seas, where she was revered as a messenger of the gods.<NL>Eventually, unable to maintain her physical form, she sealed<NL>her consciousness inside her own Shinkaio, Coolmarishin, and<NL>went to sleep in preparation for Vorlia's eventual return.<NL>Now, 4,000 years later, Valga has awakened her. Borrowing<NL>the body of Mana Elua, a girl from the island who served as<NL>a priestess, she sets off for Agarthia. Mana's own<NL>consciousness lies almost entirely dormant. Though Mana<NL>grew up beneath the southern sun with a bright, bubbling<NL>energy, Rishuna's gentle, modest personality instead gives her<NL>the air of a woman wrapped in mystery.",
+      "inserted_breaks": 11,
+      "joined_breaks": 12,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.033.s01": {
+      "prior_en_sha256": "2d2159699492509ac1294fc4cf7419cf32d77bc8b0cc437671090bd336da9dbb",
+      "en": "<NL>An alien from the planet Lin Karma. Together with Grauzer<NL>and Rishuna, he fought a desperate battle against Vorlia on<NL>Earth 4,000 years ago. Unlike the other two, he was not<NL>flung anywhere and maintained his physical existence. After<NL>helping stabilize Agarthia and restore Earth's environment, he<NL>went to the far side of the moon to prepare for Vorlia's<NL>return. There, together with his Shinkaio, Sivarius, he entered<NL>a long sleep. Though he spent those quiet years in suspended<NL>animation, 4,000 years was still quite enough to turn him<NL>into an old geezer. Even so, the fact that he still retains his<NL>original body is astonishing. Awakened by Goderius's<NL>appearance, he descends to Earth to wake his two<NL>companions, who are still asleep. Rishuna must have been<NL>quite surprised when they reunited and she saw that Valga<NL>had become an old man. Apparently he used to be a cool<NL>young man. Now he's just a dirty old man.",
+      "inserted_breaks": 15,
+      "joined_breaks": 18,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.034.s00": {
+      "prior_en_sha256": "b49c784c88fef1d3910bdd49c62a114f87493cb73cb0bd800b062cd0f1ae937c",
+      "en": "The central figure behind the Terror of Ze=Ode 109 years<NL>ago. He devised a plan to use Ze=Ode to accelerate human<NL>evolution and lead humanity to a new stage. During the<NL>explosion 109 years ago, his body alone was destroyed,<NL>leaving him a disembodied consciousness. When he was flung<NL>forward to three years before the present, he could not<NL>simply disappear. Instead, he summoned a vessel with his<NL>thoughts: Dei, whose body he merged with. Pilot of Goderius.",
+      "inserted_breaks": 6,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.034.s02": {
+      "prior_en_sha256": "e816972e562dc1c47eba7a26e96966fad2ec4ac7847d810b8138275eb963f602",
+      "en": "<NL>In fact, Debish no longer acts as himself, though his own<NL>consciousness still exists. During the activation experiment<NL>113 years ago, he came under the control of an Estelian<NL>consciousness that had been sealed inside Goderius.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.035.s00": {
+      "prior_en_sha256": "85eac9e2231eeb8afec9cf9ed02689cf5f85c0e102f001c836c80cf1d8d0c441",
+      "en": "An alchemist who agreed with Debish's plan and joined him.<NL>Blind from birth, she can now see thanks to artificial<NL>retinas. Even so, she does not rely on her sight, and rarely<NL>shows her eyes. She is Debish's most loyal assistant and<NL>believes everything he says without question. The space-time<NL>distortion caused by the explosion 109 years ago flung her<NL>forward to three years before the present, where she has lived<NL>since. Pilot of Parthenos.",
+      "inserted_breaks": 6,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.035.s01": {
+      "prior_en_sha256": "acc45b33e565b28724ac5da2b8a856c382a262822f3931a619e2d8a9ce596137",
+      "en": "<NL>Debish's daughter and Leone's older sister. She seems to have<NL>sensed some change in her father since the day of Goderius's<NL>activation experiment, but...",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.035.s02": {
+      "prior_en_sha256": "d1a264f63ddf4b004764a4ebff82004407fb8ffa3fa4c48407381d7ab71f9b81",
+      "en": "<NL>Even now that she knows everything, she is prepared to<NL>sacrifice herself for Debish.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.036.s00": {
+      "prior_en_sha256": "14439135d08d96ae381769be9e924f8cec6692bf0777222905e1204eb9af1196",
+      "en": "A person surrounded by a strangely mysterious air. He tends<NL>to be offensively polite, though apparently that is simply his<NL>natural manner.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.036.s01": {
+      "prior_en_sha256": "00d69c2321f454c3d8e9cd247b063015f06d6b76e75b0144654bc858e14f7e7f",
+      "en": "<NL>An alchemist whose talents caught Debish's eye 115 years<NL>ago, leading him to join the research on Ze=Ode. He went on<NL>to participate in Debish's plan as well. His specialty is<NL>bioengineering. The space-time distortion caused by the<NL>explosion 109 years ago flung him forward to five years<NL>before the present, rather than three. He used that two-year<NL>head start to put his own designs into effect. Unbound by<NL>human ethics, he acts according to his own values. Faithful<NL>to his own feelings and judgments, he may risk his life to<NL>save someone one day, and kill someone without the<NL>slightest change of expression the next. Nobody can fathom<NL>the workings of his mind. Pilot of Gaiozon.",
+      "inserted_breaks": 11,
+      "joined_breaks": 13,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.037.s00": {
+      "prior_en_sha256": "dba497a8e3b7e89019c44f94b0de7926bbf1b5a212cdac02fa5071de974a0f2d",
+      "en": "Pilot of Rayode. He joined the research on Ze=Ode through<NL>an introduction from Wenimas. Rather than an alchemist, he<NL>was a self-taught researcher of the human mind. A natural<NL>genius of sorts, he never learned to put in much effort.<NL>Unfortunately, his natural physical gifts also led him to<NL>develop a habit of acting before he thinks. Still, his<NL>knowledge and understanding rivaled an alchemist's, and he<NL>apparently made a major contribution to the research. He<NL>and Wenimas were lovers. But when Wenimas and his younger<NL>brother Lenis, who had also joined the project, seized<NL>Rayblade and challenged him to battle, he began to suspect<NL>their relationship. Those suspicions turned into a dark<NL>jealousy that took deep root in his heart.",
+      "inserted_breaks": 11,
+      "joined_breaks": 14,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.037.s01": {
+      "prior_en_sha256": "7a6aaff5269ea446a9314daeaf15b9b859872093b72e8c00b9bf42929e0fd70d",
+      "en": "<NL>Upon learning that Wenimas had never betrayed him, however,<NL>he is overcome with regret. Then, to protect his daughter<NL>Ymir, he sacrifices his own life. Perhaps he was a man who<NL>lived for love to the very end...",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.041.s00": {
+      "prior_en_sha256": "b5442c1aad34f34a1c9cc30111711430043cebf7e5a639f97415f33a906005db",
+      "en": "A general in the Republic of Zigrim's army. He is effectively<NL>the head of the military, and his influence is said to exceed<NL>even the president's. Small in stature, but full of energy. At<NL>heart, he is a soldier brimming with patriotism, yet he is no<NL>blind fanatic. He has the judgment to know what must be<NL>done. Friendly enough to share a drink even with a private, he<NL>has earned the soldiers' deep trust. He apparently has a<NL>personal feud with President Horem and refuses ever to meet<NL>him face-to-face. He also seems to be an old acquaintance<NL>of Dilma Jin Revios, marshal of the Kingdom of Agarthia.",
+      "inserted_breaks": 9,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.042.s00": {
+      "prior_en_sha256": "c7c33a0d417ebce9b5ad9a42b2b24e132af524d3dab453564c1a35bb02acdc2e",
+      "en": "A major in the Republic of Zigrim's army. As Zigrim's military<NL>modernizes, he is known as its last knight. Called the Lion of<NL>the West, he has admirers far beyond Zigrim and is held up as<NL>a model of knighthood. Until recently, he had left the military<NL>and lived with his wife and daughter. He returned to service<NL>as if to coincide with the invasion of York.",
+      "inserted_breaks": 4,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.043.s00": {
+      "prior_en_sha256": "da13f0697afb46f539d72f7e42f5111a357ab957d3ea5e59e42634a92d33b15a",
+      "en": "A lieutenant colonel in the Republic of Zigrim's army. A<NL>fiercely independent woman, hard on herself and on others.<NL>She had resolved to remain single all her life. Lately, though,<NL>that no longer seems quite so certain. Perhaps because she<NL>grew up poor, she is rather thrifty and meticulous.<NL>Apparently, she dislikes slovenly men and frivolous, grinning<NL>men.",
+      "inserted_breaks": 3,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.044.s00": {
+      "prior_en_sha256": "a500c18d54ebf8d6b75d20bca7ba92c77b5030860835f4160f4f301b31c11186",
+      "en": "A first lieutenant in the Republic of Zigrim's military. A<NL>cheerful, friendly man overflowing with talent. He is a genius<NL>at winning people over. He is good at drawing others into his<NL>own rhythm. Behind that manner, however, lies cool-headed<NL>judgment. He is making advances toward Commander Fores,<NL>but she pays him no attention. His favorite phrase is \"Quite<NL>right, quite right.\"",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.044.s01": {
+      "prior_en_sha256": "438de0aa6dc70c5005fba3d079799c2cfd0e67c1c520fde1638f16f13bd7422f",
+      "en": "<NL>In fact, he was a test subject in a top-secret human<NL>enhancement project once conducted in Zigrim, commonly<NL>known as Code 3. A mark that will never fade has been<NL>branded into his neck, and even now he continues to take<NL>powerful tranquilizers.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.045.s00": {
+      "prior_en_sha256": "df0c955c3ad6d3fb9652e03dd8280153da62353c85b4e0e6423086c67374d971",
+      "en": "A captain in the Republic of Zigrim's army. Zigrim's problem<NL>child, belligerent and obsessively vindictive. His mind works<NL>just like that of a selfish child prone to tantrums. Even so,<NL>he is a skilled pilot whose achievements in battle earned him<NL>his present rank. He is a despicable man who will use any<NL>means to reach his ends, yet he also has a warrior's love of<NL>fighting stronger opponents.",
+      "inserted_breaks": 5,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.045.s01": {
+      "prior_en_sha256": "f6c976b73a9419d6aa1d826e958184860c765d9659ee5abb8faf36a158a08e46",
+      "en": "<NL>Eleven years ago, he tried to assault Grad's wife. Grad gave<NL>him the scar that runs across his cheek. He still nurses a<NL>misplaced grudge over it.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.046.s00": {
+      "prior_en_sha256": "31bd24245809c0629ad1c6433f5c3787ad449c39dc96264677920b6b9da7518a",
+      "en": "Director, chief designer, and accountant of Zigrim's<NL>Designant Armored Mech workshop. In other words, he owns<NL>a private workshop whose only employee is himself. Since<NL>manufacturing is outsourced to other workshops, he mainly<NL>handles design and prototype construction. He has absolute<NL>confidence in his own talents and has devoted his life to<NL>developing the strongest Armored Mech. He never tires of<NL>declaring himself a genius, but in truth, he is a man of hard<NL>work. He dislikes letting anyone see the effort he puts in,<NL>however. His personality is rather frivolous. Shy around<NL>women, he is still single.",
+      "inserted_breaks": 10,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.046.s01": {
+      "prior_en_sha256": "d347839a5d763271dd3d91b38ee3e2540e9ed3f9416ca30de470b1e9aa5dc3dc",
+      "en": "<NL>He is also the man who rescued Melissa after she lost her<NL>memories and nursed her back to health. In time, he begins to<NL>feel something for her that goes beyond their partnership in<NL>research, but...",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.047.s00": {
+      "prior_en_sha256": "67a5dedfa3884fc714cab9e2c43fdf85cbb75d19ef6e3fdb67e42927ed95b591",
+      "en": "Always dressed in black, he is known as the Black Prince: the<NL>second prince of the Principality of Limberg. He has now<NL>been disinherited as a prince of Limberg. He was at the scene<NL>of the explosion three years ago and went missing in its<NL>aftermath. When he appeared again, the frail boy of three<NL>years earlier had grown into a young man brimming with<NL>confidence. Before being disinherited, he had studied in<NL>Agarthia, where he was close to Celica and Tix. He especially<NL>admired Rayfon as an older brother and was always at his<NL>side. They seemed like real brothers, or perhaps shared a bond<NL>stronger even than that.",
+      "inserted_breaks": 9,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.047.s01": {
+      "prior_en_sha256": "bba7ccba3d6bdd443c1c5709fbb9e2f9c8fdc35c74323fffcb0c88c5a98fc86a",
+      "en": "<NL>In fact, he was a clone created by Bernst. The original was<NL>injured beyond any hope of recovery in the explosion three<NL>years ago and was discarded during the cloning process. His<NL>implanted memories are identical to the original's. Unable to<NL>forgive Lodis for hurting Rayfon, he resolved to take revenge<NL>on Rayfon's behalf, weaving one scheme after another for<NL>that purpose alone. After his death, the Principality of<NL>Limberg issued no official statement. Apparently its king,<NL>Fram Zeo Isfandeil, considers that Cain ceased to have any<NL>connection to their country the moment he was disinherited.",
+      "inserted_breaks": 9,
+      "joined_breaks": 10,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.049.s00": {
+      "prior_en_sha256": "1a7c857897a3c659d4f023a43b89c0894d8fcc9f1239c5d4acbe4e7c6cd3917e",
+      "en": "The third son of a noble family of middling rank in the<NL>Kingdom of Agarthia. A patron of the terrorist organization<NL>Dawn of an Era. At heart, he is a coward incapable of doing<NL>anything on his own. His place in Dawn of an Era has<NL>nothing to do with his own abilities. They are interested<NL>solely in his parents' wealth. Needless to say, he hasn't<NL>realized this himself.",
+      "inserted_breaks": 6,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.050.s00": {
+      "prior_en_sha256": "19bc00c749be6e6ea451077eaeeb0c625492af447de62f99c81b8d749892a17a",
+      "en": "Field commander of the terrorist organization Dawn of an<NL>Era. He once commanded a unit in Venir, a mercenary force<NL>of the Principality of Limberg. An upright military man, he<NL>ignores slander against himself, but refuses to tolerate<NL>insults toward his subordinates, no matter who is<NL>responsible. This made him unpopular with his superiors, but<NL>earned him the deep trust of his men. He has successfully<NL>carried out several famous operations, and his skill as a<NL>tactician is beyond doubt.",
+      "inserted_breaks": 8,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.050.s01": {
+      "prior_en_sha256": "84ffff198180e29125176c048f84bfb0f8a4e107e8055ab1b210e16562f41cc0",
+      "en": "<NL>Dei once saved his life. His devotion to Dei led him to join<NL>Dawn of an Era.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.051.s00": {
+      "prior_en_sha256": "fccb89d2b3ffac8199b7d5dd92e4d815b4415013c53fb9fd48fa052c828a95af",
+      "en": "She also holds the title of secretary to Dei Rakbal, chairman<NL>of the Agarthian Council. A woman with a mature, sensual<NL>allure.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.051.s02": {
+      "prior_en_sha256": "360a59289108c219898cba5799076102696a51e6bc9ea6f6b7c8a3cf512db806",
+      "en": "<NL>Having survived countless battles alongside Dei, she is a<NL>mercenary of proven skill.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.051.s03": {
+      "prior_en_sha256": "f656d5742338d970d51e0e9e02f4a31a22200b67a12ff62ab68890be6cca33e8",
+      "en": "<NL>She is also skilled in hand-to-hand combat and has<NL>successfully assassinated important figures on numerous<NL>occasions. Naturally, she also makes use of a woman's<NL>powers of seduction.",
+      "inserted_breaks": 3,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.052.s00": {
+      "prior_en_sha256": "d0c8997b9349b8d867817325cd7b12c2a476d55d859bfd622fd118e39ebbd1a7",
+      "en": "He is fairly sharp, but his naturally short temper wastes that<NL>intelligence. He was born into the family of a scholar<NL>famous in his field, but a certain incident tore the family<NL>apart. After a troubled boyhood, he joined Dawn of an Era,<NL>where he remains today. For some reason, he and Barkin seem<NL>to get along well.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.053.s00": {
+      "prior_en_sha256": "21fe6cf8d80b428b10ce66deb5ebec5dccc0852127c15c2990d7e6afc30acc90",
+      "en": "A man who overestimates his own strength. He is a good<NL>man at heart, but his very innocence makes it hard for him<NL>to find his way through life. He had a younger sister, but she<NL>died in a certain incident.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.053.s01": {
+      "prior_en_sha256": "08d64c7c0d28ca1e001203b08e2684731eb881f956170aa2deb021899d812b32",
+      "en": "<NL>Because of that incident, he has secretly continued sending<NL>money to a certain orphanage. To the children, he was a kind<NL>older man.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.054.s00": {
+      "prior_en_sha256": "a4c614f68dbaad8ad6f772c7a253b9604cbc2b56283be32765d11ec8e8a33045",
+      "en": "A hardened fighter who once made a name for himself as a<NL>mercenary alongside Render. Devoted to duty, this veteran<NL>speaks only when necessary.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.055.s00": {
+      "prior_en_sha256": "c882f9c9e08bb2c270e1da95cf42dde93adfb6ef701f2addbf5cc36ad13be5b2",
+      "en": "A rather timid man. He gets along well with Kinari. His<NL>distinguishing feature is his lack of distinguishing features.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.056.s00": {
+      "prior_en_sha256": "2666f8e79d7e2a89e9f9e83e07761ab47cc4e3d52febe09d4fce8f746e7a452c",
+      "en": "A newcomer at the very bottom of the ranks. He originally<NL>belonged to Ioannis's circle of hangers-on. While many of<NL>the others left Ioannis, he alone stayed, for some reason. In<NL>that sense, he may be the only person who truly understands<NL>him.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.057.s00": {
+      "prior_en_sha256": "e6cecf6e503deac3c4a648bd7a1b4c62c1b65cf5d88c9887555a4a9ff14e7ed9",
+      "en": "Leader of a notorious mercenary band said to side with<NL>anyone who offers enough money. Once he has signed a<NL>contract, however, he never betrays it. Every member has an<NL>unusually high Prana level for an Agarthian and can pilot an<NL>Armored Mech with ease. As a result, countries everywhere<NL>prize their services.",
+      "inserted_breaks": 5,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.057.s01": {
+      "prior_en_sha256": "2bb63b9f9bb61f29511849e330d93ff3e35bc6c984499b575011453918085af8",
+      "en": "<NL>He was once the foremost knight among the sacred ranks of<NL>Agarthia's Royal Knights. But battle became so ingrained in<NL>him that only while fighting could he feel his own existence.<NL>Nobody knows that he is now the commander of a mercenary<NL>band. Rosalie and Gen's biological father. His true name is<NL>Gaizardingterius Jin Mercene. He is commonly called Gaius.",
+      "inserted_breaks": 4,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.058.s00": {
+      "prior_en_sha256": "aa3b794505fd04473975e9eaa80a9cb7bdc9454907d50e23e01d6bc0afbf80d6",
+      "en": "Tough and wild, he seems to have been born for the sole<NL>purpose of becoming a mercenary. He can live only in battle.<NL>The worse the situation, the more his abilities shine: a man<NL>who thrives on adversity. In ordinary life, he is quite a<NL>gentleman.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.059.s00": {
+      "prior_en_sha256": "5bf1723d3e23efb763d9b57dbff11b5e33f758dd22e1cad9f81b39fdd3394f1a",
+      "en": "He can be a little hotheaded, but is generally a calm man. A<NL>skilled tinkerer, he met Vales while working in the scrap<NL>business and was the one who introduced Vales and Jono to<NL>each other.",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.059.s01": {
+      "prior_en_sha256": "352df0a04b94918a99500741aa0b38577b42f37236af6ab3f41d4e9f0961d0e5",
+      "en": "<NL>His skills are good enough to win even Celica's approval,<NL>though nobody would guess his talent from his appearance.<NL>Lately, he has been a little concerned about his growing<NL>belly.",
+      "inserted_breaks": 1,
+      "joined_breaks": 0,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.067.s00": {
+      "prior_en_sha256": "925c7ed41fd2c7aefedc8b7f298bd31e87782aa96151655f69b4f769dd2ddd15",
+      "en": "The rank-and-file soldiers who belong to the terrorist<NL>organization Dawn of an Era. Among them is a person<NL>called \"Subordinate\" who accompanies Barkin, but they have<NL>all been lumped together here. That's how minor enemies have<NL>always been treated, then and now.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.083.s00": {
+      "prior_en_sha256": "628b443bb207a23c74b0ed691c07b012bb9e94be87fb0503073f5b261dbf33b2",
+      "en": "The Liebhofen's engineer and ship's doctor. A stubborn old<NL>man. Unusually for an Agarthian, he has experienced war. He<NL>cuts an imposing figure, but looks younger than his actual<NL>age. He has a large scar on his left cheek, which he<NL>apparently keeps as some sort of reminder to himself. His<NL>wife and child have died. Apparently he was a renowned<NL>mercenary in his youth, but he does not like discussing it. He<NL>is the one responsible for turning Yamato into a cyborg cat.<NL>Incidentally, an \"imposing figure\" means someone whose body<NL>and facial features are unusually large and powerfully built.",
+      "inserted_breaks": 8,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.084.s00": {
+      "prior_en_sha256": "c3682b3c61b77d5e690e80822e8a8551766543c78ce5c9a34943e78f23e6ccb2",
+      "en": "The Liebhofen's communications officer. She is also a<NL>qualified physician. Her face always seems to be smiling.<NL>Gentle and personable, she is good at looking after others.<NL>Through Rest's recommendation, she joined the Spirit Mech<NL>Development Project.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.084.s01": {
+      "prior_en_sha256": "36a4313b3ee385cb18ffdc46891a8ecc9e3dea1e051ad45de1efa59087f45087",
+      "en": "<NL>However, she was a test subject in Code 3, a human<NL>enhancement project secretly pursued in Zigrim and later<NL>sealed away. When she pilots an Armored Mech, she<NL>transforms into a terrifying fighting machine. Three years<NL>ago, Miyasco ran out of control during an experiment and<NL>crossed into Agarthia. She fought Rest, then a captain<NL>assigned to border security, and became an Agarthian<NL>prisoner. But when Rest learned of Zigrim's inhumane project,<NL>he took her under his protection. With help from Lodis and<NL>Ivel as well, she gained citizenship in the Holy Land. Though<NL>haunted by recurring nightmares, she tried to find an<NL>ordinary daily life. A mark that will never fade is branded into<NL>her neck, and the wounds in her heart remain unhealed.",
+      "inserted_breaks": 12,
+      "joined_breaks": 13,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.085.s00": {
+      "prior_en_sha256": "b148b515a72f30a09cfaa832c89ac97919eeb4e52f40aa8256c3f6dafd26cf37",
+      "en": "The Liebhofen's helmsman. Despite his large build and<NL>intimidating face, he is gentle at heart... or rather, somewhat<NL>timid. He dislikes hurting others or being hurt himself, and<NL>naturally grew into a man of few words. Hard as it is to<NL>imagine from his physique, he is actually better at mental<NL>work. Apparently, he wanted to become an alchemist, but<NL>joined the military at his parents' strong urging. He never<NL>found a good opportunity to quit, and remains there today.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.086.s00": {
+      "prior_en_sha256": "b8d31340ad2cd739a92ced70be9909b60bb87c9313e126000125911adf48c082",
+      "en": "The Liebhofen's navigator, who also serves as gunnery<NL>officer. A large, rotund man whose pockets always contain<NL>something to eat. Despite that, he is apparently surprisingly<NL>nimble. His ability to concentrate in brief, intense moments<NL>is remarkable, and his shooting skill astonishes even York's<NL>famously elite artillery troops. That talent earned him his<NL>place on the crew. \"What he says usually makes sense, but<NL>somehow, hearing it from him just ticks me off!\" (Ai) ...He's<NL>that sort of person.",
+      "inserted_breaks": 8,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.086.s01": {
+      "prior_en_sha256": "a30d824581eff73e3a92ef4919ea8917cc21cb62c1c8716b7bc51f6a1b3ec222",
+      "en": "<NL>Amazingly enough, he is currently engaged. (Her name is Sefia<NL>Iyul, age 19. A pretty young woman and his childhood friend.)",
+      "inserted_breaks": 1,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.087.s00": {
+      "prior_en_sha256": "760012f4a88a586dfbfabb35ed0b39cef984cb88aa5435fbf8ce462354082707",
+      "en": "The Liebhofen's purser. He handles operational records and<NL>accounting. He has the air of a rather dapper older<NL>gentleman. Meticulous by nature, he has a keen head for<NL>money. He has dubious connections and a knack for finding<NL>supplies seemingly out of nowhere. Rumor has it his slogan is<NL>\"Everything from underwear to missiles.\"",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.088.s00": {
+      "prior_en_sha256": "9e08ceea6a7ccf720377a545aade388d7a8d58ccb5b3859fa6acca9ab53cba29",
+      "en": "The Liebhofen's radar operator. Though she looks younger<NL>than her age, she is a spirited girl. She is actually a palace<NL>lady-in-waiting assigned to the crown prince and a huge<NL>fan of Lodis. On learning that he was helping with the Spirit<NL>Mech Development Project, she maneuvered behind the scenes<NL>and worked hard to join. However... Lodis's position prevented<NL>him from sailing aboard the Liebhofen, and her ambition came<NL>to an abrupt end. For now, she seems content simply to help<NL>make Lodis's ideals a reality. An excellent cook, she is also<NL>in charge of the galley. Her hair, tied in buns, is her charming<NL>trademark. There are also rumors that she is a daughter of a<NL>distinguished family.",
+      "inserted_breaks": 10,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.089.s00": {
+      "prior_en_sha256": "dffbfafc04186f9a15f5379f8860199ed5579597b1bd30253fc5fc68060b381a",
+      "en": "A former soldier of York. Captain of the mobile carrier<NL>Liebhofen. After leaving the military, he enjoyed a<NL>comfortable retirement and apparently turned down Lodis's<NL>invitation at first. How he nevertheless came to be the<NL>Liebhofen's captain remains a mystery. An eccentric who<NL>usually says nothing but \"Hmm.\" Yet those who know his<NL>past hold him in high regard as a renowned commander...<NL>apparently.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.090.s00": {
+      "prior_en_sha256": "24bbe24c20b1ff38f5d0457007deaaeb9c6377f0a8fa806c99b5d7288afe653c",
+      "en": "Queen of York. Unmarried. Both of her parents are deceased.<NL>She admires Crown Prince Lodis of Agarthia and spared no<NL>effort in committing her country's support to his Spirit Mech<NL>Development Project against Ze=Ode. She is also the one<NL>who summoned Touya and the others to Agarthia for their<NL>protection. Gifted with foresight, she takes an interest in<NL>Touya's future. Her hobby is making sweets.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.090.s01": {
+      "prior_en_sha256": "01734a800c1416423f9c5263b60532d8ceb20ea5a45a2af675eb81260912d960",
+      "en": "<NL>Though she wished for true peace in Agarthia, she loses her<NL>life to Oswald's murderous blade. Touya and many others<NL>carry on her final wishes.",
+      "inserted_breaks": 1,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.091.s00": {
+      "prior_en_sha256": "2e3371c589e4b35fa3e10965adbf377adbc1b034951b1464f067e623328ca32c",
+      "en": "A veteran knight of York and an old comrade of Captain<NL>Roa. He also taught swordsmanship to Garyud in his younger<NL>days. Though apparently, rather than teaching combat<NL>techniques, he taught him the proper mindset.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.092.s00": {
+      "prior_en_sha256": "d921bfdc1ceb3b9135c68bee03f8373ed5ac780fe9b23c7e109baebc776f11df",
+      "en": "The highest authority in the Holy Land. She gives the<NL>impression of a kindly grandmother. She knows about Ymir's<NL>past.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.093.s00": {
+      "prior_en_sha256": "09e3c91b33cbaef3f4c950add72ea031e50dd418e7adf8ed6d71c4bfc18b17af",
+      "en": "The current king of the Kingdom of Agarthia. He understands<NL>his role well and always strives to set an example for his<NL>people. A quiet king with a scholarly disposition. His wife,<NL>Ipha Laniard Mestina, died nine years ago. He took a<NL>hands-off approach to raising his children, but lately has<NL>been regretting it. (Apparently, he has Celica in mind.)<NL>Recently, he has often been confined to bed by illness.",
+      "inserted_breaks": 5,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.094.s00": {
+      "prior_en_sha256": "13abcc62c5dec13de31c8139e4838379791c48edfc3f5eefbc994b9c819fa68e",
+      "en": "Agarthian. Female. Died at 36. The late queen of the<NL>Kingdom of Agarthia. Mother of Lodis, Celica, and Tix, who<NL>died nine years ago. She sincerely wished for peace in<NL>Agarthia.",
+      "inserted_breaks": 3,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.095.s00": {
+      "prior_en_sha256": "a86d82d6dba2cf821334914b4755a6dc6104e4129aefb8ae08e516cc758941ea",
+      "en": "Deputy commander of the Agarthian Army's general staff.<NL>He holds the rank of marshal. With almost no experience of<NL>actual combat, he tends to put theory first. He is<NL>thoughtful and mild-mannered. Fiercely patriotic, he is<NL>growing exasperated with the corruption of Agarthia's<NL>parliamentary government. He is a believer in Pax Agarthiana,<NL>peace under Agarthia.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.097.s00": {
+      "prior_en_sha256": "d6f7cd680b351e9cead473aa59bb717aa09c1db0853d15f1bbb9354bf01a585d",
+      "en": "Head of the Gazette Project. An authority on genetic<NL>engineering who conducts research at the Brufle Artificial<NL>Evolution Research Institute. He never bothers to remember<NL>people's names. His research follows his own personal tastes<NL>to a remarkable degree, and when his experimental subjects<NL>run out of control, they cause no end of trouble for<NL>everyone else. He is always complaining about a lack of<NL>funding, and rightly so, though he still somehow manages to<NL>make ends meet.",
+      "inserted_breaks": 8,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.098.s00": {
+      "prior_en_sha256": "e00e1effe4168b2ae3a81ada35ba7b2930f583bd62c2bcd239f3e1dd42a2b804",
+      "en": "Generous in spirit and a little laid-back. Officially, he is a<NL>scholar attached to the Holy Land who studies the other<NL>world, Earth. His real job, however, is as a negotiator who<NL>selects and persuades people from other worlds with high<NL>Prana levels. An intellectual fluent not only in the<NL>languages of Agarthia, but also Japanese, English, French,<NL>Chinese, and Portuguese: five languages from Earth. Even<NL>when talking to Touya, he was speaking for himself, rather<NL>than relying on an Adjuster. Incidentally, there are several<NL>negotiators like him, and some are apparently stationed in<NL>Touya's world.",
+      "inserted_breaks": 10,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.099.s00": {
+      "prior_en_sha256": "fd8e2cf81e7ad6d012a12e13f8241aa21b18c049dbe4d71014f628aa37ffa746",
+      "en": "Forzen's wife and Melvi's mother. She is Ymir's sister-in-law.<NL>Even more easygoing than Forzen, she has a gentle<NL>disposition. Her hobbies are cooking and entertaining guests.<NL>Apparently, her pies (sweets made by laying fruit on a flat<NL>pastry base, adding butter and syrup, then baking them in an<NL>oven) are exquisite. Lately, she has been worrying about<NL>when Ymir will finally find someone special. When Ymir<NL>brought Touya home, Paldia mistakenly thought she had<NL>finally found a boyfriend, much to their embarrassment.",
+      "inserted_breaks": 7,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.100.s00": {
+      "prior_en_sha256": "5155e192e6b8f6cccbb7447aae2c4e780172ce4135ac3ec36424b9ba67f29c37",
+      "en": "A beautiful woman with short hair. An acquaintance of<NL>Fain and Miyasco. A freelance journalist with a wealth of<NL>sources, she dreams of winning the Roguewar Prize,<NL>something like the Pulitzer Prize. Prone to grandiose ideas<NL>and jumping the gun, she is utterly convinced that there is<NL>always more to a story than meets the eye. Rayblade's<NL>revival sparks her interest in the Liebhofen's activities, and<NL>she begins following its crew around. She owns Reisuke, a<NL>computerized camera of which only five exist in the world.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.100.s01": {
+      "prior_en_sha256": "80980c56cfab2df540a8de0fc66cfe456a92c4b11005713696f901dd4b157a18",
+      "en": "<NL>Her relationship with Rest of the Agarthian Army goes<NL>beyond lovers, but stops short of marriage.",
+      "inserted_breaks": 1,
+      "joined_breaks": 0,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.101.s00": {
+      "prior_en_sha256": "f86e58c4c62fb8773b09135061afae75d044993d651c6f11a494e11ba7005468",
+      "en": "A scientist with an older twin brother, Lyle. Through<NL>Wenimas's introduction, he joined the Ze=Ode Project with<NL>his brother 100 years ago. Unlike his brother, he is gentle and<NL>somewhat conservative. He admired Wenimas. Originally<NL>Rayode's pilot, he sympathized with Wenimas's fears about<NL>activating Ze=Ode. To stop the plan, he seized Rayblade and<NL>fled with Wenimas. They chose Rayblade because it was<NL>convenient for the two of them to escape together. But an<NL>accident during their flight killed Wenimas and triggered an<NL>unstable activation of Ze=Ode, sending the other members<NL>of the Ze=Ode Project through time. Lenis was thrown from<NL>Rayblade at that moment. Instead of traveling through time,<NL>he was affected by spatial displacement and transported to<NL>the surface. Unable to return to Agarthia, he lived out his<NL>life there. Touya is his descendant.",
+      "inserted_breaks": 13,
+      "joined_breaks": 12,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.103.s00": {
+      "prior_en_sha256": "6b33275718c5f1a9f12056d5f47cc73209610b6bfa353f9d72c7513ce70da2a4",
+      "en": "She demonstrated the existence of a phenomenon in each<NL>Ze=Ode unit: the resonant induction of consciousness.<NL>Using it, she discovered a clue to their activation. She joined<NL>the project as Debish's assistant. In private, she and Lyle<NL>were lovers. Alarmed by Debish's plan, Wenimas sought the<NL>help of Lenis, who shared her concerns. To stop it, they<NL>seized one of the plan's key components, Rayblade, and<NL>challenged the others to battle together. Amid the<NL>confusion, the plan was forcibly set in motion, causing a<NL>massive explosion. This was the Terror of Ze=Ode that<NL>occurred 109 years ago.",
+      "inserted_breaks": 9,
+      "joined_breaks": 10,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.103.s01": {
+      "prior_en_sha256": "21c8e5085a9b79d6468bc42bc2da9c8864c1b0e570869e422ebb4af84daaed2e",
+      "en": "<NL>Having become a disembodied consciousness, she searched<NL>for people with high Prana levels and an affinity for Spirit<NL>Mechs, so that she could stop Debish's plan. She was also<NL>the one who steered Touya and the others toward Agarthia.<NL>Yet had she not acted, humanity in Agarthia might have<NL>perished, with the consequences eventually reaching Touya's<NL>world as well.",
+      "inserted_breaks": 5,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.104.s00": {
+      "prior_en_sha256": "032760475691016bdd05fa1d3dfdedd4caf44b2aade7e2384a215825d5807bab",
+      "en": "The so-called final boss. This being comes from Estelia, a<NL>place far beyond the galaxy, in a universe unknown to us.",
+      "inserted_breaks": 1,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.104.s01": {
+      "prior_en_sha256": "9b043370ca345ed8e389df0dc1bbd7a5214c55d0693c0282dae82affb2c8eb43",
+      "en": "<NL>Freed from the fetters of time, he can apparently create<NL>even the future itself. Living for eternity, drifting through an<NL>aimless daily existence, he happened to glimpse an outside<NL>world. Its lives, bound by time, captivated him, and eventually<NL>he acted to place himself among them. In the end, he was<NL>defeated by mutual trust... by bonds. He vanished. Having<NL>learned that even those who are individually weak can grow<NL>strong by believing in and accepting one another...",
+      "inserted_breaks": 7,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.105.s00": {
+      "prior_en_sha256": "c663b1377dba92c2bfef98a00462cac0be5a83fc67c820dcd7620913508a237f",
+      "en": "The public calls him a useless figurehead of a president, but<NL>in truth, he is highly ambitious and skilled at intrigue. He was<NL>the one who devised the invasion of York and secured its<NL>approval. His target was York's summoning facility. He<NL>intended to use it to summon people like Touya and gain<NL>their power.",
+      "inserted_breaks": 5,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.106.s00": {
+      "prior_en_sha256": "cd101eda29b780c68752a49e91cc4d45b3f98ef5dc94a063d87fd61ecaa6a49f",
+      "en": "Grad's wife and Kururu's mother. A strong-willed woman<NL>with the strength of both a mother and a woman. She looks<NL>so young for her age that she and Kururu could almost pass<NL>for sisters. Apparently, the secret is a regular routine and<NL>long, relaxing baths in hot springs.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.107.s00": {
+      "prior_en_sha256": "1495cdc25128cd87527af8b984157db67807fe78552a225d6aa5941ac9b62654",
+      "en": "An arms dealer who prefers a world torn by war. Dr. Baio's<NL>younger brother, and the sponsor of his Armored Mech<NL>development. A true merchant of death, he believes business<NL>knows no borders. Apparently, he also supplies the terrorist<NL>group Dawn of an Era.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.107.s01": {
+      "prior_en_sha256": "f82439cf21728c7a9a5d62580ac93d4d16037ea9d1651a750e4fd069875e9821",
+      "en": "<NL>Though he seems to enjoy teasing his older brother, he truly<NL>wishes for his happiness.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.108.s00": {
+      "prior_en_sha256": "69442f69458289091d61c4c8b64d4b38203d36649bc2b7da970e83ad5166382c",
+      "en": "Bio's secretary and mistress. A sexy young woman.<NL>Apparently, she is also a talented hacker, though this has<NL>not been confirmed.",
+      "inserted_breaks": 1,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.110.s00": {
+      "prior_en_sha256": "f912ee232c839009fbf967d20d06dd0feed3c959b62199b692f060091fc5da22",
+      "en": "Derock's fiancee, who belongs to La=Dis. They have known<NL>each other since childhood, and her good looks are famous in<NL>the neighborhood. Frankly, this cute beauty is far too good<NL>for Derock. Why she would marry him is considered Agarthia's<NL>greatest mystery !?",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.111.s00": {
+      "prior_en_sha256": "28e3deb9acfb066189f4bf247f2326366d714c6775b276f0e1d20862b5b3dd8e",
+      "en": "Chairman of the Agarthian Council. With his wide<NL>connections and excellent intelligence network, he manages<NL>negotiations with other countries. In a council rife with<NL>misuse of public money, corporate collusion, and cushy jobs<NL>for former officials, he is called the last voice of reason. His<NL>honest convictions and conduct make him unpopular in the<NL>council, but few people could keep it functioning properly<NL>without his skill. Since those few are also friendly toward<NL>Dei, nobody openly shows a desire to oppose him. Dei himself<NL>has little faith in the many councilors concerned only with<NL>their own interests, and pushes ahead with reforms of his<NL>own.",
+      "inserted_breaks": 10,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.111.s01": {
+      "prior_en_sha256": "1b23302698ad3e5118ded9560cd16ab018db6036188b673f7ff57abd46d533d3",
+      "en": "<NL>At the same time, he was also the leader of the terrorist<NL>organization Dawn of an Era. Another being dwelt within<NL>him: Debish's disembodied consciousness. Now that Debish<NL>has awakened, Dei's own existence disappears.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.113.s00": {
+      "prior_en_sha256": "38ba9160d00e24785e773f529812162a0952b22ea93475dda2a7f9cdfafd3ba4",
+      "en": "He met Touya at their high school entrance ceremony, and a<NL>certain incident led them to become close friends. Though he<NL>looks like a gentle, handsome young man, he apparently had a<NL>wild past. Not that there is the slightest trace of it left<NL>now. He is always smiling and treats everyone kindly, and<NL>never boasts about his good looks, there may even be fan<NL>clubs for him not only at his own school but at other<NL>schools, too... Yet with Touya alone, he turns into an<NL>irreverent joker with no sense of restraint. He is actually a<NL>devoted fan of robot anime. He firmly believes that<NL>laboratories beneath Mount Fuji and Mount Asama are<NL>building giant robots, ready for the day someone says, \"I<NL>prepared this in case something like this happened!\" Only<NL>Touya and Kasumi know about this...",
+      "inserted_breaks": 13,
+      "joined_breaks": 13,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.114.s00": {
+      "prior_en_sha256": "4f6178f03da30203648537b558286e785a29e261c64f729d147b9f3c33af687e",
+      "en": "The newly appointed teacher of Touya's class. Apparently,<NL>her family has produced generations of Shinto priests, and<NL>she herself has served as a shrine maiden. Her hobby is<NL>long-distance swimming. Her specialties are divination using<NL>yin-yang and the five elements, and sake tasting, limited to<NL>local brews.",
+      "inserted_breaks": 5,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.118.s00": {
+      "prior_en_sha256": "ba323afbd063dc76914f41faaf29a52636cb7ed93bbee168b6166fa61dfa9cc8",
+      "en": "A child at the orphanage supported by Barkin, a member of<NL>the terrorist group Dawn of an Era. Nicknamed Rii. Rii is<NL>always together with Rudi and Demi, close friends raised in<NL>the same orphanage. A clingy crybaby who looks up to Barkin<NL>as a father. Rii loves stuffed Uluus toys, modeled after a<NL>bearlike creature. Rii is eagerly waiting for the stuffed Uluus<NL>that Barkin promised to bring. Unaware that the promise will<NL>never be kept...",
+      "inserted_breaks": 6,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.119.s00": {
+      "prior_en_sha256": "a753801892fd9de2126925b0326458bab6a6fbc9e5dd0b8d635c86d2929165f9",
+      "en": "A computerized camera owned by Maki, the freelance<NL>journalist. Only five exist in the world. Official designation:<NL>03K-01. Made in Agarthia. Reisuke is its nickname.<NL>Microphone, lights, arms, theatrical smoke, 125x zoom,<NL>infrared camera, night-vision camera, hovering with<NL>retractable legs, walking, diving, language comprehension, a<NL>perpetual-motion engine, and much more. Quite an impressive<NL>piece of equipment.",
+      "inserted_breaks": 6,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.120.s00": {
+      "prior_en_sha256": "70a57057521ca367df59b935fcc0cad65b760a60a3ff2601259347da01d21471",
+      "en": "A member of the Agarthian Council. A daughter of one of<NL>Agarthia's most distinguished noble families. Until about ten<NL>years ago, she was famous in Agarthian high society for her<NL>bewitching beauty. What happened over those ten years is a<NL>mystery, but she is now a mere shadow of her former self.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.121.s00": {
+      "prior_en_sha256": "f4bf6dfd466bf958bdcd21b8b3ba359735d08aa988e9adb3a885c2fe49526697",
+      "en": "A member of the Agarthian Council. A typical politician.<NL>Nothing more, nothing less.",
+      "inserted_breaks": 0,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.122.s00": {
+      "prior_en_sha256": "b00d54c58ae3f7b190f9992a4d4bb82e942224009c06fa70bc879222375f871b",
+      "en": "A member of the Agarthian Council. Handsome, impeccably<NL>educated, and of faultless birth: the scion of a distinguished<NL>noble family. Usually reserved and quiet, he hides a fierce fire<NL>in his heart that few people know about.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.132.s00": {
+      "prior_en_sha256": "0dfcc161b44d6bfca1588a52054fa0173b10480ef9affd65f6849b295b1d44c5",
+      "en": "A child at the orphanage supported by Barkin, a member of<NL>the terrorist group Dawn of an Era. Nicknamed Rudi. He is<NL>always together with Demi and Rii, close friends raised in the<NL>same orphanage. The older-brother figure of the trio, he is<NL>quick to fight. Yet he never uses violence needlessly: he helps<NL>the weak and stands up to the strong.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.133.s00": {
+      "prior_en_sha256": "4be0fb16f31571a890e664a9ef1a855e27ce455909dc880864738f16c360d331",
+      "en": "A child at the orphanage supported by Barkin, a member of<NL>the terrorist group Dawn of an Era. Nicknamed Demi. He is<NL>always together with Rudi and Rii, close friends raised in the<NL>same orphanage. Though a little laid-back, he has surprising<NL>courage and makes calm judgments. As a result, no child<NL>can match him and Rudi as a team. In fact, he is the child<NL>Barkin's younger sister brought there, and Demitt Kaimon is<NL>not his real name. That truth will not be known for some<NL>time yet...",
+      "inserted_breaks": 8,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.134.s00": {
+      "prior_en_sha256": "2dc035ca8912049311fabe93ad6a7aeb464df517a0e1fcf05b8aa3e552c5a8bb",
+      "en": "A colonel in the Republic of Zigrim's army. He and Growster<NL>have fought together since their days as junior officers.<NL>Always at Growster's side, he provides support in everything<NL>from planning operations to negotiations with all manner of<NL>people. Married. His wife is apparently pregnant, but...",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.134.s01": {
+      "prior_en_sha256": "d5250fc6be8bbd1445b4c069267b8f305c7773acb4ed13c31361fb1d44518dfd",
+      "en": "<NL>His wife safely gives birth to healthy babies. Apparently, they<NL>are twins.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.135.s00": {
+      "prior_en_sha256": "2e3371c589e4b35fa3e10965adbf377adbc1b034951b1464f067e623328ca32c",
+      "en": "A veteran knight of York and an old comrade of Captain<NL>Roa. He also taught swordsmanship to Garyud in his younger<NL>days. Though apparently, rather than teaching combat<NL>techniques, he taught him the proper mindset.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.136.s00": {
+      "prior_en_sha256": "b356f981870bff9a8537a1ad24301fa43640bbd700248cdc4290e6587cfaa7fd",
+      "en": "An alchemist who admires Ymir, affectionately calling her<NL>\"My dear big sister Ymir!\" She is no less brilliant than Ymir.<NL>Her natural tendency to look down on others, her<NL>haughtiness, and her hatred of losing, combined with others'<NL>envy of her talent, often earn her the whispered nickname<NL>\"Ymir the Second.\" Yet in Ymir's presence, she becomes all<NL>sweetness, clinging to her like an entirely different person. In<NL>truth, she is the sort who works hard where nobody can see.<NL>She clashes with Fain over one thing after another.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.137.s00": {
+      "prior_en_sha256": "8d3c0e856511baaeee15650e44e39f65715acfd8e00192ae56a8dfff9bdd32f7",
+      "en": "A girl whose trademarks are thick, swirly glasses and a<NL>strange device carried on her back. For some reason, Murk<NL>values her talents and employs her as his personal assistant.<NL>Though not officially an alchemist, she has taught herself<NL>the same body of knowledge. Perhaps she is a gifted student<NL>whose talents come from hard work. Murk has never once<NL>called her by name, which bothers her quite a bit.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.137.s01": {
+      "prior_en_sha256": "9ed8b5ce08a6faeb10655bccdcb29bcf208198a090b4c9706a446934c0671da2",
+      "en": "<NL>Sure enough, she was beautiful without her glasses. How she<NL>later succeeds Murk and causes still more trouble is a story<NL>for another time...",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.138.s00": {
+      "prior_en_sha256": "562dfeedc84234e7091e43c98f9d60450df7237aa2c26489fb571e257f4aa279",
+      "en": "Chancellor of York. He has a nervous-looking face and<NL>usually behaves like a gentleman, but in truth...",
+      "inserted_breaks": 1,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.character.138.s01": {
+      "prior_en_sha256": "19734a3831e04cfeadc15e02d3bee4f48efc62938154e9ff4db451d944a94240",
+      "en": "<NL>A treacherous villain who conspired with Zigrim in a scheme<NL>to make Queen Alforina his own. Once his life began rolling<NL>downhill, there was no stopping it... He is probably thinking,<NL>\"This wasn't supposed to happen!\"",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.001.s00": {
+      "prior_en_sha256": "e403f22c2016e03bf817465be0f788820ff5eb41129ee0584078b8c427d85f4f",
+      "en": "A mech kept under supervision and studied in the Holy Land.<NL>Because its power was so immense and so poorly<NL>understood, it was sealed behind the Frail Barrier, which has<NL>the property of absorbing Prana. During Rayode's assault,<NL>however, the barrier broke, and it appeared before the public<NL>for the first time in 29 years. Data \"borrowed\" by Celica<NL>played an important role in the creation of the Spirit Mechs.<NL>In a sense, this mech was the foundation from which they<NL>were developed. Though some of its workings have been<NL>explained, much about it remains unknown. It is currently<NL>being repaired after sustaining damage in battle with Rayode.<NL>Apart from changing its color from black to white, its<NL>appearance is unchanged. Internally, however, original<NL>components designed by Celica and other additions have<NL>improved its potential. Its main pilot is Touya Kazami. For<NL>some reason, it cannot be activated unless he is paired with<NL>a female pilot.",
+      "inserted_breaks": 12,
+      "joined_breaks": 13,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.002.s00": {
+      "prior_en_sha256": "e8322e3b9c6329bc3e8cc8ab717a74925cf7a9b4507a7ba05caa22a30467ed77",
+      "en": "Surprisingly sturdy, considering its complex transformation<NL>mechanism. Since it has a perpetual-motion engine, it<NL>assumes this form purely in pursuit of speed.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.003.s00": {
+      "prior_en_sha256": "b9991f0ddc6d71bcb657f8b83af1f2df73e7d786850f02ba1e72c79fee1edad4",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. True to its name, crimson is its<NL>signature color. Its great strength and mobility make it<NL>excellent at close combat. Some armor has been sacrificed<NL>to increase its mobility. Its pilot is Guo Xiujian. Incidentally,<NL>Hongshenguang, meaning Crimson Flash, was the name<NL>Xiujian gave it himself.",
+      "inserted_breaks": 6,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.004.s00": {
+      "prior_en_sha256": "b902a5f33d6d5a82579e461b73c6151612c905d3251ff10b79126da25c7c4cc2",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. It mainly uses ranged attacks, but can<NL>also hold its own in close combat. Its overall defenses are<NL>average, but the rear armor has been reinforced. Its pilot is<NL>Melissa Gould.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.005.s00": {
+      "prior_en_sha256": "6b06d8be612f66da830540f049eba06bd44aed0738d53eeabd8c2b4087a63290",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. An all-round machine that specializes<NL>in close combat while also handling long-range attacks.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.006.s00": {
+      "prior_en_sha256": "0f363d743b75f8947e0471bdaa68ddfddb1fd5ba425d40afd9718c2e44d72681",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. Its form resembles a European knight.<NL>Its pilot is Fain Jin Barion.",
+      "inserted_breaks": 1,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.007.s00": {
+      "prior_en_sha256": "0803916d971c1799348239598a6b7a74c96dfbe762cb408d45f27b31fa8aafcb",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. With excellent firepower and mobility, it<NL>excels at ranged combat. As a result, its defenses still leave<NL>room for improvement. Its pilot is Aurelie Pandavoine.",
+      "inserted_breaks": 2,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.008.s00": {
+      "prior_en_sha256": "123d13656f662534d92dc763aa10d2716bcc0697f992da59cd275ec202968e54",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. It specializes in ranged combat and<NL>has heavy armor. That thick armor comes at the expense of<NL>mobility, however. Its weapons are powerful but produce<NL>heavy recoil, so it has a tail-like third leg to improve<NL>stability. Its pilot is Clovis Camillion.",
+      "inserted_breaks": 5,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.009.s00": {
+      "prior_en_sha256": "ac59e19f1d0e537caec6db635ce53e3690440902e2558f7ce164d851bcf36e29",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. Its nonhumanoid form is designed to<NL>bring out its flying capabilities. It is mainly effective at<NL>ground attacks.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.010.s00": {
+      "prior_en_sha256": "1538cba2629d7fee151cd667386f8fc9922289a7636eeab20c0e5fad3683d150",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. A design that pushes mobility and<NL>ranged combat to their limits, at the cost of thin armor and<NL>considerable vulnerability. It is specialized exclusively for<NL>support attacks. Its pilot is Ai Tennoji.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.011.s00": {
+      "prior_en_sha256": "d19ab85c191809ced6247c51f78ff6a7069c434f6604c7225930c1064e53e18c",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. Designed for close- and medium-range<NL>combat. It is comparatively well balanced. Its pilot is Arthur<NL>Nkomo.",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.012.s00": {
+      "prior_en_sha256": "a732ee9034a009334ef32585671b7e3424f64639f2fbace077b4d84e9aa27667",
+      "en": "One of the Spirit Mechs built under the Spirit Mech<NL>Development Project. Developed primarily for support<NL>attacks. Though relatively versatile among Spirit Mechs, it is<NL>fundamentally a support unit and poor at close combat. Its<NL>pilot is Kasumi Suoh.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.013.s00": {
+      "prior_en_sha256": "fc587f3e88852bc3ce4682955442ecefc9c54e12d0d046a275892b92377d35d5",
+      "en": "Built as a prototype before the Spirit Mech Development<NL>Project began. Though lightly armed, it was assigned to back<NL>up the other Spirit Mechs at Celica's suggestion. It has a<NL>Repair ability that restores a unit's HP. Its pilot is Celica<NL>Laniard Mestina.",
+      "inserted_breaks": 4,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.014.s00": {
+      "prior_en_sha256": "816066212d0abcabc3f5054447a4bb20d359b4959227e8095a1964bd21ccf3d0",
+      "en": "An Armored Mech created in conjunction with Zigrim's<NL>human enhancement project, commonly known as Code 3. It<NL>uses a special mechanism that became the basis for<NL>Agarthia's new Prana Regulator, achieving an output far<NL>beyond an ordinary Armored Mech's. It also has a system<NL>that converts tension and fighting spirit into Prana, though<NL>it feeds on the pilot's life force. At full operation, the pilot<NL>requires no rest, and the mech uses Prana to mitigate wear<NL>throughout its systems, allowing it to fight virtually without<NL>end. It carries a remotely controlled floating gun platform<NL>on each shoulder and its back, enabling unpredictable<NL>attacks. This particular unit, however, is a copy of the<NL>original, secretly commissioned by President Horem, and is<NL>considerably unstable.",
+      "inserted_breaks": 13,
+      "joined_breaks": 14,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.015.s00": {
+      "prior_en_sha256": "bc2050ec691ab9eb13546091ff69eb864cf559d8032b004cb4f568bef1adeca1",
+      "en": "An obsolete Armored Mech once used mainly in Agarthia.<NL>Left behind by advances in technology, it naturally withdrew<NL>from frontline service. Though its weapons have been<NL>strengthened, it was never intended to fight other Armored<NL>Mechs, making it ill-suited to combat. In York, it is used<NL>rather like construction machinery and remains in active<NL>service... perhaps?",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.016.s00": {
+      "prior_en_sha256": "35947db8333e12bf9b2e2beb603459c83992db80309621c25a699bc97625815f",
+      "en": "An older-generation Armored Mech. The basis for Agarthia's<NL>standard Armored Mechs. Because it can be built at<NL>relatively low cost, it has been produced in large numbers<NL>and used throughout the country.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.017.s00": {
+      "prior_en_sha256": "023dc2a381782baf3b10889626c174eaa60a68c301e460327901ff49b3e41742",
+      "en": "An older-generation Armored Mech. Its main role is rear<NL>support.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.018.s00": {
+      "prior_en_sha256": "c59cd18cfc2f830b122db55acad30d35143db648818cba3b8020817cb0c740da",
+      "en": "An older-generation Armored Mech. It has a nonhumanoid<NL>form because its design prioritizes flight. Used for air<NL>superiority and ground attacks.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.019.s00": {
+      "prior_en_sha256": "f54c4915abf1c9532f262b8021f75f5280cf29c47e142f1e95b10f340eeee6cd",
+      "en": "A general-purpose Armored Mech for commanders in the<NL>Agarthian Army. It was designed to surpass York's Art<NL>Wesper in performance. To meet its requirements, the mech<NL>inevitably grew larger, and production costs rose with it. It<NL>had to be removed from the mass-production program. The<NL>effort paid off, however, as it did meet the required<NL>performance standards.",
+      "inserted_breaks": 6,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.020.s00": {
+      "prior_en_sha256": "a12f68fd4805403a494982f835041af369d33cc92f636cff377effdf219d82d1",
+      "en": "Though classed as an older-generation machine, this<NL>Secti-based mech has been tuned and upgraded repeatedly,<NL>giving it capabilities equal or superior to newer-generation<NL>Armored Mechs. Famous as the machine piloted by Rest Jin<NL>Benish, the Phoenix Knight, it is counted among the<NL>continent's Four Great Armored Mechs.",
+      "inserted_breaks": 4,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.021.s00": {
+      "prior_en_sha256": "8f0c0db99f2b854897459b540e7485011c5a4dc33046b21595402d52a2d57ac4",
+      "en": "Secretly developed at Marshal Revios's orders as the<NL>Agarthian Army's next-generation mass-production mech. It<NL>excels at close combat and boasts extraordinary fighting<NL>ability. Despite incorporating a range of new technologies,<NL>cost issues led to mass production being shelved. As a<NL>result, the prototype became Lieutenant Colonel Selg's<NL>personal machine. Like Renbardon, it uses a new Prana<NL>Regulator, allowing even ordinary Agarthians to draw out a<NL>substantial measure of power, successfully bringing it up to<NL>the level of a Spirit Mech.",
+      "inserted_breaks": 8,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.022.s00": {
+      "prior_en_sha256": "8fed160502b7c9d08e52cbddd7c67e7c4b3f88a71e8101b04b2fa7cfe70f8a31",
+      "en": "Built as a testbed for a plasma diffusion barrier. Installing<NL>the plasma barrier generator made it far larger than<NL>conventional Armored Mechs. Development was abandoned<NL>because of its high operating costs, but Colonel Geel later<NL>modified it.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.023.s00": {
+      "prior_en_sha256": "fb515923bb44c90cfe3111eca50c917c72457034c4b64b8f1cc8daefd39c1169",
+      "en": "Secretly developed at Marshal Revios's orders as the<NL>Agarthian Army's next-generation mass-production mech.<NL>Learning from Secti's shortcomings, the development plan<NL>prioritized ease of production. As a result, it avoided risky<NL>new technologies, limiting improvements to stronger weapons<NL>and a modest increase in output. Even so, its new Prana<NL>Regulator allows even ordinary Agarthians to draw out a<NL>substantial measure of power, successfully bringing it up to<NL>the level of a Spirit Mech.",
+      "inserted_breaks": 6,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.024.s00": {
+      "prior_en_sha256": "2eb8db396cd0c0d0100b6c019b1e761e14f8460a0ecb5343bef37393f91ac3a1",
+      "en": "Designed exclusively for the royal family as part of the<NL>Agarthian Army's next-generation Armored Mech program. Its<NL>new Prana Regulator, combined with the royal family's high<NL>Prana, successfully raised its performance to a level capable<NL>of surpassing even a Spirit Mech.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.025.s00": {
+      "prior_en_sha256": "6678617331fc5eea4041e020ed2d32d543ff4143c65543179e2ce5cb165f8f78",
+      "en": "A small craft flown by the journalist Maki. Like a flying car,<NL>it uses antigravitons to fly. About the size of a large<NL>passenger car, it is highly maneuverable. Maki uses it to<NL>travel far and wide in search of stories. It has a machine<NL>gun for self-defense, but it is utterly ineffective against<NL>Armored Mechs. Recording cameras and other equipment are<NL>mounted all over it.",
+      "inserted_breaks": 5,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.026.s00": {
+      "prior_en_sha256": "a0c1e6a48bfb8c38a2902cecce44634ee91bf328cbd42007e7ce2e7c38fe6c2f",
+      "en": "A fixed long-range defensive gun emplacement used<NL>throughout Agarthia. It has high firepower and long range,<NL>but cannot respond to enemies at close quarters.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.027.s00": {
+      "prior_en_sha256": "1424e522b5575664e0379e14adfb49e0ba4a776c60b46e1803455119f01da520",
+      "en": "A fixed Vulcan Phalanx anti-aircraft emplacement, also<NL>used to defend bases throughout Agarthia.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.028.s00": {
+      "prior_en_sha256": "d120e5d4b24f79805a76337cb31b18bce23f105fc86ee6aec022c8e0634c79d5",
+      "en": "A fixed anti-Armored Mech missile emplacement, also used to<NL>defend bases throughout Agarthia.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.029.s00": {
+      "prior_en_sha256": "d220bdf04f8a9215d9dd6970274b271e87c9fd2eaf971a12eb45c9e7cfbb15cb",
+      "en": "A general-purpose transport craft used across Agarthia. Its<NL>large carrying capacity and long cruising range have made it<NL>useful throughout the world. Slow-moving, but durable.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.030.s00": {
+      "prior_en_sha256": "38dc7b6673d344400df2b9555114e40fb82c2c526f87c00e37b11f4a18fef7d1",
+      "en": "The Armored Mech piloted by Garyud Via Vratzen, the<NL>continent's strongest knight, who bears the title Sword<NL>Radiance, Phantom Saint. The machine itself was passed<NL>down by the previous Sword Radiance holder, but its internal<NL>systems have been perfectly tuned for Garyud. Conversely,<NL>nobody else can activate it. When it was built, or by whom,<NL>is unknown. As it bears no maker's mark, one thing is<NL>certain: it was not made by anyone recognized as a master<NL>craftsman. Yet its performance surpasses every other<NL>Armored Mech. It is even said that no machine can defeat<NL>Bosendorfer in single combat. Its distinctive features are the<NL>lion-shaped shield on its left arm and an enormous<NL>broadsword.",
+      "inserted_breaks": 12,
+      "joined_breaks": 11,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.031.s00": {
+      "prior_en_sha256": "892fd50d30b39f893470113585b242dcb1efc78be67aebe12545755ab1a53931",
+      "en": "The first unit of the Art Wesper, a masterpiece representing<NL>the culmination of York's Armored Mech technology. Though<NL>the same model as Brandeim and Almaris, it uses experimental<NL>special-metal armor. Compared with the other two, it<NL>achieves a reduction in weight without sacrificing<NL>performance. When its silver body races across the<NL>battlefield, its gallant form inspires allies and fills enemies<NL>with terror at the approaching danger. Famous as the<NL>machine piloted by Reduce Ren Chromehearts, one of the<NL>Three Sword Knights.",
+      "inserted_breaks": 6,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.032.s00": {
+      "prior_en_sha256": "9174074c93a5c5eee30039dd8356199cbb4700e73b36b0a06828372860d592e0",
+      "en": "The second unit of the Art Wesper, a masterpiece<NL>representing the culmination of York's Armored Mech<NL>technology. Though the same model as Ragrade and Almaris,<NL>it has an assist function added to its Prana transmission<NL>system, giving it greater output than the other two. Piloted<NL>by Tyron Ren Arsdaluar of the Three Sword Knights.",
+      "inserted_breaks": 4,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.033.s00": {
+      "prior_en_sha256": "40bd05e70176ae1d0bae9927718bae0ac5996970a275e9a0ea35d88c1e6937b9",
+      "en": "A masterpiece representing the culmination of York's<NL>Armored Mech technology. Compared with the Ragrade and<NL>Brandeim of the same model, it has no single outstanding<NL>feature, but can instead be called a well-balanced machine.<NL>Piloted by Ciel Ren Vratzen of the Three Sword Knights.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.034.s00": {
+      "prior_en_sha256": "2fa9359345ec5b93fd532b4acd621c415f2ea789f531576d71462c83da5f9457",
+      "en": "A landship reserved for York's royal family. Used to escape<NL>Flamuelk Castle with Queen Alforina, who had been put to<NL>sleep by Oswald. Naturally, it has no weapons and only weak<NL>armor. It is not particularly fast, either.",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.035.s00": {
+      "prior_en_sha256": "94772e633d10397b95b8b4bc7b73ce2f4a4236d8918523eaa0c3956f399b6ca7",
+      "en": "Its sinister silhouette calls a demon to mind. Given a central<NL>role among the Ze=Ode units, it possesses immense power. Its<NL>sword, bearing the name \"Holy,\" has the power to free<NL>anything from the chains of this mortal world. Its pilot is<NL>Bafred Debish.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.036.s00": {
+      "prior_en_sha256": "c297022d3989948d4e19bb9c26d280a7f7284f8b1a5b52921a8adbdd4545e92c",
+      "en": "Weak at close combat, but more than makes up for it with<NL>powerful armor and long-range attacks. Its front bears a<NL>relief of a woman, almost like a woman imprisoned in stone.<NL>When Parthenos unleashes its true power, a light of<NL>judgment rains down and sweeps everything away. Its pilot is<NL>Sharl Debish.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.037.s00": {
+      "prior_en_sha256": "ba56c0f4210f512782989981a5f1c36d7db7c258f05f37d7789720be0b26675d",
+      "en": "A mech with somewhat feminine contours. In this form, it<NL>cannot exert as much power as the other Ze=Ode units, but<NL>makes up for it by bewildering its enemies with agile<NL>movements. Its pilot is Leone.",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.038.s00": {
+      "prior_en_sha256": "09c52d6eb2305ff18f4e8f97a147ec3c5c0cb22238a67110dceef74c56d353e6",
+      "en": "The core body is housed in its chest. The form currently<NL>visible is an auxiliary unit. Since every Ze=Ode unit can move<NL>between points by warping, however, mass is not much of a<NL>concern, and the core body never separates. It looks as<NL>though it might stand up, but the point is that it does not.<NL>Its attacks shake the very crust of the earth: a natural<NL>disaster. Mere mortals, who are no gods, would have no hope<NL>of escaping that calamity... Its pilot is Bernst Bulow.",
+      "inserted_breaks": 6,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.039.s00": {
+      "prior_en_sha256": "4bb45039aef1e7efd9de2d7558529cbda5067b33da8321441de2285ca792d16e",
+      "en": "A mech distinguished by its enormous converter and chest<NL>components that seem to cover its head. It was originally<NL>capable of transforming into a flight mode, but that<NL>function requires special components and is currently<NL>disabled. Its momentary bursts of destructive power are<NL>extraordinary, and escaping its furious blade is no easy feat.<NL>Its pilot is Lyle Enroad.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.040.s00": {
+      "prior_en_sha256": "c98782127f766464cb2f81bfb70eaf3d9342eb55d7993590ae5c07bb0f262f42",
+      "en": "An unmanned support machine. Debish secretly built it to<NL>support their operations. Though its capabilities are not<NL>particularly impressive, it can take a beating. This type is a<NL>general-purpose model.",
+      "inserted_breaks": 3,
+      "joined_breaks": 4,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.041.s00": {
+      "prior_en_sha256": "378d559a72e2fa9d4d7cdc0ac7b76603435252bb27401f8491bf2479cb8f83a2",
+      "en": "An Armored Mech developed for commanders in the Republic<NL>of Zigrim. Said to be a miraculous masterpiece born by<NL>chance in what was then a technologically backward<NL>country. Though its cost remains somewhat concerning, its<NL>performance has made it a machine assigned to senior<NL>officers, perhaps reflecting Zigrim's national character. An<NL>advanced development of Granbide, it outperforms every<NL>Armored Mech in Agarthia.",
+      "inserted_breaks": 7,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.042.s00": {
+      "prior_en_sha256": "338e447e8adfad34c48d4a7e9378692ec607bf353881d480ec62027bdaf83059",
+      "en": "An Armored Mech developed for commanders in the Republic<NL>of Zigrim. Said to be a miraculous masterpiece born by<NL>chance in what was then a technologically backward<NL>country. This unit is an upgraded and improved version of<NL>the standard Griol, which could aptly be called Grad's<NL>Custom. When Griol is counted among the continent's Four<NL>Great Armored Mechs, it is this unit piloted by Grad that the<NL>title refers to.",
+      "inserted_breaks": 7,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.043.s00": {
+      "prior_en_sha256": "074618cf550aad746655bbb7e2d00085481230abbfa89f43dedd30c41fed12ff",
+      "en": "An Armored Mech developed for commanders in the Republic<NL>of Zigrim. Said to be a miraculous masterpiece born by<NL>chance in what was then a technologically backward<NL>country. An advanced development of Granbide, it<NL>outperforms every Armored Mech in Agarthia. This unit is<NL>painted blue to mark it as Steinies's personal machine.<NL>Naturally, it has also been upgraded compared with the other<NL>units.",
+      "inserted_breaks": 6,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.044.s00": {
+      "prior_en_sha256": "2534c90943f326d5d714421559852e2451ba916286e11c830ecc906046280433",
+      "en": "An Armored Mech developed for commanders in the Republic<NL>of Zigrim. Said to be a miraculous masterpiece born by<NL>chance in what was then a technologically backward<NL>country. An advanced development of Granbide, it<NL>outperforms every Armored Mech in Agarthia. It carries a<NL>new, enhanced plasma sword, whose Slash Blast attack is<NL>extremely powerful. It appears as the machine piloted by<NL>Reamond Dalaim and Fores Mishual.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.045.s00": {
+      "prior_en_sha256": "fb5d95739c61693f656fb3c9d86e08bd03a19e00013978a83b878db4fb85a7ea",
+      "en": "A heavily armored mech built for close combat. It has the<NL>thickest armor of Zigrim's standard Armored Mechs, giving it<NL>considerable fighting power despite being mass-produced. It<NL>strongly reflects Zigrim's preference for brute force.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.046.s00": {
+      "prior_en_sha256": "806ca83aa7f299e7247367ef2ebe127b7cd33c0f725f022aefc2bd2c8049a593",
+      "en": "An Armored Mech with reverse-jointed, birdlike legs. Its<NL>enormous shield-shaped shoulder thrusters allow it to fly,<NL>but consume so much energy that its cruising range is short.<NL>It carries a long rifle that slides into position at the waist.<NL>A machine focused on ranged combat.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.048.s00": {
+      "prior_en_sha256": "30821b8b6bf058c209e52be49b7f2dd8260c07aa9dad5e9424503e7a1374a59d",
+      "en": "An Armored Mech built for long-range support. It carries a<NL>Presion Cannon on its right shoulder and a triple missile pod<NL>on its left. The most outdated machine in Zigrim's arsenal.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.049.s00": {
+      "prior_en_sha256": "55c51a1f14729a403f7433b0c12a3d9c5e2bf40e51daa8d787cc1e9e499cea51",
+      "en": "An Armored Mech built by Baio Dangle. Though a simplified,<NL>mass-production version of Bine Daga, it retains high<NL>performance, along with the original's difficult handling,<NL>making it unpopular with soldiers. Unnecessary mechanisms<NL>were removed, and even safety systems were simplified,<NL>leading to the discovery of flaws in its escape system. For<NL>that reason, some whisper the name \"Daga the Pilot-Killer.\"",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.050.s00": {
+      "prior_en_sha256": "90b454cf16b101e83285a8849cc5c0c4bbfc2d447a73f4bcd89a49f56b87e194",
+      "en": "An Armored Mech developed by Baio Dangle. Built with<NL>performance as its sole priority. Although it bears the Daga<NL>name, the result could be called a completely different<NL>Armored Mech. Its specifications, cost, and piloting<NL>difficulty are all extraordinary. Its powerful armament<NL>includes two multi-barrel plasma Gatling guns mounted on<NL>its shoulders and an enhanced, improved plasma sword. Its<NL>pilot is Melissa Gould.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.051.s00": {
+      "prior_en_sha256": "f3f18ce54fda0ec685b66363bd0af5d05f52d2d6493dcea020576a1d18ce3d54",
+      "en": "An upgraded and modified Bine Daga. However, the changes<NL>only improve its basic performance by about 10%. Its<NL>weapons are unchanged. Piloted by an unidentified<NL>mysterious figure.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.052.s00": {
+      "prior_en_sha256": "67ac6530c4e8b96ada2876fbe43c666503b4cd59abe413e70ebbc8956376d9f2",
+      "en": "A high-speed transport craft used by Baio Dangle. A<NL>modified version of the standard transports used in Zigrim,<NL>mainly employed to carry Armored Mechs. Rather than<NL>securing cargo with a conventional fixed hanger, it adjusts<NL>a gravitational field to envelop and stabilize the mech. In the<NL>story, it brings in Bine Daga.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.053.s00": {
+      "prior_en_sha256": "e75c69913cf0f525ce6f33cb29474a37e480e96ca9556aa39c006cb299d03749",
+      "en": "Built by Baio Dangle with the goal of surpassing Bine Daga.<NL>Though it looks like a support unit at first glance, it is a<NL>general-purpose machine with considerable close-combat<NL>ability. Its trademarks are enormous horns and a tail-like<NL>mobility support system. Unusually for a creation of Baio<NL>Dangle's, it already had a buyer during the design stage. Bio's<NL>sales efforts were behind that arrangement. The buyer was<NL>President Nell Horem, and Steinies piloted it during the battle<NL>to seize the presidential residence.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.054.s00": {
+      "prior_en_sha256": "065fc3fd2f3f320eca21ded5dfb9b20ca404ac57d4cc623e566dd7ca4562b56c",
+      "en": "An Armored Mech created in conjunction with Zigrim's<NL>human enhancement project, commonly known as Code 3. It<NL>uses the special mechanism that became the basis for<NL>Agarthia's new Prana Regulator, achieving an output far<NL>beyond an ordinary Armored Mech's. It also has a system<NL>that converts tension and fighting spirit into Prana, though<NL>it feeds on the pilot's life force. At full operation, the pilot<NL>requires no rest, and the mech uses Prana to mitigate wear<NL>throughout its systems, allowing it to fight virtually without<NL>end. It carries a remotely controlled floating gun platform<NL>on each shoulder and its back, enabling unpredictable<NL>attacks. Tuned for the test subject Reamond, it is an<NL>extremely powerful machine.",
+      "inserted_breaks": 12,
+      "joined_breaks": 13,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.055.s00": {
+      "prior_en_sha256": "a1c955bcf20e94f239d57384bc9ca685ccc2c447559b742971d6129d50d755b7",
+      "en": "An enormous Armored Mech developed to overcome a<NL>numerical disadvantage in available machines. There is<NL>nothing technologically novel about it, but its immense size<NL>gives it staggering toughness and firepower. A machine that<NL>seems to embody the outdated doctrine of giant battleships<NL>and big guns: a mobile fortress in appearance. Alongside its<NL>electronic controls, it requires three observers, one pilot, and<NL>one gunner, plus Growster to command and coordinate<NL>them: a total crew of six.",
+      "inserted_breaks": 8,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.056.s00": {
+      "prior_en_sha256": "a004f305cb12ccfef671ad7acd28d61e23ab064c47ab8989436c84e8ca25178e",
+      "en": "A machine presented by the Kingdom of Agarthia to Limberg<NL>in celebration of Cain's birth. Though related to the Zaxas<NL>piloted by Rest, its internal systems are so different that it<NL>is effectively another machine. Based on Zaxas, one of the<NL>continent's Four Great Armored Mechs, it offers formidable<NL>performance and power that cannot be underestimated.<NL>Piloted by Cain Isfandeil, the disinherited prince of Limberg.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.057.s00": {
+      "prior_en_sha256": "d024e678f28ba480b1de8fa9ed5928de56f54a4fe68e8cd3511cd34d38c55fda",
+      "en": "An unmanned machine remotely controlled from the Zaxas<NL>piloted by Cain. Simply achieving remote control, a<NL>technology still in its experimental stage, would be<NL>remarkable enough. Cain's ability to control four of these<NL>unmanned machines at once is equally astonishing.",
+      "inserted_breaks": 4,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.058.s00": {
+      "prior_en_sha256": "3ee7dcaaaa1c3692ead4cff830c4c7de304e4bd7c93a1793234253e8b7e2f2c7",
+      "en": "An older-generation Armored Mech supplied by the arms<NL>dealer Bio. A minor enemy machine for terrorists.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.059.s00": {
+      "prior_en_sha256": "b2d917692c31ed71b4875ed23c971e0b5d220867921b8bdae57b5d8f549d223f",
+      "en": "A tuned-up version of Kaisar, an older-generation Armored<NL>Mech supplied by the arms dealer Bio. Its spiked,<NL>cable-controlled arm is unrivaled in power... perhaps?",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.060.s00": {
+      "prior_en_sha256": "e65b56ecc0b8be443fa3c99fba9886076d1fda6b33c38fe4baba68609fc07e78",
+      "en": "An older-generation Armored Mech supplied by the arms<NL>dealer Bio. Its weapons and output are far beyond Kaisar's,<NL>and it compares favorably with the standard Armored Mechs<NL>of any country.",
+      "inserted_breaks": 2,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.061.s00": {
+      "prior_en_sha256": "6d50fdb68da9df5b4e9b22d5b427e40547a23922c83368a0890fc720d1322686",
+      "en": "A machine based on a Zigrim Armored Mech and tuned<NL>extensively. It carries a large Prana Regulator and boasts<NL>nearly twice the output of an ordinary Armored Mech. That<NL>surplus output has enabled unique improvements to its<NL>armament. It reached the terrorists through the arms dealer<NL>Bio's covert dealings.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.062.s00": {
+      "prior_en_sha256": "3b087fe10a7d0c87875eafb0d6a117fe62fd0404bd9fc1cd3fed69d083710230",
+      "en": "A machine based on Zigrim's Daga Armored Mech and tuned<NL>extensively. Versatile and tough. It reached the terrorists<NL>through the arms dealer Bio's covert dealings. Its pilots are<NL>unable to make full use of some of its original capabilities.",
+      "inserted_breaks": 3,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.063.s00": {
+      "prior_en_sha256": "3e867bfa8d04cfd4e69443c2fa27ff95618223edc8647ebec5d0e34163b25cf1",
+      "en": "A modified version of Agarthia's general-purpose Armored<NL>Mech, Mireon. However, it has become virtually an entirely<NL>different machine. Its output has increased dramatically,<NL>and new weapons have been added. The favored machine of<NL>Vales Briar, commander of the Solitary Silver Wings<NL>mercenary band.",
+      "inserted_breaks": 5,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.064.s00": {
+      "prior_en_sha256": "e70bbedf38befbde9272b4aefd3df02b043a0c3b08db1f71504489b24585a811",
+      "en": "A modified version of Agarthia's support Armored Mech,<NL>Baleid. It carries a high-powered long-range cannon. The<NL>favored machine of Jono of the Solitary Silver Wings<NL>mercenary band.",
+      "inserted_breaks": 3,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.065.s00": {
+      "prior_en_sha256": "11e592c568efa7df84adf0da3189e663106148192c7b1ed6d2b682f1cbd41257",
+      "en": "A modified version of Agarthia's support Armored Mech,<NL>Baleid. It has an enormous claw mounted on its left arm.<NL>The favored machine of Vel of the Solitary Silver Wings<NL>mercenary band.",
+      "inserted_breaks": 2,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.066.s00": {
+      "prior_en_sha256": "0e380bca1510cf4193ebd9c7059e28d8a95f33e210c1f505e7fda88b22f9e6b2",
+      "en": "A machine based on a Zigrim Armored Mech and tuned<NL>extensively. Versatile and tough, with an even wider range of<NL>weapons. The new favored machine of Vales Briar,<NL>commander of the Solitary Silver Wings mercenary band.",
+      "inserted_breaks": 2,
+      "joined_breaks": 3,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.067.s00": {
+      "prior_en_sha256": "f05a66485b858716c87b688b1ec497013af31568bf11478dee8774ac9a1b171a",
+      "en": "A machine based on a Zigrim Armored Mech and tuned<NL>extensively. It carries a large Prana Regulator and boasts<NL>nearly twice the output of an ordinary Armored Mech. That<NL>surplus output has enabled unique improvements to its<NL>armament. The new favored machine of Jono of the Solitary<NL>Silver Wings mercenary band.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.068.s00": {
+      "prior_en_sha256": "cba977daaee73013f4608618b651331dcd17c13f14e9d1b5f1f884212a8f4899",
+      "en": "A machine based on a Zigrim Armored Mech and tuned<NL>extensively. It carries a large Prana Regulator and boasts<NL>nearly twice the output of an ordinary Armored Mech. That<NL>surplus output has enabled unique improvements to its<NL>armament. The new favored machine of Vel of the Solitary<NL>Silver Wings mercenary band.",
+      "inserted_breaks": 5,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.069.s00": {
+      "prior_en_sha256": "a2bc7be4ac7e4f9fcb153653896243737c7ac27c3a52a1bd70763bb609d5a4d5",
+      "en": "An experimental organism from the Gazette Project.<NL>Apparently, producing ten Baluamy costs about as much as<NL>manufacturing one average Armored Mech. It meets the<NL>requirements for a mass-produced weapon, but problems with<NL>its deployment have kept it from practical service. Runaway<NL>incidents have prompted demands to review the project itself,<NL>and apparently it is scheduled to be left out of next year's<NL>budget proposal.",
+      "inserted_breaks": 6,
+      "joined_breaks": 7,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.070.s00": {
+      "prior_en_sha256": "b7f8e43da7246f6a9f31087db91e1ef0ab0eaa95eebbaaca86aec75fd0967d0e",
+      "en": "An experimental organism from the Gazette Project. The<NL>only Baluamy capable of reproduction. Far larger than the<NL>other Baluamy.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.071.s00": {
+      "prior_en_sha256": "0ffd0417db5d396f1b8796c1641e29847ce47aec39064a56ea763b333f402596",
+      "en": "An experimental organism from the Gazette Project. An<NL>evolved version of its first form.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.072.s00": {
+      "prior_en_sha256": "2f58e64e8078c1f60ed2bf7306261d292e418edbb788c6e42afb255df6e56c63",
+      "en": "An experimental organism created using Baluamy Queen<NL>technology, with fighting ability increased at the expense of<NL>reproduction.",
+      "inserted_breaks": 2,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.074.s00": {
+      "prior_en_sha256": "7cbe8d8b8272767cdebce73851de478d36d4312ea50eb39a656248eeae2b8164",
+      "en": "One of three Ultra-Offensive Shell Units built by the people<NL>of Lin Karma, whose homeworld was destroyed by Vorlia.<NL>They pursued Vorlia to Earth and interfered with its<NL>activation, but were unable to destroy it completely, and<NL>could only seal it away. To prepare for Vorlia's return, this<NL>machine was left sleeping in the world of Agarthia. The<NL>ancient Agarthians who witnessed Aidion descend regarded it<NL>as the coming of a god and worshiped it. In time, a country<NL>arose there, and came to be called the Kingdom of Agarthia.<NL>Then, after 4,000 years, it awakened. It is the central<NL>member of the three Shinkaio, with the task of commanding<NL>and managing the other two. Its pilot is Rayfon Lang<NL>Maxord.",
+      "inserted_breaks": 10,
+      "joined_breaks": 12,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.075.s00": {
+      "prior_en_sha256": "88b046146baa0cf220a3bec226ab65b456233105b0bf5938643c8ca993b01a46",
+      "en": "One of three Ultra-Offensive Shell Units built by the people<NL>of Lin Karma, whose homeworld was destroyed by Vorlia.<NL>They pursued Vorlia to Earth and interfered with its<NL>activation, but were unable to destroy it completely, and<NL>could only seal it away. Afterward, it crash-landed on a<NL>remote island in Earth's southern seas and went to sleep<NL>there. Responding to Valga's call, it awakened after 4,000<NL>years and descended into Agarthia. The guardian of the trio,<NL>it possesses the greatest defensive ability. Its pilot is<NL>Rishuna Milsh, in the body of Mana Elua.",
+      "inserted_breaks": 8,
+      "joined_breaks": 9,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.076.s00": {
+      "prior_en_sha256": "12dcc692a66e0accc669218fa34cdc35c8a1a80500a613d8daa7cbb1b987296b",
+      "en": "One of three Ultra-Offensive Shell Units built by the people<NL>of Lin Karma, whose homeworld was destroyed by Vorlia.<NL>They pursued Vorlia to Earth and interfered with its<NL>activation, but were unable to destroy it completely, and<NL>could only seal it away. After the battle, it went to sleep on<NL>the far side of the moon to prepare for Vorlia's return.<NL>Sensing Goderius's energy waves, it awakened and began<NL>acting to rouse the other two units. The unit responsible for<NL>offense, it possesses the power of judgment. It also has the<NL>role of guiding the other two. Its pilot is Valga Solma.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.077.s00": {
+      "prior_en_sha256": "30cbd9381343edb815c370b157b25e1c2b1ad4c363696daa2309852ed84bf1f9",
+      "en": "A mysterious robot Touya fought in a world he wandered<NL>into because of a disruption in causality.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.079.s00": {
+      "prior_en_sha256": "5bf3d8703a6f7389cd0c2c896b41ad771a0a3d08faf52a6f3b513e161c05669d",
+      "en": "A mysterious robot Touya piloted in a world he wandered<NL>into because of a disruption in causality.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.080.s00": {
+      "prior_en_sha256": "d6bb7659e2ebded4e8ed6759f5e8ff315718456f4ba9529f2861bc2f7e730474",
+      "en": "A Gadran tuned to support Goderius. Though its appearance<NL>is unchanged, its armor, output, and other capabilities have<NL>been improved.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.081.s00": {
+      "prior_en_sha256": "e89daacdd6ca49c5fb2e7b7b52d4ee42935e9231f38f98a7264f9824d9566700",
+      "en": "A Gadran tuned to support Parthenos. Though its<NL>appearance is unchanged, its armor, output, and other<NL>capabilities have been improved.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.082.s00": {
+      "prior_en_sha256": "4a7a096faae3aeea8272152d9c61161d75a16fd0dc45b4ff7675753b791a8011",
+      "en": "A Gadran tuned to support Gaiozon. Though its appearance<NL>is unchanged, its armor, output, and other capabilities have<NL>been improved.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.083.s00": {
+      "prior_en_sha256": "6eaede32575617fa719d65c50ae04cca0057815fb1ab837e9c8b99d6b7d9e270",
+      "en": "A Gadran tuned to support Rayode. Though its appearance<NL>is unchanged, its armor, output, and other capabilities have<NL>been improved.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.084.s00": {
+      "prior_en_sha256": "23426a3adf01e3a471534b520f0393cf18732e18d77c60a93d2ce845e907d3ac",
+      "en": "A Gadran tuned to support Eleana. Though its appearance is<NL>unchanged, its armor, output, and other capabilities have<NL>been improved.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.085.s00": {
+      "prior_en_sha256": "792e8c130027b9996fcfd5e9ee1969eccd3bcaf3fbf3eca2efa17be56a795b46",
+      "en": "Eleana equipped with Zelbario, components that cling to it<NL>as though restraining it. Besides serving as armor, they<NL>enhance Prana and provide attack support, making Eleana in<NL>this form an extremely powerful machine. Zelbario can also<NL>bind the pilot's mind. Through this function, Leone is forced<NL>to become nothing more than a fighting machine.",
+      "inserted_breaks": 3,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.089.s00": {
+      "prior_en_sha256": "e25aae0df74de978201ea2d8c0a93d1daf4e0ef4b986cff3f933be877f02303e",
+      "en": "A Rayblade created through the power of an Estelian. More<NL>than a mere copy, its power surpasses the original. It appears<NL>as the final boss.",
+      "inserted_breaks": 2,
+      "joined_breaks": 2,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.090.s00": {
+      "prior_en_sha256": "22daf969c169c36747e4e9495c24eddb1e0c403153a7e96be60584cd6f5848a6",
+      "en": "A mech kept under supervision and studied in the Holy Land.<NL>Because its power was so immense and so poorly<NL>understood, it was sealed behind the Frail Barrier, which has<NL>the property of absorbing Prana. During Rayode's assault,<NL>however, the barrier broke, and it appeared before the public<NL>for the first time in 29 years. Data \"borrowed\" by Celica<NL>played an important role in the creation of the Spirit Mechs.<NL>In a sense, this mech was the foundation from which they<NL>were developed. Though some of its workings have been<NL>explained, much about it remains unknown. It is currently<NL>being repaired after sustaining damage in battle with Rayode.",
+      "inserted_breaks": 7,
+      "joined_breaks": 8,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.113.s00": {
+      "prior_en_sha256": "1b94b483f6aded7c13731282061772e36cddbf1e43e9b71580d5e672ce6fec3d",
+      "en": "A supply transport widely used in Zigrim. Naturally, it carries<NL>no weapons whatsoever.",
+      "inserted_breaks": 1,
+      "joined_breaks": 1,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.118.s00": {
+      "prior_en_sha256": "e645f28f2fad875e212c16c715591da580968fc848b57676adea4f01922585a7",
+      "en": "An enormous carrier capable of housing and transporting<NL>20 Spirit Mechs. It can perform almost every kind of<NL>maintenance. Built in conjunction with the Spirit Mech<NL>Development Project. An independent carrier capable of<NL>operating almost indefinitely, apart from the need for<NL>resupply. Designed with a strong emphasis on comfortable<NL>living quarters. Its autonomous systems allow it to operate<NL>with a minimum crew of eight.",
+      "inserted_breaks": 6,
+      "joined_breaks": 6,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    },
+    "library.mech.119.s00": {
+      "prior_en_sha256": "b1d4635ba1042cf65dc3bf9c4f0bf905a96c44958868dbe6f30f479b3e8e6183",
+      "en": "Excavated in the year 5959 of the Orthodox Calendar, this<NL>machine is kept under supervision and studied in the Holy<NL>Land. It also served as the basis for the La=Dis Spirit Mechs.<NL>Though some of its workings have been explained, much<NL>about it remains unknown. Why it cannot activate unless<NL>both pilots are present is still a mystery as well.",
+      "inserted_breaks": 4,
+      "joined_breaks": 5,
+      "reason": "Reflow original fixed-width rows inside one unlock paragraph; preserve all words, punctuation and paragraph boundaries"
+    }
+  }
+}

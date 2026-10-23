@@ -1,0 +1,233 @@
+{
+  "version": "0.1.6",
+  "source": "D_BMESS.BIN from the supplied Dreamcast dump",
+  "status": "English first draft relocated and inserted in local test disc; meaning/state/layout/gameplay validation pending",
+  "sizes": {
+    "compressed_bytes": 93621,
+    "decoded_bytes": 203812,
+    "native_allocation_bytes": 229376,
+    "original_spare_allocation_bytes": 25564,
+    "english_decoded_bytes": 320460,
+    "english_compressed_bytes": 114271,
+    "english_native_allocation_bytes": 327680,
+    "english_copy_tail_padding_bytes": 12092
+  },
+  "native_loader": {
+    "filename_literal_runtime": "8c09740c",
+    "allocation_literal_file_offset": "10dc4",
+    "allocation_call_file_offset": "10d9e",
+    "destination_global_runtime": "8c1dbee8",
+    "decompress_call_file_offset": "10de0",
+    "decompress_function_runtime": "8c0221a4"
+  },
+  "root_table": {
+    "entries": 128,
+    "entry_bytes": 4,
+    "encoding": "unsigned little-endian u32 offset relative to its own pointer field",
+    "physical_records": 94,
+    "aliases": "multiple root slots may share a record, including slots 0 and 1",
+    "identity": "Battle-message slots are not assumed to equal D_NAMES character IDs. The caller obtains the slot via runtime function 8c02f414 and masks to seven bits. Its state-dependent mapping still requires review."
+  },
+  "record_header": {
+    "category_pointers": 12,
+    "category_pointer_bytes": 2,
+    "category_pointer_encoding": "unsigned little-endian u16 offset relative to its own field",
+    "weapon_override_lists": 2,
+    "weapon_override_entry": "self-relative u16 pointer followed by one weapon-ID byte",
+    "weapon_override_terminator": "FFFF u16",
+    "caution": "The apparent thirteenth category word is the first override pointer. The first category's offset varies with the lengths of both override lists; it is not a category count. Weapon IDs remain raw IDs pending their runtime mapping."
+  },
+  "selection_graph": {
+    "native_loop_runtime": "8c07a518..8c07a848",
+    "pointer_dereference_runtime": "8c07a518",
+    "copy_loop_runtime": "8c07a530",
+    "conditional": {
+      "format": "FC parameter opcode u16_jump",
+      "opcodes": "30..37",
+      "flag_index": "((opcode & 3) << 8) | parameter",
+      "bitmap_runtime": "8c1df52c; most-significant-bit first within each byte",
+      "opcodes_30_to_33": "continue after the five-byte control when the flag is clear; otherwise jump",
+      "opcodes_34_to_37": "continue when the flag is set; otherwise jump",
+      "jump_target": "address of the u16 operand plus its unsigned value",
+      "controls": 206
+    },
+    "random_selection": {
+      "format": "FC parameter 3F, followed by self-relative u16 pointers, ending in FFFF",
+      "tables": 1096,
+      "native_limit": 64,
+      "index": "floor(RNG_result * count / 32768)",
+      "empty_table": "emit FF and end selection",
+      "target": "selected u16 field address plus its value"
+    },
+    "copied_units": "F0..FA glyphs occupy two bytes; FC 3C occupies five bytes; other non-selection FC controls occupy three. FE, FD and FB are retained. FF is copied and ends the chosen message.",
+    "initial_combat_state_selection": "The preceding part of 8c079ff8 chooses category/weapon entries according to battle state. The verification below starts at pointer dereference or the copy loop; it does not prove that preceding state setup."
+  },
+  "extraction": {
+    "text_spans": 5516,
+    "distinct_raw_text_payloads": 4630,
+    "physical_rows": 8086,
+    "nonempty_rows": 6979,
+    "blank_rows": 1107,
+    "unknown_glyph_ids": 0,
+    "unreferenced_programs": 21,
+    "unreferenced_rows_including_blanks": 45,
+    "policy": "Retain unreferenced programs with explicit status. Their original bytes decode and execute under forced entry, but that does not prove the game uses them.",
+    "unclassified_nonpadding_bytes": 0,
+    "remaining_padding": "Every physical record ends with one additional FF and zero alignment bytes.",
+    "local_source": "work/source/battle/",
+    "tool": "tools/extract_battle_text.py"
+  },
+  "native_verification": {
+    "root_lookup_cases": 128,
+    "golden_cases": 10,
+    "selection_cases": 6034,
+    "SH4_instructions": 6248423,
+    "text_spans_witnessed": 5516,
+    "condition_outcomes_witnessed": 412,
+    "maximum_single_original_message_bytes": 199,
+    "output_return_pointer_and_guards": "exact output and return pointer; destination guards unchanged",
+    "RNG": "Deterministic return values exercise all table choices. The RNG implementation itself is not tested.",
+    "evidence": "work/output/0.1.4/battle-native-test.json",
+    "tool": "tools/test_battle_text.py --verify"
+  },
+  "translation": {
+    "drafted_slice_rows": 8086,
+    "drafted_nonempty_rows": 6979,
+    "blank_rows_in_drafted_slices": 1107,
+    "completely_prepared_spans": 5516,
+    "first_draft_complete": true,
+    "review_batches": 102,
+    "context": "All physical source rows 0-8085 have first English drafts, including named records, generic enemy banks, alternate/paired Touya support records and the six final hidden-speaker reactions. Conditional alternatives/repeated banks are not one continuous conversation. Preserve names, long/segmented calls, threats, uncertain damage, punctuation-only records and exact FC controls. Barkin/Gina identity, source typos, Tix's please-don't-hit attack and beloved-mech Gaius remain flagged. Technical assessments do not prove combat state; crystalline-metal armor is a wish. Voice label does not establish library antagonist identity. Later paired records retain comic Rayblade Cannon renaming/120-percent charge, targeting/power-donor direction, True Zeifonic Bradler versus ordinary form, Blanc Daigard versus Ray Blanzard, full/short sword calls and Kasumi's nonsexual reassurance/mercy requests. Aurelie damage support keeps incoming vital-area avoidance distinct from outgoing aim. Her finishers retain Noir Defense as distinct from Noir Eclair and the exact control-only row 6811. Celica private thoughts, repair/paint complaints, explicit ejection and alternatives with/without Daifozon remain distinct. Source unusual proverb wording at 7073 is flagged. Wings of Wendis/angel-wings invocation remains one move. Melvi's mercy request targets the enemy; Touya refuses the restriction. Her impression of surrounding Prana and Yamato's internal resonance question remain tentative. Heartbeat/entering imagery is nonsexual fictional support-attack resonance, with no added procedure or permanent-fusion claim. Defeat/next-time encouragement does not confirm death or guarantee survival. Melvi personifies Rayblade; this does not establish mech biology. Leone's usefulness remains tentative in her speech and affirmed by Touya; her coughing and Yamato's blood question do not supply a diagnosis. Her power/Prana is donated to Touya; life-in-his-hands is trust rather than confirmed sacrifice. Preserve White Atonement and her voluntary participation. Kururu's future-husband tease does not prove a wedding; die-but-stay-alive prayer is deliberately contradictory comedy. Thunder of Belmos is her paired call. Ymir receives the praise for predictions/defense, manages systems while Touya pilots, and retains uncertain assessments/internal thoughts. Sanctuary of Restraint is the distinct full battle invocation with short Sanctuary reference; no identity with Sanctuary of Silvaria is proved here. Keep all six final FC:62:40 reactions separate with exact five-question-mark labels. Root slots/labels do not prove runtime identity, allegiance or preceding combat-state setup.",
+    "next_physical_row": null,
+    "name_reference_review": {
+      "source": "https://ameblo.jp/tcm2006-winky/entry-10034490192.html",
+      "scope": "Developer Encyclopedia of RAYBLADE article 20 lists Thunder of Belmos with Kururu and White Atonement with Leone. It does not list the recovered Ymir Sanctuary of Restraint invocation or establish an English name/alias. Keep the latter editorial and distinct from the name-table Sanctuary of Silvaria pending runtime evidence."
+    },
+    "font_characters_pending": [],
+    "working_file": "work/translation/en/battle/battle.json",
+    "English_only_export": "work/translation/en/battle/battle.en.json",
+    "checker": "tools/check_battle_text.py",
+    "pending": "English first drafts are inserted in local0.1.6; independent meaning review, disputed names/source inconsistencies, preceding combat-state mapping and measured layout/gameplay remain pending."
+  },
+  "insertion_requirements": [
+    "Translate full rows with speaker/control context; do not treat branch operands as prose",
+    "Preserve both override tables, all conditions, random alternatives and alias pointers",
+    "Relocate and rebuild self-relative u16/u32 fields; check every field's representable range",
+    "Expand the 0x38000 component allocation if the English component exceeds it",
+    "Address native 0x3000 per-side record copies and the 0x6200 combined work allocation at file 1ba48..1bad0; they are not unbounded",
+    "Measure combined selected-message output and display widths; the native-copy tests use standalone guarded destinations",
+    "Prove battle-state category/weapon selection and character identity mapping",
+    "Verify battle dialogue, special attacks, damage responses and paired conversations in game"
+  ],
+  "english_component": {
+    "version": "0.1.6",
+    "source_file": "D_BMESS.BIN",
+    "stage": "native-verified relocated English battle component; gameplay/layout validation pending",
+    "source_decoded_sha256": "df1cb4e4e075ddf7210c5cad3c8d3ddbf3d83e887abd5d736b7f467778384a27",
+    "output_sha256": "92915fbdda378dcab0a52dd14eb1a4d50c0f8a1385f1cd26400a64806b318af5",
+    "compressed_sha256": "d86b6c4690b18182246f418f4fec0ee68e6f0a434996a68394f78f7464b5663a",
+    "source_decoded_bytes": 203812,
+    "output_decoded_bytes": 320460,
+    "output_compressed_bytes": 114271,
+    "serialized_records_bytes": 308368,
+    "copy_tail_padding_bytes": 12092,
+    "physical_records": 94,
+    "root_alias_slots": 128,
+    "translated_spans": 5516,
+    "translated_physical_rows": 8086,
+    "translated_nonempty_rows": 6979,
+    "pointer_fixups": 7232,
+    "maximum_record_bytes": 11960,
+    "records_exceeding_native_0x3000_copy": [],
+    "original_component_allocation_bytes": 229376,
+    "original_record_copy_bytes": 12288,
+    "selection_semantics": "categories, weapon IDs/order, flags, random choices, aliases and unreferenced programs retained",
+    "validation": {
+      "source_fingerprints": "pass",
+      "text_codec_roundtrip": "pass",
+      "PRS_roundtrip": "pass",
+      "rebuilt_graph_edges": "pass",
+      "u16_u32_ranges": "pass",
+      "raw_nonpointer_controls": "unchanged",
+      "native_selection": "pass",
+      "native_decompression": "pass",
+      "native_workspace_geometry": "pass"
+    },
+    "pending": [
+      "Preceding combat-state mapping",
+      "Measured battle layout",
+      "Gameplay and long-session memory",
+      "Independent meaning review"
+    ]
+  },
+  "english_native_verification": {
+    "version": "0.1.6",
+    "component_sha256": "92915fbdda378dcab0a52dd14eb1a4d50c0f8a1385f1cd26400a64806b318af5",
+    "compressed_sha256": "d86b6c4690b18182246f418f4fec0ee68e6f0a434996a68394f78f7464b5663a",
+    "executable_sha256": "8400012a367efcf9485473c99361500e0d54b6a93e076ebde2932c5e5948d9a8",
+    "native_selection_cases": 6034,
+    "native_root_cases": 128,
+    "workspace_cases": 256,
+    "text_spans_witnessed": 5516,
+    "condition_outcomes_witnessed": 412,
+    "SH4_selection_instructions": 9277598,
+    "SH4_workspace_instructions": 44288,
+    "SH4_decompression_instructions": 8016096,
+    "maximum_single_output_bytes": 413,
+    "maximum_four_output_bound": 1652,
+    "selected_output_capacity": 2048,
+    "decoded_bytes": 320460,
+    "decoded_capacity": 327680,
+    "maximum_record_bytes": 11960,
+    "record_copy_bytes": 12288,
+    "raw_outputs_return_pointers_and_guards": "exact",
+    "last_record_copy_tail": "explicitly zero-padded in component",
+    "limits": [
+      "Workspace tests execute allocation/copy and four-call phases separately, stubbing selection to force maximum-length messages; selection is independently checked on all source paths",
+      "Preceding combat-state category/weapon mapping and actual RNG implementation remain unverified",
+      "Display layout, independent meaning review and gameplay remain pending"
+    ]
+  },
+  "english_workspace": {
+    "allocation_bytes": 26624,
+    "per_side_record_bytes": 12288,
+    "selected_output_offset": 24576,
+    "selected_output_bytes": 2048,
+    "selected_calls": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "record_sides": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "four_call_phase_file_range": [
+      "0x1bb6c",
+      "0x1bbc6"
+    ],
+    "allocation_copy_phase_file_range": [
+      "0x1ba48",
+      "0x1bad2"
+    ],
+    "test_scope": "Phases executed separately; output-selection stubs force four maximum-size valid messages. All source selection paths are independently executed.",
+    "maximum_single_output_bytes": 413,
+    "conservative_four_output_bytes": 1652
+  },
+  "layout_advance_audit": {
+    "version": "0.1.6",
+    "kind": "medium-font advance estimates; not measured in-game geometry",
+    "physical_rows": 8086,
+    "over_256": 2013,
+    "over_480": 9,
+    "over_512": 2,
+    "limits": [
+      "Actual battle window geometry is unmeasured",
+      "Estimates exclude runtime control expansion and glyph overhang/shadow",
+      "No translation was shortened or reflowed by this audit"
+    ]
+  }
+}

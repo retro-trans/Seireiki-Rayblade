@@ -1,0 +1,264 @@
+{
+  "source": "Original WMAP.AFS members 17/18",
+  "source_archive_sha256": "5f3f612e0acd06b2971c648f6cc7d472f1370a34d88da98958ef3635d3b014e8",
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "font_scale": "Uniform 1/2 source scale, 12-pixel cell height, common baseline",
+  "rows": [
+    {
+      "id": "wmap.17.017",
+      "sprite": 17,
+      "record_offset": 388,
+      "source_box": [
+        256,
+        0,
+        328,
+        16
+      ],
+      "draw_size": [
+        72,
+        16
+      ],
+      "anchor": [
+        36,
+        3
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "221393851fa20355a298acae5412d61e3a3c0fde8fd25386033c7ae3d0b48f29",
+      "en": "Flamuelk Castle",
+      "glossary_id": "term.069",
+      "glossary_en": "Flamuelk Castle"
+    },
+    {
+      "id": "wmap.17.018",
+      "sprite": 18,
+      "record_offset": 408,
+      "source_box": [
+        368,
+        16,
+        424,
+        32
+      ],
+      "draw_size": [
+        56,
+        16
+      ],
+      "anchor": [
+        28,
+        3
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "d0ad56050f603db8dff5d0419863e0ca583bdbbe9b3bc050c1749b6c06b204fc",
+      "en": "Shangria",
+      "glossary_id": "term.161",
+      "glossary_en": "Shangria"
+    },
+    {
+      "id": "wmap.17.019",
+      "sprite": 19,
+      "record_offset": 428,
+      "source_box": [
+        256,
+        16,
+        336,
+        32
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        2
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "6f58f9de460821a9256775bf998b944b9e6e52371d0947433d853b0b7cbd0fb1",
+      "en": "Brandenkrois",
+      "glossary_id": "term.153",
+      "glossary_en": "Brandenkrois"
+    },
+    {
+      "id": "wmap.17.020",
+      "sprite": 20,
+      "record_offset": 448,
+      "source_box": [
+        336,
+        16,
+        368,
+        32
+      ],
+      "draw_size": [
+        32,
+        16
+      ],
+      "anchor": [
+        14,
+        2
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "2121cb80f4e56837215bf7dbff5dfc3eec45d9a14b1786d6fb5b44534a159165",
+      "en": "Belta",
+      "glossary_id": "place.wmap.belta",
+      "glossary_en": "Belta"
+    },
+    {
+      "id": "wmap.17.021",
+      "sprite": 21,
+      "record_offset": 468,
+      "source_box": [
+        424,
+        16,
+        504,
+        32
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        3
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "233c2c34a105ad41b374c0eb84b35a62b7d7a6b9ab6f019a58d1f18e69d1d38c",
+      "en": "Glascher Valley",
+      "glossary_id": "term.114",
+      "glossary_en": "Glascher Valley"
+    },
+    {
+      "id": "wmap.17.022",
+      "sprite": 22,
+      "record_offset": 488,
+      "source_box": [
+        376,
+        0,
+        456,
+        16
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        38,
+        3
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "75af46497e160288112e35f239b972926f25f543782b1e7ec1f7d78f027cb39e",
+      "en": "Alterias Valley",
+      "glossary_id": "term.163",
+      "glossary_en": "Alterias Valley"
+    },
+    {
+      "id": "wmap.17.023",
+      "sprite": 23,
+      "record_offset": 508,
+      "source_box": [
+        328,
+        0,
+        376,
+        16
+      ],
+      "draw_size": [
+        48,
+        16
+      ],
+      "anchor": [
+        24,
+        2
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "5d6243a8f4e94b1789509b278b88d994a3a2426d0b5d76fd52d3dbca6a9f84e0",
+      "en": "Muur Forest",
+      "glossary_id": "term.105",
+      "glossary_en": "Muur Forest"
+    },
+    {
+      "id": "wmap.17.024",
+      "sprite": 24,
+      "record_offset": 528,
+      "source_box": [
+        336,
+        32,
+        416,
+        48
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        2
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "d45d2a59ebe1f1d5bf3013e78d58c10fdf1aaa177916d0fbc7d6c417ae7ab541",
+      "en": "Ze=Ode Research Institute Ruins",
+      "glossary_id": "term.421",
+      "glossary_en": "\u226aZe=Ode\u226b research institute ruins"
+    },
+    {
+      "id": "wmap.17.025",
+      "sprite": 25,
+      "record_offset": 548,
+      "source_box": [
+        416,
+        32,
+        472,
+        48
+      ],
+      "draw_size": [
+        56,
+        16
+      ],
+      "anchor": [
+        26,
+        2
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "cd4accdfd76b1c21ea31e3fffda7e2cc92e1de949cb397dace81a5214e014f84",
+      "en": "Cornel Village",
+      "glossary_id": "term.104",
+      "glossary_en": "Cornel Village"
+    },
+    {
+      "id": "wmap.17.026",
+      "sprite": 26,
+      "record_offset": 568,
+      "source_box": [
+        472,
+        32,
+        496,
+        48
+      ],
+      "draw_size": [
+        24,
+        16
+      ],
+      "anchor": [
+        12,
+        3
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "c6df7580a371461e830263fcda7b95f981434adfaeda3611c396fc8b70ef8150",
+      "en": "Holy Land",
+      "glossary_id": "term.008",
+      "glossary_en": "Holy Land"
+    }
+  ],
+  "notes": [
+    "Belta is a provisional phonetic spelling from the image label.",
+    "Short image forms Muur Forest / Glascher Valley follow existing glossary locations.",
+    "No story or library draft credit; map layout and live selection remain to be verified."
+  ]
+}

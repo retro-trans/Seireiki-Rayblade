@@ -1,0 +1,405 @@
+{
+  "source_archive": "EFFECT.AFS",
+  "source_archive_sha256": "0db7a4981110ffb26ac0c17bd6561dc9644eeb327c8502e90f100ede097bb9c4",
+  "native_graphic_selection_proof": {
+    "path": "work/ui/asset-audit/EFFECT/attack-lettering/native-variant-selection.json",
+    "sha256": "76e221efe0fba150e1b510d0eee91f933126aee422e40ce535e1fa6afee526d9"
+  },
+  "rows": [
+    {
+      "id": "effect.142.008",
+      "sprite": 8,
+      "geometry_record_offset": 368,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        260,
+        0,
+        460,
+        200
+      ],
+      "UV_256": [
+        130,
+        0,
+        230,
+        100
+      ],
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_index_sha256": "6907e96b4b548881c98542d02de4cdd4b90e589a915efa7fdc4f8a7b0aa09b4c",
+      "discovery_preview_palette_bank": 5,
+      "nonzero_index_bounds": [
+        33,
+        2,
+        200,
+        157
+      ],
+      "trimmed_index_sha256": "2e9262ee34e01f4b990d26e70d987dcd82130b4a7da7f6e209b867b92acd0545",
+      "trimmed_index_dimensions": [
+        167,
+        155
+      ],
+      "source_member": 142,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "d84702eec2186a4b48f4e086e7d3549660c32847b12289401885a73c5c95e301",
+      "source_glyph": "破",
+      "reading_basis": "Clear primary glyph or its visually reversed variant"
+    },
+    {
+      "id": "effect.142.009",
+      "sprite": 9,
+      "geometry_record_offset": 388,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        4,
+        256,
+        204,
+        456
+      ],
+      "UV_256": [
+        2,
+        128,
+        102,
+        228
+      ],
+      "parameter_words_raw": [
+        6144,
+        0
+      ],
+      "source_index_sha256": "4b09e36ff66bd4d8db4a887ca9d980cd0337b1a2d6f611679b5766af85dfa525",
+      "discovery_preview_palette_bank": 6,
+      "nonzero_index_bounds": [
+        2,
+        2,
+        200,
+        187
+      ],
+      "trimmed_index_sha256": "dad86bb05e6dfde400adf3e2319de107e4e7dcafc8dfdc50a1d28fdf12dc83c5",
+      "trimmed_index_dimensions": [
+        198,
+        185
+      ],
+      "source_member": 142,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "d84702eec2186a4b48f4e086e7d3549660c32847b12289401885a73c5c95e301",
+      "source_glyph": null,
+      "reading_basis": "Proposed same-word motion/glow treatment; separate character/phrase reading is not established"
+    },
+    {
+      "id": "effect.143.008",
+      "sprite": 8,
+      "geometry_record_offset": 368,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        260,
+        0,
+        460,
+        200
+      ],
+      "UV_256": [
+        130,
+        0,
+        230,
+        100
+      ],
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_index_sha256": "9eceef2b043e8538bae69a08ff9b2a8d03492dc646740ae5a3f622cb49011cc5",
+      "discovery_preview_palette_bank": 5,
+      "nonzero_index_bounds": [
+        33,
+        42,
+        200,
+        197
+      ],
+      "trimmed_index_sha256": "2e9262ee34e01f4b990d26e70d987dcd82130b4a7da7f6e209b867b92acd0545",
+      "trimmed_index_dimensions": [
+        167,
+        155
+      ],
+      "source_member": 143,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "3ccaffe5a425d14c9a6518090cfe85203ab14ee16190faa9fe5c6841f82ef7a8",
+      "source_glyph": "破",
+      "reading_basis": "Clear primary glyph or its visually reversed variant"
+    },
+    {
+      "id": "effect.143.009",
+      "sprite": 9,
+      "geometry_record_offset": 388,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        4,
+        256,
+        204,
+        456
+      ],
+      "UV_256": [
+        2,
+        128,
+        102,
+        228
+      ],
+      "parameter_words_raw": [
+        6144,
+        0
+      ],
+      "source_index_sha256": "2f02f03d47370a2f2a2679f37694593b3b004798a9e2048348ed0dbad48eb712",
+      "discovery_preview_palette_bank": 6,
+      "nonzero_index_bounds": [
+        5,
+        18,
+        198,
+        195
+      ],
+      "trimmed_index_sha256": "c0d52595badd01c77541eecd3ca55436e8a0d7d119108e600df67873dc17114d",
+      "trimmed_index_dimensions": [
+        193,
+        177
+      ],
+      "source_member": 143,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "3ccaffe5a425d14c9a6518090cfe85203ab14ee16190faa9fe5c6841f82ef7a8",
+      "source_glyph": null,
+      "reading_basis": "Proposed same-word motion/glow treatment; separate character/phrase reading is not established"
+    },
+    {
+      "id": "effect.455.008",
+      "sprite": 8,
+      "geometry_record_offset": 368,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        260,
+        0,
+        460,
+        200
+      ],
+      "UV_256": [
+        130,
+        0,
+        230,
+        100
+      ],
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_index_sha256": "eba780fc130816b3ac658cda45ee673ee75f4c5374159883f864483cbe320dee",
+      "discovery_preview_palette_bank": 5,
+      "nonzero_index_bounds": [
+        40,
+        2,
+        200,
+        157
+      ],
+      "trimmed_index_sha256": "95245fbebebdd91e9567a7494735719eb0341bc475bfcd311d2b86eaad7a982b",
+      "trimmed_index_dimensions": [
+        160,
+        155
+      ],
+      "source_member": 455,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "48e76b2eddd9f3134225bd93627dbfbb4f5d598d863aa9a4d65eefaf962e55ab",
+      "source_glyph": "破",
+      "reading_basis": "Clear primary glyph or its visually reversed variant"
+    },
+    {
+      "id": "effect.455.009",
+      "sprite": 9,
+      "geometry_record_offset": 388,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        4,
+        256,
+        204,
+        456
+      ],
+      "UV_256": [
+        2,
+        128,
+        102,
+        228
+      ],
+      "parameter_words_raw": [
+        6144,
+        0
+      ],
+      "source_index_sha256": "533ee2dbdd574a4ee5a6c8e5533af0e599c4360f070e3f39c1d3c48bc9b053d6",
+      "discovery_preview_palette_bank": 6,
+      "nonzero_index_bounds": [
+        9,
+        4,
+        200,
+        187
+      ],
+      "trimmed_index_sha256": "ad94ca201e2ef37fae728c9fbe4fe022930029546fdf08752c5130c65bc3335e",
+      "trimmed_index_dimensions": [
+        191,
+        183
+      ],
+      "source_member": 455,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "48e76b2eddd9f3134225bd93627dbfbb4f5d598d863aa9a4d65eefaf962e55ab",
+      "source_glyph": null,
+      "reading_basis": "Proposed same-word motion/glow treatment; separate character/phrase reading is not established"
+    },
+    {
+      "id": "effect.456.008",
+      "sprite": 8,
+      "geometry_record_offset": 368,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        260,
+        0,
+        460,
+        200
+      ],
+      "UV_256": [
+        130,
+        0,
+        230,
+        100
+      ],
+      "parameter_words_raw": [
+        5120,
+        0
+      ],
+      "source_index_sha256": "fe643682163dced3a7a49a4db9b1214831a4e5ed8279c1b27169417a7461a2ac",
+      "discovery_preview_palette_bank": 5,
+      "nonzero_index_bounds": [
+        40,
+        42,
+        200,
+        197
+      ],
+      "trimmed_index_sha256": "95245fbebebdd91e9567a7494735719eb0341bc475bfcd311d2b86eaad7a982b",
+      "trimmed_index_dimensions": [
+        160,
+        155
+      ],
+      "source_member": 456,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "e3cbacaa98c674151e51ddb8641c20930ace852e00520799f704c2f76391a9c5",
+      "source_glyph": "破",
+      "reading_basis": "Clear primary glyph or its visually reversed variant"
+    },
+    {
+      "id": "effect.456.009",
+      "sprite": 9,
+      "geometry_record_offset": 388,
+      "draw_size": [
+        200,
+        200
+      ],
+      "anchor": [
+        100,
+        100
+      ],
+      "source_box": [
+        4,
+        256,
+        204,
+        456
+      ],
+      "UV_256": [
+        2,
+        128,
+        102,
+        228
+      ],
+      "parameter_words_raw": [
+        6144,
+        0
+      ],
+      "source_index_sha256": "45faff605c549b9dc0ac27debfe1f96b5972760895aaf7e4549b1e0f994321d5",
+      "discovery_preview_palette_bank": 6,
+      "nonzero_index_bounds": [
+        11,
+        14,
+        200,
+        199
+      ],
+      "trimmed_index_sha256": "8bfdbe2b8abc11f0516d091d71d751142bda5e0fd4e1ee57720eae5205586bc6",
+      "trimmed_index_dimensions": [
+        189,
+        185
+      ],
+      "source_member": 456,
+      "English_target": "BREAK",
+      "status": "editorial_draft_not_inserted",
+      "source_decoded_sha256": "e3cbacaa98c674151e51ddb8641c20930ace852e00520799f704c2f76391a9c5",
+      "source_glyph": null,
+      "reading_basis": "Proposed same-word motion/glow treatment; separate character/phrase reading is not established"
+    }
+  ],
+  "wording": "BREAK",
+  "wording_basis": "破 is an emphatic breaking/shattering glyph. Existing weapon.020 naming ends in Rift Breaker; no claim that this image alone prints the full weapon name.",
+  "motion_frame_reading": "Do not invent a second character or a two-character phrase from the smeared frame. Same-word effect treatment remains a draft pending frame/submission inspection.",
+  "pending": [
+    "Coordinated English artwork for all eight frame images, including the visually reversed and smeared variants",
+    "Actual sprite transform and palette/timing selection; native variant-load tests do not cover these",
+    "Texture/archive preservation and fresh native checks before insertion",
+    "Independent wording/artwork and live attack review"
+  ],
+  "game_build_changed": false,
+  "story_library_draft_credit": 0
+}

@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_1ba.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_1ba.o0007f.l00",
+      "block_id": "scenario.s_1ba.o0007f",
+      "member": "s_1ba.bin",
+      "line_index": 0,
+      "en": "\"Flag 1B0 is not set. If you wish to run this private",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "d61adf108763eb2e86616f34c95b7ebc667c5471a54bb51bf648545f0bdf5c7f",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_1ba.o0007f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_1ba.o0007f.l01",
+      "block_id": "scenario.s_1ba.o0007f",
+      "member": "s_1ba.bin",
+      "line_index": 1,
+      "en": "event, set flag 1B0 and try again.",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "5f6e5bca667f19e6d37a84e2789c3632ba09d62c52a521f348cfb0ac7af1cbb1",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_1ba.o0007f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_1ba.o0007f.l02",
+      "block_id": "scenario.s_1ba.o0007f",
+      "member": "s_1ba.bin",
+      "line_index": 2,
+      "en": "If you don't, execution will be forcibly terminated.\"<FC:B4:3E>",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "345907ccb1580479646130248377d82d6805e86def807cf42e869ef8f71b40b5",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_1ba.o0007f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_1ba.o0007f.l00",
+      "last_id": "scenario.s_1ba.o0007f.l02",
+      "rows_examined": 646,
+      "context": "Slice 0-2; all606targets s_000/s_1ba-s_1be plus20preceding s_1b8144-163 and20following s_0010-19 for s_000 (646distinct story rows examined; lastmember has no later text member). Private-event flag diagnostic.",
+      "decisions": "Fresh English authored this pass; own-current exact-source copies only after context/equality checks, no older saved English imported including repeated Fain/Derock/Celica dialogue. One physical source row per English row; same-row names/numbers/IDs, exact controls/native marks/long pauses and speech/thought pages. Settled subjects/verbs/helpdirection restored, deliberate fragments/uncertain motives/observer interpretations flagged. Raw-decode-verified Fain source variants preserved, identical source continuation retains context-dependent English. Nonexplicit affection/roomprivacy/sleepcare, no invented sexualdetail or relationship. No new holds. Game instructions text not actual tool/VMactions. Independent meaning review, fullVMcoverage, native glyphs, relocation/insertion and runtime/layout pending.",
+      "row_decisions": {
+        "scenario.s_1ba.o0007f.l00": "Three freshly authored diagnostic lines only, exacttwo1B0literals/finalcontrol, no actual flag/VMaction. No older saved English imported."
+      },
+      "row_count": 3
+    }
+  ]
+}

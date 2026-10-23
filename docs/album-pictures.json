@@ -1,0 +1,196 @@
+{
+  "version": "0.1.30",
+  "source_build": "0.1.29",
+  "status": "English New Year greeting, Kasumi album note and three matching thumbnails packaged; source-estimated cleanup, independent review and live album behavior remain unverified",
+  "disc": "work/output/0.1.30/disc/Rayblade English Test 0.1.30.gdi",
+  "archive": "ALBUM.AFS",
+  "archive_sha256": "34b2ca5bc558f221acdf1c9b3d987205d0ff6e09748bab4a6f7bdc4f2e79ae90",
+  "translation_map": "work/translation/en/ui/album-picture-text.en.json",
+  "full_picture_members": [
+    15,
+    81
+  ],
+  "thumbnail_ids": [
+    "album.214.014",
+    "album.214.025",
+    "album.214.086"
+  ],
+  "changed_texture_members": [
+    15,
+    81,
+    216,
+    218,
+    225
+  ],
+  "previews": [
+    {
+      "path": "work/output/0.1.30/album-pictures-picture-015-before-after.png",
+      "sha256": "0551532831faff37187fc7c3a666cb6333a6073b45b01d312d62f94fe2223b2a"
+    },
+    {
+      "path": "work/output/0.1.30/album-pictures-picture-081-before-after.png",
+      "sha256": "d69240b5ef7b41802534df317f9df9ad9308553fbb58f70890fb2f272dc50d02"
+    },
+    {
+      "path": "work/output/0.1.30/album-pictures-thumbnail-before-after.png",
+      "sha256": "0c313fe93d531a7b9afae50d6b1e84cbce0c3ac047b6342f729d1cdbe0bb7eb5"
+    }
+  ],
+  "meaning": [
+    "The greeting is Happy New Year!, year 2000, with the original heart.",
+    "All ten existing source-fingerprinted story note rows are reused; only outer quotes/signature spacing become image layout.",
+    "The album note is rescaled independently from the story image. No new story/library row credit."
+  ],
+  "artwork_review": [
+    "Reviewed both full pictures and the three thumbnail witnesses.",
+    "The first note cleanup left faint old-letter fragments. Enlarged bounded ink regions and removed faint fragments without requiring a nearby dark core.",
+    "The independently authored thumbnail needs its own paper estimate; mapped text regions plus a one-pixel phase margin are cleaned against that source.",
+    "Revised full note and thumbnail previews reviewed. Estimated hidden paper and tiny thumbnail text still require independent/live review."
+  ],
+  "preservation": [
+    "239 unrelated member payloads and original DAT geometry exact.",
+    "All 224 caption areas, including 201 English captions and two original reading holds, exact.",
+    "Other 221 thumbnail photographs exact; only three matching photo regions change.",
+    "Greeting portrait/outside-header bytes and the original heart pairs exact.",
+    "All original note chroma/headers exact, luma edits limited to the visible 320x224 picture."
+  ],
+  "relocated_note": {
+    "member": 81,
+    "offset": 239616,
+    "packed_bytes": 75958,
+    "source_slot_bytes": 73728,
+    "prefix_source_bytes": "verified zero"
+  },
+  "native_proof": {
+    "source_build": "0.1.29",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archive_sha256": "34b2ca5bc558f221acdf1c9b3d987205d0ff6e09748bab4a6f7bdc4f2e79ae90",
+    "image_resource_count": 5,
+    "full_pictures": 2,
+    "thumbnail_photographs": 3,
+    "native_PRS_streams": [
+      {
+        "member": 15,
+        "stream_sha256": "46b0fe55396598a2218fc298913650167e7f59d40c3a14e25245e5b372a3c9bd",
+        "decoded_sha256": "4b03793b06ec7ed8fb5e68ccccc6208f3ed58677f742a043b55ab1cecb2af23a",
+        "decoded_bytes": 262176,
+        "instructions": 4408713,
+        "guard_ABI_exact_output": "pass"
+      },
+      {
+        "member": 81,
+        "stream_sha256": "ff31ac4a8f933c5027bba4a0d8e90c3bad808b48b142267774c020303bfe3cf0",
+        "decoded_sha256": "a9783a0ff158aa65dd1a2e57a98447184cf60247742cb2edb23b2453480bc5c9",
+        "decoded_bytes": 262176,
+        "instructions": 6186170,
+        "guard_ABI_exact_output": "pass"
+      },
+      {
+        "member": 216,
+        "stream_sha256": "e21661b9c9087506dfe446e16375169da1fc5b4f94dcd1d6f2c3e9950f56daf5",
+        "decoded_sha256": "40bb4f8f54cb34d5b5ad205a2e251bffa13351a37c023af2385aaf91a24d9ef6",
+        "decoded_bytes": 131104,
+        "instructions": 3006013,
+        "guard_ABI_exact_output": "pass"
+      },
+      {
+        "member": 218,
+        "stream_sha256": "e7d5938fbce31b9476a7248872ea1d856bdf45ed6229a487af2497a5e46fb35d",
+        "decoded_sha256": "6dbc0ff21f39f41aa078f53c72467ac11d3251f4ff98ffd466f6081508a21b1b",
+        "decoded_bytes": 131104,
+        "instructions": 2521765,
+        "guard_ABI_exact_output": "pass"
+      },
+      {
+        "member": 225,
+        "stream_sha256": "7d1395220bf0708589fe142d1f0056575ff50954abf5b5b1365e12a152991ce5",
+        "decoded_sha256": "491cf9d724b0696ff1287b7dad26f72908d52302900446b90f2bc36e477470f3",
+        "decoded_bytes": 131104,
+        "instructions": 2935920,
+        "guard_ABI_exact_output": "pass"
+      }
+    ],
+    "native_texture_info": [
+      {
+        "dimensions": [
+          512,
+          256
+        ],
+        "format": "0x903",
+        "GPU_pixel_bits": "0x18000000",
+        "instructions": 185
+      },
+      {
+        "dimensions": [
+          256,
+          256
+        ],
+        "format": "0x100",
+        "instructions": 186
+      }
+    ],
+    "archive_members": 244,
+    "unchanged_member_payloads": 239,
+    "archive_bytes_outside_declared_edits": "exact",
+    "original_DAT_geometry": "exact",
+    "all_224_caption_areas": "exact",
+    "other_221_thumbnail_photographs": "exact",
+    "greeting_original_heart_and_outside_header": "exact",
+    "note_original_chroma_and_headers": "exact",
+    "note_changes_within_visible_320x224": true,
+    "independent_source_font_masks": "pass",
+    "linked_story_note_rows": 10,
+    "relocated_member": 81,
+    "source_prefix_padding": "verified zero",
+    "native_guard_and_ABI": "pass",
+    "native_file_loading": false,
+    "GPU": false,
+    "paper_and_thumbnail_cleanup": "Local estimates; no exact hidden-pixel recovery or source resampling equivalence proof",
+    "live_album_unlock_selection_navigation_and_appearance": "pending",
+    "normal_text_font_changed": false,
+    "story_library_draft_credit": 0
+  },
+  "validation": {
+    "reextracted_files": "all 11 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "new_changed_sectors": 84,
+  "changed_sector_locations_from_original": 28390,
+  "changed_album_sector_locations": {
+    "before": 432,
+    "after": 496,
+    "new_locations": 64
+  },
+  "normal_text_font_changed": false,
+  "pending": [
+    "Native relocated album note loading, unlock/selection/navigation and live artwork appearance",
+    "Independent meaning/artwork review and estimated paper/thumbnail cleanup review",
+    "Two unresolved album caption readings and remaining game translation/review",
+    "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+    "Live relocated letter-archive loading, image selection and appearance",
+    "Paper-estimate artwork review and development-placeholder reachability",
+    "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+    "Seven credit-name readings and independent confirmation of reference romanizations",
+    "Live credit timing/order, appearance, alignment and overlaps",
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "release": false,
+  "story_library_draft_credit": 0,
+  "current_archive_layout": {
+    "current_build": "0.1.38",
+    "archive_sha256": "b33aee617043c84c8ec78831f740a4d2e08d7b3bdc06358f4ec34077f88d52b8",
+    "member_payloads_unchanged_from": "0.1.37",
+    "member_count": 244,
+    "native_lookups": "all offsets/sector lengths match physical layout",
+    "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+  },
+  "archive_identity_note": "Earlier archive hashes/proofs remain historical payload-origin evidence; current layout identity above supersedes file placement only."
+}

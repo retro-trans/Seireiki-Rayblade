@@ -1,0 +1,636 @@
+{
+  "format": 1,
+  "movie": "MOV072.SFD",
+  "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+  "source_dimensions": [
+    320,
+    192
+  ],
+  "frame_rate": "30000/1001",
+  "status": "Thirteen timed dialogue drafts prepared; no SFD/disc modification",
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "cues": [
+    {
+      "id": "movie.MOV072.caption.01",
+      "en": "Alforina: \"...Are you sure this was the right decision? For you, the crown prince of the Kingdom of Agarthia, to go so far as to defy your own country's decision...\"",
+      "status": "draft",
+      "start_frame": 1557,
+      "end_frame_exclusive": 1615,
+      "start_seconds": 51.952856,
+      "end_seconds": 53.888056,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1560,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01560.png",
+      "witness_sha256": "0760115ea0ec19f39938b714d41f1f229aedc0acd06007911d57d0b0b6b8d9a0",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o01872.l00",
+          "source_sha256": "34d08f0d7cf731b82518bc015f1c6053c5e0a960142a3bbe0f1fe2b26043af0a",
+          "draft_sha256": "8db671423c383c0e87665a07a7fadd1d2360a900545cdb0e32d9bfd15ae07611"
+        },
+        {
+          "id": "scenario.s_002.o01872.l01",
+          "source_sha256": "fca966c5688b8365ff9a6c9e9686e2110250e774a9ff7443c0484262ee46d9b4",
+          "draft_sha256": "ccbbfe8dfb225ecfb9a3276ef407cbb50642736f8d1b34e2e2a58148fc0187ab"
+        },
+        {
+          "id": "scenario.s_002.o01872.l02",
+          "source_sha256": "a2ecba451425050b936583292308b836721cf960dbc4684bb344aa9b5cfec0c9",
+          "draft_sha256": "38d36aa42e775872447a4518639dc72ddac67a8ef482a4c6e1b0320ef9ebc032"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Alforina: \"...Are you sure this was the right decision? For you, the crown",
+        "prince of the Kingdom of Agarthia, to go so far as to defy your own",
+        "country's decision...\""
+      ],
+      "maximum_line_pixels": 240,
+      "source_duration_seconds": 1.9352000000000018,
+      "reading_speed_characters_per_second": 85.3,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.02",
+      "en": "Lodis: \"It's been three years since Rayfon's death. At last, we've made it this far. I have no regrets whatsoever.",
+      "status": "draft",
+      "start_frame": 1615,
+      "end_frame_exclusive": 1669,
+      "start_seconds": 53.888056,
+      "end_seconds": 55.689656,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1620,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01620.png",
+      "witness_sha256": "8cd7a2ecbd42c4a980cbdcd3c643ff531fa23d2f08d52f826f46f94c176ff2cd",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o018cc.l00",
+          "source_sha256": "3bcaf214c002eabc7783b97ad6b880030c896ddf0c843904584631c5b5d534df",
+          "draft_sha256": "c0ebd56a58c6ad4ff0921f5aba5f963c292d3f58b0052acccbbac0711ba06e38"
+        },
+        {
+          "id": "scenario.s_002.o018cc.l01",
+          "source_sha256": "a0ac8ee1f76b7aeada95bd257779e5c2235a512f8819980e3da90e549242894f",
+          "draft_sha256": "94f35b852071f49bd8ab53321c5fd95cfdf29fd30199aa370493bbae8d788daa"
+        },
+        {
+          "id": "scenario.s_002.o018cc.l02",
+          "source_sha256": "0ecc9016ab2f03134fe135037d46a4b3d50119c9be1e3d5535298000d0a681f5",
+          "draft_sha256": "e39d5be187e2603c1b0eb0f87290e11d47290b9c6d0273d0d129a01f2ab961a8"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Lodis: \"It's been three years since Rayfon's death. At last, we've made it this",
+        "far. I have no regrets whatsoever."
+      ],
+      "maximum_line_pixels": 252,
+      "source_duration_seconds": 1.8016000000000005,
+      "reading_speed_characters_per_second": 63.3,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.03",
+      "en": "On the contrary, I'm grateful for the workings of fate, which allowed me to meet someone as understanding as you, Queen Alforina.\"",
+      "status": "draft",
+      "start_frame": 1669,
+      "end_frame_exclusive": 1689,
+      "start_seconds": 55.689656,
+      "end_seconds": 56.356622,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1680,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01680.png",
+      "witness_sha256": "1f1d9a24bc93663db9d9f5a53802f0bf88c53231d2029051b3f6e069bf29c557",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o018cc.l03",
+          "source_sha256": "245d109fa671be75324fcf2e7d01124483ccf45ee796b72bac25fd93a279d15c",
+          "draft_sha256": "31d3947227352f1a811cf46782e572f5f566f67fab1de7be74181fa8fe8250a9"
+        },
+        {
+          "id": "scenario.s_002.o018cc.l04",
+          "source_sha256": "6aa138087c012b7d803cc40e47f94e11ea03466940328cd52ed6b60cd2dd1430",
+          "draft_sha256": "707d88a06f8dc003286ba8ca6366b6c16b63f19b2369bd5c94e685b2ef213e19"
+        },
+        {
+          "id": "scenario.s_002.o018cc.l05",
+          "source_sha256": "95bcd579ede2dc41ee20b3005163532d0e6ae5978874b5b952468ee904ab9d43",
+          "draft_sha256": "eaa36c50aebee2ea6447c7a371f485ba585efa9730b51a55208d0b342bf36dca"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "On the contrary, I'm grateful for the workings of fate, which allowed me to",
+        "meet someone as understanding as you, Queen Alforina.\""
+      ],
+      "maximum_line_pixels": 249,
+      "source_duration_seconds": 0.6669660000000022,
+      "reading_speed_characters_per_second": 194.9,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.04",
+      "en": "Touya: \"What are you talking about? Of course not. It's all right. Don't worry. ...Or don't you want to stay here?\"",
+      "status": "draft",
+      "start_frame": 1689,
+      "end_frame_exclusive": 1709,
+      "start_seconds": 56.356622,
+      "end_seconds": 57.024656,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1695,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01695.png",
+      "witness_sha256": "91f8ece4181bdba967931fea1d521f817bc0520b1c94ad66e6dee6c6a505b23f",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_00a.o00b94.l00",
+          "source_sha256": "c9237e1c5740f903cdbef2d1b73841d9afe31e7c4248104bdb343e32a57cd775",
+          "draft_sha256": "b0d736e99bde5fc3367d11333fc4f97402f3a76b2085e66f35850418540a14a9"
+        },
+        {
+          "id": "scenario.s_00a.o00b94.l01",
+          "source_sha256": "1dda6e2f4caefcef90a3bbe547e937c02d3c1498e9655fd04490e43615ea037b",
+          "draft_sha256": "b7267decf62e50e6acb949d9a70491a1c297f005a282fff2b618e1faf8a29ce5"
+        },
+        {
+          "id": "scenario.s_00a.o00b94.l02",
+          "source_sha256": "5d5894d0ef034796789ec0963fe48e43f4b13425a27c0f53b533d5c23b5c0991",
+          "draft_sha256": "0536709d0c9234bec8a099f9efacc695fe21112ebbb28f715acc0a3b08f25d48"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Touya: \"What are you talking about? Of course not. It's all right. Don't",
+        "worry. ...Or don't you want to stay here?\""
+      ],
+      "maximum_line_pixels": 234,
+      "source_duration_seconds": 0.6680339999999987,
+      "reading_speed_characters_per_second": 172.1,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.05",
+      "en": "Kasumi: \"No! It's not that!\"",
+      "status": "draft",
+      "start_frame": 1709,
+      "end_frame_exclusive": 1745,
+      "start_seconds": 57.024656,
+      "end_seconds": 58.225022,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1710,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01710.png",
+      "witness_sha256": "329a58f2323712b67e89c158c0823db61d125e4b234d47977c42d74169b828ee",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_00a.o00bf4.l00",
+          "source_sha256": "82c705e81942b8c2957184e238cb1df94fb3961bc82c2ef5929c62882744f7ae",
+          "draft_sha256": "da8e2887937fbd409158b2c6e51382851b368857301a9ed88307ca85c605760e"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Kasumi: \"No! It's not that!\""
+      ],
+      "maximum_line_pixels": 92,
+      "source_duration_seconds": 1.2003660000000025,
+      "reading_speed_characters_per_second": 23.3,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.06",
+      "en": "Touya: \"Then don't let it bother you. Besides, if it comes down to it, I'll protect you.\"",
+      "status": "draft",
+      "start_frame": 1745,
+      "end_frame_exclusive": 1781,
+      "start_seconds": 58.225022,
+      "end_seconds": 59.426456,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1755,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01755.png",
+      "witness_sha256": "739f161d43f8f677c50a23eebe74bf517af8031e26b8723d21b6b96e62695bd4",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_00a.o00c0e.l00",
+          "source_sha256": "f18cce552d8c40b2f7bde9dc3adde6c3004026f094ed24e5d7a89fb721e3f209",
+          "draft_sha256": "68b2bb409606d99497bad0fc1543b6302f3b0e10a9e5ee7365b95ebfe4293a43"
+        },
+        {
+          "id": "scenario.s_00a.o00c0e.l01",
+          "source_sha256": "b0925cdd8cb61070a0e61172d7038c301fa0f3fce0a4718e33286f187b48cb8d",
+          "draft_sha256": "2566132bd4289f2222e9ac97539ce0a2223a95e14ae64cac7fcdac1dd2f3613f"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Touya: \"Then don't let it bother you. Besides, if it comes down to it, I'll",
+        "protect you.\""
+      ],
+      "maximum_line_pixels": 232,
+      "source_duration_seconds": 1.201433999999999,
+      "reading_speed_characters_per_second": 74.1,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.07",
+      "en": "Kasumi: \"...Okay. I believe you.\"",
+      "status": "draft",
+      "start_frame": 1783,
+      "end_frame_exclusive": 1806,
+      "start_seconds": 59.493256,
+      "end_seconds": 60.260456,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1800,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01800.png",
+      "witness_sha256": "276818998c4035b6242cddce2480ad0a4e89e4ef8507033fb5ef08124a8728a2",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_00a.o00c53.l00",
+          "source_sha256": "c2ef9d28849273d1cd5766bd2f566bbbe1ba5c960dc3ff15edb1a0454b7143fc",
+          "draft_sha256": "6c53df9b881ed5b03742c63b1575cb7376d06f337c99f2c351218f89499d8d9c"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Kasumi: \"...Okay. I believe you.\""
+      ],
+      "maximum_line_pixels": 101,
+      "source_duration_seconds": 0.7671999999999954,
+      "reading_speed_characters_per_second": 43.0,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.08",
+      "en": "Touya: \"...You're not going to laugh?\"",
+      "status": "draft",
+      "start_frame": 1807,
+      "end_frame_exclusive": 1825,
+      "start_seconds": 60.293822,
+      "end_seconds": 60.895067,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1815,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01815.png",
+      "witness_sha256": "32ed3e10ed730cb57a4cab9795fea61fe56002a7a8edc35fa00c53902d4f0a85",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o01527.l00",
+          "source_sha256": "b5c04def9cca573407a64b96341cd13cca7c5b4f9011f2ec79feb5bb8c61e70b",
+          "draft_sha256": "e985d5b2afad3d9edc44313fcd02e8249020ad49619577d8b4870a7836953746"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Touya: \"...You're not going to laugh?\""
+      ],
+      "maximum_line_pixels": 129,
+      "source_duration_seconds": 0.6012449999999987,
+      "reading_speed_characters_per_second": 63.2,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.09",
+      "en": "Ai: \"Why would I?\"",
+      "status": "draft",
+      "start_frame": 1827,
+      "end_frame_exclusive": 1851,
+      "start_seconds": 60.961867,
+      "end_seconds": 61.762467,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1830,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01830.png",
+      "witness_sha256": "997d9184e3b985bb6d6874ac72cf571d2d3be3899b41efa4863cefd2a4420cf5",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o01556.l00",
+          "source_sha256": "4f66e9e323349807af0036783544875c0d69db3736812cbe226bd5f6e2bb2eb4",
+          "draft_sha256": "98f7d12a1b5663cf91438198f5a608ff226ac88688e64f772ec5695e3b7ce84f"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Ai: \"Why would I?\""
+      ],
+      "maximum_line_pixels": 62,
+      "source_duration_seconds": 0.8006000000000029,
+      "reading_speed_characters_per_second": 22.5,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.10",
+      "en": "Touya: \"Well, most people laugh at me like I'm an idiot when I say that. You're only the third person who hasn't.\"",
+      "status": "draft",
+      "start_frame": 1853,
+      "end_frame_exclusive": 1883,
+      "start_seconds": 61.829267,
+      "end_seconds": 62.830267,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1860,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01860.png",
+      "witness_sha256": "e21388c25ad396313446f404a43c03c7df7b53bfbd84d5abc485bd102670adb2",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o01568.l00",
+          "source_sha256": "05d9156b202920c755589ac9629e3e818ea869325455ab98dada77770b254504",
+          "draft_sha256": "b5a7a5dae6584077d0bbbafc9dcb5d50d8358836490cb3ecdb1cc9a6c2d5750d"
+        },
+        {
+          "id": "scenario.s_002.o01568.l01",
+          "source_sha256": "840b0479ed34e5fa40041afad1d55bedabb6dd19978e0aacacfdfb628a9dc618",
+          "draft_sha256": "88749f3ad8ee0c03a3c110f95837690ade6310e7cd437584dc256ee2e8a62942"
+        },
+        {
+          "id": "scenario.s_002.o015c4.l00",
+          "source_sha256": "7cb480b9646f693de6ae1fb5d29faec7653622f5fd0fb0c30ca7bfd8f25f2c39",
+          "draft_sha256": "919c71348fc5907b262f9b1fe96f0636b131c09e285cc2773c31c2b5e6c79f1c"
+        }
+      ],
+      "source_relation": "edited movie variant",
+      "decisions": "Movie condenses two playable-script commands and omits the alternative disbelieving look. Translate the captured wording separately.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Touya: \"Well, most people laugh at me like I'm an idiot when I say that. You're",
+        "only the third person who hasn't.\""
+      ],
+      "maximum_line_pixels": 253,
+      "source_duration_seconds": 1.0009999999999977,
+      "reading_speed_characters_per_second": 113.9,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.11",
+      "en": "Ai: \"Hmm... What's the kitty's name?\"",
+      "status": "draft",
+      "start_frame": 1883,
+      "end_frame_exclusive": 1909,
+      "start_seconds": 62.830267,
+      "end_seconds": 63.697667,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1890,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01890.png",
+      "witness_sha256": "f52455f6309fcb12f35dcc6444864dd87f2e0d495c75ac8e2dc75dbe85213201",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o015ea.l00",
+          "source_sha256": "924c948768b19938c2e98d7a8c2bfe302ead744d3b2bd56d6c4447d2f8254093",
+          "draft_sha256": "86709bb266a959abf17a9c39048e0519f59facb90f2db97d4b3d5b6736baddfc"
+        }
+      ],
+      "source_relation": "edited movie variant",
+      "decisions": "Movie uses a thoughtful interjection rather than the playable script's attention-getting Hey.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Ai: \"Hmm... What's the kitty's name?\""
+      ],
+      "maximum_line_pixels": 122,
+      "source_duration_seconds": 0.8674000000000035,
+      "reading_speed_characters_per_second": 42.7,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.12",
+      "en": "Touya: \"Yamato.\"",
+      "status": "draft",
+      "start_frame": 1909,
+      "end_frame_exclusive": 1927,
+      "start_seconds": 63.697667,
+      "end_seconds": 64.297833,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 1920,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-01920.png",
+      "witness_sha256": "c2cd091deab55f2245836b18a21aa703be7856d05c32cc138cc245a5f11c4d7b",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_002.o01609.l00",
+          "source_sha256": "e99d6a3d326578af0be39adfe9d6a1dbc0acc08b6b34c8cb6b2dbf6b9e1925ee",
+          "draft_sha256": "d4866baed330cfee2b345fa46948577865e8bb56e77df4e27a5a52bae0b04125"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        60,
+        134,
+        320,
+        192
+      ],
+      "text_origin": [
+        63,
+        136
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Touya: \"Yamato.\""
+      ],
+      "maximum_line_pixels": 60,
+      "source_duration_seconds": 0.6001659999999944,
+      "reading_speed_characters_per_second": 26.7,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    },
+    {
+      "id": "movie.MOV072.caption.13",
+      "en": "Touya: \"Damn it! If I'd known this would happen, I would've had Grandpa teach me properly!\"",
+      "status": "draft",
+      "start_frame": 2649,
+      "end_frame_exclusive": 2691,
+      "start_seconds": 88.388689,
+      "end_seconds": 89.790489,
+      "timing_evidence": "Consecutive source-frame caption crops manually inspected at each boundary",
+      "witness_frame": 2655,
+      "witness_file": "work/ui/asset-audit/movies/MOV072/frames-1530-1935_2630-2700/frame-02655.png",
+      "witness_sha256": "0eeff9a067c37c5c2ebc8638f61f3501a9f5d1e5f97afbe3b04f62121bbab2d4",
+      "related_draft_rows": [
+        {
+          "id": "battle.o2364f.p00.l00",
+          "source_sha256": "7378dfb96da73a5a3988ac997c51916cf7eb4c2acbed2366745689f8dab7298f",
+          "draft_sha256": "87f826b4d32386ff0a01eb212b6782e820294d0535cf03c5035984d404ce4d89"
+        },
+        {
+          "id": "battle.o2364f.p00.l01",
+          "source_sha256": "dcf330fdc2ef0174939202dbdc1064ed22e275a1ce26e7d5cb9d22e533637f7c",
+          "draft_sha256": "83379cfc09214a036a7dccb9ab19de292a7642fc01280204de376655bcddea46"
+        }
+      ],
+      "source_relation": "matching playable dialogue page",
+      "decisions": "Reuse established English wording and glossary names; no new story-row credit.",
+      "replace_rect": [
+        28,
+        160,
+        320,
+        192
+      ],
+      "text_origin": [
+        31,
+        162
+      ],
+      "font_source_scale": "uniform 1/2, twelve-pixel cell height",
+      "line_step": 13,
+      "wrapped_lines": [
+        "Touya: \"Damn it! If I'd known this would happen, I would've had Grandpa teach me",
+        "properly!\""
+      ],
+      "maximum_line_pixels": 271,
+      "source_duration_seconds": 1.4017999999999944,
+      "reading_speed_characters_per_second": 64.9,
+      "readability_review": "Original demo timings are fast; English reading speed and final presentation need review",
+      "reinsertion": "not inserted"
+    }
+  ],
+  "remaining": [
+    "Captured UI drafts are in MOV072-ui.en.json; geometry/timing and their insertion remain pending",
+    "Two animated Japanese title-logo sequences",
+    "Independent transcription/meaning and fast-demo readability review",
+    "Frame-complete movie audit, audio/content review and native movie reinsertion/playback"
+  ],
+  "story_library_draft_credit": 0
+}

@@ -1,0 +1,175 @@
+{
+  "current_game_build": "0.1.35",
+  "kind": "Additional relative-offset resource discovery; source bytes read only",
+  "files": [
+    {
+      "file": "D_FACE.BIN",
+      "source_sha256": "33dc40f2d9c5008d9139fdbca7726178d89f21da5e13d4d54c0ce4f0cc7d08fe",
+      "index": "work/ui/asset-audit/D_FACE/offset-table-01/texture-index.json",
+      "index_sha256": "2026c2a5f2007f6f8951d864b3773166d72fd9a964eb2e8c9c46f10e65ac18db",
+      "pointer_entries": 768,
+      "nonempty_references": 739,
+      "terminal_empty_references": 29,
+      "unique_resources": 735,
+      "decoded_textures": 735,
+      "decoded_bytes": 6044640,
+      "palette_entries": 0,
+      "texture_pixels": 3010560,
+      "unsupported_or_failed": [],
+      "source_contacts_reviewed": [
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-00.png",
+          "sha256": "7ad16eea2edb316122207dfca14dbc2f3cc6c916495ed03db8ba4853fdd952bc"
+        },
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-01.png",
+          "sha256": "0825b05c28893c1fa6fd4dc8c41841ebf4b080541c0d4b2da447687607e224a0"
+        },
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-02.png",
+          "sha256": "a8727974de477949a23a87d132ce8b23709b58926eb4a261a8a00385c47d0230"
+        },
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-03.png",
+          "sha256": "d901022f4f1e579fd19a63f7adee83a05a6e5d3c149d6938db3db9ca0bd7163e"
+        },
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-04.png",
+          "sha256": "b7aedad2413e64e7f7898f8a689ea157c166949b2a2b64d79d80f09155dfd980"
+        },
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-05.png",
+          "sha256": "54d9ab5c69f3e6ac93a83fd25b5bfec9ffa544de09edd7f95c91f5338df93537"
+        },
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-06.png",
+          "sha256": "6d6116d255ea835783c95e1978b4b2f191e4cee8231953e25f8e46dad9edc6fc"
+        },
+        {
+          "path": "work/ui/asset-audit/D_FACE/offset-table-01/contact-07.png",
+          "sha256": "91e8d61968704ae4ddd91bf6393edd4ec0d975ba1a1b665c23a077404f3b0ee7"
+        }
+      ],
+      "observed": "Dialogue portraits, alternate expressions and small light/field effects",
+      "image_text_review": "No additional readable Japanese observed at contact-sheet size; fine-detail absence and runtime reachability not proved"
+    },
+    {
+      "file": "D_UNIT.BIN",
+      "source_sha256": "96f770ebfe7b446e856a32e473b231deac97ae8dfc0e5ec22bfde1cfe8bcf52e",
+      "index": "work/ui/asset-audit/D_UNIT/offset-table-01/texture-index.json",
+      "index_sha256": "2b22b16c98b431f8c12b017f83aa3988967dc05bc74e25397824e4d6dd45d25f",
+      "pointer_entries": 88,
+      "nonempty_references": 87,
+      "terminal_empty_references": 1,
+      "unique_resources": 87,
+      "decoded_textures": 470,
+      "decoded_bytes": 4336192,
+      "palette_entries": 1392,
+      "texture_pixels": 8585216,
+      "unsupported_or_failed": [],
+      "source_contacts_reviewed": [
+        {
+          "path": "work/ui/asset-audit/D_UNIT/offset-table-01/contact-00.png",
+          "sha256": "789177bee377bd7c9ecc7683b981e438aaf369019fb63816760824d409a08f04"
+        },
+        {
+          "path": "work/ui/asset-audit/D_UNIT/offset-table-01/contact-01.png",
+          "sha256": "76d5eb3538358d225ec72787c2ca0854b1570425a9c0015ce1ffbe3fc1822431"
+        },
+        {
+          "path": "work/ui/asset-audit/D_UNIT/offset-table-01/contact-02.png",
+          "sha256": "8a585cf848a586cb49009e4a5e242e650fcfc1d52a5dc197055bcd6f3c92e7ad"
+        },
+        {
+          "path": "work/ui/asset-audit/D_UNIT/offset-table-01/contact-03.png",
+          "sha256": "24610eae34064aa0ee9314c190c3a6952480d56d665cf7fb609f9ea0982cd07e"
+        },
+        {
+          "path": "work/ui/asset-audit/D_UNIT/offset-table-01/contact-04.png",
+          "sha256": "901e934c539c0f348c04b36e99edf7e77e4d8f93c6753fefd2144f6da31ce117"
+        }
+      ],
+      "observed": "Directional mech/vehicle sprites, small humanoid sprites and colored orb/field effects",
+      "image_text_review": "No additional readable Japanese observed at contact-sheet size; fine-detail absence and runtime reachability not proved"
+    }
+  ],
+  "decoded_textures": 1205,
+  "source_contacts_reviewed": 13,
+  "native_source_report": "work/ui/asset-audit/offset-tables-native-test.json",
+  "native_source_report_sha256": "1a3781c443a810d2a6adc9b8746bf15e44564249ee9d2c4d7aa88aabaf3a6f84",
+  "native_source_checks": {
+    "tested_executable_build": "0.1.35",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "source_streams": [
+      {
+        "file": "D_FACE.BIN",
+        "index": 0,
+        "source_sha256": "33dc40f2d9c5008d9139fdbca7726178d89f21da5e13d4d54c0ce4f0cc7d08fe",
+        "source_span_sha256": "57e49123349990e37f0af5d0fa93cfbc11131e769f48076558c80a2faeb56215",
+        "PRS_bytes": 3668,
+        "decoded_bytes": 8224,
+        "decoded_sha256": "f957c00f2872e51c638f329786aca33111444edf812cee63bd92bc5937d4ad0f",
+        "verified_zero_alignment_bytes": 0,
+        "textures_checked": 1,
+        "native_PRS_instructions": 234686
+      },
+      {
+        "file": "D_FACE.BIN",
+        "index": 737,
+        "source_sha256": "33dc40f2d9c5008d9139fdbca7726178d89f21da5e13d4d54c0ce4f0cc7d08fe",
+        "source_span_sha256": "73c259089cf7962f22f6ba4e61dee7614d555f9ddc219fe42428d0b7d7ab63b1",
+        "PRS_bytes": 2833,
+        "decoded_bytes": 8224,
+        "decoded_sha256": "4cdc461b37534c903fffbccef4d96fce062b8ce919c025c88f412a58f660cb95",
+        "verified_zero_alignment_bytes": 3,
+        "textures_checked": 1,
+        "native_PRS_instructions": 221887
+      },
+      {
+        "file": "D_UNIT.BIN",
+        "index": 0,
+        "source_sha256": "96f770ebfe7b446e856a32e473b231deac97ae8dfc0e5ec22bfde1cfe8bcf52e",
+        "source_span_sha256": "7b1b11a938898b021431f0773548001edf3fd4ab5ac5d0c344690ea2bd8d9d14",
+        "PRS_bytes": 5321,
+        "decoded_bytes": 49696,
+        "decoded_sha256": "657d0c6d4bcf53514856fe11e230a1fe7012959eddb1747e09d793e817eadd89",
+        "verified_zero_alignment_bytes": 3,
+        "textures_checked": 6,
+        "native_PRS_instructions": 859875
+      },
+      {
+        "file": "D_UNIT.BIN",
+        "index": 86,
+        "source_sha256": "96f770ebfe7b446e856a32e473b231deac97ae8dfc0e5ec22bfde1cfe8bcf52e",
+        "source_span_sha256": "e57523ab690334ba29ea5196678ebf940b011d447ec24c66014a1fe92a309f47",
+        "PRS_bytes": 811,
+        "decoded_bytes": 16640,
+        "decoded_sha256": "fbbcd9258aec6f4003d81fd1fa2c80ddb9c53521d6d4cb591ab04a98f9583f1e",
+        "verified_zero_alignment_bytes": 1,
+        "textures_checked": 2,
+        "native_PRS_instructions": 280000
+      }
+    ],
+    "native_PRS_instructions": 1596448,
+    "independently_checked_source_pixels": 139264,
+    "native_guard_and_ABI": "pass",
+    "scope": "Four representative original PRS streams; first/last source textures per table and palette entries checked independently",
+    "native_table_lookup_archive_loading_and_GPU": false,
+    "game_bytes_changed": false
+  },
+  "format_findings": [
+    "Both root tables contain relative offsets, rather than AFS offset/size pairs",
+    "D_FACE has 739 nonempty references to 735 distinct GBIX/PRS portraits, four alias references and 29 terminal/empty entries",
+    "D_UNIT has 87 PRS/PVM resources and one terminal offset; palettes are wrapped PVPL metadata within the PVM",
+    "Accounted for every 0..3-byte trailing zero alignment gap; PAL4 texture chunks can also have sixteen trailing zero bytes",
+    "Source contact discovery reveals no confirmed extra Japanese image label, not proof that no fine text exists"
+  ],
+  "limits": [
+    "Only four representative source PRS streams are executed natively; all 822 resources decode structurally in the source audit",
+    "Only representative source pixels/palette entries are independently checked; complete source fingerprints are retained",
+    "Native offset-table consumers, palette selection, GPU and live appearance remain unexecuted",
+    "No translated/game bytes changed; latest playable build remains 0.1.35"
+  ],
+  "game_bytes_changed": false,
+  "draft_credit": 0
+}

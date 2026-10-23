@@ -1,0 +1,212 @@
+{
+  "version": "0.1.17",
+  "status": "Historical original four-level coverage integration retained; current inferred outline build has fresh raster proof and pending live appearance",
+  "source": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "source_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "coverage_levels": [
+    0,
+    85,
+    187,
+    255
+  ],
+  "font_member_bytes": 99072,
+  "texture_edge_limit": 1024,
+  "native_raster_cases": 393,
+  "native_raster_instructions": 12917515,
+  "native_surface_cases": 17,
+  "native_texture_format_cases": 8,
+  "source_edge_pixels_preserved": 14830,
+  "advances": "byte-exact 0.1.16; all text and chapter resources unchanged",
+  "raster_proof": "work/output/0.1.17/genei-font-native-test.json",
+  "surface_proof": "work/output/0.1.17/genei-surface-native-test.json",
+  "preview": "work/output/0.1.17/font-smoothing-comparison.png",
+  "disc": "work/output/0.1.17/disc/Rayblade English Test 0.1.17.gdi",
+  "packaging": {
+    "reextracted_files": "all 5 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "in_game": "pending"
+  },
+  "limitations": [
+    "Source bitmap has finite outline detail; enlargement is not vector reconstruction",
+    "Actual GPU blending and live appearance remain unverified"
+  ],
+  "latest_native_regression": {
+    "version": "0.1.19",
+    "raster_proof": "work/output/0.1.19/genei-font-native-test.json",
+    "surface_proof": "work/output/0.1.19/genei-surface-native-test.json",
+    "font_bytes": "unchanged from 0.1.17",
+    "live_appearance": "pending"
+  },
+  "latest_text_filter_build": {
+    "version": "0.1.22",
+    "source_build": "0.1.21",
+    "source_executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "dispatcher_address": "0x8c07b800",
+    "dispatcher_bytes": 36,
+    "changed_executable_bytes": 35,
+    "callee_pointer_offset": "0x20f44",
+    "caller_load_addresses": [
+      "0x8c030e68",
+      "0x8c030e74"
+    ],
+    "allowed_ranges": [
+      [
+        440320,
+        440356
+      ],
+      [
+        134980,
+        134984
+      ]
+    ],
+    "selection": "Only object resource word at +38 equal to 63 selects native filter mode 1; other resources keep their input mode",
+    "unchanged": "All font/translation/image/archive payloads, advances, raster and allocator code, story helpers, resource IDs and texture dimensions",
+    "native_validation": {
+      "selection_encoder_cases": 72,
+      "real_caller_comparisons": 12,
+      "state_transitions": [
+        [
+          63,
+          1
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          64,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_instructions": 24837
+    },
+    "live_appearance": "pending",
+    "reference": "https://raw.githubusercontent.com/KallistiOS/KallistiOS/master/kernel/arch/dreamcast/include/dc/pvr/pvr_header.h",
+    "status": "Native text-specific bilinear filtering integrated and locally packaged; live appearance pending",
+    "source_trace": {
+      "font_resource_registration": "8c076e96 registers 8c16f92c (resource 63) with the dynamic texture/sprite tables",
+      "text_object_submission": "8c078bc0 passes resource 63 to the native sprite object constructor",
+      "native_filter_setter": "8c0a78d0: mode 0 -> context +84=0; mode 1 -> +84=2",
+      "command_encoder": "8c0d0340 selects from [0,2,1,3] and stores filtering in mode2 bits 14:13",
+      "sprite_state_copy": "8c0c7d34 retains command filter bits",
+      "texture_bind": "8c0c8a9e changes size/address fields, retaining filter bits"
+    },
+    "proof": "work/output/0.1.22/text-filter-native-test.json",
+    "disc": "work/output/0.1.22/disc/Rayblade English Test 0.1.22.gdi",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "in_game": "pending"
+    },
+    "historical_evidence": "13 unchanged 0.1.21 native reports retain their original executable hashes and actual coverage; previous full-packager gates rerun against that build",
+    "limits": [
+      "State finalizer 8c0d0b00 is a recorded no-op fixture",
+      "Native command creation is verified; full sprite pipeline, GPU blending and live appearance are not",
+      "Prior font/text/regression reports remain historical; they were not rerun by this test"
+    ],
+    "bitmap_detail": "Source bitmap still has finite contour detail; no vector reconstruction or preblur added",
+    "story_library_draft_credit": 0
+  },
+  "current_build": "0.1.31",
+  "latest_outline_build": {
+    "version": "0.1.31",
+    "source_build": "0.1.30",
+    "status": "Inferred-outline Latin font integrated in local build; native raster checks pass, live appearance/fidelity and Skies comparison pending",
+    "disc": "work/output/0.1.31/disc/Rayblade English Test 0.1.31.gdi",
+    "font_source": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+    "source_atlas_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+    "source_font_sha256": "d35edf9c6344a19cc627ab2c8df7d11601b62094d5a265ec4eb463e7a713dcb9",
+    "font_sha256": "63407f4c30151aa0bece46ef72b5372fa2cbe4120fd9c7ce9fe79f5e28a1c6fa",
+    "archive_sha256": "2fef776838a92d4e279efde89af7cce65a8c4d237538fa6c48bdc6cdc4239cd2",
+    "method": "AA-assisted marching squares at 0.5, two uniform 0.2 corner-cutting passes, 16x supersampled contour coverage, four stored alpha levels",
+    "glyphs_reconstructed": 95,
+    "changed_font_bytes": 6076,
+    "topology_changes": [],
+    "observed_source_normalized_coverage_range": [
+      0.9027777777777778,
+      1.065450643776824
+    ],
+    "previews": [
+      {
+        "path": "work/output/0.1.31/outline-font-comparison.png",
+        "sha256": "705dfbe2b21635d4ccaaf510d557ba834d27a0551c026e03745c0f4e9c13602c"
+      },
+      {
+        "path": "work/output/0.1.31/outline-font-all-glyphs.png",
+        "sha256": "9a4fa37421144e2c2f9c3c7f08cc4c03127cc3c2366244f0ebbc3ac403a838d0"
+      }
+    ],
+    "visual_review": "Matched-size comparison and all 95 inferred glyphs reviewed; r/O/diagonal edges look cleaner than duplicated samples. Offline appearance only.",
+    "native_proof": {
+      "source_build": "0.1.30",
+      "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+      "archive_sha256": "2fef776838a92d4e279efde89af7cce65a8c4d237538fa6c48bdc6cdc4239cd2",
+      "source_font_sha256": "d35edf9c6344a19cc627ab2c8df7d11601b62094d5a265ec4eb463e7a713dcb9",
+      "font_sha256": "63407f4c30151aa0bece46ef72b5372fa2cbe4120fd9c7ce9fe79f5e28a1c6fa",
+      "glyph_cases": 397,
+      "ASCII_outline_glyphs": 95,
+      "SH4_instructions": 13075994,
+      "native_guard_and_ABI": "pass",
+      "pixels_colors_shadow_clipping_fallback_and_advances": "exact expected masks / prior cursor widths",
+      "archive_bytes_outside_declared_edits": "exact",
+      "all_non_font_member_payloads": "exact",
+      "small_bank_and_protected_symbols": "exact",
+      "outline_topology_changes": [],
+      "per_glyph_coverage_ratio_bound": [
+        0.85,
+        1.15
+      ],
+      "maximum_right_edge_growth_physical_pixels": 0,
+      "native_texture_dimensions": "Allocation code/executable unchanged; existing <=1024 cap retained",
+      "independent_mask_reference": "Unpacked saved inferred-outline masks; preceding build for small/protected symbols",
+      "no_original_vector_recovery_claim": true,
+      "GPU": false,
+      "live_font_appearance_and_Skies_comparison": "pending",
+      "story_library_draft_credit": 0
+    },
+    "validation": {
+      "reextracted_files": "all 11 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "unchanged": [
+      "Executable and its allocator/filter code; native texture limit <=1024 per dimension",
+      "All advances and baseline origins; existing text and word-break bytes",
+      "Small bank, five protected marks and all non-font WIN00 bytes",
+      "All ten other game payloads, including translated album pictures/captions and both movies"
+    ],
+    "metadata": "Current font identity updated; earlier source-coverage/renderer reports retain their actual tested font/build identity as historical evidence",
+    "test_corrections": [
+      "Serialized mask bounds normalized to JSON lists before native execution.",
+      "Small raw bytes 0/255 alias protected symbols; fallback test inputs corrected to genuinely invalid indices 4/31, checked separately, then the full 397-case suite passed."
+    ],
+    "new_changed_sectors": 25,
+    "changed_sector_locations_from_original": 28390,
+    "remaining": [
+      "Independent inferred-shape fidelity review; original vector outlines are unavailable",
+      "Live text/GPU blending, pixel alignment, UI/dialogue/library/battle contexts and matched Skies comparison",
+      "Remaining translation/image discovery, held passages, independent meaning and full-game validation"
+    ],
+    "font_texture_dimension_limit": 1024,
+    "emulator_texture_replacement": false,
+    "release": false,
+    "story_library_draft_credit": 0
+  }
+}

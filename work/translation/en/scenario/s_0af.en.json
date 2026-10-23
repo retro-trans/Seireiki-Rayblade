@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_0af.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_0af.o0007b.l00",
+      "block_id": "scenario.s_0af.o0007b",
+      "member": "s_0af.bin",
+      "line_index": 0,
+      "en": "Bernst: \"So it was the light of summoning, after all...",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "6a5160903584d22f3813ab1e6fc160840e61938a7d5c54d162de6692f97c907d",
+      "block_source_sha256": "2ee0efaddbbb59b9504f97d31cd4dc84a58d2fd29a4e272f081f930f23a4d1e9",
+      "source_command_id": "scenario.s_0af.o0007b",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.036",
+      "speaker_label_en": "Bernst",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_0af.o0007b.l01",
+      "block_id": "scenario.s_0af.o0007b",
+      "member": "s_0af.bin",
+      "line_index": 1,
+      "en": "Another Spirit Mech Pilot has joined you.",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "9b6793097db0df98f1e5b9b5545e93195948abc1f491e37689782970a8bf814d",
+      "block_source_sha256": "2ee0efaddbbb59b9504f97d31cd4dc84a58d2fd29a4e272f081f930f23a4d1e9",
+      "source_command_id": "scenario.s_0af.o0007b",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.036",
+      "speaker_label_en": "Bernst",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_0af.o0007b.l02",
+      "block_id": "scenario.s_0af.o0007b",
+      "member": "s_0af.bin",
+      "line_index": 2,
+      "en": "Well, it's good that you're gaining strength.",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "f6d536e72f415178e1d7f015409a2a604ed8946416432d37e7ab8f336a3b2866",
+      "block_source_sha256": "2ee0efaddbbb59b9504f97d31cd4dc84a58d2fd29a4e272f081f930f23a4d1e9",
+      "source_command_id": "scenario.s_0af.o0007b",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.036",
+      "speaker_label_en": "Bernst",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_0af.o0007b.l03",
+      "block_id": "scenario.s_0af.o0007b",
+      "member": "s_0af.bin",
+      "line_index": 3,
+      "en": "I'll be in trouble if you don't grow",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "56c9700ad808e19fb7f2a30e1023b7c7e80f03793c030f571eef7661f71a95b6",
+      "block_source_sha256": "2ee0efaddbbb59b9504f97d31cd4dc84a58d2fd29a4e272f081f930f23a4d1e9",
+      "source_command_id": "scenario.s_0af.o0007b",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.036",
+      "speaker_label_en": "Bernst",
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_0af.o0007b.l04",
+      "block_id": "scenario.s_0af.o0007b",
+      "member": "s_0af.bin",
+      "line_index": 4,
+      "en": "a little more... Heh heh heh heh.\"",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "f6b77d954186709d5b828f23d68d26406179377dd16ae4a788845dc62d3cfd24",
+      "block_source_sha256": "2ee0efaddbbb59b9504f97d31cd4dc84a58d2fd29a4e272f081f930f23a4d1e9",
+      "source_command_id": "scenario.s_0af.o0007b",
+      "source_page_index": 0,
+      "speaker_entity_id": "character.036",
+      "speaker_label_en": "Bernst",
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_0af.o0007b.l00",
+      "last_id": "scenario.s_0af.o0007b.l04",
+      "rows_examined": 5,
+      "context": "Slice0-4; complete 5-row member examined. Bernst summoning-light inference, one additional Pilot and own desire for further growth, unnamed subject.",
+      "decisions": "One source row per English row, all printed controls/marked groups retained. Claims, uncertainty and alternate branches remain separate; full names/quantities stay on source rows. Restore settled subjects/help direction, flag intentional fragments. Ordinary nonexplicit affection/grief and fictional conflict preserved without unprinted sexual acts, gore, medical mechanisms or unnamed identities. Source-identical repeats use own new drafts only. Meaning review, native insertion and layout remain pending.",
+      "row_decisions": {
+        "scenario.s_0af.o0007b.l00": "Light of summoning inference by Bernst, unspecified new Pilot not named.",
+        "scenario.s_0af.o0007b.l01": "One additional Pilot, no actual roster flag/native unlock proof.",
+        "scenario.s_0af.o0007b.l03": "Bernst own difficulty if group insufficiently grows, source sentence split3-4 kept."
+      },
+      "row_count": 5
+    }
+  ]
+}

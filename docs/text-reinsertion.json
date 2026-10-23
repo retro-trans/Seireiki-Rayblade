@@ -1,0 +1,693 @@
+{
+  "version": "0.1.4",
+  "status": "English name/menu/library test disc built; library runtime checks and story insertion pending",
+  "D_NAMES": {
+    "source_decoded_bytes": 40685,
+    "english_decoded_bytes": 63564,
+    "english_compressed_bytes": 33944,
+    "relocated_text_pointers": 1748,
+    "unchanged_unused_sentinels": 92,
+    "native_loader": {
+      "allocation_instruction_file_offset": "10e9e",
+      "allocation_size_literal_file_offset": "10ec8",
+      "allocation_bytes": 65536,
+      "remaining_capacity_bytes": 1874,
+      "decompress_call_file_offset": "10ede",
+      "root_lookup_helper_runtime": "8c03f4c4",
+      "group0_table_global_runtime": "8c1dbef4"
+    },
+    "offline_native_decoder_check": {
+      "entry_runtime_address": "8c0221a4",
+      "executed_SH4_instructions": 1866424,
+      "output_and_returned_size": "exact",
+      "destination_guards_and_unused_tail": "unchanged",
+      "callee_saved_registers_and_stack": "preserved"
+    },
+    "disc_relocation": {
+      "original_lba": 57504,
+      "new_lba": 549000,
+      "new_size": 33944,
+      "new_sectors": 17,
+      "decoded_size": 63564,
+      "native_capacity": 65536
+    },
+    "live_check": {
+      "build": "0.1.11",
+      "entire_English_component_in_emulated_RAM": "exact match",
+      "integrated_font_payload_and_renderer": "exact match",
+      "evidence": "work/ui/0.1.11/dialogue-runtime.json",
+      "English_menu_layout_and_readability": "Classroom location label visible; remaining menu/UI layouts unverified"
+    },
+    "latest_header_build": {
+      "version": "0.1.19",
+      "source_build": "0.1.18",
+      "status": "Library scratch collision, decimal glyphs and age-field fit corrected; native checks and local packaging pass; live navigation/GPU/long-session gameplay pending",
+      "executable_sha256": "2dd7db544333127e3e100a912473fa1d4b2ea1c7c82d7b079b44a18540507f57",
+      "names_sha256": "7072e79d64e8b32c22df891d249fd25c3b1a6d81cf7174a1d2606ca72d08e7f1",
+      "library_sha256": "23bf456c300b6d13d0a2bae236f6a2a12df3a576de39c820eb1a95154f980e80",
+      "old_bug_reproduction": {
+        "build": "0.1.18",
+        "native_instructions": 67,
+        "overwritten_library_offsets": [
+          "0xeff0",
+          "0xeff1"
+        ],
+        "affected_profile": "library.character.026"
+      },
+      "memory": {
+        "version": "0.1.19",
+        "executable_edits": [
+          {
+            "offset": "0x2afc4",
+            "size": 4,
+            "before": "0xf200",
+            "after": "0x1f200",
+            "purpose": "common parameter scratch beyond expanded library"
+          },
+          {
+            "offset": "0x2bc8a",
+            "size": 2,
+            "before": "0xe7",
+            "after": "0x4d",
+            "purpose": "native tenths decimal point"
+          },
+          {
+            "offset": "0x2bd24",
+            "size": 2,
+            "before": "0xe7",
+            "after": "0x4d",
+            "purpose": "native scaled decimal point"
+          }
+        ],
+        "shared_capacity": 131072,
+        "library_start": 528,
+        "library_end": 122431,
+        "scratch_start": 127488,
+        "scratch_reserved_bytes": 3584,
+        "gap_bytes": 5057,
+        "names_changed_bytes": 1
+      },
+      "native_headers": {
+        "character": 144,
+        "mech": 128
+      },
+      "native_instructions": {
+        "constructor": 26128,
+        "parameters": 263734,
+        "clear": 551080,
+        "parser": 4031665,
+        "scratch_stress": 147504,
+        "decimal_stress": 238181
+      },
+      "native_queue_bytes_roundtripped": 3072,
+      "native_decimal_cases": 528,
+      "geometry": [
+        {
+          "kind": "character",
+          "script": "0xf62d",
+          "origin": [
+            40,
+            40
+          ],
+          "logical_surface": [
+            256,
+            64
+          ],
+          "physical_surface": [
+            1024,
+            256
+          ],
+          "ink_width": 240
+        },
+        {
+          "kind": "mech",
+          "script": "0xf7a7",
+          "origin": [
+            40,
+            40
+          ],
+          "logical_surface": [
+            256,
+            32
+          ],
+          "physical_surface": [
+            1024,
+            128
+          ],
+          "ink_width": 240
+        }
+      ],
+      "proof": "work/output/0.1.19/library-header-native-test.json",
+      "regression_proofs": {
+        "library-header-native-test": "work/output/0.1.19/library-header-native-test.json",
+        "genei-font-native-test": "work/output/0.1.19/genei-font-native-test.json",
+        "genei-surface-native-test": "work/output/0.1.19/genei-surface-native-test.json",
+        "ui-layout-native-test": "work/output/0.1.19/ui-layout-native-test.json",
+        "word-wrap-native-test": "work/output/0.1.19/word-wrap-native-test.json",
+        "inline-control-native-test": "work/output/0.1.19/inline-control-native-test.json",
+        "library-layout-native-test": "work/output/0.1.19/library-layout-native-test.json",
+        "scenario-native-test": "work/output/0.1.19/scenario-native-test.json",
+        "battle-english-native-test": "work/output/0.1.19/battle-english-native-test.json",
+        "chapter-card-native-test": "work/output/0.1.19/chapter-card-native-test.json"
+      },
+      "unchanged": "Font, WIN00 archive including library/chapter payloads, story and battle bytes exact 0.1.18; one D_NAMES coordinate byte and three executable bytes change",
+      "previews": [
+        "work/output/0.1.19/library-character-header-preview.png",
+        "work/output/0.1.19/library-mech-header-preview.png"
+      ],
+      "disc": "work/output/0.1.19/disc/Rayblade English Test 0.1.19.gdi",
+      "packaging": {
+        "reextracted_files": "all 5 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "in_game": "pending"
+      },
+      "limits": [
+        "Header preparation stops before portrait loading; final GPU submit is not executed",
+        "Glyph raster and graphics/allocation endpoints are bounded fixtures",
+        "Name-table slots include unused entries; complete live unlock/menu routing, GPU appearance and long-session gameplay remain unverified"
+      ],
+      "new_translation_credit": 0
+    }
+  },
+  "D_PAPER": {
+    "archive": "WIN00.AFS",
+    "member_index": 52,
+    "source_decoded_bytes": 43379,
+    "english_decoded_bytes": 121903,
+    "english_compressed_bytes": 66131,
+    "relocated_root_pointers": 416,
+    "physical_records_including_empty_records": 257,
+    "nonempty_physical_profiles": 181,
+    "rebuilt_conditional_nodes": 67,
+    "format": "root u32 self-relative pointers; original metadata prefixes; FC + flag u16 + skip u16 + conditional payload; skip includes its two-byte field; FF ends a record",
+    "validation": "all pointers, metadata, English sections, nested unlock stacks, original payload preservation and PRS round trip pass",
+    "offline_native_decoder_check": {
+      "executed_SH4_instructions": 3544746,
+      "output_and_returned_size": "exact",
+      "destination_guards": "unchanged",
+      "buffer_capacity": "standalone decoder check; native loader allocation separately expanded and checked below"
+    },
+    "native_loader": {
+      "resource_category": 3,
+      "resource_index": 14,
+      "resource_table_file_offset": "8743c",
+      "resource_lookup_call_file_offset": "5590a",
+      "load_call_file_offset": "55928",
+      "shared_pointer_global_runtime": "8c1dbf4c",
+      "context_pointer_global_runtime": "8c1f0cf4",
+      "destination_offset_from_shared_base": 528,
+      "allocation_literal_file_offset": "104b4",
+      "original_allocation_bytes": 65536,
+      "patched_allocation_bytes": 131072,
+      "remaining_shared_capacity_bytes": 8641,
+      "parameter_scratch_offset": 127488,
+      "parameter_scratch_reserved_bytes": 3584,
+      "library_to_scratch_gap_bytes": 5057
+    },
+    "native_filter_check": {
+      "entry_runtime_address": "8c07bf00",
+      "cases": 4122,
+      "executed_SH4_instructions": 34318492,
+      "coverage": "all unlock combinations for each physical profile; every six/seven-line scrolling start with gates open",
+      "output_return_values_and_guards": "pass",
+      "display_buffer_bytes": 512,
+      "largest_display_page_bytes": 467,
+      "viewer_stack_frames": "unchanged",
+      "evidence": "work/output/0.1.4/library-native-test.json",
+      "limitation": "does not prove rendered pixel-width fit or in-game navigation"
+    },
+    "insertion": "Measured library text and existing English drafts inserted in 0.1.18; live viewer validation pending",
+    "live_check": {
+      "build": "0.1.11",
+      "status": "128 KiB allocation literal confirmed; library UI not open",
+      "evidence": "work/ui/0.1.11/dialogue-runtime.json"
+    },
+    "archive_relocation": {
+      "build": "0.1.10",
+      "member_offset": 1155072,
+      "destination": "All 90 members repacked in index order from 0x70000, with sector-aligned non-overlapping extents",
+      "archive_size": "unchanged",
+      "unrelated_members": "All 90 member payload bytes and IDs unchanged from 0.1.7; offsets updated",
+      "evidence": "work/output/0.1.10/archive-repack-report.json",
+      "superseded_layout": "The old 0x800 library placement before member zero reproduced a startup exception with the known-booting 0.1.3 executable; ordered archive comparison reached title"
+    },
+    "latest_layout_build": {
+      "version": "0.1.18",
+      "status": "Measured library wrapping packaged; native viewer/filter/parser/scroll checks pass; live appearance/navigation/memory pending",
+      "source_build": "0.1.17",
+      "changed_sections": 231,
+      "spaces_changed_to_breaks": 1067,
+      "soft_wraps_changed_to_spaces": 1183,
+      "nonempty_lines": 1433,
+      "decoded_bytes": 121903,
+      "packed_bytes": 66131,
+      "original_words_punctuation_and_paragraph_boundaries": "unchanged",
+      "profile_metadata_and_unlock_controls": "unchanged",
+      "font_and_executable": "byte-exact 0.1.17",
+      "geometry": [
+        {
+          "height": 6,
+          "script_offset": "0xf634",
+          "context_slot": 0,
+          "text_origin": [
+            40,
+            96
+          ],
+          "logical_surface": [
+            256,
+            128
+          ],
+          "physical_surface": [
+            1024,
+            512
+          ],
+          "visible_lines": 6,
+          "line_step": 16,
+          "frame": [
+            32,
+            32,
+            256,
+            168
+          ],
+          "ink_pixels": 240,
+          "pen_pixels": 236,
+          "native_instructions": 30041
+        },
+        {
+          "height": 7,
+          "script_offset": "0xf7ae",
+          "context_slot": 0,
+          "text_origin": [
+            40,
+            80
+          ],
+          "logical_surface": [
+            256,
+            128
+          ],
+          "physical_surface": [
+            1024,
+            512
+          ],
+          "visible_lines": 7,
+          "line_step": 16,
+          "frame": [
+            32,
+            32,
+            256,
+            168
+          ],
+          "ink_pixels": 240,
+          "pen_pixels": 236,
+          "native_instructions": 35168
+        }
+      ],
+      "native_counts": {
+        "filter_cases": 3890,
+        "unlock_outcomes": 358,
+        "parser_pages": 594
+      },
+      "native_instructions": {
+        "filter": 32744992,
+        "parser": 11386519,
+        "scroll": 2080293
+      },
+      "native_parser_line_occurrences": 2866,
+      "native_scroll_witnesses": [
+        {
+          "kind": "character",
+          "profile": "library.character.024",
+          "height": 6,
+          "last_skip": 17,
+          "native_button_cases": 37,
+          "bounds_and_both_directions": "pass"
+        },
+        {
+          "kind": "mech",
+          "profile": "library.mech.001",
+          "height": 7,
+          "last_skip": 11,
+          "native_button_cases": 25,
+          "bounds_and_both_directions": "pass"
+        }
+      ],
+      "maximum_page_buffer_bytes": 433,
+      "page_buffer_capacity": 512,
+      "native_proof": "work/output/0.1.18/library-layout-native-test.json",
+      "filter_proof": "work/output/0.1.18/library-native-test.json",
+      "recipe": "work/translation/en/library/layouts.en.json",
+      "previews": [
+        "work/output/0.1.18/library-6-line-preview.png",
+        "work/output/0.1.18/library-7-line-preview.png"
+      ],
+      "disc": "work/output/0.1.18/disc/Rayblade English Test 0.1.18.gdi",
+      "packaging": {
+        "reextracted_files": "all 5 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "in_game": "pending"
+      },
+      "limits": [
+        "Frame geometry stops before decorative/FPU rendering; graphics submission/callback endpoints are bounded fixtures",
+        "Glyph drawing uses independently verified advances; actual context construction/selection, clear-state handling, parser/filter/scroll instructions execute",
+        "No live GPU appearance, full navigation or long-session memory claim"
+      ],
+      "translation_credit": "No new draft credit; existing library text is reflowed without meaning changes"
+    },
+    "native_header_check": {
+      "version": "0.1.19",
+      "source_build": "0.1.18",
+      "status": "Library scratch collision, decimal glyphs and age-field fit corrected; native checks and local packaging pass; live navigation/GPU/long-session gameplay pending",
+      "executable_sha256": "2dd7db544333127e3e100a912473fa1d4b2ea1c7c82d7b079b44a18540507f57",
+      "names_sha256": "7072e79d64e8b32c22df891d249fd25c3b1a6d81cf7174a1d2606ca72d08e7f1",
+      "library_sha256": "23bf456c300b6d13d0a2bae236f6a2a12df3a576de39c820eb1a95154f980e80",
+      "old_bug_reproduction": {
+        "build": "0.1.18",
+        "native_instructions": 67,
+        "overwritten_library_offsets": [
+          "0xeff0",
+          "0xeff1"
+        ],
+        "affected_profile": "library.character.026"
+      },
+      "memory": {
+        "version": "0.1.19",
+        "executable_edits": [
+          {
+            "offset": "0x2afc4",
+            "size": 4,
+            "before": "0xf200",
+            "after": "0x1f200",
+            "purpose": "common parameter scratch beyond expanded library"
+          },
+          {
+            "offset": "0x2bc8a",
+            "size": 2,
+            "before": "0xe7",
+            "after": "0x4d",
+            "purpose": "native tenths decimal point"
+          },
+          {
+            "offset": "0x2bd24",
+            "size": 2,
+            "before": "0xe7",
+            "after": "0x4d",
+            "purpose": "native scaled decimal point"
+          }
+        ],
+        "shared_capacity": 131072,
+        "library_start": 528,
+        "library_end": 122431,
+        "scratch_start": 127488,
+        "scratch_reserved_bytes": 3584,
+        "gap_bytes": 5057,
+        "names_changed_bytes": 1
+      },
+      "native_headers": {
+        "character": 144,
+        "mech": 128
+      },
+      "native_instructions": {
+        "constructor": 26128,
+        "parameters": 263734,
+        "clear": 551080,
+        "parser": 4031665,
+        "scratch_stress": 147504,
+        "decimal_stress": 238181
+      },
+      "native_queue_bytes_roundtripped": 3072,
+      "native_decimal_cases": 528,
+      "geometry": [
+        {
+          "kind": "character",
+          "script": "0xf62d",
+          "origin": [
+            40,
+            40
+          ],
+          "logical_surface": [
+            256,
+            64
+          ],
+          "physical_surface": [
+            1024,
+            256
+          ],
+          "ink_width": 240
+        },
+        {
+          "kind": "mech",
+          "script": "0xf7a7",
+          "origin": [
+            40,
+            40
+          ],
+          "logical_surface": [
+            256,
+            32
+          ],
+          "physical_surface": [
+            1024,
+            128
+          ],
+          "ink_width": 240
+        }
+      ],
+      "proof": "work/output/0.1.19/library-header-native-test.json",
+      "regression_proofs": {
+        "library-header-native-test": "work/output/0.1.19/library-header-native-test.json",
+        "genei-font-native-test": "work/output/0.1.19/genei-font-native-test.json",
+        "genei-surface-native-test": "work/output/0.1.19/genei-surface-native-test.json",
+        "ui-layout-native-test": "work/output/0.1.19/ui-layout-native-test.json",
+        "word-wrap-native-test": "work/output/0.1.19/word-wrap-native-test.json",
+        "inline-control-native-test": "work/output/0.1.19/inline-control-native-test.json",
+        "library-layout-native-test": "work/output/0.1.19/library-layout-native-test.json",
+        "scenario-native-test": "work/output/0.1.19/scenario-native-test.json",
+        "battle-english-native-test": "work/output/0.1.19/battle-english-native-test.json",
+        "chapter-card-native-test": "work/output/0.1.19/chapter-card-native-test.json"
+      },
+      "unchanged": "Font, WIN00 archive including library/chapter payloads, story and battle bytes exact 0.1.18; one D_NAMES coordinate byte and three executable bytes change",
+      "previews": [
+        "work/output/0.1.19/library-character-header-preview.png",
+        "work/output/0.1.19/library-mech-header-preview.png"
+      ],
+      "disc": "work/output/0.1.19/disc/Rayblade English Test 0.1.19.gdi",
+      "packaging": {
+        "reextracted_files": "all 5 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "in_game": "pending"
+      },
+      "limits": [
+        "Header preparation stops before portrait loading; final GPU submit is not executed",
+        "Glyph raster and graphics/allocation endpoints are bounded fixtures",
+        "Name-table slots include unused entries; complete live unlock/menu routing, GPU appearance and long-session gameplay remain unverified"
+      ],
+      "new_translation_credit": 0
+    }
+  },
+  "research_caution": "Do not infer a native resource ID merely from an observed caller argument. The filename lookup at file 11f9c uses table 8c098b08, making WIN00 index 28 and D_SCE index 2 in that specific table. Prior calls with r4=9 alone do not establish that D_SCE is being read.",
+  "D_SCE": {
+    "version": "0.1.12",
+    "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+    "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+    "font_sha256": "9875205e2ee55c01c6446aa27e383e07a3fd879356fbe3e4a7b41f69771276ed",
+    "native_lookup_cases": 50273,
+    "native_loader_cases": 13,
+    "native_formatter_VM_cases": 87,
+    "native_pagination_cases": 14,
+    "all_compiled_lines_checked": 122286,
+    "maximum_formatted_bytes": 1380,
+    "archive_spare_bytes": 208,
+    "dynamic_PRS_members": [
+      {
+        "member": "s_119.bin",
+        "prior_bytes": 8201,
+        "optimized_bytes": 7912,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_1b8.bin",
+        "prior_bytes": 8210,
+        "optimized_bytes": 7918,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_095.bin",
+        "prior_bytes": 8215,
+        "optimized_bytes": 7906,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_160.bin",
+        "prior_bytes": 12312,
+        "optimized_bytes": 11815,
+        "sectors_saved": 1
+      }
+    ],
+    "scope": "All command banks and line metrics checked in Python; native lookup executed on every entry, native formatting/VM advancement on 87 cases, native pagination on 14 witnesses. File I/O/allocation/cache remain bounded stubs offline; one opening bank checked live.",
+    "pending": [
+      "Decode and fit the 166 special-display-control English commands",
+      "Measure library/battle/menu layouts and review continuation-icon spacing",
+      "Later scenario transitions, save/load and long-session memory checks",
+      "503 held story rows, full VM text coverage, independent meaning review and remaining image UI/movie text"
+    ],
+    "word_wrap_summary": {
+      "font_sha256": "9875205e2ee55c01c6446aa27e383e07a3fd879356fbe3e4a7b41f69771276ed",
+      "target_width": 240,
+      "maximum_pen_width": 236,
+      "word_wrapped_commands": 50107,
+      "automatic_breaks": 40193,
+      "special_control_commands": 166,
+      "forced_word_breaks": 0,
+      "whitespace": "Automatic line breaks replace spaces in compiled presentation only; all other glyph/control bytes and original FE boundaries retained",
+      "working_translation_rows": "unchanged",
+      "native_verification": "All compiled payloads/flags/line metrics checked; 50,273 native lookups, 87 formatter/VM and 14 pagination witnesses pass",
+      "live_verification": "Opening s_001 bank and word breaks observed; other commands/UI remain unverified"
+    }
+  },
+  "embedded_executable_dialogue": {
+    "version": "0.1.21",
+    "source_build": "0.1.20",
+    "status": "13 embedded executable dialogue commands integrated and packaged; native formatting/VM advance/layout and broad regressions pass; live display and full coverage pending",
+    "commands": 13,
+    "new_story_library_draft_credit": 0,
+    "English_source": "Existing byte-identical s_000/s_05d/s_087 drafts; context reviewed for same speakers and hint/event purposes",
+    "translation_map": "work/translation/en/ui/embedded-dialogue.en.json",
+    "dispatcher": "0x8c018440",
+    "dispatcher_bytes": 76,
+    "static_English_bytes": 1188,
+    "executable_changed_bytes": 1204,
+    "original_commands_branch_addresses_story_helpers_allocations": "unchanged",
+    "native_formatter_VM_cases": 52,
+    "native_parser_commands": 13,
+    "native_fallback_cases": 2,
+    "maximum_formatted_bytes": 123,
+    "native_instructions": {
+      "formatter_VM": 183562,
+      "reference": 44727,
+      "parser_effect": 39284,
+      "fallback": 1455
+    },
+    "proof": "work/output/0.1.21/embedded-dialogue-native-test.json",
+    "regression_proofs": {
+      "embedded-dialogue-native-test": "work/output/0.1.21/embedded-dialogue-native-test.json",
+      "genei-font-native-test": "work/output/0.1.21/genei-font-native-test.json",
+      "genei-surface-native-test": "work/output/0.1.21/genei-surface-native-test.json",
+      "ui-layout-native-test": "work/output/0.1.21/ui-layout-native-test.json",
+      "word-wrap-native-test": "work/output/0.1.21/word-wrap-native-test.json",
+      "inline-control-native-test": "work/output/0.1.21/inline-control-native-test.json",
+      "library-layout-native-test": "work/output/0.1.21/library-layout-native-test.json",
+      "library-header-native-test": "work/output/0.1.21/library-header-native-test.json",
+      "scenario-native-test": "work/output/0.1.21/scenario-native-test.json",
+      "battle-english-native-test": "work/output/0.1.21/battle-english-native-test.json",
+      "chapter-card-native-test": "work/output/0.1.21/chapter-card-native-test.json",
+      "ui-image-native-test": "work/output/0.1.21/ui-image-native-test.json"
+    },
+    "preview": "work/output/0.1.21/embedded-dialogue-preview.png",
+    "component": "work/output/0.1.21/embedded-dialogue-component.json",
+    "resolved_operand_markers": {
+      "proof": "docs/scenario-marker-review.json",
+      "count": 2,
+      "native_instructions": 476,
+      "source_blocks_unchanged": 51374,
+      "physical_rows_unchanged": 83083
+    },
+    "disc": "work/output/0.1.21/disc/Rayblade English Test 0.1.21.gdi",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "in_game": "pending"
+    },
+    "limits": [
+      "Parser glyph advance and scene/effect callees are bounded fixtures",
+      "The handler formatting/count/advance phases execute separately; UI construction, callbacks/timing, GPU and live appearance remain unverified",
+      "Embedded region scan plus two marker resolutions do not prove full VM/native text coverage",
+      "These commands reuse existing drafts; independent meaning review is still pending"
+    ]
+  },
+  "latest_text_filter_build": {
+    "version": "0.1.22",
+    "source_build": "0.1.21",
+    "source_executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "dispatcher_address": "0x8c07b800",
+    "dispatcher_bytes": 36,
+    "changed_executable_bytes": 35,
+    "callee_pointer_offset": "0x20f44",
+    "caller_load_addresses": [
+      "0x8c030e68",
+      "0x8c030e74"
+    ],
+    "allowed_ranges": [
+      [
+        440320,
+        440356
+      ],
+      [
+        134980,
+        134984
+      ]
+    ],
+    "selection": "Only object resource word at +38 equal to 63 selects native filter mode 1; other resources keep their input mode",
+    "unchanged": "All font/translation/image/archive payloads, advances, raster and allocator code, story helpers, resource IDs and texture dimensions",
+    "native_validation": {
+      "selection_encoder_cases": 72,
+      "real_caller_comparisons": 12,
+      "state_transitions": [
+        [
+          63,
+          1
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          64,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_instructions": 24837
+    },
+    "live_appearance": "pending",
+    "reference": "https://raw.githubusercontent.com/KallistiOS/KallistiOS/master/kernel/arch/dreamcast/include/dc/pvr/pvr_header.h",
+    "status": "Native text-specific bilinear filtering integrated and locally packaged; live appearance pending",
+    "source_trace": {
+      "font_resource_registration": "8c076e96 registers 8c16f92c (resource 63) with the dynamic texture/sprite tables",
+      "text_object_submission": "8c078bc0 passes resource 63 to the native sprite object constructor",
+      "native_filter_setter": "8c0a78d0: mode 0 -> context +84=0; mode 1 -> +84=2",
+      "command_encoder": "8c0d0340 selects from [0,2,1,3] and stores filtering in mode2 bits 14:13",
+      "sprite_state_copy": "8c0c7d34 retains command filter bits",
+      "texture_bind": "8c0c8a9e changes size/address fields, retaining filter bits"
+    },
+    "proof": "work/output/0.1.22/text-filter-native-test.json",
+    "disc": "work/output/0.1.22/disc/Rayblade English Test 0.1.22.gdi",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "in_game": "pending"
+    },
+    "historical_evidence": "13 unchanged 0.1.21 native reports retain their original executable hashes and actual coverage; previous full-packager gates rerun against that build",
+    "limits": [
+      "State finalizer 8c0d0b00 is a recorded no-op fixture",
+      "Native command creation is verified; full sprite pipeline, GPU blending and live appearance are not",
+      "Prior font/text/regression reports remain historical; they were not rerun by this test"
+    ],
+    "bitmap_detail": "Source bitmap still has finite contour detail; no vector reconstruction or preblur added",
+    "story_library_draft_credit": 0
+  }
+}

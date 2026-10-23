@@ -1,0 +1,425 @@
+{
+  "reported_on": "2026-10-23",
+  "screens": "work/ui/reported-2026-10-23/screens.json",
+  "build_identity": "User screenshots alone do not prove exact build version",
+  "issues": [
+    {
+      "id": "chapter-title",
+      "status": "English candidate integrated in S_TITLE0..4; all 69 title slots and Chapter label packaged in 0.1.16",
+      "scope": "Translation of the chapter-name table does not translate this displayed card",
+      "evidence": "docs/chapter-cards.json",
+      "candidate_status": "Offline native resource selection, PRS/PVM and submission checks pass; live appearance and animation pending"
+    },
+    {
+      "id": "unit-status",
+      "rows": [
+        "names.g00.003",
+        "names.g00.160"
+      ],
+      "status": "Fighting Spirit overlaps the fixed numeric position; compact display alias/coordinate adjustment required",
+      "native_geometry": {
+        "label_x": 128,
+        "value_x": 152,
+        "pen_budget": 24
+      },
+      "candidate_status": "0.1.15 native fixtures pass for the targeted fields; in-game recheck pending"
+    },
+    {
+      "id": "battle-preview",
+      "rows": [
+        "names.g01.049",
+        "names.g00.162",
+        "names.g00.166"
+      ],
+      "status": "Hit Rate and elevation labels overlap fixed fields; weapon boxes must be checked again with new font",
+      "native_geometry": {
+        "hit_label_x": 184,
+        "hit_value_x": 224,
+        "elevation_value_x": 40
+      },
+      "candidate_status": "0.1.15 native fixtures pass for the targeted fields; in-game recheck pending"
+    },
+    {
+      "id": "tactical-menu",
+      "rows": [
+        "names.g00.001",
+        "names.g00.010"
+      ],
+      "status": "Fixed-width menus clip several long English labels; new font narrows text, visual recheck still required",
+      "candidate_status": "0.1.15 native fixtures pass for the targeted fields; in-game recheck pending"
+    },
+    {
+      "id": "system-menu",
+      "rows": [
+        "names.g01.032",
+        "names.g01.034"
+      ],
+      "status": "Space-padded toggles are not stable under variable-width fonts; choice coordinates and measured help wrapping required",
+      "candidate_status": "0.1.15 native fixtures pass for the targeted fields; in-game recheck pending"
+    },
+    {
+      "id": "intermission",
+      "rows": [
+        "names.g00.225"
+      ],
+      "status": "Completed-chapter text exceeds single-line strip; measured compact presentation required",
+      "candidate_status": "0.1.15 native fixtures pass for the targeted fields; in-game recheck pending"
+    },
+    {
+      "id": "question-marks",
+      "status": "Not established as a missing-glyph defect; retain source concealment placeholders until actual runtime indices can be verified",
+      "source_placeholder_rows": [
+        "names.g02.082",
+        "names.g02.135",
+        "names.g02.140",
+        "names.g02.141",
+        "names.g03.077",
+        "names.g03.079",
+        "names.g03.116",
+        "names.g03.117"
+      ]
+    }
+  ],
+  "font_change": "0.1.14 uses the user bitmap for all printable ASCII; this does not claim these UI issues fixed",
+  "candidate_build": {
+    "version": "0.1.15",
+    "changed_rows": 17,
+    "native_cases": 145,
+    "decoder_instructions": 1865386,
+    "parser_instructions": 248826,
+    "proof": "work/output/0.1.15/ui-layout-native-test.json",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "in_game": "pending"
+    },
+    "test_disc": "work/output/0.1.15/disc/Rayblade English Test 0.1.15.gdi",
+    "live_validation": "pending; context/caller/GPU and navigation not covered by offline fixtures"
+  },
+  "chapter_card_build": {
+    "version": "0.1.16",
+    "title_slots": 69,
+    "episode_label": "Chapter",
+    "archive_sha256": "f2c87a488925bc6d01e5cbff924f6a414b6f50882253a6cf48d9686a508a927e",
+    "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+    "native_cases": {
+      "PRS": 5,
+      "PVM": 15,
+      "selection": 69,
+      "submission": 99
+    },
+    "native_instructions": {
+      "PRS": 5861181,
+      "PVM": 2415,
+      "selection": 4761,
+      "submission": 78102
+    },
+    "proof": "work/output/0.1.16/chapter-card-native-test.json",
+    "preview": "work/output/0.1.16/chapter-card-preview.png",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "in_game": "pending"
+    },
+    "test_disc": "work/output/0.1.16/disc/Rayblade English Test 0.1.16.gdi",
+    "limits": [
+      "SDK quotient/remainder, memcmp, file-loader and sprite-submission endpoints are bounded fixtures",
+      "Sprite fit uses decoded rectangle/anchor semantics; the native GPU vertex/raster path is not executed",
+      "No live chapter appearance, animation timing or complete game validation is claimed"
+    ]
+  },
+  "library_header_build": {
+    "version": "0.1.19",
+    "source_build": "0.1.18",
+    "status": "Library scratch collision, decimal glyphs and age-field fit corrected; native checks and local packaging pass; live navigation/GPU/long-session gameplay pending",
+    "executable_sha256": "2dd7db544333127e3e100a912473fa1d4b2ea1c7c82d7b079b44a18540507f57",
+    "names_sha256": "7072e79d64e8b32c22df891d249fd25c3b1a6d81cf7174a1d2606ca72d08e7f1",
+    "library_sha256": "23bf456c300b6d13d0a2bae236f6a2a12df3a576de39c820eb1a95154f980e80",
+    "old_bug_reproduction": {
+      "build": "0.1.18",
+      "native_instructions": 67,
+      "overwritten_library_offsets": [
+        "0xeff0",
+        "0xeff1"
+      ],
+      "affected_profile": "library.character.026"
+    },
+    "memory": {
+      "version": "0.1.19",
+      "executable_edits": [
+        {
+          "offset": "0x2afc4",
+          "size": 4,
+          "before": "0xf200",
+          "after": "0x1f200",
+          "purpose": "common parameter scratch beyond expanded library"
+        },
+        {
+          "offset": "0x2bc8a",
+          "size": 2,
+          "before": "0xe7",
+          "after": "0x4d",
+          "purpose": "native tenths decimal point"
+        },
+        {
+          "offset": "0x2bd24",
+          "size": 2,
+          "before": "0xe7",
+          "after": "0x4d",
+          "purpose": "native scaled decimal point"
+        }
+      ],
+      "shared_capacity": 131072,
+      "library_start": 528,
+      "library_end": 122431,
+      "scratch_start": 127488,
+      "scratch_reserved_bytes": 3584,
+      "gap_bytes": 5057,
+      "names_changed_bytes": 1
+    },
+    "native_headers": {
+      "character": 144,
+      "mech": 128
+    },
+    "native_instructions": {
+      "constructor": 26128,
+      "parameters": 263734,
+      "clear": 551080,
+      "parser": 4031665,
+      "scratch_stress": 147504,
+      "decimal_stress": 238181
+    },
+    "native_queue_bytes_roundtripped": 3072,
+    "native_decimal_cases": 528,
+    "geometry": [
+      {
+        "kind": "character",
+        "script": "0xf62d",
+        "origin": [
+          40,
+          40
+        ],
+        "logical_surface": [
+          256,
+          64
+        ],
+        "physical_surface": [
+          1024,
+          256
+        ],
+        "ink_width": 240
+      },
+      {
+        "kind": "mech",
+        "script": "0xf7a7",
+        "origin": [
+          40,
+          40
+        ],
+        "logical_surface": [
+          256,
+          32
+        ],
+        "physical_surface": [
+          1024,
+          128
+        ],
+        "ink_width": 240
+      }
+    ],
+    "proof": "work/output/0.1.19/library-header-native-test.json",
+    "regression_proofs": {
+      "library-header-native-test": "work/output/0.1.19/library-header-native-test.json",
+      "genei-font-native-test": "work/output/0.1.19/genei-font-native-test.json",
+      "genei-surface-native-test": "work/output/0.1.19/genei-surface-native-test.json",
+      "ui-layout-native-test": "work/output/0.1.19/ui-layout-native-test.json",
+      "word-wrap-native-test": "work/output/0.1.19/word-wrap-native-test.json",
+      "inline-control-native-test": "work/output/0.1.19/inline-control-native-test.json",
+      "library-layout-native-test": "work/output/0.1.19/library-layout-native-test.json",
+      "scenario-native-test": "work/output/0.1.19/scenario-native-test.json",
+      "battle-english-native-test": "work/output/0.1.19/battle-english-native-test.json",
+      "chapter-card-native-test": "work/output/0.1.19/chapter-card-native-test.json"
+    },
+    "unchanged": "Font, WIN00 archive including library/chapter payloads, story and battle bytes exact 0.1.18; one D_NAMES coordinate byte and three executable bytes change",
+    "previews": [
+      "work/output/0.1.19/library-character-header-preview.png",
+      "work/output/0.1.19/library-mech-header-preview.png"
+    ],
+    "disc": "work/output/0.1.19/disc/Rayblade English Test 0.1.19.gdi",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "in_game": "pending"
+    },
+    "limits": [
+      "Header preparation stops before portrait loading; final GPU submit is not executed",
+      "Glyph raster and graphics/allocation endpoints are bounded fixtures",
+      "Name-table slots include unused entries; complete live unlock/menu routing, GPU appearance and long-session gameplay remain unverified"
+    ],
+    "new_translation_credit": 0
+  },
+  "ui_image_build": {
+    "version": "0.1.20",
+    "source_build": "0.1.19",
+    "status": "35 English image-label sprites integrated and locally packaged; native PRS/texture checks and protected-pixel checks pass; live appearance/selection pending",
+    "label_sprites": 35,
+    "distinct_display_strings": 30,
+    "texture_members": [
+      2,
+      6,
+      88
+    ],
+    "translation_map": "work/translation/en/ui/image-labels.en.json",
+    "source_sprite_map": "work/ui/asset-audit/ui-sprites/rectangles.json",
+    "resources": [
+      {
+        "member": 2,
+        "decoded_bytes": 524320,
+        "dimensions": [
+          512,
+          512
+        ],
+        "native_format": "0xd00",
+        "native_PRS_instructions": 8984136,
+        "native_texture_info_instructions": 190,
+        "selected_sprites": 5,
+        "changed_pixels": 780
+      },
+      {
+        "member": 6,
+        "decoded_bytes": 131104,
+        "dimensions": [
+          256,
+          256
+        ],
+        "native_format": "0xd00",
+        "native_PRS_instructions": 2538067,
+        "native_texture_info_instructions": 184,
+        "selected_sprites": 14,
+        "changed_pixels": 6396
+      },
+      {
+        "member": 88,
+        "decoded_bytes": 131104,
+        "dimensions": [
+          256,
+          256
+        ],
+        "native_format": "0x100",
+        "native_PRS_instructions": 2312130,
+        "native_texture_info_instructions": 186,
+        "selected_sprites": 16,
+        "changed_pixels": 2696
+      }
+    ],
+    "protected_sprite_count": 277,
+    "unrelated_archive_members": 87,
+    "native_PRS_instructions": 13834333,
+    "native_texture_info_instructions": 560,
+    "independent_font_mask_pixels": 3565,
+    "archive_spare_bytes": 52136,
+    "unchanged": "Executable, integrated normal-text font, sprite DAT records and every text component exact 0.1.19",
+    "proof": "work/output/0.1.20/ui-image-native-test.json",
+    "chapter_proof": "work/output/0.1.20/chapter-card-native-test.json",
+    "preview": "work/output/0.1.20/ui-image-labels-preview.png",
+    "disc": "work/output/0.1.20/disc/Rayblade English Test 0.1.20.gdi",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "in_game": "pending"
+    },
+    "limits": [
+      "Native PRS and texture-info execute in an interpreter with guarded buffers",
+      "Full resource I/O, actual sprite selection/navigation and GPU drawing are not executed",
+      "Tiny image labels use fixed native dimensions; integrated normal-text font is unchanged",
+      "Other image/movie text and independent meaning review remain incomplete"
+    ],
+    "story_library_draft_credit": 0
+  },
+  "latest_text_filter_build": {
+    "version": "0.1.22",
+    "source_build": "0.1.21",
+    "source_executable_sha256": "8eaca308ba6a9530175a36f23a4ee99f272cc2e4e6d475e132c63526c66195be",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "dispatcher_address": "0x8c07b800",
+    "dispatcher_bytes": 36,
+    "changed_executable_bytes": 35,
+    "callee_pointer_offset": "0x20f44",
+    "caller_load_addresses": [
+      "0x8c030e68",
+      "0x8c030e74"
+    ],
+    "allowed_ranges": [
+      [
+        440320,
+        440356
+      ],
+      [
+        134980,
+        134984
+      ]
+    ],
+    "selection": "Only object resource word at +38 equal to 63 selects native filter mode 1; other resources keep their input mode",
+    "unchanged": "All font/translation/image/archive payloads, advances, raster and allocator code, story helpers, resource IDs and texture dimensions",
+    "native_validation": {
+      "selection_encoder_cases": 72,
+      "real_caller_comparisons": 12,
+      "state_transitions": [
+        [
+          63,
+          1
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          63,
+          1
+        ],
+        [
+          64,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "native_instructions": 24837
+    },
+    "live_appearance": "pending",
+    "reference": "https://raw.githubusercontent.com/KallistiOS/KallistiOS/master/kernel/arch/dreamcast/include/dc/pvr/pvr_header.h",
+    "status": "Native text-specific bilinear filtering integrated and locally packaged; live appearance pending",
+    "source_trace": {
+      "font_resource_registration": "8c076e96 registers 8c16f92c (resource 63) with the dynamic texture/sprite tables",
+      "text_object_submission": "8c078bc0 passes resource 63 to the native sprite object constructor",
+      "native_filter_setter": "8c0a78d0: mode 0 -> context +84=0; mode 1 -> +84=2",
+      "command_encoder": "8c0d0340 selects from [0,2,1,3] and stores filtering in mode2 bits 14:13",
+      "sprite_state_copy": "8c0c7d34 retains command filter bits",
+      "texture_bind": "8c0c8a9e changes size/address fields, retaining filter bits"
+    },
+    "proof": "work/output/0.1.22/text-filter-native-test.json",
+    "disc": "work/output/0.1.22/disc/Rayblade English Test 0.1.22.gdi",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "in_game": "pending"
+    },
+    "historical_evidence": "13 unchanged 0.1.21 native reports retain their original executable hashes and actual coverage; previous full-packager gates rerun against that build",
+    "limits": [
+      "State finalizer 8c0d0b00 is a recorded no-op fixture",
+      "Native command creation is verified; full sprite pipeline, GPU blending and live appearance are not",
+      "Prior font/text/regression reports remain historical; they were not rerun by this test"
+    ],
+    "bitmap_detail": "Source bitmap still has finite contour detail; no vector reconstruction or preblur added",
+    "story_library_draft_credit": 0
+  }
+}

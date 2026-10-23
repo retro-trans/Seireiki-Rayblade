@@ -1,0 +1,72 @@
+{
+  "status": "398 real standalone map textures decoded; two historical decoder errors resolved; discovery contacts reviewed, full-resolution/reachability review incomplete",
+  "source_archive_sha256": "1c7655c42abc2d382b58f6cd71e3c0ba532439a0298fee777e128c4596ec0c64",
+  "current_game_build": "0.1.32",
+  "game_build_changed": false,
+  "texture_index": {
+    "path": "work/ui/asset-audit/MAP/formats-01/texture-index.json",
+    "sha256": "ed4bf10686094d0a6ef9a2cadb92966926b5ca25996da5002a455fdf3c7364bc"
+  },
+  "source_native_proof": {
+    "path": "work/ui/asset-audit/MAP/formats-01/native-source-test.json",
+    "sha256": "a327dd922deaf9a76063b24be311f95560f84f5df8b3237cd243b7252e770c52"
+  },
+  "real_GBIX_textures": 398,
+  "non_GBIX_members_outside_decoder": 124,
+  "dummy": {
+    "member": 428,
+    "bytes": 38,
+    "sha256": "5147b89e10b4b45f07a9e13b1377a2e7924d7fee62960eac6e3671d8d854377c",
+    "outer_GBIX_index": 384,
+    "classification": "Explicit ASCII dummy marker; not a PRS texture"
+  },
+  "historical_397_source_identities": "all exact",
+  "resolved_mipmap": {
+    "member": 124,
+    "pixel_format": "RGB565",
+    "data_format": 18,
+    "dimensions": [
+      512,
+      512
+    ],
+    "levels": 10,
+    "independent_pixels": 349525,
+    "decoded_bytes": 699088,
+    "native_PRS_instructions": 21565194,
+    "preview": {
+      "path": "work/ui/asset-audit/MAP/formats-01/member-124-base.png",
+      "sha256": "59bff64f66d6f4f37e5dd20c47dd008d9f2ea0329cc8de06fa528e4e41c9f4ff"
+    }
+  },
+  "reviewed_contacts": [
+    {
+      "path": "work/ui/asset-audit/MAP/formats-01/contact-00.png",
+      "sha256": "2a02a323e31f246fadcccee689d51c2ea134bd16e4a5001bec23bc75bf85b1ad"
+    },
+    {
+      "path": "work/ui/asset-audit/MAP/formats-01/contact-01.png",
+      "sha256": "7404ce8364fd972520644d5a4fb6b2424aef28ca94112579899f7047894cb3ab"
+    },
+    {
+      "path": "work/ui/asset-audit/MAP/formats-01/contact-02.png",
+      "sha256": "a56ce2dee68ea5e1d189262e9d4927f1382af739f01ce50d57aba5e8149c49a4"
+    },
+    {
+      "path": "work/ui/asset-audit/MAP/formats-01/contact-03.png",
+      "sha256": "c1254258d6c4f294d194ba951454d47c54ffa2c84b8ee5db63d975d5bd34e92e"
+    },
+    {
+      "path": "work/ui/asset-audit/MAP/formats-01/contact-04.png",
+      "sha256": "15f4b6b44a03d66fab50066a0fe8e49e1a504edc6adfffc6c2ae62a00266eeee"
+    }
+  ],
+  "visual_findings": "Town/terrain/building atlas images. No definite additional readable Japanese observed on the five contacts or the full member-124 base view.",
+  "remaining_small_detail": "Tiny plaque/sign-like details, including member 124, are not established as readable text; no full-resolution absence claim for the archive.",
+  "limits": [
+    "124 non-GBIX members remain outside this texture decoder",
+    "Base mip preview; every smaller mip span/hash is accounted for",
+    "Contact sheets do not prove full-resolution absence or live reachability",
+    "YUV previews retain the existing approximate color conversion; no new native GPU proof",
+    "Native proof executes only source PRS, not map loading, texture submission or GPU rendering"
+  ]
+}

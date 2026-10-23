@@ -1,0 +1,228 @@
+{
+  "version": "0.1.26",
+  "source_build": "0.1.25",
+  "status": "21 translated credit roles/company labels and 35 supported name readings inserted; seven name readings and live credit playback unresolved",
+  "disc": "work/output/0.1.26/disc/Rayblade English Test 0.1.26.gdi",
+  "translation_map": "work/translation/en/ui/staff-credits.en.json",
+  "staff_name_glossary": "work/glossary/staff-credits.json",
+  "source_geometry": "work/ui/asset-audit/STAFF/rectangles.json",
+  "previews": [
+    "work/output/0.1.26/credits-preview-00.png",
+    "work/output/0.1.26/credits-preview-01.png",
+    "work/output/0.1.26/credits-preview-02.png",
+    "work/output/0.1.26/credits-preview-03.png"
+  ],
+  "archive_sha256": "b34e330124d88156b3050d0509d2136f0590ca60a731f72ebbd2045c8eb42443",
+  "translated_role_company_sprites": 21,
+  "supported_name_reading_sprites": 35,
+  "source_credit_sprites": 84,
+  "source_personal_name_sprites": 42,
+  "protected_original_English_text_sprites": 20,
+  "protected_blank_sprite": 1,
+  "unresolved_names": [
+    {
+      "id": "staff.19.052",
+      "kind": "person",
+      "ja": "\u8349\u958b \u4e00\u4e5f",
+      "en": null,
+      "source_pixels_sha256": "fa617736d59bedc30a48c6d18af76b351df8172373b5997cfe7e6e7d268f51fe",
+      "source_box": [
+        416,
+        208,
+        496,
+        224
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings.",
+      "source_note": "Present in the atlas, absent from the consulted Rayblade credit transcript; actual display/reachability not established."
+    },
+    {
+      "id": "staff.19.062",
+      "kind": "person",
+      "ja": "\u4f0a\u85e4 \u5065",
+      "en": null,
+      "source_pixels_sha256": "cc9142cb8a2bfb33380830556a666b9b4366e11ff4b200e3da4d174a9fa86bc2",
+      "source_box": [
+        592,
+        32,
+        672,
+        48
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.072",
+      "kind": "person",
+      "ja": "\u9808\u78e8 \u6566\u53f2",
+      "en": null,
+      "source_pixels_sha256": "23c9c479c99476dfeb445d8adafdeb282afb26f47e6e72186953196c4134896f",
+      "source_box": [
+        512,
+        96,
+        592,
+        112
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.076",
+      "kind": "person",
+      "ja": "\u5185\u65b9 \u667a\u58eb",
+      "en": null,
+      "source_pixels_sha256": "a068eeb3e93ff227948aa121a3b2e1e8fa0a803f0c0466b5174a8bd88e8456ae",
+      "source_box": [
+        592,
+        112,
+        672,
+        128
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.080",
+      "kind": "person",
+      "ja": "\u7530\u7551 \u5168\u5553",
+      "en": null,
+      "source_pixels_sha256": "3c8d89f24b9640a4f727fe264011b7bb16ebd61b9551b02359fb0713acc7ccec",
+      "source_box": [
+        592,
+        144,
+        672,
+        160
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.081",
+      "kind": "person",
+      "ja": "\u5bae\u5d0e \u5321\u53f2",
+      "en": null,
+      "source_pixels_sha256": "8723d15d13d33ed7f79b3d9409775a0d6d53ae9be98c2cb08b5e5b363ff5ada1",
+      "source_box": [
+        672,
+        144,
+        752,
+        160
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.083",
+      "kind": "person",
+      "ja": "\u8056\u5ddd \u5c1a\u5fd7",
+      "en": null,
+      "source_pixels_sha256": "6da07947edac6fbcba5797da210fa4802834fb6eb23d90299a4193e8f1512ad7",
+      "source_box": [
+        592,
+        160,
+        672,
+        176
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    }
+  ],
+  "name_sources": [
+    {
+      "url": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "role": "Secondary name-reading reference; direct fetch returned 403, indexed credits text was available"
+    },
+    {
+      "url": "https://raido.moe/staff/dc/dc_seireiki_rayblade.html",
+      "role": "Japanese credit transcript cross-check; atlas is authoritative for printed glyphs"
+    }
+  ],
+  "native_proof": {
+    "source_build": "0.1.25",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archive_sha256": "b34e330124d88156b3050d0509d2136f0590ca60a731f72ebbd2045c8eb42443",
+    "label_count": 56,
+    "roles_company": 21,
+    "supported_name_readings": 35,
+    "unresolved_original_name_sprites": [
+      "staff.19.052",
+      "staff.19.062",
+      "staff.19.072",
+      "staff.19.076",
+      "staff.19.080",
+      "staff.19.081",
+      "staff.19.083"
+    ],
+    "sprite_geometry_records": 84,
+    "protected_sprite_count": 28,
+    "unchanged_member_payloads": 20,
+    "member_offsets": "all original offsets retained",
+    "independent_font_mask_pixels": 19085,
+    "independent_pixel_addressing_and_source_font_masks": "pass",
+    "original_pixels_and_archive_bytes_outside_declared_edits": "exact",
+    "native_PRS_instructions": 10005438,
+    "native_texture_info_instructions": 190,
+    "native_decoded_bytes": 524320,
+    "native_guard_and_ABI": "pass",
+    "texture_dimensions": [
+      1024,
+      256
+    ],
+    "changed_sprite_records": [
+      21,
+      36
+    ],
+    "name_reading_accuracy": "secondary references; seven unresolved, further review pending",
+    "native_file_loading": false,
+    "native_sprite_pipeline": false,
+    "GPU": false,
+    "live_credit_timing_order_layout_appearance": "pending"
+  },
+  "validation": {
+    "reextracted_files": "all 9 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "archive_preservation": "20 other member payloads and every original member offset exact; only DAT 19 and texture 20 change. Texture remains 1024x256 ARGB1555; original archive/file extent retained.",
+  "previous_components": "Eight game payloads exact 0.1.25; fifteen historical proof identities retained",
+  "new_changed_sectors": 31,
+  "changed_sector_locations_from_original": 27815,
+  "meaning_notes": [
+    "Roles authored against the original Japanese image; existing English title counterparts inform role terminology.",
+    "Name readings use a secondary credits reference and are not claimed official self-romanizations.",
+    "ASCII long-vowel forms are used for the native Latin repertoire; no names abbreviated to initials.",
+    "All seven unresolved Japanese name images stay readable; no guessed substitutions.",
+    "Name sprite 52 exists in the atlas but is absent from the consulted Rayblade credit transcript; actual use is unverified."
+  ],
+  "pending": [
+    "Seven credit-name readings and independent confirmation of reference romanizations",
+    "Live credit timing/order, appearance, alignment and overlaps",
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Moving-art title treatment selection and implementation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "release": false,
+  "story_library_draft_credit": 0,
+  "current_archive_layout": {
+    "current_build": "0.1.38",
+    "archive_sha256": "061a021b147b474cf2148a4cdce4e8a4a4db4e2f3960c9efa87d75215ee21189",
+    "member_payloads_unchanged_from": "0.1.37",
+    "member_count": 22,
+    "native_lookups": "all offsets/sector lengths match physical layout",
+    "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+  },
+  "archive_identity_note": "Earlier archive hashes/proofs remain historical payload-origin evidence; current layout identity above supersedes file placement only."
+}

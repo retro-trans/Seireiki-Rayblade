@@ -1,0 +1,91 @@
+{
+  "status": "All 15 discovery contacts reviewed; no additional readable Japanese observed at thumbnail scale",
+  "archives": [
+    {
+      "archive": "MAP.AFS",
+      "textures": 398,
+      "contacts": [
+        {
+          "path": "work/ui/asset-audit/MAP/formats-01/contact-00.png",
+          "sha256": "2a02a323e31f246fadcccee689d51c2ea134bd16e4a5001bec23bc75bf85b1ad"
+        },
+        {
+          "path": "work/ui/asset-audit/MAP/formats-01/contact-01.png",
+          "sha256": "7404ce8364fd972520644d5a4fb6b2424aef28ca94112579899f7047894cb3ab"
+        },
+        {
+          "path": "work/ui/asset-audit/MAP/formats-01/contact-02.png",
+          "sha256": "a56ce2dee68ea5e1d189262e9d4927f1382af739f01ce50d57aba5e8149c49a4"
+        },
+        {
+          "path": "work/ui/asset-audit/MAP/formats-01/contact-03.png",
+          "sha256": "c1254258d6c4f294d194ba951454d47c54ffa2c84b8ee5db63d975d5bd34e92e"
+        },
+        {
+          "path": "work/ui/asset-audit/MAP/formats-01/contact-04.png",
+          "sha256": "15f4b6b44a03d66fab50066a0fe8e49e1a504edc6adfffc6c2ae62a00266eeee"
+        }
+      ],
+      "contents": "terrain, buildings and town scenery"
+    },
+    {
+      "archive": "CUTIN.AFS",
+      "textures": 122,
+      "contacts": [
+        {
+          "path": "work/ui/asset-audit/CUTIN/contact-00.png",
+          "sha256": "d2d856a9c9a67b8b05f1d88fb7bd9ac3ad41c853520b62a85a49446201829d1d"
+        },
+        {
+          "path": "work/ui/asset-audit/CUTIN/contact-01.png",
+          "sha256": "7ba6f2d949d7d8dd394996791b07f7c34f040364df99d4fe377e44da8ae22663"
+        }
+      ],
+      "contents": "mech/environment cut-in pictures; 367 other members remain outside GBIX decoder"
+    },
+    {
+      "archive": "BTT_FACE.AFS",
+      "textures": 703,
+      "contacts": [
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-00.png",
+          "sha256": "00560ed83d851e95bfe468ac9da317f5e9d49997ea544529ced958909aed4497"
+        },
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-01.png",
+          "sha256": "b09091c92cd05c9c3e4de783c78c1ede7f96ead942f1fe6df4b08fb2c1c9b87f"
+        },
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-02.png",
+          "sha256": "08edcd7c49e0216ae61062eff2c053c1bf26b9041ea367301180e69e762c34db"
+        },
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-03.png",
+          "sha256": "f1e628a1e53cd7a142bcf3d0781a268d1070b60c0b02e5040ec8610779e92006"
+        },
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-04.png",
+          "sha256": "d92d06f2b66b4c5b4667e59034170b6020605e7b40a3c119e4652cf5592102cc"
+        },
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-05.png",
+          "sha256": "7aeb1fd6fd1e58426a6c70c457bc1fa4e160067ae34a23ec9f23dc01e71d2ce3"
+        },
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-06.png",
+          "sha256": "11567243fb3a1a424dfca85b30153d36e062c25a68724ec07ae29f6fc02efff7"
+        },
+        {
+          "path": "work/ui/asset-audit/BTT_FACE/contact-07.png",
+          "sha256": "ef5214f835b7d55cc6637b54a807302ee09d7ff6620d5a52c10190a9edae6421"
+        }
+      ],
+      "contents": "battle portraits and final light-effect frames; two other members outside GBIX decoder"
+    }
+  ],
+  "limits": [
+    "Thumbnail review is not complete full-resolution no-text or reachability proof",
+    "Fine signs/insignia/decorative marks and non-GBIX formats still need classification",
+    "No source images, translated assets or game build changed"
+  ]
+}

@@ -1,0 +1,666 @@
+{
+  "version": "0.1.33",
+  "source_build": "0.1.32",
+  "status": "Eight coordinated English BREAK artwork frames packaged; glow/trail fidelity, independent meaning and whole-attack/live review pending",
+  "disc": "work/output/0.1.33/disc/Rayblade English Test 0.1.33.gdi",
+  "archive": "EFFECT.AFS",
+  "archive_sha256": "9f1dcdf479fb3c5c2a20a9548b4ffa113cdee2a6fdd8d167cf64262c33ac76b4",
+  "artwork_frame_count": 8,
+  "changed_texture_members": [
+    142,
+    143,
+    455,
+    456
+  ],
+  "translation_recipe": "work/translation/en/ui/attack-lettering.en.json",
+  "recipe_status_scope": "Source-linked wording recipe preserves its pre-insertion preparation status/hash; this build record gives current insertion status",
+  "previews": [
+    {
+      "path": "work/output/0.1.33/attack-lettering-before-after-142.png",
+      "sha256": "37682f4bdcce3e2b962c89ee08eefe99ca46ec042d546fccc0a4b87a74316440"
+    },
+    {
+      "path": "work/output/0.1.33/attack-lettering-before-after-143.png",
+      "sha256": "6256a3481f9b375ae4fe08f227a6e9a06ac4c5c61a84df38eebdb5181b8ffab0"
+    },
+    {
+      "path": "work/output/0.1.33/attack-lettering-before-after-455.png",
+      "sha256": "5c7dc8a150267ac5e7d32215ab2f9c203a1a69e652e77281b7baa856bcda8982"
+    },
+    {
+      "path": "work/output/0.1.33/attack-lettering-before-after-456.png",
+      "sha256": "ea36e02714bb89a3df436608dcbd32a7d2bd43039df02608b4910509a50efbba"
+    }
+  ],
+  "visual_review": "All eight before/after English/source frame witnesses reviewed; primary optical placement, reversed variants and reauthored yellow trails inspected offline in explicit banks 5/6",
+  "font": {
+    "font_sha256": "63407f4c30151aa0bece46ef72b5372fa2cbe4120fd9c7ce9fe79f5e28a1c6fa",
+    "current_font_origin_build": "0.1.31",
+    "word": "BREAK",
+    "native_word_bounds": [
+      4,
+      8,
+      104,
+      46
+    ],
+    "native_advances_physical": [
+      20,
+      20,
+      20,
+      24,
+      20
+    ],
+    "native_word_mask_sha256": "e63cf8aa783ab4432b4eda1d5f2be7da74eb06589dc25bdb6bc30975b48ab018",
+    "resized_mask_size": [
+      136,
+      52
+    ],
+    "resized_mask_sha256": "063d857d4b4754162feb4fa04ab5e95ff923ba21e517e2c6b32b57229daa8789",
+    "uniform_scale": 1.36,
+    "sampling": "Whole-word Lanczos at one common scale; original native glyph masks/advances, no individual stretch"
+  },
+  "normal_font_changed": false,
+  "artwork_method": "Current inferred Latin masks, one common whole-word scale, optical primary placements, reversed variants, reauthored red glow and yellow rotated/trailing frames",
+  "artwork_fidelity_limit": "New English effect artwork approximates the original glow/motion treatment; no exact brush-contour or motion-field reconstruction claimed",
+  "resources": [
+    {
+      "member": 142,
+      "packed_bytes": 21389,
+      "source_slot_capacity": 24576,
+      "offset": 2328576,
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "member": 143,
+      "packed_bytes": 21457,
+      "source_slot_capacity": 24576,
+      "offset": 2353152,
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "member": 455,
+      "packed_bytes": 21305,
+      "source_slot_capacity": 26624,
+      "offset": 9814016,
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "member": 456,
+      "packed_bytes": 21311,
+      "source_slot_capacity": 26624,
+      "offset": 9840640,
+      "dimensions": [
+        512,
+        512
+      ]
+    }
+  ],
+  "preservation": [
+    "All four original 512x512 texture dimensions, 104 complete sprite records, anchors/UV/raw parameters and all palettes exact",
+    "Ninety-six non-letter sprite images and 456 unrelated archive member payloads/offsets exact",
+    "Preceding English member-250 UI, animation programs and all eleven other game payloads exact 0.1.32",
+    "All four compressed resources stay in their original slots; original archive extent and bytes outside declared edits exact"
+  ],
+  "native_proof": {
+    "source_build": "0.1.32",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archive_sha256": "9f1dcdf479fb3c5c2a20a9548b4ffa113cdee2a6fdd8d167cf64262c33ac76b4",
+    "artwork_frame_count": 8,
+    "texture_resources": 4,
+    "unchanged_member_payloads_and_offsets": 456,
+    "protected_sprite_records_and_pixels": 96,
+    "all_source_geometry_and_palettes": "byte-exact",
+    "independent_scalar_index_pixels": 1048576,
+    "independent_palette_entries": 1088,
+    "source_native_font_pixels_checked": 10240,
+    "English_word": "BREAK",
+    "source_font_sha256": "63407f4c30151aa0bece46ef72b5372fa2cbe4120fd9c7ce9fe79f5e28a1c6fa",
+    "native_PRS_streams": [
+      {
+        "member": 142,
+        "instructions": 2600678,
+        "decoded_bytes": 132576,
+        "packed_sha256": "8aec6f5e7c224898383482fc390fa7492cf838115b359118a26776b42c42449e",
+        "decoded_sha256": "4bd0d3c35f59f545e8f53745ec9f91e4d689e7ba4b9fd2bce716d4f0dbfb27c0"
+      },
+      {
+        "member": 143,
+        "instructions": 2598296,
+        "decoded_bytes": 132576,
+        "packed_sha256": "d4b77b4638144fff8407418dedc2fa1791ae6f65fd61149c9813f248ed9451ec",
+        "decoded_sha256": "ffb2870d28259274a117b9b665763ca54b9c188112fb5fc7de13dcc82e45da5a"
+      },
+      {
+        "member": 455,
+        "instructions": 2596518,
+        "decoded_bytes": 132576,
+        "packed_sha256": "01fe37be6407e37e7f43636a22b7cef53a974385ba4b1194c5134cecc9ef512e",
+        "decoded_sha256": "ba226d58737ebaccd87f1f0f9ce48c44843b2c3f8ed51ef1bc4c7251aa2e7797"
+      },
+      {
+        "member": 456,
+        "instructions": 2597401,
+        "decoded_bytes": 132576,
+        "packed_sha256": "0514e43e97022b4024d984ff960591dda3a1d0a0bc4d30efeaf2c2363c1f3622",
+        "decoded_sha256": "d3032024fac66c574dbb4c91207a5f0bff839c439ec750bf273aa3fd307d772a"
+      }
+    ],
+    "native_PRS_instructions": 10392893,
+    "native_PVM_wrapper_cases": [
+      {
+        "member": 142,
+        "chunk": 0,
+        "wrapper_offset": 144,
+        "instructions": 132
+      },
+      {
+        "member": 142,
+        "chunk": 1,
+        "wrapper_offset": 912,
+        "instructions": 161
+      },
+      {
+        "member": 142,
+        "chunk": 2,
+        "wrapper_offset": 1488,
+        "instructions": 190
+      },
+      {
+        "member": 143,
+        "chunk": 0,
+        "wrapper_offset": 144,
+        "instructions": 132
+      },
+      {
+        "member": 143,
+        "chunk": 1,
+        "wrapper_offset": 912,
+        "instructions": 161
+      },
+      {
+        "member": 143,
+        "chunk": 2,
+        "wrapper_offset": 1488,
+        "instructions": 190
+      },
+      {
+        "member": 455,
+        "chunk": 0,
+        "wrapper_offset": 144,
+        "instructions": 132
+      },
+      {
+        "member": 455,
+        "chunk": 1,
+        "wrapper_offset": 912,
+        "instructions": 161
+      },
+      {
+        "member": 455,
+        "chunk": 2,
+        "wrapper_offset": 1488,
+        "instructions": 190
+      },
+      {
+        "member": 456,
+        "chunk": 0,
+        "wrapper_offset": 144,
+        "instructions": 132
+      },
+      {
+        "member": 456,
+        "chunk": 1,
+        "wrapper_offset": 912,
+        "instructions": 161
+      },
+      {
+        "member": 456,
+        "chunk": 2,
+        "wrapper_offset": 1488,
+        "instructions": 190
+      }
+    ],
+    "native_PAL4_header_instructions": 181,
+    "native_variant_selector": {
+      "source_build": "0.1.32",
+      "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+      "source_ANIME_archive_sha256": "523c04a4842b387acd8dfacd840539707c2414d946e1112b55626b0b9736bd53",
+      "native_cases": 16,
+      "native_instructions": 4160,
+      "cases": [
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 0,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 142,
+          "load_arguments": [
+            8,
+            142,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 277
+        },
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 1,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 455,
+          "load_arguments": [
+            8,
+            455,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 240
+        },
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 2,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 142,
+          "load_arguments": [
+            8,
+            142,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 277
+        },
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 3,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 455,
+          "load_arguments": [
+            8,
+            455,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 244
+        },
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 0,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 142,
+          "load_arguments": [
+            8,
+            142,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 278
+        },
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 1,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 455,
+          "load_arguments": [
+            8,
+            455,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 241
+        },
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 2,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 142,
+          "load_arguments": [
+            8,
+            142,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 278
+        },
+        {
+          "ANIME_member": 172,
+          "source_decoded_sha256": "38a934072b941547c27749e59be94aa6e1c98b5ed48075e988183505b62e5928",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 3,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 455,
+          "load_arguments": [
+            8,
+            455,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 245
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 0,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 143,
+          "load_arguments": [
+            8,
+            143,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 277
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 1,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 456,
+          "load_arguments": [
+            8,
+            456,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 240
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 2,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 143,
+          "load_arguments": [
+            8,
+            143,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 277
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 0,
+          "native_state_bits_7_6": 3,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 456,
+          "load_arguments": [
+            8,
+            456,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 244
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 0,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 143,
+          "load_arguments": [
+            8,
+            143,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 278
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 1,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 456,
+          "load_arguments": [
+            8,
+            456,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 241
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 2,
+          "branch_return": "0x6003",
+          "selected_command_offset": 184,
+          "EFFECT_member": 143,
+          "load_arguments": [
+            8,
+            143,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 278
+        },
+        {
+          "ANIME_member": 173,
+          "source_decoded_sha256": "0d979024e30a895a6134b6cc141076471cbaad863aa53a1e4bcc361ba579fca8",
+          "actor_selector_bit": 64,
+          "native_state_bits_7_6": 3,
+          "branch_return": "0x5001",
+          "selected_command_offset": 193,
+          "EFFECT_member": 456,
+          "load_arguments": [
+            8,
+            456,
+            0,
+            2350871072
+          ],
+          "joined_command_offset": 199,
+          "native_instructions": 245
+        }
+      ],
+      "native_dispatch_bit_query_branch_join_and_ABI": "pass",
+      "observed_archive_filename_table": {
+        "address": "0x8c098b08",
+        "index": 8,
+        "name": "EFFECT.AFS"
+      },
+      "graphic_variant_pairs": [
+        [
+          142,
+          455
+        ],
+        [
+          143,
+          456
+        ]
+      ],
+      "all_branches_select_exactly_one_load": "pass",
+      "fixtures": [
+        "AFS call at 0x8c021bc4 records native arguments and returns a token",
+        "Async poll at 0x8c021a3c stays pending; phases 1/2 file/PVM work are not executed",
+        "Completed phase 3 is entered separately to test native continuation/join"
+      ],
+      "limits": [
+        "Actor state words are controlled fixtures; native actor selection and bit extraction execute",
+        "Only the real source branch/load/join region is tested, not whole ANIME control-flow reachability",
+        "No attack frames, palette animation, sprite transforms, file I/O or GPU appearance executed",
+        "This does not resolve the smeared glyph frame or establish a full English artwork treatment"
+      ],
+      "game_build_changed": false
+    },
+    "native_guard_and_ABI": "pass",
+    "archive_bytes_outside_declared_edits": "exact",
+    "texture_indices_outside_eight_word_cells": "exact",
+    "preceding_member_250_English_UI": "stored bytes and descriptor exact 0.1.32",
+    "limits": [
+      "Glow/trail artwork is reauthored, not original brush contours or motion-field reconstruction",
+      "PVM walker uses the existing bounded memcmp fixture; native file I/O and async loader are not executed",
+      "Native source selector phases 1/2 remain outside the fixture; fresh branch/load/join checks cover 16 source-state cases",
+      "Whole attack reachability, actual sprite transforms, runtime palette/timing and GPU/live appearance remain unverified"
+    ]
+  },
+  "validation": {
+    "reextracted_files": "all 12 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "new_changed_sectors": 46,
+  "changed_sector_locations_from_original": 28441,
+  "EFFECT_changed_locations": {
+    "before": 6,
+    "after": 51,
+    "new_locations": 45
+  },
+  "source_discovery": {
+    "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+    "current_game_build": "0.1.32",
+    "source_map": {
+      "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
+      "sha256": "973142f0abe07ab194f916dfefeebe9b3ac9593c9f29e2677e3ee0dec9223a6f"
+    },
+    "native_variant_selection": {
+      "path": "work/ui/asset-audit/EFFECT/attack-lettering/native-variant-selection.json",
+      "sha256": "76e221efe0fba150e1b510d0eee91f933126aee422e40ce535e1fa6afee526d9"
+    },
+    "source_records_mapped": 110,
+    "English_frame_targets": 8,
+    "trimmed_primary_glyph_relationship": [
+      {
+        "a": "effect.142.008",
+        "b": "effect.143.008",
+        "trimmed_indices": "byte-exact same 167x155 image",
+        "placement_difference": "B is 40 source pixels lower in the same 200x200 cell"
+      }
+    ],
+    "native_cases": 16,
+    "native_instructions": 4160,
+    "native_variant_pairs": [
+      [
+        142,
+        455
+      ],
+      [
+        143,
+        456
+      ]
+    ],
+    "native_scope": "Real main/subcommand dispatch, SDK bit extraction, conditional VM advancement, parsed file-load arguments, native completion-phase advance and branch join. File I/O and pending poll are explicit fixtures.",
+    "native_limits": [
+      "Actor state words are controlled fixtures; native actor selection and bit extraction execute",
+      "Only the real source branch/load/join region is tested, not whole ANIME control-flow reachability",
+      "No attack frames, palette animation, sprite transforms, file I/O or GPU appearance executed",
+      "This does not resolve the smeared glyph frame or establish a full English artwork treatment"
+    ],
+    "test_correction": "The interpreter initially lacked SWAP.B used by the actual SDK bit query. Added its instruction semantics locally, then all sixteen cases pass; no game defect attributed to that interpreter gap.",
+    "previews": [
+      {
+        "path": "work/ui/asset-audit/EFFECT/attack-lettering/lettering-00.png",
+        "sha256": "2872093d6c19393cd7b775b9f0643d2201cfcbc83228589a92f6cea9e953cf75"
+      },
+      {
+        "path": "work/ui/asset-audit/EFFECT/attack-lettering/lettering-01.png",
+        "sha256": "7cdc37edb8b6d7d4687f299e82500986e47070f10d8b10eba94f5c2523911f29"
+      }
+    ],
+    "visual_review": "Both labeled full-size lettering sheets reviewed: clear/red primary glyphs, reversed variants and yellow smeared effect frames. Explicit preview banks 5/6; runtime palette binding still untested.",
+    "resolved_non_text_candidates": [
+      {
+        "members": [
+          438,
+          439
+        ],
+        "finding": "Full-size sources show mech poses, shock/impact rings and small bursts; no kanji reading assigned"
+      }
+    ],
+    "translation_recipe": "work/translation/en/ui/attack-lettering.en.json",
+    "glossary": "work/glossary/attack-lettering.json",
+    "pending": [
+      "Coordinated English artwork for all eight frame images, including the visually reversed and smeared variants",
+      "Actual sprite transform and palette/timing selection; native variant-load tests do not cover these",
+      "Texture/archive preservation and fresh native checks before insertion",
+      "Independent wording/artwork and live attack review"
+    ],
+    "game_build_changed": false,
+    "story_library_draft_credit": 0
+  },
+  "pending": [
+    "Whole-attack English BREAK artwork, actual sprite transforms and live palette/timing review",
+    "Independent attack wording and reauthored glow/trail fidelity review",
+    "Live native effect loading/palette selection and translated battle result/ability label appearance",
+    "Four single-kanji status icons and attack calligraphy readings/context",
+    "Remaining image formats/text discovery and independent translation/artwork review",
+    "Live inferred-font appearance, blending/pixel alignment and matched Skies comparison",
+    "Independent outline shape fidelity and all-context font review",
+    "Native relocated album note loading, unlock/selection/navigation and live artwork appearance",
+    "Independent meaning/artwork review and estimated paper/thumbnail cleanup review",
+    "Two unresolved album caption readings and remaining game translation/review",
+    "Native relocated album loading, unlock/selection/navigation, caption fit and appearance",
+    "Live relocated letter-archive loading, image selection and appearance",
+    "Paper-estimate artwork review and development-placeholder reachability",
+    "Remaining image-format decoding, full-resolution inspection and image-text coverage",
+    "Seven credit-name readings and independent confirmation of reference romanizations",
+    "Live credit timing/order, appearance, alignment and overlaps",
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "story_library_draft_credit": 0,
+  "release": false
+}

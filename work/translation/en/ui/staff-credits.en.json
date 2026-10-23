@@ -1,0 +1,1446 @@
+{
+  "source": "Original STAFF.AFS members 19/20",
+  "source_archive_sha256": "0c8795a6d36a3cf7a0259b459e861c25fe6b4f32805c0b0bc32b99e00d93372e",
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "font_scale": "Uniform 1/2 source scale, 12-pixel cell height, common baseline",
+  "rows": [
+    {
+      "id": "staff.19.021",
+      "sprite": 21,
+      "record_offset": 484,
+      "source_box": [
+        128,
+        208,
+        192,
+        224
+      ],
+      "draw_size": [
+        64,
+        16
+      ],
+      "anchor": [
+        32,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "0a26df9b37eaeccaa251f04dd26cb7c0c2c49056b8a1456f649ae643d0a39ba2",
+      "kind": "role_or_company",
+      "en": "Executive Producer",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.022",
+      "sprite": 22,
+      "record_offset": 504,
+      "source_box": [
+        0,
+        224,
+        112,
+        240
+      ],
+      "draw_size": [
+        112,
+        16
+      ],
+      "anchor": [
+        56,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "8779bb2cb3dadd4a2abeff5b77e489e45afd14549c27585f7d114d4dcff30bd9",
+      "kind": "role_or_company",
+      "en": "Chief Director",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.023",
+      "sprite": 23,
+      "record_offset": 524,
+      "source_box": [
+        112,
+        224,
+        192,
+        240
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "af98c50d59b294314226b5394a77ee515ad00f40bc1e2a2093c1fdb4d2c9bed7",
+      "kind": "role_or_company",
+      "en": "Director",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.024",
+      "sprite": 24,
+      "record_offset": 544,
+      "source_box": [
+        256,
+        0,
+        352,
+        16
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "f7101faadeb4dd4c418aacc1004e83e125810f2a853ce8fe804b511c2b94cbb0",
+      "kind": "role_or_company",
+      "en": "Co-Director",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.025",
+      "sprite": 25,
+      "record_offset": 564,
+      "source_box": [
+        352,
+        0,
+        416,
+        16
+      ],
+      "draw_size": [
+        64,
+        16
+      ],
+      "anchor": [
+        32,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "82a3829b2703a1d8ba2fe757e3843c3ca5c5743f9a1e37b990489a456b4d647f",
+      "kind": "role_or_company",
+      "en": "Script",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.026",
+      "sprite": 26,
+      "record_offset": 584,
+      "source_box": [
+        256,
+        16,
+        416,
+        32
+      ],
+      "draw_size": [
+        160,
+        16
+      ],
+      "anchor": [
+        80,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "75f2c7049ae5a42908517f5debc0ed0e6a5a4f8714fc0fff81e57b4a80aba220",
+      "kind": "role_or_company",
+      "en": "Character Design & Original Art",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.027",
+      "sprite": 27,
+      "record_offset": 604,
+      "source_box": [
+        256,
+        32,
+        352,
+        48
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "f852b950133ac9a00a23f0afcb9b54ef79b77447c9ce0be973da161d5a7d29b7",
+      "kind": "role_or_company",
+      "en": "Mechanical Design",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.028",
+      "sprite": 28,
+      "record_offset": 624,
+      "source_box": [
+        352,
+        32,
+        416,
+        48
+      ],
+      "draw_size": [
+        64,
+        16
+      ],
+      "anchor": [
+        32,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "a5c4ce53739066c8dfb18dac6e9ed37b34c1a5bee078d4f96d92044ae62f14e5",
+      "kind": "role_or_company",
+      "en": "Sound",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.029",
+      "sprite": 29,
+      "record_offset": 644,
+      "source_box": [
+        416,
+        32,
+        480,
+        48
+      ],
+      "draw_size": [
+        64,
+        16
+      ],
+      "anchor": [
+        32,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "994c38d7aa56f8371326c391a2a6d4015b7dab5e452778433ae75a34e9d76b26",
+      "kind": "role_or_company",
+      "en": "Programming",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.030",
+      "sprite": 30,
+      "record_offset": 664,
+      "source_box": [
+        256,
+        48,
+        352,
+        64
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "30557ac5726991cfa4eb3dbcc8722d38d4123574181519fae72a39e8ba827ccf",
+      "kind": "role_or_company",
+      "en": "Scenario Data",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.031",
+      "sprite": 31,
+      "record_offset": 684,
+      "source_box": [
+        352,
+        48,
+        480,
+        64
+      ],
+      "draw_size": [
+        128,
+        16
+      ],
+      "anchor": [
+        64,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "384ae76480fedafaa5fdbeb6ea200722ee86e08505618ab249efdc744e567ff8",
+      "kind": "role_or_company",
+      "en": "Animation Data",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.032",
+      "sprite": 32,
+      "record_offset": 704,
+      "source_box": [
+        256,
+        64,
+        400,
+        80
+      ],
+      "draw_size": [
+        144,
+        16
+      ],
+      "anchor": [
+        72,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "ab5985ad1889a4047c119aeb0c9285cd2136a534b096c6d33082a60d7fddb292",
+      "kind": "role_or_company",
+      "en": "Character Graphics",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.033",
+      "sprite": 33,
+      "record_offset": 724,
+      "source_box": [
+        256,
+        80,
+        384,
+        96
+      ],
+      "draw_size": [
+        128,
+        16
+      ],
+      "anchor": [
+        64,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "e3af2cc5bdb817bda7309ec6d0d37498fb4c5d6ef76421abbd25b5f917ccb1c1",
+      "kind": "role_or_company",
+      "en": "Unit Graphics",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.034",
+      "sprite": 34,
+      "record_offset": 744,
+      "source_box": [
+        256,
+        96,
+        384,
+        112
+      ],
+      "draw_size": [
+        128,
+        16
+      ],
+      "anchor": [
+        64,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "21a2c070a6fff5a9bf455c714602907c5b350f7cc18feabdb3f0d65c9e777f83",
+      "kind": "role_or_company",
+      "en": "Effect Graphics",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.035",
+      "sprite": 35,
+      "record_offset": 764,
+      "source_box": [
+        256,
+        112,
+        320,
+        128
+      ],
+      "draw_size": [
+        64,
+        16
+      ],
+      "anchor": [
+        32,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "6087bf127fc4707a57b2c609f48a2a733b337b1ff19327fc12f86e2112f50a09",
+      "kind": "role_or_company",
+      "en": "Background Art",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.036",
+      "sprite": 36,
+      "record_offset": 784,
+      "source_box": [
+        320,
+        112,
+        400,
+        128
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "36fbb4d9d6af76ef228a92520021302d1ff7397bb7ae1298ea878ac032e2eef8",
+      "kind": "role_or_company",
+      "en": "Tactical Map Backgrounds",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.037",
+      "sprite": 37,
+      "record_offset": 804,
+      "source_box": [
+        400,
+        112,
+        496,
+        128
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "9832bc07bc0b1dff6d844393ee354c5044e9bc5ae5988c594c04265153499e99",
+      "kind": "role_or_company",
+      "en": "CG Movies",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.038",
+      "sprite": 38,
+      "record_offset": 824,
+      "source_box": [
+        256,
+        128,
+        368,
+        144
+      ],
+      "draw_size": [
+        112,
+        16
+      ],
+      "anchor": [
+        56,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "8162bf63f4564dfb21c068f5eb96e192cd56fd42dd439792f313c5cf5b0feb7d",
+      "kind": "role_or_company",
+      "en": "Lead Mech Design",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.039",
+      "sprite": 39,
+      "record_offset": 844,
+      "source_box": [
+        368,
+        128,
+        496,
+        144
+      ],
+      "draw_size": [
+        128,
+        16
+      ],
+      "anchor": [
+        64,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "c2650507dc1c78671b334010f370aba41b6cf4361e9357d54df2d3dc815d8813",
+      "kind": "role_or_company",
+      "en": "Special Thanks",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.040",
+      "sprite": 40,
+      "record_offset": 864,
+      "source_box": [
+        256,
+        144,
+        336,
+        160
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "74ede693f34071d7968340842af2a3e4e104e3077723d28a4b9abddd0925c4c5",
+      "kind": "role_or_company",
+      "en": "Planning & Production",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.041",
+      "sprite": 41,
+      "record_offset": 884,
+      "source_box": [
+        336,
+        144,
+        480,
+        160
+      ],
+      "draw_size": [
+        144,
+        16
+      ],
+      "anchor": [
+        72,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "238c286605e58304ffa928b98b01b4480c8335dc09b8bdb4b1e0fbde262de681",
+      "kind": "role_or_company",
+      "en": "Winky Soft Co., Ltd.",
+      "reading_status": "authored_role_translation"
+    },
+    {
+      "id": "staff.19.042",
+      "sprite": 42,
+      "record_offset": 904,
+      "source_box": [
+        256,
+        160,
+        336,
+        176
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "ca8e4525676f9d9bdbe917534c32ea0ff4b125103209b4d754ec49e7dd9d21bc",
+      "kind": "person",
+      "en": "Shigemitsu Takamiya",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.043",
+      "sprite": 43,
+      "record_offset": 924,
+      "source_box": [
+        336,
+        160,
+        432,
+        176
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        48,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "46bf443e59c43999b51bcec21b4d2c6568ca3c214efadf509a4f90f6a2acdaf5",
+      "kind": "person",
+      "en": "Kenichiro Matsumoto",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.044",
+      "sprite": 44,
+      "record_offset": 944,
+      "source_box": [
+        256,
+        176,
+        336,
+        192
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "e5968c0eaade4fbc40d8259112d66273c10f2f79924fdca7800f728325a8b34f",
+      "kind": "person",
+      "en": "Atsushi Kamata",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.045",
+      "sprite": 45,
+      "record_offset": 964,
+      "source_box": [
+        336,
+        176,
+        416,
+        192
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "3872712b00519f1f10e2cbcc3f4e2f6a073b64b89a385c99c45d1be090b8d1ec",
+      "kind": "person",
+      "en": "Masahiro Sho",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.046",
+      "sprite": 46,
+      "record_offset": 984,
+      "source_box": [
+        416,
+        176,
+        496,
+        192
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "5b481425da66efae966ed86ce36bd71061e7db2854051fb5d516564a8e22768e",
+      "kind": "person",
+      "en": "Toru Abe",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.047",
+      "sprite": 47,
+      "record_offset": 1004,
+      "source_box": [
+        256,
+        192,
+        336,
+        208
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "c68ea11dbdc2716f0c1f88f915b2b78aff570e54c67bb7949fff66f9563d0f1b",
+      "kind": "person",
+      "en": "Kazuyoshi Horikawa",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.048",
+      "sprite": 48,
+      "record_offset": 1024,
+      "source_box": [
+        336,
+        192,
+        416,
+        208
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "8cb267fb5d7601fc7fd14f2a2813ed70cdf9cbc07ada92f277b6fb672940fc98",
+      "kind": "person",
+      "en": "Takeshi Shimoyama",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.049",
+      "sprite": 49,
+      "record_offset": 1044,
+      "source_box": [
+        416,
+        192,
+        496,
+        208
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "b537ee8747edffb5e277abe210f6173e0592b34347ca51545dc85f3b9e1d4fe9",
+      "kind": "person",
+      "en": "Koji Kurosumi",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.050",
+      "sprite": 50,
+      "record_offset": 1064,
+      "source_box": [
+        256,
+        208,
+        336,
+        224
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "e4c50dac59832a051c739c7c4eb0693ad26caa08f7359c8b9bf8e83659894a21",
+      "kind": "person",
+      "en": "Tatsuya Fujiwara",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.051",
+      "sprite": 51,
+      "record_offset": 1084,
+      "source_box": [
+        336,
+        208,
+        416,
+        224
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "a6e25393f72d2bec350ea42b53e5a33b67b2a9ab1d6aeebc796500998bfe1421",
+      "kind": "person",
+      "en": "Yoshihiro Inada",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.053",
+      "sprite": 53,
+      "record_offset": 1124,
+      "source_box": [
+        256,
+        224,
+        336,
+        240
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "7ad099a4eec2fd9bca37787008896bf7d70b8d6cc63a378079c5dfcd23b6d380",
+      "kind": "person",
+      "en": "Yoshinori Tokumura",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.054",
+      "sprite": 54,
+      "record_offset": 1144,
+      "source_box": [
+        336,
+        224,
+        416,
+        240
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "9a437eed3d627c2cf040835711cf978372d44168406c4617e066558d167b00c2",
+      "kind": "person",
+      "en": "Ryohei Inaoka",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.055",
+      "sprite": 55,
+      "record_offset": 1164,
+      "source_box": [
+        416,
+        224,
+        496,
+        240
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "8dd39292a386c0216a186b419c63ea97d9c854cb9ba95f002a02104beacb67af",
+      "kind": "person",
+      "en": "Akinori Yoshioka",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.056",
+      "sprite": 56,
+      "record_offset": 1184,
+      "source_box": [
+        512,
+        0,
+        592,
+        16
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "d9690434bc833cd44168fdd33779957289901955cdc514ed861333e54b4df161",
+      "kind": "person",
+      "en": "Motoyoshi Iwatsuru",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.057",
+      "sprite": 57,
+      "record_offset": 1204,
+      "source_box": [
+        592,
+        0,
+        672,
+        16
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "ff6e8fbfaae7780f4ae8a0f53f6e632b14108443d3b353258a6e6cfb38cd0ff8",
+      "kind": "person",
+      "en": "Yoshiharu Buma",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.058",
+      "sprite": 58,
+      "record_offset": 1224,
+      "source_box": [
+        672,
+        0,
+        752,
+        16
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "a22d27e38364826b02c612ac68290f1f87aa4e754a3da4b0c1bc3265d2138840",
+      "kind": "person",
+      "en": "Koji Kikuchi",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.059",
+      "sprite": 59,
+      "record_offset": 1244,
+      "source_box": [
+        512,
+        16,
+        608,
+        32
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "ec11173c9a21c0391fac41dcbff8c27954eb3bdb20d5ca661c864cead91a7611",
+      "kind": "person",
+      "en": "Kayoko Miyashita",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.060",
+      "sprite": 60,
+      "record_offset": 1264,
+      "source_box": [
+        608,
+        16,
+        688,
+        32
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "e97fdafeb00ec4691042fb51463e3643251f4901164eb3c759b8ce315f52b83e",
+      "kind": "person",
+      "en": "Takako Nakata",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.061",
+      "sprite": 61,
+      "record_offset": 1284,
+      "source_box": [
+        512,
+        32,
+        592,
+        48
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "3360ae421248472fed5e4cb0ff306c62453602cb9b603158ba8c55d7ae87efe1",
+      "kind": "person",
+      "en": "Naoya Inui",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.063",
+      "sprite": 63,
+      "record_offset": 1324,
+      "source_box": [
+        672,
+        32,
+        752,
+        48
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "badb28b99c0d8b0963e147bb0b1f1c636d7054311e4e47355d57ce2c7824dec6",
+      "kind": "person",
+      "en": "Atsuki Toda",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.064",
+      "sprite": 64,
+      "record_offset": 1344,
+      "source_box": [
+        512,
+        48,
+        592,
+        64
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "f720c6bb94d0d3b00dd5dce9292b5b655605938269ca3f213fc3dea85996968d",
+      "kind": "person",
+      "en": "Hiroyuki Fukuda",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.065",
+      "sprite": 65,
+      "record_offset": 1364,
+      "source_box": [
+        592,
+        48,
+        672,
+        64
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "e8a30587045034f614c77a39487f3fbed9a92a1826f928d4583ac29ba4aecb04",
+      "kind": "person",
+      "en": "Hirotaka Okuda",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.066",
+      "sprite": 66,
+      "record_offset": 1384,
+      "source_box": [
+        672,
+        48,
+        752,
+        64
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "3a7029517b77ee51e8fed6e02ae6e8d2340ac0a32955c288eb389aaf27f58ca1",
+      "kind": "person",
+      "en": "Hiromasa Morishige",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.067",
+      "sprite": 67,
+      "record_offset": 1404,
+      "source_box": [
+        512,
+        64,
+        592,
+        80
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "5cf5f7c51a6c8b6ccff8f710ad6ee3ddb173c64e3711287e69326a28e9a5b75c",
+      "kind": "person",
+      "en": "Masato Nakamura",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.068",
+      "sprite": 68,
+      "record_offset": 1424,
+      "source_box": [
+        592,
+        64,
+        688,
+        80
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "f8586a7d66c3a862f9aa4faf33c62df0a462e0b5baf642d7f22637557a3b8758",
+      "kind": "person",
+      "en": "Shujiro Nakade",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.069",
+      "sprite": 69,
+      "record_offset": 1444,
+      "source_box": [
+        512,
+        80,
+        592,
+        96
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "b2158f02bcde9d354be7f251c62be1183eb5e79da683e2ffe66b9d1667cfa364",
+      "kind": "person",
+      "en": "Wataru Yoshida",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.070",
+      "sprite": 70,
+      "record_offset": 1464,
+      "source_box": [
+        592,
+        80,
+        672,
+        96
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "6a7e7a9a4fe97de6e98f6bd8eea059136b56802ef3c7614dc6093ad15d6f1d5a",
+      "kind": "person",
+      "en": "Naoki Nakashiba",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.071",
+      "sprite": 71,
+      "record_offset": 1484,
+      "source_box": [
+        672,
+        80,
+        752,
+        96
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "e7763022936e58c156317225322f17498fdcfd8402282eece7f83ccab4e38032",
+      "kind": "person",
+      "en": "Fumie Itosu",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.073",
+      "sprite": 73,
+      "record_offset": 1524,
+      "source_box": [
+        592,
+        96,
+        672,
+        112
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "a97dedce8d31d927bcf13a0da03627942258f50178ff7b2c3ba91882ad799506",
+      "kind": "person",
+      "en": "Yoshiyasu Nakata",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.074",
+      "sprite": 74,
+      "record_offset": 1544,
+      "source_box": [
+        672,
+        96,
+        752,
+        112
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "e96c133e1c9acd3e21dcf2046b1fe3f08fd57fd08e5420c91b896d5a95001671",
+      "kind": "person",
+      "en": "Hirofumi Ichikawa",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.075",
+      "sprite": 75,
+      "record_offset": 1564,
+      "source_box": [
+        512,
+        112,
+        592,
+        128
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "a3d416db8a116c5f04234bf38c796378f9b1338320c065a46b37a76eb0eb75cf",
+      "kind": "person",
+      "en": "Kayo Buma",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.077",
+      "sprite": 77,
+      "record_offset": 1604,
+      "source_box": [
+        512,
+        128,
+        608,
+        144
+      ],
+      "draw_size": [
+        96,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "3bedbbd93a42cbc6382abe2e8a632ab8f298f9af2f550f547778f687e235af0b",
+      "kind": "person",
+      "en": "Yoshiko Hotada",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.078",
+      "sprite": 78,
+      "record_offset": 1624,
+      "source_box": [
+        608,
+        128,
+        688,
+        144
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "67cc68f95aad2e9749fbeb65fe20d2f04c06ee0190ecf732b900fde93f8e43de",
+      "kind": "person",
+      "en": "Momoko Suzuki",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.079",
+      "sprite": 79,
+      "record_offset": 1644,
+      "source_box": [
+        512,
+        144,
+        592,
+        160
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "b1af40c237c62f3d997283fb9fa184aee7d1f2f2d1340563a9738a89e684ef3d",
+      "kind": "person",
+      "en": "Masahiko Iwasaki",
+      "reading_status": "secondary_reference_reading"
+    },
+    {
+      "id": "staff.19.082",
+      "sprite": 82,
+      "record_offset": 1704,
+      "source_box": [
+        512,
+        160,
+        592,
+        176
+      ],
+      "draw_size": [
+        80,
+        16
+      ],
+      "anchor": [
+        40,
+        0
+      ],
+      "texture_id": 0,
+      "flags": 0,
+      "source_pixels_sha256": "dcb306dde7e996a7672fbba1c38175ea56a6812f6a2d4fcbbf336a023af66aa7",
+      "kind": "person",
+      "en": "Kenya Mizuno",
+      "reading_status": "secondary_reference_reading"
+    }
+  ],
+  "unresolved_name_ids": [
+    "staff.19.052",
+    "staff.19.062",
+    "staff.19.072",
+    "staff.19.076",
+    "staff.19.080",
+    "staff.19.081",
+    "staff.19.083"
+  ],
+  "original_English_sprite_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "pending": [
+    "Seven unresolved name readings",
+    "Independent confirmation of secondary-reference readings",
+    "Native credit order/timing, live layout and appearance"
+  ]
+}

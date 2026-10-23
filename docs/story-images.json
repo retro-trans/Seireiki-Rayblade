@@ -1,0 +1,288 @@
+{
+  "version": "0.1.27",
+  "source_build": "0.1.26",
+  "status": "Kasumi note and eight source development-placeholder images translated and packaged; native/structural checks pass, live loading/appearance/reachability pending",
+  "disc": "work/output/0.1.27/disc/Rayblade English Test 0.1.27.gdi",
+  "archive": "ADV00.AFS",
+  "archive_sha256": "08c682f98b2a5d483cbcda4c3ddf1b42ee33fe69121c32ccac26c3e60f879fc7",
+  "changed_texture_members": [
+    303,
+    307,
+    321,
+    333,
+    335,
+    337,
+    379,
+    481,
+    483
+  ],
+  "letter_recipe": "work/translation/en/ui/story-letter.en.json",
+  "placeholder_recipe": "work/translation/en/ui/story-image-labels.en.json",
+  "letter_source_command": "scenario.s_081.o00659",
+  "linked_story_rows": 10,
+  "letter_render": {
+    "source_decoded_sha256": "9c26b90bb6e6f4ef91092f35fbf4a870ea3bc72a8ad2ad73711a6fdb54e49e89",
+    "target_decoded_sha256": "f6ebfa5b14c3c8d4abbe604d7d69d0ad826909070024230232467b1e4d0c3bed",
+    "texture_size": [
+      512,
+      256
+    ],
+    "native_pixel_format": "YUV422 rectangular",
+    "all_U_V_bytes_and_texture_headers": "exact original",
+    "native_luma_pixels_changed": 10802,
+    "old_ink_seed_pixels": 2954,
+    "old_ink_edit_pixels_deskewed": 5461,
+    "ink_luma_from_source_percentile": 94,
+    "deskewed_size": [
+      568,
+      409
+    ],
+    "rotation_matrix": [
+      [
+        0.9455185755993168,
+        -0.3255681544571567,
+        83.61996841709094
+      ],
+      [
+        0.3255681544571567,
+        0.9455185755993168,
+        0.12817478225532852
+      ]
+    ],
+    "lines": [
+      {
+        "en": "Dear Touya,",
+        "box": [
+          94,
+          22,
+          135,
+          34
+        ]
+      },
+      {
+        "en": "I've made breakfast for you.",
+        "box": [
+          91,
+          56,
+          185,
+          68
+        ]
+      },
+      {
+        "en": "Please warm up the miso soup again.",
+        "box": [
+          91,
+          70,
+          213,
+          82
+        ]
+      },
+      {
+        "en": "I didn't see Yamato anywhere,",
+        "box": [
+          91,
+          84,
+          191,
+          96
+        ]
+      },
+      {
+        "en": "but I've put out food for her too.",
+        "box": [
+          91,
+          98,
+          201,
+          110
+        ]
+      },
+      {
+        "en": "P.S.",
+        "box": [
+          91,
+          143,
+          104,
+          155
+        ]
+      },
+      {
+        "en": "I'm sorry about earlier.",
+        "box": [
+          91,
+          157,
+          164,
+          169
+        ]
+      },
+      {
+        "en": "But you'll catch a cold if you sleep dressed like that.",
+        "box": [
+          91,
+          185,
+          262,
+          197
+        ]
+      },
+      {
+        "en": "And one more thing:",
+        "box": [
+          91,
+          201,
+          160,
+          213
+        ]
+      },
+      {
+        "en": "Don't be late.",
+        "box": [
+          91,
+          215,
+          137,
+          227
+        ]
+      },
+      {
+        "en": "Kasumi",
+        "box": [
+          277,
+          253,
+          301,
+          265
+        ]
+      }
+    ],
+    "recipe": "work/translation/en/ui/story-letter.en.json",
+    "limits": [
+      "Source-only local paper estimates, not exact recovery of originally hidden paper pixels.",
+      "Native letter image not inserted; full pixel review and native decoding/packaging pending.",
+      "No extra story/library draft credit or live appearance claim."
+    ]
+  },
+  "previews": [
+    "work/output/0.1.27/story-images-preview.png",
+    "work/output/0.1.27/letter-before-after.png"
+  ],
+  "native_proof": {
+    "source_build": "0.1.26",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archive_sha256": "08c682f98b2a5d483cbcda4c3ddf1b42ee33fe69121c32ccac26c3e60f879fc7",
+    "image_resource_count": 9,
+    "unique_PRS_streams": [
+      {
+        "members": [
+          303,
+          307,
+          321,
+          333,
+          335,
+          337
+        ],
+        "stream_sha256": "998ba7be9708616631470206018e59f8443aa1f6a2759bccea200f07607081fb",
+        "decoded_sha256": "e07ddf13b1d32f7bad27bb7295b86e0318c299eaac796a34ecbf01d5d3e045a3",
+        "decoded_bytes": 524320,
+        "instructions": 8599820,
+        "guard_ABI_exact_output": "pass"
+      },
+      {
+        "members": [
+          379
+        ],
+        "stream_sha256": "d3a1a7fc60bf49df48e0ba5618eb4c559272fd61c8707b21d0528e227b88cce7",
+        "decoded_sha256": "f6ebfa5b14c3c8d4abbe604d7d69d0ad826909070024230232467b1e4d0c3bed",
+        "decoded_bytes": 262176,
+        "instructions": 6329255,
+        "guard_ABI_exact_output": "pass"
+      },
+      {
+        "members": [
+          481,
+          483
+        ],
+        "stream_sha256": "8b0a3adb64fb9a5cc3ec753a0861da83a7f7f010f568600dec64cfa5be119ba3",
+        "decoded_sha256": "a5151024dfb326e151a7d1041982c17179978bf7f463b4185cdd9fb492e1eb4b",
+        "decoded_bytes": 524320,
+        "instructions": 8586110,
+        "guard_ABI_exact_output": "pass"
+      }
+    ],
+    "native_texture_info": [
+      {
+        "dimensions": [
+          512,
+          512
+        ],
+        "format": "0x100",
+        "instructions": 192
+      },
+      {
+        "dimensions": [
+          512,
+          256
+        ],
+        "format": "0x903",
+        "GPU_pixel_bits": "0x18000000",
+        "instructions": 185
+      }
+    ],
+    "unaltered_member_payloads": 768,
+    "unaltered_member_offsets": 776,
+    "relocated_letter": {
+      "member": 379,
+      "offset": 393216,
+      "source_zero_padding": true
+    },
+    "archive_bytes_outside_declared_edits": "exact",
+    "independent_placeholder_pixels": "pass",
+    "letter_original_U_V_and_headers": "exact",
+    "letter_visible_bounds": "all edits within 320x240 photograph",
+    "independent_English_letter_glyph_masks": "pass",
+    "linked_story_rows": 10,
+    "native_guard_and_ABI": "pass",
+    "native_file_loading": false,
+    "GPU": false,
+    "paper_recovery": "source-only estimate; not exact hidden-pixel reconstruction",
+    "placeholder_reachability_and_live_image_selection_appearance": "pending",
+    "story_library_draft_credit": 0
+  },
+  "validation": {
+    "reextracted_files": "all 10 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "preservation": "768 other member payloads and 776 original offsets exact. Letter 379 moves to checked zero padding at 0x60000; native texture headers/resource IDs and every original letter U/V color byte remain exact. Archive extent unchanged.",
+  "new_changed_sectors": 79,
+  "changed_sector_locations_from_original": 27894,
+  "normal_text_font_changed": false,
+  "meaning_notes": [
+    "All ten existing note rows retained, including miso soup, Yamato food, apology, unspecified clothing, punctuality and Kasumi signature.",
+    "Only outer quotation marks and signature spacing become image layout; English wording is reused without new story-row credit.",
+    "Work in Progress and Dummy retain the original development notices; no unfinished illustrations are invented.",
+    "The first paper-removal preview had bright Japanese ghosts; revised local paper values replaced additive brightness correction, and the corrected preview was reviewed."
+  ],
+  "pending": [
+    "Live relocated letter-archive loading, image selection and appearance",
+    "Paper-estimate artwork review and development-placeholder reachability",
+    "Three ADV01 mipmap textures and other uncovered image assets",
+    "Seven credit-name readings and independent confirmation of reference romanizations",
+    "Live credit timing/order, appearance, alignment and overlaps",
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Moving-art title treatment selection and implementation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "release": false,
+  "story_library_draft_credit": 0,
+  "current_archive_layout": {
+    "current_build": "0.1.38",
+    "archive_sha256": "71e838631f9e23fec6d8cafe2b12bdc4553eb634d1f61584e790f3d14694ab6a",
+    "member_payloads_unchanged_from": "0.1.37",
+    "member_count": 777,
+    "native_lookups": "all offsets/sector lengths match physical layout",
+    "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+  },
+  "archive_identity_note": "Earlier archive hashes/proofs remain historical payload-origin evidence; current layout identity above supersedes file placement only."
+}

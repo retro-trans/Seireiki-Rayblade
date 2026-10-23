@@ -1,0 +1,123 @@
+{
+  "version": "0.1.18",
+  "status": "Measured library wrapping packaged; native viewer/filter/parser/scroll checks pass; live appearance/navigation/memory pending",
+  "source_build": "0.1.17",
+  "changed_sections": 231,
+  "spaces_changed_to_breaks": 1067,
+  "soft_wraps_changed_to_spaces": 1183,
+  "nonempty_lines": 1433,
+  "decoded_bytes": 121903,
+  "packed_bytes": 66131,
+  "original_words_punctuation_and_paragraph_boundaries": "unchanged",
+  "profile_metadata_and_unlock_controls": "unchanged",
+  "font_and_executable": "byte-exact 0.1.17",
+  "geometry": [
+    {
+      "height": 6,
+      "script_offset": "0xf634",
+      "context_slot": 0,
+      "text_origin": [
+        40,
+        96
+      ],
+      "logical_surface": [
+        256,
+        128
+      ],
+      "physical_surface": [
+        1024,
+        512
+      ],
+      "visible_lines": 6,
+      "line_step": 16,
+      "frame": [
+        32,
+        32,
+        256,
+        168
+      ],
+      "ink_pixels": 240,
+      "pen_pixels": 236,
+      "native_instructions": 30041
+    },
+    {
+      "height": 7,
+      "script_offset": "0xf7ae",
+      "context_slot": 0,
+      "text_origin": [
+        40,
+        80
+      ],
+      "logical_surface": [
+        256,
+        128
+      ],
+      "physical_surface": [
+        1024,
+        512
+      ],
+      "visible_lines": 7,
+      "line_step": 16,
+      "frame": [
+        32,
+        32,
+        256,
+        168
+      ],
+      "ink_pixels": 240,
+      "pen_pixels": 236,
+      "native_instructions": 35168
+    }
+  ],
+  "native_counts": {
+    "filter_cases": 3890,
+    "unlock_outcomes": 358,
+    "parser_pages": 594
+  },
+  "native_instructions": {
+    "filter": 32744992,
+    "parser": 11386519,
+    "scroll": 2080293
+  },
+  "native_parser_line_occurrences": 2866,
+  "native_scroll_witnesses": [
+    {
+      "kind": "character",
+      "profile": "library.character.024",
+      "height": 6,
+      "last_skip": 17,
+      "native_button_cases": 37,
+      "bounds_and_both_directions": "pass"
+    },
+    {
+      "kind": "mech",
+      "profile": "library.mech.001",
+      "height": 7,
+      "last_skip": 11,
+      "native_button_cases": 25,
+      "bounds_and_both_directions": "pass"
+    }
+  ],
+  "maximum_page_buffer_bytes": 433,
+  "page_buffer_capacity": 512,
+  "native_proof": "work/output/0.1.18/library-layout-native-test.json",
+  "filter_proof": "work/output/0.1.18/library-native-test.json",
+  "recipe": "work/translation/en/library/layouts.en.json",
+  "previews": [
+    "work/output/0.1.18/library-6-line-preview.png",
+    "work/output/0.1.18/library-7-line-preview.png"
+  ],
+  "disc": "work/output/0.1.18/disc/Rayblade English Test 0.1.18.gdi",
+  "packaging": {
+    "reextracted_files": "all 5 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "in_game": "pending"
+  },
+  "limits": [
+    "Frame geometry stops before decorative/FPU rendering; graphics submission/callback endpoints are bounded fixtures",
+    "Glyph drawing uses independently verified advances; actual context construction/selection, clear-state handling, parser/filter/scroll instructions execute",
+    "No live GPU appearance, full navigation or long-session memory claim"
+  ],
+  "translation_credit": "No new draft credit; existing library text is reflowed without meaning changes"
+}

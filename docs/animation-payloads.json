@@ -1,0 +1,72 @@
+{
+  "status": "642 decoded identities; all 544 raw dialogue-marker coincidences mapped to native counted word streams. Full VM/consumer semantics and possible other text remain open",
+  "index": {
+    "path": "work/ui/asset-audit/ANIME/decoded-01/structure-index.json",
+    "sha256": "9d730b453b3fde62fbfc9bfb9968161c79b36d848f1b538b5ea223147fd92270"
+  },
+  "source_archive_sha256": "523c04a4842b387acd8dfacd840539707c2414d946e1112b55626b0b9736bd53",
+  "decoded_members": 642,
+  "decoded_bytes": 31250921,
+  "whole_member_consumption": "all exact",
+  "decoded_first_byte_histogram": {
+    "116": 109,
+    "12": 17,
+    "133": 1,
+    "182": 398,
+    "4": 22,
+    "8": 85,
+    "96": 1,
+    "97": 9
+  },
+  "known_Ninja_or_PNG_GIF_signature_matches": 0,
+  "JPEG_like_byte_matches": 18,
+  "recognized_or_verified_JPEGs": 0,
+  "limits": [
+    "Exact PRS consumption does not classify every decoded payload or establish it is text-free",
+    "Absent known image signatures or rejected JPEG probes cannot exclude raw/signatureless textures or encoded text commands",
+    "Source format/marker discovery changes no game or translation bytes",
+    "Controlled native resource registration and four source dispatch cases pass; whole VM reachability, later word-stream consumers, rendering and live proof remain open"
+  ],
+  "game_build_changed": false,
+  "current_game_build": "0.1.37",
+  "marker_audit": {
+    "index": "work/ui/asset-audit/ANIME/text-markers-01/marker-index.json",
+    "index_sha256": "c481c43a4fdcf2a2965a78210f333fa936eff6e013048d17ea5b41c408121f17",
+    "source_archive_sha256": "523c04a4842b387acd8dfacd840539707c2414d946e1112b55626b0b9736bd53",
+    "members_checked": 642,
+    "raw_byte_matches": 544,
+    "known_style_byte_matches": 22,
+    "duplicate_context_groups": 11,
+    "status": "Historical bounded probe; all 544 matches now have counted-word-stream context in resource_boundaries",
+    "next_evidence": "Trace later word-stream consumers and remaining VM control/data boundaries; no complete text-absence claim",
+    "new_translation_credit": 0
+  },
+  "resource_boundaries": {
+    "index": "work/ui/asset-audit/ANIME/resource-regions-01/resource-index.json",
+    "index_sha256": "d59feccbfc6ed7f58d5e0b8933463e6acd848e42e34df96a9efb602537bd8766",
+    "native_proof": "work/ui/asset-audit/ANIME/resource-regions-01/native-test.json",
+    "native_proof_sha256": "f7c18047220608a7afc5dd0fa1c655015417a7bfe1ec394dbd72689ae792503b",
+    "raw_byte_matches_in_counted_word_streams": 544,
+    "known_scenario_style_matches_in_counted_word_streams": 22,
+    "marker_field_histogram": {
+      "record_word_stream_2": 541,
+      "record_word_stream_1": 3
+    },
+    "markers_with_independently_rooted_resources": 206,
+    "standalone_members": 66,
+    "standalone_resources": 127,
+    "candidate_inline_resources": 1302,
+    "native_registration_cases": 294,
+    "native_dispatch_cases": 4,
+    "native_instructions": 1251900,
+    "status": "All inventoried marker coincidences have checked counted-word-stream context; not new dialogue commands in this reader",
+    "next_evidence": "Trace later word-stream consumers and remaining VM control/data boundaries; no complete text-absence claim",
+    "limits": [
+      "Not whole-program reachability or native hardware execution",
+      "Registration stores length-delimited pointers; subsequent word-stream interpretation remains open",
+      "No file loading, graphics submission, rendering, live timing or text-absence proof",
+      "No game/translation bytes changed or new translation credit"
+    ],
+    "new_translation_credit": 0
+  }
+}

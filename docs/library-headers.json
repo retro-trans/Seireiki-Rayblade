@@ -1,0 +1,131 @@
+{
+  "version": "0.1.19",
+  "source_build": "0.1.18",
+  "status": "Library scratch collision, decimal glyphs and age-field fit corrected; native checks and local packaging pass; live navigation/GPU/long-session gameplay pending",
+  "executable_sha256": "2dd7db544333127e3e100a912473fa1d4b2ea1c7c82d7b079b44a18540507f57",
+  "names_sha256": "7072e79d64e8b32c22df891d249fd25c3b1a6d81cf7174a1d2606ca72d08e7f1",
+  "library_sha256": "23bf456c300b6d13d0a2bae236f6a2a12df3a576de39c820eb1a95154f980e80",
+  "old_bug_reproduction": {
+    "build": "0.1.18",
+    "native_instructions": 67,
+    "overwritten_library_offsets": [
+      "0xeff0",
+      "0xeff1"
+    ],
+    "affected_profile": "library.character.026"
+  },
+  "memory": {
+    "version": "0.1.19",
+    "executable_edits": [
+      {
+        "offset": "0x2afc4",
+        "size": 4,
+        "before": "0xf200",
+        "after": "0x1f200",
+        "purpose": "common parameter scratch beyond expanded library"
+      },
+      {
+        "offset": "0x2bc8a",
+        "size": 2,
+        "before": "0xe7",
+        "after": "0x4d",
+        "purpose": "native tenths decimal point"
+      },
+      {
+        "offset": "0x2bd24",
+        "size": 2,
+        "before": "0xe7",
+        "after": "0x4d",
+        "purpose": "native scaled decimal point"
+      }
+    ],
+    "shared_capacity": 131072,
+    "library_start": 528,
+    "library_end": 122431,
+    "scratch_start": 127488,
+    "scratch_reserved_bytes": 3584,
+    "gap_bytes": 5057,
+    "names_changed_bytes": 1
+  },
+  "native_headers": {
+    "character": 144,
+    "mech": 128
+  },
+  "native_instructions": {
+    "constructor": 26128,
+    "parameters": 263734,
+    "clear": 551080,
+    "parser": 4031665,
+    "scratch_stress": 147504,
+    "decimal_stress": 238181
+  },
+  "native_queue_bytes_roundtripped": 3072,
+  "native_decimal_cases": 528,
+  "geometry": [
+    {
+      "kind": "character",
+      "script": "0xf62d",
+      "origin": [
+        40,
+        40
+      ],
+      "logical_surface": [
+        256,
+        64
+      ],
+      "physical_surface": [
+        1024,
+        256
+      ],
+      "ink_width": 240
+    },
+    {
+      "kind": "mech",
+      "script": "0xf7a7",
+      "origin": [
+        40,
+        40
+      ],
+      "logical_surface": [
+        256,
+        32
+      ],
+      "physical_surface": [
+        1024,
+        128
+      ],
+      "ink_width": 240
+    }
+  ],
+  "proof": "work/output/0.1.19/library-header-native-test.json",
+  "regression_proofs": {
+    "library-header-native-test": "work/output/0.1.19/library-header-native-test.json",
+    "genei-font-native-test": "work/output/0.1.19/genei-font-native-test.json",
+    "genei-surface-native-test": "work/output/0.1.19/genei-surface-native-test.json",
+    "ui-layout-native-test": "work/output/0.1.19/ui-layout-native-test.json",
+    "word-wrap-native-test": "work/output/0.1.19/word-wrap-native-test.json",
+    "inline-control-native-test": "work/output/0.1.19/inline-control-native-test.json",
+    "library-layout-native-test": "work/output/0.1.19/library-layout-native-test.json",
+    "scenario-native-test": "work/output/0.1.19/scenario-native-test.json",
+    "battle-english-native-test": "work/output/0.1.19/battle-english-native-test.json",
+    "chapter-card-native-test": "work/output/0.1.19/chapter-card-native-test.json"
+  },
+  "unchanged": "Font, WIN00 archive including library/chapter payloads, story and battle bytes exact 0.1.18; one D_NAMES coordinate byte and three executable bytes change",
+  "previews": [
+    "work/output/0.1.19/library-character-header-preview.png",
+    "work/output/0.1.19/library-mech-header-preview.png"
+  ],
+  "disc": "work/output/0.1.19/disc/Rayblade English Test 0.1.19.gdi",
+  "packaging": {
+    "reextracted_files": "all 5 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "in_game": "pending"
+  },
+  "limits": [
+    "Header preparation stops before portrait loading; final GPU submit is not executed",
+    "Glyph raster and graphics/allocation endpoints are bounded fixtures",
+    "Name-table slots include unused entries; complete live unlock/menu routing, GPU appearance and long-session gameplay remain unverified"
+  ],
+  "new_translation_credit": 0
+}

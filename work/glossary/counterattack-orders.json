@@ -1,0 +1,57 @@
+{
+  "kind": "Counterattack-order UI mapping supplement; no story/library draft credit",
+  "source_context_id": "names.g00.174",
+  "source_sha256": "b04682fc4a36aa3a97c09462951fea5c61bea2fea1dc407cb8e1d914f228fc45",
+  "entries": [
+    {
+      "order": 0,
+      "sprite": 58,
+      "ja_ui": "マ",
+      "en": "Manual",
+      "initial": "M",
+      "id": "order.0",
+      "inserted_build": "0.1.34",
+      "status": "Source/native-policy linked; independent meaning/live review pending"
+    },
+    {
+      "order": 1,
+      "sprite": 59,
+      "ja_ui": "反",
+      "en": "Always Counterattack",
+      "initial": "C",
+      "id": "order.1",
+      "inserted_build": "0.1.34",
+      "status": "Source/native-policy linked; independent meaning/live review pending"
+    },
+    {
+      "order": 2,
+      "sprite": 60,
+      "ja_ui": "積",
+      "en": "Be Aggressive",
+      "initial": "A",
+      "id": "order.2",
+      "inserted_build": "0.1.34",
+      "status": "Source/native-policy linked; independent meaning/live review pending"
+    },
+    {
+      "order": 3,
+      "sprite": 61,
+      "ja_ui": "無",
+      "en": "Play It Safe",
+      "initial": "S",
+      "id": "order.3",
+      "inserted_build": "0.1.34",
+      "status": "Source/native-policy linked; independent meaning/live review pending"
+    },
+    {
+      "order": 4,
+      "sprite": 62,
+      "ja_ui": "防",
+      "en": "Always Defend",
+      "initial": "D",
+      "id": "order.4",
+      "inserted_build": "0.1.34",
+      "status": "Source/native-policy linked; independent meaning/live review pending"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "id": "movie.MOV072.moving-title.subtitle",
+  "movie": "MOV072.SFD",
+  "en": "SEIREIKI RAYBLADE",
+  "treatment": "A \u2014 Original artwork + English subtitle",
+  "selection": "Explicit user reply received 2026-10-23; keep original Japanese logo artwork",
+  "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+  "source_index": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/index.json",
+  "source_index_sha256": "04acbb227ccf7f6a405ebf4e2d40685636444c3c8cacd9937306ac77c5210f70",
+  "start_frame": 1489,
+  "end_frame_exclusive": 1537,
+  "fade_in_frames": 4,
+  "fade_out_frames": 12,
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "font_scale": "Uniform source scale, consistent with selected static treatment A",
+  "subtitle_origin_y": 167,
+  "output_dimensions": [
+    320,
+    192
+  ],
+  "edit_scope": "Only English foreground/shadow strokes below row 167; no opaque plaque or background reconstruction",
+  "witnesses": [
+    {
+      "frame": 1489,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01489.png",
+      "pts": 4471529,
+      "sha256": "09f429c3868ebc1ccbf6b790f78145b42546acb95de6b91bc00eecd62b95b093"
+    },
+    {
+      "frame": 1490,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01490.png",
+      "pts": 4474535,
+      "sha256": "09f429c3868ebc1ccbf6b790f78145b42546acb95de6b91bc00eecd62b95b093"
+    },
+    {
+      "frame": 1492,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01492.png",
+      "pts": 4480547,
+      "sha256": "ba5b160d50835e61ccbb45751cf7f0a5bb21cf9fcc9cc81f4b2b2dd6f37e549b"
+    },
+    {
+      "frame": 1500,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01500.png",
+      "pts": 4504505,
+      "sha256": "369a6ba68b59b48cae19bce7f74a90fbb27e1408cf40978ac10dbab47e859f58"
+    },
+    {
+      "frame": 1515,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01515.png",
+      "pts": 4549592,
+      "sha256": "683c86d2b7ed0dfa66295b7119929e2fd7b7894d483037a1d958671c83453818"
+    },
+    {
+      "frame": 1524,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01524.png",
+      "pts": 4576649,
+      "sha256": "a3c4c8a973d6263b0e549e448484e6fd8ece2423b98d5d45b1f3c0a34eac1282"
+    },
+    {
+      "frame": 1525,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01525.png",
+      "pts": 4579652,
+      "sha256": "b649d0a67521838bd254ce0c84c0b98a21e21e7ee338599fec6ac8003723e046"
+    },
+    {
+      "frame": 1535,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01535.png",
+      "pts": 4609622,
+      "sha256": "a1da2e48124570238216f704645872f6ab5b2ea82199a0a468d8e5d6d3f64206"
+    },
+    {
+      "frame": 1536,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01536.png",
+      "pts": 4612631,
+      "sha256": "a1da2e48124570238216f704645872f6ab5b2ea82199a0a468d8e5d6d3f64206"
+    }
+  ],
+  "boundary_evidence": [
+    {
+      "index": 1488,
+      "time": 49.650256,
+      "pts": 4468523,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01488.png"
+    },
+    {
+      "index": 1489,
+      "time": 49.683656,
+      "pts": 4471529,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01489.png"
+    },
+    {
+      "index": 1536,
+      "time": 51.251456,
+      "pts": 4612631,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01536.png"
+    },
+    {
+      "index": 1537,
+      "time": 51.284822,
+      "pts": 4615634,
+      "file": "work/ui/asset-audit/movies/MOV072/frames-1360-1556_2920-3083/frame-01537.png"
+    }
+  ],
+  "remaining": [
+    "Full-motion/design review and native movie playback/sync/skip/loop/return"
+  ],
+  "story_library_draft_credit": 0
+}

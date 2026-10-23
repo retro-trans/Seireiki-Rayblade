@@ -1,0 +1,2783 @@
+{
+  "format": 1,
+  "version": "0.1.3",
+  "source": "D_NAMES.BIN group 4 and group 12 captions",
+  "entries": [
+    {
+      "id": "weapon.001",
+      "category": "weapon",
+      "ja": "剛剣ゼウレアー",
+      "en": "Mighty Sword Zeulear",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.001",
+        "names.g04.024",
+        "names.g04.214",
+        "scenario.s_089.o00b80.l00",
+        "scenario.s_089.o00b80.l01",
+        "scenario.s_089.o00b80.l02",
+        "scenario.s_089.o00bd1.l00",
+        "scenario.s_089.o00bd1.l01",
+        "scenario.s_089.o00c03.l00",
+        "scenario.s_089.o00c19.l00",
+        "scenario.s_089.o00c2a.l00",
+        "scenario.s_089.o00c52.l00",
+        "scenario.s_089.o00c52.l01",
+        "scenario.s_089.o00c52.l02",
+        "scenario.s_089.o00cad.l00",
+        "scenario.s_089.o00cce.l00",
+        "scenario.s_089.o00ce8.l00",
+        "scenario.s_089.o00d3c.l00",
+        "scenario.s_094.o01588.l00",
+        "scenario.s_094.o01588.l01",
+        "scenario.s_094.o0240d.l00",
+        "scenario.s_094.o0240d.l01",
+        "scenario.s_098.o002b6.l00",
+        "scenario.s_098.o002b6.l01",
+        "scenario.s_098.o002b6.l02",
+        "scenario.s_098.o00546.l00",
+        "scenario.s_098.o00546.l01",
+        "scenario.s_09a.o00287.l00",
+        "scenario.s_09a.o00287.l01",
+        "scenario.s_09a.o002d9.l00",
+        "scenario.s_09d.o0093e.l00",
+        "scenario.s_09d.o00977.l00",
+        "scenario.s_09d.o00994.l00",
+        "scenario.s_09d.o009ae.l00",
+        "scenario.s_09d.o009ae.l01",
+        "scenario.s_09d.o009de.l00",
+        "scenario.s_0cf.o00da0.l00",
+        "scenario.s_0cf.o00da0.l01",
+        "scenario.s_0cf.o00da0.l02"
+      ],
+      "source_indices": [
+        1,
+        24,
+        214
+      ],
+      "alternate_ja": [
+        "ゼウレアー"
+      ],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Touya proposes all available Prana into Zeulear for strike; accepted short name, risky fictional battle plan not successful guaranteed attack or new mechanism.",
+        "s_094 alternatives: Celica reports cracks in Zeulear and says it could not withstand Touya Prana. Accepted short name retained; damage observation distinct from confirmed destruction, actual repair or new real-world weapon mechanism.",
+        "s_098 pursuit/repelled alternatives propose Zeulear repairs aboard Liebhofen/at Holy Land. s_09a says still under repair, so no melee weapon this time. Source short name canonical Zeulear; pending work not completed repair or proof every future encounter lacks melee.",
+        "s_09d Mechanic A now reports Zeulear repairs finished before sortie. Source progression distinct from earlier pending repair; no independent gameplay/animation verification or new weapon modification asserted.",
+        "s_0cf Touya uses short Zeulear name and attempts loading all available Prana into sword; no new attack-stat definition or verified success guaranteed."
+      ]
+    },
+    {
+      "id": "weapon.002",
+      "category": "weapon",
+      "ja": "神剣ダイフォゾン",
+      "en": "Divine Sword Daifozon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.002",
+        "names.g04.199",
+        "names.g04.220",
+        "scenario.s_0a3.o003f6.l00",
+        "scenario.s_0a3.o003f6.l01",
+        "scenario.s_0a3.o00a30.l00",
+        "scenario.s_0a3.o00a30.l01",
+        "scenario.s_0a3.o00a76.l00",
+        "scenario.s_0a3.o00a90.l00",
+        "scenario.s_0a3.o00ab8.l00",
+        "scenario.s_0a3.o00ad5.l00",
+        "scenario.s_0a3.o00b55.l00",
+        "scenario.s_0a3.o00b55.l01",
+        "scenario.s_0a3.o00b85.l00",
+        "scenario.s_0a3.o00bf4.l00",
+        "scenario.s_0a3.o00c0c.l00",
+        "scenario.s_0a3.o00c37.l00",
+        "scenario.s_0a3.o00c37.l01",
+        "scenario.s_0a3.o00d98.l00",
+        "scenario.s_0a3.o00db7.l00",
+        "scenario.s_0a3.o00ddf.l00",
+        "scenario.s_0a3.o00e00.l00",
+        "scenario.s_0a3.o00e00.l01",
+        "scenario.s_0a3.o00e49.l00",
+        "scenario.s_0a3.o00e49.l01",
+        "scenario.s_0a3.o00e84.l00",
+        "scenario.s_0a4.o0006b.l00",
+        "scenario.s_0a4.o0009d.l00",
+        "scenario.s_0a4.o0009d.l01",
+        "scenario.s_0a4.o0009d.l02",
+        "scenario.s_0a4.o0009d.l03",
+        "scenario.s_0a4.o00103.l00",
+        "scenario.s_0a4.o00103.l01",
+        "scenario.s_0a4.o00134.l00",
+        "scenario.s_0a4.o00134.l01",
+        "scenario.s_0a4.o00134.l02",
+        "scenario.s_0a4.o00194.l00",
+        "scenario.s_0a4.o00194.l01"
+      ],
+      "source_indices": [
+        2,
+        199,
+        220
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Daifozon absent initially, Ivel message then transfer and rising Pranya/power reactions. Accepted short name, Rayblade sword distinct Zeulear. No real transfer/biological procedure or independent native unlock test.",
+        "Alternate state: Daifozon was intended for midbattle transfer but battle ended first; Celica says wait for next fight. Touya feels strange power. No forced same chronology as earlier completed transfer, actual unlock or measured stat verification."
+      ]
+    },
+    {
+      "id": "weapon.003",
+      "category": "weapon",
+      "ja": "ゼイフォニック・ブラドラー",
+      "en": "Zeifonic Bradler",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.003",
+        "names.g04.016",
+        "names.g04.095",
+        "names.g04.108",
+        "names.g04.200",
+        "names.g04.215",
+        "names.g04.221",
+        "names.g12.018",
+        "names.g12.022"
+      ],
+      "source_indices": [
+        3,
+        16,
+        95,
+        108,
+        200,
+        215,
+        221
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.004",
+      "category": "weapon",
+      "ja": "ブラン・ダイガード",
+      "en": "Blanc Daigard",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.004",
+        "names.g04.017",
+        "names.g04.222",
+        "names.g04.223",
+        "names.g12.019"
+      ],
+      "source_indices": [
+        4,
+        17,
+        222,
+        223
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.005",
+      "category": "weapon",
+      "ja": "一刀正伝 絶影",
+      "en": "True One-Sword Art: Vanishing Shadow",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.005",
+        "names.g04.201",
+        "names.g12.020",
+        "names.g12.030"
+      ],
+      "source_indices": [
+        5,
+        201
+      ],
+      "alternate_ja": [
+        "一刀正伝・絶影"
+      ],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.006",
+      "category": "weapon",
+      "ja": "一の太刀・雷剛凱斬",
+      "en": "First Blade: Mighty Thunder Triumph Slash",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.006",
+        "names.g12.021",
+        "scenario.s_0a3.o00d98.l00",
+        "scenario.s_0a3.o00db7.l00",
+        "scenario.s_0a3.o00ddf.l00",
+        "scenario.s_0a3.o00e00.l00",
+        "scenario.s_0a3.o00e00.l01",
+        "scenario.s_0a3.o00e49.l00",
+        "scenario.s_0a3.o00e49.l01",
+        "scenario.s_0a3.o00e84.l00",
+        "scenario.s_0a3.o00ea7.l00",
+        "scenario.s_0a3.o00ea7.l01",
+        "scenario.s_0a3.o00ef1.l00",
+        "scenario.s_0a3.o00f17.l00"
+      ],
+      "source_indices": [
+        6
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Yamato names newly demonstrated move Mighty Thunder Triumph Slash and Touya agrees. Existing accepted short form without source-absent First Blade prefix; no duplicate new weapon or actual gameplay unlock proof."
+      ]
+    },
+    {
+      "id": "weapon.007",
+      "category": "weapon",
+      "ja": "真ゼイフォニック・ブラドラー",
+      "en": "True Zeifonic Bradler",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.007",
+        "names.g12.023"
+      ],
+      "source_indices": [
+        7
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.008",
+      "category": "weapon",
+      "ja": "レイ・ブランザード",
+      "en": "Ray Blanzard",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.008",
+        "names.g12.024"
+      ],
+      "source_indices": [
+        8
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.009",
+      "category": "weapon",
+      "ja": "ウェンディスの翼",
+      "en": "Wings of Wendis",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.009",
+        "names.g12.025"
+      ],
+      "source_indices": [
+        9
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.010",
+      "category": "weapon",
+      "ja": "ノワール・ディファンス",
+      "en": "Noir Defense",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.010",
+        "names.g12.026"
+      ],
+      "source_indices": [
+        10
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.011",
+      "category": "weapon",
+      "ja": "シルヴァリアの聖域",
+      "en": "Sanctuary of Silvaria",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.011",
+        "names.g12.027"
+      ],
+      "source_indices": [
+        11
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.012",
+      "category": "weapon",
+      "ja": "ベルモスの轟雷",
+      "en": "Thunder of Belmos",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.012"
+      ],
+      "source_indices": [
+        12
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.013",
+      "category": "weapon",
+      "ja": "アミーナの洗礼",
+      "en": "Baptism of Amina",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.013"
+      ],
+      "source_indices": [
+        13
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.014",
+      "category": "weapon",
+      "ja": "白の贖罪",
+      "en": "White Atonement",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.014",
+        "names.g12.028"
+      ],
+      "source_indices": [
+        14
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.018",
+      "category": "weapon",
+      "ja": "仁王拳",
+      "en": "Nio Fist",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.018"
+      ],
+      "source_indices": [
+        18
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.019",
+      "category": "weapon",
+      "ja": "ゼイン・ショット",
+      "en": "Zein Shot",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.019"
+      ],
+      "source_indices": [
+        19
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.020",
+      "category": "weapon",
+      "ja": "七閃・龍操隙破",
+      "en": "Seven Flashes: Dragon Command Rift Breaker",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.020",
+        "names.g12.031"
+      ],
+      "source_indices": [
+        20
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Literal imagery is provisional; do not assume an unverified Japanese/Chinese reading or canonical English title."
+      ]
+    },
+    {
+      "id": "weapon.021",
+      "category": "weapon",
+      "ja": "トライデント",
+      "en": "Trident",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.021"
+      ],
+      "source_indices": [
+        21
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.022",
+      "category": "weapon",
+      "ja": "バンゼクルス",
+      "en": "Banzecrus",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.022"
+      ],
+      "source_indices": [
+        22
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.023",
+      "category": "weapon",
+      "ja": "ブラッディ・ローズ",
+      "en": "Bloody Rose",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.023",
+        "names.g12.032"
+      ],
+      "source_indices": [
+        23
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.025",
+      "category": "weapon",
+      "ja": "ラウクルス",
+      "en": "Raucrus",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.025"
+      ],
+      "source_indices": [
+        25
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.026",
+      "category": "weapon",
+      "ja": "二の太刀・屠龍",
+      "en": "Second Blade: Dragon Slayer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.026",
+        "names.g12.029"
+      ],
+      "source_indices": [
+        26
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.027",
+      "category": "weapon",
+      "ja": "高周波ランサー",
+      "en": "High-Frequency Lancer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.027"
+      ],
+      "source_indices": [
+        27
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.028",
+      "category": "weapon",
+      "ja": "ヴァイアル・ジェイド",
+      "en": "Vial Jade",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.028",
+        "names.g12.033",
+        "scenario.s_088.o00de3.l00",
+        "scenario.s_088.o00de3.l01",
+        "scenario.s_088.o00e25.l00",
+        "scenario.s_088.o00e25.l01",
+        "scenario.s_088.o00e6c.l00",
+        "scenario.s_088.o00e6c.l01",
+        "scenario.s_088.o00e6c.l02",
+        "scenario.s_088.o00e6c.l03",
+        "scenario.s_088.o00e6c.l04",
+        "scenario.s_088.o00e6c.l05",
+        "scenario.s_088.o00e6c.l06",
+        "scenario.s_088.o00f31.l00",
+        "scenario.s_088.o00f31.l01",
+        "scenario.s_088.o00f6c.l00",
+        "scenario.s_088.o00f6c.l01",
+        "scenario.s_088.o00f6c.l02",
+        "scenario.s_088.o00fb7.l00",
+        "scenario.s_088.o00fe0.l00",
+        "scenario.s_0ce.o01259.l00",
+        "scenario.s_0ce.o012a0.l00",
+        "scenario.s_0ce.o012a0.l01",
+        "scenario.s_0ce.o012a0.l02",
+        "scenario.s_0ce.o012a0.l03",
+        "scenario.s_0ce.o012a0.l04",
+        "scenario.s_0ce.o012a0.l05",
+        "scenario.s_0ce.o012a0.l06"
+      ],
+      "source_indices": [
+        28
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Celica tutorial: Vial Jade area attack, not particularly long range, unusable after moving, especially useful against adjacent enemies. No numeric range/area supplied.",
+        "Vial Jade area attack, limited range and explicitly cannot after moving; best when enemy units adjacent. Celica tutorial statement, no native combat/layout validation."
+      ]
+    },
+    {
+      "id": "weapon.029",
+      "category": "weapon",
+      "ja": "ヴォルティクランサー",
+      "en": "Voltic Lancer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.029",
+        "scenario.s_088.o00de3.l00",
+        "scenario.s_088.o00de3.l01",
+        "scenario.s_088.o00e25.l00",
+        "scenario.s_088.o00e25.l01",
+        "scenario.s_088.o00e6c.l00",
+        "scenario.s_088.o00e6c.l01",
+        "scenario.s_088.o00e6c.l02",
+        "scenario.s_088.o00e6c.l03",
+        "scenario.s_088.o00e6c.l04",
+        "scenario.s_088.o00e6c.l05",
+        "scenario.s_088.o00e6c.l06",
+        "scenario.s_088.o00f31.l00",
+        "scenario.s_088.o00f31.l01",
+        "scenario.s_088.o00f6c.l00",
+        "scenario.s_088.o00f6c.l01",
+        "scenario.s_088.o00f6c.l02",
+        "scenario.s_088.o00fb7.l00",
+        "scenario.s_088.o00fe0.l00",
+        "scenario.s_0ce.o01259.l01",
+        "scenario.s_0ce.o012a0.l00",
+        "scenario.s_0ce.o012a0.l01",
+        "scenario.s_0ce.o012a0.l02",
+        "scenario.s_0ce.o012a0.l05",
+        "scenario.s_0ce.o012a0.l06"
+      ],
+      "source_indices": [
+        29
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Celica tutorial: Voltic Lancer area attack, not particularly long range, especially useful against adjacent enemies. Do not copy Vial Jade no-use-after-moving restriction to this weapon.",
+        "Voltic Lancer area attack, limited range and best adjacent enemy units. Do not extend Vial Jade-only after-moving restriction to this weapon; actual native behavior not tested."
+      ]
+    },
+    {
+      "id": "weapon.030",
+      "category": "weapon",
+      "ja": "ゼイン・ライフル",
+      "en": "Zein Rifle",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.030",
+        "names.g04.041",
+        "names.g04.073"
+      ],
+      "source_indices": [
+        30,
+        41,
+        73
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.031",
+      "category": "weapon",
+      "ja": "レーザーソード",
+      "en": "Laser Sword",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.031",
+        "names.g04.049",
+        "names.g04.110",
+        "names.g04.203",
+        "names.g04.205",
+        "names.g04.207",
+        "names.g04.209",
+        "names.g04.211"
+      ],
+      "source_indices": [
+        31,
+        49,
+        110,
+        203,
+        205,
+        207,
+        209,
+        211
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.032",
+      "category": "weapon",
+      "ja": "ノワール・エクレール",
+      "en": "Noir Eclair",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.032",
+        "names.g12.034"
+      ],
+      "source_indices": [
+        32
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.033",
+      "category": "weapon",
+      "ja": "有線ブレイクアーム",
+      "en": "Wired Break Arm",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.033"
+      ],
+      "source_indices": [
+        33
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.034",
+      "category": "weapon",
+      "ja": "プレシオンブラスト",
+      "en": "Presion Blast",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.034",
+        "names.g04.142",
+        "names.g04.148",
+        "names.g04.171",
+        "names.g12.060"
+      ],
+      "source_indices": [
+        34,
+        142,
+        148,
+        171
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.035",
+      "category": "weapon",
+      "ja": "ギガント・ディスソリュージョン",
+      "en": "Gigant Dissolution",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.035",
+        "names.g12.035"
+      ],
+      "source_indices": [
+        35
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.036",
+      "category": "weapon",
+      "ja": "プラズマガトリング",
+      "en": "Plasma Gatling",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.036",
+        "names.g04.062",
+        "names.g04.132",
+        "names.g04.166",
+        "names.g04.176",
+        "names.g12.044",
+        "names.g12.052"
+      ],
+      "source_indices": [
+        36,
+        62,
+        132,
+        166,
+        176
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.037",
+      "category": "weapon",
+      "ja": "リムラッドミサイル",
+      "en": "Rimrad Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.037",
+        "names.g04.050",
+        "names.g04.070",
+        "names.g04.074"
+      ],
+      "source_indices": [
+        37,
+        50,
+        70,
+        74
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.038",
+      "category": "weapon",
+      "ja": "転移集中",
+      "en": "Focused Transfer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.038"
+      ],
+      "source_indices": [
+        38
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.039",
+      "category": "weapon",
+      "ja": "ノーグライズの風",
+      "en": "Winds of Norgrize",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.039"
+      ],
+      "source_indices": [
+        39
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.040",
+      "category": "weapon",
+      "ja": "グラディオス",
+      "en": "Gladios",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.040"
+      ],
+      "source_indices": [
+        40
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.042",
+      "category": "weapon",
+      "ja": "レス・リフラーム",
+      "en": "Res Reflame",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.042",
+        "names.g12.036"
+      ],
+      "source_indices": [
+        42
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.043",
+      "category": "weapon",
+      "ja": "プラズマキャノン",
+      "en": "Plasma Cannon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.043"
+      ],
+      "source_indices": [
+        43
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.044",
+      "category": "weapon",
+      "ja": "天舞空裂",
+      "en": "Heavenly Dance, Sky Rend",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.044"
+      ],
+      "source_indices": [
+        44
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.045",
+      "category": "weapon",
+      "ja": "ヴァルゴスの逆鱗",
+      "en": "Wrath of Vargos",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.045",
+        "names.g12.037"
+      ],
+      "source_indices": [
+        45
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.046",
+      "category": "weapon",
+      "ja": "プラズマウィップ",
+      "en": "Plasma Whip",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.046"
+      ],
+      "source_indices": [
+        46
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.047",
+      "category": "weapon",
+      "ja": "スプレッドミサイル",
+      "en": "Spread Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.047",
+        "scenario.s_08e.o007f3.l00",
+        "scenario.s_08e.o007f3.l01",
+        "scenario.s_08e.o007f3.l02",
+        "scenario.s_08e.o00858.l00",
+        "scenario.s_08e.o0087c.l00",
+        "scenario.s_08e.o00892.l00",
+        "scenario.s_08e.o00892.l01",
+        "scenario.s_08e.o008f1.l00",
+        "scenario.s_08e.o00912.l00",
+        "scenario.s_08e.o00996.l00",
+        "scenario.s_08e.o009b5.l00",
+        "scenario.s_08e.o00a6f.l00",
+        "scenario.s_08e.o00a94.l00",
+        "scenario.s_08e.o00aa7.l00",
+        "scenario.s_08e.o00aa7.l01",
+        "scenario.s_08e.o00adf.l00",
+        "scenario.s_08e.o00b06.l00",
+        "scenario.s_08e.o00b2f.l00"
+      ],
+      "source_indices": [
+        47
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "s_08e Kasumi Orbest scene: Spread Missile name and only printed fictional safety/target narration. Fear/reaction not expanded with blast casualties, real hardware procedure or additional targeting steps."
+      ]
+    },
+    {
+      "id": "weapon.048",
+      "category": "weapon",
+      "ja": "ブライファング・リメイション",
+      "en": "Bryfang Rimation",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.048",
+        "names.g12.038"
+      ],
+      "source_indices": [
+        48
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.051",
+      "category": "weapon",
+      "ja": "ラルフィン・プライディール",
+      "en": "Ralfin Prydeil",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.051"
+      ],
+      "source_indices": [
+        51
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.052",
+      "category": "weapon",
+      "ja": "プラズマショット",
+      "en": "Plasma Shot",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.052",
+        "names.g04.169"
+      ],
+      "source_indices": [
+        52,
+        169
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.053",
+      "category": "weapon",
+      "ja": "スタンロッド",
+      "en": "Stun Rod",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.053"
+      ],
+      "source_indices": [
+        53
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.054",
+      "category": "weapon",
+      "ja": "プラズマソード",
+      "en": "Plasma Sword",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.054",
+        "names.g04.061",
+        "names.g04.072",
+        "names.g04.075",
+        "names.g04.112",
+        "names.g04.114",
+        "names.g04.117",
+        "names.g04.120",
+        "names.g04.123",
+        "names.g04.131",
+        "names.g04.133",
+        "names.g04.136"
+      ],
+      "source_indices": [
+        54,
+        61,
+        72,
+        75,
+        112,
+        114,
+        117,
+        120,
+        123,
+        131,
+        133,
+        136
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.055",
+      "category": "weapon",
+      "ja": "エスジオンミサイル",
+      "en": "Esgion Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.055"
+      ],
+      "source_indices": [
+        55
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.056",
+      "category": "weapon",
+      "ja": "ファルジオカノン",
+      "en": "Falgio Cannon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.056"
+      ],
+      "source_indices": [
+        56
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.057",
+      "category": "weapon",
+      "ja": "機銃",
+      "en": "Machine Gun",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.057",
+        "names.g04.058",
+        "names.g04.081",
+        "names.g04.140",
+        "names.g04.157",
+        "names.g04.159"
+      ],
+      "source_indices": [
+        57,
+        58,
+        81,
+        140,
+        157,
+        159
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.059",
+      "category": "weapon",
+      "ja": "ゲウマミサイル",
+      "en": "Geuma Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.059"
+      ],
+      "source_indices": [
+        59
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.060",
+      "category": "weapon",
+      "ja": "大型ミサイル",
+      "en": "Heavy Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.060"
+      ],
+      "source_indices": [
+        60
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.063",
+      "category": "weapon",
+      "ja": "プラズマランス",
+      "en": "Plasma Lance",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.063",
+        "names.g04.150"
+      ],
+      "source_indices": [
+        63,
+        150
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.064",
+      "category": "weapon",
+      "ja": "ゼイン・カノン",
+      "en": "Zein Cannon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.064",
+        "names.g04.151"
+      ],
+      "source_indices": [
+        64,
+        151
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.065",
+      "category": "weapon",
+      "ja": "デュバルナック・ライバー",
+      "en": "Duvalnac Reiber",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.065",
+        "names.g12.045"
+      ],
+      "source_indices": [
+        65
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.066",
+      "category": "weapon",
+      "ja": "プラズマドライブ",
+      "en": "Plasma Drive",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.066"
+      ],
+      "source_indices": [
+        66
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.067",
+      "category": "weapon",
+      "ja": "プラズマナックル",
+      "en": "Plasma Knuckle",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.067"
+      ],
+      "source_indices": [
+        67
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.068",
+      "category": "weapon",
+      "ja": "オーガディスの斬撃",
+      "en": "Slash of Ogadis",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.068"
+      ],
+      "source_indices": [
+        68
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.069",
+      "category": "weapon",
+      "ja": "プレシオンショット",
+      "en": "Presion Shot",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.069"
+      ],
+      "source_indices": [
+        69
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.071",
+      "category": "weapon",
+      "ja": "ギガプレシオンブラスト",
+      "en": "Giga Presion Blast",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.071"
+      ],
+      "source_indices": [
+        71
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.076",
+      "category": "weapon",
+      "ja": "タワー・キャノン",
+      "en": "Tower Cannon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.076"
+      ],
+      "source_indices": [
+        76
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.077",
+      "category": "weapon",
+      "ja": "ゼイン・ストリーム",
+      "en": "Zein Stream",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.077"
+      ],
+      "source_indices": [
+        77
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.078",
+      "category": "weapon",
+      "ja": "プレシオン砲",
+      "en": "Presion Cannon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.078"
+      ],
+      "source_indices": [
+        78
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.079",
+      "category": "weapon",
+      "ja": "プラズマバルカンファランクス",
+      "en": "Plasma Vulcan Phalanx",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.079"
+      ],
+      "source_indices": [
+        79
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.080",
+      "category": "weapon",
+      "ja": "ミサイルランチャー",
+      "en": "Missile Launcher",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.080"
+      ],
+      "source_indices": [
+        80
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.082",
+      "category": "weapon",
+      "ja": "幻夜刀・天翔空裂",
+      "en": "Phantom Night Blade: Heaven Soar, Sky Rend",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.082"
+      ],
+      "source_indices": [
+        82
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.083",
+      "category": "weapon",
+      "ja": "シュヴァハイムの咆哮",
+      "en": "Roar of Schwaheim",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.083"
+      ],
+      "source_indices": [
+        83
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.084",
+      "category": "weapon",
+      "ja": "天の太刀・紫焔凱絶斬",
+      "en": "Heavenly Blade: Violet Flame Supreme Victory Slash",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.084"
+      ],
+      "source_indices": [
+        84
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.085",
+      "category": "weapon",
+      "ja": "珠羅刀 白蓮",
+      "en": "Shura Blade: White Lotus",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.085"
+      ],
+      "source_indices": [
+        85
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.086",
+      "category": "weapon",
+      "ja": "カーネスの翼",
+      "en": "Wings of Carnes",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.086",
+        "names.g04.089",
+        "names.g04.092"
+      ],
+      "source_indices": [
+        86,
+        89,
+        92
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.087",
+      "category": "weapon",
+      "ja": "双覇・疾風魔狼閃光斬",
+      "en": "Twin Supremacy: Gale Demon Wolf Flash Slash",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.087"
+      ],
+      "source_indices": [
+        87
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.088",
+      "category": "weapon",
+      "ja": "珠羅刀 蒼覇",
+      "en": "Shura Blade: Azure Dominion",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.088"
+      ],
+      "source_indices": [
+        88
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.090",
+      "category": "weapon",
+      "ja": "唸り斬り裂け大気",
+      "en": "Roar and Rend the Air",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.090"
+      ],
+      "source_indices": [
+        90
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.091",
+      "category": "weapon",
+      "ja": "珠羅刀 紅牙",
+      "en": "Shura Blade: Crimson Fang",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.091"
+      ],
+      "source_indices": [
+        91
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.093",
+      "category": "weapon",
+      "ja": "烈・炎波昇天轟弾破",
+      "en": "Fury: Flame Wave, Heavenward Thunder Burst",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.093"
+      ],
+      "source_indices": [
+        93
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.094",
+      "category": "weapon",
+      "ja": "聖剣ランゼイダー",
+      "en": "Holy Sword Lanzeider",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.094"
+      ],
+      "source_indices": [
+        94
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.096",
+      "category": "weapon",
+      "ja": "オリジナル・シン",
+      "en": "Original Sin",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.096",
+        "names.g12.039"
+      ],
+      "source_indices": [
+        96
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.097",
+      "category": "weapon",
+      "ja": "凄然たる奈落",
+      "en": "Dreadful Abyss",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.097"
+      ],
+      "source_indices": [
+        97
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.098",
+      "category": "weapon",
+      "ja": "ラルベール・ブラドラー",
+      "en": "Ralber Bradler",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.098"
+      ],
+      "source_indices": [
+        98
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.099",
+      "category": "weapon",
+      "ja": "セルバリオ・ゼオ",
+      "en": "Selbario Zeo",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.099"
+      ],
+      "source_indices": [
+        99
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Source begins with Se, unlike the separate Zelbario equipment name. Keep distinct pending voice/animation review."
+      ]
+    },
+    {
+      "id": "weapon.100",
+      "category": "weapon",
+      "ja": "哀しみの風そよぐロンド",
+      "en": "Rondo in a Breeze of Sorrow",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.100",
+        "names.g12.040"
+      ],
+      "source_indices": [
+        100
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.101",
+      "category": "weapon",
+      "ja": "聖剣エンゲーザー",
+      "en": "Holy Sword Engezer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.101"
+      ],
+      "source_indices": [
+        101
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.102",
+      "category": "weapon",
+      "ja": "ゼルバリオ",
+      "en": "Zelbario",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.102"
+      ],
+      "source_indices": [
+        102
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.103",
+      "category": "weapon",
+      "ja": "現し身の享楽",
+      "en": "Pleasures of the Mortal Form",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.103",
+        "names.g12.041"
+      ],
+      "source_indices": [
+        103
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.104",
+      "category": "weapon",
+      "ja": "ギガプラズマソード",
+      "en": "Giga Plasma Sword",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.104"
+      ],
+      "source_indices": [
+        104
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.105",
+      "category": "weapon",
+      "ja": "ティデール・ブラドラー",
+      "en": "Tidear Bradler",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.105"
+      ],
+      "source_indices": [
+        105
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.106",
+      "category": "weapon",
+      "ja": "歓喜の御柱",
+      "en": "Divine Pillar of Rapture",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.106",
+        "names.g12.042"
+      ],
+      "source_indices": [
+        106
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.107",
+      "category": "weapon",
+      "ja": "聖剣マーシュニクス",
+      "en": "Holy Sword Marshnix",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.107"
+      ],
+      "source_indices": [
+        107
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.109",
+      "category": "weapon",
+      "ja": "憤怒の垂迹",
+      "en": "Manifestation of Wrath",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.109",
+        "names.g12.043"
+      ],
+      "source_indices": [
+        109
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.111",
+      "category": "weapon",
+      "ja": "ダイオミサイル",
+      "en": "Daio Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.111",
+        "names.g04.204",
+        "names.g04.206",
+        "names.g04.208",
+        "names.g04.210",
+        "names.g04.212"
+      ],
+      "source_indices": [
+        111,
+        204,
+        206,
+        208,
+        210,
+        212
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.113",
+      "category": "weapon",
+      "ja": "ブラッシュ・ブラスト",
+      "en": "Brush Blast",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.113",
+        "names.g04.115",
+        "names.g04.118",
+        "names.g04.121",
+        "names.g04.124",
+        "names.g12.049"
+      ],
+      "source_indices": [
+        113,
+        115,
+        118,
+        121,
+        124
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.116",
+      "category": "weapon",
+      "ja": "降雷刃",
+      "en": "Thunderfall Blade",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.116",
+        "names.g12.046"
+      ],
+      "source_indices": [
+        116
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.119",
+      "category": "weapon",
+      "ja": "分身斬",
+      "en": "Clone Slash",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.119",
+        "names.g12.047"
+      ],
+      "source_indices": [
+        119
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.122",
+      "category": "weapon",
+      "ja": "スラッシュ・ブラスト",
+      "en": "Slash Blast",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.122",
+        "names.g12.048"
+      ],
+      "source_indices": [
+        122
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.125",
+      "category": "weapon",
+      "ja": "ロングライフル",
+      "en": "Long Rifle",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.125",
+        "names.g04.127",
+        "names.g12.050"
+      ],
+      "source_indices": [
+        125,
+        127
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.126",
+      "category": "weapon",
+      "ja": "マイクロミサイル",
+      "en": "Micro Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.126",
+        "names.g04.128",
+        "names.g04.154",
+        "names.g04.162"
+      ],
+      "source_indices": [
+        126,
+        128,
+        154,
+        162
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.129",
+      "category": "weapon",
+      "ja": "プレシオンガン",
+      "en": "Presion Gun",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.129",
+        "names.g12.051"
+      ],
+      "source_indices": [
+        129
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.130",
+      "category": "weapon",
+      "ja": "ガルムミサイル",
+      "en": "Garm Missile",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.130"
+      ],
+      "source_indices": [
+        130
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.134",
+      "category": "weapon",
+      "ja": "多連装プラズマガトリング",
+      "en": "Multi-Barrel Plasma Gatling",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.134",
+        "names.g04.137"
+      ],
+      "source_indices": [
+        134,
+        137
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.135",
+      "category": "weapon",
+      "ja": "バイン・コレダー",
+      "en": "Bine Collider",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.135",
+        "names.g04.138",
+        "names.g12.053"
+      ],
+      "source_indices": [
+        135,
+        138
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.139",
+      "category": "weapon",
+      "ja": "プラグマティックソーサー",
+      "en": "Pragmatic Saucer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.139"
+      ],
+      "source_indices": [
+        139
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.141",
+      "category": "weapon",
+      "ja": "プラズマファング",
+      "en": "Plasma Fang",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.141",
+        "names.g04.144",
+        "names.g04.224"
+      ],
+      "source_indices": [
+        141,
+        144,
+        224
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.143",
+      "category": "weapon",
+      "ja": "真分身斬",
+      "en": "True Clone Slash",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.143",
+        "names.g12.054"
+      ],
+      "source_indices": [
+        143
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.145",
+      "category": "weapon",
+      "ja": "フォースビット",
+      "en": "Force Bit",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.145",
+        "names.g04.225"
+      ],
+      "source_indices": [
+        145,
+        225
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.146",
+      "category": "weapon",
+      "ja": "エンゼル・ハィロウ",
+      "en": "Angel Halo",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.146",
+        "names.g04.226",
+        "names.g12.055"
+      ],
+      "source_indices": [
+        146,
+        226
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Nonstandard source spelling interpreted as Angel Halo; keep consistent across weapon and gallery labels."
+      ]
+    },
+    {
+      "id": "weapon.147",
+      "category": "weapon",
+      "ja": "ストライク・アンカー",
+      "en": "Strike Anchor",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.147"
+      ],
+      "source_indices": [
+        147
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.149",
+      "category": "weapon",
+      "ja": "ジグリム砲",
+      "en": "Zigrim Cannon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.149",
+        "scenario.s_04b.o00c3f.p01.l00",
+        "scenario.s_04b.o00c3f.p01.l01",
+        "scenario.s_04b.o0119d.p01.l00",
+        "scenario.s_04b.o0119d.p01.l01",
+        "scenario.s_04b.o01c63.p01.l00",
+        "scenario.s_04b.o01c63.p01.l01"
+      ],
+      "source_indices": [
+        149
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Growster boasts of the glorious Zigrim Cannon in repeated s_04b arrivals. Glorious is his epithet around the existing weapon name, not a separate parsed weapon or confirmed upgrade."
+      ]
+    },
+    {
+      "id": "weapon.152",
+      "category": "weapon",
+      "ja": "赤き血の紋章",
+      "en": "Crest of Crimson Blood",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.152",
+        "names.g12.056"
+      ],
+      "source_indices": [
+        152
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.153",
+      "category": "weapon",
+      "ja": "黒の裁き",
+      "en": "Black Judgment",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.153"
+      ],
+      "source_indices": [
+        153
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.155",
+      "category": "weapon",
+      "ja": "プラズマガン",
+      "en": "Plasma Gun",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.155"
+      ],
+      "source_indices": [
+        155
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.156",
+      "category": "weapon",
+      "ja": "ブレイクアーム",
+      "en": "Break Arm",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.156"
+      ],
+      "source_indices": [
+        156
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.158",
+      "category": "weapon",
+      "ja": "有線アーム",
+      "en": "Wired Arm",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.158"
+      ],
+      "source_indices": [
+        158
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.160",
+      "category": "weapon",
+      "ja": "ヒートブレード",
+      "en": "Heat Blade",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.160"
+      ],
+      "source_indices": [
+        160
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.161",
+      "category": "weapon",
+      "ja": "プレシオンカノン",
+      "en": "Presion Cannon",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.161"
+      ],
+      "source_indices": [
+        161
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.163",
+      "category": "weapon",
+      "ja": "プラズマサイズ",
+      "en": "Plasma Scythe",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.163"
+      ],
+      "source_indices": [
+        163
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval.",
+        "Weapon context indicates Scythe, not the ordinary word Size."
+      ]
+    },
+    {
+      "id": "weapon.164",
+      "category": "weapon",
+      "ja": "ディグ・ブライザー",
+      "en": "Dig Bryzer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.164",
+        "names.g04.181",
+        "names.g04.184",
+        "names.g12.057"
+      ],
+      "source_indices": [
+        164,
+        181,
+        184
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.165",
+      "category": "weapon",
+      "ja": "プラズマアックス",
+      "en": "Plasma Axe",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.165",
+        "names.g04.168",
+        "names.g04.175",
+        "names.g12.059"
+      ],
+      "source_indices": [
+        165,
+        168,
+        175
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.167",
+      "category": "weapon",
+      "ja": "ブランザイバー",
+      "en": "Branzaiber",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.167",
+        "names.g12.058"
+      ],
+      "source_indices": [
+        167
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.170",
+      "category": "weapon",
+      "ja": "パワーストリング",
+      "en": "Power String",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.170",
+        "names.g04.177"
+      ],
+      "source_indices": [
+        170,
+        177
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.172",
+      "category": "weapon",
+      "ja": "高周波クロー",
+      "en": "High-Frequency Claw",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.172",
+        "names.g04.173",
+        "names.g12.061"
+      ],
+      "source_indices": [
+        172,
+        173
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.174",
+      "category": "weapon",
+      "ja": "多連装ロケットランチャー",
+      "en": "Multi-Rocket Launcher",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.174"
+      ],
+      "source_indices": [
+        174
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.178",
+      "category": "weapon",
+      "ja": "ドラグディスベイド",
+      "en": "Dragdisbade",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.178",
+        "names.g12.062"
+      ],
+      "source_indices": [
+        178
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.179",
+      "category": "weapon",
+      "ja": "プラズマランサー",
+      "en": "Plasma Lancer",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.179"
+      ],
+      "source_indices": [
+        179
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.180",
+      "category": "weapon",
+      "ja": "スラッシュランス",
+      "en": "Slash Lance",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.180",
+        "names.g12.063"
+      ],
+      "source_indices": [
+        180
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.182",
+      "category": "weapon",
+      "ja": "プラズマザンバー",
+      "en": "Plasma Zamber",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.182"
+      ],
+      "source_indices": [
+        182
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.183",
+      "category": "weapon",
+      "ja": "クラッシュザンバー",
+      "en": "Crash Zamber",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.183",
+        "names.g12.064"
+      ],
+      "source_indices": [
+        183
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.185",
+      "category": "weapon",
+      "ja": "かぎ爪",
+      "en": "Claw",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.185",
+        "names.g04.188",
+        "names.g04.190"
+      ],
+      "source_indices": [
+        185,
+        188,
+        190
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.186",
+      "category": "weapon",
+      "ja": "エムルレーザー",
+      "en": "Emul Laser",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.186",
+        "names.g04.187",
+        "names.g04.189",
+        "names.g04.191"
+      ],
+      "source_indices": [
+        186,
+        187,
+        189,
+        191
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.192",
+      "category": "weapon",
+      "ja": "皇剣デイズザイファー",
+      "en": "Imperial Sword Deiz Zeipher",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.192"
+      ],
+      "source_indices": [
+        192
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.193",
+      "category": "weapon",
+      "ja": "バリオン・ディスインテグレーター",
+      "en": "Baryon Disintegrator",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.193"
+      ],
+      "source_indices": [
+        193
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.194",
+      "category": "weapon",
+      "ja": "皇剣リーブラ",
+      "en": "Imperial Sword Libra",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.194"
+      ],
+      "source_indices": [
+        194
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.195",
+      "category": "weapon",
+      "ja": "ライ・トレイアー",
+      "en": "Rai Treiar",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.195"
+      ],
+      "source_indices": [
+        195
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.196",
+      "category": "weapon",
+      "ja": "皇剣ネブロイダー",
+      "en": "Imperial Sword Nebroider",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.196"
+      ],
+      "source_indices": [
+        196
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.197",
+      "category": "weapon",
+      "ja": "グラン・エクスプロジオン",
+      "en": "Grand Explosion",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.197"
+      ],
+      "source_indices": [
+        197
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.198",
+      "category": "weapon",
+      "ja": "修理機能",
+      "en": "Repair Function",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.198"
+      ],
+      "source_indices": [
+        198
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.202",
+      "category": "weapon",
+      "ja": "剛剣ゼウレアー（故障中）",
+      "en": "Mighty Sword Zeulear (Malfunctioning)",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.202",
+        "names.g04.217"
+      ],
+      "source_indices": [
+        202,
+        217
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.213",
+      "category": "weapon",
+      "ja": "レイオン・ダイガード",
+      "en": "Rayon Daigard",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.213"
+      ],
+      "source_indices": [
+        213
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.216",
+      "category": "weapon",
+      "ja": "殴り",
+      "en": "Punch",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.216"
+      ],
+      "source_indices": [
+        216
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.218",
+      "category": "weapon",
+      "ja": "紅き光",
+      "en": "Crimson Light",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.218"
+      ],
+      "source_indices": [
+        218
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    },
+    {
+      "id": "weapon.219",
+      "category": "weapon",
+      "ja": "蒼き光",
+      "en": "Azure Light",
+      "status": "editorial_draft",
+      "source_ids": [
+        "names.g04.219"
+      ],
+      "source_indices": [
+        219
+      ],
+      "alternate_ja": [],
+      "notes": [
+        "Weapon and special-move names are editorial English drafts, not claimed official romanizations. Plain weapon types are translated directly. Fantasy names are transliterated consistently. Long coined kanji techniques retain their imagery in full rather than being cut to the old byte budget. Names and readings need animation/voice/context review before approval."
+      ]
+    }
+  ]
+}

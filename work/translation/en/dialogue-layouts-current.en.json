@@ -1,0 +1,13 @@
+{
+  "version": "0.1.41",
+  "font_sha256": "5fe1480136b8c7d2bb15a32b17588edc0459fcf9c1079c9aa4b1075e11a4d181",
+  "pen_width": 236,
+  "texture_dimension_cap": 1024,
+  "apply_to": "All inserted English story, embedded and battle dialogue",
+  "source_rows": "Retain original rows and wording; reflow compiled presentation only",
+  "line_policy": "Join obsolete single line breaks; preserve double-break paragraphs and original FE page breaks",
+  "word_policy": "Wrap at spaces using measured advances; never force word splitting",
+  "controls": "Preserve every non-layout operand in exact relative order; three-line automatic pagination",
+  "implementation": "tools/dialogue_reflow.py",
+  "build": "tools/build_dialogue_reflow.py"
+}

@@ -1,0 +1,249 @@
+{
+  "source_executable_sha256": "08f34a6a8b55a04c03bfe4e6d3a294792d8113e67f79c7759f9efbaeff29b9a5",
+  "scan_region": [
+    37004,
+    65536
+  ],
+  "commands": 13,
+  "story_library_draft_credit": 0,
+  "coverage": "Embedded VM program region only; full VM/native text coverage remains unproven",
+  "rows": [
+    {
+      "id": "embedded.o09f55",
+      "command_offset": 40789,
+      "source_offset": 40792,
+      "source_bytes": 73,
+      "command_end": 40865,
+      "source_sha256": "d73bf52a400e9f2df8b2c8782dcf6cec752eeeafdb953866e6c8274342579531",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o00fb9",
+      "story_draft_rows": [
+        "scenario.s_000.o00fb9.l00",
+        "scenario.s_000.o00fb9.l01",
+        "scenario.s_000.o00fb9.l02"
+      ],
+      "draft_sha256": "95a3cd917d315eef4f34f17d2657ae551dca09191a10bab8a5ce328a2d5f054e",
+      "en": "Yamato: \"Okay, here's what the girls<NL>think of you. The higher the number,<NL>the more they like you, of course.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o09fa8",
+      "command_offset": 40872,
+      "source_offset": 40875,
+      "source_bytes": 58,
+      "command_end": 40933,
+      "source_sha256": "b9a0f051ba380459be84a6caffab733fdada965829b88fc927cf86117413bbd6",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o0100c",
+      "story_draft_rows": [
+        "scenario.s_000.o0100c.l00",
+        "scenario.s_000.o0100c.l01"
+      ],
+      "draft_sha256": "d29d22a48e71c9d0826aed926376a8aec160fa9e15edb7f453bf690e76cfdd05",
+      "en": "Yamato: \"Here's your current Affection rating.<NL>Make good use of your Topics and you'll be fine. Let's do our best!\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o09fec",
+      "command_offset": 40940,
+      "source_offset": 40943,
+      "source_bytes": 30,
+      "command_end": 40973,
+      "source_sha256": "4a5a27146eb3d4f3d7b73e71ccb22b965b41c25d646d8a658cd10d4dd6735b60",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o01050",
+      "story_draft_rows": [
+        "scenario.s_000.o01050.l00"
+      ],
+      "draft_sha256": "54fc1614b0be6c53286d43c594be49db1b166b86fdb319cfb975a20a001f0ebc",
+      "en": "Yamato: \"And now, it's time for our regular Affection check!\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a209",
+      "command_offset": 41481,
+      "source_offset": 41484,
+      "source_bytes": 51,
+      "command_end": 41535,
+      "source_sha256": "d2c7560fa708208b019e2209a47265232abdf3603ce8957032688b0b3c603ad6",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o0126d",
+      "story_draft_rows": [
+        "scenario.s_000.o0126d.l00",
+        "scenario.s_000.o0126d.l01"
+      ],
+      "draft_sha256": "c99d29e2ef6ab27808d01d17bb7635d31772284e87ce01aa47061bc0d7991d47",
+      "en": "Yamato: \"Hmm. This isn't looking good, is it?<NL>You should make a little more effort to get around.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a246",
+      "command_offset": 41542,
+      "source_offset": 41545,
+      "source_bytes": 56,
+      "command_end": 41601,
+      "source_sha256": "6a5a3026ddb66bec499db59fbc8b07cede9fe76052318b061ece021eedbb767b",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o012aa",
+      "story_draft_rows": [
+        "scenario.s_000.o012aa.l00",
+        "scenario.s_000.o012aa.l01",
+        "scenario.s_000.o012aa.l02"
+      ],
+      "draft_sha256": "69ca9dcd2039e58705bc1d45dfad7b5f10032ea9ef94766453756a55f5539f0c",
+      "en": "Yamato: \"You're getting there.<NL>You've got to keep using your Topics.<NL>There's nothing to gain by hoarding them.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a288",
+      "command_offset": 41608,
+      "source_offset": 41611,
+      "source_bytes": 16,
+      "command_end": 41627,
+      "source_sha256": "7aa6e814997a34ccc6c0a86fb2ab302d95bca850efd3077354ebccae62118f79",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o012ec",
+      "story_draft_rows": [
+        "scenario.s_000.o012ec.l00"
+      ],
+      "draft_sha256": "2ec918c26e422b22afcc0ad82648c6617303f25125a7aed31102920938bdb906",
+      "en": "Yamato: \"You're doing all right.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a2a2",
+      "command_offset": 41634,
+      "source_offset": 41637,
+      "source_bytes": 65,
+      "command_end": 41702,
+      "source_sha256": "0835d94e655d5c5222eb0e23aa0fec3fa8c81d23e392846af53fc29d3f4a3a04",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o01306",
+      "story_draft_rows": [
+        "scenario.s_000.o01306.l00",
+        "scenario.s_000.o01306.l01",
+        "scenario.s_000.o01306.l02"
+      ],
+      "draft_sha256": "f01d29f0cb420fc8ec6e922aae0d654150d27f1fc118d45046b8813a84216534",
+      "en": "Yamato: \"You're doing all right.<NL>Keep it up and go for it!<NL>...Oh, dear! How unladylike of me...\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a2ed",
+      "command_offset": 41709,
+      "source_offset": 41712,
+      "source_bytes": 49,
+      "command_end": 41761,
+      "source_sha256": "cbfe171c6eb758424df32d512605e3a1949e34fc8b65432890b3f2bcbd7dd100",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o01351",
+      "story_draft_rows": [
+        "scenario.s_000.o01351.l00",
+        "scenario.s_000.o01351.l01"
+      ],
+      "draft_sha256": "9834258127d44b931b182c27900b343403db74854d011a63e50672d4ee67c018",
+      "en": "Yamato: \"Looking good! You can do it when you try, Touya.<NL>But don't try to please everyone.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a328",
+      "command_offset": 41768,
+      "source_offset": 41771,
+      "source_bytes": 57,
+      "command_end": 41828,
+      "source_sha256": "c7a2b5067cd4c4061b6090050d79e0db125f9496d29565da2e3612a3c8f31657",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o0138c",
+      "story_draft_rows": [
+        "scenario.s_000.o0138c.l00",
+        "scenario.s_000.o0138c.l01",
+        "scenario.s_000.o0138c.l02"
+      ],
+      "draft_sha256": "80413b3a44c69a8857a717e77bcd9ebae57327aba6a48c25126a7317e994fe04",
+      "en": "Yamato: \"You're getting a lot of affection.<NL>But don't get complacent.<NL>A maiden's heart is complicated, you know.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a36b",
+      "command_offset": 41835,
+      "source_offset": 41838,
+      "source_bytes": 58,
+      "command_end": 41896,
+      "source_sha256": "039fe452fb616f00691d72507d7a35ae9a5b4f694454c7909a1eade508e75a16",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o013cf",
+      "story_draft_rows": [
+        "scenario.s_000.o013cf.l00",
+        "scenario.s_000.o013cf.l01"
+      ],
+      "draft_sha256": "74f87e8f1741cd3c96e1702f4a05af76cf2034d08fd4e27e2840e114901155a0",
+      "en": "Yamato: \"Wonderful, wonderful! But don't relax just yet.<NL>You'll still have to take the lead at the end.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0a3af",
+      "command_offset": 41903,
+      "source_offset": 41906,
+      "source_bytes": 63,
+      "command_end": 41969,
+      "source_sha256": "18c0ece23336a65cc522ba8ff42b5ab8dbcd78cae91552e13c1d1303efe0b190",
+      "style": 0,
+      "story_draft_block": "scenario.s_000.o01413",
+      "story_draft_rows": [
+        "scenario.s_000.o01413.l00",
+        "scenario.s_000.o01413.l01",
+        "scenario.s_000.o01413.l02"
+      ],
+      "draft_sha256": "9b16c0b17ba5dadee5386b21770a15c797972cc72407549c306620e0596dcb19",
+      "en": "Yamato: \"Hey, Mr. Charming!<NL>Looks like there's nothing left to worry about.<NL>But keep treating them well right to the end.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0deb2",
+      "command_offset": 57010,
+      "source_offset": 57013,
+      "source_bytes": 45,
+      "command_end": 57058,
+      "source_sha256": "3064bec612c1573b2094682bf02b5cee0c6a060a7b21e55305fc4be2b1c0f5b7",
+      "style": 0,
+      "story_draft_block": "scenario.s_05d.o005d9",
+      "story_draft_rows": [
+        "scenario.s_05d.o005d9.l00",
+        "scenario.s_05d.o005d9.l01",
+        "scenario.s_05d.o005d9.l02"
+      ],
+      "draft_sha256": "e3f92a517519fa24cfc51a29fac5000aca917a5c0e2c93a8ed26f9be5ecbf2c4",
+      "en": "Clovis: \"Come on, we're friends.<NL>Don't be so cold...<NL><FC:05:48> Ngh!!\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    },
+    {
+      "id": "embedded.o0df82",
+      "command_offset": 57218,
+      "source_offset": 57221,
+      "source_bytes": 31,
+      "command_end": 57252,
+      "source_sha256": "14736b7e766c71ef3e61af51b6297837393c1d083ceb7277bfe758717c52e46c",
+      "style": 0,
+      "story_draft_block": "scenario.s_087.o0103e",
+      "story_draft_rows": [
+        "scenario.s_087.o0103e.l00"
+      ],
+      "draft_sha256": "c98beef6bd4698d555c4cbde47ab291207bf633a27d56bd6a080b555f0201eef",
+      "en": "Celica: \"...Anyway. Let's head for the Holy Land for now.\"",
+      "context_review": "Same named speaker and message purpose in embedded affection-check or event copy; existing wording retained",
+      "status": "existing draft linked; independent meaning review pending"
+    }
+  ]
+}

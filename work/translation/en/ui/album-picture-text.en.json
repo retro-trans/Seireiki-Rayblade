@@ -1,0 +1,210 @@
+{
+  "archive": "ALBUM.AFS",
+  "original_archive_sha256": "c2bae6b229d75f64128cda79acd804daffd4f744f046224136e8a7521e4d2f3f",
+  "pictures": [
+    {
+      "id": "album.picture.015",
+      "member": 15,
+      "source_packed_sha256": "45f9bd4ecb7c659bb47e964aaa2d3964eb977b916a828ca72b1e90a4b630cb06",
+      "source_decoded_sha256": "06fc0e275efb8690d5f3b4cbd55ea883766b15a78da06ffa4b8c04fd9e6bc851",
+      "format": {
+        "pixel_format": 3,
+        "data_format": 9,
+        "width": 512,
+        "height": 256
+      },
+      "visible_image": [
+        0,
+        0,
+        320,
+        224
+      ],
+      "gallery_bindings": [
+        {
+          "id": "album.214.014",
+          "sprite": 14,
+          "record_offset": 824,
+          "texture_member": 216,
+          "texture_id": 1,
+          "source_box": [
+            128,
+            72,
+            192,
+            144
+          ],
+          "caption_box": [
+            128,
+            120,
+            192,
+            144
+          ],
+          "source_caption_sha256": "e81dd66792a4cbf72582efc8b75e3e998193a8c3cbbc0186981d65faf49106b5",
+          "source_tile_sha256": "fd4af2803224e37b429b0f96022b4abf97c8b34a65c9d709d817ae63d65818d3"
+        },
+        {
+          "id": "album.214.025",
+          "sprite": 25,
+          "record_offset": 1044,
+          "texture_member": 218,
+          "texture_id": 3,
+          "source_box": [
+            64,
+            0,
+            128,
+            72
+          ],
+          "caption_box": [
+            64,
+            48,
+            128,
+            72
+          ],
+          "source_caption_sha256": "e81dd66792a4cbf72582efc8b75e3e998193a8c3cbbc0186981d65faf49106b5",
+          "source_tile_sha256": "fd4af2803224e37b429b0f96022b4abf97c8b34a65c9d709d817ae63d65818d3"
+        }
+      ],
+      "thumbnail_matching": {
+        "best_RGB_MAE": 21.365126,
+        "method": "Bilinear 320x224 to 64x48; card outer black replaced by white for matching only",
+        "scope": "Supports visual identity; not an exact resampling/color equivalence proof"
+      },
+      "status": "English source-linked recipe; native image rendering/insertion pending",
+      "English_lines": [
+        "Happy New Year!",
+        "2000"
+      ],
+      "original_heart": "Retain the source heart as part of the greeting artwork",
+      "meaning": "Polite New Year greeting with the year 2000 and a heart; no other message added",
+      "source_text_region": [
+        92,
+        0,
+        234,
+        52
+      ],
+      "layout_note": "Keep the portrait art below the greeting; render one uniform glyph scale per line"
+    },
+    {
+      "id": "album.picture.081",
+      "member": 81,
+      "source_packed_sha256": "84d52750bea8bccfad148c3f0e285ae551d9f413c6a71f469ec9dccfb7c56620",
+      "source_decoded_sha256": "616faab1766c29d06dc5befe28b83ec543a5256d1c3cb3f3e00ce6310ee1a641",
+      "format": {
+        "pixel_format": 3,
+        "data_format": 9,
+        "width": 512,
+        "height": 256
+      },
+      "visible_image": [
+        0,
+        0,
+        320,
+        224
+      ],
+      "gallery_bindings": [
+        {
+          "id": "album.214.086",
+          "sprite": 86,
+          "record_offset": 2264,
+          "texture_member": 225,
+          "texture_id": 10,
+          "source_box": [
+            128,
+            72,
+            192,
+            144
+          ],
+          "caption_box": [
+            128,
+            120,
+            192,
+            144
+          ],
+          "source_caption_sha256": "c7cb45d761700c51eac0273d5d3bfd2a3ec8ea9cab8ffa7b33ea431eca9a1829",
+          "source_tile_sha256": "5b49744696e0313bb6fdd1c0ccc78c3b41fc1ba321e1646976556aec506fd16b"
+        }
+      ],
+      "thumbnail_matching": {
+        "best_RGB_MAE": 18.409722,
+        "method": "Bilinear 320x224 to 64x48; card outer black replaced by white for matching only",
+        "scope": "Supports visual identity; not an exact resampling/color equivalence proof"
+      },
+      "status": "English source-linked recipe; native image rendering/insertion pending",
+      "English_lines": [
+        "Dear Touya,",
+        "I've made breakfast for you.",
+        "Please warm up the miso soup again.",
+        "I didn't see Yamato anywhere,",
+        "but I've put out food for her too.",
+        "P.S.",
+        "I'm sorry about earlier.",
+        "But you'll catch a cold if you sleep dressed like that.",
+        "And one more thing:",
+        "Don't be late.",
+        "Kasumi"
+      ],
+      "source_command": "scenario.s_081.o00659",
+      "related_draft_rows": [
+        {
+          "id": "scenario.s_081.o00659.l00",
+          "source_sha256": "1d92d2183c1d7f2ab5346f028f607461d036af95505c73a05b074a452413c535",
+          "draft_sha256": "b8e0965d721787e997844092ca5da1bb164de722780bf8a1b97da3438ea53291"
+        },
+        {
+          "id": "scenario.s_081.o00659.l01",
+          "source_sha256": "a1aa980c0964e3eefb7f55565942a447fc297ade70ebcad9ca60763f4153972e",
+          "draft_sha256": "0a603398846f2efc55ddaa1dcf7b3374adcc17863990514bc7de96aaee451a23"
+        },
+        {
+          "id": "scenario.s_081.o00659.l02",
+          "source_sha256": "72b9774837e194e26d754552287f0e1dbce06121ae762ecaaed76e7300dcbd8f",
+          "draft_sha256": "d2478d0a98ea881b3f23bfcb6724aff80ff9c1032f26797300bcc1012621376a"
+        },
+        {
+          "id": "scenario.s_081.o00659.l03",
+          "source_sha256": "aea29b1f8e1a9db4f429c4e7fd4e6e90f586b996f51aeb4abf8261efffb6e823",
+          "draft_sha256": "a6ed1afa534dc2c3d151076427cf44f47bf22bb861a23d92a8763a4624dc7991"
+        },
+        {
+          "id": "scenario.s_081.o00659.l04",
+          "source_sha256": "2b8571b3a5a13ad6d6f5dc58a48a9449ca12dc379f717d0b9b620265ff09bdb7",
+          "draft_sha256": "8a688ceff732e28f6f08f3288f9262781b913c85f9248775bf109c09bf522e9c"
+        },
+        {
+          "id": "scenario.s_081.o00659.p01.l00",
+          "source_sha256": "8945fcf19157a366dad6cec8ae8e3d1ac09364a44beb508f43442eaad4e3e3b1",
+          "draft_sha256": "073f4407e1c072ce2f793b3994691ddef81b1f31090225bf71aa144a76df99ba"
+        },
+        {
+          "id": "scenario.s_081.o00659.p01.l01",
+          "source_sha256": "cc533a0aaeb7af4378ebea6da5eb7f4df6ca672de370ebb198c2049219617748",
+          "draft_sha256": "70be48c59d3173666dde366919faf75d189e239ee043e35264b415648532b1f0"
+        },
+        {
+          "id": "scenario.s_081.o00659.p01.l02",
+          "source_sha256": "9f4a2ff57e2d234a3f69d741e6bbbd73d9cd043ac51b5cad97764b2ccb5407f8",
+          "draft_sha256": "1531c2762f53224c40974c2802ca192c47a27c45d9540e19408b7d5ecc4c34e1"
+        },
+        {
+          "id": "scenario.s_081.o00659.p01.l03",
+          "source_sha256": "fdde1a2b25623f0e33727969af535c5b54962b0108fdc5ffe45f5a70c0fcdf28",
+          "draft_sha256": "2e8f2b87ba9ba7af1eea0be708cf77cf53a30836def242546219094eabce0a54"
+        },
+        {
+          "id": "scenario.s_081.o00659.p01.l04",
+          "source_sha256": "a6b16c9739dd1ddd30eac34866c3bcf85b19b41cb6a20ef6d90cf90f42433904",
+          "draft_sha256": "39d780ffb1da9a1ebf8472de42d0426c12bf2dd5150b6251afb752a00c33c0d1"
+        }
+      ],
+      "meaning": "Kasumi has made breakfast, asks Touya to reheat miso soup, leaves Yamato food despite not seeing her, apologizes for earlier, warns about sleeping dressed like that, and reminds him not to be late.",
+      "decisions": "Reuse all ten established English rows; remove only outer quotation marks and place signature separately. Clothing remains unspecified. No new story-row credit.",
+      "layout_note": "This album copy is 224 pixels high; ADV00 note is 240. Render against its own source paper rather than copying the other PVR blindly."
+    }
+  ],
+  "status": "Two pictured-text English recipes prepared; no native image edits yet",
+  "pending": [
+    "Render/review both native picture candidates and three matching thumbnail regions",
+    "Exact source preservation, native decoding, archive allocation and packaging checks",
+    "Live album loading/navigation/appearance and independent meaning/artwork review"
+  ],
+  "story_library_draft_credit": 0
+}

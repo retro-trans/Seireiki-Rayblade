@@ -1,0 +1,66 @@
+{
+  "status": "editorial draft decisions; revise only with scene evidence",
+  "names": "Use work/glossary/glossary.json. Distinguish the speaker's short label from a full-name introduction; preserve deliberate identity concealment.",
+  "source_pages": "FE continues the same inline command and often the same speech. Keep existing first-page IDs and append .pNN for continuation pages. Do not repeat a speaker label or invent a new opening quotation at a continuation.",
+  "forms_of_address": [
+    {
+      "context": "s_002: Ymir's first meeting with Touya and the ensuing discussion of formal address",
+      "decision": "Use Mr. Kazami for Ymir's polite address and Miss Clasio for Touya's initial polite reply. Her invitation to use just Ymir and his request to use just Touya then remain meaningful in English. Ai explicitly comments on Ymir's reluctance to reciprocate.",
+      "source_ids": ["scenario.s_002.o01df3", "scenario.s_002.o020ec", "scenario.s_002.o02709", "scenario.s_002.o02729", "scenario.s_002.o0275c", "scenario.s_002.o027a7"],
+      "scope": "Context-specific localization of name-plus-san, not a rule to add Mr./Miss to every polite address. More casual speakers and later relationship changes require their own context."
+    }
+  ],
+  "gender": [
+    {
+      "entity_id": "character.019",
+      "decision": "Yamato is female. Use she when the cat's gender is needed; the reference article and library metadata support it.",
+      "source_ids": ["library.character.019", "scenario.s_002.o014e0"]
+    },
+    {
+      "context": "Touya senses a resemblance when he meets Ymir",
+      "decision": "Ymir is the visible female subject, but the absent comparison is not identified in the utterance. Do not add a name or gender for that referent.",
+      "source_id": "scenario.s_002.o02276"
+    }
+  ],
+  "unresolved_source_counts": [
+    {
+      "context": "Forzen says six people have been protected so far; Oswald later says all six have volunteered",
+      "decision": "Preserve both statements. Do not add another six besides Touya or assert whether Touya is counted; verify later story context before reconciling the apparent count.",
+      "source_ids": ["scenario.s_002.o0076b", "scenario.s_002.o02d38"]
+    }
+  ],
+  "literal_thresholds": "Keep age, date and eligibility thresholds exactly as spoken, including inclusive boundaries. Do not soften unsettling character dialogue or add details absent from the source.",
+  "yamato_speech": {
+    "status": "first-draft localization; voice and meaning review pending",
+    "decision": "Yamato's source speech changes na to nya. Use selected English ny- spellings such as nyice, nyow and nyot to convey the catlike trait without adding new plot information. Do not distort every word or change the spelling of ordinary narration.",
+    "prana": "Pranya in s_003 is her deliberate pronunciation of Prana, not a different energy type. Prana remains the canonical glossary entry.",
+    "source_ids": ["scenario.s_003.o00bbb", "scenario.s_003.o00ca6", "scenario.s_003.o00dec", "scenario.s_003.o03d0f"]
+  },
+  "dated_jokes": {
+    "context": "Ai uses old-fashioned stock expressions in s_003; Touya comments on her language and later questions whether she is really fifteen.",
+    "decision": "Nigh unstoppable localizes the powerful-ally idiom with conspicuously archaic diction. The later Mr. President cheer remains a dated cheer, not a literal election. Keep the following teasing replies and exact age. These choices need a spoken-English review.",
+    "source_ids": ["scenario.s_003.o0356d", "scenario.s_003.o035aa", "scenario.s_003.o042af", "scenario.s_003.o042da"]
+  },
+  "officer_address": {
+    "context": "Fores and Reamond in s_004",
+    "decision": "Fores is a female lieutenant colonel; Reamond is a male first lieutenant. Colonel/Lieutenant are English direct-address forms and do not promote either officer. Use she/ma'am for Fores where needed. Reamond's catchphrase is Quite right, quite right, matching his library entry.",
+    "source_ids": ["library.character.043", "library.character.044", "scenario.s_004.o00359", "scenario.s_004.o0079c"]
+  },
+  "disputed_responsibility": {
+    "context": "Oswald's confrontation with the concealed speaker in s_006",
+    "decision": "Keep both accounts: Oswald says another mind intruded through the Evil Eye; the other speaker says only Oswald's own buried self was awakened. Do not turn either speaker's claim into independent narration, name the concealed speaker early, or soften the promise to hand the queen over to Oswald.",
+    "source_ids": ["scenario.s_006.o00129", "scenario.s_006.o001d4", "scenario.s_006.o00245"]
+  },
+  "battle_alternatives": {
+    "decision": "Battle-message rows are alternative selected programs, not one chronological scene. Preserve all formatting/speaker tags, FE timing blanks and paired conversations. Identify the speaker from the displayed label rather than treating a root-table slot as a D_NAMES character ID. Keep nervous early-piloting variants distinct from confident later boasts, and preserve school references in Earth-battle variants.",
+    "kasumi_address": "Kasumi's Touya-chan matches the existing s_001 draft; do not replace it with a formal title.",
+    "source_ids": ["battle.o002f1", "battle.o003b4", "battle.o00649", "battle.o00d22", "battle.o00e0e"]
+  },
+  "laboratory_labels_and_units": {
+    "context": "Murk's laboratory in s_005",
+    "decision": "Keep Assistant as the displayed label even though Marsha is named in dialogue. Unnamed personnel are Staff Member, with no inferred gender. Preserve ris and deo together with the source's approximate minute conversions. Keep specimen IDs as literal zero-padded identifiers and eighteen as the total escape count.",
+    "source_ids": ["scenario.s_005.o000b5", "scenario.s_005.o000f7", "scenario.s_005.o00154", "scenario.s_005.o005e4"]
+  },
+  "unfinished_speech": "Restore omitted English subjects and verbs where context settles them. Retain deliberate trailing clauses, stammers, interruptions and noun catalogs, with a per-row decision explaining the fragment.",
+  "review": "All current story translations are first drafts. Structural checks do not establish meaning, game layout, branch behavior or complete extraction coverage."
+}

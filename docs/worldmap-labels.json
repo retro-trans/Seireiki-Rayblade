@@ -1,0 +1,590 @@
+{
+  "version": "0.1.25",
+  "source_build": "0.1.24",
+  "status": "Historical 0.1.25 insertion proof retained below; superseded by 0.1.44 original Skies map font/readability build",
+  "disc": "work/output/0.1.25/disc/Rayblade English Test 0.1.25.gdi",
+  "translation_map": "work/translation/en/ui/worldmap-labels.en.json",
+  "source_geometry": "work/ui/asset-audit/WMAP/rectangles.json",
+  "preview": "work/output/0.1.25/worldmap-worldmap-labels-preview.png",
+  "archive_sha256": "1bcd41bc95717889906fc2467ab221565b60e1963b19770a6329618031b3ee49",
+  "label_count": 10,
+  "glossary_entries": 851,
+  "native_proof": {
+    "source_build": "0.1.24",
+    "executable_sha256": "c629a360e5e55e492b13c620237e873714c1990fcce878ca9c6778130d6f2a78",
+    "archive_sha256": "1bcd41bc95717889906fc2467ab221565b60e1963b19770a6329618031b3ee49",
+    "label_count": 10,
+    "sprite_geometry_records": 28,
+    "protected_sprite_count": 18,
+    "unchanged_member_payloads_and_offsets": 18,
+    "independent_pixel_addressing_and_source_font_masks": "pass",
+    "original_pixels_and_archive_bytes_outside_declared_edits": "exact",
+    "native_PRS_instructions": 9020594,
+    "native_texture_info_instructions": 192,
+    "native_decoded_bytes": 524320,
+    "native_guard_and_ABI": "pass",
+    "texture_dimensions": [
+      512,
+      512
+    ],
+    "changed_sprite_records": [
+      24,
+      26
+    ],
+    "relocated_member": {
+      "index": 18,
+      "offset": 491520,
+      "original_zero_padding": true
+    },
+    "native_file_loading": false,
+    "native_sprite_pipeline": false,
+    "GPU": false,
+    "live_map_appearance_navigation_and_overlap": "pending"
+  },
+  "validation": {
+    "reextracted_files": "all 8 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "archive_preservation": "18 other member payloads/offsets exact; only DAT 17 and texture 18 change. Texture 18 relocated to verified zero padding at 0x78000; 512x512 dimensions and original file extent retained.",
+  "previous_components": "Seven existing game payloads and fourteen historical proof identities exact 0.1.24",
+  "new_changed_sectors": 14,
+  "changed_sector_locations_from_original": 27784,
+  "meaning_notes": [
+    "Nine labels use existing glossary entries; Belta is a new provisional phonetic spelling.",
+    "Research Institute Ruins retains the full place descriptor; no text omitted to fit.",
+    "Two widened cells preserve original horizontal centers and vertical anchors."
+  ],
+  "pending": [
+    "Live relocated map-archive loading, positions, overlaps, selection and navigation",
+    "Moving-art title treatment selection and implementation",
+    "Native boot/movie startup/completion/A-V sync/skip/loop/return tests for both movies",
+    "Full-motion/design/content/audio and independent translation review",
+    "Held passages, live font/UI/library/battle/save/load and full-game validation"
+  ],
+  "release": false,
+  "story_library_draft_credit": 0,
+  "current_archive_layout": {
+    "current_build": "0.1.38",
+    "archive_sha256": "d1318e1e5618681890e325575e6c1a537cebc65918811f88c4404f7bc01ed6eb",
+    "member_payloads_unchanged_from": "0.1.37",
+    "member_count": 20,
+    "native_lookups": "all offsets/sector lengths match physical layout",
+    "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+  },
+  "archive_identity_note": "Earlier archive hashes/proofs remain historical payload-origin evidence; current layout identity above supersedes file placement only.",
+  "latest_font_build": {
+    "version": "0.1.44",
+    "source_build": "0.1.43",
+    "date": "2026-10-24",
+    "status": "Ten original Skies map labels integrated, native/pixel/disc checks pass; live appearance/VRAM pending",
+    "disc": "work/output/0.1.44/disc/Rayblade English Test 0.1.44.gdi",
+    "preview": "work/ui/0.1.44/map-labels-preview.png",
+    "label_count": 10,
+    "font": "Original Skies Latin medium masks and variable advances, exact same glyph coverage as dialogue",
+    "method": "Four-times-detail image labels; unmodified four-level foreground alpha, cream fill and two-physical-pixel dark edge",
+    "font_sha256": "5fe1480136b8c7d2bb15a32b17588edc0459fcf9c1079c9aa4b1075e11a4d181",
+    "texture_dimensions": [
+      1024,
+      256
+    ],
+    "added_VRAM_bytes": 524288,
+    "archive_sha256": "5758c4ee71420a231f124f2f7ad352872ec21e60ac3fba761df731a56a82cf37",
+    "labels": [
+      {
+        "id": "wmap.17.017",
+        "sprite": 17,
+        "en": "Flamuelk Castle",
+        "old_record": [
+          72,
+          16,
+          36,
+          3,
+          128,
+          0,
+          164,
+          8,
+          0,
+          0
+        ],
+        "old_box": [
+          256,
+          0,
+          328,
+          16
+        ],
+        "draw_size": [
+          76,
+          16
+        ],
+        "anchor": [
+          38,
+          3
+        ],
+        "atlas_box": [
+          0,
+          0,
+          304,
+          64
+        ],
+        "UV": [
+          0,
+          0,
+          76,
+          64
+        ],
+        "font_coverage_sha256": "4415caef5f249bf2e665f4c106f5862a5703aa7137643640b599f19cc2432f5c",
+        "ink_pixels": 3796
+      },
+      {
+        "id": "wmap.17.018",
+        "sprite": 18,
+        "en": "Shangria",
+        "old_record": [
+          56,
+          16,
+          28,
+          3,
+          184,
+          8,
+          212,
+          16,
+          0,
+          0
+        ],
+        "old_box": [
+          368,
+          16,
+          424,
+          32
+        ],
+        "draw_size": [
+          56,
+          16
+        ],
+        "anchor": [
+          28,
+          3
+        ],
+        "atlas_box": [
+          304,
+          0,
+          528,
+          64
+        ],
+        "UV": [
+          76,
+          0,
+          132,
+          64
+        ],
+        "font_coverage_sha256": "705cfc83090ef87e86b74281f48e00375ae47c7176c99cb731d4d3f216c5ce4a",
+        "ink_pixels": 2248
+      },
+      {
+        "id": "wmap.17.019",
+        "sprite": 19,
+        "en": "Brandenkrois",
+        "old_record": [
+          80,
+          16,
+          40,
+          2,
+          128,
+          8,
+          168,
+          16,
+          0,
+          0
+        ],
+        "old_box": [
+          256,
+          16,
+          336,
+          32
+        ],
+        "draw_size": [
+          80,
+          16
+        ],
+        "anchor": [
+          40,
+          2
+        ],
+        "atlas_box": [
+          528,
+          0,
+          848,
+          64
+        ],
+        "UV": [
+          132,
+          0,
+          212,
+          64
+        ],
+        "font_coverage_sha256": "a55878c97d0cc3eae7a7d47370608ce03b6dbc2d42e343e7f8a73e13ed95c58d",
+        "ink_pixels": 3276
+      },
+      {
+        "id": "wmap.17.020",
+        "sprite": 20,
+        "en": "Belta",
+        "old_record": [
+          32,
+          16,
+          14,
+          2,
+          168,
+          8,
+          184,
+          16,
+          0,
+          0
+        ],
+        "old_box": [
+          336,
+          16,
+          368,
+          32
+        ],
+        "draw_size": [
+          32,
+          16
+        ],
+        "anchor": [
+          14,
+          2
+        ],
+        "atlas_box": [
+          848,
+          0,
+          976,
+          64
+        ],
+        "UV": [
+          212,
+          0,
+          244,
+          64
+        ],
+        "font_coverage_sha256": "b11c6839cbc0fbebbc4e02b04c2a3459affc98f3a6fde03a4d7e4f4ac4ce1f39",
+        "ink_pixels": 1408
+      },
+      {
+        "id": "wmap.17.021",
+        "sprite": 21,
+        "en": "Glascher Valley",
+        "old_record": [
+          80,
+          16,
+          40,
+          3,
+          212,
+          8,
+          252,
+          16,
+          0,
+          0
+        ],
+        "old_box": [
+          424,
+          16,
+          504,
+          32
+        ],
+        "draw_size": [
+          80,
+          16
+        ],
+        "anchor": [
+          40,
+          3
+        ],
+        "atlas_box": [
+          0,
+          64,
+          320,
+          128
+        ],
+        "UV": [
+          0,
+          64,
+          80,
+          128
+        ],
+        "font_coverage_sha256": "1a9496043699c70f22946a696b1fbef5afd0d834d1b84984dbfc3e656bf8f801",
+        "ink_pixels": 3832
+      },
+      {
+        "id": "wmap.17.022",
+        "sprite": 22,
+        "en": "Alterias Valley",
+        "old_record": [
+          80,
+          16,
+          38,
+          3,
+          188,
+          0,
+          228,
+          8,
+          0,
+          0
+        ],
+        "old_box": [
+          376,
+          0,
+          456,
+          16
+        ],
+        "draw_size": [
+          80,
+          16
+        ],
+        "anchor": [
+          38,
+          3
+        ],
+        "atlas_box": [
+          320,
+          64,
+          640,
+          128
+        ],
+        "UV": [
+          80,
+          64,
+          160,
+          128
+        ],
+        "font_coverage_sha256": "8abe964474da14631d4e1ae1df3f26bd174bcb61452c023680b915837b8f5d69",
+        "ink_pixels": 3640
+      },
+      {
+        "id": "wmap.17.023",
+        "sprite": 23,
+        "en": "Muur Forest",
+        "old_record": [
+          48,
+          16,
+          24,
+          2,
+          164,
+          0,
+          188,
+          8,
+          0,
+          0
+        ],
+        "old_box": [
+          328,
+          0,
+          376,
+          16
+        ],
+        "draw_size": [
+          60,
+          16
+        ],
+        "anchor": [
+          30,
+          2
+        ],
+        "atlas_box": [
+          640,
+          64,
+          880,
+          128
+        ],
+        "UV": [
+          160,
+          64,
+          220,
+          128
+        ],
+        "font_coverage_sha256": "53974ef282b0ab9de871394a4de2f6d8204789cbc809d998c0816b1a94d70f70",
+        "ink_pixels": 2748
+      },
+      {
+        "id": "wmap.17.024",
+        "sprite": 24,
+        "en": "Ze=Ode Research Institute Ruins",
+        "old_record": [
+          112,
+          16,
+          56,
+          2,
+          168,
+          56,
+          224,
+          64,
+          0,
+          0
+        ],
+        "old_box": [
+          336,
+          112,
+          448,
+          128
+        ],
+        "draw_size": [
+          162,
+          16
+        ],
+        "anchor": [
+          81,
+          2
+        ],
+        "atlas_box": [
+          0,
+          128,
+          648,
+          192
+        ],
+        "UV": [
+          0,
+          128,
+          162,
+          192
+        ],
+        "font_coverage_sha256": "3554679419778721c306481704e036edc302986012dd7c2e60accd320cb5ce11",
+        "ink_pixels": 7728
+      },
+      {
+        "id": "wmap.17.025",
+        "sprite": 25,
+        "en": "Cornel Village",
+        "old_record": [
+          56,
+          16,
+          26,
+          2,
+          208,
+          16,
+          236,
+          24,
+          0,
+          0
+        ],
+        "old_box": [
+          416,
+          32,
+          472,
+          48
+        ],
+        "draw_size": [
+          64,
+          16
+        ],
+        "anchor": [
+          30,
+          2
+        ],
+        "atlas_box": [
+          648,
+          128,
+          904,
+          192
+        ],
+        "UV": [
+          162,
+          128,
+          226,
+          192
+        ],
+        "font_coverage_sha256": "5e6a802dfa6eb104021ec4949ff703613a02421b43206b4bbaf8cc62f44f670e",
+        "ink_pixels": 3396
+      },
+      {
+        "id": "wmap.17.026",
+        "sprite": 26,
+        "en": "Holy Land",
+        "old_record": [
+          36,
+          16,
+          18,
+          3,
+          168,
+          66,
+          186,
+          74,
+          0,
+          0
+        ],
+        "old_box": [
+          336,
+          132,
+          372,
+          148
+        ],
+        "draw_size": [
+          48,
+          16
+        ],
+        "anchor": [
+          24,
+          3
+        ],
+        "atlas_box": [
+          0,
+          192,
+          192,
+          256
+        ],
+        "UV": [
+          0,
+          192,
+          48,
+          256
+        ],
+        "font_coverage_sha256": "4af463934ce67cece00cd7957b8890cfeb509c7e9b8d8a9fd3ae9d883216950e",
+        "ink_pixels": 2232
+      }
+    ],
+    "native_proof": "work/output/0.1.44/map-font-native-test.json",
+    "native_proof_sha256": "e51503fd70f49c71cd925a274c7075c9a4060ee501f1e07615ca6a32b272591e",
+    "native_instructions": {
+      "SDK": 2688,
+      "texture_info": 196,
+      "PRS_markers": 8853632,
+      "PRS_labels": 9134600
+    },
+    "native_registration": {
+      "textures": 2,
+      "sprites": 28,
+      "native_instructions": 962,
+      "exact_NJTL_relocation_and_sprite_scan": "pass",
+      "resource_slot_fixture": 29,
+      "archive_member_identity": "WMAP.AFS 17, consecutive textures 18/19",
+      "scope": "I/O/poll allocation are bounded fixtures; actual map slot selection and GPU not executed"
+    },
+    "native_sprite_bounds_and_UVs": 28,
+    "protected_marker_sprites": 18,
+    "unchanged_map_artwork_members": 17,
+    "original_authoring_file_list": "Retained unchanged at new member20; second label PVR occupies member19",
+    "native_archive_layout": "21 members in actual SDK compact-sector order, 38653 spare bytes; same ISO extent",
+    "limits": [
+      "Archive lookup, NJTL registration, sprite bounds/UV, PRS and texture format execute; I/O/allocation fixtures are bounded.",
+      "Actual map selection, texture upload/VRAM, GPU filtering/blending, screen overlaps and dialogue fade remain pending."
+    ],
+    "validation": {
+      "reextracted_files": "all 14 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "sector_substitutions": 2306,
+    "unchanged_other_payloads": 13,
+    "translation_wording_changes": 0,
+    "new_translation_credit": 0,
+    "release": false
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "scope": "Credits name readings, separate from fictional character/term glossary",
+  "source_archive_sha256": "0c8795a6d36a3cf7a0259b459e861c25fe6b4f32805c0b0bc32b99e00d93372e",
+  "sources": [
+    {
+      "url": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "role": "Secondary name-reading reference; direct fetch returned 403, indexed credits text was available"
+    },
+    {
+      "url": "https://raido.moe/staff/dc/dc_seireiki_rayblade.html",
+      "role": "Japanese credit transcript cross-check; atlas is authoritative for printed glyphs"
+    }
+  ],
+  "people": [
+    {
+      "id": "staff.19.042",
+      "kind": "person",
+      "ja": "高宮 成光",
+      "en": "Shigemitsu Takamiya",
+      "source_pixels_sha256": "ca8e4525676f9d9bdbe917534c32ea0ff4b125103209b4d754ec49e7dd9d21bc",
+      "source_box": [
+        256,
+        160,
+        336,
+        176
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.043",
+      "kind": "person",
+      "ja": "松本 健一郎",
+      "en": "Kenichiro Matsumoto",
+      "source_pixels_sha256": "46bf443e59c43999b51bcec21b4d2c6568ca3c214efadf509a4f90f6a2acdaf5",
+      "source_box": [
+        336,
+        160,
+        432,
+        176
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.044",
+      "kind": "person",
+      "ja": "鎌田 篤志",
+      "en": "Atsushi Kamata",
+      "source_pixels_sha256": "e5968c0eaade4fbc40d8259112d66273c10f2f79924fdca7800f728325a8b34f",
+      "source_box": [
+        256,
+        176,
+        336,
+        192
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.045",
+      "kind": "person",
+      "ja": "庄 真宏",
+      "en": "Masahiro Sho",
+      "source_pixels_sha256": "3872712b00519f1f10e2cbcc3f4e2f6a073b64b89a385c99c45d1be090b8d1ec",
+      "source_box": [
+        336,
+        176,
+        416,
+        192
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.046",
+      "kind": "person",
+      "ja": "阿部 徹",
+      "en": "Toru Abe",
+      "source_pixels_sha256": "5b481425da66efae966ed86ce36bd71061e7db2854051fb5d516564a8e22768e",
+      "source_box": [
+        416,
+        176,
+        496,
+        192
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.047",
+      "kind": "person",
+      "ja": "堀川 和良",
+      "en": "Kazuyoshi Horikawa",
+      "source_pixels_sha256": "c68ea11dbdc2716f0c1f88f915b2b78aff570e54c67bb7949fff66f9563d0f1b",
+      "source_box": [
+        256,
+        192,
+        336,
+        208
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.048",
+      "kind": "person",
+      "ja": "下山 剛史",
+      "en": "Takeshi Shimoyama",
+      "source_pixels_sha256": "8cb267fb5d7601fc7fd14f2a2813ed70cdf9cbc07ada92f277b6fb672940fc98",
+      "source_box": [
+        336,
+        192,
+        416,
+        208
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.049",
+      "kind": "person",
+      "ja": "黒住 幸司",
+      "en": "Koji Kurosumi",
+      "source_pixels_sha256": "b537ee8747edffb5e277abe210f6173e0592b34347ca51545dc85f3b9e1d4fe9",
+      "source_box": [
+        416,
+        192,
+        496,
+        208
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.050",
+      "kind": "person",
+      "ja": "藤原 達也",
+      "en": "Tatsuya Fujiwara",
+      "source_pixels_sha256": "e4c50dac59832a051c739c7c4eb0693ad26caa08f7359c8b9bf8e83659894a21",
+      "source_box": [
+        256,
+        208,
+        336,
+        224
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.051",
+      "kind": "person",
+      "ja": "稲田 義広",
+      "en": "Yoshihiro Inada",
+      "source_pixels_sha256": "a6e25393f72d2bec350ea42b53e5a33b67b2a9ab1d6aeebc796500998bfe1421",
+      "source_box": [
+        336,
+        208,
+        416,
+        224
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.052",
+      "kind": "person",
+      "ja": "草開 一也",
+      "en": null,
+      "source_pixels_sha256": "fa617736d59bedc30a48c6d18af76b351df8172373b5997cfe7e6e7d268f51fe",
+      "source_box": [
+        416,
+        208,
+        496,
+        224
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings.",
+      "source_note": "Present in the atlas, absent from the consulted Rayblade credit transcript; actual display/reachability not established."
+    },
+    {
+      "id": "staff.19.053",
+      "kind": "person",
+      "ja": "徳村 義則",
+      "en": "Yoshinori Tokumura",
+      "source_pixels_sha256": "7ad099a4eec2fd9bca37787008896bf7d70b8d6cc63a378079c5dfcd23b6d380",
+      "source_box": [
+        256,
+        224,
+        336,
+        240
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.054",
+      "kind": "person",
+      "ja": "稲岡 良平",
+      "en": "Ryohei Inaoka",
+      "source_pixels_sha256": "9a437eed3d627c2cf040835711cf978372d44168406c4617e066558d167b00c2",
+      "source_box": [
+        336,
+        224,
+        416,
+        240
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.055",
+      "kind": "person",
+      "ja": "吉岡 昭典",
+      "en": "Akinori Yoshioka",
+      "source_pixels_sha256": "8dd39292a386c0216a186b419c63ea97d9c854cb9ba95f002a02104beacb67af",
+      "source_box": [
+        416,
+        224,
+        496,
+        240
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.056",
+      "kind": "person",
+      "ja": "岩鶴 素義",
+      "en": "Motoyoshi Iwatsuru",
+      "source_pixels_sha256": "d9690434bc833cd44168fdd33779957289901955cdc514ed861333e54b4df161",
+      "source_box": [
+        512,
+        0,
+        592,
+        16
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.057",
+      "kind": "person",
+      "ja": "武馬 功治",
+      "en": "Yoshiharu Buma",
+      "source_pixels_sha256": "ff6e8fbfaae7780f4ae8a0f53f6e632b14108443d3b353258a6e6cfb38cd0ff8",
+      "source_box": [
+        592,
+        0,
+        672,
+        16
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.058",
+      "kind": "person",
+      "ja": "菊池 耕二",
+      "en": "Koji Kikuchi",
+      "source_pixels_sha256": "a22d27e38364826b02c612ac68290f1f87aa4e754a3da4b0c1bc3265d2138840",
+      "source_box": [
+        672,
+        0,
+        752,
+        16
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.059",
+      "kind": "person",
+      "ja": "宮下 加代子",
+      "en": "Kayoko Miyashita",
+      "source_pixels_sha256": "ec11173c9a21c0391fac41dcbff8c27954eb3bdb20d5ca661c864cead91a7611",
+      "source_box": [
+        512,
+        16,
+        608,
+        32
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.060",
+      "kind": "person",
+      "ja": "中田 貴子",
+      "en": "Takako Nakata",
+      "source_pixels_sha256": "e97fdafeb00ec4691042fb51463e3643251f4901164eb3c759b8ce315f52b83e",
+      "source_box": [
+        608,
+        16,
+        688,
+        32
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.061",
+      "kind": "person",
+      "ja": "乾 直也",
+      "en": "Naoya Inui",
+      "source_pixels_sha256": "3360ae421248472fed5e4cb0ff306c62453602cb9b603158ba8c55d7ae87efe1",
+      "source_box": [
+        512,
+        32,
+        592,
+        48
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.062",
+      "kind": "person",
+      "ja": "伊藤 健",
+      "en": null,
+      "source_pixels_sha256": "cc9142cb8a2bfb33380830556a666b9b4366e11ff4b200e3da4d174a9fa86bc2",
+      "source_box": [
+        592,
+        32,
+        672,
+        48
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.063",
+      "kind": "person",
+      "ja": "戸田 篤樹",
+      "en": "Atsuki Toda",
+      "source_pixels_sha256": "badb28b99c0d8b0963e147bb0b1f1c636d7054311e4e47355d57ce2c7824dec6",
+      "source_box": [
+        672,
+        32,
+        752,
+        48
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.064",
+      "kind": "person",
+      "ja": "福田 博之",
+      "en": "Hiroyuki Fukuda",
+      "source_pixels_sha256": "f720c6bb94d0d3b00dd5dce9292b5b655605938269ca3f213fc3dea85996968d",
+      "source_box": [
+        512,
+        48,
+        592,
+        64
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.065",
+      "kind": "person",
+      "ja": "奥田 浩貴",
+      "en": "Hirotaka Okuda",
+      "source_pixels_sha256": "e8a30587045034f614c77a39487f3fbed9a92a1826f928d4583ac29ba4aecb04",
+      "source_box": [
+        592,
+        48,
+        672,
+        64
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.066",
+      "kind": "person",
+      "ja": "森重 浩正",
+      "en": "Hiromasa Morishige",
+      "source_pixels_sha256": "3a7029517b77ee51e8fed6e02ae6e8d2340ac0a32955c288eb389aaf27f58ca1",
+      "source_box": [
+        672,
+        48,
+        752,
+        64
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.067",
+      "kind": "person",
+      "ja": "中村 真人",
+      "en": "Masato Nakamura",
+      "source_pixels_sha256": "5cf5f7c51a6c8b6ccff8f710ad6ee3ddb173c64e3711287e69326a28e9a5b75c",
+      "source_box": [
+        512,
+        64,
+        592,
+        80
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.068",
+      "kind": "person",
+      "ja": "中出 秀二郎",
+      "en": "Shujiro Nakade",
+      "source_pixels_sha256": "f8586a7d66c3a862f9aa4faf33c62df0a462e0b5baf642d7f22637557a3b8758",
+      "source_box": [
+        592,
+        64,
+        688,
+        80
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire. Reference Shuujirou shortened consistently to Shujiro; source atlas has 秀二郎."
+    },
+    {
+      "id": "staff.19.069",
+      "kind": "person",
+      "ja": "吉田 渉",
+      "en": "Wataru Yoshida",
+      "source_pixels_sha256": "b2158f02bcde9d354be7f251c62be1183eb5e79da683e2ffe66b9d1667cfa364",
+      "source_box": [
+        512,
+        80,
+        592,
+        96
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.070",
+      "kind": "person",
+      "ja": "中柴 直樹",
+      "en": "Naoki Nakashiba",
+      "source_pixels_sha256": "6a7e7a9a4fe97de6e98f6bd8eea059136b56802ef3c7614dc6093ad15d6f1d5a",
+      "source_box": [
+        592,
+        80,
+        672,
+        96
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.071",
+      "kind": "person",
+      "ja": "糸洲 文恵",
+      "en": "Fumie Itosu",
+      "source_pixels_sha256": "e7763022936e58c156317225322f17498fdcfd8402282eece7f83ccab4e38032",
+      "source_box": [
+        672,
+        80,
+        752,
+        96
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.072",
+      "kind": "person",
+      "ja": "須磨 敦史",
+      "en": null,
+      "source_pixels_sha256": "23c9c479c99476dfeb445d8adafdeb282afb26f47e6e72186953196c4134896f",
+      "source_box": [
+        512,
+        96,
+        592,
+        112
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.073",
+      "kind": "person",
+      "ja": "中田 吉保",
+      "en": "Yoshiyasu Nakata",
+      "source_pixels_sha256": "a97dedce8d31d927bcf13a0da03627942258f50178ff7b2c3ba91882ad799506",
+      "source_box": [
+        592,
+        96,
+        672,
+        112
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.074",
+      "kind": "person",
+      "ja": "市川 裕文",
+      "en": "Hirofumi Ichikawa",
+      "source_pixels_sha256": "e96c133e1c9acd3e21dcf2046b1fe3f08fd57fd08e5420c91b896d5a95001671",
+      "source_box": [
+        672,
+        96,
+        752,
+        112
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.075",
+      "kind": "person",
+      "ja": "武馬 佳代",
+      "en": "Kayo Buma",
+      "source_pixels_sha256": "a3d416db8a116c5f04234bf38c796378f9b1338320c065a46b37a76eb0eb75cf",
+      "source_box": [
+        512,
+        112,
+        592,
+        128
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.076",
+      "kind": "person",
+      "ja": "内方 智士",
+      "en": null,
+      "source_pixels_sha256": "a068eeb3e93ff227948aa121a3b2e1e8fa0a803f0c0466b5174a8bd88e8456ae",
+      "source_box": [
+        592,
+        112,
+        672,
+        128
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.077",
+      "kind": "person",
+      "ja": "穂多田 佳子",
+      "en": "Yoshiko Hotada",
+      "source_pixels_sha256": "3bedbbd93a42cbc6382abe2e8a632ab8f298f9af2f550f547778f687e235af0b",
+      "source_box": [
+        512,
+        128,
+        608,
+        144
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.078",
+      "kind": "person",
+      "ja": "鈴木 桃子",
+      "en": "Momoko Suzuki",
+      "source_pixels_sha256": "67cc68f95aad2e9749fbeb65fe20d2f04c06ee0190ecf732b900fde93f8e43de",
+      "source_box": [
+        608,
+        128,
+        688,
+        144
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.079",
+      "kind": "person",
+      "ja": "岩崎 昌彦",
+      "en": "Masahiko Iwasaki",
+      "source_pixels_sha256": "b1af40c237c62f3d997283fb9fa184aee7d1f2f2d1340563a9738a89e684ef3d",
+      "source_box": [
+        512,
+        144,
+        592,
+        160
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.080",
+      "kind": "person",
+      "ja": "田畑 全啓",
+      "en": null,
+      "source_pixels_sha256": "3c8d89f24b9640a4f727fe264011b7bb16ebd61b9551b02359fb0713acc7ccec",
+      "source_box": [
+        592,
+        144,
+        672,
+        160
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.081",
+      "kind": "person",
+      "ja": "宮崎 匡史",
+      "en": null,
+      "source_pixels_sha256": "8723d15d13d33ed7f79b3d9409775a0d6d53ae9be98c2cb08b5e5b363ff5ada1",
+      "source_box": [
+        672,
+        144,
+        752,
+        160
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    },
+    {
+      "id": "staff.19.082",
+      "kind": "person",
+      "ja": "水野 賢哉",
+      "en": "Kenya Mizuno",
+      "source_pixels_sha256": "dcb306dde7e996a7672fbba1c38175ea56a6812f6a2d4fcbbf336a023af66aa7",
+      "source_box": [
+        512,
+        160,
+        592,
+        176
+      ],
+      "status": "secondary_reference_reading",
+      "reading_reference": "https://www.mobygames.com/game/142698/seireiki-rayblade/credits/dreamcast/",
+      "reading_note": "Secondary credits reference; not claimed official self-romanization. ASCII long-vowel spelling for the native Latin repertoire."
+    },
+    {
+      "id": "staff.19.083",
+      "kind": "person",
+      "ja": "聖川 尚志",
+      "en": null,
+      "source_pixels_sha256": "6da07947edac6fbcba5797da210fa4802834fb6eb23d90299a4193e8f1512ad7",
+      "source_box": [
+        592,
+        160,
+        672,
+        176
+      ],
+      "status": "needs_reading_research",
+      "reading_reference": null,
+      "reading_note": "Targeted searches did not establish this exact person's reading. Preserve original image; do not guess from common kanji readings."
+    }
+  ],
+  "role_translations": [
+    {
+      "ja": "総指揮",
+      "en": "Executive Producer",
+      "id": "staff.19.021"
+    },
+    {
+      "ja": "チーフディレクター",
+      "en": "Chief Director",
+      "id": "staff.19.022"
+    },
+    {
+      "ja": "ディレクター",
+      "en": "Director",
+      "id": "staff.19.023"
+    },
+    {
+      "ja": "サブディレクター",
+      "en": "Co-Director",
+      "id": "staff.19.024"
+    },
+    {
+      "ja": "脚本",
+      "en": "Script",
+      "id": "staff.19.025"
+    },
+    {
+      "ja": "キャラクターデザイン・原画",
+      "en": "Character Design & Original Art",
+      "id": "staff.19.026"
+    },
+    {
+      "ja": "メカニックデザイン",
+      "en": "Mechanical Design",
+      "id": "staff.19.027"
+    },
+    {
+      "ja": "サウンド",
+      "en": "Sound",
+      "id": "staff.19.028"
+    },
+    {
+      "ja": "プログラム",
+      "en": "Programming",
+      "id": "staff.19.029"
+    },
+    {
+      "ja": "シナリオデータ",
+      "en": "Scenario Data",
+      "id": "staff.19.030"
+    },
+    {
+      "ja": "アニメーションデータ",
+      "en": "Animation Data",
+      "id": "staff.19.031"
+    },
+    {
+      "ja": "キャラクターグラフィック",
+      "en": "Character Graphics",
+      "id": "staff.19.032"
+    },
+    {
+      "ja": "ユニットグラフィック",
+      "en": "Unit Graphics",
+      "id": "staff.19.033"
+    },
+    {
+      "ja": "エフェクトグラフィック",
+      "en": "Effect Graphics",
+      "id": "staff.19.034"
+    },
+    {
+      "ja": "背景",
+      "en": "Background Art",
+      "id": "staff.19.035"
+    },
+    {
+      "ja": "戦術背景",
+      "en": "Tactical Map Backgrounds",
+      "id": "staff.19.036"
+    },
+    {
+      "ja": "CGムービー",
+      "en": "CG Movies",
+      "id": "staff.19.037"
+    },
+    {
+      "ja": "メインメカデザイン",
+      "en": "Lead Mech Design",
+      "id": "staff.19.038"
+    },
+    {
+      "ja": "スペシャルサンクス",
+      "en": "Special Thanks",
+      "id": "staff.19.039"
+    },
+    {
+      "ja": "企画・制作",
+      "en": "Planning & Production",
+      "id": "staff.19.040"
+    },
+    {
+      "ja": "（株）ウィンキーソフト",
+      "en": "Winky Soft Co., Ltd.",
+      "id": "staff.19.041"
+    }
+  ],
+  "limits": [
+    "No name reading inferred from unrelated people with the same kanji.",
+    "Seven personal names remain unresolved; 35 reference readings need independent confirmation.",
+    "Sprite roster does not establish complete native credit timing, order or actual use."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "0.1.42",
+  "kind": "Focused source/context review; no translation changes",
+  "source_file": "work/translation/en/scenario/s_002.json",
+  "target_command": "scenario.s_002.o026c6",
+  "target_rows": [
+    "scenario.s_002.o026c6.l00",
+    "scenario.s_002.o026c6.l01",
+    "scenario.s_002.o026c6.l02"
+  ],
+  "context_range_rows": [
+    304,
+    328
+  ],
+  "context_rows_read": 25,
+  "rows_reviewed_for_reported_utterance": 3,
+  "context": "Ai has just complained about Touya treating Ymir differently. Touya responds that he is responding in kind. Ymir tells Ai to stop, then turns to Touya to defend Ai and ask forgiveness.",
+  "decisions": [
+    "The first sentence directly addresses Ai. The following she refers to Ai, not Touya or Ymir.",
+    "Retain That's enough from you too, Ai and She doesn't mean any harm; both preserve the source meaning.",
+    "Retain Mr. Kazami / Miss Clasio under the documented scene-specific honorific localization; they are intentional choices, not mistaken character identities."
+  ],
+  "conventions": "docs/translation-conventions.json: forms_of_address[0]",
+  "source_rows_sha256": "131022bd066f01a5ee36a6fe759e9186dc9dc48d68a41e3037388b7c0b2a54a7",
+  "changes": 0,
+  "limits": [
+    "Focused three-row review, not independent review credit for the full scene or game"
+  ]
+}

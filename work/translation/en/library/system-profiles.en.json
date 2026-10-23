@@ -1,0 +1,1496 @@
+{
+  "source": {
+    "archive": "D_SYSTEM.AFS",
+    "source_archive_sha256": "580b6de26b831dd49d71437d629504ed20c17094cc58f2f7f33dee21a6a2708d",
+    "members": [
+      {
+        "member": 0,
+        "size": 1963,
+        "sha256": "ac434945a60d42d55a97d7719910533be97e29a5390c9ec32055a751e6c7749c"
+      },
+      {
+        "member": 1,
+        "size": 2432,
+        "sha256": "a504613058e85f4d218ccc0eb2501161449d85f441b0a438297d236b599b0172"
+      }
+    ],
+    "profile_references": 384,
+    "distinct_profiles": 2,
+    "source_rows": 16,
+    "existing_English_labels": 128,
+    "header_sizes": [
+      6,
+      5
+    ],
+    "reachability": "Not established; no D_SYSTEM.AFS filename literal found in current executable, which alone does not prove absence of runtime use"
+  },
+  "profiles": [
+    {
+      "id": "system.profile.000",
+      "offset": 1536,
+      "end": 1794,
+      "alias_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "header_hex": "13aa3a000000",
+      "source_record_sha256": "11c1852819459ee39707a76ffe2b8e8bd093ae16b50bc0c931c5e57c2dc5a830",
+      "source_text_sha256": "aa0473a8cf964feff84f2ee3ec5eae3cfa8b82d7e30fed682550d62b513ac903"
+    },
+    {
+      "id": "system.profile.001",
+      "offset": 1794,
+      "end": 1963,
+      "alias_indices": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383
+      ],
+      "header_hex": "1801bf0000",
+      "source_record_sha256": "b32045ce51558dec058d665927cc86f14fff290736706972a5b86d4314f2bf6f",
+      "source_text_sha256": "e6a88d0ecf9c8a59c0017a36e273f96a642cfc08e7b4a67c5c6eb8b9b28502bd"
+    }
+  ],
+  "rows": [
+    {
+      "id": "system.profile.000.l00",
+      "profile": 0,
+      "line": 0,
+      "ends_with_newline": true,
+      "source_sha256": "973c2e0a99d8fecef95f762ac3184fa89a7cdb9db776ee235a1ee6afde294f2c",
+      "en": "A handsome young man with a slightly brooding air.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l01",
+      "profile": 0,
+      "line": 1,
+      "ends_with_newline": true,
+      "source_sha256": "6dae1515a51cc6c3f52bfdde379c88ee452a83085cc7a8f72c8a83fd24a6d11f",
+      "en": "At heart, he has a fairly hot-blooded streak.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l02",
+      "profile": 0,
+      "line": 2,
+      "ends_with_newline": true,
+      "source_sha256": "11d85530fd0271b3893858046e9b53584c90ebb944e34763095f98baddf68d39",
+      "en": "He doesn't mind it himself, but he is rather blunt and foul-mouthed.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l03",
+      "profile": 0,
+      "line": 3,
+      "ends_with_newline": true,
+      "source_sha256": "aacb5e980c0c3f8d49702bb4a254453a0b409f7720b9676608acc4448a2f0ce3",
+      "en": "He suddenly gets caught up in a disturbance of causality around him,",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l04",
+      "profile": 0,
+      "line": 4,
+      "ends_with_newline": true,
+      "source_sha256": "a37fc3d4c238a720b2357e5a66c9e311189fa97202c4b1319027d7bad6767a57",
+      "en": "and is summoned to Agarthia, a world in another dimension,",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l05",
+      "profile": 0,
+      "line": 5,
+      "ends_with_newline": true,
+      "source_sha256": "26b6f5684e899c13dafa93df93686f804758e0ab99b39eb06887a2f140c278b4",
+      "en": "where he ends up fighting the Ze=Ode that caused it all.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l06",
+      "profile": 0,
+      "line": 6,
+      "ends_with_newline": true,
+      "source_sha256": "338238963b6db65fe601d90c2bcd700565fc4b390d12cbb0ea74c95eb0eb05cc",
+      "en": "He pilots the Spirit Mech Zeifon.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l07",
+      "profile": 0,
+      "line": 7,
+      "ends_with_newline": true,
+      "source_sha256": "70334f0e3dd9e1b30cea56755756dd0f6b8001ee833b0076be11dc8b1fc488a9",
+      "en": "He later becomes the pilot of the Spirit Mech Rayblade.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.000.l08",
+      "profile": 0,
+      "line": 8,
+      "ends_with_newline": false,
+      "source_sha256": "ee1c28f2a157fce0102cb9e6da27ad8393ece12eeb22c813e95bf5675004e6ce",
+      "en": "On Rayblade, he handles the weapons and main controls.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.001.l00",
+      "profile": 1,
+      "line": 0,
+      "ends_with_newline": true,
+      "source_sha256": "f4ccc7c679c37a1691c8342377585ee95dec8c1608ce09ae8c8f25c1d349ccb6",
+      "en": "Unearthed in Orthodox Calendar year 5959, it is maintained",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.001.l01",
+      "profile": 1,
+      "line": 1,
+      "ends_with_newline": true,
+      "source_sha256": "3eb5f2f110f361ba332636118a96f6fec52b69b42fdcced8a93305878cb99262",
+      "en": "and researched in the Holy Land.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.001.l02",
+      "profile": 1,
+      "line": 2,
+      "ends_with_newline": true,
+      "source_sha256": "ca3e05e09fd49378dbe96a82d69c6b6b611d63df3b5c8e03a3f126132018f329",
+      "en": "It also served as the foundation for the La=Dis Spirit Mechs.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.001.l03",
+      "profile": 1,
+      "line": 3,
+      "ends_with_newline": true,
+      "source_sha256": "bfc942c78ce4c099dc62098b4ee66d43f98b5be8bcc65c12f03a19ec6828fc26",
+      "en": "Although some of its workings are understood, much",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.001.l04",
+      "profile": 1,
+      "line": 4,
+      "ends_with_newline": true,
+      "source_sha256": "965385c12aa69970d0b3e83498b2e9999d93c29b3fe1202788d57098caaa34a8",
+      "en": "remains unknown.",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.001.l05",
+      "profile": 1,
+      "line": 5,
+      "ends_with_newline": true,
+      "source_sha256": "6e2b6e059fa9186c96af7ce29973f295373deb1b9f543b2a191c4e9a360852c0",
+      "en": "Why it will only activate when two pilots are together",
+      "status": "source-linked editorial draft; independent review pending"
+    },
+    {
+      "id": "system.profile.001.l06",
+      "profile": 1,
+      "line": 6,
+      "ends_with_newline": false,
+      "source_sha256": "bfaeab413956af0648798c3e6cf1db0988cfbd42c6defd46eef26ccba3c663b5",
+      "en": "also remains unknown.",
+      "status": "source-linked editorial draft; independent review pending"
+    }
+  ],
+  "existing_labels": [
+    {
+      "id": "system.label.000",
+      "index": 0,
+      "text": "  001:Unknown",
+      "source_offset": 512,
+      "source_raw_sha256": "354252f06e1d2f50a096be153c3bb745779884a24d1c25da5b8cb87a7a583c30"
+    },
+    {
+      "id": "system.label.001",
+      "index": 1,
+      "text": "  002:Unknown",
+      "source_offset": 527,
+      "source_raw_sha256": "baa82e989b7d012ea68e5bf6fd31f952c7336dcd09f8005f8bf259f257743edd"
+    },
+    {
+      "id": "system.label.002",
+      "index": 2,
+      "text": "  003:Unknown",
+      "source_offset": 542,
+      "source_raw_sha256": "8138724a3502c4562a8caad9535f573019a15a81282ea32cbbd4ed0361b1f93d"
+    },
+    {
+      "id": "system.label.003",
+      "index": 3,
+      "text": "  004:Unknown",
+      "source_offset": 557,
+      "source_raw_sha256": "ee9fb70a8db08096ee9be0e7093522c4b68fcbeb3040bfa3fbdaf4e9559d714d"
+    },
+    {
+      "id": "system.label.004",
+      "index": 4,
+      "text": "  005:Unknown",
+      "source_offset": 572,
+      "source_raw_sha256": "1a4327ed322a6fe063342eabf5a89a23cc85effdc2621262e4769a9b87fb04eb"
+    },
+    {
+      "id": "system.label.005",
+      "index": 5,
+      "text": "  006:Unknown",
+      "source_offset": 587,
+      "source_raw_sha256": "78c54952cf50702d2271983dc8982f39abd6ada0fdbaed9bdcd7608dc05ef1e9"
+    },
+    {
+      "id": "system.label.006",
+      "index": 6,
+      "text": "  007:Unknown",
+      "source_offset": 602,
+      "source_raw_sha256": "07b8de2532dd42ad7da7c87e05c8124b37e10866ec3b3b4c7806608a41b5e4a0"
+    },
+    {
+      "id": "system.label.007",
+      "index": 7,
+      "text": "  008:Unknown",
+      "source_offset": 617,
+      "source_raw_sha256": "fb5097f2f42342cafa96a7efe84a617316551da2f9aae12c18cc6d07c92e6be8"
+    },
+    {
+      "id": "system.label.008",
+      "index": 8,
+      "text": "  009:Unknown",
+      "source_offset": 632,
+      "source_raw_sha256": "d17a2422af5d8f25d131fa58f03938b25bdea8dd7f55a12795799e1123ad9a9d"
+    },
+    {
+      "id": "system.label.009",
+      "index": 9,
+      "text": "  010:Unknown",
+      "source_offset": 647,
+      "source_raw_sha256": "5731e3d84d722851777bbc10dbcca6554cfb1a9f659935255065464cfb83ac0c"
+    },
+    {
+      "id": "system.label.010",
+      "index": 10,
+      "text": "  011:Unknown",
+      "source_offset": 662,
+      "source_raw_sha256": "b618d6660c8fdf7ff689694169b2ef462b608f65cc34e9e70f05576bdb2f73e6"
+    },
+    {
+      "id": "system.label.011",
+      "index": 11,
+      "text": "  012:Unknown",
+      "source_offset": 677,
+      "source_raw_sha256": "2a189e42da429b2b01bac7ee6a1a6aeea0e9bf17c7e95f149e380b5639ef8bdf"
+    },
+    {
+      "id": "system.label.012",
+      "index": 12,
+      "text": "  013:Unknown",
+      "source_offset": 692,
+      "source_raw_sha256": "92358096e7dde144c282a5749f0a5f157b301a57ab8d63657ee0e353b7267d8e"
+    },
+    {
+      "id": "system.label.013",
+      "index": 13,
+      "text": "  014:Unknown",
+      "source_offset": 707,
+      "source_raw_sha256": "634c5b4687cd7493eb5c4ae69c06f0257a063023fc8b80b5aca9ed94d8605b89"
+    },
+    {
+      "id": "system.label.014",
+      "index": 14,
+      "text": "  015:Unknown",
+      "source_offset": 722,
+      "source_raw_sha256": "7ca31d0d57e49acf881670f555b5ac83609efa87b4280aa53f8a49d1791ab376"
+    },
+    {
+      "id": "system.label.015",
+      "index": 15,
+      "text": "  016:Unknown",
+      "source_offset": 737,
+      "source_raw_sha256": "3b77328620ba2b3e6c390d57b65f3d696a6c12eed58b66e671b5b69f692f6b9d"
+    },
+    {
+      "id": "system.label.016",
+      "index": 16,
+      "text": "  017:Unknown",
+      "source_offset": 752,
+      "source_raw_sha256": "c8a187accfb086582d514814d2b5df41e5c2247131d0049d18f4a04693778c33"
+    },
+    {
+      "id": "system.label.017",
+      "index": 17,
+      "text": "  018:Unknown",
+      "source_offset": 767,
+      "source_raw_sha256": "6d8d115f84f7771cba9593c69ed7ed827b6660446cb4cb4964d4199f09141121"
+    },
+    {
+      "id": "system.label.018",
+      "index": 18,
+      "text": "  019:Unknown",
+      "source_offset": 782,
+      "source_raw_sha256": "1dc4146f63af181d6483c710f1cd299451069ee1ef53867571bc5eb5bda479cf"
+    },
+    {
+      "id": "system.label.019",
+      "index": 19,
+      "text": "  020:Unknown",
+      "source_offset": 797,
+      "source_raw_sha256": "aca324ca564bc40e72e5aaba9363186fc313e8a6bb5ceb7c441dc442302d8cb9"
+    },
+    {
+      "id": "system.label.020",
+      "index": 20,
+      "text": "  021:Unknown",
+      "source_offset": 812,
+      "source_raw_sha256": "003c0f83f4bedf89e607359c60fbe76944847fe6e01f72f63640cbdacbae99a5"
+    },
+    {
+      "id": "system.label.021",
+      "index": 21,
+      "text": "  022:Unknown",
+      "source_offset": 827,
+      "source_raw_sha256": "2cea6fb67e5f308af257ce338f7c620f1ac33c26f7ab8708c25edd325b6a5976"
+    },
+    {
+      "id": "system.label.022",
+      "index": 22,
+      "text": "  023:Unknown",
+      "source_offset": 842,
+      "source_raw_sha256": "f2289af717fae41df13c88b73e94746070f603d6f8cfdb8e07794a660e75c54e"
+    },
+    {
+      "id": "system.label.023",
+      "index": 23,
+      "text": "  024:Unknown",
+      "source_offset": 857,
+      "source_raw_sha256": "de1a7042c1f61c071016c783419b6d384bbea057cddfa5b5c6e6fae20861fe0f"
+    },
+    {
+      "id": "system.label.024",
+      "index": 24,
+      "text": "  025:Unknown",
+      "source_offset": 872,
+      "source_raw_sha256": "a8dea2828719cb76483852b599d74768bbf91cbe363e4c68ec0b3ba82282d4f6"
+    },
+    {
+      "id": "system.label.025",
+      "index": 25,
+      "text": "  026:Unknown",
+      "source_offset": 887,
+      "source_raw_sha256": "da8779e4673d84b204501a61039b5176d007ab6d5ea167cff6b8f2ab6db33c30"
+    },
+    {
+      "id": "system.label.026",
+      "index": 26,
+      "text": "  027:Unknown",
+      "source_offset": 902,
+      "source_raw_sha256": "a030da44738caeee4ddc7807fda490b9ada1d8e2cb7cc7e02d1aef749ecf6244"
+    },
+    {
+      "id": "system.label.027",
+      "index": 27,
+      "text": "  028:Unknown",
+      "source_offset": 917,
+      "source_raw_sha256": "cea628d90e8191a2de5da8b7f23ba4574a8c02131ea816c68e0c670dc0bfb6aa"
+    },
+    {
+      "id": "system.label.028",
+      "index": 28,
+      "text": "  029:Unknown",
+      "source_offset": 932,
+      "source_raw_sha256": "83c75049abd62667953842498d3bf24e23fb990acb36b75228518fbd9ec36bc8"
+    },
+    {
+      "id": "system.label.029",
+      "index": 29,
+      "text": "  030:Unknown",
+      "source_offset": 947,
+      "source_raw_sha256": "de694e2cc239511086cae2ce13eccef08937d7c32801b9a6dec2fade51d4e9ae"
+    },
+    {
+      "id": "system.label.030",
+      "index": 30,
+      "text": "  031:Unknown",
+      "source_offset": 962,
+      "source_raw_sha256": "e07a79cc0bec423f6f4a0bb6a1d2b1615d7df0c7751cdbd96d242e0ba3b120fb"
+    },
+    {
+      "id": "system.label.031",
+      "index": 31,
+      "text": "  032:Unknown",
+      "source_offset": 977,
+      "source_raw_sha256": "87bdc8d04c495e15132b405130f418b59e90ee7caee3deb2127809cbb0679f87"
+    },
+    {
+      "id": "system.label.032",
+      "index": 32,
+      "text": "  033:Unknown",
+      "source_offset": 992,
+      "source_raw_sha256": "a5d85638778925e9906b6bc6aa3c32a19a82b36fdea18f39c95ba78190022cb5"
+    },
+    {
+      "id": "system.label.033",
+      "index": 33,
+      "text": "  034:Unknown",
+      "source_offset": 1007,
+      "source_raw_sha256": "da104acc819b3fdffb5693e5859b22665ae87f36cf564aacf33bc2ca07e49434"
+    },
+    {
+      "id": "system.label.034",
+      "index": 34,
+      "text": "  035:Unknown",
+      "source_offset": 1022,
+      "source_raw_sha256": "5a2d9d18b6b0c8bc44cbdf8b96c948587216c9735eb2c4b3bc7bc2747c60c6d3"
+    },
+    {
+      "id": "system.label.035",
+      "index": 35,
+      "text": "  036:Unknown",
+      "source_offset": 1037,
+      "source_raw_sha256": "4a5c98f37d72db96db78423610b9ed81a257ecca6555bf748b815ceb9c243b83"
+    },
+    {
+      "id": "system.label.036",
+      "index": 36,
+      "text": "  037:Unknown",
+      "source_offset": 1052,
+      "source_raw_sha256": "f29aeaf66128965c62bf513e82ef231ac282312c23335e5ae55d1d6439bf086a"
+    },
+    {
+      "id": "system.label.037",
+      "index": 37,
+      "text": "  038:Unknown",
+      "source_offset": 1067,
+      "source_raw_sha256": "b287b3129e7d57c83f3e8943bed82a81f4a89bfaf89df12abf63ac7600a78f86"
+    },
+    {
+      "id": "system.label.038",
+      "index": 38,
+      "text": "  039:Unknown",
+      "source_offset": 1082,
+      "source_raw_sha256": "3c5d4c9a7bf740021b1f585f797ade6f15caaf9b6ede3d9011be113d833b13a9"
+    },
+    {
+      "id": "system.label.039",
+      "index": 39,
+      "text": "  040:Unknown",
+      "source_offset": 1097,
+      "source_raw_sha256": "ac291ee63861b312f4b10eac3532218d999f36d1ac886255afe335abf7c142ae"
+    },
+    {
+      "id": "system.label.040",
+      "index": 40,
+      "text": "  041:Unknown",
+      "source_offset": 1112,
+      "source_raw_sha256": "7d120de4c5be5ee40f7b2a4ffd4a5beb8aca3b3ebf605364990b18685c1b6e28"
+    },
+    {
+      "id": "system.label.041",
+      "index": 41,
+      "text": "  042:Unknown",
+      "source_offset": 1127,
+      "source_raw_sha256": "6e2c35ebf76ff39a6870d283a75d7a863c3e7f8edf2fb607dcb77f3b988595b5"
+    },
+    {
+      "id": "system.label.042",
+      "index": 42,
+      "text": "  043:Unknown",
+      "source_offset": 1142,
+      "source_raw_sha256": "31446aa9e6dcc057ef65099a3269306fa95564e3f4294d8135de909834c37858"
+    },
+    {
+      "id": "system.label.043",
+      "index": 43,
+      "text": "  044:Unknown",
+      "source_offset": 1157,
+      "source_raw_sha256": "ef469ceee262664fa6d01621bc201c3ca97c21f31df181b44e6a0ea83044beb0"
+    },
+    {
+      "id": "system.label.044",
+      "index": 44,
+      "text": "  045:Unknown",
+      "source_offset": 1172,
+      "source_raw_sha256": "3a89b09cb09fec46f4b567e8738c0a7b16633b69ee04a01b38a6d934b52dc28a"
+    },
+    {
+      "id": "system.label.045",
+      "index": 45,
+      "text": "  046:Unknown",
+      "source_offset": 1187,
+      "source_raw_sha256": "997a5db97f525e8ff9b6c1206a13eec1811d009d46fa48bf2f419057bc3166c8"
+    },
+    {
+      "id": "system.label.046",
+      "index": 46,
+      "text": "  047:Unknown",
+      "source_offset": 1202,
+      "source_raw_sha256": "77eb22849de50dcbd33f002bb90efad93bf9973d00b704c5349cafc7a716b53c"
+    },
+    {
+      "id": "system.label.047",
+      "index": 47,
+      "text": "  048:Unknown",
+      "source_offset": 1217,
+      "source_raw_sha256": "0227c9f5a03406ee06df62332bda05c7cd047df6a52f235a45491193d1ba145e"
+    },
+    {
+      "id": "system.label.048",
+      "index": 48,
+      "text": "  049:Unknown",
+      "source_offset": 1232,
+      "source_raw_sha256": "bfee5e35d420aeb1226db6bfa3ae954f45feaca045607b1e052395bf6df384e7"
+    },
+    {
+      "id": "system.label.049",
+      "index": 49,
+      "text": "  050:Unknown",
+      "source_offset": 1247,
+      "source_raw_sha256": "9b8cc4b53266368e4a20fcc1fc096fc788bead7db3ae03e4531c9136ff377fb0"
+    },
+    {
+      "id": "system.label.050",
+      "index": 50,
+      "text": "  051:Unknown",
+      "source_offset": 1262,
+      "source_raw_sha256": "cd3063bf9e1f206ce4ea1aad859a1b82ac1419bd20017d36225664a65cd5c519"
+    },
+    {
+      "id": "system.label.051",
+      "index": 51,
+      "text": "  052:Unknown",
+      "source_offset": 1277,
+      "source_raw_sha256": "a22acefe3b7a930002ef7ed6817934befecd7d77aac23457942b597a49ae6e37"
+    },
+    {
+      "id": "system.label.052",
+      "index": 52,
+      "text": "  053:Unknown",
+      "source_offset": 1292,
+      "source_raw_sha256": "f0027c1e5ddee2c095b0b0ce960b1274e841c6fb6c2f2cc9227ca51bfbd829ed"
+    },
+    {
+      "id": "system.label.053",
+      "index": 53,
+      "text": "  054:Unknown",
+      "source_offset": 1307,
+      "source_raw_sha256": "254640c66eb6a681583e974468e4214af5d20e9df70fd1229bebd9ad02eb4fae"
+    },
+    {
+      "id": "system.label.054",
+      "index": 54,
+      "text": "  055:Unknown",
+      "source_offset": 1322,
+      "source_raw_sha256": "5f7c85b39806724717c4f4d2813399df2326dc68b39eadee3766f1481beae99e"
+    },
+    {
+      "id": "system.label.055",
+      "index": 55,
+      "text": "  056:Unknown",
+      "source_offset": 1337,
+      "source_raw_sha256": "7a72efd0c898c8d49a16fc6fe92b5daf6f625d6437d7ccbda91d331c17c94581"
+    },
+    {
+      "id": "system.label.056",
+      "index": 56,
+      "text": "  057:Unknown",
+      "source_offset": 1352,
+      "source_raw_sha256": "3ea34b1d3889b8335cae5a8ba6b2cbd0a77cb29d1c12bc600e1d6d6caec97585"
+    },
+    {
+      "id": "system.label.057",
+      "index": 57,
+      "text": "  058:Unknown",
+      "source_offset": 1367,
+      "source_raw_sha256": "e682f44d50160308da14db9ee67c8905736dcd78fa9f71694e5a527bea4a35bd"
+    },
+    {
+      "id": "system.label.058",
+      "index": 58,
+      "text": "  059:Unknown",
+      "source_offset": 1382,
+      "source_raw_sha256": "49ff50cf642ee1418660f832cd51bc98bba84f67f122c954f3cd070a04a04b4e"
+    },
+    {
+      "id": "system.label.059",
+      "index": 59,
+      "text": "  060:Unknown",
+      "source_offset": 1397,
+      "source_raw_sha256": "eb88823659e9be010a6e6044357f21132c75f4744bff77d6ae990b594459644a"
+    },
+    {
+      "id": "system.label.060",
+      "index": 60,
+      "text": "  061:Unknown",
+      "source_offset": 1412,
+      "source_raw_sha256": "27ca7970f5f05f89d0bc990ca4ceef38c6e66ec60d0796371442ef7634562d5c"
+    },
+    {
+      "id": "system.label.061",
+      "index": 61,
+      "text": "  062:Unknown",
+      "source_offset": 1427,
+      "source_raw_sha256": "4c24568156fb96171b9ac98b20527920acd9dc281289fc55f91f4b21160a36af"
+    },
+    {
+      "id": "system.label.062",
+      "index": 62,
+      "text": "  063:Unknown",
+      "source_offset": 1442,
+      "source_raw_sha256": "1035573e42a301ca43fcc14b3587bf0b22e364d48012b44c5ebd13f2c95192fd"
+    },
+    {
+      "id": "system.label.063",
+      "index": 63,
+      "text": "  064:Unknown",
+      "source_offset": 1457,
+      "source_raw_sha256": "247de7b526aad3402e3a63609ad778147c47b0f61691420a498a44ecfc563fbe"
+    },
+    {
+      "id": "system.label.064",
+      "index": 64,
+      "text": "  065:Unknown",
+      "source_offset": 1472,
+      "source_raw_sha256": "f11434c0f24dcb75e2b9530befe2e2898a95247b2d18fe2babc675ae84a63c86"
+    },
+    {
+      "id": "system.label.065",
+      "index": 65,
+      "text": "  066:Unknown",
+      "source_offset": 1487,
+      "source_raw_sha256": "428c3c311ce035d2506cb0fb2329086632e0de0dd7e2dee630e22bfd253ccb03"
+    },
+    {
+      "id": "system.label.066",
+      "index": 66,
+      "text": "  067:Unknown",
+      "source_offset": 1502,
+      "source_raw_sha256": "bdf12ea12c75bee9a704f93a5457cd3db85a1511de10c3b656ed30147aaa5161"
+    },
+    {
+      "id": "system.label.067",
+      "index": 67,
+      "text": "  068:Unknown",
+      "source_offset": 1517,
+      "source_raw_sha256": "0d50165940134f4850b5750923716b37c91f56342b25b650d5a12d810f4e1977"
+    },
+    {
+      "id": "system.label.068",
+      "index": 68,
+      "text": "  069:Unknown",
+      "source_offset": 1532,
+      "source_raw_sha256": "4e4794eca3ceb1018dc62a9ec8f32dd47c05b31f17a16bf73d457c88be6e100b"
+    },
+    {
+      "id": "system.label.069",
+      "index": 69,
+      "text": "  070:Unknown",
+      "source_offset": 1547,
+      "source_raw_sha256": "d8b1dda2c557ed13fa019f52a6928e5277a09edac6ed104bc2e3fa3357cee190"
+    },
+    {
+      "id": "system.label.070",
+      "index": 70,
+      "text": "  071:Unknown",
+      "source_offset": 1562,
+      "source_raw_sha256": "869a63ffebcab76c23309a7a7f711f23f453b1ed01f504bdcf4c10307bcb94b8"
+    },
+    {
+      "id": "system.label.071",
+      "index": 71,
+      "text": "  072:Unknown",
+      "source_offset": 1577,
+      "source_raw_sha256": "192d4743ea358d726182a22e1f8d961fe777bcf316f14d0b0aa1090d64e7d7af"
+    },
+    {
+      "id": "system.label.072",
+      "index": 72,
+      "text": "  073:Unknown",
+      "source_offset": 1592,
+      "source_raw_sha256": "946fdd1b7d0248e55aa39d8f26faa6236585acdab9c62c5965067c9a1b61db7c"
+    },
+    {
+      "id": "system.label.073",
+      "index": 73,
+      "text": "  074:Unknown",
+      "source_offset": 1607,
+      "source_raw_sha256": "aa64f16d8910b8455f51beb19c136452cb2bdbfa6ec2c16cb2d6d776fe338759"
+    },
+    {
+      "id": "system.label.074",
+      "index": 74,
+      "text": "  075:Unknown",
+      "source_offset": 1622,
+      "source_raw_sha256": "5af578f4b1160ce0dc0f54cc9c911f6b779e4f6d2e1db233482f3f94fb7201f1"
+    },
+    {
+      "id": "system.label.075",
+      "index": 75,
+      "text": "  076:Unknown",
+      "source_offset": 1637,
+      "source_raw_sha256": "a7e0917b93f6d613b6b7ab4dca0d69724b0c139b9d70d0069965e4fb775a650f"
+    },
+    {
+      "id": "system.label.076",
+      "index": 76,
+      "text": "  077:Unknown",
+      "source_offset": 1652,
+      "source_raw_sha256": "6ff9ee09f9e8559f935f2538960aa556ce3db8b78bc23dad7fa517ac4da8dcff"
+    },
+    {
+      "id": "system.label.077",
+      "index": 77,
+      "text": "  078:Unknown",
+      "source_offset": 1667,
+      "source_raw_sha256": "38fa40f4b6b7d27bd68a53f15a391c2a7081b265386a74d58a47110b99eaa177"
+    },
+    {
+      "id": "system.label.078",
+      "index": 78,
+      "text": "  079:Unknown",
+      "source_offset": 1682,
+      "source_raw_sha256": "d2ac56089e0d4ed90b4005eaef27fcee07cd3bb725efc6d812a5eef867258459"
+    },
+    {
+      "id": "system.label.079",
+      "index": 79,
+      "text": "  080:Unknown",
+      "source_offset": 1697,
+      "source_raw_sha256": "5a5b623ffcba66e1fa41dc733750072f2412742a5f8fadecf4e6b15c6e290629"
+    },
+    {
+      "id": "system.label.080",
+      "index": 80,
+      "text": "  081:Unknown",
+      "source_offset": 1712,
+      "source_raw_sha256": "148abe6a89eaa7e0ecc4f63e2ffba92740b4c833cb1fd16ea60fd18d3d4fc47b"
+    },
+    {
+      "id": "system.label.081",
+      "index": 81,
+      "text": "  082:Unknown",
+      "source_offset": 1727,
+      "source_raw_sha256": "ea6e7bb9e19654b3bd046e0b802a0ea51e95dc5fec98ee9bbf3a68a5b7da0212"
+    },
+    {
+      "id": "system.label.082",
+      "index": 82,
+      "text": "  083:Unknown",
+      "source_offset": 1742,
+      "source_raw_sha256": "ed06ba0a5040c2402c1b23e49d00152a22ad577dcc0980042c26e95568a67418"
+    },
+    {
+      "id": "system.label.083",
+      "index": 83,
+      "text": "  084:Unknown",
+      "source_offset": 1757,
+      "source_raw_sha256": "08a521e67ba8ec65373f2844b8e9575a8fb651841246a311125b7ccaeac231a5"
+    },
+    {
+      "id": "system.label.084",
+      "index": 84,
+      "text": "  085:Unknown",
+      "source_offset": 1772,
+      "source_raw_sha256": "590a9836202dc0ead2e5dfdb902ae742dc8c6e77f89a1b102c4f75724de85434"
+    },
+    {
+      "id": "system.label.085",
+      "index": 85,
+      "text": "  086:Unknown",
+      "source_offset": 1787,
+      "source_raw_sha256": "a220b379fc47aa424391526c260069f65cd41d009b097338effef5c6ad478b3c"
+    },
+    {
+      "id": "system.label.086",
+      "index": 86,
+      "text": "  087:Unknown",
+      "source_offset": 1802,
+      "source_raw_sha256": "72f71308fc10d8b9d2624c32a2a6b3280b9b5f2f6b1f83bf8c23ab21dfeb6d93"
+    },
+    {
+      "id": "system.label.087",
+      "index": 87,
+      "text": "  088:Unknown",
+      "source_offset": 1817,
+      "source_raw_sha256": "8b71cd74e56f05f67d2c6fe3b294e6d439becb0e328a84ba75a64f08daf14c6c"
+    },
+    {
+      "id": "system.label.088",
+      "index": 88,
+      "text": "  089:Unknown",
+      "source_offset": 1832,
+      "source_raw_sha256": "e2ed07688d3a2cfa6a7dc4ab5238c14124a1da4f7ec06d0102a78523ea49abf9"
+    },
+    {
+      "id": "system.label.089",
+      "index": 89,
+      "text": "  090:Unknown",
+      "source_offset": 1847,
+      "source_raw_sha256": "6d7f22cdacab2cf744dd0aa5baa8b879363de9f02649795c9f8fc750ea97a269"
+    },
+    {
+      "id": "system.label.090",
+      "index": 90,
+      "text": "  091:Unknown",
+      "source_offset": 1862,
+      "source_raw_sha256": "7b9bd0e04ce6d741b94d07ad7378e08ddc03fd89d58d9f219de732709f1251bd"
+    },
+    {
+      "id": "system.label.091",
+      "index": 91,
+      "text": "  092:Unknown",
+      "source_offset": 1877,
+      "source_raw_sha256": "8a19a574d7db858b5ff358476c6053b45112cfdd42318cc50576a964acb4e835"
+    },
+    {
+      "id": "system.label.092",
+      "index": 92,
+      "text": "  093:Unknown",
+      "source_offset": 1892,
+      "source_raw_sha256": "03b92fb4549b7e280addf8f7630e3896c09cdc2a170e1442f556c6da3702e60e"
+    },
+    {
+      "id": "system.label.093",
+      "index": 93,
+      "text": "  094:Unknown",
+      "source_offset": 1907,
+      "source_raw_sha256": "42b0984313bef4cacebc12aa833faa579d8e753d86003e45f759d9dd7aca8bd8"
+    },
+    {
+      "id": "system.label.094",
+      "index": 94,
+      "text": "  095:Unknown",
+      "source_offset": 1922,
+      "source_raw_sha256": "4844fe8b18684cfb7f0ce16b847c51d461a291d312e952ee62325f83ef1bd0fe"
+    },
+    {
+      "id": "system.label.095",
+      "index": 95,
+      "text": "  096:Unknown",
+      "source_offset": 1937,
+      "source_raw_sha256": "282f1e5bac29a1d276a5af20b8eeaa1462593a43893e78d9ae4641a4d041ad80"
+    },
+    {
+      "id": "system.label.096",
+      "index": 96,
+      "text": "  097:Unknown",
+      "source_offset": 1952,
+      "source_raw_sha256": "c3623c80b208ef63664a12bd7a32c94fde54fa5ec2edbc728a901abec0d08606"
+    },
+    {
+      "id": "system.label.097",
+      "index": 97,
+      "text": "  098:Unknown",
+      "source_offset": 1967,
+      "source_raw_sha256": "bcf19b9483d857b19e8c557892f7db8922fabcda1ca14d89aacfa1b69c836e90"
+    },
+    {
+      "id": "system.label.098",
+      "index": 98,
+      "text": "  099:Unknown",
+      "source_offset": 1982,
+      "source_raw_sha256": "82a0d96d18d9fe685fd959b9b27f854392aafc81e60364318a66d011ef5711f3"
+    },
+    {
+      "id": "system.label.099",
+      "index": 99,
+      "text": "  100:Unknown",
+      "source_offset": 1997,
+      "source_raw_sha256": "d4ca46538f766fe5f3fb365f27cad7893e94871f7cf2a06deab71689c3f900cc"
+    },
+    {
+      "id": "system.label.100",
+      "index": 100,
+      "text": "  101:Unknown",
+      "source_offset": 2012,
+      "source_raw_sha256": "aff852679dd662a978f6b74be5a0b26956efebcf9c8880eda54949450b869520"
+    },
+    {
+      "id": "system.label.101",
+      "index": 101,
+      "text": "  102:Unknown",
+      "source_offset": 2027,
+      "source_raw_sha256": "0395615e20fb36685b09e7d54fe133ab477c29ec66650d1c029ee8eef3f75b5a"
+    },
+    {
+      "id": "system.label.102",
+      "index": 102,
+      "text": "  103:Unknown",
+      "source_offset": 2042,
+      "source_raw_sha256": "e553bfa5bf02db949621eb1d147718adedaa9bd086b669204ebb23569e9d3ac5"
+    },
+    {
+      "id": "system.label.103",
+      "index": 103,
+      "text": "  104:Unknown",
+      "source_offset": 2057,
+      "source_raw_sha256": "bf98ecaadca03a1bbada68e28460ddfe6c531b10ea75b592b790f40558e19826"
+    },
+    {
+      "id": "system.label.104",
+      "index": 104,
+      "text": "  105:Unknown",
+      "source_offset": 2072,
+      "source_raw_sha256": "64fc89dbebb070ec0792dd51745f190dd1981f1f0ca72a05b9aef8e4c39aa269"
+    },
+    {
+      "id": "system.label.105",
+      "index": 105,
+      "text": "  106:Unknown",
+      "source_offset": 2087,
+      "source_raw_sha256": "2c1f9a9d14ca1b23b77afdd8f97e9e9d1c1074738959b337e893532a3e401d52"
+    },
+    {
+      "id": "system.label.106",
+      "index": 106,
+      "text": "  107:Unknown",
+      "source_offset": 2102,
+      "source_raw_sha256": "5acec3ebaf152b91811c403210c1c94acca06e5fe70001055e17a1b1e0695cd1"
+    },
+    {
+      "id": "system.label.107",
+      "index": 107,
+      "text": "  108:Unknown",
+      "source_offset": 2117,
+      "source_raw_sha256": "98459de04c556e08b515a412d5f858444b00b81d2b4f78fbe579c521785ba89b"
+    },
+    {
+      "id": "system.label.108",
+      "index": 108,
+      "text": "  109:Unknown",
+      "source_offset": 2132,
+      "source_raw_sha256": "fa0f2d3366093f49b5a7b9798505a76a79a66d91807935a78febf289b8bf64b8"
+    },
+    {
+      "id": "system.label.109",
+      "index": 109,
+      "text": "  110:Unknown",
+      "source_offset": 2147,
+      "source_raw_sha256": "5c9d804f566ad1ab1c434bc633afade1219e9018d18064bcaddeb402c17b2fa5"
+    },
+    {
+      "id": "system.label.110",
+      "index": 110,
+      "text": "  111:Unknown",
+      "source_offset": 2162,
+      "source_raw_sha256": "407cc00cbf4d4679ffc25e7eefb30d87bb4db59d161c5974de22580ce2c90685"
+    },
+    {
+      "id": "system.label.111",
+      "index": 111,
+      "text": "  112:Unknown",
+      "source_offset": 2177,
+      "source_raw_sha256": "d3d6c669197ff2582b02522028042410a153870b6b6b521fe59f87ad89338b1f"
+    },
+    {
+      "id": "system.label.112",
+      "index": 112,
+      "text": "  113:Unknown",
+      "source_offset": 2192,
+      "source_raw_sha256": "0741ade19d1b32b135c71a979d732510b1762118a4200c7d29d81367b81dc52e"
+    },
+    {
+      "id": "system.label.113",
+      "index": 113,
+      "text": "  114:Unknown",
+      "source_offset": 2207,
+      "source_raw_sha256": "616f22ed4ba48f10f648cc273cbd83bae87ebe2b4a13c23a096bdea9a3027554"
+    },
+    {
+      "id": "system.label.114",
+      "index": 114,
+      "text": "  115:Unknown",
+      "source_offset": 2222,
+      "source_raw_sha256": "8ee1d8a68ca2202701e7764368dbf7958bafebe1aa45334fa4dcd9c47d11b359"
+    },
+    {
+      "id": "system.label.115",
+      "index": 115,
+      "text": "  116:Unknown",
+      "source_offset": 2237,
+      "source_raw_sha256": "cbd2283093b06d8302c0bca9c777b1d19a3920d8d49b9138a8f8ea82ce7fd67d"
+    },
+    {
+      "id": "system.label.116",
+      "index": 116,
+      "text": "  117:Unknown",
+      "source_offset": 2252,
+      "source_raw_sha256": "815a9e39aa647dabd8f8d6845626cc41546b45ac03967429de0702570f061561"
+    },
+    {
+      "id": "system.label.117",
+      "index": 117,
+      "text": "  118:Unknown",
+      "source_offset": 2267,
+      "source_raw_sha256": "5d9f407188b1294f90d321f774e2aa2a84f70e709628697478def9e8231c81bb"
+    },
+    {
+      "id": "system.label.118",
+      "index": 118,
+      "text": "  119:Unknown",
+      "source_offset": 2282,
+      "source_raw_sha256": "6f550ccadc1eee4a66facee550cfb096d6ff86a840fe37e329c5bc3322d2a1c3"
+    },
+    {
+      "id": "system.label.119",
+      "index": 119,
+      "text": "  120:Unknown",
+      "source_offset": 2297,
+      "source_raw_sha256": "ee54b09c0637602e4a3580a792718e983aea2f1e1ce8a76e7a6b28e474528ece"
+    },
+    {
+      "id": "system.label.120",
+      "index": 120,
+      "text": "  121:Unknown",
+      "source_offset": 2312,
+      "source_raw_sha256": "b3176adad64620358c83c9c04ffcbe485df24943bece3344d10aa1d55f1e9481"
+    },
+    {
+      "id": "system.label.121",
+      "index": 121,
+      "text": "  122:Unknown",
+      "source_offset": 2327,
+      "source_raw_sha256": "3af0eaecebcd11a2a8f7efe6da9b712f93860038b845da9e5e94c6a3b4935ea6"
+    },
+    {
+      "id": "system.label.122",
+      "index": 122,
+      "text": "  123:Unknown",
+      "source_offset": 2342,
+      "source_raw_sha256": "745de2660b7e90c6627d3af7c8263b7670fd8c47fc740eb19b353f336b97d248"
+    },
+    {
+      "id": "system.label.123",
+      "index": 123,
+      "text": "  124:Unknown",
+      "source_offset": 2357,
+      "source_raw_sha256": "681efc67099d2f0e48e3c73fdc764c4fdd4181784752642adc573663f84ecf9c"
+    },
+    {
+      "id": "system.label.124",
+      "index": 124,
+      "text": "  125:Unknown",
+      "source_offset": 2372,
+      "source_raw_sha256": "4001e1f500bf9e7e2ec6287a814645f8e17480ad4a5fffa1e9d7e5c0ae009371"
+    },
+    {
+      "id": "system.label.125",
+      "index": 125,
+      "text": "  126:Unknown",
+      "source_offset": 2387,
+      "source_raw_sha256": "b13b0b3f1bc8db4f0a4aab6f2b5266c0d38426379fa256d3415386f88b64cfab"
+    },
+    {
+      "id": "system.label.126",
+      "index": 126,
+      "text": "  127:Unknown",
+      "source_offset": 2402,
+      "source_raw_sha256": "0199f7733886a5cc161cd11efbdaddfecc94b06cf37f48e1e8f9975ddce6af63"
+    },
+    {
+      "id": "system.label.127",
+      "index": 127,
+      "text": "  128:Unknown",
+      "source_offset": 2417,
+      "source_raw_sha256": "4fbfa94d44c7e19fd136208ed02ed33f68373d98fd59ef3ef5c8a2682051658e"
+    }
+  ],
+  "glossary_links": [
+    "mech.001",
+    "mech.005",
+    "term.002",
+    "term.004",
+    "term.008",
+    "term.009",
+    "term.061",
+    "term.072"
+  ],
+  "context": "An additional older/different pair of shared profiles, not interchangeable with the current WIN00 library. No firm character or mech slot identity is assigned.",
+  "decisions": [
+    "Preserve year 5959, Zeifon then Rayblade, weapons/main-control duties and the two-pilot activation statement exactly as this source says.",
+    "Do not replace these differences with current library lore or invent a female-pilot restriction absent here.",
+    "He follows the source description of a handsome male lead; no name is assigned from aliased slot indices.",
+    "Existing 001..128:Unknown labels retain every displayed character and leading space; only native glyph encoding may change for the integrated font.",
+    "La=Dis is treated as the Spirit Mech category; original Japanese does not mark number explicitly. Independent terminology review remains pending."
+  ],
+  "insertion_status": "Draft; native archive insertion, layout and actual runtime use pending"
+}

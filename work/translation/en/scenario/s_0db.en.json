@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_0db.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_0db.o0007f.l00",
+      "block_id": "scenario.s_0db.o0007f",
+      "member": "s_0db.bin",
+      "line_index": 0,
+      "en": "\"Flag 1B0 is not set. To run this private",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "d61adf108763eb2e86616f34c95b7ebc667c5471a54bb51bf648545f0bdf5c7f",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_0db.o0007f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_0db.o0007f.l01",
+      "block_id": "scenario.s_0db.o0007f",
+      "member": "s_0db.bin",
+      "line_index": 1,
+      "en": "event, set flag 1B0 and try again.",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "5f6e5bca667f19e6d37a84e2789c3632ba09d62c52a521f348cfb0ac7af1cbb1",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_0db.o0007f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_0db.o0007f.l02",
+      "block_id": "scenario.s_0db.o0007f",
+      "member": "s_0db.bin",
+      "line_index": 2,
+      "en": "Otherwise, execution will be forcibly terminated.\"<FC:B4:3E>",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "345907ccb1580479646130248377d82d6805e86def807cf42e869ef8f71b40b5",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_0db.o0007f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_0db.o0007f.l00",
+      "last_id": "scenario.s_0db.o0007f.l02",
+      "rows_examined": 880,
+      "context": "Slice 0-2; all855 rows in s_0da-s_0de plus following s_0df rows0-24 read. Three-row developer diagnostic about missing flag1B0 and forced termination, treated as displayed game text rather than an instruction to alter runtime.",
+      "decisions": "One physical source row per English row; retain same-row proper names/numbers, flag identifiers, control sequences/native marks, quotation/whisper boundaries and long pauses. Restore settled pro-drop and help direction; record actual fragments/unknown referents. Distinguish choices, remembered scenes, claims/speculation and fictional technical explanations from verified facts or engine mechanics. Match tutorial English UI labels without byte squeezing. Ordinary friendship, grief, cat care and nonexplicit humor retained, threats/objections not softened, no invented physical/sexual act or medical procedure. Exact-source repeated diagnostics from own new draft only. No new holds. Independent meaning review, full VM coverage, insertion/font/layout and game validation pending.",
+      "row_decisions": {
+        "scenario.s_0db.o0007f.l00": "Developer diagnostic printed in source, not an instruction to the translator to change flags. Preserve opaque flag1B0 in0/1 and whole three-row message.",
+        "scenario.s_0db.o0007f.l02": "FCB4 wait retained at final source position, execution terminated message does not assert native app quit versus event termination."
+      },
+      "row_count": 3
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "disc-icon.subtitle",
+  "file": "0GDTEX.PVR",
+  "source_sha256": "832744af5cf281e3665f204eb3d4f9ef92221ea72e1fc7214748494f5a3df02e",
+  "en": "SEIREIKI RAYBLADE",
+  "glossary_id": "term.001",
+  "treatment": "Original artwork + English subtitle",
+  "stroke_bounds": [
+    91,
+    239,
+    167,
+    249
+  ],
+  "word_origins": [
+    [
+      92,
+      240
+    ],
+    [
+      132,
+      240
+    ]
+  ],
+  "method": "Current inferred Latin masks/advances, one common whole-word scale to eight ink pixels high; black outline and white coverage blended into original ARGB1555 pixels",
+  "font_sha256": "63407f4c30151aa0bece46ef72b5372fa2cbe4120fd9c7ce9fe79f5e28a1c6fa",
+  "normal_font_changed": false,
+  "interword_gap": "Sixteen pixels of visual space retains the original central blade tip",
+  "source_transparency": "All 65536 alpha bits exact; subtitle stays inside opaque disc",
+  "limits": "Dreamcast/Flycast disc-selection appearance and readability unverified; not a replacement English logo"
+}

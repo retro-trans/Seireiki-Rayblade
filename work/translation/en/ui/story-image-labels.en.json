@@ -1,0 +1,380 @@
+{
+  "source": "Original ADV00.AFS event artwork",
+  "letter_recipe": "work/translation/en/ui/story-letter.en.json",
+  "placeholder_images": [
+    {
+      "id": "adv00.303",
+      "member": 303,
+      "en_lines": [
+        "Event Illustration",
+        "Work in Progress"
+      ],
+      "source_decoded_sha256": "f2f9a9918f091487b9bb064f80aed1a21709e00a1fcb5783f34a7cda2b403507",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Work in Progress",
+          "mask_size": [
+            114,
+            24
+          ],
+          "ink_box": [
+            102,
+            65,
+            217,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration work-in-progress placeholder",
+      "reachability": "not established; shipped development artwork"
+    },
+    {
+      "id": "adv00.307",
+      "member": 307,
+      "en_lines": [
+        "Event Illustration",
+        "Work in Progress"
+      ],
+      "source_decoded_sha256": "f2f9a9918f091487b9bb064f80aed1a21709e00a1fcb5783f34a7cda2b403507",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Work in Progress",
+          "mask_size": [
+            114,
+            24
+          ],
+          "ink_box": [
+            102,
+            65,
+            217,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration work-in-progress placeholder",
+      "reachability": "not established; shipped development artwork"
+    },
+    {
+      "id": "adv00.321",
+      "member": 321,
+      "en_lines": [
+        "Event Illustration",
+        "Work in Progress"
+      ],
+      "source_decoded_sha256": "f2f9a9918f091487b9bb064f80aed1a21709e00a1fcb5783f34a7cda2b403507",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Work in Progress",
+          "mask_size": [
+            114,
+            24
+          ],
+          "ink_box": [
+            102,
+            65,
+            217,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration work-in-progress placeholder",
+      "reachability": "not established; shipped development artwork"
+    },
+    {
+      "id": "adv00.333",
+      "member": 333,
+      "en_lines": [
+        "Event Illustration",
+        "Work in Progress"
+      ],
+      "source_decoded_sha256": "f2f9a9918f091487b9bb064f80aed1a21709e00a1fcb5783f34a7cda2b403507",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Work in Progress",
+          "mask_size": [
+            114,
+            24
+          ],
+          "ink_box": [
+            102,
+            65,
+            217,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration work-in-progress placeholder",
+      "reachability": "not established; shipped development artwork"
+    },
+    {
+      "id": "adv00.335",
+      "member": 335,
+      "en_lines": [
+        "Event Illustration",
+        "Work in Progress"
+      ],
+      "source_decoded_sha256": "f2f9a9918f091487b9bb064f80aed1a21709e00a1fcb5783f34a7cda2b403507",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Work in Progress",
+          "mask_size": [
+            114,
+            24
+          ],
+          "ink_box": [
+            102,
+            65,
+            217,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration work-in-progress placeholder",
+      "reachability": "not established; shipped development artwork"
+    },
+    {
+      "id": "adv00.337",
+      "member": 337,
+      "en_lines": [
+        "Event Illustration",
+        "Work in Progress"
+      ],
+      "source_decoded_sha256": "f2f9a9918f091487b9bb064f80aed1a21709e00a1fcb5783f34a7cda2b403507",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Work in Progress",
+          "mask_size": [
+            114,
+            24
+          ],
+          "ink_box": [
+            102,
+            65,
+            217,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration work-in-progress placeholder",
+      "reachability": "not established; shipped development artwork"
+    },
+    {
+      "id": "adv00.481",
+      "member": 481,
+      "en_lines": [
+        "Event Illustration",
+        "Dummy"
+      ],
+      "source_decoded_sha256": "433491168322d961f9e20f9d688b9c3b90c91ea9b79e31008a19c7162758c14e",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Dummy",
+          "mask_size": [
+            50,
+            24
+          ],
+          "ink_box": [
+            134,
+            65,
+            185,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration dummy placeholder",
+      "reachability": "not established; shipped development artwork"
+    },
+    {
+      "id": "adv00.483",
+      "member": 483,
+      "en_lines": [
+        "Event Illustration",
+        "Dummy"
+      ],
+      "source_decoded_sha256": "433491168322d961f9e20f9d688b9c3b90c91ea9b79e31008a19c7162758c14e",
+      "replace_box": [
+        0,
+        0,
+        320,
+        240
+      ],
+      "draws": [
+        {
+          "text": "Event Illustration",
+          "mask_size": [
+            116,
+            24
+          ],
+          "ink_box": [
+            101,
+            25,
+            218,
+            50
+          ]
+        },
+        {
+          "text": "Dummy",
+          "mask_size": [
+            50,
+            24
+          ],
+          "ink_box": [
+            134,
+            65,
+            185,
+            90
+          ]
+        }
+      ],
+      "font_source_scale": "Uniform 1x supplied bitmap, 24-pixel cell height",
+      "meaning": "event illustration dummy placeholder",
+      "reachability": "not established; shipped development artwork"
+    }
+  ],
+  "story_library_draft_credit": 0,
+  "notes": [
+    "Work in Progress translates the event-image preparation notice; Dummy preserves the development label.",
+    "No replacement artwork is invented for unfinished source illustrations.",
+    "Actual native reachability and live appearance remain unverified."
+  ]
+}

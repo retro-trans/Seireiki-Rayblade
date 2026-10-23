@@ -1,0 +1,74 @@
+{
+  "source_disc": "E:\\Games\\Skies of Arcadia (USA) (Disc 1).cue",
+  "disc_file_count": 3490,
+  "executable_sha256": "4218c07829d63080be2da86413ec023e6d77001c13a1494648db6e2e5cb73611",
+  "embedded_latin_font": {
+    "offset": "0x360cd4",
+    "glyph_size": [
+      12,
+      24
+    ],
+    "format": "6 x 12 VQ indices; each byte selects a 2 x 2 block",
+    "glyph_count": 96,
+    "first_code": 32,
+    "last_code": 127,
+    "native_routine": "0x8c02a1b8",
+    "native_ascii_branch": "0x8c02a1ce..0x8c02a20c",
+    "native_glyph_stride": "(character - 32) * 72",
+    "native_row_copy": "6 VQ index bytes per block row, 12 block rows, then zero right padding",
+    "native_next_table": "0x3627d4",
+    "coverage_values": [
+      0,
+      85,
+      187,
+      255
+    ],
+    "codebook_generator": "0x8c02ad8e..0x8c02ae36",
+    "codebook_color_table_address": "0x8c3fa0f0",
+    "codebook_color_words": [
+      "0x0",
+      "0x5fff",
+      "0xbfff",
+      "0xffff"
+    ],
+    "roundtripped_glyphs": 96,
+    "live_dialogue_usage": "not independently traced"
+  },
+  "supplied_atlas_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "current_rayblade_font_sha256": "63407f4c30151aa0bece46ef72b5372fa2cbe4120fd9c7ce9fe79f5e28a1c6fa",
+  "native_codebook_check": {
+    "routine": "0x8c02ad8e",
+    "entries": 256,
+    "exact_bytes": 2048,
+    "integer_sh4_instructions": 9381,
+    "output_guards": "pass",
+    "callee_saved_registers_and_stack": "pass",
+    "sha256": "22c961f83d8f219f30c821f81505f4861fcb4c98fc43e5db21253fb13d07f15b",
+    "scope": "Actual codebook generator in integer interpreter; not GPU rendering"
+  },
+  "ascii_comparison": {
+    "compared_glyphs": 95,
+    "identical_glyphs": 18,
+    "different_glyphs": 77,
+    "skies_total_coverage": 1433950,
+    "supplied_total_coverage": 1213103,
+    "skies_to_supplied_coverage_ratio": 1.1820513179837162
+  },
+  "findings": [
+    "The embedded Skies Latin font and supplied atlas do not have identical pixel masks.",
+    "Skies coverage is decoded from its generated VQ codebook, not inferred from nibble counts.",
+    "The supplied atlas and embedded Skies font have the same four alpha levels.",
+    "Rayblade currently reconstructs outlines, trims side columns and uses new variable advances.",
+    "Rayblade surface reduction point-samples source coverage, which can discard edge samples."
+  ],
+  "limitations": [
+    "The actual Skies dialogue draw call, blend state, filtering and screen scale are not traced.",
+    "The preview normalizes source-mask scale and does not simulate the GPU or native decimator.",
+    "This comparison does not change the selected font or create a playable build."
+  ],
+  "game_files_changed": false,
+  "outputs": [
+    "E:\\Projects\\Seireiki Rayblade\\work\\ui\\skies-font-comparison\\skies-embedded-latin.png",
+    "E:\\Projects\\Seireiki Rayblade\\work\\ui\\skies-font-comparison\\font-comparison.png"
+  ]
+}

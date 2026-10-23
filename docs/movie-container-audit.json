@@ -1,0 +1,201 @@
+{
+  "source_bytes": 37392384,
+  "source_sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084",
+  "sectors": 18258,
+  "packet_counts": {
+    "0xbb": 2,
+    "0xbe": 2,
+    "0xbf": 1,
+    "0xc0": 2531,
+    "0xe0": 15723
+  },
+  "mux_bytes_per_second": [
+    356700
+  ],
+  "scr_first_last_seconds": [
+    2.2222222222222223e-05,
+    104.80446666666667
+  ],
+  "scr_regressions": [
+    {
+      "previous_sector": 1,
+      "sector": 2,
+      "previous_scr": 519,
+      "scr": 2
+    }
+  ],
+  "metadata": {
+    "system_bytes_per_second": 0,
+    "audio_ms": 102949,
+    "video_ms": 102903,
+    "video_frames": 3084,
+    "maximum_picture_bytes": 0,
+    "average_picture_bytes": 0
+  },
+  "streams": [
+    {
+      "id": "0xc0",
+      "bytes": 5107558,
+      "sha256": "875c16170805a4dcce5e498eeac6a35aa6346698496aa587dbea36fdd48c9a8b",
+      "timed_packets": 2531,
+      "first_timestamps": [
+        {
+          "sector": 3,
+          "scr": 1552,
+          "id": "0xc0",
+          "size": 2036,
+          "std_buffer_bytes": 512,
+          "pts": 0,
+          "payload_bytes": 2018,
+          "elementary_offset": 0
+        },
+        {
+          "sector": 5,
+          "scr": 2586,
+          "id": "0xc0",
+          "size": 2036,
+          "std_buffer_bytes": 512,
+          "pts": 3661,
+          "payload_bytes": 2018,
+          "elementary_offset": 2018
+        },
+        {
+          "sector": 10,
+          "scr": 5169,
+          "id": "0xc0",
+          "size": 2036,
+          "std_buffer_bytes": 512,
+          "pts": 7322,
+          "payload_bytes": 2018,
+          "elementary_offset": 4036
+        },
+        {
+          "sector": 16,
+          "scr": 8269,
+          "id": "0xc0",
+          "size": 2036,
+          "std_buffer_bytes": 512,
+          "pts": 10982,
+          "payload_bytes": 2018,
+          "elementary_offset": 6054
+        }
+      ],
+      "last_timestamps": [
+        {
+          "sector": 18240,
+          "scr": 9424135,
+          "id": "0xc0",
+          "size": 2036,
+          "std_buffer_bytes": 512,
+          "pts": 9258090,
+          "payload_bytes": 2018,
+          "elementary_offset": 5103522
+        },
+        {
+          "sector": 18256,
+          "scr": 9432402,
+          "id": "0xc0",
+          "size": 2036,
+          "std_buffer_bytes": 512,
+          "pts": 9261751,
+          "payload_bytes": 2018,
+          "elementary_offset": 5105540
+        }
+      ],
+      "adx": {
+        "header_bytes": 288,
+        "block_bytes": 18,
+        "sample_bits": 4,
+        "channels": 2,
+        "sample_rate": 44100,
+        "sample_count": 4539345
+      }
+    },
+    {
+      "id": "0xe0",
+      "bytes": 31729014,
+      "sha256": "8b705faea9ce28dca7b6c0f0d652f9069a7133bfb79a9f8de08d9660712f4ab4",
+      "timed_packets": 2550,
+      "first_timestamps": [
+        {
+          "sector": 4,
+          "scr": 2069,
+          "id": "0xe0",
+          "size": 2036,
+          "std_buffer_bytes": 47104,
+          "pts": 0,
+          "dts": 3006,
+          "payload_bytes": 2018,
+          "elementary_offset": 0
+        },
+        {
+          "sector": 9,
+          "scr": 4652,
+          "id": "0xe0",
+          "size": 2036,
+          "std_buffer_bytes": 47104,
+          "pts": 3006,
+          "dts": 6012,
+          "payload_bytes": 2018,
+          "elementary_offset": 8072
+        },
+        {
+          "sector": 15,
+          "scr": 7752,
+          "id": "0xe0",
+          "size": 2036,
+          "std_buffer_bytes": 47104,
+          "pts": 9018,
+          "dts": 9018,
+          "payload_bytes": 2018,
+          "elementary_offset": 18162
+        },
+        {
+          "sector": 21,
+          "scr": 10852,
+          "id": "0xe0",
+          "size": 2036,
+          "std_buffer_bytes": 47104,
+          "pts": 6012,
+          "payload_bytes": 2018,
+          "elementary_offset": 28252
+        }
+      ],
+      "last_timestamps": [
+        {
+          "sector": 18245,
+          "scr": 9426719,
+          "id": "0xe0",
+          "size": 2036,
+          "std_buffer_bytes": 47104,
+          "pts": 9258327,
+          "dts": 9258327,
+          "payload_bytes": 2018,
+          "elementary_offset": 31706816
+        },
+        {
+          "sector": 18255,
+          "scr": 9431885,
+          "id": "0xe0",
+          "size": 2036,
+          "std_buffer_bytes": 47104,
+          "pts": 9255321,
+          "payload_bytes": 2018,
+          "elementary_offset": 31726996
+        }
+      ],
+      "sequence": {
+        "width": 320,
+        "height": 192,
+        "rate_code": 4,
+        "bitrate": 2458000,
+        "vbv_bytes": 102400
+      },
+      "picture_types": {
+        "1": 125,
+        "2": 1418,
+        "3": 1541
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "version": "0.1.41",
+  "source_build": "0.1.40",
+  "date": "2026-10-24",
+  "status": "All inserted English dialogue reflowed; local package and offline native gates pass; live reading-flow test pending",
+  "disc": "work/output/0.1.41/disc/Rayblade English Test 0.1.41.gdi",
+  "story": {
+    "commands": 50273,
+    "changed_commands": 29671,
+    "joined_breaks": 72021,
+    "new_breaks": 35479
+  },
+  "embedded": {
+    "commands": 13,
+    "changed_commands": 12
+  },
+  "battle": {
+    "spans": 5516,
+    "changed_spans": 1420,
+    "joined_breaks": 717,
+    "new_breaks": 1572,
+    "automatic_page_breaks": 1
+  },
+  "font_sha256": "5fe1480136b8c7d2bb15a32b17588edc0459fcf9c1079c9aa4b1075e11a4d181",
+  "maximum_pen_width": 236,
+  "samples": [
+    {
+      "id": "scenario.s_000.o00fb9",
+      "before": "Yamato: \"Okay, here's what the girls\nthink of you. The higher the\nnumber,\nthe more they like you, of course.\"",
+      "after": "Yamato: \"Okay, here's what the girls think of\nyou. The higher the number, the more they like\nyou, of course.\""
+    },
+    {
+      "id": "scenario.s_000.o0100c",
+      "before": "Yamato: \"Here's your current\nAffection rating.\nMake good use of your Topics and\nyou'll be fine. Let's do our best!\"",
+      "after": "Yamato: \"Here's your current Affection rating.\nMake good use of your Topics and you'll be fine.\nLet's do our best!\""
+    },
+    {
+      "id": "scenario.s_002.o00526",
+      "before": "Forzen: \"According to the story I\nwas taught, to defeat a mighty\ndemon king,\nthree giant gods descended. During\nthe battle,\nthey unleashed so much energy that\nit threatened\nto destroy the world. To prevent its\ndestruction,\nthey created a space that is said to\nhave become\nthe foundation of Agarthia.\"",
+      "after": "Forzen: \"According to the story I was taught,\nto defeat a mighty demon king, three giant gods\ndescended. During the battle, they unleashed so\nmuch energy that it threatened to destroy the\nworld. To prevent its destruction, they created\na space that is said to have become the\nfoundation of Agarthia.\""
+    }
+  ],
+  "files": {
+    "1ST_READ.BIN": {
+      "size": 1135588,
+      "sha256": "5cfe45faab1fcd91b4aa40302bd271ba04b98d6150d00f8d366ffdd1c5831d73"
+    },
+    "WIN00.AFS": {
+      "size": 1677312,
+      "sha256": "28f9909cc2c72d512f1a8b6442489a013e8f1d29296ac0dca2beb47d1233ce79"
+    },
+    "D_SCE.AFS": {
+      "size": 4079616,
+      "sha256": "a89eba46dbfec18004ed07c725dd42bf5fa22bfeac3144b0effbbe4e913ac24c"
+    },
+    "D_NAMES.BIN": {
+      "size": 33944,
+      "sha256": "f2026a7284a1c0acc7238635edfcba4bce4ebec3cdf599e2502776692454ad61"
+    },
+    "D_BMESS.BIN": {
+      "size": 114271,
+      "sha256": "622a23b3445e68dc5fdfa5f6ae467e7f9e44d9fa149d153ab6dc1d3ecdaa3215"
+    },
+    "MOV055.SFD": {
+      "size": 22302720,
+      "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451"
+    },
+    "MOV072.SFD": {
+      "size": 37392384,
+      "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530"
+    },
+    "WMAP.AFS": {
+      "size": 5179392,
+      "sha256": "d1318e1e5618681890e325575e6c1a537cebc65918811f88c4404f7bc01ed6eb"
+    },
+    "STAFF.AFS": {
+      "size": 925696,
+      "sha256": "061a021b147b474cf2148a4cdce4e8a4a4db4e2f3960c9efa87d75215ee21189"
+    },
+    "ADV00.AFS": {
+      "size": 46262272,
+      "sha256": "71e838631f9e23fec6d8cafe2b12bdc4553eb634d1f61584e790f3d14694ab6a"
+    },
+    "ALBUM.AFS": {
+      "size": 22493184,
+      "sha256": "a0623270356cfa02594066bb61cd78d343ed58e49ae6237ca4d74f1c6a6571bc"
+    },
+    "EFFECT.AFS": {
+      "size": 9922560,
+      "sha256": "b39be7142f8ba458b2a3c32c9e9a5ddf201abe82aedf16bdc78640aecb3a269f"
+    },
+    "D_SYSTEM.AFS": {
+      "size": 530432,
+      "sha256": "3d071a2574d37eb0cbbd8338b861daa4a474c17f2e2a20fad83efa9849af1d77"
+    },
+    "0GDTEX.PVR": {
+      "size": 131104,
+      "sha256": "fccd2a7a7dc42ab35d0b2bf6fd37ea4da5c1f243bacb451a152ccb184d93f913"
+    }
+  },
+  "validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "native_proof": "work/output/0.1.41/dialogue-reflow-native-test.json",
+  "native_proof_sha256": "ed7d7d47916584c88bf155696d78cdd554551dc5b6c9ea59b24bba3a722aaf28",
+  "native_limits": [
+    "File I/O, allocation/cache, glyph drawing and effect/GPU endpoints use documented bounded fixtures",
+    "All widths and bank lookups audited; full native formatting uses inline/VM witnesses, not all 50273 commands",
+    "Battle flags/RNG outcomes use deterministic fixtures; preceding combat-state setup unverified",
+    "Fresh-boot reading flow, callback timing, GPU appearance and full-game navigation remain pending"
+  ],
+  "sector_substitutions": 1979,
+  "wording_changes": 0,
+  "new_translation_credit": 0,
+  "held_source_commands": "unchanged; no translation or reflow applied",
+  "release": false
+}

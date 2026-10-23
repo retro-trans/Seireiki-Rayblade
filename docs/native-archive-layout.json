@@ -1,0 +1,164 @@
+{
+  "version": "0.1.38",
+  "source_build": "0.1.37",
+  "status": "Captured wrong read reproduced exactly and cumulative-sector layouts repaired; user fresh New Game test pending",
+  "disc": "work/output/0.1.38/disc/Rayblade English Test 0.1.38.gdi",
+  "archives": {
+    "WMAP.AFS": {
+      "current_build": "0.1.38",
+      "archive_sha256": "d1318e1e5618681890e325575e6c1a537cebc65918811f88c4404f7bc01ed6eb",
+      "member_payloads_unchanged_from": "0.1.37",
+      "member_count": 20,
+      "native_lookups": "all offsets/sector lengths match physical layout",
+      "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+    },
+    "STAFF.AFS": {
+      "current_build": "0.1.38",
+      "archive_sha256": "061a021b147b474cf2148a4cdce4e8a4a4db4e2f3960c9efa87d75215ee21189",
+      "member_payloads_unchanged_from": "0.1.37",
+      "member_count": 22,
+      "native_lookups": "all offsets/sector lengths match physical layout",
+      "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+    },
+    "ADV00.AFS": {
+      "current_build": "0.1.38",
+      "archive_sha256": "71e838631f9e23fec6d8cafe2b12bdc4553eb634d1f61584e790f3d14694ab6a",
+      "member_payloads_unchanged_from": "0.1.37",
+      "member_count": 777,
+      "native_lookups": "all offsets/sector lengths match physical layout",
+      "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+    },
+    "ALBUM.AFS": {
+      "current_build": "0.1.40",
+      "archive_sha256": "a0623270356cfa02594066bb61cd78d343ed58e49ae6237ca4d74f1c6a6571bc",
+      "member_count": 251,
+      "native_lookups": "All 251 offsets/sector lengths match physical layout",
+      "evidence": "work/output/0.1.40/memory-album-native-test.json",
+      "unchanged_fullsize_members": 214,
+      "added_caption_texture_members": [
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249
+      ],
+      "manifest_member_before_after": [
+        243,
+        250
+      ]
+    },
+    "EFFECT.AFS": {
+      "current_build": "0.1.38",
+      "archive_sha256": "b39be7142f8ba458b2a3c32c9e9a5ddf201abe82aedf16bdc78640aecb3a269f",
+      "member_payloads_unchanged_from": "0.1.37",
+      "member_count": 460,
+      "native_lookups": "all offsets/sector lengths match physical layout",
+      "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+    },
+    "D_SYSTEM.AFS": {
+      "current_build": "0.1.38",
+      "archive_sha256": "3d071a2574d37eb0cbbd8338b861daa4a474c17f2e2a20fad83efa9849af1d77",
+      "member_payloads_unchanged_from": "0.1.37",
+      "member_count": 2,
+      "native_lookups": "all offsets/sector lengths match physical layout",
+      "evidence": "work/output/0.1.38/ordered-archives-native-test.json"
+    },
+    "D_SCE.AFS": {
+      "current_build": "0.1.41",
+      "archive_sha256": "a89eba46dbfec18004ed07c725dd42bf5fa22bfeac3144b0effbbe4e913ac24c",
+      "member_count": 448,
+      "native_lookups": "All 448 offsets/sector lengths match physical layout",
+      "source_VM_prefixes": "all 447 exact",
+      "evidence": "work/output/0.1.41/dialogue-reflow-native-test.json"
+    }
+  },
+  "unchanged_compatible_archives": [
+    "WIN00.AFS",
+    "D_SCE.AFS"
+  ],
+  "unchanged_member_payloads_in_repacked_archives": 1525,
+  "native_lookup_cases": 2063,
+  "native_instructions": 2869127,
+  "native_proof": "work/output/0.1.38/ordered-archives-native-test.json",
+  "native_proof_sha256": "549c8c4c6addfce1d5af63c7eb2a7466f173ef70d3ca9940ec8600215ddfc653",
+  "captured_failure": {
+    "captured_game_RAM_sha256": "334decbb1c232762e1c31b631975a0aaf7dd235128e3139778a9d0714aa8a49d",
+    "archive": "ADV00.AFS",
+    "member": 380,
+    "declared_correct_offset": 22063104,
+    "actual_native_offset": 22067200,
+    "wrong_read_bytes": 80,
+    "wrong_payload_matches_captured_RAM_after_pointer_unrelocation": true,
+    "corruption_addend": "0x8c82f2e8",
+    "corruption_stride_bytes": 12,
+    "shadow_recovery_of_scenario_hooks_heap_pointer_and_allocation_literal": "pass",
+    "native_lookup_instructions": 1978,
+    "scope": "Read-only captured evidence and analysis shadow; no process/RAM mutation"
+  },
+  "new_sector_substitutions": 28736,
+  "changed_locations_from_original": 56409,
+  "validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "live_new_game": "pending user test; computer control not resumed",
+  "normal_text_font_changed": false,
+  "story_library_draft_credit": 0,
+  "release": false,
+  "current_font_port": {
+    "version": "0.1.39",
+    "WIN00_sha256": "28f9909cc2c72d512f1a8b6442489a013e8f1d29296ac0dca2beb47d1233ce79",
+    "native_lookup_cases": 90,
+    "native_proof": "work/output/0.1.39/skies-font-native-test.json",
+    "all_current_archives_compatible": {
+      "WIN00.AFS": {
+        "members": 90,
+        "first_sector": 224,
+        "all_native_offsets_and_read_extents": "pass"
+      },
+      "D_SCE.AFS": {
+        "members": 448,
+        "first_sector": 2,
+        "all_native_offsets_and_read_extents": "pass"
+      },
+      "WMAP.AFS": {
+        "members": 20,
+        "first_sector": 254,
+        "all_native_offsets_and_read_extents": "pass"
+      },
+      "STAFF.AFS": {
+        "members": 22,
+        "first_sector": 256,
+        "all_native_offsets_and_read_extents": "pass"
+      },
+      "ADV00.AFS": {
+        "members": 777,
+        "first_sector": 256,
+        "all_native_offsets_and_read_extents": "pass"
+      },
+      "ALBUM.AFS": {
+        "members": 244,
+        "first_sector": 254,
+        "all_native_offsets_and_read_extents": "pass"
+      },
+      "EFFECT.AFS": {
+        "members": 460,
+        "first_sector": 256,
+        "all_native_offsets_and_read_extents": "pass"
+      },
+      "D_SYSTEM.AFS": {
+        "members": 2,
+        "first_sector": 1,
+        "all_native_offsets_and_read_extents": "pass"
+      }
+    }
+  },
+  "latest_album_caption_update": "work/output/0.1.40/disc/Rayblade English Test 0.1.40.gdi"
+}

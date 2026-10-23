@@ -1,0 +1,20 @@
+{
+  "scope": "Two short album UI caption readings, no story/library draft credit",
+  "inserted_build": "0.1.37",
+  "entries": [
+    {
+      "id": "album.214.082",
+      "ja_ui": "裸のトウヤ",
+      "en": "Naked Touya",
+      "source_sha256": "d8d403c1a0b3ee19ac597d7412f7e20390e92821b50afa5e4e37ee3defb38529",
+      "status": "Manual source reading/draft; independent review pending"
+    },
+    {
+      "id": "album.214.102",
+      "ja_ui": "弱々しい目のアルフォリナ",
+      "en": "Alforina's Feeble Gaze",
+      "source_sha256": "00886fba1c6f4f61f49ff92329b23a7c629390e7821bd6ce4fd7b225f1a8b42c",
+      "status": "Manual source reading/draft; independent review pending"
+    }
+  ]
+}

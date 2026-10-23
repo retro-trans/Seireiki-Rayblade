@@ -1,0 +1,121 @@
+{
+  "version": "0.1.40",
+  "source_build": "0.1.39",
+  "date": "2026-10-24",
+  "status": "Local test build packaged and offline gates pass; fresh-boot UI/album testing pending",
+  "disc": "work/output/0.1.40/disc/Rayblade English Test 0.1.40.gdi",
+  "memory_card_changes": {
+    "names.g00.192": "Select a memory card slot to save to.",
+    "names.g00.193": "Select a memory card slot to load from.",
+    "names.g00.194": "No memory card is inserted in this slot.",
+    "names.g00.210": "Port A - Slot 1",
+    "names.g00.211": "Port A - Slot 2",
+    "names.g00.219": "No memory card is inserted in this slot.<NL>Saving requires at least 8 free blocks.",
+    "names.g00.223": "Port A - Slot 1<NL>Port A - Slot 2<NL>Port B - Slot 1<NL>Port B - Slot 2<NL>Port C - Slot 1<NL>Port C - Slot 2<NL>Port D - Slot 1<NL>Port D - Slot 2"
+  },
+  "album": {
+    "captions": 203,
+    "protected_photos": 224,
+    "protected_Coming_Soon_cells": 21,
+    "caption_texture_dimensions": [
+      1024,
+      512
+    ],
+    "caption_textures": 7,
+    "caption_pixel_size": [
+      192,
+      72
+    ],
+    "logical_caption_size": [
+      64,
+      24
+    ],
+    "new_caption_texture_bytes": 931840,
+    "method": "Separate 3x caption sprites with lossless four-color VQ; original photo texels unchanged",
+    "font_source": "Original Skies 12x24 glyph pixels, unscaled, four shades",
+    "sprite_UV_units": "256 normalized units per dimension, matching native 1/256 conversion"
+  },
+  "files": {
+    "1ST_READ.BIN": {
+      "size": 1135588,
+      "sha256": "7e345e0772924471a3fdad80cf1b266d7db53f3eb011367d925a958533f5760a"
+    },
+    "WIN00.AFS": {
+      "size": 1677312,
+      "sha256": "28f9909cc2c72d512f1a8b6442489a013e8f1d29296ac0dca2beb47d1233ce79"
+    },
+    "D_SCE.AFS": {
+      "size": 4079616,
+      "sha256": "e6093d42c3908850e8c7a29647e36a8c53f1b21147f614105f30414f85af35f0"
+    },
+    "D_NAMES.BIN": {
+      "size": 33944,
+      "sha256": "f2026a7284a1c0acc7238635edfcba4bce4ebec3cdf599e2502776692454ad61"
+    },
+    "D_BMESS.BIN": {
+      "size": 114271,
+      "sha256": "d86b6c4690b18182246f418f4fec0ee68e6f0a434996a68394f78f7464b5663a"
+    },
+    "MOV055.SFD": {
+      "size": 22302720,
+      "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451"
+    },
+    "MOV072.SFD": {
+      "size": 37392384,
+      "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530"
+    },
+    "WMAP.AFS": {
+      "size": 5179392,
+      "sha256": "d1318e1e5618681890e325575e6c1a537cebc65918811f88c4404f7bc01ed6eb"
+    },
+    "STAFF.AFS": {
+      "size": 925696,
+      "sha256": "061a021b147b474cf2148a4cdce4e8a4a4db4e2f3960c9efa87d75215ee21189"
+    },
+    "ADV00.AFS": {
+      "size": 46262272,
+      "sha256": "71e838631f9e23fec6d8cafe2b12bdc4553eb634d1f61584e790f3d14694ab6a"
+    },
+    "ALBUM.AFS": {
+      "size": 22493184,
+      "sha256": "a0623270356cfa02594066bb61cd78d343ed58e49ae6237ca4d74f1c6a6571bc"
+    },
+    "EFFECT.AFS": {
+      "size": 9922560,
+      "sha256": "b39be7142f8ba458b2a3c32c9e9a5ddf201abe82aedf16bdc78640aecb3a269f"
+    },
+    "D_SYSTEM.AFS": {
+      "size": 530432,
+      "sha256": "3d071a2574d37eb0cbbd8338b861daa4a474c17f2e2a20fad83efa9849af1d77"
+    },
+    "0GDTEX.PVR": {
+      "size": 131104,
+      "sha256": "fccd2a7a7dc42ab35d0b2bf6fd37ea4da5c1f243bacb451a152ccb184d93f913"
+    }
+  },
+  "proof": "work/output/0.1.40/memory-album-native-test.json",
+  "proof_sha256": "0766e3350a2eae3b1ace1c68286b6f98042e4599f5bd6f71f914067c8a1e8a4d",
+  "dispatch_cases": 1356,
+  "geometry_cases": 448,
+  "UI_cases": 23,
+  "archive_lookup_cases": 251,
+  "PRS_streams": 36,
+  "native_limits": [
+    "GPU drawing/depth/alpha and live album navigation need testing",
+    "Total live VRAM occupancy is not measured; additional captions require 931840 bytes",
+    "UI context/parameters, async read/poll and draw endpoint use bounded fixtures"
+  ],
+  "validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "sector_substitutions": 10771,
+  "translation_counts_unchanged": true,
+  "release": false,
+  "user_feedback_on_previous_font": "User said the original Skies port looks great; current screenshots identify slot/header overflow and low-detail album captions."
+}

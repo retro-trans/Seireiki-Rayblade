@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "version": "0.7.0",
+  "member": "s_16a.bin",
+  "translation_status": "English draft export; current insertion and review status tracked separately in docs/translation-status.json",
+  "rows": [
+    {
+      "id": "scenario.s_16a.o0006f.l00",
+      "block_id": "scenario.s_16a.o0006f",
+      "member": "s_16a.bin",
+      "line_index": 0,
+      "en": "\"Flag 1B0 is not set. To play this private",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "d61adf108763eb2e86616f34c95b7ebc667c5471a54bb51bf648545f0bdf5c7f",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_16a.o0006f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_16a.o0006f.l01",
+      "block_id": "scenario.s_16a.o0006f",
+      "member": "s_16a.bin",
+      "line_index": 1,
+      "en": "event, set flag 1B0 and try again.",
+      "status": "draft",
+      "ends_with_newline": true,
+      "source_sha256": "5f6e5bca667f19e6d37a84e2789c3632ba09d62c52a521f348cfb0ac7af1cbb1",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_16a.o0006f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    },
+    {
+      "id": "scenario.s_16a.o0006f.l02",
+      "block_id": "scenario.s_16a.o0006f",
+      "member": "s_16a.bin",
+      "line_index": 2,
+      "en": "Otherwise, execution will be forcibly terminated.\"<FC:B4:3E>",
+      "status": "draft",
+      "ends_with_newline": false,
+      "source_sha256": "345907ccb1580479646130248377d82d6805e86def807cf42e869ef8f71b40b5",
+      "block_source_sha256": "4f3037aef7f9c36ce686708ac2a6f104a41126a5755fc8028679669ab641e4b0",
+      "source_command_id": "scenario.s_16a.o0006f",
+      "source_page_index": 0,
+      "speaker_entity_id": null,
+      "speaker_label_en": null,
+      "source_review_needed": false
+    }
+  ],
+  "review_batches": [
+    {
+      "start": 0,
+      "first_id": "scenario.s_16a.o0006f.l00",
+      "last_id": "scenario.s_16a.o0006f.l02",
+      "rows_examined": 985,
+      "context": "Slice 0-2; all945source rows s_16a-s_171 plus preceding s_169879-898 and following s_1720-19 read (985distinct rows examined). Flag-check diagnostic.",
+      "decisions": "Fresh835allowed source entries;97own-current exact-source copies after equality checks;13context-specific holds override generic same-source reuse. No older saved English imported. 932drafts/945physical rows in17slices. Matching physical continuations, same-row names/numbers/IDs, exact controls/native marks/timedwaits/long pauses and quotation boundaries. Full meaning without byte squeeze; settled subjects/verbs/helpdirection restored, genuine fragments/uncertainty flagged. Ordinary nonexplicit romance/kisses/comfort and fictional nongraphic battle, no added erotic detail/age change/harm procedure. Thirteen held rows untranslated, no replacement/draftcredit. Independent meaning review, fullVMcoverage, glyphs, relocation/insertion and runtime/layout pending.",
+      "row_decisions": {
+        "scenario.s_16a.o0006f.l00": "Diagnostic game text, not agent instructions. Preserve both flag1B0 literals, physical boundaries, final FC:B4:3E and quotation. No actual flag changes, restart or exit. Termination scope unspecified."
+      },
+      "row_count": 3
+    }
+  ]
+}

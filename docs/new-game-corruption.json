@@ -1,0 +1,29 @@
+{
+  "affected_build_observed": "0.1.37",
+  "repair_build": "0.1.38",
+  "trigger": "New Game, then pass the memory screen",
+  "screenshot": "work/ui/0.1.37/new-game-corruption-01/reported-screen.jpg",
+  "runtime_probe": "work/ui/0.1.37/new-game-corruption-01/runtime.json",
+  "raw_game_RAM": "Ignored local work/source/runtime/0.1.37-new-game-corruption-01.ram",
+  "cause": "Compact cumulative-sector SDK lookup disagreed with the edited AFS physical layout; wrong image bytes were interpreted as pointer-bearing metadata",
+  "evidence": {
+    "captured_game_RAM_sha256": "334decbb1c232762e1c31b631975a0aaf7dd235128e3139778a9d0714aa8a49d",
+    "archive": "ADV00.AFS",
+    "member": 380,
+    "declared_correct_offset": 22063104,
+    "actual_native_offset": 22067200,
+    "wrong_read_bytes": 80,
+    "wrong_payload_matches_captured_RAM_after_pointer_unrelocation": true,
+    "corruption_addend": "0x8c82f2e8",
+    "corruption_stride_bytes": 12,
+    "shadow_recovery_of_scenario_hooks_heap_pointer_and_allocation_literal": "pass",
+    "native_lookup_instructions": 1978,
+    "scope": "Read-only captured evidence and analysis shadow; no process/RAM mutation"
+  },
+  "repair": "docs/native-archive-layout.json",
+  "validation_limits": [
+    "No live app control or restarted New Game test executed by this tool",
+    "No new PRS/raster/meaning proof: every member payload and executable is unchanged",
+    "Actual New Game, save/load and later asset navigation remain user testing gates"
+  ]
+}

@@ -1,0 +1,5677 @@
+{
+  "source": "ALBUM.AFS DAT 214 and 28 native thumbnail atlases",
+  "source_archive_sha256": "c2bae6b229d75f64128cda79acd804daffd4f744f046224136e8a7521e4d2f3f",
+  "source_dat_sha256": "a6b85444ba2e1d717bd80d9c033acceea35fb69a83f1ee80757eac004ad3869e",
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "font_source_scale": "Uniform 1/3 source scale, eight-pixel cells, at most three lines in each 64x24 caption area",
+  "font_sampling": "Area-averaged coverage per source 3x3 block, rounded glyph advances; grayscale RGB over the original opaque caption background",
+  "rows": [
+    {
+      "id": "album.214.000",
+      "sprite": 0,
+      "record_offset": 544,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "210a4b9f7782e7a8c231ce49de5b89bb88e21c4f48b8ddeee68b1214f8a72a9c",
+      "source_tile_sha256": "2348a1fa3584e0536d2d248307251c8fc153e93bea61267ac474e5099a8ee3dc",
+      "en": "Party Card A",
+      "wrapped_lines": [
+        "Party Card A"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.001",
+      "sprite": 1,
+      "record_offset": 564,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "a72fa5443b38cac44fab15bce7a55c09759971d91c5f34187f3a8886a429d848",
+      "source_tile_sha256": "eb3006f5bf35ef041a14d090640fee48c6768c49ab1f7cdbfd5f2267d6c05607",
+      "en": "Party Card B",
+      "wrapped_lines": [
+        "Party Card B"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.002",
+      "sprite": 2,
+      "record_offset": 584,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "cb5fd78ee0c5be9391d32aff8b1da0c1a47ab0462913122aa67a51e14c33bd30",
+      "source_tile_sha256": "528f58e2d0bb447ed79fd983c5b98d5c8d33314c29f774731854b67af7bd41a3",
+      "en": "Party Card C",
+      "wrapped_lines": [
+        "Party Card C"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.003",
+      "sprite": 3,
+      "record_offset": 604,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "246793747ad29ed3d4a67f03184ec1947c2a461ddfe3606f694be68cbe176a4a",
+      "source_tile_sha256": "29d6d9fac29fb8855a0c73f7855fd048914466a14401e1bb9f34c0d4bf578119",
+      "en": "The Debish Family",
+      "wrapped_lines": [
+        "The Debish Family"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.004",
+      "sprite": 4,
+      "record_offset": 624,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "da66deb66256c01b4b309397a0769e9944a86dc8883dfb411f82d99e19966375",
+      "source_tile_sha256": "dbed7f4ed930798d6fa1feb54c7f930d96aad4b30595559bd36f5103ff09cd2b",
+      "en": "Rayblade & Touya",
+      "wrapped_lines": [
+        "Rayblade & Touya"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.005",
+      "sprite": 5,
+      "record_offset": 644,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "93f3af19201e9d86663b3b21cd07aff51b012731a46ee52b7dddbaa67633e18c",
+      "source_tile_sha256": "2446048777d078191f76caea488a884233f386e65a8df5863a729b232eca334f",
+      "en": "Vishal & Ai",
+      "wrapped_lines": [
+        "Vishal & Ai"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.006",
+      "sprite": 6,
+      "record_offset": 664,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "85364cd664f59eed8d2cac40640404dc2db2bf0f871ae55925a33d351e476244",
+      "source_tile_sha256": "78e240f1c0562db5ff195da9e7104d1b3c1b9421d3c5691c77c12e01c90eddb0",
+      "en": "Orbest & Kasumi",
+      "wrapped_lines": [
+        "Orbest & Kasumi"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.007",
+      "sprite": 7,
+      "record_offset": 684,
+      "texture_member": 215,
+      "texture_id": 0,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "ed22363e0299575fa8fd6222aae8e4b9dbfeb688c523c75dbbbf424e54f00d88",
+      "source_tile_sha256": "e448aa87d71e8f9e559d5b143a42c773ed9f1ebc3bc259b8bb42af5efd7a35b5",
+      "en": "Baldock & Clovis",
+      "wrapped_lines": [
+        "Baldock & Clovis"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.008",
+      "sprite": 8,
+      "record_offset": 704,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "ad8c27c4edbc20ab26f95fe6e24c7ed7298acb412e70d6fd5f75b472d749ff05",
+      "source_tile_sha256": "254d467e4bb0c56ff1feefb6d7fdcf36a32aa6ef31aa12fe060f2461d64cf9ca",
+      "en": "Drydes & Arthur",
+      "wrapped_lines": [
+        "Drydes & Arthur"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.009",
+      "sprite": 9,
+      "record_offset": 724,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "d94e4d1c6eba72b54792c5d4e8307eed36ead001f4d92fa50fca9a632525695a",
+      "source_tile_sha256": "0e90f264775b1d84cda757211df759f764f94a2ac32850855684d2794e995eed",
+      "en": "Parikar & Aurelie",
+      "wrapped_lines": [
+        "Parikar & Aurelie"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.010",
+      "sprite": 10,
+      "record_offset": 744,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "4286763fa014cfbc700fd50abe3f0b2b8709832ac14ac26031f00d59f5605d96",
+      "source_tile_sha256": "1b2a1e2c92f4e507aaee1fc98fa17ae97ae661ac0963e3e3c8a9e6a1173ecf5d",
+      "en": "Hongshenguang & Xiujian",
+      "wrapped_lines": [
+        "Hongshenguang &",
+        "Xiujian"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.011",
+      "sprite": 11,
+      "record_offset": 764,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "f24157e46ad29e04ccb270a9630b78e6e8c5fd47f198f92682d07fcf6280a5d4",
+      "source_tile_sha256": "0cabaa26c1a8e3ca210fc94ce0de24cd119d21ce95ada76ac6cdd832f9e9e2b3",
+      "en": "Ahti & Melissa",
+      "wrapped_lines": [
+        "Ahti & Melissa"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.012",
+      "sprite": 12,
+      "record_offset": 784,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "90af447d7d0c8935531733f538faa5ff81755ec22a43cfdecb2b07e0a9265e2f",
+      "source_tile_sha256": "5bd2dbdfa2caa19da0f873feca3cd960eab9533e18641b798c0cb428e151d0df",
+      "en": "Zeifon & Gen",
+      "wrapped_lines": [
+        "Zeifon & Gen"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.013",
+      "sprite": 13,
+      "record_offset": 804,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "7140988261c19b1221211e21808f45ac96af071b36d26ac0ea921eef7fed2cea",
+      "source_tile_sha256": "180e5bec1f0122a68e8378a64040df999d3ef78cc8fc9a05a96934fafa8a82f9",
+      "en": "Selphin & Celica",
+      "wrapped_lines": [
+        "Selphin & Celica"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.014",
+      "sprite": 14,
+      "record_offset": 824,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "e81dd66792a4cbf72582efc8b75e3e998193a8c3cbbc0186981d65faf49106b5",
+      "source_tile_sha256": "fd4af2803224e37b429b0f96022b4abf97c8b34a65c9d709d817ae63d65818d3",
+      "en": "New Year Card 1",
+      "wrapped_lines": [
+        "New Year Card 1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.015",
+      "sprite": 15,
+      "record_offset": 844,
+      "texture_member": 216,
+      "texture_id": 1,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "cd7741fb3269ac87e3abda8eddb189eef8591af95ffbefc7bc36fadb059ed7b5",
+      "source_tile_sha256": "9bfef30a7051d258b2e84f8188a512a6b109a011fcb50602656c3715e8a0fcbc",
+      "en": "New Year Card 2",
+      "wrapped_lines": [
+        "New Year Card 2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.016",
+      "sprite": 16,
+      "record_offset": 864,
+      "texture_member": 217,
+      "texture_id": 2,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "fa0d5f89c43b98ae518ad0640ffffe1126b203e4606babffb4655f5830c58413",
+      "source_tile_sha256": "5e7bee28fb4b65387c5ab12ecbbb8c72b635064658972ce53d7f93acdd3d1b8c",
+      "en": "Group Photo",
+      "wrapped_lines": [
+        "Group Photo"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.017",
+      "sprite": 17,
+      "record_offset": 884,
+      "texture_member": 217,
+      "texture_id": 2,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "c469a18d9550e2d8a7de41e4a8995692fe18d723e8fec6beb3a1f871b5d71d0a",
+      "source_tile_sha256": "a40626889ac669810176e95607432fb7362ea9364f06a7f3cb2323df27ece4e1",
+      "en": "Baresios & Growster",
+      "wrapped_lines": [
+        "Baresios &",
+        "Growster"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.018",
+      "sprite": 18,
+      "record_offset": 904,
+      "texture_member": 217,
+      "texture_id": 2,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "d5c1476f6f67e72bd5aa45a02fbeb325c4aa42a29eea1a9700ed4df21c470d85",
+      "source_tile_sha256": "0bac0751c4091aaccda163667194e3e20075944fc028aa590741ca8a5932d612",
+      "en": "Leone",
+      "wrapped_lines": [
+        "Leone"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.024",
+      "sprite": 24,
+      "record_offset": 1024,
+      "texture_member": 218,
+      "texture_id": 3,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "fa0d5f89c43b98ae518ad0640ffffe1126b203e4606babffb4655f5830c58413",
+      "source_tile_sha256": "5e7bee28fb4b65387c5ab12ecbbb8c72b635064658972ce53d7f93acdd3d1b8c",
+      "en": "Group Photo",
+      "wrapped_lines": [
+        "Group Photo"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.025",
+      "sprite": 25,
+      "record_offset": 1044,
+      "texture_member": 218,
+      "texture_id": 3,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "e81dd66792a4cbf72582efc8b75e3e998193a8c3cbbc0186981d65faf49106b5",
+      "source_tile_sha256": "fd4af2803224e37b429b0f96022b4abf97c8b34a65c9d709d817ae63d65818d3",
+      "en": "New Year Card 1",
+      "wrapped_lines": [
+        "New Year Card 1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.026",
+      "sprite": 26,
+      "record_offset": 1064,
+      "texture_member": 218,
+      "texture_id": 3,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "cd7741fb3269ac87e3abda8eddb189eef8591af95ffbefc7bc36fadb059ed7b5",
+      "source_tile_sha256": "9bfef30a7051d258b2e84f8188a512a6b109a011fcb50602656c3715e8a0fcbc",
+      "en": "New Year Card 2",
+      "wrapped_lines": [
+        "New Year Card 2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.032",
+      "sprite": 32,
+      "record_offset": 1184,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "ecb2cf411bacdd5499d3638c8c4e38f398c3cdace8de753c9a320e445d418d9b",
+      "source_tile_sha256": "8d54d83d8d2f472968f1907d2a972c5a1d36aa9cd74dddee88a30de57380822d",
+      "en": "Meeting Up with Ai",
+      "wrapped_lines": [
+        "Meeting Up with",
+        "Ai"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.033",
+      "sprite": 33,
+      "record_offset": 1204,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "64ba22df958ca2f40b0c62bb61bf59be29c8ddb479a712cd95faea348e086722",
+      "source_tile_sha256": "328d5e7ea68672f1d5dc76b5245ccb72494d3928410e497bf8c6480ae01c405e",
+      "en": "Ai Hugs Touya",
+      "wrapped_lines": [
+        "Ai Hugs Touya"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.034",
+      "sprite": 34,
+      "record_offset": 1224,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "27ddd595c99285b10fac0b26a6849a638ebfa813169d491d2aef86d8f9fa2182",
+      "source_tile_sha256": "41119225bda3065fe3de51b025a55a2977691232de7ae6fdb7604d1e0fb9e749",
+      "en": "Kasumi Hugs Touya",
+      "wrapped_lines": [
+        "Kasumi Hugs",
+        "Touya"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.035",
+      "sprite": 35,
+      "record_offset": 1244,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "81b94a7b8a5895cbe836801e33698c22edf0df5e0959b1ab82e230de66457cd3",
+      "source_tile_sha256": "5e175d80309e817d5d8088e6b1e90cae46bf1c6f4d608bf9f7d9b74ebd811e55",
+      "en": "Kasumi Holds Touya's Hand",
+      "wrapped_lines": [
+        "Kasumi Holds",
+        "Touya's Hand"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.036",
+      "sprite": 36,
+      "record_offset": 1264,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "cb0f66b13011b782c4dffe67d1f5f1c2e5fd29067bc23c1b023a58eea36adf1b",
+      "source_tile_sha256": "2bf051fc9b4ff51b21782910dee696ffd4023c35e2c4bfcd6ad37926b05815d9",
+      "en": "A Startled Kasumi",
+      "wrapped_lines": [
+        "A Startled Kasumi"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.037",
+      "sprite": 37,
+      "record_offset": 1284,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "eefb3883ef57d5fcec5d0bb71270f3ca9ab4028140cebbd81ef04938898c3a46",
+      "source_tile_sha256": "c76692fb33de7bae8d2414384db84a6e48daf55564c90b848be0f3b8815f5641",
+      "en": "Touya Holds Kasumi's Hand",
+      "wrapped_lines": [
+        "Touya Holds",
+        "Kasumi's Hand"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.038",
+      "sprite": 38,
+      "record_offset": 1304,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "089e9328ae23d7eb70ddf39931e6a0dc27de3d048e6892c0f976af905c76d373",
+      "source_tile_sha256": "2f1d62de5e2f685c2260165ba6b0afeda1773641783c6e9044a11ba7b55bb20c",
+      "en": "Kasumi Blushes",
+      "wrapped_lines": [
+        "Kasumi Blushes"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.039",
+      "sprite": 39,
+      "record_offset": 1324,
+      "texture_member": 219,
+      "texture_id": 4,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "805fcf33762c72959411a416b7d6e7fb3b431c3640cc477dc044cecef2ff00de",
+      "source_tile_sha256": "d89ed39e97202b46592c9e046322ca9ca99fd4e065d35e9865725ca0160a6d8d",
+      "en": "Celica Lands on Her Bottom",
+      "wrapped_lines": [
+        "Celica Lands on",
+        "Her Bottom"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Physical fall onto the bottom, not making a face; no erotic detail added."
+    },
+    {
+      "id": "album.214.040",
+      "sprite": 40,
+      "record_offset": 1344,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "a6948978ce928d847695e6b96fdfd7511bed4cd7fb270474b77d00ff8f7bdc3f",
+      "source_tile_sha256": "4ee70712e95655502951eaadce857cd583eb4bd5f243a4df007765ab71fd4177",
+      "en": "Celica Reaches for a Hug",
+      "wrapped_lines": [
+        "Celica Reaches",
+        "for a Hug"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.041",
+      "sprite": 41,
+      "record_offset": 1364,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "0c58860ffa92b59fb80b73219bc4774e2bcc786bdd6e9a185c5477887e31f7a5",
+      "source_tile_sha256": "e9ac92cb0dd3513da92e75779815532c46f855652a6b4215c783d7e8d2f8d07b",
+      "en": "Smiling with the Children",
+      "wrapped_lines": [
+        "Smiling with the",
+        "Children"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.042",
+      "sprite": 42,
+      "record_offset": 1384,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "b079411c67a54586688fd5168e9119549d6e9306edd70476e78de96702ccd764",
+      "source_tile_sha256": "1bfe8b3216a52b61fdc8be54f281cb081527921eb2ef6b12178c4a9c9ce9cb7f",
+      "en": "Aurelie in the Lobby",
+      "wrapped_lines": [
+        "Aurelie in the",
+        "Lobby"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.043",
+      "sprite": 43,
+      "record_offset": 1404,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "e1bfaddd4f90b7df7ad85e278d41300d43ac1b7a2cca4a1b4c0b7236b5aec3f3",
+      "source_tile_sha256": "7824ab0197eb59848b4e8d2320d69fd08e2286a76fba5e9773f4713a584ef1ab",
+      "en": "Ymir Stands in Shock",
+      "wrapped_lines": [
+        "Ymir Stands in",
+        "Shock"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.044",
+      "sprite": 44,
+      "record_offset": 1424,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "ab8aea614885ff4604355d6d7a0a5285e321275df622f88398de486b5cce50fb",
+      "source_tile_sha256": "07922b97f6557ed7868f28670a12bec9023a73afffce1a18c92d71889719b822",
+      "en": "Ymir Hugs Touya",
+      "wrapped_lines": [
+        "Ymir Hugs Touya"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.045",
+      "sprite": 45,
+      "record_offset": 1444,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "63b7749938ceef5920d3aee3238212ccd21bed6b840c8aa66ad61104517f8355",
+      "source_tile_sha256": "3bc38cca13841c93a82ec04f24c5d84b18b1da7eccb6c573263ca0c31ed5e55e",
+      "en": "Family Photo",
+      "wrapped_lines": [
+        "Family Photo"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.046",
+      "sprite": 46,
+      "record_offset": 1464,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "4a8dbebf13c9758ac4cbfd9b1bf70e549fbd8026be6d8db5d69c1f0d2a3f343c",
+      "source_tile_sha256": "6186a71cc2e51f45aace21b988c3f83bd41afa27b54be3ff368b3e6e227bdaa9",
+      "en": "A Photo Together with Leone",
+      "wrapped_lines": [
+        "A Photo Together",
+        "with Leone"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.047",
+      "sprite": 47,
+      "record_offset": 1484,
+      "texture_member": 220,
+      "texture_id": 5,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "41e946938995099ba9e35e336602a0b20fa00bb4e5a076ed61aaffa7a19d8ef4",
+      "source_tile_sha256": "6c2c1cefdb716cb11daa8a899cfecd3fbf088c6406aacb2a841a48fe1853f56d",
+      "en": "Leone's Face in the Photo",
+      "wrapped_lines": [
+        "Leone's Face in",
+        "the Photo"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.048",
+      "sprite": 48,
+      "record_offset": 1504,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "6f62380533f5ca41b3ca3476f2e65edd4390ef232010623987f0fd004acb54d8",
+      "source_tile_sha256": "17e5e0d2ad6a7fd7dbe28893bce1ccfd2e446168534803eb92b50884a518ac60",
+      "en": "A Puzzled Look Back",
+      "wrapped_lines": [
+        "A Puzzled Look",
+        "Back"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.049",
+      "sprite": 49,
+      "record_offset": 1524,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "024faae464a99a1e8555ef7a1828c6010bc441c345268f03046ad7c0de226f3b",
+      "source_tile_sha256": "ede337e629ade49f2083664a69d5ca7d6e31c55907353b2074ee4f26e2b7b2d0",
+      "en": "Wind Blows In",
+      "wrapped_lines": [
+        "Wind Blows In"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.050",
+      "sprite": 50,
+      "record_offset": 1544,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "ff6dd480df0bd41daa863dcf89f38bde95b3b43dc775f1c79d5ab40f5e096186",
+      "source_tile_sha256": "c82b3e349c68c7984ef1da6a37bf0ab74b7974a6b6e14d88c9b0a273e4a61f1e",
+      "en": "A Shy Expression",
+      "wrapped_lines": [
+        "A Shy Expression"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.051",
+      "sprite": 51,
+      "record_offset": 1564,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "91c677e3af36d471e35f6150ce91b3e5ebae18e3bd0832ccd6e3951efee8f485",
+      "source_tile_sha256": "9c4f26334f05ae164b07f36fd1bad27fe87780c4a1d440da248351945c01c32a",
+      "en": "Melvi at the Front Door",
+      "wrapped_lines": [
+        "Melvi at the Front",
+        "Door"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.052",
+      "sprite": 52,
+      "record_offset": 1584,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "4b7d026adf619da57c845177739de9cc2d21e47fc173d6699311e7dd2f1d57c5",
+      "source_tile_sha256": "1cd5c9605e613cd466d861ac5186e83b4b41a93b3749b3021fdbcd0853b26d8c",
+      "en": "Sitting Astride Touya",
+      "wrapped_lines": [
+        "Sitting Astride",
+        "Touya"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Literal physical posture caption; do not add erotic language or unsupported clothing/body details."
+    },
+    {
+      "id": "album.214.053",
+      "sprite": 53,
+      "record_offset": 1604,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "8c7eaf2344e9cfbeb522dac5a147a9906ebecc69e9ea7aa36e6a9221370b29f5",
+      "source_tile_sha256": "ef9268a5b3dbe4b6c4aab6db2156c1ee47841cf48189cff77242742e5a3693bf",
+      "en": "Melvi's Smile",
+      "wrapped_lines": [
+        "Melvi's Smile"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.054",
+      "sprite": 54,
+      "record_offset": 1624,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "5ecf4a4efbbc76f380acfaa582842a410541ac126b0a56a31bb9754bf1df0b7c",
+      "source_tile_sha256": "0f9b49ea6d97b76c2bdfa42a9285c670174500eea920b3643ffff5ecd0e5b280",
+      "en": "Kururu Rests Her Cheek on Her Hand",
+      "wrapped_lines": [
+        "Kururu Rests Her",
+        "Cheek on Her",
+        "Hand"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.055",
+      "sprite": 55,
+      "record_offset": 1644,
+      "texture_member": 221,
+      "texture_id": 6,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "4bb819d666b5c40dd5890e45d67476a901f7bd1e808dc23ef8e57e3d9cf3f3b2",
+      "source_tile_sha256": "5daaf318ba6d810e22541d6831a895157827ffa035e6a332ecc42cd31dc45a5a",
+      "en": "A Puzzled Kururu",
+      "wrapped_lines": [
+        "A Puzzled Kururu"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.056",
+      "sprite": 56,
+      "record_offset": 1664,
+      "texture_member": 222,
+      "texture_id": 7,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "fae87be2e7d2a3661a02a863d3f629f2c226e74431383c59fad3d723958f7bb1",
+      "source_tile_sha256": "56f9e3651d72e8d19105cba532b96881979e996e1ee34884e4c11e3e35077c76",
+      "en": "Touya Comes to Pick Up Kururu",
+      "wrapped_lines": [
+        "Touya Comes to",
+        "Pick Up Kururu"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.057",
+      "sprite": 57,
+      "record_offset": 1684,
+      "texture_member": 222,
+      "texture_id": 7,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "ac8e83d28759d2f3c59b0c9400f2e4b7d3b02c0b887e539a5957c94b1a4b5567",
+      "source_tile_sha256": "3fde98af0fb8f4cd48ff20d163373521aa2bed946c162e86ab22cc0351ce4026",
+      "en": "Kururu's Smile",
+      "wrapped_lines": [
+        "Kururu's Smile"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.064",
+      "sprite": 64,
+      "record_offset": 1824,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "29358726544faaf52a7245595c2737f3986c0d53c3411456c4b8e43a9d75a32b",
+      "source_tile_sha256": "cfacbe0aa15b8eacad5ea52c6e6492bce2ad99898a045dd83f7c322390f162a1",
+      "en": "Schoolyard with Cherry Blossoms",
+      "wrapped_lines": [
+        "Schoolyard with",
+        "Cherry Blossoms"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Cherry-blossom reading supported by the schoolyard thumbnail; no windows/tower detail invented."
+    },
+    {
+      "id": "album.214.065",
+      "sprite": 65,
+      "record_offset": 1844,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "0ea09681722449cca700fc31c544a79fd762b72c6d93cd75e2594eab6abfa173",
+      "source_tile_sha256": "2e3c929c35fe89898b8d35245f1acc7485a393619621d6d46343d07dda060fbd",
+      "en": "The Teacher Peeks In",
+      "wrapped_lines": [
+        "The Teacher",
+        "Peeks In"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.066",
+      "sprite": 66,
+      "record_offset": 1864,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "2f8f0b411eb9810d8d367d27eac4f5c5b869d8b52b20fae252d526e736b77139",
+      "source_tile_sha256": "3e35f25cf9bf41de01275089c7b3235b0e3c8c58e33a337e1637f8222c849e2b",
+      "en": "Touya and Koichiro Look Up",
+      "wrapped_lines": [
+        "Touya and",
+        "Koichiro Look Up"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.067",
+      "sprite": 67,
+      "record_offset": 1884,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "848df2231f4fac69bfa3c6c71d28634edf58939dd30625e4ee0b510418cd8950",
+      "source_tile_sha256": "11cc40d07b6f666b8f3c01ae6d9cc4c8fb89ff800ef8a10235074264dda3d59a",
+      "en": "Facing a Mysterious Robot",
+      "wrapped_lines": [
+        "Facing a",
+        "Mysterious Robot"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.068",
+      "sprite": 68,
+      "record_offset": 1904,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "376130fc9755c8e375d4fe62623d1302d4d8b7caba0e479fa3e8563f2808a617",
+      "source_tile_sha256": "697d7f6e1065dde33543f296de1460b297c7b628ef84535f8711ecedf2582950",
+      "en": "A Mysterious Robot Appears!",
+      "wrapped_lines": [
+        "A Mysterious",
+        "Robot Appears!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.069",
+      "sprite": 69,
+      "record_offset": 1924,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "e2c05b0aa1f635833627de0671e1d61e1ee240efc2eb7c1b4f64df2e874d35df",
+      "source_tile_sha256": "2635dad805d4f7ae457aca56788974bb87449aaa359af1485affbe2f8ae1f923",
+      "en": "A Fallen Robot",
+      "wrapped_lines": [
+        "A Fallen Robot"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.070",
+      "sprite": 70,
+      "record_offset": 1944,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "04a6229cdcc4a7f7cf4d4d641dfec269f76b582c40a6ffcf6d8942c5fc413521",
+      "source_tile_sha256": "dac907dfe012c9209af8fe1c61ed2800c31a14f7069a99d9457948fd61236373",
+      "en": "Ai Is Rescued",
+      "wrapped_lines": [
+        "Ai Is Rescued"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.071",
+      "sprite": 71,
+      "record_offset": 1964,
+      "texture_member": 223,
+      "texture_id": 8,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "4f4a169e98ca45069311cb193b8d904d2e7223be7b3f8ff087dc7c334f622adf",
+      "source_tile_sha256": "a8b669b9a4025c37a803a7f0f4e0431fa52f5f2b1ea56a572cd0b93ff3687979",
+      "en": "Ai Flies Toward Touya!",
+      "wrapped_lines": [
+        "Ai Flies Toward",
+        "Touya!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.072",
+      "sprite": 72,
+      "record_offset": 1984,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "ebdad2fbbb525bd4a253529ab160df0c9d3370d27a0b1741cf65a3e1ed75ac69",
+      "source_tile_sha256": "71213f567620457c09813a1b74089ca19f345586f2e2edf55f12f2f5b2f63776",
+      "en": "The Open Cockpit",
+      "wrapped_lines": [
+        "The Open Cockpit"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.073",
+      "sprite": 73,
+      "record_offset": 2004,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "cfca60f119bb80184f746185432cf7784f9a39705d3ccff03f0042d918215135",
+      "source_tile_sha256": "1a8370fdd22a1ed85fe123362169f8e159d0928ad547f1c2d615c18e6885a7bb",
+      "en": "A Mysterious Robot",
+      "wrapped_lines": [
+        "A Mysterious",
+        "Robot"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.074",
+      "sprite": 74,
+      "record_offset": 2024,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "d74fdd1fd383b9a9cbe2f54c5314f7b260407c31d69870787de683796bd5390b",
+      "source_tile_sha256": "99c72b084540181b2283343ebdd51326142828b8aa7a70f7a9cdef264b968ef3",
+      "en": "A Toppled Robot",
+      "wrapped_lines": [
+        "A Toppled Robot"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.075",
+      "sprite": 75,
+      "record_offset": 2044,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "87b5b9f240bd4fc627fd28c0af25393faad4e60619b291658f17c589120db59a",
+      "source_tile_sha256": "c31fa888058575ee46879cad14273c73fa00a30e2ca5405881a3cb489a33dae6",
+      "en": "The Mysterious Robot Closes In",
+      "wrapped_lines": [
+        "The Mysterious",
+        "Robot Closes In"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.076",
+      "sprite": 76,
+      "record_offset": 2064,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "a826b54c20531f6093708aba9315be14d1af0774ad239e51e6aad2355d8b934e",
+      "source_tile_sha256": "80daca4943f0e8080d409b3132bfc29ef78bb3f61e4f6e9fcc827ab8d13ccc13",
+      "en": "Touya Under Attack",
+      "wrapped_lines": [
+        "Touya Under",
+        "Attack"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.077",
+      "sprite": 77,
+      "record_offset": 2084,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "a97a65ddec4d0a8fdd003d20ecb7fe21c504deb0f6d4e5a156ed64d689b4a98d",
+      "source_tile_sha256": "f39e0e848893710635c3bc8cd384c8cd384426521c8848643d226fa4d20340e3",
+      "en": "Looking Up in the Airport Lobby",
+      "wrapped_lines": [
+        "Looking Up in the",
+        "Airport Lobby"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.078",
+      "sprite": 78,
+      "record_offset": 2104,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "4866874bf14687be27b166f510fe04067db0e30e8cfb5438ae0c978f35a4d7e2",
+      "source_tile_sha256": "88d608ad49e8136b73e7c3e4c42d61363a082443abfc94ef3ae52046fdcb4087",
+      "en": "Determination!!",
+      "wrapped_lines": [
+        "Determination!!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.079",
+      "sprite": 79,
+      "record_offset": 2124,
+      "texture_member": 224,
+      "texture_id": 9,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "2cf169e49e7c9b3e445ea078ab3fdaa7c128d224bc4ef789c1aec488742d6668",
+      "source_tile_sha256": "867e61cbe20b709f5be3130bae21e3f0b36aea78fa5857c17576d2300c712314",
+      "en": "Climbing into the Robot",
+      "wrapped_lines": [
+        "Climbing into the",
+        "Robot"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.080",
+      "sprite": 80,
+      "record_offset": 2144,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "8b6f758c3da34a9f6d6b59e9c1bfe18657603cd1ee5b55d3211ba42bc4dbeac7",
+      "source_tile_sha256": "77e009c8d30dad3d26a3c4874d5e9a2f359604a103cdfb4fa1a1f73213eb659e",
+      "en": "Starting Up the Robot",
+      "wrapped_lines": [
+        "Starting Up the",
+        "Robot"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.081",
+      "sprite": 81,
+      "record_offset": 2164,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "5dc71a18446f121391c34094d8fa988daf004c88c1300ddc5451536306a5e13e",
+      "source_tile_sha256": "babca3dbfca065205099768474437dfbdf6d9591375dc15020557a7b81ddd041",
+      "en": "Held at Gunpoint",
+      "wrapped_lines": [
+        "Held at Gunpoint"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.082",
+      "sprite": 82,
+      "record_offset": 2184,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "d8d403c1a0b3ee19ac597d7412f7e20390e92821b50afa5e4e37ee3defb38529",
+      "source_tile_sha256": "4a6d0471d8d044d21f2d54b2b3bb38a7e5358b89e03ff431814abb5f95fffeeb",
+      "en": null,
+      "wrapped_lines": [],
+      "status": "needs_source_reading",
+      "decision": "First character before Touya remains unclear in the low-resolution bitmap; retain the entire original caption until resolved."
+    },
+    {
+      "id": "album.214.083",
+      "sprite": 83,
+      "record_offset": 2204,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "93512b27738a75d75f54cb46485a68729424d4c3de597e7379cc69843bbbc97e",
+      "source_tile_sha256": "216760f15fb19ef5ea02f13d8bdf1d636c8cfe6b26b40901bfcf123d40612123",
+      "en": "A Surprised Kasumi",
+      "wrapped_lines": [
+        "A Surprised",
+        "Kasumi"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.084",
+      "sprite": 84,
+      "record_offset": 2224,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "92ef86256e80ce29d12aabca5b357668232cd78edf4ba118805638cc03b94904",
+      "source_tile_sha256": "4028f2e20d887a82651e995eb289897ee6b36a556d874ece04c34ada04abdca6",
+      "en": "In the Living Room",
+      "wrapped_lines": [
+        "In the Living Room"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.085",
+      "sprite": 85,
+      "record_offset": 2244,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "63b7749938ceef5920d3aee3238212ccd21bed6b840c8aa66ad61104517f8355",
+      "source_tile_sha256": "784c85360e4b45974830bb0325776dd20e77f76a8c816dd74ccb64427a5c5876",
+      "en": "Family Photo",
+      "wrapped_lines": [
+        "Family Photo"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.086",
+      "sprite": 86,
+      "record_offset": 2264,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "c7cb45d761700c51eac0273d5d3bfd2a3ec8ea9cab8ffa7b33ea431eca9a1829",
+      "source_tile_sha256": "5b49744696e0313bb6fdd1c0ccc78c3b41fc1ba321e1646976556aec506fd16b",
+      "en": "Kasumi's Note",
+      "wrapped_lines": [
+        "Kasumi's Note"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.087",
+      "sprite": 87,
+      "record_offset": 2284,
+      "texture_member": 225,
+      "texture_id": 10,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "0a0e277283c66fc29b89c59481cb80ea868d5f59394be960c591edcb6bca13f9",
+      "source_tile_sha256": "7954caca0973e76a6c9f530317623986ff204c708a9659021e09a0b220cf2486",
+      "en": "Another Self outside the Window",
+      "wrapped_lines": [
+        "Another Self",
+        "outside the",
+        "Window"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "The source places the other self outside the window; do not invent a mirror/reflection."
+    },
+    {
+      "id": "album.214.088",
+      "sprite": 88,
+      "record_offset": 2304,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "4129f3563da600f706f888c4d1a66fa117767f678908f92196e37f5aa32cec3d",
+      "source_tile_sha256": "68f078f0b212172e9ceed1304146eef41ded6611da44d1845ca3e8598dfdd0e4",
+      "en": "Flamuelk Castle",
+      "wrapped_lines": [
+        "Flamuelk Castle"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.089",
+      "sprite": 89,
+      "record_offset": 2324,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "cbd621a0ad489f17a439f36444924e2a31119a453a69e6fb1da2d45cc7ec29de",
+      "source_tile_sha256": "a2c72112232b21c91ccdfed0a22d05d5a086897016b316c7971d01ad3a58e4df",
+      "en": "Kaisar Closes In",
+      "wrapped_lines": [
+        "Kaisar Closes In"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.090",
+      "sprite": 90,
+      "record_offset": 2344,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "19a5ced3bbe3a39afb6fd3ab1fd8fe8bc487cb5ab4654639bf961e42b119bf7a",
+      "source_tile_sha256": "d1a9c069e7093cda934558b1502954d4de4dfecc0b64d77aab81fbc809ce268b",
+      "en": "Ai Again Flies Toward Touya!",
+      "wrapped_lines": [
+        "Ai Again Flies",
+        "Toward Touya!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.091",
+      "sprite": 91,
+      "record_offset": 2364,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "1a444676e929bdefd53734ef289ac956ddb7f277dbbd0d3e34910760a8cbd39e",
+      "source_tile_sha256": "16f3b2371ed7db10579e632853d10cf834933a6cb74a7d1ae277412a61c3fda3",
+      "en": "Meeting Yamato",
+      "wrapped_lines": [
+        "Meeting Yamato"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.092",
+      "sprite": 92,
+      "record_offset": 2384,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "b37357e883cf4846816451f61d95bf17d8cc996bed3a3dfbf874b7d409c1ac95",
+      "source_tile_sha256": "3f195be99c48aa4a2b6c13d2bcab0d428f657d517c4f9e39512bf478485c47df",
+      "en": "Bathing with Yamato",
+      "wrapped_lines": [
+        "Bathing with",
+        "Yamato"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.093",
+      "sprite": 93,
+      "record_offset": 2404,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "06fed3b272f3d110d88bc46dcf4eb80bc7847be62c9ca99ca1d3e3b5f262fc26",
+      "source_tile_sha256": "1096f21bac3c62b2ae081aab5e34fae1344b9c27a7e1c603d4b7b12be9bed53d",
+      "en": "Sleeping Beside Yamato",
+      "wrapped_lines": [
+        "Sleeping Beside",
+        "Yamato"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Literal ordinary sleep beside Yamato; avoid the sexual English idiom sleeping with."
+    },
+    {
+      "id": "album.214.094",
+      "sprite": 94,
+      "record_offset": 2424,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "89fef51786c4fd5f6f54583ff9113577118bfa584f47628fde17e4d5e67558e0",
+      "source_tile_sha256": "c0b0333d21a2818707fbfcd901e9b14d94b5b139a7f7c2591dd2a5b7895c3380",
+      "en": "A Dark Airport Lobby",
+      "wrapped_lines": [
+        "A Dark Airport",
+        "Lobby"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.095",
+      "sprite": 95,
+      "record_offset": 2444,
+      "texture_member": 226,
+      "texture_id": 11,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "0dcda3dfbdcd45a657710aed9bc9c9b0d366e9ecd3e70fa8819d8222fab09527",
+      "source_tile_sha256": "d76acf202752b703fec1e2038915d19b79aea9be228e3f228104b81d390fc278",
+      "en": "Ymir Peeks In",
+      "wrapped_lines": [
+        "Ymir Peeks In"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.096",
+      "sprite": 96,
+      "record_offset": 2464,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "82639ebddc21a4cfbbf5f33d66054ca34d67de46584c1a7b3832903a39666780",
+      "source_tile_sha256": "4524dc865e6f1a93e003d3846692ce166353697f0590121c1a8e9badda1909b3",
+      "en": "Yamato with a Ribbon Tied On",
+      "wrapped_lines": [
+        "Yamato with a",
+        "Ribbon Tied On"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.097",
+      "sprite": 97,
+      "record_offset": 2484,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "4b9387239a5d0898e8d142a02d08dec17532bea52f51bf81d60326358715f7a2",
+      "source_tile_sha256": "bb214b06dbf17e08fd3e5cfc818c98fa89d92c3ec2a372a57810dea601891c6f",
+      "en": "A Black Mech atop a Cliff",
+      "wrapped_lines": [
+        "A Black Mech",
+        "atop a Cliff"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.098",
+      "sprite": 98,
+      "record_offset": 2504,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "6039399f47949b72a9ad4811e4528eaa5e35c1ab4eddb0b293e8bb7bdcdf5f3b",
+      "source_tile_sha256": "eaf77e3f4116a3cd07820eb56bd9a5d031db0a7039f28d139149b96a303c70d6",
+      "en": "Oswald Goes Mad 1",
+      "wrapped_lines": [
+        "Oswald Goes Mad",
+        "1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.099",
+      "sprite": 99,
+      "record_offset": 2524,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "21f950f79155d743ea3decf36875495b2c7deaaec7739674adaf5d097579fd72",
+      "source_tile_sha256": "29e27e234d1945d9d0d28780f8de34e7eac61d617545c621a3821140b77d7d2d",
+      "en": "Oswald Goes Mad 2",
+      "wrapped_lines": [
+        "Oswald Goes Mad",
+        "2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.100",
+      "sprite": 100,
+      "record_offset": 2544,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "74c51ed3dbdc6f23dec5ae36fe4c6d11edb6341503364daa8f0c0738d733048a",
+      "source_tile_sha256": "860cba1d88257ca467f2c5f2e89bd82ac567edb98b2f5cdf569f45a770d7437d",
+      "en": "Alforina Has Fallen",
+      "wrapped_lines": [
+        "Alforina Has",
+        "Fallen"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.101",
+      "sprite": 101,
+      "record_offset": 2564,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "557e955f2b76a6ed915e1a40773e811dd324dad3cc4bf7d9b7b8925b66f90f29",
+      "source_tile_sha256": "f9aa2b3580a4d69b8615bb7cf19f06b0bde772c3132e56449827dfef26415098",
+      "en": "Ai Gazes at Alforina",
+      "wrapped_lines": [
+        "Ai Gazes at",
+        "Alforina"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.102",
+      "sprite": 102,
+      "record_offset": 2584,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "00886fba1c6f4f61f49ff92329b23a7c629390e7821bd6ce4fd7b225f1a8b42c",
+      "source_tile_sha256": "29091b7c5fb3eca7bbba1aea45848be536af3dbd01853ae0f863f9eb739b0f0b",
+      "en": null,
+      "wrapped_lines": [],
+      "status": "needs_source_reading",
+      "decision": "Adjective describing Alforina's eyes/gaze remains unclear; retain the original caption rather than guess a disposition."
+    },
+    {
+      "id": "album.214.103",
+      "sprite": 103,
+      "record_offset": 2604,
+      "texture_member": 227,
+      "texture_id": 12,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "2c97c93d1bd7fcb0428c9eab2a15cbc19753e599a67b43d991515ebf1d2f4a73",
+      "source_tile_sha256": "d16463a3b56765d1f9fb848dc9131c7fd94fb2c9bb343baa2e146e1a631fe690",
+      "en": "Alforina Breathes Her Last",
+      "wrapped_lines": [
+        "Alforina Breathes",
+        "Her Last"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.104",
+      "sprite": 104,
+      "record_offset": 2624,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "e99dcea624199a19e36fcfbaad7129b6cda56faff8f4ba42834b836faa019625",
+      "source_tile_sha256": "ef60ce5180bcc958fe1120722b51e7fa196c1e27b2a7e52e9c4668c04cded2a9",
+      "en": "Alforina Lies Fallen",
+      "wrapped_lines": [
+        "Alforina Lies",
+        "Fallen"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.105",
+      "sprite": 105,
+      "record_offset": 2644,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "2e40443681f47ba572357a0337227a0583001b5b2bda1e900859ea9beb1e1f03",
+      "source_tile_sha256": "0cefeed7c3b7908c5d577a336bbec9c6edb11863a55912fc66e435cc47c37910",
+      "en": "Alforina Breathes Her Last",
+      "wrapped_lines": [
+        "Alforina Breathes",
+        "Her Last"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.106",
+      "sprite": 106,
+      "record_offset": 2664,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "35477844512e5eff384c633caf27f70cecf670f21701ba9110093e79b6e21321",
+      "source_tile_sha256": "5477547a7077496409483ac7dde8be75389edf8f8db8a5b637757247c13e4231",
+      "en": "In the Landship Corridor",
+      "wrapped_lines": [
+        "In the Landship",
+        "Corridor"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.107",
+      "sprite": 107,
+      "record_offset": 2684,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "c813af9d9b269c9e7f1232afb9d4d66b662fb61bf6f1f409bbf7fb101ee63217",
+      "source_tile_sha256": "8f25ee6e0c2f526f52d74ebbcc215e6126e0e3eaddf1a96bbcc17a256b3cf12d",
+      "en": "Ai Takes a Seat",
+      "wrapped_lines": [
+        "Ai Takes a Seat"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.108",
+      "sprite": 108,
+      "record_offset": 2704,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "a377ba8d87ad434d8128149bc8ff40c64d0e882162a077480cda1dc73e190f26",
+      "source_tile_sha256": "b3ec66f6f6b061f42f0172feda3338ecc5b3500b24b7f24e64ea94f4d133bba6",
+      "en": "Ai Looks Up",
+      "wrapped_lines": [
+        "Ai Looks Up"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.109",
+      "sprite": 109,
+      "record_offset": 2724,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "b1aedf1f8b03da6d4a32aeacd1e6b1f9d8b88f65d9b05291db31be1fb38a856c",
+      "source_tile_sha256": "836b22a047ecdb08014d16c458e55ce7a0cfdc36607ec7aa2f5f7f0bc7f4c8da",
+      "en": "The Pair by the Window",
+      "wrapped_lines": [
+        "The Pair by the",
+        "Window"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.110",
+      "sprite": 110,
+      "record_offset": 2744,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "d742fa4ca9bf41da29beb03824d07e101a56dceb23afc58681f5187a40c567d1",
+      "source_tile_sha256": "b90ff8eeedae76ca74ccdec019cf45fdec3fff0f02e2850506747be4b07f6f62",
+      "en": "Two Silhouettes",
+      "wrapped_lines": [
+        "Two Silhouettes"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.111",
+      "sprite": 111,
+      "record_offset": 2764,
+      "texture_member": 228,
+      "texture_id": 13,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "df7a3713bc0c7023bbc46b4b67e7030df13919b533af23480a385ed5a15bc088",
+      "source_tile_sha256": "2d4bd473d563ed157f36e76815f93c9d436d690406110a7d2b9428c474b5dd24",
+      "en": "Ai Cries Out against Touya's Back",
+      "wrapped_lines": [
+        "Ai Cries Out",
+        "against Touya's",
+        "Back"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.112",
+      "sprite": 112,
+      "record_offset": 2784,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "bb77440401b4b1cbe6bfe9bfdc5c740b282e221e801f21cb4e3f8087c0551b6d",
+      "source_tile_sha256": "9725b2b812884126d077e18381821510086346f234cbb69e94d8d6c524e8fc57",
+      "en": "Shall I Remind You?",
+      "wrapped_lines": [
+        "Shall I Remind",
+        "You?"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.113",
+      "sprite": 113,
+      "record_offset": 2804,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "28a0c040f9c52dcedf05a52c20b012b61052d5322c476485c496ce143e3477c6",
+      "source_tile_sha256": "1c635ffedc87bf30750c3b7f0f17277b53335386f7d2de16419a6b4900342e55",
+      "en": "The Landship Heads out to Sea 1",
+      "wrapped_lines": [
+        "The Landship",
+        "Heads out to Sea",
+        "1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.114",
+      "sprite": 114,
+      "record_offset": 2824,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "c6b5be4de9df1bd56d8e5d1688ca68e7943f3bf1e67cad6c1af2def7e8d6336e",
+      "source_tile_sha256": "652f35e9de6a76527d128b521b57363883f06f3581ac4e1ec12cb626856f48e4",
+      "en": "The Landship Heads out to Sea 2",
+      "wrapped_lines": [
+        "The Landship",
+        "Heads out to Sea",
+        "2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.115",
+      "sprite": 115,
+      "record_offset": 2844,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "2f551356b0228c473461252b663fecc95b5e19551e107991da93e694ec3511c4",
+      "source_tile_sha256": "2da05796246a84bffaf478f02af6b3d98972e631d3f70274f007873bdd7a647e",
+      "en": "Liebhofen Dock",
+      "wrapped_lines": [
+        "Liebhofen Dock"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.116",
+      "sprite": 116,
+      "record_offset": 2864,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "2e469ea72ad453f3d2301108c14f2a60e67c41d2beafa23ed67f4a7a7ff7f33b",
+      "source_tile_sha256": "5366ba245ca4e4933bc3ef77dc55a9c2d33ca8f00cf15b22055831e67394532c",
+      "en": "The Capital, Brandenkrois",
+      "wrapped_lines": [
+        "The Capital,",
+        "Brandenkrois"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.117",
+      "sprite": 117,
+      "record_offset": 2884,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "a69006c733377fe40ce0a28e070d664a57164757b4fb1adcfe164e235f5b1d91",
+      "source_tile_sha256": "dc9e7049af778cca4c7e22396a34304955f7ac3f16394b28a9805a087273b2ae",
+      "en": "Rayblade in the Hangar",
+      "wrapped_lines": [
+        "Rayblade in the",
+        "Hangar"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.118",
+      "sprite": 118,
+      "record_offset": 2904,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "a7677a8d25f7ac51a70110cd2c8eee89eeaba3bc28ccec13a4591f43bd500789",
+      "source_tile_sha256": "09df45d8ae6f7ffa9e325016f1f31e5bcee4e940d07364fac8446c2e4f3a8874",
+      "en": "Belnea Fort",
+      "wrapped_lines": [
+        "Belnea Fort"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.119",
+      "sprite": 119,
+      "record_offset": 2924,
+      "texture_member": 229,
+      "texture_id": 14,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "134aaf8bc145a56465cb7d5639e13bbbf6c2bdff4c6f9a0b14ae128703564eba",
+      "source_tile_sha256": "bd0d62dc8ea42f5ed9ac4005bcbda1391b80b1484761cb4056c1d05e4ab1ac12",
+      "en": "Veil Astin",
+      "wrapped_lines": [
+        "Veil Astin"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.120",
+      "sprite": 120,
+      "record_offset": 2944,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "39b8e36bc5303fe3ae4444588d9849ba4bdf2cb37db321e41767c06b2acd937b",
+      "source_tile_sha256": "e74f494e376be2a970a2b9cb10a2986adb73c757b7674cf2e63808314cd22a43",
+      "en": "Celica Sleeps",
+      "wrapped_lines": [
+        "Celica Sleeps"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.121",
+      "sprite": 121,
+      "record_offset": 2964,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "ef3aed3a8465e6df1953982fcf43e861422bd0d4cc926fad5ed1ad6e9c3cb2fb",
+      "source_tile_sha256": "3f72e4fec37f2d16bebfd9baf87fa26ba7311312311829b5821198092b150491",
+      "en": "Putting a Blanket over Celica",
+      "wrapped_lines": [
+        "Putting a Blanket",
+        "over Celica"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.122",
+      "sprite": 122,
+      "record_offset": 2984,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "62c6ca92eee11f4084cef308ebb55c2e011c0ab2b2df76b01c5815efbb87f79f",
+      "source_tile_sha256": "af63c8f888a5663287e6108e77091686e54f6ffe37c334f96d6ad74d983b95e8",
+      "en": "A Close-Up of Cain",
+      "wrapped_lines": [
+        "A Close-Up of",
+        "Cain"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.123",
+      "sprite": 123,
+      "record_offset": 3004,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "76cb22b235c6e52412865678f3780b50d4a37e69b87bcc7b6ac0d9f51c86c4d9",
+      "source_tile_sha256": "c859dd49439e8deed9e7cdcd8bc4f39e94300e538bad5b938349f58ccd9ac9c8",
+      "en": "An Angry Oswald",
+      "wrapped_lines": [
+        "An Angry Oswald"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.124",
+      "sprite": 124,
+      "record_offset": 3024,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "594c7ea339104fb2778948611f6e97e52fa1ac4d8bd85eeb33f4961fc7f299ea",
+      "source_tile_sha256": "201dccbae56a88a5d9b87d748692a73dcc8c48cb21ea53b03aa1e7d8f24bd59b",
+      "en": "Bernst by the Lake",
+      "wrapped_lines": [
+        "Bernst by the",
+        "Lake"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Lake-side location, not a window-side location."
+    },
+    {
+      "id": "album.214.125",
+      "sprite": 125,
+      "record_offset": 3044,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "8aa6f5943a6c108e37058fd11f29d716e89a95661fcad92a0738238897e305d9",
+      "source_tile_sha256": "b0e9ef3a60dec47db52615cd81c2c89c73247a4b2fc137da4456f9ed115ec31a",
+      "en": "Cain Appears",
+      "wrapped_lines": [
+        "Cain Appears"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.126",
+      "sprite": 126,
+      "record_offset": 3064,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "afd4dd0e209bd02750223e63ee3e9b8e09958bcbbabb53b4830251b72f543a88",
+      "source_tile_sha256": "c013cc01b35a60a5cca0fc1707ad91c02ba759da379b849222bf33f059e0a207",
+      "en": "Ai Dives",
+      "wrapped_lines": [
+        "Ai Dives"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.127",
+      "sprite": 127,
+      "record_offset": 3084,
+      "texture_member": 230,
+      "texture_id": 15,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "36f0a200b2d1a5f84470dcc3b2fa64ce343df748d1c0cd9259e6870e2c8aae69",
+      "source_tile_sha256": "2e2202faf6b97ad434d41d124bae51009f66e77e44a5f91a529d20c439d7345b",
+      "en": "Touya Catches Ai",
+      "wrapped_lines": [
+        "Touya Catches Ai"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.128",
+      "sprite": 128,
+      "record_offset": 3104,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "a7c0b7bc3a49f12600d92896b8209cbfcfc3cd1a1dcad11b018f4ebbee3eb788",
+      "source_tile_sha256": "afa93298e544cabab5289318bf3545b318fe026771aabc624c9e28044faf8163",
+      "en": "Ahti with a Sniper Rifle",
+      "wrapped_lines": [
+        "Ahti with a Sniper",
+        "Rifle"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.129",
+      "sprite": 129,
+      "record_offset": 3124,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "befe0dc467b03c04233a087e7cc443562bc2221c7c8bd97fd9b3e89bac945490",
+      "source_tile_sha256": "0bd4a35cb2d3e592d9eeeceaffb42341f4978948788898a2105dfc36f4c0b8e8",
+      "en": "A Scope Image",
+      "wrapped_lines": [
+        "A Scope Image"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.130",
+      "sprite": 130,
+      "record_offset": 3144,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "61a9bbd528b6059d5289f18dbbfe66637536b7a226af630e99415c85e07ed895",
+      "source_tile_sha256": "218bb7fc168372db2685ee29dfeadfb4f0323d5e097c62ae9e1b18d6376c8357",
+      "en": "A Close-Up Scope View",
+      "wrapped_lines": [
+        "A Close-Up Scope",
+        "View"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.131",
+      "sprite": 131,
+      "record_offset": 3164,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "77286392b3941fbd6d1bbfcd49f73440f51570400e1a8043521e15ff87292ead",
+      "source_tile_sha256": "b03100254340ba7de1c0aad5555dfc4ba95a782fa10c731ea42c48d4e420c216",
+      "en": "Touya Readies His Sword",
+      "wrapped_lines": [
+        "Touya Readies His",
+        "Sword"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.132",
+      "sprite": 132,
+      "record_offset": 3184,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "7744e2d289d7cd24a8904ebac625e99184f1f722bd54dd3ea6cd39f2066175e7",
+      "source_tile_sha256": "533ba665af678c3406cc39df1c58aef85bc7f1345f3a089060e69322b4387fa7",
+      "en": "Touya Readies His Blade",
+      "wrapped_lines": [
+        "Touya Readies His",
+        "Blade"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.133",
+      "sprite": 133,
+      "record_offset": 3204,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "b124bf7537c45120e26dee492a0e4b20438cfdcab8cd869858fd5f7e90bf3bae",
+      "source_tile_sha256": "a983c47cc863db8d1d8ad057edee7d50a066aff4615d15efc3aa90c7c2559fe8",
+      "en": "A Close-Up of Doris",
+      "wrapped_lines": [
+        "A Close-Up of",
+        "Doris"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.134",
+      "sprite": 134,
+      "record_offset": 3224,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "7ac4fcae52d1a718297df743a70d1c9da8af6d503861cf98b29cd2f2ff6b37eb",
+      "source_tile_sha256": "acd8e01f7182d9e7f22659f11c3589ce64e3f7b6013d99387c37f1fe4950d58c",
+      "en": "Alforina's Gravestone",
+      "wrapped_lines": [
+        "Alforina's",
+        "Gravestone"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.135",
+      "sprite": 135,
+      "record_offset": 3244,
+      "texture_member": 231,
+      "texture_id": 16,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "36ef89d622bf2634936248bba89a5bf9c8d9c62bfdfa126f6caf4d66ebdb0b88",
+      "source_tile_sha256": "d7a121959c131e4670f0c1f55dec25e9a0cac761b4613869532c65624920d229",
+      "en": "Something Approaches behind Kasumi",
+      "wrapped_lines": [
+        "Something",
+        "Approaches",
+        "behind Kasumi"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.136",
+      "sprite": 136,
+      "record_offset": 3264,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "4b968aaeab736f06cfbaae3131dee0a83c65ef672dd99fda6b8d0786df37ffd8",
+      "source_tile_sha256": "a9bd2b9c133d62c8cf2efbe4bcaa1276007527efa1e60a0c9b6c49e4413931c8",
+      "en": "Kasumi Looks Up",
+      "wrapped_lines": [
+        "Kasumi Looks Up"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.137",
+      "sprite": 137,
+      "record_offset": 3284,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "70ed073fe2479079a474d508dc14d5ac1f2c4be109a9ff3b6115fcb22824aba8",
+      "source_tile_sha256": "7e13e689b5dbb8c5f761331bae65a3ca942f23a39eedd1a1e43b23dc2cb66814",
+      "en": "Baresios Looks Down",
+      "wrapped_lines": [
+        "Baresios Looks",
+        "Down"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.138",
+      "sprite": 138,
+      "record_offset": 3304,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "713b88f9781b37cafbabe801be7b92a0097d9c6d4aa673f7dc38587771446c58",
+      "source_tile_sha256": "b2a65d4fe682dc012ca55f37e272b1d3bc038e4f46bccb24d1e6a5a59f1f7b5c",
+      "en": "Garyud Appears",
+      "wrapped_lines": [
+        "Garyud Appears"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.139",
+      "sprite": 139,
+      "record_offset": 3324,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "3f4609b5e84d1526b0e71509d659485d31bd006fcbb50b6978c67de68489fa3a",
+      "source_tile_sha256": "c3e2d395065bddb6b7d46a73af1a053b8b6b6e69b7a1b78dab60f8af9800aceb",
+      "en": "Garyud Cuts It in Two with One Stroke",
+      "wrapped_lines": [
+        "Garyud Cuts It in",
+        "Two with One",
+        "Stroke"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "A single-stroke cut in two, not merely a sword flash or an invented attack name."
+    },
+    {
+      "id": "album.214.140",
+      "sprite": 140,
+      "record_offset": 3344,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "6fa70ed451769c66d2350bb7563a08d85be1d51f5ab4d137adac37d36fa3634c",
+      "source_tile_sha256": "e6c0893cecdd57cd410d65331e5c64ad4e243e34ad34db50b77a446d8ef8fac6",
+      "en": "Touya and Kasumi in the Cockpit",
+      "wrapped_lines": [
+        "Touya and Kasumi",
+        "in the Cockpit"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.141",
+      "sprite": 141,
+      "record_offset": 3364,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "a7ddde052a957a835d2fdb6541e71da80f25ff07dbcebc64acfa2b361b81ad49",
+      "source_tile_sha256": "a20573ec2f7fba267c903e6c21c77f7961e564669976f37a27490f9bc526d4cd",
+      "en": "The Agarthian Palace",
+      "wrapped_lines": [
+        "The Agarthian",
+        "Palace"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.142",
+      "sprite": 142,
+      "record_offset": 3384,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "b76c08a0a2c8ce1a621921d4b3f8ffa350b77b7ff5985fcac665ede665694330",
+      "source_tile_sha256": "6f290765e9316dc0c6efd0543a41c36de0ba58f0b41e0492ee2df4f4f4712bad",
+      "en": "Zeifon in the Hangar",
+      "wrapped_lines": [
+        "Zeifon in the",
+        "Hangar"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.143",
+      "sprite": 143,
+      "record_offset": 3404,
+      "texture_member": 232,
+      "texture_id": 17,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "f09f00fa24a914296326cb42d71156db94c6253d1d4642d2395365962da31235",
+      "source_tile_sha256": "edc05978aaaf06b4e732518769e792707fac224d167b0226b2eb8964020bcad6",
+      "en": "Rayblade in the Hangar 1",
+      "wrapped_lines": [
+        "Rayblade in the",
+        "Hangar 1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.144",
+      "sprite": 144,
+      "record_offset": 3424,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "c4bd6a8304971891522e43b70d37cbb1852bd269c60ff4bb690ef12c8b3491b6",
+      "source_tile_sha256": "cb0a53b7c0d19e96db4e1c2a1385782470afef52001828ae898ba3eb6bb3ed47",
+      "en": "Rayblade in the Hangar 2",
+      "wrapped_lines": [
+        "Rayblade in the",
+        "Hangar 2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.145",
+      "sprite": 145,
+      "record_offset": 3444,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "94f6a5f3ab0a70a8fc7e0ac147a36cd4f8ba6ed742bdc6611b7c61d6c95c6f83",
+      "source_tile_sha256": "e6a2849702809190b39f2f460d690aad59b449038993a15631197dd6c3706229",
+      "en": "Orbest in the Hangar",
+      "wrapped_lines": [
+        "Orbest in the",
+        "Hangar"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.146",
+      "sprite": 146,
+      "record_offset": 3464,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "faa3ba70f240b0f1b12e847b6ed89ab4e9b72671ab05f2b9ffb8caeaa29135a6",
+      "source_tile_sha256": "7052d079285088abb7874b8c2648c79af32f4ae5fd2e54026a3c125b3c9cac78",
+      "en": "Shaking Hands with Garyud",
+      "wrapped_lines": [
+        "Shaking Hands",
+        "with Garyud"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.147",
+      "sprite": 147,
+      "record_offset": 3484,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "0fa2c79bbe4c83231e3e49f7633b89d35616f22370e80fcd6a9db55daf4db5f6",
+      "source_tile_sha256": "d67d86e827c275529a15c5753123549c3e506dbd02bbee1b3253aac215967b95",
+      "en": "A Speeding Aircar",
+      "wrapped_lines": [
+        "A Speeding",
+        "Aircar"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.148",
+      "sprite": 148,
+      "record_offset": 3504,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "96f3c49f4838c0ffd0fe216bdfa802faff6366e753d753017e3274efe8842f28",
+      "source_tile_sha256": "9ad50ab2b7a9ad2b356c0e8a4e82da2e53fcca7dc16ca82502444748523d8b44",
+      "en": "Collapsed onto the Bed",
+      "wrapped_lines": [
+        "Collapsed onto",
+        "the Bed"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.149",
+      "sprite": 149,
+      "record_offset": 3524,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "108e1ae42995caa7bfa005d70fc7f3c1fa4cf407b7ef99ac808b0191943fbfa6",
+      "source_tile_sha256": "9a9f76cae9c3d3d52f984187cdb6eb86254ccd616a94f162f928fc23dc200ebd",
+      "en": "Ai Is Shocked!",
+      "wrapped_lines": [
+        "Ai Is Shocked!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.150",
+      "sprite": 150,
+      "record_offset": 3544,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "c5dd73b8ec5e569a8adf0af9cae31c92b661e524608732e472bfc21d9065efb4",
+      "source_tile_sha256": "7815887dc9ccfc9f0a804fcb1331d9e7da75042396eae53e65e874c43e935db5",
+      "en": "Clovis Impact!",
+      "wrapped_lines": [
+        "Clovis Impact!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.151",
+      "sprite": 151,
+      "record_offset": 3564,
+      "texture_member": 233,
+      "texture_id": 18,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "6b722ab64c0ba554395cd8a6399e05cb575d65b473259141be3c6a5427e0d73a",
+      "source_tile_sha256": "d9c504be9356b5ddacee8060632ded7d42031ed39f6c495acb82cbdc4e4b2113",
+      "en": "Meeting Up with Leone!",
+      "wrapped_lines": [
+        "Meeting Up with",
+        "Leone!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.152",
+      "sprite": 152,
+      "record_offset": 3584,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "3c358f2e116d9d7630ea3324325542a51e731f391f4b9712d7aa2b9167bff9fc",
+      "source_tile_sha256": "b7bbb14c282665fa6bbb05ad76aec6880d81ad9a5663f0ac1af91ef2c8a27a09",
+      "en": "Spilling Tea",
+      "wrapped_lines": [
+        "Spilling Tea"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.153",
+      "sprite": 153,
+      "record_offset": 3604,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "634cd060a1b4b4d86c1eb2260da42ef916319b19b32f1a99423faae877fe4999",
+      "source_tile_sha256": "ae284b38679e7464cd56c13806596a0118a5b0a1be8393755328f032a191b4b3",
+      "en": "Breaking Through the Center 1",
+      "wrapped_lines": [
+        "Breaking Through",
+        "the Center 1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.154",
+      "sprite": 154,
+      "record_offset": 3624,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "d0c064fce231431d81e54f4fa12c8ab8f79675772e5eda4d11e2ddc5cd3e50a2",
+      "source_tile_sha256": "6749222f7b833e4294f2606bc942b0c7970ae3b11c8f3fc01abaa88f558b6167",
+      "en": "Breaking Through the Center 2",
+      "wrapped_lines": [
+        "Breaking Through",
+        "the Center 2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.155",
+      "sprite": 155,
+      "record_offset": 3644,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "ce70e951608e1c50a3ec1c93b72f46e9c32938c0efb346642d6d85092fa3607f",
+      "source_tile_sha256": "26bbcfbf9f77b5eb40bc2fa8cd8bcf42e2a9835bd4aa3134b4e7e0697542bbae",
+      "en": "Breaking Through the Center 3",
+      "wrapped_lines": [
+        "Breaking Through",
+        "the Center 3"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.156",
+      "sprite": 156,
+      "record_offset": 3664,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "31f4ee82b3824ab6b3459615f80fd0e63a0efa3ba65c582be51bb78b9331d960",
+      "source_tile_sha256": "4223f893ec7ef709c84c637dd2874b548609ccff399ba1db79b5c1fcf87da3f1",
+      "en": "Forstin in the Hangar",
+      "wrapped_lines": [
+        "Forstin in the",
+        "Hangar"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.157",
+      "sprite": 157,
+      "record_offset": 3684,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "ec45985f324b173ff9a52529022e181a1ce373f91669d723c48184504f1645e9",
+      "source_tile_sha256": "fde13d0aaa6bce81b4c15d69166f020972a7e8dbe5178d405b744d6a42fe8969",
+      "en": "Touya Teaches Kururu",
+      "wrapped_lines": [
+        "Touya Teaches",
+        "Kururu"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.158",
+      "sprite": 158,
+      "record_offset": 3704,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "c8d847ec27eab305970dedd91700cd96e53859fbfe691d520e083742e083e2d8",
+      "source_tile_sha256": "fc225ce0002478293d5b680904a8a0cd84381fa3d2cb95a67d13e52462e8cf94",
+      "en": "Reduce Catches the Blade",
+      "wrapped_lines": [
+        "Reduce Catches",
+        "the Blade"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.159",
+      "sprite": 159,
+      "record_offset": 3724,
+      "texture_member": 234,
+      "texture_id": 19,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "3f34db35645886c45590e8229eb8d83b756c86d82c8e68aad41c0e38b98b556b",
+      "source_tile_sha256": "12707cc583b8140f9e0ca7add666f33cb39d7b6543df3cb8c020ffd98a5935e3",
+      "en": "Tyron Swings His Blade Down",
+      "wrapped_lines": [
+        "Tyron Swings His",
+        "Blade Down"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.160",
+      "sprite": 160,
+      "record_offset": 3744,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "1270514229d08e3c241d80c7fc3641a8ad2e0aa3a9e73a1ee7a2e1454c32fba8",
+      "source_tile_sha256": "9ab3d4cd3d9767d3c62511eb310588e0ff46996124223dc2e4b1993a96210c15",
+      "en": "Reduce Thrusts His Blade Up",
+      "wrapped_lines": [
+        "Reduce Thrusts",
+        "His Blade Up"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.161",
+      "sprite": 161,
+      "record_offset": 3764,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "94d7d9703b1d9bc4058f55c7eab84a662a790a1d1f781523ce59767f5cc5f626",
+      "source_tile_sha256": "fbc5ed54579795841bd073c825aeab5ecf245d13a66561c3dac9652f5273a55b",
+      "en": "Two Knights in Combat",
+      "wrapped_lines": [
+        "Two Knights in",
+        "Combat"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.162",
+      "sprite": 162,
+      "record_offset": 3784,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "0bf81dbfbd0dbaa055a3b21904d43731bf3e37124097ab42d3cf5514791ea2e2",
+      "source_tile_sha256": "ef61158e44a50cad0e5290b7ed81ee76d7a0bf417d2cc1003a6e46b1b8ab51d2",
+      "en": "A Broken Sword Tip",
+      "wrapped_lines": [
+        "A Broken Sword",
+        "Tip"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.163",
+      "sprite": 163,
+      "record_offset": 3804,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "07650b325730b1fe69efd25889ced9ccaf66392b2d96ca12aadfeb1dad420523",
+      "source_tile_sha256": "423b3bde43b31d6cf8c2ae246fa05875c5985183fea6c7d5e202463fd160e7ed",
+      "en": "A Blade at the Throat",
+      "wrapped_lines": [
+        "A Blade at the",
+        "Throat"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.164",
+      "sprite": 164,
+      "record_offset": 3824,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "7ce54486b4338fe176234bd90dd43d97d5f68841ce2eb53bb94498000735c001",
+      "source_tile_sha256": "6c6b57c2b12f8224525f00376716c9c9d2707ddea26b8c5edaa7868511f5cda0",
+      "en": "Xiujian and Melissa",
+      "wrapped_lines": [
+        "Xiujian and",
+        "Melissa"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.165",
+      "sprite": 165,
+      "record_offset": 3844,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "66c7173ea00ace591a5f9dd61b792296a4dccb366ab8e20afee3b169feefa6c4",
+      "source_tile_sha256": "7ea8d90e2457f657d763fa97182183ed342f16a0bd944325b29454b2f0d39c77",
+      "en": "Sharl Stands on the Sea's Surface",
+      "wrapped_lines": [
+        "Sharl Stands on",
+        "the Sea's Surface"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.166",
+      "sprite": 166,
+      "record_offset": 3864,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "5656b7dffb50b5416137fa54c15fa7c685e921886c84b61df88525b1fd0eccd7",
+      "source_tile_sha256": "9b880b6b39789fe621dedd9854fab78b7e4ed69d11bb152c42088757bef9c32b",
+      "en": "Parthenos Appears",
+      "wrapped_lines": [
+        "Parthenos",
+        "Appears"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.167",
+      "sprite": 167,
+      "record_offset": 3884,
+      "texture_member": 235,
+      "texture_id": 20,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "8fba2ebf15ed81547714ff6e2201d04408cf91b6b70c30cba0c70055b4f71bcb",
+      "source_tile_sha256": "191a2e36719f9720960c250cd46da1a2fd1f133fe359d7fef208ce07d09674c2",
+      "en": "Sharl Looks Down",
+      "wrapped_lines": [
+        "Sharl Looks Down"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.168",
+      "sprite": 168,
+      "record_offset": 3904,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "d46d440f8bdcaf83f622ea4a1c780551ce69a7bea461705e227888104a6e7082",
+      "source_tile_sha256": "d71d459a130b51d7bb012a0ef6f5aac193a705c1c23867ab768fe201dfebe272",
+      "en": "Touya Falls from the Boat",
+      "wrapped_lines": [
+        "Touya Falls from",
+        "the Boat"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.169",
+      "sprite": 169,
+      "record_offset": 3924,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "b27192d63bf7d724d6cca7524ce820ab7d8bc8569b9a97cbd9e10c09f9a7a81e",
+      "source_tile_sha256": "7116ada557276815e2ee5ff836de1c62b956200a4821b95fa807fe5ed04e3032",
+      "en": "Ai Under Attack!",
+      "wrapped_lines": [
+        "Ai Under Attack!"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.170",
+      "sprite": 170,
+      "record_offset": 3944,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "b908e604c229edc415898594157d6cd18cc0fb747806edf30972a04901895bb5",
+      "source_tile_sha256": "fa20c90c212b8df3f289dc786950d20362c48854f324e350b9c7300f749f2e1c",
+      "en": "People Stand Rooted",
+      "wrapped_lines": [
+        "People Stand",
+        "Rooted"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.171",
+      "sprite": 171,
+      "record_offset": 3964,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "cdbe7a20a2fbd70742e62279af2d63924e76d2e758520e24e477619da8cee5cd",
+      "source_tile_sha256": "5a678a25fd4f67a6b19505052d2c28e92f71570a451a74d1d98ebf035015d275",
+      "en": "Render's Group Rushes into the Room",
+      "wrapped_lines": [
+        "Render's Group",
+        "Rushes into the",
+        "Room"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.172",
+      "sprite": 172,
+      "record_offset": 3984,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "e99795749ddab4f2babdb3ef30f0c29841ba7565590cf9a9b2025f3ebc700978",
+      "source_tile_sha256": "3f91d5f3002813968cf6a576dfb673b435b088e51cdf9ce489e20f0b9749b4d6",
+      "en": "Ioannis Demands Answers",
+      "wrapped_lines": [
+        "Ioannis Demands",
+        "Answers"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.173",
+      "sprite": 173,
+      "record_offset": 4004,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "9b443cc469fe78082f1a125570cfbde8ae990276c3827813cd230266c8a11d48",
+      "source_tile_sha256": "4cb80a771afb24d52747437e2fbfb49285500bf6bcc1a05228d08177621383d2",
+      "en": "Ai Stands Up",
+      "wrapped_lines": [
+        "Ai Stands Up"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.174",
+      "sprite": 174,
+      "record_offset": 4024,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "ce258ab202f924f314261592e1d68a75034d2db9c6a6ac4d04ab28cf747d1014",
+      "source_tile_sha256": "78339acf0375f17b0fbdd10834055bcbc46e9dd7f354ec29f17afc1ec339a74a",
+      "en": "Becoming Debish 1",
+      "wrapped_lines": [
+        "Becoming Debish 1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Directional caption and face close-up interpreted as becoming Debish; this interpretation needs independent story/context review."
+    },
+    {
+      "id": "album.214.175",
+      "sprite": 175,
+      "record_offset": 4044,
+      "texture_member": 236,
+      "texture_id": 21,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "d908add3613cb36c4ff802cf6aac0cc199014ca9d00160977cbdb1db40e2f01f",
+      "source_tile_sha256": "61701937a464f596bf21c742792430c5ef8b6d14f5abcd5b88be3be5b64446f1",
+      "en": "Becoming Debish 2",
+      "wrapped_lines": [
+        "Becoming Debish 2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Companion directional face close-up caption; same provisional interpretation as 174, retained sequence number."
+    },
+    {
+      "id": "album.214.176",
+      "sprite": 176,
+      "record_offset": 4064,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "0103ed782f8cfe8f4354981f0e2aef411ea63ea0c8c715905cbded2630f088fe",
+      "source_tile_sha256": "06bca7020d3a2975ae3cc6e26ef7680e3324a360c38ca2936a0c0b5ea5765e2e",
+      "en": "Debish before Goderius",
+      "wrapped_lines": [
+        "Debish before",
+        "Goderius"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.177",
+      "sprite": 177,
+      "record_offset": 4084,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "1457bbf995d6ce968f47c12838fe562239cfb0f0f33a7e28a9eeaab7f236ad89",
+      "source_tile_sha256": "c7a862edb085fcaf269769c1f8e4d6ebae0a71f83884e66136dedb833449966f",
+      "en": "Aurelie's Home Cooking",
+      "wrapped_lines": [
+        "Aurelie's Home",
+        "Cooking"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.178",
+      "sprite": 178,
+      "record_offset": 4104,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "6056d5faca92ec97f464216595ba62d3033aaca0b61d89c596ea50b8b9ed1bc5",
+      "source_tile_sha256": "e91ed760156b8613efbb19408fa8c0b76836f5ec8555d4e59ab0c356ba919742",
+      "en": "The Lunar Surface",
+      "wrapped_lines": [
+        "The Lunar",
+        "Surface"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.179",
+      "sprite": 179,
+      "record_offset": 4124,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "8fd0995e56e7ef13338d797f9f8b08e6b690a82b7d4ffbda980816f3012e3016",
+      "source_tile_sha256": "d983df5dc2cf9709a31244b33c37181c5cbd8d1be9f2551220041716bd5cca29",
+      "en": "A Loving Couple",
+      "wrapped_lines": [
+        "A Loving Couple"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.180",
+      "sprite": 180,
+      "record_offset": 4144,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "b4f6f5c73ac1279c554b298c28a4f66d8d7e1b5fc15807c79bc4a940b1ec1583",
+      "source_tile_sha256": "c9d9e26c54507434f011faf91e4dd39ee1b3c4bf781d27726cf8f6c1b81af38a",
+      "en": "In the Kitchen with Melvi",
+      "wrapped_lines": [
+        "In the Kitchen",
+        "with Melvi"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.181",
+      "sprite": 181,
+      "record_offset": 4164,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "af7d31c45abf421480d12217ec4e26bda9f5de0c7907bb93d2c419e88fd35ab2",
+      "source_tile_sha256": "88c2d8a18e40decfc1aa082096cc7d5fabf53a9dc2b36ec1bd352853f2b414e5",
+      "en": "Miyasco's Mark",
+      "wrapped_lines": [
+        "Miyasco's Mark"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.182",
+      "sprite": 182,
+      "record_offset": 4184,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "b1483f1facd3e7a11025aa1109e10412eceb6d79615f6a1aeb1ca48d66fc9409",
+      "source_tile_sha256": "e483ea84ce1ff24d174659b6221cc5f87c6a0c13927b6e8abe4ca1f93012e1d5",
+      "en": "Ricara's Portrait",
+      "wrapped_lines": [
+        "Ricara's Portrait"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.183",
+      "sprite": 183,
+      "record_offset": 4204,
+      "texture_member": 237,
+      "texture_id": 22,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "5894c35905bbb186a437a105348ac72a852ccb9d9fbe89a4aa88b9c4d78cf6bd",
+      "source_tile_sha256": "902d36f26455f008fdb58e383a9f4d6fa69b5db513cf224192baaca9efd51c0d",
+      "en": "Kururu Taken Hostage",
+      "wrapped_lines": [
+        "Kururu Taken",
+        "Hostage"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.184",
+      "sprite": 184,
+      "record_offset": 4224,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "699fdfbd8ae7f89f90258135ce1ebd5fcccfe1e771702795b68c8a65a8e9b7ba",
+      "source_tile_sha256": "880387dbf7e09dc1467d73e3f3b7c436cd8eb76585edb88984793759480670cc",
+      "en": "The Entryway",
+      "wrapped_lines": [
+        "The Entryway"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.185",
+      "sprite": 185,
+      "record_offset": 4244,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "bed1f66b4c17f8ca7b9c202a9ea71e6c93e3082b13d6089a1863cbfb807ffdd6",
+      "source_tile_sha256": "fdb4d026949611e423af43f59acfc4440b96387a6fceacc46e0e539ebe49eb47",
+      "en": "Xiujian and Melissa's World",
+      "wrapped_lines": [
+        "Xiujian and",
+        "Melissa's World"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "World is the printed noun; do not silently change it to a generic scene or expression."
+    },
+    {
+      "id": "album.214.186",
+      "sprite": 186,
+      "record_offset": 4264,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "6446e3a6c86aa9cafd80a803fe1d182e17e8fc5ec2d24f647db9dbdcada49e4e",
+      "source_tile_sha256": "ce5265b94ecf68fd67fc5c106eb5528b53b0bdc06af4e2c29f1446a8de951f93",
+      "en": "Wenimas Receives a Confession",
+      "wrapped_lines": [
+        "Wenimas Receives",
+        "a Confession"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.187",
+      "sprite": 187,
+      "record_offset": 4284,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "afb26c98174a17b4d66f0f4bcfcb2e661a85f0a58c5180b4d753164d97722a20",
+      "source_tile_sha256": "eabd10ce7bc7a4791161faf7b3ec93976bb5cf3e0f046274f6146ef727d3624b",
+      "en": "Rayblade Splashes Down",
+      "wrapped_lines": [
+        "Rayblade Splashes",
+        "Down"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.188",
+      "sprite": 188,
+      "record_offset": 4304,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "1f1f2e326bb116edc9bfd92ee4f4f075a3c7a2677f205e954c89253a1f1a3f56",
+      "source_tile_sha256": "e1ff548398dc504d57c5aa4b740636b9306673d6691272d8c2a199cf3240a462",
+      "en": "At the Beach at Night",
+      "wrapped_lines": [
+        "At the Beach at",
+        "Night"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.189",
+      "sprite": 189,
+      "record_offset": 4324,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "1f72ee7b088f72219c7301aa9bc93da68480ee857f9a55783afab976a9419b96",
+      "source_tile_sha256": "d057631f75e8809fbff0c229283a3ecc80228553caaa82fa6411e385a32fc706",
+      "en": "Holding an Injured Maki",
+      "wrapped_lines": [
+        "Holding an",
+        "Injured Maki"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.190",
+      "sprite": 190,
+      "record_offset": 4344,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "1d1ef771ae44cae3cf131a6bd88b004c17cf4c687948455ce83233befe5523bc",
+      "source_tile_sha256": "430e17485e9c48a1ffe6f4498bf454d58213bb72f11a34f01e3f334e8ea1acbd",
+      "en": "Ymir Sits on the Bed",
+      "wrapped_lines": [
+        "Ymir Sits on the",
+        "Bed"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.191",
+      "sprite": 191,
+      "record_offset": 4364,
+      "texture_member": 238,
+      "texture_id": 23,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "998cf93b93d8498db5fa8cbdb6775907979240aedafef1136d4b423c49da984a",
+      "source_tile_sha256": "0682927da5aea882ca1a1e5c49bfb75b3ad3da73a74130e97667215573dcf4f5",
+      "en": "Leone Links Arms for the Camera",
+      "wrapped_lines": [
+        "Leone Links Arms",
+        "for the Camera"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Thumbnail shows Leone linking arms with Touya; not crossing her own arms. Camera context retained."
+    },
+    {
+      "id": "album.214.192",
+      "sprite": 192,
+      "record_offset": 4384,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "9ab96dc356a0f5264aafa22836a1bb45b52f1db0fbbbba2e937686d55a2bfbe4",
+      "source_tile_sha256": "223bbc77525a7288521bbfc0891fbf8a84a6c7a30ad774311f60c4fa1ddce5ae",
+      "en": "Captive Lodis",
+      "wrapped_lines": [
+        "Captive Lodis"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.193",
+      "sprite": 193,
+      "record_offset": 4404,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "c71d8bc522361db8d4db012ff9970defae76b34004af6d98e90caa9ab6c7ae0f",
+      "source_tile_sha256": "6915f83efdad09a7ee95a2fddaf40af2b78961a4b3b07667bb054db8216332f5",
+      "en": "Leone Inside the Capsule",
+      "wrapped_lines": [
+        "Leone Inside the",
+        "Capsule"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.194",
+      "sprite": 194,
+      "record_offset": 4424,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "8c925f255c0cdfe53dfc6e62c6a7d2bc91c3edf7f16d93b3c47eef4865f7cb50",
+      "source_tile_sha256": "11ae37c1a253e5faf7c38aad4bef8919ce6ca76e902bf9e47837fe69ea1d4e6e",
+      "en": "Peering from the Broken Capsule",
+      "wrapped_lines": [
+        "Peering from the",
+        "Broken Capsule"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.195",
+      "sprite": 195,
+      "record_offset": 4444,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "90da02c28cf71aa83723593e475d8070d8f16436ea4994b4aa324bff6a7bce03",
+      "source_tile_sha256": "57b3c49af93915b8f770aea4ce01e9c57818fcb6b59393aa793d37460268ebff",
+      "en": "Ymir Buries Her Face against His Chest 1",
+      "wrapped_lines": [
+        "Ymir Buries Her",
+        "Face against His",
+        "Chest 1"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Source omits the chest owner; thumbnail shows Touya. Keep the established visible male referent, with no erotic detail."
+    },
+    {
+      "id": "album.214.196",
+      "sprite": 196,
+      "record_offset": 4464,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "86d34339fe7eb0c3925cb6f8ef3da528b65c15ea6a69a18e01596b426a5645f3",
+      "source_tile_sha256": "c26100502b7e7bac9069de1f0ce7b4aecc85fb8d4843b8118ca285089acefc41",
+      "en": "Ymir Buries Her Face against His Chest 2",
+      "wrapped_lines": [
+        "Ymir Buries Her",
+        "Face against His",
+        "Chest 2"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Companion view of the same nonexplicit embrace; retain number and gesture."
+    },
+    {
+      "id": "album.214.197",
+      "sprite": 197,
+      "record_offset": 4484,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "4c4474b5ab2821280ba336e8501b8f19f5694087e425a140ec8a67e15bde2931",
+      "source_tile_sha256": "c9bce8388f40cee9355d20b6fa9c23cedff112abf72c6230c4fc4e11d99c3d17",
+      "en": "Ymir Weeps Quietly",
+      "wrapped_lines": [
+        "Ymir Weeps",
+        "Quietly"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.198",
+      "sprite": 198,
+      "record_offset": 4504,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "769df266316768f00be28ceeb9640fdd3592ae2229f8041d022fdad73c49f012",
+      "source_tile_sha256": "694a8b124b7619091e6187f55b3f5cb43e66271c0224672a665509a8bce22ebf",
+      "en": "Kissing Leone in the Infirmary",
+      "wrapped_lines": [
+        "Kissing Leone in",
+        "the Infirmary"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.199",
+      "sprite": 199,
+      "record_offset": 4524,
+      "texture_member": 239,
+      "texture_id": 24,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "2ae3ca73d87f32848941d2a2abb68f77c879e7a82bfce110ab3fb14fa0a95ca8",
+      "source_tile_sha256": "cb42132dc0411a9f6c9f33d4a62a2262369cb9c2bad50af9224a2b37969275bc",
+      "en": "Holding Leone Close",
+      "wrapped_lines": [
+        "Holding Leone",
+        "Close"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.200",
+      "sprite": 200,
+      "record_offset": 4544,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "83955f0a755fc948a1f374e37114cde71aa3e47fb414a84abe743e34251b1331",
+      "source_tile_sha256": "b371f364878699eea1b2b2d9fdea1dc6b7016a1e92ec7d9c22d91a8b19547b33",
+      "en": "Rayblade before the Final Battle",
+      "wrapped_lines": [
+        "Rayblade before",
+        "the Final Battle"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.201",
+      "sprite": 201,
+      "record_offset": 4564,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "28bed9845fea51748010c041df9e3a1dec7ba09f8181caae46b47a9ca05613b0",
+      "source_tile_sha256": "4ecb371c22dd8b5234c78b89743aa563e7cb40ec040f5b1121dfc168c44a3a38",
+      "en": "Before the Final Battle: Ai",
+      "wrapped_lines": [
+        "Before the Final",
+        "Battle: Ai"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.202",
+      "sprite": 202,
+      "record_offset": 4584,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "d87d5c11fe8eaf935d76970369736c77a1248eeaac1073b8cf79117c62eb0601",
+      "source_tile_sha256": "712b40556da26f18aca62bfbf023b5db250a5d83308d40e4039c7fe37e4866cf",
+      "en": "Before the Final Battle: Kasumi",
+      "wrapped_lines": [
+        "Before the Final",
+        "Battle: Kasumi"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.203",
+      "sprite": 203,
+      "record_offset": 4604,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "c6de4ea49c55521668cd91e614c4c32ea8afa1f2e335820e6b6bb1aa62982929",
+      "source_tile_sha256": "5bb16dedf43617313eb5633e8bdcccd339a25b4d1d6620ba2e5bbc3bd66907b1",
+      "en": "Before the Final Battle: Celica",
+      "wrapped_lines": [
+        "Before the Final",
+        "Battle: Celica"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.204",
+      "sprite": 204,
+      "record_offset": 4624,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "593d6a00482b2e10a8bec872119763bbaaee9a72c65d1c9a7e8d4f94204f4fff",
+      "source_tile_sha256": "8c0ffd216a7b38470a9a1c5968bb5cf43d7b899f556f2a9857f8b7dff08bfff4",
+      "en": "Before the Final Battle: Aurelie",
+      "wrapped_lines": [
+        "Before the Final",
+        "Battle: Aurelie"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.205",
+      "sprite": 205,
+      "record_offset": 4644,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "c31008d8e55a84b9e8220b2db885e193916795767009ff92c723c399319e9a90",
+      "source_tile_sha256": "d7c063d88c58a1cfb529c66f885d433088fbe00639c8329eded888447bbabf7d",
+      "en": "Before the Final Battle: Melvi",
+      "wrapped_lines": [
+        "Before the Final",
+        "Battle: Melvi"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.206",
+      "sprite": 206,
+      "record_offset": 4664,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "43745666005a4459a6415896edd2851d571305b25f4c287a4257ec2e351243f9",
+      "source_tile_sha256": "13867681ddc84568b907002d4ff5bda38ba7042836c29551bc92672c1a472dec",
+      "en": "Before the Final Battle: Kururu",
+      "wrapped_lines": [
+        "Before the Final",
+        "Battle: Kururu"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.207",
+      "sprite": 207,
+      "record_offset": 4684,
+      "texture_member": 240,
+      "texture_id": 25,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "b33bd1c794d8fdb5447ea2392208640f9021f4c8cf1edb68c83874e7c745a665",
+      "source_tile_sha256": "19c1cae09aa46374c67b0ac24c55ee5f5e07ed7d9c96d83e78202fe826f8ed6f",
+      "en": "Before the Final Battle: Leone",
+      "wrapped_lines": [
+        "Before the Final",
+        "Battle: Leone"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.208",
+      "sprite": 208,
+      "record_offset": 4704,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "911ff58d972762ed2b28bc09029ee822b4c0ff3cf24cf9229d8ead1d5413f023",
+      "source_tile_sha256": "71df9cc8ab4f802e41c8d1161ceecaea1c7c15d0e8a6b14f2f7463a7beccdf0e",
+      "en": "A Scope in Flight",
+      "wrapped_lines": [
+        "A Scope in Flight"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.209",
+      "sprite": 209,
+      "record_offset": 4724,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "bba84737e826713f8a276a8ec9b3d16221cb39414126d175af0efcacef68f580",
+      "source_tile_sha256": "15c64760c64c89c8eb5f8c244bd39fa27d40e455eeb84d6438512e3c7f98585a",
+      "en": "A Floating Core",
+      "wrapped_lines": [
+        "A Floating Core"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.210",
+      "sprite": 210,
+      "record_offset": 4744,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "1b1460c32d8abcc81a0b86a268793c49cae0f3025681f40355f86609f45b7db8",
+      "source_tile_sha256": "efc9399e73603cadefbada9783059a97fc1a445b1d6376dbad258ff81bf026ad",
+      "en": "Vorlia Appears",
+      "wrapped_lines": [
+        "Vorlia Appears"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.211",
+      "sprite": 211,
+      "record_offset": 4764,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        192,
+        0,
+        256,
+        72
+      ],
+      "caption_box": [
+        192,
+        48,
+        256,
+        72
+      ],
+      "source_caption_sha256": "1e430e191cd9fed2a8aa3296eba039b0462cb10f3f5c2ca88fb2f184877533f8",
+      "source_tile_sha256": "ad0da045007460abc690c0f181caaf5a7ea705d05e8cd92c7b11003464f0c070",
+      "en": "Vorlia Approaches the Holy Land",
+      "wrapped_lines": [
+        "Vorlia Approaches",
+        "the Holy Land"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.212",
+      "sprite": 212,
+      "record_offset": 4784,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        0,
+        72,
+        64,
+        144
+      ],
+      "caption_box": [
+        0,
+        120,
+        64,
+        144
+      ],
+      "source_caption_sha256": "6be439bfb2a8e3088f3ff3b098cafe6a2460a38d91d55e20e18947cdac3085c7",
+      "source_tile_sha256": "9995d1119ee9c37e41c7ec006954b2e58acaab5410011eba37c4c037501d64ec",
+      "en": "Kissing Rishuna at the Party",
+      "wrapped_lines": [
+        "Kissing Rishuna at",
+        "the Party"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.213",
+      "sprite": 213,
+      "record_offset": 4804,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        64,
+        72,
+        128,
+        144
+      ],
+      "caption_box": [
+        64,
+        120,
+        128,
+        144
+      ],
+      "source_caption_sha256": "792103b483fe7169ff06b50e03511efdd677701895c78a88d9004080291e59f0",
+      "source_tile_sha256": "1d813ecdbfa302c4256e949b37e3b5f6c376f021519c18d0d106bae403b261aa",
+      "en": "Vorlia and Liebhofen",
+      "wrapped_lines": [
+        "Vorlia and",
+        "Liebhofen"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.214",
+      "sprite": 214,
+      "record_offset": 4824,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        128,
+        72,
+        192,
+        144
+      ],
+      "caption_box": [
+        128,
+        120,
+        192,
+        144
+      ],
+      "source_caption_sha256": "24826a4d48f2cec991335779e2889a87364d6ec2e5759c4bee47a3de2d2a2378",
+      "source_tile_sha256": "8df3f74c9c4685cdf5d11bea5309fa3cfffa9f361799bf52552be3ab9f4307c9",
+      "en": "Yamato Got Here First",
+      "wrapped_lines": [
+        "Yamato Got Here",
+        "First"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.215",
+      "sprite": 215,
+      "record_offset": 4844,
+      "texture_member": 241,
+      "texture_id": 26,
+      "source_box": [
+        192,
+        72,
+        256,
+        144
+      ],
+      "caption_box": [
+        192,
+        120,
+        256,
+        144
+      ],
+      "source_caption_sha256": "2456f32a20eca287322082b3f071d0bc57d810cf2dc8e794c1ccd1d238a6071a",
+      "source_tile_sha256": "8308207f9a65ef1c196e717bb01a03fe26a0fbfd35731eee050cecdbad61c565",
+      "en": "A \"Voice\" Can Be Heard",
+      "wrapped_lines": [
+        "A \"Voice\" Can Be",
+        "Heard"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.216",
+      "sprite": 216,
+      "record_offset": 4864,
+      "texture_member": 242,
+      "texture_id": 27,
+      "source_box": [
+        0,
+        0,
+        64,
+        72
+      ],
+      "caption_box": [
+        0,
+        48,
+        64,
+        72
+      ],
+      "source_caption_sha256": "0749338f6d59788aba474f40f95a78fdee5cacce57b1a89f3388274d5f2f9609",
+      "source_tile_sha256": "92d2833c95eb646da65530bc42f195dd57e992195c674691d1d430b367345c29",
+      "en": "Teacher Peeking In (Monochrome Background)",
+      "wrapped_lines": [
+        "Teacher Peeking",
+        "In (Monochrome",
+        "Background)"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.217",
+      "sprite": 217,
+      "record_offset": 4884,
+      "texture_member": 242,
+      "texture_id": 27,
+      "source_box": [
+        64,
+        0,
+        128,
+        72
+      ],
+      "caption_box": [
+        64,
+        48,
+        128,
+        72
+      ],
+      "source_caption_sha256": "8a6faaff09e48bf9334ebeb214b61d24b4990ce866a839fa29b770a514eb1b3e",
+      "source_tile_sha256": "33b10cd20715619cf66c1d0f9c5d35d483e6ff15d034ab70279ab1156824ae2b",
+      "en": "Wenimas Peeks In",
+      "wrapped_lines": [
+        "Wenimas Peeks In"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    },
+    {
+      "id": "album.214.218",
+      "sprite": 218,
+      "record_offset": 4904,
+      "texture_member": 242,
+      "texture_id": 27,
+      "source_box": [
+        128,
+        0,
+        192,
+        72
+      ],
+      "caption_box": [
+        128,
+        48,
+        192,
+        72
+      ],
+      "source_caption_sha256": "da6e1f8aa445bb3d4c20451315ed9bc45a9b317ab1467a197cf135160a68c792",
+      "source_tile_sha256": "537fa324195e077a7ae4ea2e9f7f48d615b9167f7adf97e613cd0931733e9c66",
+      "en": "Wenimas Ascends",
+      "wrapped_lines": [
+        "Wenimas Ascends"
+      ],
+      "status": "authored_image_caption_draft",
+      "decision": "Translate the printed caption in full; use established glossary names and preserve scene/sequence distinctions."
+    }
+  ],
+  "preserved_blank_Coming_Soon_cells": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    27,
+    28,
+    29,
+    30,
+    31,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    219,
+    220,
+    221,
+    222,
+    223
+  ],
+  "overflows": [],
+  "glossary_checks": {
+    "mech.001": "Rayblade",
+    "mech.003": "Hongshenguang",
+    "mech.004": "Ahti",
+    "mech.005": "Zeifon",
+    "mech.007": "Parikar",
+    "mech.008": "Baldock",
+    "mech.009": "Forstin",
+    "mech.010": "Vishal",
+    "mech.011": "Drydes",
+    "mech.012": "Orbest",
+    "mech.013": "Selphin",
+    "mech.035": "Goderius",
+    "mech.036": "Parthenos",
+    "mech.055": "Baresios",
+    "mech.056": "Veil Astin",
+    "mech.058": "Kaisar",
+    "character.050": "Render",
+    "character.049": "Ioannis",
+    "character.084": "Miyasco",
+    "character.090": "Alforina"
+  },
+  "pending": [
+    "Two source-caption readings",
+    "Independent meaning/context review",
+    "Native album unlock/selection/navigation and live caption appearance"
+  ],
+  "story_library_draft_credit": 0
+}

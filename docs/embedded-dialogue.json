@@ -1,0 +1,61 @@
+{
+  "version": "0.1.21",
+  "source_build": "0.1.20",
+  "status": "13 embedded executable dialogue commands integrated and packaged; native formatting/VM advance/layout and broad regressions pass; live display and full coverage pending",
+  "commands": 13,
+  "new_story_library_draft_credit": 0,
+  "English_source": "Existing byte-identical s_000/s_05d/s_087 drafts; context reviewed for same speakers and hint/event purposes",
+  "translation_map": "work/translation/en/ui/embedded-dialogue.en.json",
+  "dispatcher": "0x8c018440",
+  "dispatcher_bytes": 76,
+  "static_English_bytes": 1188,
+  "executable_changed_bytes": 1204,
+  "original_commands_branch_addresses_story_helpers_allocations": "unchanged",
+  "native_formatter_VM_cases": 52,
+  "native_parser_commands": 13,
+  "native_fallback_cases": 2,
+  "maximum_formatted_bytes": 123,
+  "native_instructions": {
+    "formatter_VM": 183562,
+    "reference": 44727,
+    "parser_effect": 39284,
+    "fallback": 1455
+  },
+  "proof": "work/output/0.1.21/embedded-dialogue-native-test.json",
+  "regression_proofs": {
+    "embedded-dialogue-native-test": "work/output/0.1.21/embedded-dialogue-native-test.json",
+    "genei-font-native-test": "work/output/0.1.21/genei-font-native-test.json",
+    "genei-surface-native-test": "work/output/0.1.21/genei-surface-native-test.json",
+    "ui-layout-native-test": "work/output/0.1.21/ui-layout-native-test.json",
+    "word-wrap-native-test": "work/output/0.1.21/word-wrap-native-test.json",
+    "inline-control-native-test": "work/output/0.1.21/inline-control-native-test.json",
+    "library-layout-native-test": "work/output/0.1.21/library-layout-native-test.json",
+    "library-header-native-test": "work/output/0.1.21/library-header-native-test.json",
+    "scenario-native-test": "work/output/0.1.21/scenario-native-test.json",
+    "battle-english-native-test": "work/output/0.1.21/battle-english-native-test.json",
+    "chapter-card-native-test": "work/output/0.1.21/chapter-card-native-test.json",
+    "ui-image-native-test": "work/output/0.1.21/ui-image-native-test.json"
+  },
+  "preview": "work/output/0.1.21/embedded-dialogue-preview.png",
+  "component": "work/output/0.1.21/embedded-dialogue-component.json",
+  "resolved_operand_markers": {
+    "proof": "docs/scenario-marker-review.json",
+    "count": 2,
+    "native_instructions": 476,
+    "source_blocks_unchanged": 51374,
+    "physical_rows_unchanged": 83083
+  },
+  "disc": "work/output/0.1.21/disc/Rayblade English Test 0.1.21.gdi",
+  "packaging": {
+    "reextracted_files": "all 5 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "in_game": "pending"
+  },
+  "limits": [
+    "Parser glyph advance and scene/effect callees are bounded fixtures",
+    "The handler formatting/count/advance phases execute separately; UI construction, callbacks/timing, GPU and live appearance remain unverified",
+    "Embedded region scan plus two marker resolutions do not prove full VM/native text coverage",
+    "These commands reuse existing drafts; independent meaning review is still pending"
+  ]
+}

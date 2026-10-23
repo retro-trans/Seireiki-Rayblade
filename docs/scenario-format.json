@@ -1,0 +1,2607 @@
+{
+  "version": "0.1.12",
+  "status": "Measured word wrapping inserted for 50,107 ordinary story commands; opening dialogue observed in-game; special-control layouts and full-game validation pending",
+  "source_archive": {
+    "file": "D_SCE.AFS",
+    "members": 448,
+    "script_members": 447,
+    "filename_list_member": 447,
+    "filename_list_includes_itself": true,
+    "script_bytes": 3076902,
+    "member_names": "s_000.bin through s_1be.bin",
+    "member_encoding": "raw VM code and custom-font text; not PRS-compressed"
+  },
+  "candidate_inline_text": {
+    "signature_hex": "8a06",
+    "style_byte_values_hex": [
+      "00",
+      "40",
+      "80",
+      "a0",
+      "c0"
+    ],
+    "payload_start": "signature offset + 3",
+    "payload_end": "FF ends the enclosing inline command. FE ends a display page and continuation prose follows without a new 8A 06 prefix. Wide glyph continuations and complete FC operands are consumed as units.",
+    "blocks": 51374,
+    "physical_rows": 83083,
+    "distinct_payloads": 26884,
+    "members_with_matches": 442,
+    "coverage_proven": false,
+    "reuse_policy": "identical payloads are candidates only; scene context must be reviewed before sharing a translation",
+    "review_items": [],
+    "inline_commands": 50626,
+    "continuation_pages": 748,
+    "block_identity": "First-page IDs/hashes remain unchanged; continuation pages append .p01, .p02, etc. to the parent command ID.",
+    "resolved_review_items": [
+      {
+        "members": [
+          "s_106.bin",
+          "s_16b.bin"
+        ],
+        "reason": "FC controls whose second parameter is 3C occupy five bytes, not three. The extra two operands had been misread as text, including a spurious 01FC glyph. Correct operand lengths resolve both anomalies without inventing a glyph."
+      }
+    ],
+    "native_operand_marker_resolutions": {
+      "proof": "docs/scenario-marker-review.json",
+      "count": 2,
+      "native_instructions": 476,
+      "source_blocks_unchanged": 51374,
+      "physical_rows_unchanged": 83083
+    }
+  },
+  "native_text_renderer": {
+    "file_offset_hex": "6ac64",
+    "runtime_address_hex": "8c07ac64",
+    "FC_handler_file_offset_hex": "6ad30",
+    "FC_parameters": "Reads two following bytes; an FF parameter is obtained from the input-byte helper instead",
+    "FC_nested_reference": "When the second parameter is below 13, saves a return pointer on an eight-entry stack and follows a relative text-table reference",
+    "FC_other_reference": "Second parameters 13..18 use a separate word-offset table; remaining parameters include formatting/UI operations",
+    "caution": "Do not normalize inline control operands into visible Latin text. FC 3C extra operands may include FE or FF, which are not page/command ends in that position.",
+    "five_byte_FC_control": "FC + parameter1 + 3C + two further operands; formatter file 6bdf0 branches on 3C and copies the extra operand bytes."
+  },
+  "input_byte_helper": {
+    "file_offset_hex": "2c364",
+    "runtime_address_hex": "8c03c364",
+    "read_pointer_global_hex": "8c1db4e0",
+    "remaining_counter_global_hex": "8c1db4e4",
+    "buffer_base_global_hex": "8c1db4ec",
+    "observed_behavior": "Read a byte and advance pointer; wrap to buffer base at base + 0x400; decrement a 16-bit remaining counter",
+    "interpretation": "A circular input/command stream is indicated; its relationship to the scenario VM program counter is not yet proven",
+    "known_call_sites_file_offsets_hex": [
+      "13d6a",
+      "6ad60",
+      "6ad78",
+      "6dc82",
+      "6dcb4"
+    ]
+  },
+  "reinsertion_requirements": [
+    "Keep translation length independent of original byte budget",
+    "Prove how the VM advances beyond text and handles embedded controls",
+    "Either rebuild all affected branch/reference targets or prove a safe runtime translation-reference mechanism",
+    "Do not relocate arbitrary byte patterns as if they were known instructions",
+    "Validate conditional choices, interruptions, portraits, append modes and transitions in-game",
+    "Preserve full FE continuation chains and five-byte FC 3C control operands",
+    "Address the native 1 KiB dialogue formatting buffer and byte/cell-count wrapping for expanded English",
+    "Grow the dialogue heap allocation and formatter limit together; 62 current English commands produce over 1024 bytes. Native witness maximum is 1411 bytes; pixel layout and runtime FC expansion need separate checks."
+  ],
+  "native_inline_command": {
+    "main_dispatch_table_runtime": "8c099798",
+    "main_dispatch_file_offset": "2f48a",
+    "program_pointer_global_runtime": "8c1dbe24",
+    "opcode_global_runtime": "8c1dbe70",
+    "8A_dispatch_file_offset": "6c7dc",
+    "8A_subcommand_table_runtime": "8c09b14c",
+    "8A_06_handler_file_offset": "6cf3c",
+    "handler_runtime": "8c07cf3c",
+    "source_pointer_setup": "current program pointer + 2; the program pointer is already past the 8A opcode",
+    "formatter_call_file_offset": "6cfd4",
+    "formatter_runtime": "8c07bc00",
+    "destination_allocation_bytes": 1024,
+    "formatter_limit_argument": 1023,
+    "buffer_global_runtime": "8c17fba4",
+    "formatted_read_pointer_global_runtime": "8c17fba8",
+    "source_consumed_counter_runtime": "8c09b1ec",
+    "observed_behavior": "Formatter consumes FE continuations and complete FC 3C operands until FF; returns original consumed source bytes including FF. The handler adds one and stores that source count for eventual VM advancement. Display pages are subsequently drawn from the formatted buffer.",
+    "offline_evidence": "tools/test_scenario_pages.py executes original formatter instructions on 3 exact synthetic streams and 3 source commands, checking source consumption, glyph/control preservation, stack/register ABI and destination guards.",
+    "limits": "This does not prove all VM command coverage or a safe translation hook. The fixed 1 KiB destination and formatter budget must be addressed before inserting longer English commands.",
+    "allocation_kind": "heap allocation through native malloc at runtime 8c03f748; not a 1 KiB stack array"
+  },
+  "reinsertion_research_hypothesis": {
+    "status": "Implemented as 0.1.7 candidate; full game testing and text coverage unfinished",
+    "approach": "A compressed member expands into a separate English bank. Its original VM prefix is copied to its original fixed address. The scenario-only formatter hook binary-searches original source offsets, formats English and returns original source consumption. Original next-opcode advancement is exercised independently through native phase instructions.",
+    "rejected_shortcuts": [
+      "Do not use 8c019088 as a proven loaded D_SCE member base. The executable initializes it to embedded program root data at 8c01908c, and native root/call helpers use that table.",
+      "Do not treat opcode 8E handler return 0x8000 as a proven scenario allocation size. It is a VM return value; the actual loader/buffer ownership is unproven.",
+      "Do not advance the original VM pointer by English consumption. The original command end/length must be retained independently."
+    ]
+  },
+  "english_insertion_audit": {
+    "kind": "scenario English stream and native formatter insertion audit; no game patch",
+    "candidate_commands": 50626,
+    "complete_commands": 50273,
+    "held_commands": 353,
+    "held_rows": 503,
+    "drafted_rows_sharing_held_commands": 3,
+    "english_payload_bytes_total": 3088758,
+    "maximum_english_payload_bytes": 1380,
+    "commands_over_original_formatter_limit": 62,
+    "largest_commands": [
+      {
+        "id": "scenario.s_149.o00945",
+        "member": "s_149.bin",
+        "command_offset": 2373,
+        "source_payload_bytes": 767,
+        "source_command_end": 3143,
+        "source_payload_sha256": "623ef4bce903e2375fc6880bda74015afb173676b1432c5bfe87afbc8a28225b",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 26,
+        "english_payload_bytes": 1380,
+        "english_payload_sha256": "e02f2a05ab5e89d77fbcc2bb6b699df653c10a1365a9ef6574fee0f9ee5773c2"
+      },
+      {
+        "id": "scenario.s_0d8.o01147",
+        "member": "s_0d8.bin",
+        "command_offset": 4423,
+        "source_payload_bytes": 767,
+        "source_command_end": 5193,
+        "source_payload_sha256": "623ef4bce903e2375fc6880bda74015afb173676b1432c5bfe87afbc8a28225b",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 26,
+        "english_payload_bytes": 1341,
+        "english_payload_sha256": "86f80f7945400ca008b2f42aa378cab2a6cb4d9a1ac4a63f45b148e27bbd87d2"
+      },
+      {
+        "id": "scenario.s_0d8.o00c8f",
+        "member": "s_0d8.bin",
+        "command_offset": 3215,
+        "source_payload_bytes": 668,
+        "source_command_end": 3886,
+        "source_payload_sha256": "846cc5fa8c575f802113e737b8fdbf795df7d51643d6a55ee6aad111f17b210f",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1208,
+        "english_payload_sha256": "c460e1249a2846d48f71cc30c7b18f1116c9d817661587a37877df179cbdff76"
+      },
+      {
+        "id": "scenario.s_149.o0048d",
+        "member": "s_149.bin",
+        "command_offset": 1165,
+        "source_payload_bytes": 668,
+        "source_command_end": 1836,
+        "source_payload_sha256": "846cc5fa8c575f802113e737b8fdbf795df7d51643d6a55ee6aad111f17b210f",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1200,
+        "english_payload_sha256": "3b84e76efb4ed5647e3de81b19b04d98e03c85004b47004cab8ac67fe9abdec7"
+      },
+      {
+        "id": "scenario.s_131.o00c8f",
+        "member": "s_131.bin",
+        "command_offset": 3215,
+        "source_payload_bytes": 691,
+        "source_command_end": 3909,
+        "source_payload_sha256": "ef879a8387515e78bbda73ca8d44cebd60d5987bce14f6357f95d0a58d2d0066",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1114,
+        "english_payload_sha256": "3ecbf9f209320e0f53289a13da05794e240ed1c932688f7e1004bbdc8c182d45"
+      },
+      {
+        "id": "scenario.s_132.o00fe6",
+        "member": "s_132.bin",
+        "command_offset": 4070,
+        "source_payload_bytes": 691,
+        "source_command_end": 4764,
+        "source_payload_sha256": "ef879a8387515e78bbda73ca8d44cebd60d5987bce14f6357f95d0a58d2d0066",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1114,
+        "english_payload_sha256": "3ecbf9f209320e0f53289a13da05794e240ed1c932688f7e1004bbdc8c182d45"
+      },
+      {
+        "id": "scenario.s_103.o01cf5",
+        "member": "s_103.bin",
+        "command_offset": 7413,
+        "source_payload_bytes": 687,
+        "source_command_end": 8103,
+        "source_payload_sha256": "b3218db1f8e1b9740a96741289825e6250fd517f70f9274fb203d6adf8048180",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1103,
+        "english_payload_sha256": "bba7bc814b0602fe77a3ce42a8fb66f404e9e391e6408498a3d8a44fb4bfcf7d"
+      },
+      {
+        "id": "scenario.s_104.o010e0",
+        "member": "s_104.bin",
+        "command_offset": 4320,
+        "source_payload_bytes": 687,
+        "source_command_end": 5010,
+        "source_payload_sha256": "b3218db1f8e1b9740a96741289825e6250fd517f70f9274fb203d6adf8048180",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1103,
+        "english_payload_sha256": "bba7bc814b0602fe77a3ce42a8fb66f404e9e391e6408498a3d8a44fb4bfcf7d"
+      },
+      {
+        "id": "scenario.s_106.o00e28",
+        "member": "s_106.bin",
+        "command_offset": 3624,
+        "source_payload_bytes": 687,
+        "source_command_end": 4314,
+        "source_payload_sha256": "b3218db1f8e1b9740a96741289825e6250fd517f70f9274fb203d6adf8048180",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1103,
+        "english_payload_sha256": "bba7bc814b0602fe77a3ce42a8fb66f404e9e391e6408498a3d8a44fb4bfcf7d"
+      },
+      {
+        "id": "scenario.s_107.o03bc0",
+        "member": "s_107.bin",
+        "command_offset": 15296,
+        "source_payload_bytes": 687,
+        "source_command_end": 15986,
+        "source_payload_sha256": "b3218db1f8e1b9740a96741289825e6250fd517f70f9274fb203d6adf8048180",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1103,
+        "english_payload_sha256": "bba7bc814b0602fe77a3ce42a8fb66f404e9e391e6408498a3d8a44fb4bfcf7d"
+      },
+      {
+        "id": "scenario.s_116.o01428",
+        "member": "s_116.bin",
+        "command_offset": 5160,
+        "source_payload_bytes": 687,
+        "source_command_end": 5850,
+        "source_payload_sha256": "b3218db1f8e1b9740a96741289825e6250fd517f70f9274fb203d6adf8048180",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1094,
+        "english_payload_sha256": "e58cea2122fedc17ec027d620bff6570ec6d3577e4b9ee6d9afb8edec920edbc"
+      },
+      {
+        "id": "scenario.s_117.o012a5",
+        "member": "s_117.bin",
+        "command_offset": 4773,
+        "source_payload_bytes": 687,
+        "source_command_end": 5463,
+        "source_payload_sha256": "b3218db1f8e1b9740a96741289825e6250fd517f70f9274fb203d6adf8048180",
+        "style": 0,
+        "pages": 1,
+        "physical_rows": 25,
+        "english_payload_bytes": 1094,
+        "english_payload_sha256": "e58cea2122fedc17ec027d620bff6570ec6d3577e4b9ee6d9afb8edec920edbc"
+      }
+    ],
+    "styles": {
+      "0": 49289,
+      "64": 23,
+      "192": 125,
+      "128": 835,
+      "160": 1
+    },
+    "selected_native_witnesses": 87,
+    "native_SH4_instructions": 2828248,
+    "maximum_native_output_bytes": 1411,
+    "native_outputs_over_original_allocation": 62,
+    "research_destination_capacity": 5776,
+    "research_limit_argument": 5775,
+    "source_executable_sha256": "08f34a6a8b55a04c03bfe4e6d3a294792d8113e67f79c7759f9efbaeff29b9a5",
+    "checks": [
+      "Source spans, fingerprints, original command boundaries and physical row order exact",
+      "All complete pages encode/decode exactly with original FC controls, FE ends and ASCII state",
+      "Held commands excluded completely; no replacement prose or draft credit"
+    ],
+    "limits": [
+      "Candidate signature extraction is not full VM coverage",
+      "Native witnesses use research destination/limit, not a patched game allocation",
+      "No source-pointer mapping, runtime bank ownership, layout or gameplay proof",
+      "Native tests preserve glyph/control bytes but permit native FD/FE reflow",
+      "Dynamic FC text expansion is handled later by the renderer and is not measured here"
+    ],
+    "evidence": "work/output/0.1.6/scenario-insertion-audit.json"
+  },
+  "english_insertion_candidate": {
+    "version": "0.1.12",
+    "kind": "native-verified word-wrap test-disc candidate; limited opening runtime evidence",
+    "source_archive_sha256": "82afe7c192c38f76b9634b91a96b3039ed4d38bf05f4fea46fb20d71501ced41",
+    "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+    "archive_bytes": 4079616,
+    "used_archive_bytes": 4079408,
+    "spare_archive_bytes": 208,
+    "script_members": 447,
+    "english_commands": 50273,
+    "held_commands": 353,
+    "held_rows": 503,
+    "maximum_decoded_member_bytes": 76568,
+    "maximum_packed_member_bytes": 40721,
+    "maximum_sector_read_bytes": 40960,
+    "script_capacity": 131072,
+    "scratch_capacity": 65536,
+    "dialogue_capacity": 8192,
+    "bank_pointer_offset": 131068,
+    "index_entry_bytes": 8,
+    "packed_header_bytes": 20,
+    "filename_list_sha256": "3fae3e5c4658b88e021c125e9d34fde6425993a18137d7eed6ceda3a133d4795",
+    "checks": [
+      "Every original script prefix is byte-exact; original VM branches/operands untouched",
+      "All complete English command pages preserved; separate original and English lengths",
+      "All 447 wrapped members pass PRS and bank index round trips",
+      "Original archive byte size/count and raw filename-list bytes retained"
+    ],
+    "pending": [
+      "Decode and fit the 166 special-display-control English commands",
+      "Measure library/battle/menu layouts and review continuation-icon spacing",
+      "Later scenario transitions, save/load and long-session memory checks",
+      "503 held story rows, full VM text coverage, independent meaning review and remaining image UI/movie text"
+    ],
+    "bank_magic": "RBSCEN02",
+    "pack_magic": "RBS2",
+    "entry_offset_wrap_flag": "0x80000000",
+    "dynamic_PRS_members": [
+      {
+        "member": "s_119.bin",
+        "prior_bytes": 8201,
+        "optimized_bytes": 7912,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_1b8.bin",
+        "prior_bytes": 8210,
+        "optimized_bytes": 7918,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_095.bin",
+        "prior_bytes": 8215,
+        "optimized_bytes": 7906,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_160.bin",
+        "prior_bytes": 12312,
+        "optimized_bytes": 11815,
+        "sectors_saved": 1
+      }
+    ],
+    "word_wrap": {
+      "font_sha256": "9875205e2ee55c01c6446aa27e383e07a3fd879356fbe3e4a7b41f69771276ed",
+      "target_width": 240,
+      "maximum_pen_width": 236,
+      "word_wrapped_commands": 50107,
+      "automatic_breaks": 40193,
+      "special_control_commands": 166,
+      "forced_word_breaks": 0,
+      "special_control_fallbacks": [
+        {
+          "id": "scenario.s_001.o01e22",
+          "FC": [
+            61
+          ]
+        },
+        {
+          "id": "scenario.s_012.o0134c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_028.o002f2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_028.o00551",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_053.o0046f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_053.o008bc",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_056.o00a11",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o0029b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o00402",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o004ec",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o00660",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_05d.o005d9",
+          "FC": [
+            72
+          ]
+        },
+        {
+          "id": "scenario.s_05d.o00795",
+          "FC": [
+            64
+          ]
+        },
+        {
+          "id": "scenario.s_05e.o00357",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_05e.o00659",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_05f.o002b5",
+          "FC": [
+            83
+          ]
+        },
+        {
+          "id": "scenario.s_061.o005b4",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_061.o00772",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_062.o002d0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_062.o003dd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_063.o00453",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_063.o004b0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_063.o007f0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00a4d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00b33",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00cb4",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00e03",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00f33",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00fb5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_06b.o00601",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_06b.o0093e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_06b.o00d14",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_070.o0055e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_070.o006d5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o00cc2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o00e3c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o017d7",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o0185f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o01a8e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o00e44",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01059",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o0113e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o011d1",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01502",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01732",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o018aa",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01d3d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01db6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_092.o019af",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o0029b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o00402",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o004ec",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o00660",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o00838",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o010c2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o023a5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o0240e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0ab.o00842",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0ab.o00b77",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0c3.o0153c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0d5.o00160",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0d7.o0044e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0e4.o009f0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0e9.o002f0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0f6.o0147b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0f7.o00190",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_102.o00dc3",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_102.o01666",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_102.o01eb3",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_106.o01f23",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_106.o02004",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_106.o02309",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o017b3",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o0190d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o01ad9",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o02752",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o02f9f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_112.o02153",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_116.o01cc6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_116.o02157",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_116.o021eb",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_117.o01d5e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_119.o018a6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_11b.o0085b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_11b.o00a3e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_11b.o00b21",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_121.o01d1b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_121.o021ac",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_121.o02240",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_122.o01ce2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_12d.o0101a",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_12f.o00705",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_12f.o00c4a",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_131.o01ca0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_131.o01e83",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_131.o01f66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_132.o016cd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_133.o01440",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_133.o01646",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_133.o01890",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o007ce",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o00955",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o00ca5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o00e25",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_137.o02350",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o0140a",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o016ff",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o01833",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o01c5c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_13e.o0025c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_140.o002dd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o0091e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00b14",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00b84",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00cef",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00d74",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_144.o00126",
+          "FC": [
+            66,
+            68
+          ]
+        },
+        {
+          "id": "scenario.s_14f.o001bf",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_14f.o00339",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16b.o00af5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16b.o00bd6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16b.o00edb",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16c.o021c4",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16c.o0316d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16c.o039ba",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o0096f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o00b72",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o00dcc",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o01152",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_189.o0177f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18c.o00b7d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18c.o00ef8",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18e.o00a66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18e.o00ae1",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_191.o00e89",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_191.o0107c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o00ba6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o00c2e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o00e5d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o0196b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o0079e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o00925",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o00c75",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o00df5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19b.o01b69",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19b.o01d4c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19b.o01e2f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19c.o01efc",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19c.o02076",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o01846",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o01b3b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o01c6f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o02093",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1a9.o004ed",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b5.o01cc6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b5.o02157",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b5.o021eb",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b6.o01d66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b8.o018a6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bb.o01ca0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bb.o01e83",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bb.o01f66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bc.o016cd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bd.o01439",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bd.o0163f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bd.o01889",
+          "FC": [
+            60
+          ]
+        }
+      ],
+      "whitespace": "Automatic line breaks replace spaces in compiled presentation only; all other glyph/control bytes and original FE boundaries retained",
+      "working_translation_rows": "unchanged",
+      "native_verification": "All compiled payloads/flags/line metrics checked; 50,273 native lookups, 87 formatter/VM and 14 pagination witnesses pass",
+      "live_verification": "Opening s_001 bank and word breaks observed; other commands/UI remain unverified"
+    },
+    "status": "Measured word wrapping inserted for 50,107 ordinary story commands; opening dialogue observed in-game; special-control layouts and full-game validation pending",
+    "test_disc_version": "0.1.12",
+    "original_script_base": "0x8c010080",
+    "english_heap_pointer_storage": "0x8c0183f0",
+    "combined_new_heap_bytes": 196608,
+    "native_verification": {
+      "version": "0.1.12",
+      "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+      "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+      "native_lookup_cases": 50273,
+      "native_loader_cases": 13,
+      "failed_read_stale_bank_cases": 1,
+      "raw_filename_list_cases": 1,
+      "held_original_stream_cases": 353,
+      "other_fallback_cases": 2,
+      "maximum_formatted_bytes": 1380,
+      "SH4_initialization_instructions": 15,
+      "SH4_loader_instructions": 8249943,
+      "SH4_lookup_instructions": 9977728,
+      "SH4_formatter_VM_instructions": 2852554,
+      "SH4_fallback_instructions": 74754,
+      "source_prefixes": "all 447 exact",
+      "original_script_base": "0x8c010080",
+      "guards_and_callee_saved_registers": "pass",
+      "limits": [
+        "File I/O, malloc, memcpy and cache-maintenance implementations are stubbed",
+        "Lookups all execute native search; 87 formatter cases execute native output and original source-count/VM advance phases",
+        "No full-game memory, rendering, navigation, save/load or layout proof",
+        "Full VM text coverage, held passages and meaning review remain incomplete"
+      ]
+    },
+    "live_validation": {
+      "build": "0.1.12",
+      "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+      "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+      "runtime_evidence": "work/ui/0.1.12/dialogue-runtime.json",
+      "screenshot": "work/ui/0.1.12/word-wrap-teacher.png",
+      "stage": "Measured word wrapping inserted for 50,107 ordinary story commands; opening dialogue observed in-game; special-control layouts and full-game validation pending",
+      "layout_issue": "Decode and fit the 166 special-display-control English commands",
+      "boot": "Opening story and classroom reached in approved local Flycast",
+      "native_hooks": "Loaded RBS2 loader and RBSCEN02 formatter bytes match exact candidate",
+      "script_bank": "s_001 bank byte-exact, including 126 wrapped entries and one special-control entry; original VM prefix/address retained",
+      "visual_observation": "Opening teacher-warning dialogue breaks at spaces and keeps Touya together; a later display page was loaded while the original VM advanced. This does not prove every command or continuation prompt.",
+      "input": "No successful automated game-button sequence claimed; live scene advanced externally",
+      "pending": [
+        "Decode and fit the 166 special-display-control English commands",
+        "Measure library/battle/menu layouts and review continuation-icon spacing",
+        "Later scenario transitions, save/load and long-session memory checks",
+        "503 held story rows, full VM text coverage, independent meaning review and remaining image UI/movie text"
+      ]
+    }
+  },
+  "native_scenario_loader": {
+    "original_entry_runtime": "8c088270",
+    "original_entry_file": "78270",
+    "original_behavior": "Synchronous reader 8c021d9e with file ID 2 (filename table resolves D_SCE.AFS), selected member ID and caller destination; returns Boolean success.",
+    "observed_caller_file_offsets": [
+      "30d52",
+      "315b6",
+      "6f984",
+      "83482",
+      "83718"
+    ],
+    "original_script_pointer_global": "8c1dbf50",
+    "original_script_destination": "8c010080",
+    "original_destination_initialization_file_offsets": [
+      "10352",
+      "10354",
+      "10356"
+    ],
+    "source_prefix_reinstalled": "Native memcpy receives only the unchanged original member prefix, at the original address",
+    "compressed_member_read": "Separate 64 KiB scratch; sector-rounded maximum 40,960 bytes",
+    "separate_decoded_bank": "128 KiB; maximum member 76,568 bytes, bank pointer in final word",
+    "code_storage": "Unused original arena tail after the largest source script; pointer at file83f0 and functions at8400,8800,8c00",
+    "limit": "RBS2 file loading and RBSCEN02 English bank verified live for opening s_001; later transitions, save/load and full-game memory remain unverified",
+    "packed_header_magic": "RBS2",
+    "decoded_bank_magic": "RBSCEN02"
+  },
+  "word_wrapping": {
+    "version": "0.1.12",
+    "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+    "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+    "font_sha256": "9875205e2ee55c01c6446aa27e383e07a3fd879356fbe3e4a7b41f69771276ed",
+    "word_wrap": {
+      "font_sha256": "9875205e2ee55c01c6446aa27e383e07a3fd879356fbe3e4a7b41f69771276ed",
+      "target_width": 240,
+      "maximum_pen_width": 236,
+      "word_wrapped_commands": 50107,
+      "automatic_breaks": 40193,
+      "special_control_commands": 166,
+      "forced_word_breaks": 0,
+      "special_control_fallbacks": [
+        {
+          "id": "scenario.s_001.o01e22",
+          "FC": [
+            61
+          ]
+        },
+        {
+          "id": "scenario.s_012.o0134c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_028.o002f2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_028.o00551",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_053.o0046f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_053.o008bc",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_056.o00a11",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o0029b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o00402",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o004ec",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_057.o00660",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_05d.o005d9",
+          "FC": [
+            72
+          ]
+        },
+        {
+          "id": "scenario.s_05d.o00795",
+          "FC": [
+            64
+          ]
+        },
+        {
+          "id": "scenario.s_05e.o00357",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_05e.o00659",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_05f.o002b5",
+          "FC": [
+            83
+          ]
+        },
+        {
+          "id": "scenario.s_061.o005b4",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_061.o00772",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_062.o002d0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_062.o003dd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_063.o00453",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_063.o004b0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_063.o007f0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00a4d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00b33",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00cb4",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00e03",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00f33",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_067.o00fb5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_06b.o00601",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_06b.o0093e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_06b.o00d14",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_070.o0055e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_070.o006d5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o00cc2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o00e3c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o017d7",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o0185f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_072.o01a8e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o00e44",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01059",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o0113e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o011d1",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01502",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01732",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o018aa",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01d3d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_07c.o01db6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_092.o019af",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o0029b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o00402",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o004ec",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_096.o00660",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o00838",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o010c2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o023a5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0a1.o0240e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0ab.o00842",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0ab.o00b77",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0c3.o0153c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0d5.o00160",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0d7.o0044e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0e4.o009f0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0e9.o002f0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0f6.o0147b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_0f7.o00190",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_102.o00dc3",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_102.o01666",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_102.o01eb3",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_106.o01f23",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_106.o02004",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_106.o02309",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o017b3",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o0190d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o01ad9",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o02752",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_107.o02f9f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_112.o02153",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_116.o01cc6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_116.o02157",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_116.o021eb",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_117.o01d5e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_119.o018a6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_11b.o0085b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_11b.o00a3e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_11b.o00b21",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_121.o01d1b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_121.o021ac",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_121.o02240",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_122.o01ce2",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_12d.o0101a",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_12f.o00705",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_12f.o00c4a",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_131.o01ca0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_131.o01e83",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_131.o01f66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_132.o016cd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_133.o01440",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_133.o01646",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_133.o01890",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o007ce",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o00955",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o00ca5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_135.o00e25",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_137.o02350",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o0140a",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o016ff",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o01833",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_139.o01c5c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_13e.o0025c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_140.o002dd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o0091e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00b14",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00b84",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00cef",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_142.o00d74",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_144.o00126",
+          "FC": [
+            66,
+            68
+          ]
+        },
+        {
+          "id": "scenario.s_14f.o001bf",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_14f.o00339",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16b.o00af5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16b.o00bd6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16b.o00edb",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16c.o021c4",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16c.o0316d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_16c.o039ba",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o0096f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o00b72",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o00dcc",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_188.o01152",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_189.o0177f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18c.o00b7d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18c.o00ef8",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18e.o00a66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_18e.o00ae1",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_191.o00e89",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_191.o0107c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o00ba6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o00c2e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o00e5d",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_192.o0196b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o0079e",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o00925",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o00c75",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19a.o00df5",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19b.o01b69",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19b.o01d4c",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19b.o01e2f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19c.o01efc",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19c.o02076",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o01846",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o01b3b",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o01c6f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_19e.o02093",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1a9.o004ed",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b5.o01cc6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b5.o02157",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b5.o021eb",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b6.o01d66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1b8.o018a6",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bb.o01ca0",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bb.o01e83",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bb.o01f66",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bc.o016cd",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bd.o01439",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bd.o0163f",
+          "FC": [
+            60
+          ]
+        },
+        {
+          "id": "scenario.s_1bd.o01889",
+          "FC": [
+            60
+          ]
+        }
+      ],
+      "whitespace": "Automatic line breaks replace spaces in compiled presentation only; all other glyph/control bytes and original FE boundaries retained",
+      "working_translation_rows": "unchanged",
+      "native_verification": "All compiled payloads/flags/line metrics checked; 50,273 native lookups, 87 formatter/VM and 14 pagination witnesses pass",
+      "live_verification": "Opening s_001 bank and word breaks observed; other commands/UI remain unverified"
+    },
+    "native_lookup_cases": 50273,
+    "native_loader_cases": 13,
+    "native_formatter_VM_cases": 87,
+    "native_pagination_cases": 14,
+    "all_compiled_lines_checked": 122286,
+    "maximum_formatted_bytes": 1380,
+    "archive_spare_bytes": 208,
+    "dynamic_PRS_members": [
+      {
+        "member": "s_119.bin",
+        "prior_bytes": 8201,
+        "optimized_bytes": 7912,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_1b8.bin",
+        "prior_bytes": 8210,
+        "optimized_bytes": 7918,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_095.bin",
+        "prior_bytes": 8215,
+        "optimized_bytes": 7906,
+        "sectors_saved": 1
+      },
+      {
+        "member": "s_160.bin",
+        "prior_bytes": 12312,
+        "optimized_bytes": 11815,
+        "sectors_saved": 1
+      }
+    ],
+    "scope": "All command banks and line metrics checked in Python; native lookup executed on every entry, native formatting/VM advancement on 87 cases, native pagination on 14 witnesses. File I/O/allocation/cache remain bounded stubs offline; one opening bank checked live.",
+    "live_validation": {
+      "build": "0.1.12",
+      "executable_sha256": "3ea51f3b765a715b93853cfbea2152c099d7c1ec6f74ade2511fb9847d0614f8",
+      "archive_sha256": "76cfc2efd4b9649a0d4813ebf0987f5e3cc97713945e1ec25b90fbdd0c9272c4",
+      "runtime_evidence": "work/ui/0.1.12/dialogue-runtime.json",
+      "screenshot": "work/ui/0.1.12/word-wrap-teacher.png",
+      "stage": "Measured word wrapping inserted for 50,107 ordinary story commands; opening dialogue observed in-game; special-control layouts and full-game validation pending",
+      "layout_issue": "Decode and fit the 166 special-display-control English commands",
+      "boot": "Opening story and classroom reached in approved local Flycast",
+      "native_hooks": "Loaded RBS2 loader and RBSCEN02 formatter bytes match exact candidate",
+      "script_bank": "s_001 bank byte-exact, including 126 wrapped entries and one special-control entry; original VM prefix/address retained",
+      "visual_observation": "Opening teacher-warning dialogue breaks at spaces and keeps Touya together; a later display page was loaded while the original VM advanced. This does not prove every command or continuation prompt.",
+      "input": "No successful automated game-button sequence claimed; live scene advanced externally",
+      "pending": [
+        "Decode and fit the 166 special-display-control English commands",
+        "Measure library/battle/menu layouts and review continuation-icon spacing",
+        "Later scenario transitions, save/load and long-session memory checks",
+        "503 held story rows, full VM text coverage, independent meaning review and remaining image UI/movie text"
+      ]
+    },
+    "pending": [
+      "Decode and fit the 166 special-display-control English commands",
+      "Measure library/battle/menu layouts and review continuation-icon spacing",
+      "Later scenario transitions, save/load and long-session memory checks",
+      "503 held story rows, full VM text coverage, independent meaning review and remaining image UI/movie text"
+    ]
+  },
+  "latest_embedded_dialogue_build": {
+    "version": "0.1.21",
+    "source_build": "0.1.20",
+    "status": "13 embedded executable dialogue commands integrated and packaged; native formatting/VM advance/layout and broad regressions pass; live display and full coverage pending",
+    "commands": 13,
+    "new_story_library_draft_credit": 0,
+    "English_source": "Existing byte-identical s_000/s_05d/s_087 drafts; context reviewed for same speakers and hint/event purposes",
+    "translation_map": "work/translation/en/ui/embedded-dialogue.en.json",
+    "dispatcher": "0x8c018440",
+    "dispatcher_bytes": 76,
+    "static_English_bytes": 1188,
+    "executable_changed_bytes": 1204,
+    "original_commands_branch_addresses_story_helpers_allocations": "unchanged",
+    "native_formatter_VM_cases": 52,
+    "native_parser_commands": 13,
+    "native_fallback_cases": 2,
+    "maximum_formatted_bytes": 123,
+    "native_instructions": {
+      "formatter_VM": 183562,
+      "reference": 44727,
+      "parser_effect": 39284,
+      "fallback": 1455
+    },
+    "proof": "work/output/0.1.21/embedded-dialogue-native-test.json",
+    "regression_proofs": {
+      "embedded-dialogue-native-test": "work/output/0.1.21/embedded-dialogue-native-test.json",
+      "genei-font-native-test": "work/output/0.1.21/genei-font-native-test.json",
+      "genei-surface-native-test": "work/output/0.1.21/genei-surface-native-test.json",
+      "ui-layout-native-test": "work/output/0.1.21/ui-layout-native-test.json",
+      "word-wrap-native-test": "work/output/0.1.21/word-wrap-native-test.json",
+      "inline-control-native-test": "work/output/0.1.21/inline-control-native-test.json",
+      "library-layout-native-test": "work/output/0.1.21/library-layout-native-test.json",
+      "library-header-native-test": "work/output/0.1.21/library-header-native-test.json",
+      "scenario-native-test": "work/output/0.1.21/scenario-native-test.json",
+      "battle-english-native-test": "work/output/0.1.21/battle-english-native-test.json",
+      "chapter-card-native-test": "work/output/0.1.21/chapter-card-native-test.json",
+      "ui-image-native-test": "work/output/0.1.21/ui-image-native-test.json"
+    },
+    "preview": "work/output/0.1.21/embedded-dialogue-preview.png",
+    "component": "work/output/0.1.21/embedded-dialogue-component.json",
+    "resolved_operand_markers": {
+      "proof": "docs/scenario-marker-review.json",
+      "count": 2,
+      "native_instructions": 476,
+      "source_blocks_unchanged": 51374,
+      "physical_rows_unchanged": 83083
+    },
+    "disc": "work/output/0.1.21/disc/Rayblade English Test 0.1.21.gdi",
+    "packaging": {
+      "reextracted_files": "all 5 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "in_game": "pending"
+    },
+    "limits": [
+      "Parser glyph advance and scene/effect callees are bounded fixtures",
+      "The handler formatting/count/advance phases execute separately; UI construction, callbacks/timing, GPU and live appearance remain unverified",
+      "Embedded region scan plus two marker resolutions do not prove full VM/native text coverage",
+      "These commands reuse existing drafts; independent meaning review is still pending"
+    ]
+  }
+}

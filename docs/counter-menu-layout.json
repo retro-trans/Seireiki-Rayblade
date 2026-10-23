@@ -1,0 +1,659 @@
+{
+  "version": "0.1.43",
+  "source_build": "0.1.42",
+  "date": "2026-10-24",
+  "status": "Counter menus/help/objectives native-verified and packaged; live GPU/input/simultaneous allocation checks pending",
+  "disc": "work/output/0.1.43/disc/Rayblade English Test 0.1.43.gdi",
+  "geometry": {
+    "policy_frame": [
+      96,
+      56,
+      128,
+      96
+    ],
+    "forecast_frame": [
+      96,
+      136,
+      128,
+      80
+    ],
+    "popup_text_x": 104,
+    "policy_text_y": 64,
+    "popup_text_visible_width": 112,
+    "help_frame": [
+      24,
+      152,
+      272,
+      80
+    ],
+    "help_text_x": 32,
+    "help_pen_width": 252,
+    "objectives_frame": [
+      104,
+      24,
+      112,
+      32
+    ],
+    "objectives_text_x": 112
+  },
+  "help_rows": [
+    {
+      "id": "names.g01.024",
+      "before": "Whenever a unit is attacked, the player can choose<NL>to counterattack, evade, or defend.",
+      "after": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "line_widths": [
+        213,
+        219
+      ]
+    },
+    {
+      "id": "names.g01.025",
+      "before": "Whenever a unit is attacked, the player can choose<NL>to counterattack, evade, or defend.",
+      "after": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "line_widths": [
+        213,
+        219
+      ]
+    },
+    {
+      "id": "names.g01.026",
+      "before": "Whenever a unit is attacked, the player can choose<NL>to counterattack, evade, or defend.",
+      "after": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "line_widths": [
+        213,
+        219
+      ]
+    },
+    {
+      "id": "names.g01.027",
+      "before": "Whenever a unit is attacked, the player can choose<NL>to counterattack, evade, or defend.",
+      "after": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "line_widths": [
+        213,
+        219
+      ]
+    },
+    {
+      "id": "names.g01.028",
+      "before": "Always counterattacks when possible. If it cannot counterattack,<NL>the unit evades or defends according to its characteristics.",
+      "after": "Always counterattacks when possible. If it<NL>cannot counterattack, the unit evades or<NL>defends according to its characteristics.",
+      "line_widths": [
+        210,
+        208,
+        208
+      ]
+    },
+    {
+      "id": "names.g01.029",
+      "before": "Counterattacks unless the next attack could destroy the unit.<NL>If destruction is possible, it evades or defends<NL>according to its characteristics.",
+      "after": "Counterattacks unless the next attack<NL>could destroy the unit. If destruction<NL>is possible, it evades or defends<NL>according to its characteristics.",
+      "line_widths": [
+        198,
+        187,
+        161,
+        164
+      ]
+    },
+    {
+      "id": "names.g01.030",
+      "before": "Stops counterattacking when HP falls below half, then evades<NL>or defends according to the unit's characteristics.",
+      "after": "Stops counterattacking when HP falls<NL>below half, then evades or defends<NL>according to the unit's characteristics.",
+      "line_widths": [
+        186,
+        172,
+        197
+      ]
+    },
+    {
+      "id": "names.g01.031",
+      "before": "Never counterattacks. Evades if its Evasion is higher,<NL>or defends if its Defense is higher.",
+      "after": "Never counterattacks. Evades if its Evasion<NL>is higher, or defends if its Defense is higher.",
+      "line_widths": [
+        222,
+        217
+      ]
+    }
+  ],
+  "font_issue": {
+    "reported_labels": [
+      "Counterattack",
+      "Select Weapon"
+    ],
+    "old_popup_visible_width": 64,
+    "new_popup_visible_width": 112,
+    "original_font_pixels_and_advances": "unchanged original Skies medium bank",
+    "scope": "Remove popup tile clipping; verify identical bank/scale on all choice lines; live appearance pending"
+  },
+  "font_sha256": "5fe1480136b8c7d2bb15a32b17588edc0459fcf9c1079c9aa4b1075e11a4d181",
+  "font_changed": false,
+  "files": {
+    "1ST_READ.BIN": {
+      "size": 1135588,
+      "sha256": "39878d6b332b3f4ef1bd59a1b27d69de87f7b4695ddfcb4c98138c419e42d1fd"
+    },
+    "WIN00.AFS": {
+      "size": 1677312,
+      "sha256": "28f9909cc2c72d512f1a8b6442489a013e8f1d29296ac0dca2beb47d1233ce79"
+    },
+    "D_SCE.AFS": {
+      "size": 4079616,
+      "sha256": "a89eba46dbfec18004ed07c725dd42bf5fa22bfeac3144b0effbbe4e913ac24c"
+    },
+    "D_NAMES.BIN": {
+      "size": 33944,
+      "sha256": "96ff4008d25df7c9cd154708ee271806bdc99bfcf37fc0c8a698e9bfcbfc2b27"
+    },
+    "D_BMESS.BIN": {
+      "size": 114271,
+      "sha256": "622a23b3445e68dc5fdfa5f6ae467e7f9e44d9fa149d153ab6dc1d3ecdaa3215"
+    },
+    "MOV055.SFD": {
+      "size": 22302720,
+      "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451"
+    },
+    "MOV072.SFD": {
+      "size": 37392384,
+      "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530"
+    },
+    "WMAP.AFS": {
+      "size": 5179392,
+      "sha256": "d1318e1e5618681890e325575e6c1a537cebc65918811f88c4404f7bc01ed6eb"
+    },
+    "STAFF.AFS": {
+      "size": 925696,
+      "sha256": "061a021b147b474cf2148a4cdce4e8a4a4db4e2f3960c9efa87d75215ee21189"
+    },
+    "ADV00.AFS": {
+      "size": 46262272,
+      "sha256": "71e838631f9e23fec6d8cafe2b12bdc4553eb634d1f61584e790f3d14694ab6a"
+    },
+    "ALBUM.AFS": {
+      "size": 22493184,
+      "sha256": "a0623270356cfa02594066bb61cd78d343ed58e49ae6237ca4d74f1c6a6571bc"
+    },
+    "EFFECT.AFS": {
+      "size": 9922560,
+      "sha256": "b39be7142f8ba458b2a3c32c9e9a5ddf201abe82aedf16bdc78640aecb3a269f"
+    },
+    "D_SYSTEM.AFS": {
+      "size": 530432,
+      "sha256": "3d071a2574d37eb0cbbd8338b861daa4a474c17f2e2a20fad83efa9849af1d77"
+    },
+    "0GDTEX.PVR": {
+      "size": 131104,
+      "sha256": "fccd2a7a7dc42ab35d0b2bf6fd37ea4da5c1f243bacb451a152ccb184d93f913"
+    }
+  },
+  "native_proof": "work/output/0.1.43/counter-menu-native-test.json",
+  "native_proof_sha256": "5b87ffd57f020079443ab824e158e57f634689e9406956a39b212952ef33da47",
+  "native_geometry_cases": [
+    {
+      "label": "forecast",
+      "text_context": [
+        104,
+        144,
+        128,
+        128
+      ],
+      "frame": [
+        96,
+        136,
+        128,
+        80
+      ],
+      "physical_surface": [
+        512,
+        512
+      ],
+      "visible_tile_width": 112,
+      "surface_exponents": [
+        2,
+        2
+      ]
+    },
+    {
+      "label": "policies",
+      "text_context": [
+        104,
+        64,
+        128,
+        128
+      ],
+      "frame": [
+        96,
+        56,
+        128,
+        96
+      ],
+      "physical_surface": [
+        512,
+        512
+      ],
+      "visible_tile_width": 112,
+      "surface_exponents": [
+        2,
+        2
+      ]
+    },
+    {
+      "label": "help",
+      "text_context": [
+        32,
+        160,
+        256,
+        128
+      ],
+      "frame": [
+        24,
+        152,
+        272,
+        80
+      ],
+      "physical_surface": [
+        1024,
+        512
+      ],
+      "visible_tile_width": 64,
+      "surface_exponents": [
+        2,
+        2
+      ]
+    },
+    {
+      "label": "objectives",
+      "text_context": [
+        112,
+        32,
+        256,
+        32
+      ],
+      "frame": [
+        104,
+        24,
+        112,
+        32
+      ],
+      "physical_surface": [
+        1024,
+        128
+      ],
+      "visible_tile_width": 64,
+      "surface_exponents": [
+        2,
+        2
+      ]
+    }
+  ],
+  "native_composed_forecast": {
+    "glyphs": 37,
+    "all_choices_same_Skies_bank": true,
+    "all_choice_scales": [
+      4,
+      4
+    ],
+    "native_composed_pixels": "exact independent original Skies masks, including alpha/shadow",
+    "state_sequence": [
+      {
+        "character": "C",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "o",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "u",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "n",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "t",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "e",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "r",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "a",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "t",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "t",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "a",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "c",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "k",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "S",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "e",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "l",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "e",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "c",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "t",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": " ",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "W",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "e",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "a",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "p",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "o",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "n",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "E",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "v",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "a",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "d",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "e",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "D",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "e",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "f",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "e",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "n",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      },
+      {
+        "character": "d",
+        "scale": [
+          4,
+          4
+        ],
+        "texture": "0x8cb00000",
+        "flags": 128
+      }
+    ]
+  },
+  "native_raster_cases": 30,
+  "unchanged_other_name_rows": 1832,
+  "native_instructions": {
+    "context": 53689,
+    "frame": 596,
+    "UI": 29102,
+    "constructed_help_parser": 107932,
+    "raster": 2420470,
+    "full_forecast": 2996912,
+    "PRS": 1857448
+  },
+  "limits": [
+    "Graphics allocation/I/O are bounded fixtures; constructors/queue/parser/raster execute; forecast pixels compared end to end.",
+    "Live GPU appearance, cursor/highlight placement, input and simultaneous menu allocation remain pending."
+  ],
+  "validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "sector_substitutions": 8,
+  "translation_wording_changes": 0,
+  "new_translation_credit": 0,
+  "release": false
+}

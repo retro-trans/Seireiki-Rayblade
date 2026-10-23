@@ -1,0 +1,159 @@
+{
+  "version": "0.1.42",
+  "source_build": "0.1.41",
+  "date": "2026-10-24",
+  "status": "Local battle UI correction build verified offline; fresh-boot cursor/highlight/navigation appearance pending",
+  "disc": "work/output/0.1.42/disc/Rayblade English Test 0.1.42.gdi",
+  "translation_check": {
+    "command": "scenario.s_002.o026c6",
+    "target_rows": 3,
+    "context_rows_examined": 25,
+    "decision": "Retain wording. Ymir addresses Ai, then asks Touya to forgive Ai; she refers to Ai. The surname forms are deliberate scene-specific honorific localization.",
+    "conventions": "docs/translation-conventions.json: forms_of_address[0]",
+    "source_rows_sha256": "131022bd066f01a5ee36a6fe759e9186dc9dc48d68a41e3037388b7c0b2a54a7",
+    "corpus_changes": 0
+  },
+  "frame": {
+    "before_x_width": [
+      264,
+      40
+    ],
+    "after_x_width": [
+      232,
+      72
+    ],
+    "right_edge": 304,
+    "text_origin_x": 240,
+    "tile_visible_width": 56,
+    "surface_logical_width": 64
+  },
+  "aliases": [
+    {
+      "id": "names.g00.004",
+      "before": "Melee <FC:FF:FF><NL>Ranged <FC:FF:FF><NL>Defense <FC:FF:FF><NL>Accuracy <FC:FF:FF><NL>Evasion <FC:FF:FF><FC:88:80>Trust Commands<NL><FC:FF:FF><NL><FC:FF:FF><NL><FC:FF:FF><FC:FF:FF>",
+      "after": "Melee <FC:FF:FF><NL>Ranged <FC:FF:FF><NL>Defense <FC:FF:FF><NL>Accuracy <FC:FF:FF><NL>Evasion <FC:FF:FF><FC:88:80>Trust<NL><FC:FF:FF><NL><FC:FF:FF><NL><FC:FF:FF><FC:FF:FF>"
+    },
+    {
+      "id": "names.g00.005",
+      "before": "Size<FC:89:80><FC:FF:FF><FC:80:82>Movement Type<FC:88:82><FC:FF:FF><NL><FC:80:84>Movement Range<FC:89:84><FC:FF:FF><FC:80:86>Armor<FC:88:86><FC:FF:FF>",
+      "after": "Size<FC:89:80><FC:FF:FF><FC:80:82>Move Type<FC:87:82><FC:FF:FF><NL><FC:80:84>Move<FC:89:84><FC:FF:FF><FC:80:86>Armor<FC:88:86><FC:FF:FF>"
+    },
+    {
+      "id": "names.g00.006",
+      "before": " Unit Abilities<NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF>",
+      "after": " Skills<NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF>"
+    },
+    {
+      "id": "names.g00.096",
+      "before": "<FC:FF:FF><FC:87:80>Weapon<FC:95:80>Power<FC:9A:80>Range<FC:9F:80>Accuracy<FC:FF:FF><FC:82:82><FC:FF:FF><FC:95:82><FC:FF:FF><FC:9A:82><FC:FF:FF><FC:9F:82><FC:FF:FF><FC:FF:FF><FC:82:84><FC:FF:FF><FC:95:84><FC:FF:FF><FC:9A:84><FC:FF:FF><FC:9F:84><FC:FF:FF><FC:FF:FF><FC:82:86><FC:FF:FF><FC:95:86><FC:FF:FF><FC:9A:86><FC:FF:FF><FC:9F:86><FC:FF:FF><FC:FF:FF><FC:82:88><FC:FF:FF><FC:95:88><FC:FF:FF><FC:9A:88><FC:FF:FF><FC:9F:88><FC:FF:FF>",
+      "after": "<FC:FF:FF><FC:87:80>Weapon<FC:95:80>Power<FC:9A:80>Range<FC:9F:80>Hit<FC:FF:FF><FC:82:82><FC:FF:FF><FC:95:82><FC:FF:FF><FC:9A:82><FC:FF:FF><FC:9F:82><FC:FF:FF><FC:FF:FF><FC:82:84><FC:FF:FF><FC:95:84><FC:FF:FF><FC:9A:84><FC:FF:FF><FC:9F:84><FC:FF:FF><FC:FF:FF><FC:82:86><FC:FF:FF><FC:95:86><FC:FF:FF><FC:9A:86><FC:FF:FF><FC:9F:86><FC:FF:FF><FC:FF:FF><FC:82:88><FC:FF:FF><FC:95:88><FC:FF:FF><FC:9A:88><FC:FF:FF><FC:9F:88><FC:FF:FF>"
+    },
+    {
+      "id": "names.g00.097",
+      "before": "Required Fighting Spirit  <FC:FF:FF> (<FC:FF:FF>)<NL>Prana Cost <FC:FF:FF> (<FC:FF:FF>)",
+      "after": "Req. SP  <FC:FF:FF> (<FC:FF:FF>)<NL>PR Cost <FC:FF:FF> (<FC:FF:FF>)"
+    },
+    {
+      "id": "names.g00.251",
+      "before": "ON",
+      "after": "On"
+    },
+    {
+      "id": "names.g00.252",
+      "before": "OFF",
+      "after": "Off"
+    }
+  ],
+  "font_check": {
+    "unchanged_font_build": "0.1.39",
+    "finding": "Native Cut-In and ON use the same medium Skies bank; visual distinction is all-capital status. Use On/Off, preserving state selection."
+  },
+  "font_sha256": "5fe1480136b8c7d2bb15a32b17588edc0459fcf9c1079c9aa4b1075e11a4d181",
+  "font_changed": false,
+  "files": {
+    "1ST_READ.BIN": {
+      "size": 1135588,
+      "sha256": "4fc99501ea35146aa599c8390b2dea14245c03cb23d1d6343cdf94bed761392c"
+    },
+    "WIN00.AFS": {
+      "size": 1677312,
+      "sha256": "28f9909cc2c72d512f1a8b6442489a013e8f1d29296ac0dca2beb47d1233ce79"
+    },
+    "D_SCE.AFS": {
+      "size": 4079616,
+      "sha256": "a89eba46dbfec18004ed07c725dd42bf5fa22bfeac3144b0effbbe4e913ac24c"
+    },
+    "D_NAMES.BIN": {
+      "size": 33944,
+      "sha256": "6a36c9a3e1c85215b564a839013b8a408f7e6123de0c8931b21dcbe5f8cbfece"
+    },
+    "D_BMESS.BIN": {
+      "size": 114271,
+      "sha256": "622a23b3445e68dc5fdfa5f6ae467e7f9e44d9fa149d153ab6dc1d3ecdaa3215"
+    },
+    "MOV055.SFD": {
+      "size": 22302720,
+      "sha256": "5d0aed14a9ab33b50f1a8324517719755c4762b4b0534bb3ed50b73c00b1b451"
+    },
+    "MOV072.SFD": {
+      "size": 37392384,
+      "sha256": "c3aac371c25ac3ee93cc8b59088a7f5eaba1ce351c62bd6401eab045f6ea7530"
+    },
+    "WMAP.AFS": {
+      "size": 5179392,
+      "sha256": "d1318e1e5618681890e325575e6c1a537cebc65918811f88c4404f7bc01ed6eb"
+    },
+    "STAFF.AFS": {
+      "size": 925696,
+      "sha256": "061a021b147b474cf2148a4cdce4e8a4a4db4e2f3960c9efa87d75215ee21189"
+    },
+    "ADV00.AFS": {
+      "size": 46262272,
+      "sha256": "71e838631f9e23fec6d8cafe2b12bdc4553eb634d1f61584e790f3d14694ab6a"
+    },
+    "ALBUM.AFS": {
+      "size": 22493184,
+      "sha256": "a0623270356cfa02594066bb61cd78d343ed58e49ae6237ca4d74f1c6a6571bc"
+    },
+    "EFFECT.AFS": {
+      "size": 9922560,
+      "sha256": "b39be7142f8ba458b2a3c32c9e9a5ddf201abe82aedf16bdc78640aecb3a269f"
+    },
+    "D_SYSTEM.AFS": {
+      "size": 530432,
+      "sha256": "3d071a2574d37eb0cbbd8338b861daa4a474c17f2e2a20fad83efa9849af1d77"
+    },
+    "0GDTEX.PVR": {
+      "size": 131104,
+      "sha256": "fccd2a7a7dc42ab35d0b2bf6fd37ea4da5c1f243bacb451a152ccb184d93f913"
+    }
+  },
+  "native_proof": "work/output/0.1.42/battle-menu-native-test.json",
+  "native_proof_sha256": "bdf166a92f75cb15237ccf2bf2ffcd70563e19e796b0ef0f7526f65330a87ff1",
+  "native_cases": {
+    "action_labels": 9,
+    "frame_and_context_counts": 8,
+    "UI": 19,
+    "real_status_lookups": 2,
+    "glyph_rasters": 8,
+    "names_PRS": 1
+  },
+  "native_limits": [
+    "VM/frame geometry stops before decorative sprite/GPU allocation; input variable values are fixtures",
+    "UI parameter cases use bounded values; status cases execute real common queue and nested names",
+    "Fresh live menu cursor/highlight appearance, interaction and reading review remain pending"
+  ],
+  "validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "sector_substitutions": 19,
+  "translation_wording_changes": 0,
+  "new_translation_credit": 0,
+  "release": false
+}

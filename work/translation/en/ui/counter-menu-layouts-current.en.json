@@ -1,0 +1,253 @@
+{
+  "version": "0.1.43",
+  "font_build": "0.1.39",
+  "rows": {
+    "names.g00.001": {
+      "en": "End Phase<NL>Unit List<NL>Counters<NL>Objectives<NL><FC:FF:FF>System<NL>Save",
+      "source_sha256": "0485901b4190400e6d9d4b55e1a4fd028b2bb5af3e0df26f9d3ea0d5e8a5a844",
+      "prior_en_sha256": "e8a80fffa29355cb8b6716f66b14121357503a3671db4cedd05d6df20e08c66b",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g00.003": {
+      "en": "<FC:FF:FF><NL><ASCII:ON>Lv<FC:FF:FF> Exp<FC:FF:FF><NL><ASCII:OFF><FC:FF:FF><NL><ASCII:ON>HP <FC:FF:FF>/<FC:FF:FF><ASCII:OFF><FC:90:80>SP<FC:93:80><FC:FF:FF><FC:97:80>PR<FC:9A:80><FC:FF:FF>/<FC:FF:FF>",
+      "source_sha256": "ed45df20568371899af40517effae74bd4c776e7995ad77af28a259ecc05d915",
+      "prior_en_sha256": "b0e34631412d124fc78b8ddf9abb2e3b5ea3102d5c35b73cfa0cdd11a5bdfe90",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g00.160": {
+      "en": "<FC:FF:FF><NL><ASCII:ON>Lv<FC:FF:FF> Exp<FC:FF:FF><NL><ASCII:OFF><FC:FF:FF><NL><ASCII:ON>HP <FC:FF:FF>/<FC:FF:FF><ASCII:OFF><FC:90:80>SP<FC:93:80><FC:FF:FF><FC:FF:FF>",
+      "source_sha256": "1b9185cf63b6db318a9862347449911df3fc629d947879ed0fc2492ecfaed621",
+      "prior_en_sha256": "790c259e348911ff00c0dc7db8086e04d07b3d6544f21be9c31ca3cb94de6be5",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g00.162": {
+      "en": "Ht Dif<FC:85:80><FC:FF:FF>",
+      "source_sha256": "94baf77b08717bc0505134bfc5fd806e2e552cfc1e112e2c10801c6438bac2e7",
+      "prior_en_sha256": "106219365aa8b22896b79173c7665663f57982a10795e357c33ec7f91a7b201b",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g00.166": {
+      "en": "Cut-In <FC:FF:FF>",
+      "source_sha256": "c66bda3e613fceb410af324c604a1ded1ccb3e714ddc1a106e4b3be2ece6283d",
+      "prior_en_sha256": "0226c54e098e4b5fdff3b21667a5741bc2700bd782b5486b860313095af6210f",
+      "reason": "Visible gap before the unchanged dynamic ON/OFF value"
+    },
+    "names.g00.212": {
+      "en": "FILE<FC:FF:FF>  Touya      LV<FC:FF:FF>  Turns --<NL>Clear <FC:FF:FF>: <FC:FF:FF>",
+      "source_sha256": "a06e7cf55ecfc07f008237b44eaf8e60234cba32ee2a625f8228cdc97be91039",
+      "prior_en_sha256": "518be9a55a160b2a39ed0171a0cab8e30bb78e6afc8d1e7ca100c8062605a136",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g00.225": {
+      "en": "Clear <FC:FF:FF>: <FC:FF:FF>",
+      "source_sha256": "ed6a4ecd29db2112d87619eb51439ee8f5f54701ac09337381e24fdba901f945",
+      "prior_en_sha256": "0017babb641a7f2cebd33d1827e4e656a5ea6265b9292efcf7657a685320b7af",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g00.235": {
+      "en": "FILE<FC:FF:FF>  Touya      LV<FC:FF:FF>  Private Phase<NL>Clear <FC:FF:FF>: <FC:FF:FF>",
+      "source_sha256": "194c639d8dcd4d023be80a1644b5f99181aa24dcfd741ec88ff12ff5add8c934",
+      "prior_en_sha256": "8af7f57cac00977210039ee332e29f8c08fec5fb07b2d846b56c06a867b58511",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g01.032": {
+      "en": "<FC:81:80>Show Obscured Units<FC:94:80>ON<FC:9A:80>OFF<NL><FC:81:82>Unit Color Coding<FC:94:82>ON<FC:9A:82>OFF<NL><FC:81:84>Grid Display<FC:94:84>ON<FC:9A:84>OFF<NL><FC:81:86>Sound<FC:94:86>Stereo<FC:9A:86>Mono<NL><FC:81:88>Sound Test<NL><FC:81:8A>Character Profiles<NL><FC:81:8C>Unit Profiles<NL><FC:81:8E>Memory Album",
+      "source_sha256": "c97a4051f38067d90bddd4b8f6e256e323fdd9e9f381d3e0acd1510d248c9abe",
+      "prior_en_sha256": "39d162fdd063812e45532f9b121a525784332e997a3db980692ffc7fb552becb",
+      "reason": "Choice columns anchored at local x160/x208; each 16-pixel row explicitly restores x8 because FC positioning also changes the native newline origin"
+    },
+    "names.g01.034": {
+      "en": "Units can be hidden by buildings or other<NL>objects, depending on their location. Turn this<NL>setting ON to keep them visible at all times.",
+      "source_sha256": "a11f4245dcc3d3fc612c9f353ca62188129c51b2bb3d1f6e5970ca9eea8b4468",
+      "prior_en_sha256": "06e904e38a2b863e4636aeaba41eec6ca4527e4a6198be2047d82993bd38f9ba",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g01.035": {
+      "en": "Turn this setting ON to color allied units blue,<NL>enemy units red, and NPC units yellow or green.",
+      "source_sha256": "6ec0d83e38b8a88eb2419192bd070fd1051d8a7391c3e54912435b856191c23c",
+      "prior_en_sha256": "eeec7385d9c74c2328431e06620f91f66f75e5d6d37d7090ed84f7da73664e73",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g01.036": {
+      "en": "Turn this setting ON to display grid squares on<NL>the tactical map that indicate movement range.",
+      "source_sha256": "70b3132151ffc781d0fa598da31f99d75ee37ba99d00d095d0f0cda934722e0b",
+      "prior_en_sha256": "a65d06bcc05cdb0e446ba1ba5041ea10b3028196a7c00278c8d9efd175049147",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g01.037": {
+      "en": "Switches BGM between stereo and mono.",
+      "source_sha256": "519c68cf0da5cd2ffba44789865b75c561c9fc046b6fdbca49b7fdbf2f2449ce",
+      "prior_en_sha256": "f525fda5caaf4f727f0fd044884056981ff67c4d0c5b629b8efd72e4bb79e263",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g01.038": {
+      "en": "Listen to the BGM used in the game.",
+      "source_sha256": "417c97b1998e80579f8cdc18e9c9109d8684be23596da7ed8b9a63014a00d94e",
+      "prior_en_sha256": "f9eee44fe7e1744c86f1f9bc153202a68031b76371679236ea09cdbe51a69a1e",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g01.039": {
+      "en": "View information about the characters who<NL>appear in the game. Some information may<NL>change as the story progresses.",
+      "source_sha256": "d4a9f8ec37ecdf6832b6c6bced3ab275d85b994e520bcdcce32ec60ba6ac5bc2",
+      "prior_en_sha256": "ff7c75d9c68ae3172e46d9ad06c3b684b831069f1feff82f4d28140e87fcc2c9",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g01.040": {
+      "en": "View information about the Spirit Mechs and<NL>Armored Mechs that appear in the game. Entries<NL>are added as new machines appear.",
+      "source_sha256": "6afe2ffd10cb725846f30c0868f25b3e425071407f81023ecbc31afe8931a244",
+      "prior_en_sha256": "942eec5256d489810bf6fdcd843094600db7ad49f2e64f152eab1f58a0737400",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g01.041": {
+      "en": "View Touya's Memory Album. Entries are added<NL>when events increase your companions' Trust or<NL>Affection.",
+      "source_sha256": "f00a423d55b0a638f3f28a98f7687fc2a73915b3dd17627343eec99cfe040ff6",
+      "prior_en_sha256": "2c3f152c33c7ecb6205b08731811afc3ab9f563828d80158797b65a15e702e84",
+      "reason": "Rewrap all original help words for the Skies font, at most three lines"
+    },
+    "names.g00.135": {
+      "en": "<FC:87:80><FC:FF:FF><FC:98:80><FC:FF:FF> years<FC:87:82>Height <FC:FF:FF>cm<FC:95:82>Weight <FC:FF:FF>kg<FC:87:84><FC:FF:FF>",
+      "source_sha256": "b481ac76f3084b0c733665cf6ad164e2d103668a760640f168032aabec59a5a0",
+      "prior_en_sha256": "f5e3c785a9992aaf8c67784e2cda09282261b6c5cf402ce55004c457ccecd17a",
+      "reason": "Age starts at local x192 so the complete years label fits inside the 240-pixel header area"
+    },
+    "names.g01.049": {
+      "en": "<FC:97:80>Hit<FC:9C:80><FC:FF:FF>%",
+      "source_sha256": "5b53503d3a3cb049f377460a2812158dbc1fe4505337d4d2425caf55fd92bbeb",
+      "prior_en_sha256": "cddb3bcacf662aaf043d46ba5871dbe2710750b4046a3cb8e5fcebd0812320c9",
+      "reason": "Compact display label for original Skies glyph widths; full terms stay in glossary/drafts"
+    },
+    "names.g00.192": {
+      "en": "Select a memory card slot to save to.",
+      "source_sha256": "5250a9017c76ed5c633309c41429da87342e58c65adbbaf19dda1b5f4ad6df00",
+      "prior_en_sha256": "251a98f40f2693de84825e23e9fa234ecfd9d055f8f1b022564ae4e4cdba119f",
+      "reason": "Compact slot wording fits existing memory-card boxes; port, slot, action and block requirement retained"
+    },
+    "names.g00.193": {
+      "en": "Select a memory card slot to load from.",
+      "source_sha256": "880fe458358339e6fa8eb093914eebb0c04a701939fc1127a3ff9d39d78e2a2f",
+      "prior_en_sha256": "b68b16dbd49b12b1dbc765a2506d0cbcd72466ea904233a0e566d1443a889ede",
+      "reason": "Compact slot wording fits existing memory-card boxes; port, slot, action and block requirement retained"
+    },
+    "names.g00.194": {
+      "en": "No memory card is inserted in this slot.",
+      "source_sha256": "a41272f7fd1cc7eb8ea2eeb6a4eaa6b7de3970bc6bbb14e18c9b5e4c539704bf",
+      "prior_en_sha256": "95c1ddd02b029b11d7bf9a71951d4541ed7700485179226d27d2cacb5aa91faf",
+      "reason": "Compact slot wording fits existing memory-card boxes; port, slot, action and block requirement retained"
+    },
+    "names.g00.210": {
+      "en": "Port A - Slot 1",
+      "source_sha256": "112e16046730764d48b6e6bd9f9ea713e72e51559b1e36c98c2d509a3e0342e3",
+      "prior_en_sha256": "4f1258c1855bb670d52cabeadd6170f72b161bb671e5f6b50c4153936df9f7b1",
+      "reason": "Compact slot wording fits existing memory-card boxes; port, slot, action and block requirement retained"
+    },
+    "names.g00.211": {
+      "en": "Port A - Slot 2",
+      "source_sha256": "67214dd9d17a9bf0a111145ae53518b9eda0bbf5e396d1012020e7339cfa6278",
+      "prior_en_sha256": "839d558f3eb7eec5046333ab746b20974b0afddf642cfd03e197e8b9debc12f5",
+      "reason": "Compact slot wording fits existing memory-card boxes; port, slot, action and block requirement retained"
+    },
+    "names.g00.219": {
+      "en": "No memory card is inserted in this slot.<NL>Saving requires at least 8 free blocks.",
+      "source_sha256": "43a6d83065befb5da452276224693febeadbd0748acfa5ed63add83909fbcf56",
+      "prior_en_sha256": "29b82b42af0a2387ebce095aebcb6bb6a00e484eaa66565513207f28bca906d5",
+      "reason": "Compact slot wording fits existing memory-card boxes; port, slot, action and block requirement retained"
+    },
+    "names.g00.223": {
+      "en": "Port A - Slot 1<NL>Port A - Slot 2<NL>Port B - Slot 1<NL>Port B - Slot 2<NL>Port C - Slot 1<NL>Port C - Slot 2<NL>Port D - Slot 1<NL>Port D - Slot 2",
+      "source_sha256": "f2e46c81633444bc8d1e765b095dfacaa27373c5bbedcc91afd7e72cb619e754",
+      "prior_en_sha256": "cdd8f5eb716d07ad4a62280d3a5df2d54fcd39a778da8f828a3bfbdf5de8065d",
+      "reason": "Compact slot wording fits existing memory-card boxes; port, slot, action and block requirement retained"
+    },
+    "names.g00.004": {
+      "en": "Melee <FC:FF:FF><NL>Ranged <FC:FF:FF><NL>Defense <FC:FF:FF><NL>Accuracy <FC:FF:FF><NL>Evasion <FC:FF:FF><FC:88:80>Trust<NL><FC:FF:FF><NL><FC:FF:FF><NL><FC:FF:FF><FC:FF:FF>",
+      "source_sha256": "d90550b6967455577811f433303a6e459c8b382acab6d3ef5ba7a628b422e329",
+      "prior_en_sha256": "5121b22da3e2516174c4b8b851ffbe1ee3542919c5f97d4426b34425a11f9be6",
+      "reason": "Source-checked compact battle labels; matching title-case status. Every placeholder/control retained."
+    },
+    "names.g00.005": {
+      "en": "Size<FC:89:80><FC:FF:FF><FC:80:82>Move Type<FC:87:82><FC:FF:FF><NL><FC:80:84>Move<FC:89:84><FC:FF:FF><FC:80:86>Armor<FC:88:86><FC:FF:FF>",
+      "source_sha256": "206800c513ca8b4f1e48d2df389a56bb1a527eb173d89256129a2a50236d0363",
+      "prior_en_sha256": "e8fbee72fa9617611acaebf11fd5e3b85388d587763f8b24bd264d6af0fb9f0f",
+      "reason": "Compact battle labels and title-case status; all placeholder counts retained. Terrain value moves from x64 to x56 to fit Water/Space."
+    },
+    "names.g00.006": {
+      "en": " Skills<NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF>",
+      "source_sha256": "96c88b31c40ed7f87e2c8be9e8dd666c051952d02c203667af8928d107fa240e",
+      "prior_en_sha256": "9fce36cb9a8cc72bdcbf7e4e63f3c76ef2798816be624344e8df2bb9187e36f6",
+      "reason": "Source-checked compact battle labels; matching title-case status. Every placeholder/control retained."
+    },
+    "names.g00.096": {
+      "en": "<FC:FF:FF><FC:87:80>Weapon<FC:95:80>Power<FC:9A:80>Range<FC:9F:80>Hit<FC:FF:FF><FC:82:82><FC:FF:FF><FC:95:82><FC:FF:FF><FC:9A:82><FC:FF:FF><FC:9F:82><FC:FF:FF><FC:FF:FF><FC:82:84><FC:FF:FF><FC:95:84><FC:FF:FF><FC:9A:84><FC:FF:FF><FC:9F:84><FC:FF:FF><FC:FF:FF><FC:82:86><FC:FF:FF><FC:95:86><FC:FF:FF><FC:9A:86><FC:FF:FF><FC:9F:86><FC:FF:FF><FC:FF:FF><FC:82:88><FC:FF:FF><FC:95:88><FC:FF:FF><FC:9A:88><FC:FF:FF><FC:9F:88><FC:FF:FF>",
+      "source_sha256": "3b8e24d17de0017e18f0d84927a5e34b0327f25c26d0bbb262aa0e226433c8fe",
+      "prior_en_sha256": "bfeadbaf3979051a3a5f5934f9d0c0ec30627b5d8d26a602ef2358a09fa91737",
+      "reason": "Source-checked compact battle labels; matching title-case status. Every placeholder/control retained."
+    },
+    "names.g00.097": {
+      "en": "Req. SP  <FC:FF:FF> (<FC:FF:FF>)<NL>PR Cost <FC:FF:FF> (<FC:FF:FF>)",
+      "source_sha256": "0f3925414bee3a68bcf94b4a0ffa20392e9a1ff467bcf5a1b1ea5103c92926c8",
+      "prior_en_sha256": "18ece596d365d6d40cf52d6504ff0be586fc2a844a7c610f65903b17a56e1469",
+      "reason": "Source-checked compact battle labels; matching title-case status. Every placeholder/control retained."
+    },
+    "names.g00.251": {
+      "en": "On",
+      "source_sha256": "9ded9ab7f4a403b9bddffd521dbe6463096c12c5061873cd9bcf266fe0ea741b",
+      "prior_en_sha256": "e8a01133b1351e5fa434167135400d1998d3daa8ce74e3dd9bb57582fa4d7b97",
+      "reason": "Source-checked compact battle labels; matching title-case status. Every placeholder/control retained."
+    },
+    "names.g00.252": {
+      "en": "Off",
+      "source_sha256": "0276f7ef93787cdf74ee39f0e696a103404bb9085c39103e0570fa01b2a55e4f",
+      "prior_en_sha256": "38cca6bea010af8adaf4be7d270456fa9adef8c0252db91f2767c607d077319b",
+      "reason": "Source-checked compact battle labels; matching title-case status. Every placeholder/control retained."
+    },
+    "names.g01.024": {
+      "en": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "source_sha256": "958df9b32a5d9e6cbb0c093bf1b7dcac02ff1329e4c07bbeac58619d669cec28",
+      "prior_en_sha256": "668803fe54f6566fd966ac16c7e328280f8bd85be96ff753fce02cc53a7dac8b",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    },
+    "names.g01.025": {
+      "en": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "source_sha256": "f41cc7f99ec304770fa9b1047c4969056f25310fd30226c4c4dd14ba788a0382",
+      "prior_en_sha256": "668803fe54f6566fd966ac16c7e328280f8bd85be96ff753fce02cc53a7dac8b",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    },
+    "names.g01.026": {
+      "en": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "source_sha256": "edd01254d01bc0c79c7070862950ea3b3f0ca377b36b08d796627187efa1da0d",
+      "prior_en_sha256": "668803fe54f6566fd966ac16c7e328280f8bd85be96ff753fce02cc53a7dac8b",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    },
+    "names.g01.027": {
+      "en": "Whenever a unit is attacked, the player can<NL>choose to counterattack, evade, or defend.",
+      "source_sha256": "74a12cd98a94b6dac46f7c1291964dfb1c3954687987a080291ee0bbb6e81bc2",
+      "prior_en_sha256": "668803fe54f6566fd966ac16c7e328280f8bd85be96ff753fce02cc53a7dac8b",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    },
+    "names.g01.028": {
+      "en": "Always counterattacks when possible. If it<NL>cannot counterattack, the unit evades or<NL>defends according to its characteristics.",
+      "source_sha256": "366e30cae0332d70d1a8691bc56d92057bf4ab8d47029261726cc38699f862c5",
+      "prior_en_sha256": "b16c72ebf413028ddec3a0a923c52f731a8059eb92d4e5bc7f2e6cba66327d3d",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    },
+    "names.g01.029": {
+      "en": "Counterattacks unless the next attack<NL>could destroy the unit. If destruction<NL>is possible, it evades or defends<NL>according to its characteristics.",
+      "source_sha256": "dd894485e0daffa285409067e85bb7399154407caccbffe2d719b80322ae4912",
+      "prior_en_sha256": "c876e45a43a0e5dde4fb28a5a6b1014ced98634133b655474a8171dfe6fc3b3b",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    },
+    "names.g01.030": {
+      "en": "Stops counterattacking when HP falls<NL>below half, then evades or defends<NL>according to the unit's characteristics.",
+      "source_sha256": "1ca18d85b07061d3eac0da2a0ea9451382bbab1ea0b787e294a00d1943e7d801",
+      "prior_en_sha256": "52d7e2c9481a1c5b94b45dc6c6e18c8c1b2774f2c463ae334ad3ff4fe0a4b756",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    },
+    "names.g01.031": {
+      "en": "Never counterattacks. Evades if its Evasion<NL>is higher, or defends if its Defense is higher.",
+      "source_sha256": "e965b511003f8bbfb989fe567dd760217b85e7dfba2a4387da955001dafa7cf1",
+      "prior_en_sha256": "e307796d3af134e6e6444a58fd2cf2478dc92ac1c58ab680897c799df61167a9",
+      "reason": "Whole-word policy help reflow; every word retained; 252px pen limit in widened 272px frame"
+    }
+  },
+  "previous_build": "0.1.42"
+}

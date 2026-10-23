@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "id": "movie.MOV055.title.intro",
+  "movie": "MOV055.SFD",
+  "en": "Seireiki Rayblade",
+  "status": "Rebuilt plain-background English intro title candidate",
+  "source_sha256": "d2a8fe52bd4f0b3e70d7fec9299a2891ad244ddb7f68a479bd571ce8628e6518",
+  "source_dimensions": [
+    320,
+    192
+  ],
+  "artwork_pixel_sha256": "05ee62d983de4fbb6f9caf9aebdb5230e23db1881a8449ddfae19029aba36abe",
+  "start_frame": 277,
+  "end_frame_exclusive": 309,
+  "replace_rect": [
+    0,
+    0,
+    320,
+    192
+  ],
+  "witnesses": [
+    {
+      "frame": 277,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00277.png",
+      "pts": 831853,
+      "sha256": "c5423b36ea36044e1a5c9f67e76d97ec26ea5f18ae2a3981e070b7c7e7d41536"
+    },
+    {
+      "frame": 281,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00281.png",
+      "pts": 843877,
+      "sha256": "bf994b626c8b94d3db117f6946b6370baf0ceaedd576e58ec30790b616266e08"
+    },
+    {
+      "frame": 285,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00285.png",
+      "pts": 855901,
+      "sha256": "14077fbd48327d18fe3634896a48b713510bc4b7e78cfa1cc9b752c9fd7aebea"
+    },
+    {
+      "frame": 289,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00289.png",
+      "pts": 867925,
+      "sha256": "688bf9af4bf83d5629403eecce9afe9a373df1ebb5f22837dadf1a6a7c634967"
+    },
+    {
+      "frame": 293,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00293.png",
+      "pts": 879946,
+      "sha256": "19e1cde2d9180b91cab8cd600722d358d88f87c3546c5f32b2128ccb3ba9b9b7"
+    },
+    {
+      "frame": 299,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00299.png",
+      "pts": 897982,
+      "sha256": "8b4f8c03fc999a0b4cf645d1cc3fb9f55dfc09932ff2079111856d30cf9de5de"
+    },
+    {
+      "frame": 303,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00303.png",
+      "pts": 909916,
+      "sha256": "9adffc227faeac33facab7f09d61fa20555a68fe977f626c9fcdccec776c223b"
+    },
+    {
+      "frame": 308,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00308.png",
+      "pts": 924949,
+      "sha256": "f6468316c1e355b5684a4de36fc9e577be4647e921fe4810a7a2b59f351976f9"
+    }
+  ],
+  "boundary_evidence": [
+    {
+      "index": 276,
+      "time": 9.209411,
+      "pts": 828847,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00276.png"
+    },
+    {
+      "index": 277,
+      "time": 9.242811,
+      "pts": 831853,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00277.png"
+    },
+    {
+      "index": 308,
+      "time": 10.277211,
+      "pts": 924949,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00308.png"
+    },
+    {
+      "index": 309,
+      "time": 10.310578,
+      "pts": 927952,
+      "file": "work/ui/asset-audit/movies/MOV055/frames-240-420/frame-00309.png"
+    }
+  ],
+  "animation": "Uniform 3x-to-1x zoom, four-frame fade-in, white/blue silhouette, radial rays and final bloom",
+  "font_scale": "Same source contour proportions and baseline as the English ending wordmark",
+  "maximum_intermediate_dimensions": [
+    960,
+    576
+  ],
+  "output_dimensions": [
+    320,
+    192
+  ],
+  "scope": "Entire plain-background graphic sequence is rebuilt; original 3D geometry and lighting are not reconstructed",
+  "remaining": [
+    "Title over moving mech artwork later in this movie remains Japanese",
+    "Full-motion/design and native playback checks"
+  ],
+  "story_library_draft_credit": 0
+}

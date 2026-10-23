@@ -1,0 +1,659 @@
+{
+  "format": 1,
+  "review_kind": "Editorial second pass against original source; not independent review",
+  "slice_start": 0,
+  "rows_in_slice": 80,
+  "rows_examined": 87,
+  "content_rows_in_slice": 74,
+  "first_id": "library.character.001.s00.l00",
+  "last_id": "library.character.004.s00.l09",
+  "context_last_id": "library.character.004.s02.l01",
+  "source_corpus_sha256": "25a41a5d9e1fbf60fa1ebd23a50ed1bc22fcb71a88faf264aff4f5b58ce40158",
+  "draft_file_sha256": "32b9b687fc039837f548094707d9455831d258eecd271141898aa07d64f6bbe5",
+  "context": "Complete Touya, Ai and Ymir profiles, plus Kasumi profile including its continuation after the slice",
+  "decisions": [
+    "Retain source section/unlock boundaries and one original row per draft row",
+    "Retain glossary spellings and title terminology; no new name romanization",
+    "Ai recognition of her feelings remains explicitly uncertain",
+    "Preserve different source descriptions of the parents deaths across Touya and Kasumi profiles",
+    "Ymir family revelations are gated source statements; do not harmonize or infer further identities",
+    "Deliberate heading/catalogue fragments are flagged per row; ordinary prose retains explicit subjects",
+    "One unsupported hair-length adjective removed in pending override; other wording retained"
+  ],
+  "rows": [
+    {
+      "id": "library.character.001.s00.l00",
+      "source_sha256": "52bb17b76cc9643574a66fb710b3780bc3f660afdb25f986b2901a104db78f3b",
+      "prior_en_sha256": "5897d987550417691b050a3d48ffa4f144893907dce6e0e7c72e11f577b2d394",
+      "conditions": [],
+      "result": "retained_after_source_comparison",
+      "intentional_fragment": "Descriptive profile-opening noun phrase, matching the source form"
+    },
+    {
+      "id": "library.character.001.s00.l01",
+      "source_sha256": "9c42ecea925bb10c18a752fe90be23ceaaa3b7c36a5bf8cc00eef0e2c335a1ad",
+      "prior_en_sha256": "c9ff48d3ac0cd17f50d930184ce7b17ccb83548bc556c31bf55e86452a2faecf",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l02",
+      "source_sha256": "9957291847adfd892c5d985381862671dee0afa1c17e0ad6dcfbb137b3470316",
+      "prior_en_sha256": "2e8658f3ae9d9fe97ff32ab3a40a22f93e5ddd0902a0f100814248a6f11ba2d5",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l03",
+      "source_sha256": "63eca8c9d5cf44bd7b3e870cfd7488e39b2b24f37f07e03ba792faa7b3d6afe5",
+      "prior_en_sha256": "6fb4f8eb5bc393d0cb728b922b3b9fec399427358d6c13c76af0bc94cb929224",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l04",
+      "source_sha256": "588e3ca2b38f7f8aa23748a959006ef7db2955a521759f61a2002661dc7d5130",
+      "prior_en_sha256": "64308e1ce1d462504e36facc8bf2321b407d43030b4fa434ac384e0508cebabb",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l05",
+      "source_sha256": "ba47aa6b07bce7e160686bc98db46371d2cb83b939904e2924dcf32255308b22",
+      "prior_en_sha256": "b5f2e9936157eccf028a8ac1b18cdc345756f7f7a992bdf1c71f00d7baf38e11",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l06",
+      "source_sha256": "ea8cc072f42aaafecba452717fc2a8e292aa1bc02dcb068627e432181d1793a1",
+      "prior_en_sha256": "ebffa0fb9ffc8012cf173dfc4e0e0681c567140554669f73ae071220c97e3ce4",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l07",
+      "source_sha256": "86aabfb88af23fc3d2408d66ec039312b7665393825a9e3efa3f0dc3c23814ca",
+      "prior_en_sha256": "15a8d6f81f21723e7acd0b4dce9e173b1eee11da41e3d984ead8d3736126bd83",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l08",
+      "source_sha256": "e15c4267d7dcc65a907626d3c66198dd2bbebb32aa21287b15cedae43e8806f2",
+      "prior_en_sha256": "5d4ecd510ac98efefe0cba2665c009122f263f25e9e13cda3663930999c4a7d4",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l09",
+      "source_sha256": "9b7e8e7ade8cab476e708f606a9aa01b894e8d7826b87dd2cc91f163d88cdd20",
+      "prior_en_sha256": "f0427413db8e6874b4199636c1c8e747b68beab68527a156c2b949287330c3f1",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l10",
+      "source_sha256": "3d4f9282ad6801336de4f321ecfe9a5925b42ca7c3fb504c5348c412b927f86b",
+      "prior_en_sha256": "514a70726a025c312cedaf8d64f78f0520cf3539dad5c99e0a950729210f2e66",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l11",
+      "source_sha256": "5d3d4781b2dc3a0e13d073c360393819b47b165f26bbb2a225ef10f1577029d2",
+      "prior_en_sha256": "de79013b2a4af82519163fbae23349d76a1c839eace7269d86aaa6d83b8506ba",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l12",
+      "source_sha256": "add214fb8f25860a0c0d76d4121cecb9ffab7b2ea64511c491497d7455e3e248",
+      "prior_en_sha256": "1b84801edb3a0b523f3b21b87a9b4861339aabc30ef0bf83b802afc8f1f1c934",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l13",
+      "source_sha256": "3519e4813a50901196d86ab720571e08f8386720fb9382feea22460e851e8863",
+      "prior_en_sha256": "a31a900a8e8ab144b275b6a1f3a1610d2ee53af73ab2ebdfb4d75c5ee98b8fe6",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s00.l14",
+      "source_sha256": "812182210b5a383f67d1de6046a22222d1aa61d334660be655ab5672ca200abf",
+      "prior_en_sha256": "75787e7d8cfabe7a67d3fe61135aa295b1216b59cbfbc51890cdaf4cbe995207",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s01.l00",
+      "source_sha256": "1ae121112a25db9c05aff31b2e3ab1e7d3df0155bf1b659e0a8d3e80927b944c",
+      "prior_en_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "conditions": [
+        13712
+      ],
+      "result": "structural_empty_retained"
+    },
+    {
+      "id": "library.character.001.s01.l01",
+      "source_sha256": "53d2262d89fdd4baf6810fb0c126d88f49da155be4b13ce656484e7d4a604323",
+      "prior_en_sha256": "9c33cd6e946a9b07f0bcba39a687af5fc6dcd85c012559a0b58ca548800f26c6",
+      "conditions": [
+        13712
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s01.l02",
+      "source_sha256": "2c68c261493bfc7bab9248fcd1345eb37fb1cbb7556881bca8cd5328134c9c18",
+      "prior_en_sha256": "ffe9f1074ee7ed1a75544df47822ab1d13ee31779424a347c0b5bca54653c0a4",
+      "conditions": [
+        13712
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.001.s02.l00",
+      "source_sha256": "bdb718bbd916e55c6d862d8e8e5f1d42987b9c4891ccecf7ac37adfba29509c0",
+      "prior_en_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "conditions": [
+        13713
+      ],
+      "result": "structural_empty_retained"
+    },
+    {
+      "id": "library.character.001.s02.l01",
+      "source_sha256": "ba642a6fe9a457058cef81fe13c4c8e7c865518bb5bbbac6d6a8a3adac1dfbc8",
+      "prior_en_sha256": "7c346093454d756172401e67107a7d28aacea97160e8cc077544a687c2c6be50",
+      "conditions": [
+        13713
+      ],
+      "result": "retained_after_source_comparison",
+      "intentional_fragment": "Pilot title under the named profile; deliberate heading fragment"
+    },
+    {
+      "id": "library.character.001.s02.l02",
+      "source_sha256": "cc0f01505fa841474d72006dffb09d1b2c191a8c0c47368bd7f5907cb50ade61",
+      "prior_en_sha256": "31194483abeb0d8d381fce64677ef75bbdfb73d027193515c8d1a47c1cb949d9",
+      "conditions": [
+        13713
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l00",
+      "source_sha256": "10cce9c6056409cb6d0bb61470d78e2b5f1e7c7557bfe8e58c1eddbd8faacdf1",
+      "prior_en_sha256": "714c4d0dad9cba1d032f5d255402a6de51529ffebf5540f2b63de017b6ecf41f",
+      "conditions": [],
+      "result": "retained_after_source_comparison",
+      "intentional_fragment": "Pilot title under the named profile; deliberate heading fragment"
+    },
+    {
+      "id": "library.character.002.s00.l01",
+      "source_sha256": "f09ef88d4fe44169510f0fad25ec996115f1b8e984fa314381a47e2da6db1045",
+      "prior_en_sha256": "9cf4e5e48d55bc54bf30b7e83134f65dfa7d1045736ed5badcf94764aa46ae80",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l02",
+      "source_sha256": "b1c7c926c1f1bcaa84168ea807e48f0ff9c2ff9850174d9d1e81612cfc6e487e",
+      "prior_en_sha256": "da9f0be8adc48fc9e765b6e125ab01742f0afb29710a5c5277bc6c25c1634743",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l03",
+      "source_sha256": "6c16843c927b1e2633b5708c163d49b1ea8bf4545f4c2f56b6bb4f6ff060e0bf",
+      "prior_en_sha256": "c16472bc18cbceaab672722539a2147ceca209f98bdd51d1528db9c5e977d979",
+      "conditions": [],
+      "result": "retained_after_source_comparison",
+      "intentional_fragment": "Appositive character description following an explicit she sentence"
+    },
+    {
+      "id": "library.character.002.s00.l04",
+      "source_sha256": "14f9a78b0ed0bec7f4dfe0923786fcaa7ca6be7a787efb13ffc0a2209c7c79a4",
+      "prior_en_sha256": "eec82e0b7b3cd7fde1583b37f6a8df7999ec3640e4f921ad27f14fb5764c039e",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l05",
+      "source_sha256": "9220adcc3cf945c9f5ebe29ec30abaf4ff8ec5af8a8fb1bdf9420f1f736d642e",
+      "prior_en_sha256": "3b0d8eecb7d10751b9911d59a8381783c84940aceb31c708dd0cdb7d03902108",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l06",
+      "source_sha256": "4655092d2be4fe06c1dad956fedde930ca0ad84f63f527d9f8369e0469d3f203",
+      "prior_en_sha256": "4d1e3fc0760983de4a76e176581fff1552bd574c248c483e040212fea9edc1de",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l07",
+      "source_sha256": "f7248d02a7a641c1e97aac67699bf255db67d82f35b74733deb98a65021562c3",
+      "prior_en_sha256": "ad5e9967086b2cde9d9d918f24454393b3500ef6bb4cc29de3860078a491a527",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l08",
+      "source_sha256": "20e9f27f1ea56607217329718fa1ca012780861715d91e26d195bdd1fcc9f3da",
+      "prior_en_sha256": "c4f104f589029ffc478f38eec3052e4312838219a1057b0e5df4eba09c1d0611",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l09",
+      "source_sha256": "c05f0f683c6a35032d2a24c617c4266417d0273fc9b46291d857ffc91ccc4a5f",
+      "prior_en_sha256": "69808171887adf1aa86d04c07793a74936446e0ea5173c05f931635c13ef18db",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l10",
+      "source_sha256": "a667a9dc7cbf27d346a6d73035e2ba1a1308eeb283d346ed02a15b42561dbdb2",
+      "prior_en_sha256": "d17c51df84dd10415ff0ec03c4788af9b510e55722e3b3a087a574d03c1a2014",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s00.l11",
+      "source_sha256": "7b52d3986a8221a6e01c53deeb0bd5ddd7131777ff59c8e1a13adadeab143c6b",
+      "prior_en_sha256": "3d658977e29858e39b4e0ba7f343c80cb76b29f9e1089fe2183cc4d882c108b5",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s01.l00",
+      "source_sha256": "c5bf0585e45d6c1787997f79bd0e5e4b2093603b115412281dc6e1aed1b1dd4c",
+      "prior_en_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "conditions": [
+        13715
+      ],
+      "result": "structural_empty_retained"
+    },
+    {
+      "id": "library.character.002.s01.l01",
+      "source_sha256": "529cf42ce1038bf25c2eb218895e2d81a9e314a94a91c88a8ed9eecb661bc486",
+      "prior_en_sha256": "bcf491c8efa4c9fac9548503b2af809397be281d6c192e3cf349b0626d599b55",
+      "conditions": [
+        13715
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s01.l02",
+      "source_sha256": "71ae551e427be8cf170ba6a1dd1ab344e08b34ae644e62e5095d439a59451f03",
+      "prior_en_sha256": "7fb19dbe4830292b36b505ec23a35f090ba6aa3211b25dff1b5a1e3411ec1087",
+      "conditions": [
+        13715
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s01.l03",
+      "source_sha256": "94476ba07e3600410d9dfc8ea30f340a714be43ede7f58949abcc04a3c99e527",
+      "prior_en_sha256": "5bc2d1e733381b4290b82dcbe09a01136fd2f9300734d01a68c32ac268603830",
+      "conditions": [
+        13715
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s02.l00",
+      "source_sha256": "600049f1d616c1c521bbc6879acd861790abd38f84337f4fe5164f36c4508f4a",
+      "prior_en_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "conditions": [
+        13716
+      ],
+      "result": "structural_empty_retained"
+    },
+    {
+      "id": "library.character.002.s02.l01",
+      "source_sha256": "22c96630c14642c3015367cc3882f8e93101cff15ba235d3d35709a202e646bf",
+      "prior_en_sha256": "4a277182a680726b5297f1ffdc4340d0cc02c84175a2e539322606ee16dac452",
+      "conditions": [
+        13716
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.002.s02.l02",
+      "source_sha256": "7a8bb6f70f29a20e7fcae2391b1389b8eb10659472dea41dc6f71e3fa480c886",
+      "prior_en_sha256": "5d71bac239d1b9b2382e312777b847690b8395ca4ea5dc7159483279b15f66a6",
+      "conditions": [
+        13716
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l00",
+      "source_sha256": "ce273b1e9d999d87b1ae7353bdab0cad3fea65c1e8b77917173aa767b5dabaa2",
+      "prior_en_sha256": "1ea9e66d59dcbca57446cae116578c10634ea3016f662875367113b85a277a5e",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l01",
+      "source_sha256": "909becdb693e666fa6f46b79f3a4fffd33f28edc8737759559e7504209adbdb5",
+      "prior_en_sha256": "8e2db456c1765cadfc988c7824d6b9af62fa2435040592ca2e09aee5863dce7a",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l02",
+      "source_sha256": "6fd92ba4c8881eb79c62b243cae74e2782caa84218202f912ecfdca385dbcdc7",
+      "prior_en_sha256": "d0ee4576f985ba50fba17736f5fc1d25eef0656faf03ddff3773b17d5f6cc7b9",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l03",
+      "source_sha256": "bfa3eff82f7a38717931489bddb94adda505be757c2f0b2954eeade7cd00c163",
+      "prior_en_sha256": "aa9c8f425db77c5dbcbad574461e53bcde21083796b121b2cab64125cefc48d9",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l04",
+      "source_sha256": "91b25c33d8b86421c6ff3a79c6ceb1f273912022fd827e4efd44fcd155c71405",
+      "prior_en_sha256": "f05404bda7a4f6a63edf69b695fc56f6292baf33c2b39b25d1b83d186996d816",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l05",
+      "source_sha256": "17c66c031d0b5809d61f1bd2f19d33987d1e5316fc745921c5d3f0b06d0fe06f",
+      "prior_en_sha256": "03b2b5c2ff0cb1af9126429dea9fbaca802caabce67a0ab8ecf9f2807ac9fb01",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l06",
+      "source_sha256": "ed2e878f210e08b59be54b1628bb451a7cb77a19b5f7212f5471317e39be0c56",
+      "prior_en_sha256": "0a5987d768525373d6ebdb16e4740f5b4be3d7fe577265fdffc0534601cd4bcb",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l07",
+      "source_sha256": "cf260c60d043254627bbe4e04d4e9571bb3c1f7759aca31a9852aca7e157c519",
+      "prior_en_sha256": "eb439bcb73388c2cb193351542fe7d89c153ce541390222ad12ee5420d76305a",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l08",
+      "source_sha256": "4c18273846cf09ca0bfac7b8e59a90eebdd246e7a8082696ecc50a6f1ce8e391",
+      "prior_en_sha256": "425f04e1e352462b7fbbec09803882e5ba3f8445d09c4e27c0fe9a30fc0bbd3c",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l09",
+      "source_sha256": "879f8d3659eeb5dab080eaef771bd1eeb4212073bc030e4877b93a3b2e830b65",
+      "prior_en_sha256": "a8d4112771bf064c60180f574bd239e858f8a2230c00e21a36b887108a6b7cec",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l10",
+      "source_sha256": "f25ebe068b64140263c9bf62e59b6260e24acf30cc2a564952a3a570988fd51c",
+      "prior_en_sha256": "27b2d32db4dc27d9ab2f6daafc9e72164b716aa7497f3740716082983e0f47fc",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l11",
+      "source_sha256": "102438de0d3f116cdc7ed6e96f5c46afac2e51c96771be022b369dc5093efe00",
+      "prior_en_sha256": "b1fd1d51833384445268900a35ec1d367e13308ecf6feec9c0f817f0f7d22e58",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l12",
+      "source_sha256": "56b739bac65ca27c8ddb72e1f2cadcf0aef7d7953fad89ab7c30bd40c9ddf9d7",
+      "prior_en_sha256": "1f48a53fb4a0dc68ebc047e55519eb46e219a98210e56fe67da2391ce38beec9",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l13",
+      "source_sha256": "e344629aaeef17842abefa3fc1ae629b74580c336157c5adb6b596af2d3489f2",
+      "prior_en_sha256": "ee110d0f94cc91efa43e6a4c4b7dac2cb32bb25a889be4e16933488bf1481f35",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l14",
+      "source_sha256": "f7c125d93f826c7a6969cd130ca33d830f93ebb04963ea2176ce705d36b89a70",
+      "prior_en_sha256": "574ae9b9cb620e0b84e95bf38960408192cdb61dec8ec67a880bb046e310ddca",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l15",
+      "source_sha256": "b118f979f346516f6bbaab544aade0c73499623a11b5fe1c9bff3f85d440210e",
+      "prior_en_sha256": "3e35d0f285be63c3a51b8f58fc4d2099305ee96ebf9ff4282efe556544d0d0f0",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s00.l16",
+      "source_sha256": "dbe2f1ae35714b77e955e3070d19c08b5010f4b9be842118e970026474cf6500",
+      "prior_en_sha256": "0e096f4a4b8deaabaa1a6c286111df71bfb4c4baa82c1b3dff1d883e9df6c251",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s01.l00",
+      "source_sha256": "82c5065dde92a617a6d9346a9374f3e200552584930c894dd5ebdcdea641560c",
+      "prior_en_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "conditions": [
+        13717
+      ],
+      "result": "structural_empty_retained"
+    },
+    {
+      "id": "library.character.003.s01.l01",
+      "source_sha256": "2b7484bb15e6067d7226342b2d29c129f34d554907eac9406e18336120a9eab0",
+      "prior_en_sha256": "18e49b691ee6d742ab4a5298f965d6cae46ed155788949ecf4cf76ec10a4274e",
+      "conditions": [
+        13717
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s01.l02",
+      "source_sha256": "f70dbff8e229e94913558db88dbbb3214b5f9cbd093a525105413929951c0d11",
+      "prior_en_sha256": "2b13d423e8d8944d6d0d8efc1747368e5c31b280c87daedf33bcf5cf6c363264",
+      "conditions": [
+        13717
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s01.l03",
+      "source_sha256": "963fb4e9b92024a6309d856da8232da8e9c85f0202dd451fe2a1c183bfbc4b42",
+      "prior_en_sha256": "89ee5c0dfcafff22be7d51fc73d26fc3b58170b5c75ed9551d8e91241bf11a55",
+      "conditions": [
+        13717
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s01.l04",
+      "source_sha256": "1ebb036dca8cf5e017966cc08acef5e10485a76c0c0a1dd01042f1f7bad70da8",
+      "prior_en_sha256": "5dc1ba16fb0bcaa638769c3cf5d58fbfa016e0abc41a1c7986a8a75df55c16a1",
+      "conditions": [
+        13717
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s01.l05",
+      "source_sha256": "c97f0abe6285b340484b4f7e5e103ca0d8cae0525773923574e6025effd4941a",
+      "prior_en_sha256": "5078849312820ed8257a460001b90f61eac49cc1373571f861b809b05938062a",
+      "conditions": [
+        13717
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s02.l00",
+      "source_sha256": "f7c347f91c3f6a03f16549d6281faa7f50b8fff63e8a033d3174e33e939bea95",
+      "prior_en_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "conditions": [
+        13718
+      ],
+      "result": "structural_empty_retained"
+    },
+    {
+      "id": "library.character.003.s02.l01",
+      "source_sha256": "4ba94a4d276da1e98f8dda3bb76b1d6c2387d97a15e5c17fb48dd10645f79bb2",
+      "prior_en_sha256": "c90021658eb0c1a18f480a72aa5a7a507a3224688c44b8b9a754d762d82a36e8",
+      "conditions": [
+        13718
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s02.l02",
+      "source_sha256": "66fddee35c0d9f28237152a3bf7c530085a413011f9787d4f98f2acfd196ba23",
+      "prior_en_sha256": "4dfba0af7ebd7ea6d940cfc6f5b538d9617c52a276c7e1b9178e8ca789a196b3",
+      "conditions": [
+        13718
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s02.l03",
+      "source_sha256": "4c8664dece1972662dcbfaf1996b3bdabe351eb08d4b040f54510184d74da793",
+      "prior_en_sha256": "9c5f984021de216378c9f09391b8aa611f533e6856275bf552aecea1c1ed538a",
+      "conditions": [
+        13718
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s02.l04",
+      "source_sha256": "53617adf7666e6c5feae17358872b6778e9bdf90263ce050882a954578a90b53",
+      "prior_en_sha256": "b14cb51f6685d251cbf62c2a2ebdfd244f9251ee980e2bc274000e12b7b2584e",
+      "conditions": [
+        13718
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s02.l05",
+      "source_sha256": "53f68b7bdc25b131ede8c23ffb9d5d8f431453979bea91ee6dae259554529fdb",
+      "prior_en_sha256": "53de5b95e2e16d59fe47dd10d3f14d3b0214162ecdfcdd1dd185f0411f86ec12",
+      "conditions": [
+        13718
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.003.s02.l06",
+      "source_sha256": "a0cd6d3215f5c2844b16a2dc81997900eb0fb7e3a8ba589160f08f6080fccfcc",
+      "prior_en_sha256": "6df746517e051559f08dd7653f6bbb6ae3861dbeeb717c5af0f1dd849793a087",
+      "conditions": [
+        13718
+      ],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l00",
+      "source_sha256": "ab24b41dd73161f969fa5d2889fa42a00d5fd52d839fdd5bfae1db831180d9ed",
+      "prior_en_sha256": "3889f42a71c0b17a9d6f190b7276987b095d1d036ef64e1473c982306205a979",
+      "conditions": [],
+      "result": "retained_after_source_comparison",
+      "intentional_fragment": "Childhood-friend appositive, followed by an explicit she sentence"
+    },
+    {
+      "id": "library.character.004.s00.l01",
+      "source_sha256": "9969f7389f0068cf33b61d123307bf8e1ff4eeba9b1be9df238354c86b0d3676",
+      "prior_en_sha256": "cecf79f16c9c80f248c715bc8efedcb6d569fa092ce11b333995eef760c78482",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l02",
+      "source_sha256": "a07a8f7c0c9c6b24d1abb3d6c6349625176c77ab1b70b225bbef7da43a2b08b8",
+      "prior_en_sha256": "b65cf10408c0bd0301eae05fa1aa0963f71f2aaeed6efa51379dba589da9acb3",
+      "conditions": [],
+      "result": "wording_correction_pending",
+      "intentional_fragment": "Deliberate list of character tropes, completed by the next row"
+    },
+    {
+      "id": "library.character.004.s00.l03",
+      "source_sha256": "05bf3959755ee36443b63a690ab57f5f7d9aa3f1863b35e704b2fb4e6635942e",
+      "prior_en_sha256": "8ca68d3feb16d252caffa6abbf260cecd18221f6ff11f1d0ff69846b337d1e8e",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l04",
+      "source_sha256": "a0cb04570596cacb504350624e39fc530aa72b0966a6ec7e7ae2843576d94838",
+      "prior_en_sha256": "5c8bc23865508a9d2672918b7c4c4423b5838b41c68b2d3349be90580e964cd9",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l05",
+      "source_sha256": "f63690c75a4860f3f18056f905f15b638dcf801db861523dc3880ab13e0d3ae3",
+      "prior_en_sha256": "a3273b0fdf1435559e10e028183947ac85f88b238659a750b88b249ed0c1ed07",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l06",
+      "source_sha256": "cb3440b97df53efb7d16f229aef91d770f53a6df9c001660f8bd6efab7b6861c",
+      "prior_en_sha256": "378d37c9131fb4ea36b28f4349d2e52176dffcf433366becb812ab868ead7069",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l07",
+      "source_sha256": "3f9e19df2dccbbbf3d99403b9038d13dfe9e74ef9c7d2a1ac696fdefe21ca849",
+      "prior_en_sha256": "5e682f74f483f7902e5a8783c91e7df908c5b5e669fe94d54db779f14e074d91",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l08",
+      "source_sha256": "41ab684aca798a49d369fe181b2651100ca104a7a906eaa703190699d8cd92dd",
+      "prior_en_sha256": "52e63b7c590a0c10b3331bcd7dffc1493b2a25beeffc795b155b5129240fe93b",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    },
+    {
+      "id": "library.character.004.s00.l09",
+      "source_sha256": "4c6a2ab96c1c61390192a3d8c13ecb2eb06fedca3f5d4fcfc1e5d3e33f5eaf4e",
+      "prior_en_sha256": "c3f942622a0b28257b7d454929e37e253295d531fb37ec1855670bc259c6fc72",
+      "conditions": [],
+      "result": "retained_after_source_comparison"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "library.character.004.s00.l02",
+      "source_sha256": "a07a8f7c0c9c6b24d1abb3d6c6349625176c77ab1b70b225bbef7da43a2b08b8",
+      "prior_en_sha256": "b65cf10408c0bd0301eae05fa1aa0963f71f2aaeed6efa51379dba589da9acb3",
+      "prior_en": "A childhood friend, glasses, long straight black hair, quiet devotion...",
+      "en": "A childhood friend, glasses, straight black hair, quiet devotion...",
+      "reason": "The source specifies straight black hair without specifying length; remove the unsupported long",
+      "integration": "pending; not inserted in build 0.1.37"
+    }
+  ],
+  "pending": [
+    "Integrate the reviewed correction and recheck affected paragraph layout",
+    "Review remaining library rows and obtain independent meaning/name review",
+    "Actual library loading/navigation, unlocked-section selection and live appearance"
+  ]
+}

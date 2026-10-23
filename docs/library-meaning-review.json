@@ -1,0 +1,16 @@
+{
+  "review": "work/translation/en/library/review/meaning-0000.en.json",
+  "review_kind": "Editorial second pass against original source; not independent review",
+  "rows_in_slice": 80,
+  "source_rows_examined": 87,
+  "content_rows_reviewed": 74,
+  "total_content_rows": 1549,
+  "wording_corrections_pending": 1,
+  "remaining": [
+    "Integrate the reviewed correction and recheck affected paragraph layout",
+    "Review remaining library rows and obtain independent meaning/name review",
+    "Actual library loading/navigation, unlocked-section selection and live appearance"
+  ],
+  "game_build_changed": false,
+  "current_game_build": "0.1.37"
+}

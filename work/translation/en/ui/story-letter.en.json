@@ -1,0 +1,194 @@
+{
+  "image_id": "adv00.379.kasumi-note",
+  "archive": "ADV00.AFS",
+  "member": 379,
+  "source_packed_sha256": "4ab4f93231488242e102b6806f3b159809678b68126a68db8e49abcccba7f93e",
+  "source_decoded_sha256": "9c26b90bb6e6f4ef91092f35fbf4a870ea3bc72a8ad2ad73711a6fdb54e49e89",
+  "source_command": "scenario.s_081.o00659",
+  "related_draft_rows": [
+    {
+      "id": "scenario.s_081.o00659.l00",
+      "source_sha256": "1d92d2183c1d7f2ab5346f028f607461d036af95505c73a05b074a452413c535",
+      "draft_sha256": "b8e0965d721787e997844092ca5da1bb164de722780bf8a1b97da3438ea53291"
+    },
+    {
+      "id": "scenario.s_081.o00659.l01",
+      "source_sha256": "a1aa980c0964e3eefb7f55565942a447fc297ade70ebcad9ca60763f4153972e",
+      "draft_sha256": "0a603398846f2efc55ddaa1dcf7b3374adcc17863990514bc7de96aaee451a23"
+    },
+    {
+      "id": "scenario.s_081.o00659.l02",
+      "source_sha256": "72b9774837e194e26d754552287f0e1dbce06121ae762ecaaed76e7300dcbd8f",
+      "draft_sha256": "d2478d0a98ea881b3f23bfcb6724aff80ff9c1032f26797300bcc1012621376a"
+    },
+    {
+      "id": "scenario.s_081.o00659.l03",
+      "source_sha256": "aea29b1f8e1a9db4f429c4e7fd4e6e90f586b996f51aeb4abf8261efffb6e823",
+      "draft_sha256": "a6ed1afa534dc2c3d151076427cf44f47bf22bb861a23d92a8763a4624dc7991"
+    },
+    {
+      "id": "scenario.s_081.o00659.l04",
+      "source_sha256": "2b8571b3a5a13ad6d6f5dc58a48a9449ca12dc379f717d0b9b620265ff09bdb7",
+      "draft_sha256": "8a688ceff732e28f6f08f3288f9262781b913c85f9248775bf109c09bf522e9c"
+    },
+    {
+      "id": "scenario.s_081.o00659.p01.l00",
+      "source_sha256": "8945fcf19157a366dad6cec8ae8e3d1ac09364a44beb508f43442eaad4e3e3b1",
+      "draft_sha256": "073f4407e1c072ce2f793b3994691ddef81b1f31090225bf71aa144a76df99ba"
+    },
+    {
+      "id": "scenario.s_081.o00659.p01.l01",
+      "source_sha256": "cc533a0aaeb7af4378ebea6da5eb7f4df6ca672de370ebb198c2049219617748",
+      "draft_sha256": "70be48c59d3173666dde366919faf75d189e239ee043e35264b415648532b1f0"
+    },
+    {
+      "id": "scenario.s_081.o00659.p01.l02",
+      "source_sha256": "9f4a2ff57e2d234a3f69d741e6bbbd73d9cd043ac51b5cad97764b2ccb5407f8",
+      "draft_sha256": "1531c2762f53224c40974c2802ca192c47a27c45d9540e19408b7d5ecc4c34e1"
+    },
+    {
+      "id": "scenario.s_081.o00659.p01.l03",
+      "source_sha256": "fdde1a2b25623f0e33727969af535c5b54962b0108fdc5ffe45f5a70c0fcdf28",
+      "draft_sha256": "2e8f2b87ba9ba7af1eea0be708cf77cf53a30836def242546219094eabce0a54"
+    },
+    {
+      "id": "scenario.s_081.o00659.p01.l04",
+      "source_sha256": "a6b16c9739dd1ddd30eac34866c3bcf85b19b41cb6a20ef6d90cf90f42433904",
+      "draft_sha256": "39d780ffb1da9a1ebf8472de42d0426c12bf2dd5150b6251afb752a00c33c0d1"
+    }
+  ],
+  "English_lines": [
+    "Dear Touya,",
+    "I've made breakfast for you.",
+    "Please warm up the miso soup again.",
+    "I didn't see Yamato anywhere,",
+    "but I've put out food for her too.",
+    "P.S.",
+    "I'm sorry about earlier.",
+    "But you'll catch a cold if you sleep dressed like that.",
+    "And one more thing:",
+    "Don't be late.",
+    "Kasumi"
+  ],
+  "line_positions_in_deskewed_texture": [
+    [
+      94,
+      22
+    ],
+    [
+      91,
+      56
+    ],
+    [
+      91,
+      70
+    ],
+    [
+      91,
+      84
+    ],
+    [
+      91,
+      98
+    ],
+    [
+      91,
+      143
+    ],
+    [
+      91,
+      157
+    ],
+    [
+      91,
+      185
+    ],
+    [
+      91,
+      201
+    ],
+    [
+      91,
+      215
+    ],
+    [
+      277,
+      253
+    ]
+  ],
+  "original_ink_boxes_in_deskewed_texture": [
+    [
+      90,
+      18,
+      164,
+      37
+    ],
+    [
+      87,
+      53,
+      243,
+      72
+    ],
+    [
+      87,
+      68,
+      267,
+      88
+    ],
+    [
+      87,
+      82,
+      282,
+      103
+    ],
+    [
+      87,
+      97,
+      237,
+      118
+    ],
+    [
+      87,
+      139,
+      125,
+      159
+    ],
+    [
+      87,
+      154,
+      215,
+      177
+    ],
+    [
+      87,
+      180,
+      337,
+      204
+    ],
+    [
+      87,
+      198,
+      151,
+      218
+    ],
+    [
+      87,
+      211,
+      218,
+      236
+    ],
+    [
+      270,
+      248,
+      339,
+      277
+    ]
+  ],
+  "deskew_clockwise_degrees": 19,
+  "font": "incoming/fonts/user-bitmap/dialogue-atlas.png",
+  "font_sha256": "5bf774e32b808385780b6e861423ae8efb5e78a1d52cb65056e9ecf14e241586",
+  "font_source_scale": "Uniform 1/2, twelve-pixel cell height",
+  "meaning": "Kasumi has made breakfast, asks Touya to reheat miso soup, leaves Yamato food despite not seeing her, apologizes for earlier, warns about sleeping dressed like that, and reminds him not to be late.",
+  "decisions": "Reuse all ten established English rows; remove only outer quotation marks and place signature separately. Clothing remains unspecified. No new story-row credit.",
+  "status": "Native image preview; paper recovery, fit and live appearance require review"
+}

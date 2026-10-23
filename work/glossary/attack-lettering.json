@@ -1,0 +1,26 @@
+{
+  "project": "Seireiki Rayblade Dreamcast",
+  "status": "Source-linked effect artwork wording draft",
+  "entries": [
+    {
+      "id": "ui.attack.break",
+      "category": "ui_effect",
+      "ja": "破",
+      "en": "BREAK",
+      "status": "editorial_draft",
+      "source_ids": [
+        "effect.142.008",
+        "effect.143.008",
+        "effect.455.008",
+        "effect.456.008"
+      ],
+      "source_archive_sha256": "0db7a4981110ffb26ac0c17bd6561dc9644eeb327c8502e90f100ede097bb9c4",
+      "notes": [
+        "Single emphatic artwork glyph; full attack name remains unchanged",
+        "Eight frame images inserted with reauthored glow/trails; independent meaning/fidelity and live review pending"
+      ],
+      "inserted_build": "0.1.33"
+    }
+  ],
+  "main_glossary_changed": false
+}
