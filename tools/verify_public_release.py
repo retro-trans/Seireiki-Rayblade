@@ -34,9 +34,9 @@ def staged_audit():
 def verify(rtt):
     sys.path.insert(0,str(rtt))
     from retro_trans.release import validate_directory
-    from retro_trans.catalog import Catalog,recognize
-    from retro_trans.core import apply_plan,GitHubClient
-    directory=OUT/'assets';manifest=validate_directory(directory)
+    from retro_trans.catalog import Catalog,recognize,apply_plan
+    from retro_trans.core import GitHubClient
+    directory=OUT/'publish';manifest=validate_directory(directory)
     assert manifest['version']==VERSION and manifest['schema_version']==2 and len(manifest['patches'])==3
     assert len(manifest['solutions'])==1 and len(manifest['solutions'][0]['copy_files'])==3
     record={'repo':REPO,'tag':'v'+VERSION,'manifest':manifest,
