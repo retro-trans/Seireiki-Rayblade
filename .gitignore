@@ -4,6 +4,9 @@
 *.chd
 *.cdi
 *.iso
+work/*
+!work/glossary/
+!work/translation/
 work/source/
 work/output/
 work/ui/
