@@ -1,0 +1,41 @@
+{
+  "version": "0.7.2",
+  "source_build": "0.7.2",
+  "repository": "https://github.com/retro-trans/Seireiki-Rayblade",
+  "release": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.2",
+  "published_at_utc": "2026-10-26T01:36:22Z",
+  "published_date_user_timezone": "2026-10-26",
+  "account": "binhlt0402",
+  "organization": "retro-trans",
+  "source_commit": "e6b8c87722e8960567578c567cf8aeecb95ef38b",
+  "tag": "v0.7.2",
+  "tag_object": "474439314e67d8a9e0fcf66b47ffe0c7a838e464",
+  "draft": false,
+  "prerelease": false,
+  "asset_count": 12,
+  "manifest_schema": 2,
+  "manifest_sha256": "57b0bd8290b27bb6bde8302eceb938b22ab3a170a1621ec0e5cf3c1493158c09",
+  "patch_count": 3,
+  "changes": [
+    "Integrated VGA video code and VGA boot flag from local 0.7.1; credited Rolly (SEGA-SKY)",
+    "MOV055.SFD opening and MOV072.SFD demo restored byte-exact from original Japanese retail disc; all added English movie text removed",
+    "English gameplay/font/text/UI/map payloads unchanged; no new dialogue translation"
+  ],
+  "verified_complete_output": "Five exact BIN tracks and English GDI; all references exist",
+  "real_retro_trans_automatic_backend": "pass; original recognized, complete output matches local 0.7.2, output recognized with no remaining edges, original inputs preserved",
+  "uploaded_assets": "Downloaded all twelve draft assets and passed canonical manifest/checksum validation before publication",
+  "catalog_refresh": "https://github.com/retro-trans/retro-trans-tools/actions/runs/40255038066",
+  "catalog_refresh_conclusion": "success",
+  "catalog_entry_verified": "Exact published manifest, three patches and japan-disc solution in main catalog via GitHub Contents API",
+  "catalog_blob_sha": "14bb5bc6a5b35aed1320c616a4fbecc442d6100a",
+  "catalog_refresh_commit": "768326d",
+  "raw_cdn_observation": "Raw endpoint initially retained the previous cached catalog; main/API contains v0.7.2",
+  "movie_record": "docs/original-opening-movies.json",
+  "vga_record": "docs/vga-support.json",
+  "pending": [
+    "Physical Dreamcast VGA/NTSC/PAL and full non-VGA testing",
+    "Restored movie playback/skipping/return and full route/long-session playtesting",
+    "Independent meaning review and 503 held/untranslated story rows",
+    "Live newest map/menu/VRAM/fade/overlap checks"
+  ]
+}
