@@ -1,4 +1,12 @@
-Seireiki Rayblade English v0.7.0 font notices
+Seireiki Rayblade English third-party notices
+
+VGA compatibility (0.7.1 onward): retail video changes from Rolly (SEGA-SKY),
+Seireiki Rayblade VGA Patch v1.0, published by PROMA:
+https://segasky.itch.io/seireiki-rayblade-vga-patch-for-sega-dreamcast
+Merged into the translated executable after original-byte conflict checks.
+The reference package contains no explicit license grant. This credit does
+not assign a new license to its code; the original archive/executable is
+kept locally and is not included in this source repository.
 
 Original Skies USA Dreamcast Latin glyph pixels: SEGA/Overworks game artwork. No new license is granted; no standalone game font binary is distributed.
 

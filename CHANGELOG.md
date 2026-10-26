@@ -1,5 +1,20 @@
 # Change log
 
+## 0.7.2 — VGA support and original opening movies (2026-10-26)
+
+- Publishes the integrated VGA code/boot flag from local 0.7.1, credited to Rolly (SEGA-SKY). Retains its non-conflicting English executable, native Skies font, whole-word wrapping, menu and high-detail map work. The 96 native video cases and isolated VGA/composite cold-boot telemetry retain their actual tested identities; physical Dreamcast NTSC/PAL and full gameplay testing remain pending.
+- Removes the movie translation at the user's request. Restores MOV055.SFD (opening) and MOV072.SFD (demo) byte-for-byte from the original Japanese retail disc, removing all added English subtitles, captions, title/UI and ending-title edits. Restores original audio/video/container/timing together, without re-encoding. Previous translated movie recipes and records remain historical.
+- Reverts 25,099 movie sectors while retaining all twelve non-movie payloads and the VGA-enabled boot area. Packages a new complete-disc Retro Trans Tools solution with three verified original-input xdelta patches and three unchanged tracks. No complete game images or extracted Japanese scripts are distributed.
+- Translation remains a work in progress with 503 held/untranslated story rows. This update adds no new dialogue translation and makes no claim of complete human proofreading or route coverage.
+
+## 0.7.1 — local VGA compatibility test (2026-10-26)
+
+- Merged all 497 changed executable bytes from Rolly (SEGA-SKY)'s retail VGA patch v1.0 into the English 0.7.0 / local 0.1.44 payloads. Original-byte checks find no overlap with translation/font/menu changes. Added the boot VGA compatibility flag; retained the Japanese region selection and existing English disc artwork. The separate trial-disc patch is not used.
+- Added reproducible merge and disc packaging tools with pinned source hashes. Actual SH-4 checks pass for both video initialization and register commit across all four cable IDs and twelve flag combinations: 96 cases, 5,954 instructions. VGA paths set progressive sync/clock registers; non-VGA initialization reaches the unchanged original fallback. Hardware, BIOS and full-game behavior are outside this bounded fixture proof.
+- Packaged five sector substitutions. All fourteen game files re-extract exactly; the thirteen non-executable payloads, English wording, font, map labels, movies and audio remain unchanged. Full 1,188,856,032-byte track comparison and changed-sector EDC/ECC pass. Thirty-four historical proof identities retain their actual tested executable hashes.
+- Isolated cold boots in Flycast with VGA and composite selected both reach the patched executable. Read-only Lua telemetry spans 1,200 vblanks per case; VGA reports 640×480, progressive sync control 0x100, sync totals 0x020c0359 and the VGA pixel clock. Composite selects the game's TV timing. These are NTSC-configured telemetry checks, without visual inspection or gameplay progression.
+- Local test only; no GitHub release. Cold-boot the new GDI with VGA selected; physical Dreamcast VGA/HDMI-adapter, NTSC/PAL and non-VGA regression testing remains pending. Public VERSION remains 0.7.0.
+
 ## 0.7.0 — first public release
 
 - Publishes the verified cumulative local 0.1.44 payloads as v0.7.0. Game track bytes are unchanged from that local build.

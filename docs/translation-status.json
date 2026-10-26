@@ -1,6 +1,6 @@
 {
-  "version": "0.1.44",
-  "stage": "High-detail original Skies map names with bright alpha text/dark edge integrated; live map/VRAM and full translation review pending",
+  "version": "0.7.2",
+  "stage": "VGA integration and original Japanese opening/demo movies; English translation payloads retained from 0.7.0, full review and live gameplay checks pending",
   "glossary": {
     "entries": 851,
     "categories": {
@@ -4536,7 +4536,7 @@
         "software_frames": 1840,
         "intro_title_frames": 32,
         "moving_subtitle_frames": 60,
-        "treatment": "A \u2014 Original artwork + English subtitle",
+        "treatment": "A — Original artwork + English subtitle",
         "source_interval": [
           349,
           409
@@ -4589,7 +4589,7 @@
         "software_frames": 3084,
         "intro_title_frames": 32,
         "moving_subtitle_frames": 48,
-        "treatment": "A \u2014 Original artwork + English subtitle",
+        "treatment": "A — Original artwork + English subtitle",
         "source_interval": [
           1489,
           1537
@@ -6255,7 +6255,7 @@
         "source_build": "0.1.28",
         "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
         "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
-        "treatment": "A \u2014 Original artwork + English subtitle",
+        "treatment": "A — Original artwork + English subtitle",
         "user_selection": "Explicit user answer received 2026-10-23",
         "movies": [
           {
@@ -6705,7 +6705,7 @@
       },
       "user_preference": {
         "choice": "A",
-        "treatment": "A \u2014 Original artwork + English subtitle",
+        "treatment": "A — Original artwork + English subtitle",
         "source": "Explicit user answer received 2026-10-23"
       },
       "limits": [
@@ -6724,7 +6724,7 @@
         "source_build": "0.1.28",
         "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
         "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
-        "treatment": "A \u2014 Original artwork + English subtitle",
+        "treatment": "A — Original artwork + English subtitle",
         "user_selection": "Explicit user answer received 2026-10-23",
         "movies": [
           {
@@ -7088,7 +7088,7 @@
       "source_build": "0.1.28",
       "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
       "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
-      "treatment": "A \u2014 Original artwork + English subtitle",
+      "treatment": "A — Original artwork + English subtitle",
       "user_selection": "Explicit user answer received 2026-10-23",
       "movies": [
         {
@@ -7451,7 +7451,7 @@
     "source_build": "0.1.28",
     "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
     "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
-    "treatment": "A \u2014 Original artwork + English subtitle",
+    "treatment": "A — Original artwork + English subtitle",
     "user_selection": "Explicit user answer received 2026-10-23",
     "movies": [
       {
@@ -8006,7 +8006,7 @@
       "source_build": "0.1.28",
       "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
       "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
-      "treatment": "A \u2014 Original artwork + English subtitle",
+      "treatment": "A — Original artwork + English subtitle",
       "user_selection": "Explicit user answer received 2026-10-23",
       "movies": [
         {
@@ -8719,7 +8719,7 @@
         {
           "id": "staff.19.052",
           "kind": "person",
-          "ja": "\u8349\u958b \u4e00\u4e5f",
+          "ja": "草開 一也",
           "en": null,
           "source_pixels_sha256": "fa617736d59bedc30a48c6d18af76b351df8172373b5997cfe7e6e7d268f51fe",
           "source_box": [
@@ -8736,7 +8736,7 @@
         {
           "id": "staff.19.062",
           "kind": "person",
-          "ja": "\u4f0a\u85e4 \u5065",
+          "ja": "伊藤 健",
           "en": null,
           "source_pixels_sha256": "cc9142cb8a2bfb33380830556a666b9b4366e11ff4b200e3da4d174a9fa86bc2",
           "source_box": [
@@ -8752,7 +8752,7 @@
         {
           "id": "staff.19.072",
           "kind": "person",
-          "ja": "\u9808\u78e8 \u6566\u53f2",
+          "ja": "須磨 敦史",
           "en": null,
           "source_pixels_sha256": "23c9c479c99476dfeb445d8adafdeb282afb26f47e6e72186953196c4134896f",
           "source_box": [
@@ -8768,7 +8768,7 @@
         {
           "id": "staff.19.076",
           "kind": "person",
-          "ja": "\u5185\u65b9 \u667a\u58eb",
+          "ja": "内方 智士",
           "en": null,
           "source_pixels_sha256": "a068eeb3e93ff227948aa121a3b2e1e8fa0a803f0c0466b5174a8bd88e8456ae",
           "source_box": [
@@ -8784,7 +8784,7 @@
         {
           "id": "staff.19.080",
           "kind": "person",
-          "ja": "\u7530\u7551 \u5168\u5553",
+          "ja": "田畑 全啓",
           "en": null,
           "source_pixels_sha256": "3c8d89f24b9640a4f727fe264011b7bb16ebd61b9551b02359fb0713acc7ccec",
           "source_box": [
@@ -8800,7 +8800,7 @@
         {
           "id": "staff.19.081",
           "kind": "person",
-          "ja": "\u5bae\u5d0e \u5321\u53f2",
+          "ja": "宮崎 匡史",
           "en": null,
           "source_pixels_sha256": "8723d15d13d33ed7f79b3d9409775a0d6d53ae9be98c2cb08b5e5b363ff5ada1",
           "source_box": [
@@ -8816,7 +8816,7 @@
         {
           "id": "staff.19.083",
           "kind": "person",
-          "ja": "\u8056\u5ddd \u5c1a\u5fd7",
+          "ja": "聖川 尚志",
           "en": null,
           "source_pixels_sha256": "6da07947edac6fbcba5797da210fa4802834fb6eb23d90299a4193e8f1512ad7",
           "source_box": [
@@ -10367,11 +10367,11 @@
       "source_readings": [
         {
           "id": "album.214.082",
-          "ja_ui": "\u88f8\u306e\u30c8\u30a6\u30e4",
+          "ja_ui": "裸のトウヤ",
           "en": "Naked Touya",
           "source_caption_sha256": "d8d403c1a0b3ee19ac597d7412f7e20390e92821b50afa5e4e37ee3defb38529",
           "first_glyph_reference": {
-            "character": "\u88f8",
+            "character": "裸",
             "original_game_glyph_id": 2075,
             "bitmap_sha256": "6cfc8c877c12d1e20adf715758e5d69f2335d82af733a3724115defdbb0705fe",
             "source_caption_local_box": [
@@ -10381,15 +10381,15 @@
               10
             ]
           },
-          "decision": "The first character has the clothing radical and fruit-shaped right component: \u88f8. The earlier \u88cf/\u5f71/\u7d20 guesses do not match that structure. Literal non-graphic caption only; no erotic or anatomical detail added."
+          "decision": "The first character has the clothing radical and fruit-shaped right component: 裸. The earlier 裏/影/素 guesses do not match that structure. Literal non-graphic caption only; no erotic or anatomical detail added."
         },
         {
           "id": "album.214.102",
-          "ja_ui": "\u5f31\u3005\u3057\u3044\u76ee\u306e\u30a2\u30eb\u30d5\u30a9\u30ea\u30ca",
+          "ja_ui": "弱々しい目のアルフォリナ",
           "en": "Alforina's Feeble Gaze",
           "source_caption_sha256": "00886fba1c6f4f61f49ff92329b23a7c629390e7821bd6ce4fd7b225f1a8b42c",
           "first_glyph_reference": {
-            "character": "\u5f31",
+            "character": "弱",
             "original_game_glyph_id": 1332,
             "bitmap_sha256": "a608d1b34a5ae595b1fdcbc8d47cff248341829b1d88188d5646f0ef7d21d831",
             "source_caption_local_box": [
@@ -10399,7 +10399,7 @@
               10
             ]
           },
-          "decision": "The first character is the repeated bow-shaped structure \u5f31, followed by \u3005\u3057\u3044\u76ee\u306e. Feeble Gaze retains the weakened eyes/gaze detail without adding a cause or new scene event."
+          "decision": "The first character is the repeated bow-shaped structure 弱, followed by 々しい目の. Feeble Gaze retains the weakened eyes/gaze detail without adding a cause or new scene event."
         }
       ],
       "native_proof": {
@@ -11794,7 +11794,7 @@
       },
       "English_drafts_inserted": 9,
       "attack_lettering_discovery": {
-        "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+        "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
         "current_game_build": "0.1.32",
         "source_map": {
           "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -12435,7 +12435,7 @@
           "new_locations": 45
         },
         "source_discovery": {
-          "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+          "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
           "current_game_build": "0.1.32",
           "source_map": {
             "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -12545,35 +12545,35 @@
           {
             "order": 0,
             "sprite": 58,
-            "ja_ui": "\u30de",
+            "ja_ui": "マ",
             "en": "Manual",
             "initial": "M"
           },
           {
             "order": 1,
             "sprite": 59,
-            "ja_ui": "\u53cd",
+            "ja_ui": "反",
             "en": "Always Counterattack",
             "initial": "C"
           },
           {
             "order": 2,
             "sprite": 60,
-            "ja_ui": "\u7a4d",
+            "ja_ui": "積",
             "en": "Be Aggressive",
             "initial": "A"
           },
           {
             "order": 3,
             "sprite": 61,
-            "ja_ui": "\u7121",
+            "ja_ui": "無",
             "en": "Play It Safe",
             "initial": "S"
           },
           {
             "order": 4,
             "sprite": 62,
-            "ja_ui": "\u9632",
+            "ja_ui": "防",
             "en": "Always Defend",
             "initial": "D"
           }
@@ -13058,7 +13058,7 @@
       "next_evidence_needed": "Native icon selection path or readable in-game/manual context matching each icon; script choice text alone does not bind icons to meanings"
     },
     "attack_lettering_discovery": {
-      "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+      "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
       "current_game_build": "0.1.32",
       "source_map": {
         "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -13699,7 +13699,7 @@
         "new_locations": 45
       },
       "source_discovery": {
-        "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+        "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
         "current_game_build": "0.1.32",
         "source_map": {
           "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -13809,35 +13809,35 @@
         {
           "order": 0,
           "sprite": 58,
-          "ja_ui": "\u30de",
+          "ja_ui": "マ",
           "en": "Manual",
           "initial": "M"
         },
         {
           "order": 1,
           "sprite": 59,
-          "ja_ui": "\u53cd",
+          "ja_ui": "反",
           "en": "Always Counterattack",
           "initial": "C"
         },
         {
           "order": 2,
           "sprite": 60,
-          "ja_ui": "\u7a4d",
+          "ja_ui": "積",
           "en": "Be Aggressive",
           "initial": "A"
         },
         {
           "order": 3,
           "sprite": 61,
-          "ja_ui": "\u7121",
+          "ja_ui": "無",
           "en": "Play It Safe",
           "initial": "S"
         },
         {
           "order": 4,
           "sprite": 62,
-          "ja_ui": "\u9632",
+          "ja_ui": "防",
           "en": "Always Defend",
           "initial": "D"
         }
@@ -14482,7 +14482,7 @@
       {
         "id": "staff.19.052",
         "kind": "person",
-        "ja": "\u8349\u958b \u4e00\u4e5f",
+        "ja": "草開 一也",
         "en": null,
         "source_pixels_sha256": "fa617736d59bedc30a48c6d18af76b351df8172373b5997cfe7e6e7d268f51fe",
         "source_box": [
@@ -14499,7 +14499,7 @@
       {
         "id": "staff.19.062",
         "kind": "person",
-        "ja": "\u4f0a\u85e4 \u5065",
+        "ja": "伊藤 健",
         "en": null,
         "source_pixels_sha256": "cc9142cb8a2bfb33380830556a666b9b4366e11ff4b200e3da4d174a9fa86bc2",
         "source_box": [
@@ -14515,7 +14515,7 @@
       {
         "id": "staff.19.072",
         "kind": "person",
-        "ja": "\u9808\u78e8 \u6566\u53f2",
+        "ja": "須磨 敦史",
         "en": null,
         "source_pixels_sha256": "23c9c479c99476dfeb445d8adafdeb282afb26f47e6e72186953196c4134896f",
         "source_box": [
@@ -14531,7 +14531,7 @@
       {
         "id": "staff.19.076",
         "kind": "person",
-        "ja": "\u5185\u65b9 \u667a\u58eb",
+        "ja": "内方 智士",
         "en": null,
         "source_pixels_sha256": "a068eeb3e93ff227948aa121a3b2e1e8fa0a803f0c0466b5174a8bd88e8456ae",
         "source_box": [
@@ -14547,7 +14547,7 @@
       {
         "id": "staff.19.080",
         "kind": "person",
-        "ja": "\u7530\u7551 \u5168\u5553",
+        "ja": "田畑 全啓",
         "en": null,
         "source_pixels_sha256": "3c8d89f24b9640a4f727fe264011b7bb16ebd61b9551b02359fb0713acc7ccec",
         "source_box": [
@@ -14563,7 +14563,7 @@
       {
         "id": "staff.19.081",
         "kind": "person",
-        "ja": "\u5bae\u5d0e \u5321\u53f2",
+        "ja": "宮崎 匡史",
         "en": null,
         "source_pixels_sha256": "8723d15d13d33ed7f79b3d9409775a0d6d53ae9be98c2cb08b5e5b363ff5ada1",
         "source_box": [
@@ -14579,7 +14579,7 @@
       {
         "id": "staff.19.083",
         "kind": "person",
-        "ja": "\u8056\u5ddd \u5c1a\u5fd7",
+        "ja": "聖川 尚志",
         "en": null,
         "source_pixels_sha256": "6da07947edac6fbcba5797da210fa4802834fb6eb23d90299a4193e8f1512ad7",
         "source_box": [
@@ -16163,7 +16163,7 @@
     },
     "user_preference": {
       "choice": "A",
-      "treatment": "A \u2014 Original artwork + English subtitle",
+      "treatment": "A — Original artwork + English subtitle",
       "source": "Explicit user answer received 2026-10-23"
     },
     "limits": [
@@ -16182,7 +16182,7 @@
       "source_build": "0.1.28",
       "status": "Selected original moving-logo artwork plus English subtitle inserted in both movies; full-motion and native playback/review pending",
       "disc": "work/output/0.1.29/disc/Rayblade English Test 0.1.29.gdi",
-      "treatment": "A \u2014 Original artwork + English subtitle",
+      "treatment": "A — Original artwork + English subtitle",
       "user_selection": "Explicit user answer received 2026-10-23",
       "movies": [
         {
@@ -17211,7 +17211,7 @@
     },
     "English_drafts_inserted": 9,
     "attack_lettering_discovery": {
-      "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+      "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
       "current_game_build": "0.1.32",
       "source_map": {
         "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -17852,7 +17852,7 @@
         "new_locations": 45
       },
       "source_discovery": {
-        "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+        "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
         "current_game_build": "0.1.32",
         "source_map": {
           "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -17962,35 +17962,35 @@
         {
           "order": 0,
           "sprite": 58,
-          "ja_ui": "\u30de",
+          "ja_ui": "マ",
           "en": "Manual",
           "initial": "M"
         },
         {
           "order": 1,
           "sprite": 59,
-          "ja_ui": "\u53cd",
+          "ja_ui": "反",
           "en": "Always Counterattack",
           "initial": "C"
         },
         {
           "order": 2,
           "sprite": 60,
-          "ja_ui": "\u7a4d",
+          "ja_ui": "積",
           "en": "Be Aggressive",
           "initial": "A"
         },
         {
           "order": 3,
           "sprite": 61,
-          "ja_ui": "\u7121",
+          "ja_ui": "無",
           "en": "Play It Safe",
           "initial": "S"
         },
         {
           "order": 4,
           "sprite": 62,
-          "ja_ui": "\u9632",
+          "ja_ui": "防",
           "en": "Always Defend",
           "initial": "D"
         }
@@ -18449,35 +18449,35 @@
       {
         "order": 0,
         "sprite": 58,
-        "ja_ui": "\u30de",
+        "ja_ui": "マ",
         "en": "Manual",
         "initial": "M"
       },
       {
         "order": 1,
         "sprite": 59,
-        "ja_ui": "\u53cd",
+        "ja_ui": "反",
         "en": "Always Counterattack",
         "initial": "C"
       },
       {
         "order": 2,
         "sprite": 60,
-        "ja_ui": "\u7a4d",
+        "ja_ui": "積",
         "en": "Be Aggressive",
         "initial": "A"
       },
       {
         "order": 3,
         "sprite": 61,
-        "ja_ui": "\u7121",
+        "ja_ui": "無",
         "en": "Play It Safe",
         "initial": "S"
       },
       {
         "order": 4,
         "sprite": 62,
-        "ja_ui": "\u9632",
+        "ja_ui": "防",
         "en": "Always Defend",
         "initial": "D"
       }
@@ -18502,7 +18502,7 @@
     ]
   },
   "attack_lettering_discovery": {
-    "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+    "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
     "current_game_build": "0.1.32",
     "source_map": {
       "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -19143,7 +19143,7 @@
       "new_locations": 45
     },
     "source_discovery": {
-      "status": "Primary attack glyph read as \u7834 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
+      "status": "Primary attack glyph read as 破 with BREAK draft; source sprite maps and native graphic-variant selection verified, English artwork not inserted",
       "current_game_build": "0.1.32",
       "source_map": {
         "path": "work/ui/asset-audit/EFFECT/attack-lettering/source-map.json",
@@ -19253,35 +19253,35 @@
       {
         "order": 0,
         "sprite": 58,
-        "ja_ui": "\u30de",
+        "ja_ui": "マ",
         "en": "Manual",
         "initial": "M"
       },
       {
         "order": 1,
         "sprite": 59,
-        "ja_ui": "\u53cd",
+        "ja_ui": "反",
         "en": "Always Counterattack",
         "initial": "C"
       },
       {
         "order": 2,
         "sprite": 60,
-        "ja_ui": "\u7a4d",
+        "ja_ui": "積",
         "en": "Be Aggressive",
         "initial": "A"
       },
       {
         "order": 3,
         "sprite": 61,
-        "ja_ui": "\u7121",
+        "ja_ui": "無",
         "en": "Play It Safe",
         "initial": "S"
       },
       {
         "order": 4,
         "sprite": 62,
-        "ja_ui": "\u9632",
+        "ja_ui": "防",
         "en": "Always Defend",
         "initial": "D"
       }
@@ -21434,5 +21434,15 @@
     "translation_wording_changes": 0,
     "new_translation_credit": 0,
     "release": false
+  },
+  "latest_release": {
+    "version": "0.7.2",
+    "source_build": "0.7.2",
+    "previous_public_version": "0.7.0",
+    "translation_wording_changes": 0,
+    "opening_movies": "Original Japanese MOV055.SFD and MOV072.SFD restored exactly",
+    "movie_record": "docs/original-opening-movies.json",
+    "vga_record": "docs/vga-support.json",
+    "independent_full_proofreading": "unfinished"
   }
 }

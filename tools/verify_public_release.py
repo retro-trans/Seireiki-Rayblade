@@ -31,7 +31,8 @@ def staged_audit():
     return {'staged_files':len(paths),'game_binaries_and_local_source_excluded':True,'translation_exports_only':True}
 
 
-def verify(rtt):
+def verify(rtt, version=VERSION, base=BASE, out=OUT):
+    VERSION,BASE,OUT=version,base,out
     sys.path.insert(0,str(rtt))
     from retro_trans.release import validate_directory
     from retro_trans.catalog import Catalog,recognize,apply_plan
@@ -53,7 +54,7 @@ def verify(rtt):
     assert {p.name for p in result.iterdir()}==expected and len(expected)==6
     hashes={}
     for p in result.iterdir():
-        reference=BASE/'disc'/('Rayblade English Test 0.1.44.gdi' if p.suffix=='.gdi' else p.name)
+        reference=BASE/'disc'/(f'Rayblade English Test {BASE.name}.gdi' if p.suffix=='.gdi' else p.name)
         actual=digest(p);assert actual==digest(reference),p.name
         hashes[p.name]={'sha256':actual,'bytes':p.stat().st_size}
     current=recognize(result,cat);assert len(current)==1 and current[0].version==VERSION and not cat.plan(current[0]).edges
@@ -65,7 +66,7 @@ def verify(rtt):
         source_path=ROOT/('Seireiki Rayblade (Japan).cue' if p['source_format']=='cue' else next(
             c['output_name'] for c in manifest['solutions'][0]['files'] if c['edition']==p['edition']))
         assert digest(source_path)==p['source_sha256']
-    report={'version':VERSION,'source_build':'0.1.44','source_commit':manifest['source_commit'],
+    report={'version':VERSION,'source_build':BASE.name,'source_commit':manifest['source_commit'],
         'retro_trans_source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=rtt,text=True).strip(),
         'manifest_schema':2,'full_delta_roundtrips':3,'real_automatic_solution_application':'pass',
         'all_six_output_files_match_verified_local_build':True,'output_hashes':hashes,
@@ -74,16 +75,19 @@ def verify(rtt):
         'canonical_release_directory_validation':'pass','local_game_validation':json.loads((BASE/'english-disc-report.json').read_text('utf-8'))['validation'],
         'pending':['Live newest map labels/VRAM/fade and menu appearance','Independent meaning review and full-route/long-session testing','503 held/untranslated story rows','Original Dreamcast hardware support unverified']}
     (OUT/'game-validation.json').write_text(json.dumps(report,indent=2)+'\n','utf-8')
-    print('PASS: actual Automatic backend produced all five exact tracks and GDI; output recognized as0.7.0; originals preserved.',flush=True)
+    print(f'PASS: actual Automatic backend produced all five exact tracks and GDI; output recognized as {VERSION}; originals preserved.',flush=True)
     return report
 
 
 def main():
-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--verify',action='store_true');ap.add_argument('--staged',action='store_true');ap.add_argument('--rtt',type=Path);a=ap.parse_args()
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--verify',action='store_true');ap.add_argument('--staged',action='store_true');ap.add_argument('--rtt',type=Path)
+    ap.add_argument('--version',default=VERSION);ap.add_argument('--base-build',default='0.1.44');a=ap.parse_args()
+    assert re.fullmatch(r'0\.\d+\.\d+',a.version) and re.fullmatch(r'0\.\d+\.\d+',a.base_build)
     if not a.verify:print('DRY RUN: staged hygiene audit or real Retro Trans solution round trip will run only with --verify.');return
     if a.staged:staged_audit()
     else:
-        assert a.rtt and (a.rtt/'retro_trans/release.py').exists();verify(a.rtt.resolve())
+        assert a.rtt and (a.rtt/'retro_trans/release.py').exists()
+        verify(a.rtt.resolve(),a.version,ROOT/'work/output'/a.base_build,ROOT/'work/output'/('release-'+a.version))
 
 
 if __name__=='__main__':main()

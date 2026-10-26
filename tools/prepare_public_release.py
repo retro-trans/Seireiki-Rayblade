@@ -14,23 +14,23 @@ def digest(path):
     return h.hexdigest()
 
 
-def config(commit):
+def config(commit, version=VERSION, base=BASE):
     patches=[];files=[]
     for i in (3,5):
         name=f'Seireiki Rayblade (Japan) (Track {i}).bin';edition=f'Japan / Track {i} raw MODE1-2352'
-        patches.append({'patch':f'Rayblade-English-v{VERSION}-Track{i:02d}.xdelta','edition':edition,
+        patches.append({'patch':f'Rayblade-English-v{version}-Track{i:02d}.xdelta','edition':edition,
             'language':'en','source_version':'original','source_format':'bin','target_format':'bin',
-            'source':str(ROOT/name),'target':str(BASE/'disc'/name)})
+            'source':str(ROOT/name),'target':str(base/'disc'/name)})
         files.append({'edition':edition,'output_name':name})
-    patches.append({'patch':f'Rayblade-English-v{VERSION}-GDI.xdelta','edition':'Japan / Disc descriptor',
+    patches.append({'patch':f'Rayblade-English-v{version}-GDI.xdelta','edition':'Japan / Disc descriptor',
         'language':'en','source_version':'original','source_format':'cue','target_format':'gdi',
         'source':str(ROOT/'Seireiki Rayblade (Japan).cue'),
-        'target':str(BASE/'disc/Rayblade English Test 0.1.44.gdi')})
-    files.append({'edition':'Japan / Disc descriptor','output_name':f'Seireiki Rayblade English v{VERSION}.gdi'})
+        'target':str(base/'disc'/f'Rayblade English Test {base.name}.gdi')})
+    files.append({'edition':'Japan / Disc descriptor','output_name':f'Seireiki Rayblade English v{version}.gdi'})
     copies=[{'name':f'Seireiki Rayblade (Japan) (Track {i}).bin',
         'source':str(ROOT/f'Seireiki Rayblade (Japan) (Track {i}).bin')} for i in (1,2,4)]
     return {'game_id':'seireiki-rayblade','game_name':'Seireiki Rayblade','platform':'Dreamcast',
-        'version':VERSION,'source_commit':commit,'patches':patches,'solutions':[
+        'version':version,'source_commit':commit,'patches':patches,'solutions':[
             {'id':'japan-disc','name':'Complete English Dreamcast disc','edition':'Japan (T-42201M)',
              'language':'en','files':files,'copy_files':copies}]}
 

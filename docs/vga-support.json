@@ -1,0 +1,133 @@
+{
+  "version": "0.7.1",
+  "source_build": "0.1.44",
+  "date": "2026-10-26",
+  "kind": "Local VGA compatibility test; no public release",
+  "source": {
+    "author": "Rolly (SEGA-SKY)",
+    "url": "https://segasky.itch.io/seireiki-rayblade-vga-patch-for-sega-dreamcast",
+    "reference_version": "1.0",
+    "archive_sha256": "366a520dbdcecaacab7651422c4ec881af1edcff68489d7f92ca09d7f67570d7",
+    "retail_executable_sha256": "8eb39130a289aae14eead0236aace2116c3549d9e39c2267853a81fc2a406469",
+    "original_executable_sha256": "08f34a6a8b55a04c03bfe4e6d3a294792d8113e67f79c7759f9efbaeff29b9a5"
+  },
+  "executable_sha256": "a283914defa4e33e7a74600ad655604ae8ee122ef0994c300a04730feb409590",
+  "english_base_sha256": "39878d6b332b3f4ef1bd59a1b27d69de87f7b4695ddfcb4c98138c419e42d1fd",
+  "changed_executable_bytes": 497,
+  "ranges": [
+    {
+      "start": "0x96d24",
+      "end_exclusive": "0x96d26",
+      "original_sha256": "57d08864a9e1b877905786ec70e320ccb8ab09f5cdb0a22251bd1a77ac3745c2",
+      "target_sha256": "f7a129689befc9cf8d659378b73025ce18e91e1450c50e8e88bda1e1bb70d377"
+    },
+    {
+      "start": "0xbbe00",
+      "end_exclusive": "0xbbe10",
+      "original_sha256": "d06483baee63b5e674472aa65c9a87c8a880172ad5673af8a9d988abd212f8ca",
+      "target_sha256": "493e4384979b0a9509d9a004fcfe7396a18af893cff3659a1de554d713b006f1"
+    },
+    {
+      "start": "0xbc150",
+      "end_exclusive": "0xbc152",
+      "original_sha256": "f2e7e9defc37abf498dd82f057eb1ca6e44586004879957c874175c9aed37d33",
+      "target_sha256": "33d2dc6c9874bfc439227ec82458237454b2e8fdc0d7163a1958c6575de1ce08"
+    },
+    {
+      "start": "0xda5c0",
+      "end_exclusive": "0xda7b5",
+      "original_sha256": "1e1d85851093c1fb6cc2e0df21abed5c70c36ffb380c5a85cf49d3586f48a169",
+      "target_sha256": "5eb5c523eeb4fcca5e22552d093ff9f4db9254b199b9a6ac82687bd664011092"
+    }
+  ],
+  "boot": {
+    "lba": 45000,
+    "size": 32768,
+    "offset": "0x3d",
+    "before": "0",
+    "after": "1",
+    "source_sha256": "80c000f7649582d5aea41a3ee2e0e138c8c17cd2912e9ca769a7c7c2f4457de2",
+    "target_sha256": "2bbc884342abd4cea0da0e23e4e3066fb13e7a449dfb02a35d4a543586ea8cb7",
+    "scope": "Only VGA flag; original region selection and English disc artwork retained"
+  },
+  "method": "Exact retail reference executable deltas merged after original-byte conflict checks",
+  "preserved": "All English executable bytes outside the 497 reference changes; all text/font/archive/movie payloads",
+  "pending": [
+    "Cold boot on a Dreamcast with VGA cable/box and on NTSC/PAL consoles",
+    "Opening movies, dialogue, battle and save/load in VGA; non-VGA cable regression"
+  ],
+  "release": false,
+  "disc": "work/output/0.7.1/disc/Rayblade English Test 0.7.1.gdi",
+  "equivalent_public_base": "0.7.0",
+  "status": "VGA merge built; native, disc and cold-boot telemetry checks pass; visual/hardware testing pending",
+  "native_proof": {
+    "path": "work/output/0.7.1/vga-native-test.json",
+    "sha256": "bff4775f38105a642a76404963b04214b0e10f840884daf11beda86c63d2e5b9",
+    "cases": 96,
+    "instructions": 5954,
+    "limits": "Bounded MMIO/blank/fallback fixtures. No physical monitor, GPU scanout, BIOS, movie or full-game proof."
+  },
+  "validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "sector_substitutions": 5,
+  "unchanged_other_payloads": 13,
+  "emulator": {
+    "executable_sha256": "f41c1a4243274caf9a183114bd610407835521a011a48b18326e5e957e6f4e6b",
+    "cold_boot": true,
+    "save_states": false,
+    "custom_textures": false,
+    "selected_region": "Japan",
+    "selected_broadcast": "NTSC",
+    "telemetry_api": "Flycast Lua read32/state/display/VBlank; guest memory read only",
+    "telemetry": [
+      {
+        "case": "vga",
+        "sha256": "5f05ec323ace95bbc364ffc36334400ad11ccadf1d3f4d9f305987c660e4d758",
+        "path": "work/output/0.7.1/vga-live-vga.csv",
+        "samples": 20,
+        "last_vblank": 1200,
+        "loaded_patched_code_samples": 10,
+        "last_sample": {
+          "frame": "1200",
+          "cable": "0",
+          "region": "0",
+          "broadcast": "0",
+          "width": "640",
+          "height": "480",
+          "spg_control": "00000100",
+          "spg_load": "020c0359",
+          "fb_r_ctrl": "0080000b",
+          "vga_code_word": "bda1e400"
+        }
+      },
+      {
+        "case": "composite",
+        "sha256": "7d12aff6145109843f6b6e9e0f87245330503d006f14eaeb65563d06212a9cf4",
+        "path": "work/output/0.7.1/vga-live-composite.csv",
+        "samples": 20,
+        "last_vblank": 1200,
+        "loaded_patched_code_samples": 10,
+        "last_sample": {
+          "frame": "1200",
+          "cable": "3",
+          "region": "0",
+          "broadcast": "0",
+          "width": "640",
+          "height": "480",
+          "spg_control": "00000140",
+          "spg_load": "01060359",
+          "fb_r_ctrl": "00000009",
+          "vga_code_word": "bda1e400"
+        }
+      }
+    ],
+    "limits": "Hidden isolated emulator instances; no screenshot/visual inspection, button input or route progression. NTSC-configured boot only; not physical PAL-console proof."
+  }
+}
