@@ -1,0 +1,27 @@
+{
+  "version": "0.7.11",
+  "published": "2026-10-27T18:23:41Z",
+  "release_url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.11",
+  "release_source_commit": "46a1dbfdd37d455f36ea32ee37fb55e53060387a",
+  "assets": 13,
+  "uploaded_asset_SHA256": "all exact",
+  "full_original_input_delta_roundtrips": 3,
+  "Retro_Trans_Automatic": "all five tracks and GDI exact; output recognized as 0.7.11; originals preserved",
+  "catalog_refresh_run": 40559606460,
+  "catalog_refresh_conclusion": "success",
+  "catalog_record_matches_uploaded_manifest": true,
+  "catalog_blob_sha": "d9ea4a147fcda50dd52e5d9c3ba311c8ae405601",
+  "public_ZIP": {
+    "asset": "Rayblade-English-v0.7.11-xdelta.zip",
+    "bytes": 8028679,
+    "sha256": "4412eef028e1900d85c20a491943ef06114370becfbfd1feb1fa44aa941bf9a2"
+  },
+  "prior_local_package": "docs/patch-package-0.7.11.json",
+  "game_payloads": "Exact local 0.7.11 build; public metadata pins the release commit.",
+  "pending": [
+    "Latest live UI/hardware appearance",
+    "Stage 6 issue #1 unresolved",
+    "Unidentified room tag 66",
+    "503 held story rows, full-game and independent review"
+  ]
+}
