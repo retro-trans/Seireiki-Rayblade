@@ -34,10 +34,11 @@ def legacy_mask(font,char,small):
     return out
 
 
-def expected_pixels(cpu,coverage,flags,x,y):
+def expected_pixels(cpu,coverage,flags,x,y,*,shadow_pixels=None):
     out = bytearray(cpu.regions[3][1])
     w,h = cpu.read(TEX+28,2),cpu.read(TEX+30,2)
     sx,sy = 1<<cpu.read(TEX+12,1),1<<cpu.read(TEX+13,1)
+    shadow = sx if shadow_pixels is None else shadow_pixels
     color = cpu.read(0x8c0980aa+(flags&14)*2,2)
     rgb = ((color>>11)&15)<<8 | ((color>>6)&15)<<4 | (color>>1)&15
     width = 8 if coverage.shape[1]==32 else 16
@@ -50,8 +51,8 @@ def expected_pixels(cpu,coverage,flags,x,y):
             if px>=w:
                 continue
             alpha = int(coverage[yy*4//sy,xx*4//sx])//17
-            if flags&128 and px+sx<w:
-                struct.pack_into('<H',out,32+(py*w+px+sx)*2,alpha<<12)
+            if flags&128 and px+shadow<w:
+                struct.pack_into('<H',out,32+(py*w+px+shadow)*2,alpha<<12)
             if alpha:
                 struct.pack_into('<H',out,32+(py*w+px)*2,(alpha<<12)|rgb)
     return out

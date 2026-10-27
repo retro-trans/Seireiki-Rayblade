@@ -1,0 +1,221 @@
+{
+  "version": "0.7.9",
+  "source_build": "0.7.8",
+  "description": "Source-reviewed Trust help and compact popup names",
+  "component": {
+    "version": "0.7.9",
+    "source_build": "0.7.8",
+    "files": {
+      "D_NAMES.BIN": {
+        "size": 33944,
+        "sha256": "0d0d5f9ddba18b3f6b41ebed616cd9ed7b754926ae3b0087bc4440332afd603e"
+      }
+    },
+    "decoded_sha256": "70d421449801db72a49438fd5eb55b747c237d69b2c9a205ff6491b2c22fd72a",
+    "decoded_bytes": 62805,
+    "compressed_stream_bytes": 33760,
+    "changes": [
+      {
+        "id": "names.g00.033",
+        "before": "Bond    <FC:FF:FF>",
+        "after": "Bond    <FC:FF:FF>",
+        "source_sha256": "46675be16a2ac66586ebcefa1caba08a9179cb181509fc8c29fd15d0ec7e8fc6",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.001",
+        "before": "Restores 30% HP to the selected allied unit.",
+        "after": "Restores 30% HP to one allied unit.",
+        "source_sha256": "7bd121e63fca7bc7bf7e8d3f7917bf76970bf2167df1a0e7d2601cd36ec00ef0",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.034",
+        "before": "Friendship  <FC:FF:FF>",
+        "after": "Friend  <FC:FF:FF>",
+        "source_sha256": "7f7a3067355a84590e864f9bcc8e5899bacbe9f5cb7fde03403b84df52a7c70d",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.002",
+        "before": "Restores 50% HP to all allied units.",
+        "after": "Restores 50% HP to all allied units.",
+        "source_sha256": "1f921807a92480af3ae0c70c45e534eccf62ea80219bcaf95976f104c13b8912",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.035",
+        "before": "Encourage  <FC:FF:FF>",
+        "after": "Enc.     <FC:FF:FF>",
+        "source_sha256": "a51b7504bd8f7f3c543414678bf51e8369e6c081bd0aa2a0db7042c71aa0f086",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.003",
+        "before": "Raises one ally's Fighting Spirit by +10.",
+        "after": "Raises one ally's SP by 10.",
+        "source_sha256": "1de23d4ace43b73cb22420bbd25c162dfa2a82d8f57bf7f0a69899800bad55f4",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.036",
+        "before": "Accelerate  <FC:FF:FF>",
+        "after": "Accel.  <FC:FF:FF>",
+        "source_sha256": "afe77d57cf04ef7aa0c6da78f1db277702df10b34f56b19c3898e202453c35d3",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.004",
+        "before": "Raises the selected allied unit's Movement Range by +3 for one move.",
+        "after": "Adds 3 to one ally's move range for one move.",
+        "source_sha256": "ae208dfb5e1eee3b25201ea0e0e8e8e24dd333bd7b37a0297eca1508a96d7b16",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.037",
+        "before": "Focus  <FC:FF:FF>",
+        "after": "Focus  <FC:FF:FF>",
+        "source_sha256": "d877bb539e3d324a9d80e3c8339aab7d0a476b310083a52f9300f7d5b9d2b965",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.005",
+        "before": "Raises one ally's Accuracy by 30% for one turn.",
+        "after": "Raises one ally's Accuracy by 30% for one turn.",
+        "source_sha256": "77be418068194990fc71831577b2c75e174f8341a6ff290089cf9748d28f7be2",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.038",
+        "before": "Intuition  <FC:FF:FF>",
+        "after": "Intuit.  <FC:FF:FF>",
+        "source_sha256": "ea47ce87336497a0e39e331cadab8748b32176c340432bf205c20e91fcdd7d25",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.006",
+        "before": "Raises one ally's Evasion by 30% for one turn.",
+        "after": "Raises one ally's Evasion by 30% for one turn.",
+        "source_sha256": "1f27f0dfe1a6cf12b14403ccacaa64b11b1d7156aade4b105f3b8f4b67f7de62",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.039",
+        "before": "Iron Arms  <FC:FF:FF>",
+        "after": "Arms    <FC:FF:FF>",
+        "source_sha256": "d61ebb0a12849e51d980c2067f506f4482ad07b4fbc41ba325b682015c2e703b",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.007",
+        "before": "Raises one ally's attack power by 30%<NL>for one attack against an enemy.",
+        "after": "Raises one ally's attack power by 30% for its<NL>next attack.",
+        "source_sha256": "9d0d127c2420f86af179a911faef75c791ee779efc5e176e197d1cae7238407a",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.040",
+        "before": "Iron Wall  <FC:FF:FF>",
+        "after": "Wall      <FC:FF:FF>",
+        "source_sha256": "984492f30fde6e21bb5396a604c3d0e683ac7c2759aa30163bd1264396d5a24e",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.008",
+        "before": "Raises one ally's defense by 50%<NL>for one incoming enemy attack.",
+        "after": "Raises one ally's defense by 50% for the next<NL>attack it takes.",
+        "source_sha256": "2a5e4048d33262f31e2d9815a3c31ae878203bd2ac4fa07b3541b1349324a56e",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.041",
+        "before": "Act Again  <FC:FF:FF>",
+        "after": "Again   <FC:FF:FF>",
+        "source_sha256": "10598056e120e5dceead595d9e7e76a2312d40f24a64c79f43df6fbefc24f026",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.009",
+        "before": "Passes an action to one ally that has already finished acting.",
+        "after": "Gives your action to an ally that has already<NL>acted.",
+        "source_sha256": "6808ac734c11bb62d2968b8f3cfe89d8ae99baea3926eb3a6b7b728860d10035",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.042",
+        "before": "Awareness  <FC:FF:FF>",
+        "after": "Aware  <FC:FF:FF>",
+        "source_sha256": "5f8057f979e1740692a4f58c6919435be58bec4b38bb0e1570e4bb31ed40e306",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.010",
+        "before": "The selected unit receives one attack from the side or rear as a frontal attack,<NL>negating the hit-rate and damage modifiers.",
+        "after": "Negates hit-rate and damage modifiers for the<NL>next side/rear attack on the selected unit.",
+        "source_sha256": "014af9b97e9507fea92d56ec83ea90d7b312b0cdc6352d7638c1f6a344974892",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      },
+      {
+        "id": "names.g00.043",
+        "before": "Cover <FC:FF:FF>",
+        "after": "Cover  <FC:FF:FF>",
+        "source_sha256": "5d3438e5c2ea6cda8741b634e834f216d3ed657de77d4b5c3c3327cb34a43fa3",
+        "reason": "Compact popup alias and value spacing; full status name and dynamic parameter retained."
+      },
+      {
+        "id": "names.g01.011",
+        "before": "The unit using this command can take the damage intended<NL>for the selected allied unit.",
+        "after": "Takes the damage meant for the selected allied<NL>unit.",
+        "source_sha256": "cab350239115d209bfe5f5d8c061030adb1d3db652887f8f7cc566afd5064441",
+        "reason": "Source-reviewed complete effect, wrapped to at most two 236-pixel lines."
+      }
+    ],
+    "popup_ink_limit_logical_pixels": 56,
+    "help_pen_limit": 236,
+    "help_lines": 2,
+    "review": {
+      "source": "Local original D_NAMES rows, group 1, entries 1..11",
+      "effects_in_order": [
+        "30% HP, one ally",
+        "50% HP, all allies",
+        "SP +10, one ally",
+        "Move +3, one move",
+        "Accuracy +30%, one turn",
+        "Evasion +30%, one turn",
+        "Attack +30%, one attack",
+        "Defense +50%, one incoming attack",
+        "Transfer action to an ally that has acted",
+        "Negate side/rear hit-rate and damage modifiers once",
+        "Caster takes damage intended for selected ally"
+      ],
+      "Awareness": "Concise equivalent of treating one side/rear attack as frontal; no extra attack or positional movement implied."
+    },
+    "unchanged": "Full status command names, executable, fonts, gameplay tables, all dialogue and other 13 disc payloads",
+    "issue_1": "Separate Stage 6 corruption investigation remains unresolved; this build does not claim to fix it.",
+    "live_validation": "pending",
+    "release": false
+  },
+  "verification": {
+    "popup_cases": 220,
+    "help_cases": 22,
+    "other_name_rows_byte_exact": 1726,
+    "PRS_instructions": 1847551,
+    "disc": {
+      "reextracted_files": "all 14 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    }
+  },
+  "local_build": "work/output/0.7.9/disc/Rayblade English Test 0.7.9.gdi",
+  "proof": "work/output/0.7.9/trust-help-native-test.json",
+  "release": false,
+  "pending": [
+    "Live popup and description appearance",
+    "Separate GitHub issue #1 remains unresolved",
+    "Full-game/translation review"
+  ]
+}

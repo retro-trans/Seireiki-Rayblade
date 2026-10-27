@@ -1,0 +1,15 @@
+{
+  "version": "0.7.11",
+  "package": "work/output/0.7.11/Rayblade-English-v0.7.11-xdelta.zip",
+  "bytes": 8021343,
+  "sha256": "e16fe11ee0679582a7ed0da2a70f45c0e38bfd7945cd13243dcb76bbc6022e95",
+  "package_members": 12,
+  "delta_roundtrips": 3,
+  "Retro_Trans_Automatic": "All six files exact; originals preserved; output recognized as 0.7.11",
+  "native_location_measurements": 512,
+  "native_header_geometry_cases": 512,
+  "unchanged_other_group_cases": 2984,
+  "live_validation": "pending",
+  "GitHub_release": false,
+  "issue_1": "Separate unresolved investigation"
+}

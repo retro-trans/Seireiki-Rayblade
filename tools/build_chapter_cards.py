@@ -151,8 +151,9 @@ def make_resources():
     return result,report,previews
 
 
-def repack(source,replacements):
-    count=struct.unpack_from('<I',source,4)[0];first=0x70000
+def repack(source,replacements,*,first=0x70000):
+    count=struct.unpack_from('<I',source,4)[0]
+    assert first%2048==0 and first>=8+count*8+8
     assert count==90 and source[8+count*8:8+count*8+8]==bytes(8)
     out=bytearray(source[:8+count*8+8]);out.extend(bytes(first-len(out)));records=[]
     for i in range(count):

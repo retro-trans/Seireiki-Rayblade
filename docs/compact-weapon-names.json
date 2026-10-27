@@ -1,0 +1,41 @@
+{
+  "version": "0.7.7",
+  "source_build": "0.7.6",
+  "kind": "Local compact weapon and movie-title display names",
+  "changed_weapon_rows": 13,
+  "changed_movie_title_rows": 7,
+  "recipe": "work/translation/en/ui/compact-weapon-names.en.json",
+  "full_authored_names": "Unchanged in names.json/names.en.json",
+  "limits": {
+    "weapon_pen_logical_pixels": 136,
+    "movie_title_pen_logical_pixels": 240
+  },
+  "files": {
+    "D_NAMES.BIN": {
+      "size": 33944,
+      "sha256": "5b489e5691487446e0df7d81b86c134d2f3bf0aaf6c07d764c4035fc80113af8"
+    }
+  },
+  "validation": {
+    "native_weapon_and_movie_rows": 336,
+    "nested_weapon_stat_fixtures": 5,
+    "other_name_rows_byte_exact": 1728,
+    "native_PRS_instructions": 1849879,
+    "native_UI_instructions": 191611,
+    "disc": {
+      "reextracted_files": "all 14 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    }
+  },
+  "native_limits": [
+    "Native parser, nested name lookup, PRS and ink bounds checked; caller parameter queue, GPU and live navigation not executed",
+    "Original font/executable/gameplay and all other payloads retained"
+  ],
+  "unchanged": "Other 13 game payloads, boot area and full authored translation records",
+  "release": false
+}

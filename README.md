@@ -10,13 +10,13 @@ The translation is a work in progress. Bug reports, Japanese-to-English proofrea
 
 ## Play it
 
-The current release is **[v0.7.2](https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.2)**. It retains the story and battle English drafts, character/unit library text, native interface and image translations, integrated original Skies Latin glyphs, whole-word dialogue wrapping and menu/map-label repairs. It adds VGA support and restores the original Japanese opening/demo movies, removing the added English movie text.
+The current release is **[v0.7.11](https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.11)**. It adds selectable Native/HD Skies lettering at true 640×480 output, fixes movie sizing, restores separate story choices, improves map labels, fits long weapon/movie names, repairs Trust help and SP signs, translates 33 room-map tags and sizes location headers to their actual lettering. VGA support and original Japanese opening/demo content are retained. See the [release notes](docs/releases/v0.7.11.md).
 
-**This is an unfinished translation, not a claim of complete proofreading or complete route coverage.** There are 503 held/untranslated story rows. Some unsupported original text can display fallback marks with the Latin-only font. The latest map and menu artwork still needs fresh-boot in-game confirmation. Version 0.7.2 is a release identifier, not a completion percentage.
+**This is an unfinished translation, not a claim of complete proofreading or complete route coverage.** There are 503 held/untranslated story rows. Some unsupported original text can display fallback marks with the Latin-only font. Latest UI/hardware appearance still needs testing. [Stage 6 text corruption (issue #1)](https://github.com/retro-trans/Seireiki-Rayblade/issues/1) remains unresolved, and one room tag remains unidentified. Version 0.7.11 is a release identifier, not a completion percentage.
 
 ### Apply
 
-**The easiest way:** [Retro Trans](https://github.com/retro-trans/retro-trans-tools) provides a desktop interface for applying the complete patch set. Use version **0.4.1 or later**, refresh its catalog, choose **Automatic**, and select the folder containing your original five BIN tracks and `Seireiki Rayblade (Japan).cue`. Select v0.7.2 and click **Patch**. It verifies all inputs, applies all three patches, and copies the three unchanged tracks into a new complete folder. Choose the new `.gdi` in Flycast.
+**The easiest way:** [Retro Trans](https://github.com/retro-trans/retro-trans-tools) provides a desktop interface for applying the complete patch set. Use version **0.4.1 or later**, refresh its catalog, choose **Automatic**, and select the folder containing your original five BIN tracks and `Seireiki Rayblade (Japan).cue`. Select v0.7.11 and click **Patch**. It verifies all inputs, applies all three patches, and copies the three unchanged tracks into a new complete folder. Choose the new `.gdi` in Flycast.
 
 This release uses a verified **multi-file solution**. An unpacked BIN/CUE set matching the published hashes is required. Automatic CHD extraction/recompression for this GD-ROM layout is not supported. A different dump, track split, region, or local English build does not become compatible merely by renaming it.
 
@@ -24,31 +24,31 @@ This release uses a verified **multi-file solution**. An unpacked BIN/CUE set ma
 
 | Original input | Patch | Output |
 |---|---|---|
-| Japanese Track 3 | `Rayblade-English-v0.7.2-Track03.xdelta` | Patched Track 3, keeping its original filename |
-| Japanese Track 5 | `Rayblade-English-v0.7.2-Track05.xdelta` | Patched Track 5, keeping its original filename |
-| Original Japanese CUE | `Rayblade-English-v0.7.2-GDI.xdelta` | `Seireiki Rayblade English v0.7.2.gdi` |
+| Japanese Track 3 | `Rayblade-English-v0.7.11-Track03.xdelta` | Patched Track 3, keeping its original filename |
+| Japanese Track 5 | `Rayblade-English-v0.7.11-Track05.xdelta` | Patched Track 5, keeping its original filename |
+| Original Japanese CUE | `Rayblade-English-v0.7.11-GDI.xdelta` | `Seireiki Rayblade English v0.7.11.gdi` |
 
 Create a new output folder. Apply the three deltas and copy original **Tracks 1, 2 and 4** into it unchanged. The result must contain all five BIN tracks plus the new GDI. Do not rename individual tracks: the GDI references their exact filenames. The tiny GDI delta converts your original CUE into the verified boot descriptor; it is part of the complete solution.
 
 ```powershell
-xdelta3 -d -s "Seireiki Rayblade (Japan) (Track 3).bin" Rayblade-English-v0.7.2-Track03.xdelta "English/Seireiki Rayblade (Japan) (Track 3).bin"
-xdelta3 -d -s "Seireiki Rayblade (Japan) (Track 5).bin" Rayblade-English-v0.7.2-Track05.xdelta "English/Seireiki Rayblade (Japan) (Track 5).bin"
-xdelta3 -d -s "Seireiki Rayblade (Japan).cue" Rayblade-English-v0.7.2-GDI.xdelta "English/Seireiki Rayblade English v0.7.2.gdi"
+xdelta3 -d -s "Seireiki Rayblade (Japan) (Track 3).bin" Rayblade-English-v0.7.11-Track03.xdelta "English/Seireiki Rayblade (Japan) (Track 3).bin"
+xdelta3 -d -s "Seireiki Rayblade (Japan) (Track 5).bin" Rayblade-English-v0.7.11-Track05.xdelta "English/Seireiki Rayblade (Japan) (Track 5).bin"
+xdelta3 -d -s "Seireiki Rayblade (Japan).cue" Rayblade-English-v0.7.11-GDI.xdelta "English/Seireiki Rayblade English v0.7.11.gdi"
 ```
 
 Source and output hashes are supplied with the release. Keep source verification enabled. No upgrade patches from unpublished 0.1.x local builds are provided.
 
 ### Sharper text
 
-The patch integrates the original **Skies of Arcadia USA Dreamcast Latin glyphs**, with variable spacing, consistent baselines and their four alpha levels. Every font texture stays at or below 1024 pixels per dimension. Map names use a 1024×256 alpha atlas with brighter lettering and a dark edge. These changes are in the game assets; an emulator texture pack is not required.
+The patch integrates the original **Skies of Arcadia USA Dreamcast Latin glyphs**, with variable spacing, consistent baselines and their four alpha levels. Every font texture stays at or below 1024 pixels per dimension. Map names use a 512×128 alpha atlas with native-scale lettering and a thin dark edge. Native is the cold-boot default: title-screen **X selects Native**, **Y selects HD**, until reset. The native main source cell is 12×24 pixels, with an 8×16 compact cell, rendered in a true 640×480 framebuffer. These changes are in the game assets; an emulator texture pack is not required.
 
 The target for current visual testing is **Flycast**. Original Dreamcast hardware compatibility has not been established. Fresh-boot the GDI and load an ordinary in-game memory-card save after updating; emulator save states can retain older executable and graphics data.
 
 ### VGA support and original movies
 
-**0.7.2** includes the retail VGA video changes from [Rolly (SEGA-SKY)'s patch v1.0](https://segasky.itch.io/seireiki-rayblade-vga-patch-for-sega-dreamcast), plus the VGA boot flag. Flycast cold-boot telemetry confirms 640×480 progressive VGA timing and a separate composite boot reaches the TV path. Physical Dreamcast VGA/NTSC/PAL and full non-VGA regression testing remain necessary. Original region selection and translated disc artwork are retained. See [the integration record](docs/vga-support.json).
+**0.7.11** retains the retail VGA video changes from [Rolly (SEGA-SKY)'s patch v1.0](https://segasky.itch.io/seireiki-rayblade-vga-patch-for-sega-dreamcast), plus the VGA boot flag. Flycast cold-boot telemetry confirms 640×480 progressive VGA timing and a separate composite boot reaches the TV path. Physical Dreamcast VGA/NTSC/PAL and full non-VGA regression testing remain necessary. Original region selection and translated disc artwork are retained. See [the integration record](docs/vga-support.json).
 
-Both modified movies, `MOV055.SFD` (opening) and `MOV072.SFD` (demo), are restored byte-for-byte from the original Japanese disc. Added English subtitles, captions and movie title/UI edits are removed. Their original video, audio and timing are preserved without re-encoding; English gameplay text and the font remain intact.
+Both modified movies, `MOV055.SFD` (opening) and `MOV072.SFD` (demo), are restored byte-for-byte from the original Japanese disc. Added English subtitles, captions and movie title/UI edits are removed. Their original video, audio and timing are preserved without re-encoding. Movie drawing now fills a centered 640×384 area in the 640×480 framebuffer; English gameplay text and the font remain intact.
 
 ## Check the translation
 

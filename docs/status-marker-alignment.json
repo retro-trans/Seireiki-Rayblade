@@ -1,0 +1,59 @@
+{
+  "version": "0.7.8",
+  "source_build": "0.7.7",
+  "kind": "Local status square-marker alignment",
+  "files": {
+    "1ST_READ.BIN": {
+      "sha256": "2d1df901aa5a83312dd8e1125eec6e9a1b1fd4698c34884b0398bf7989553d84",
+      "size": 1135588
+    },
+    "D_NAMES.BIN": {
+      "sha256": "90d5923263ac360bf589d64cfae2393c86fe2555ff8140cde96048384e82f6a2",
+      "size": 33944
+    }
+  },
+  "heading": {
+    "id": "names.g00.006",
+    "before": " Skills<NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF>",
+    "after": "<FC:81:80>Skills<FC:80:82> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF>",
+    "horizontal_shift_logical_pixels": 5,
+    "ability_entry_coordinates": "unchanged relative to the panel"
+  },
+  "panels": {
+    "scripts": [
+      "0xef01",
+      "0xef29"
+    ],
+    "text_draw_y_shift_logical_pixels": 2,
+    "square_marker_coordinates": "unchanged",
+    "font_pixels": "unchanged"
+  },
+  "hook": {
+    "address": "0x8c07bad0",
+    "bytes": 172,
+    "VM_factory_pointer": "0x8b1d4",
+    "scope": "Only the two status panels; other contexts delegate unchanged to the original constructor"
+  },
+  "validation": {
+    "native_context_cases": 12,
+    "native_redraw_cases": 4,
+    "unchanged_other_name_rows": 1747,
+    "tile_links": "Original native linked-context enumeration; no contiguous-slot assumption",
+    "redraw": "Two clears/parses per heading, glyph y0 retained; original object-position call receives y114",
+    "disc": {
+      "reextracted_files": "all 14 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    }
+  },
+  "limits": [
+    "Marker geometry measured from supplied screenshot; native constructors/parser and bounds execute, GPU/input not executed",
+    "The two full text panels move down two logical pixels; font and square art unchanged"
+  ],
+  "live": "Pending exact latest GPU/hardware screenshot",
+  "release": false
+}

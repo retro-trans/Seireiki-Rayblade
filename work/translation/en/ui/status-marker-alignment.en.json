@@ -1,0 +1,19 @@
+{
+  "version": "0.7.8",
+  "heading": {
+    "id": "names.g00.006",
+    "before": " Skills<NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF>",
+    "after": "<FC:81:80>Skills<FC:80:82> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF><NL> <FC:FF:FF>",
+    "horizontal_shift_logical_pixels": 5,
+    "ability_entry_coordinates": "unchanged relative to the panel"
+  },
+  "panels": {
+    "scripts": [
+      "0xef01",
+      "0xef29"
+    ],
+    "text_draw_y_shift_logical_pixels": 2,
+    "square_marker_coordinates": "unchanged",
+    "font_pixels": "unchanged"
+  }
+}

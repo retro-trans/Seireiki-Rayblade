@@ -1,0 +1,70 @@
+{
+  "version": "0.7.3",
+  "date": "2026-10-27",
+  "source_build": "0.7.2",
+  "executable_sha256": "6769ddbf00188839783c1ef821756de84cf9c17a02a40a35859c9c464810e4b7",
+  "WIN00_sha256": "30fb3816c30dfa6ca4194d6e49dcc82ad3ed5df876634a43c435e65d7b542d25",
+  "font_source": "Original Skies of Arcadia USA Dreamcast Latin VQ glyphs; unchanged HD bank plus uniform native-size derivatives",
+  "default": "Native (1x)",
+  "title_buttons": {
+    "X": "Native (1x)",
+    "Y": "HD (up to 4x)"
+  },
+  "persistence": "Session only; reset returns to Native; no VMU writes for the font preference",
+  "native_small_source_scale": "1/3 (4x8 cell)",
+  "native_medium_source_scale": "1/2 (6x12 source cell, within the existing 16px line)",
+  "width_tables": "Byte-exact in both banks; compiled dialogue and all wording unchanged",
+  "HD_bank_sha256": "5fe1480136b8c7d2bb15a32b17588edc0459fcf9c1079c9aa4b1075e11a4d181",
+  "native_bank_sha256": "3646fb6878a74d3ba01f4c0734fca70d0c33bd2450473c90d68135a245f8bea5",
+  "native": {
+    "version": "0.7.3",
+    "native_raster_cases": 804,
+    "allocator_cases": 8,
+    "SH4_instructions": 17551295,
+    "ABI_guards_pixels_advances": "pass",
+    "HD_bank_unchanged": true,
+    "native_archive_layout": "pass"
+  },
+  "selector": {
+    "version": "0.7.3",
+    "native_instructions": 20849,
+    "VM_PC_PR_ABI": "pass",
+    "context_geometry": [
+      80,
+      224,
+      256,
+      32
+    ],
+    "switching_extra_allocations": 0,
+    "GPU_and_teardown": "Bounded fixtures; separate emulator check required"
+  },
+  "live": {
+    "emulator": "Flycast",
+    "render_resolution": "640x480 / 1x",
+    "cable": "VGA",
+    "title": "Both labels visually checked; below copyright; X/Y switching confirmed",
+    "Native_normal_save_load": "Passed through load menu and intermission into Touya status; Lv 3 Exp 41 and HP 420/420 legible; four logical-size text surfaces",
+    "HD_New_Game": "Reached opening dialogue; original English scenario payload exact; surfaces use up to 4x per axis",
+    "runtime_checks": "Complete combined font and immutable executable kernel bytes match in both modes; selector removed after title",
+    "witnesses": [
+      "work/ui/font-modes/title-native-0.7.3.png",
+      "work/ui/font-modes/title-hd-0.7.3.png",
+      "work/ui/font-modes/native-status-0.7.3.png"
+    ],
+    "limits": [
+      "Physical Dreamcast/VGA-to-HDMI testing pending",
+      "No full route or long-session coverage",
+      "Map/album/chapter image lettering keeps its existing image assets"
+    ]
+  },
+  "disc": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "Flycast 1x title Native/HD, Native normal-load/status, HD New Game/dialogue checked; physical Dreamcast and full game pending"
+  },
+  "release": false
+}

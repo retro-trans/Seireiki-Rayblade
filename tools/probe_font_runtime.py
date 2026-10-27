@@ -25,13 +25,17 @@ def main():
     global VERSION
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--pid',required=True,type=int);ap.add_argument('--inspect',action='store_true')
+    ap.add_argument('--exe-path',type=Path,default=Path(r'M:\Program\FlyCast\flycast.exe'),
+                    help='Exact executable path of an isolated Flycast profile, if used')
     ap.add_argument('--report',type=Path,help='Optional local JSON evidence report; only written with --inspect')
     ap.add_argument('--capture-dir',type=Path,help='Optional CPU text-surface PNGs; only written with --inspect')
     ap.add_argument('--dump-game-ram',type=Path,help='Optional 16 MiB emulated game RAM evidence, only after verified kernel/font identification; use ignored work/source/')
     ap.add_argument('--version',default=VERSION,help='Component build to compare, e.g. 0.1.4')
+    ap.add_argument('--component-dir',type=Path,help='Explicit local candidate components, instead of work/output/<version>')
     args=ap.parse_args()
     if not re.fullmatch(r'0\.\d+\.\d+',args.version):raise ValueError('Expected a 0.x.y component version')
     VERSION=args.version
+    component_dir=args.component_dir or ROOT/'work/output'/VERSION
     print('Inspect only PID {}: locate HD font kernel and read emulated font/surface headers.'.format(args.pid))
     if args.report:print('Evidence report destination:',args.report)
     if args.capture_dir:print('CPU text-surface capture destination:',args.capture_dir)
@@ -55,9 +59,21 @@ def main():
     try:
         path=C.create_unicode_buffer(32768);length=W.DWORD(len(path))
         if not api.QueryFullProcessImageNameW(handle,0,path,C.byref(length)):raise OSError('Cannot verify executable path')
-        if path.value.lower()!=r'M:\Program\FlyCast\flycast.exe'.lower():raise ValueError('Selected PID is not the expected local Flycast')
-        target=(ROOT/'work/output'/VERSION/'1ST_READ.BIN').read_bytes()[START:END]
-        expected_afs=(ROOT/'work/output'/VERSION/'WIN00.AFS').read_bytes()
+        if Path(path.value).resolve()!=args.exe_path.resolve():raise ValueError('Selected PID is not the explicitly selected Flycast executable')
+        target=(component_dir/'1ST_READ.BIN').read_bytes()[START:END]
+        mutable=None
+        for filename in ('font-mode-details.json','font-mode-component.json'):
+            component_path=component_dir/filename
+            if component_path.exists():
+                component=json.loads(component_path.read_text('utf-8'))
+                if 'mode_address' in component:
+                    mutable=int(component['mode_address'],16)-0x8c010000-START
+                    assert 0<=mutable<=len(target)-32
+                    break
+        def kernel_matches(actual):
+            if mutable is None:return actual==target
+            return actual[:mutable]==target[:mutable] and actual[mutable+32:]==target[mutable+32:]
+        expected_afs=(component_dir/'WIN00.AFS').read_bytes()
         off,size=struct.unpack_from('<II',expected_afs,8)
         expected_magic=expected_afs[off:off+8]
         if expected_magic not in (b'RBLF4X\x00\x01',b'RBLF4X\x00\x02',b'RBLF4X\x00\x03',b'RBLF4X\x00\x04'):
@@ -77,7 +93,7 @@ def main():
                 start=match+2;candidate=base+match-0x10000-START
                 try:
                     actual=read(candidate+0x10000+START,len(target))
-                    if actual!=target:continue
+                    if not kernel_matches(actual):continue
                     matches.append(candidate)
                     ptr=struct.unpack('<I',read(candidate+0x1f36a4,4))[0]
                     if not 0x8c000000<=ptr<0x8d000000:continue
@@ -104,7 +120,7 @@ def main():
         font_ptr=struct.unpack('<I',game(0x8c1f36a4,4))[0]
         font_matches=game(font_ptr,size)==expected_afs[off:off+size]
         names_check=None
-        english_names=ROOT/'work/output'/VERSION/'text/D_NAMES.en.dec.bin'
+        english_names=component_dir/'text/D_NAMES.en.dec.bin'
         if english_names.exists():
             expected_names=english_names.read_bytes()
             bank0=int.from_bytes(game(0x8c1dbef4,4),'little')
@@ -115,11 +131,11 @@ def main():
                          'decoded_size':len(expected_names),
                          'entire_component_matches':valid and game(names_base,len(expected_names))==expected_names}
         library_check=None
-        library_patch=ROOT/'work/output'/VERSION/'library-patch-report.json'
+        library_patch=component_dir/'library-patch-report.json'
         if library_patch.exists():
             patch=json.loads(library_patch.read_text())
             shared=int.from_bytes(game(0x8c1dbf4c,4),'little')
-            expected_library=(ROOT/'work/output'/VERSION/'text/D_PAPER.en.dec.bin').read_bytes()
+            expected_library=(component_dir/'text/D_PAPER.en.dec.bin').read_bytes()
             library_base=shared+patch['library_destination_offset']
             valid=0x8c000000<=shared and library_base+len(expected_library)<=0x8d000000
             literal=int.from_bytes(game(0x8c0204b4,4),'little')
@@ -128,7 +144,7 @@ def main():
                 'entire_library_matches':valid and game(library_base,len(expected_library))==expected_library,
                 'note':'The shared buffer is reused; the library payload only matches while the profile UI has loaded it.'}
         scenario_check=None
-        scenario_report=ROOT/'work/output'/VERSION/'text/scenario-component-report.json'
+        scenario_report=component_dir/'text/scenario-component-report.json'
         if scenario_report.exists():
             component=json.loads(scenario_report.read_text('utf-8'))
             heap=int.from_bytes(game(0x8c0183f0,4),'little')
@@ -138,10 +154,10 @@ def main():
                 'original_script_base':hex(original_base),'original_base_preserved':original_base==0x8c010080,
                 'VM_pointer':hex(int.from_bytes(game(0x8c1dbe24,4),'little')),
                 'member_loaded':False,'note':'A member can be checked after the game actually loads a scenario.'}
-            hook_report=ROOT/'work/output'/VERSION/'scenario-patch-report.json'
+            hook_report=component_dir/'scenario-patch-report.json'
             if hook_report.exists():
                 hooks=json.loads(hook_report.read_text('utf-8'))
-                executable=(ROOT/'work/output'/VERSION/'1ST_READ.BIN').read_bytes()
+                executable=(component_dir/'1ST_READ.BIN').read_bytes()
                 checks=[]
                 for edit in hooks.get('edits',[]):
                     if 'code_bytes' not in edit:continue
@@ -215,6 +231,11 @@ def main():
                 'kernel_sha256':hashlib.sha256(target).hexdigest(),'english_names':names_check,'english_library':library_check,
                 'english_scenario':scenario_check,'surfaces':surfaces,
                 'visual_validation':'requires separate manual screenshot assessment; surface data alone is not a visual check'}
+        if mutable is not None:
+            state=game(0x8c010000+START+mutable,32)
+            report['font_modes']={'selected':'native' if state[0]==0 else 'HD',
+                'selector_active':bool(state[1]),'mutable_state_bytes':32,
+                'kernel_comparison':'All executable code and constant bytes exact; declared mutable state excluded'}
         print(json.dumps(report,indent=2))
         if args.report:
             args.report.parent.mkdir(parents=True,exist_ok=True)

@@ -1,0 +1,38 @@
+{
+  "version": "0.7.7",
+  "kind": "Local xdelta package; no GitHub release",
+  "zip": "work/output/0.7.7/Rayblade-English-v0.7.7-xdelta.zip",
+  "zip_bytes": 7957360,
+  "zip_sha256": "b6b93b132ac14cb55debd6700ce302474921924667740721e84dd7edcc9f58d4",
+  "patches": [
+    {
+      "patch": "Rayblade-English-v0.7.7-Track03.xdelta",
+      "patch_bytes": 532,
+      "patch_sha256": "97ef044531d9f7941af09939f60f5014c4459e3a9302df731ba9e9eb35bec529",
+      "source_sha256": "6513b0292f67ddf25ae53db6157deabce46c0bc1abc5dd261b5884ce2a242886",
+      "target_sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+    },
+    {
+      "patch": "Rayblade-English-v0.7.7-Track05.xdelta",
+      "patch_bytes": 7944300,
+      "patch_sha256": "a3dd66be44aef8abaed1a6bfa6b9861d8cbc412aea6f109d52e74ffd81374611",
+      "source_sha256": "b8a0c55de28b1a486183ba11da0677ccb30c48d98d13a02bab636a8022b2841d",
+      "target_sha256": "ef693d640788aad10a8a1d19b9255edbd79434ee9d889366f19b1e26d6feb16c"
+    },
+    {
+      "patch": "Rayblade-English-v0.7.7-GDI.xdelta",
+      "patch_bytes": 208,
+      "patch_sha256": "ffc1341d67394c545fdce6c0c7e1e812cd9dbdc1a35ad0d5f4e72804b803ccff",
+      "source_sha256": "3c001dba5ab4e53cb9ae421a3aefc6c9800a29b818ef4e82a40ff79a01ffe479",
+      "target_sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+    }
+  ],
+  "full_decode_roundtrips": 3,
+  "retro_trans_complete_disc_verification": "pass; all six output files exact",
+  "zip_integrity_and_member_hashes": "pass",
+  "source_provenance": {
+    "git_baseline": "487fc819a1f432bf4605c5cae7a27318290081d5",
+    "working_tree": "Local uncommitted font/movie/choice/map/name changes; source_commit identifies the baseline, not an exact reproducible commit",
+    "authoritative_identity": "Target SHA-256 values in BUILD-MANIFEST.json and TARGET-HASHES"
+  }
+}

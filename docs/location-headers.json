@@ -1,0 +1,54 @@
+{
+  "version": "0.7.11",
+  "source_build": "0.7.10",
+  "source_executable_sha256": "964cd002839faab5ea519683ec9e4c20c0d071122e038257d528cb64c9e3c788",
+  "executable_sha256": "9ce5d3bb16532d4af081673894982855f69b303a0d22b413e4d457b2475f9d84",
+  "patch_range": [
+    "0x66d38",
+    "0x66e4e"
+  ],
+  "reason": "The original measurement reserves 8 pixels per Latin byte, while the integrated font has variable advances.",
+  "scope": "Only group 6 location widths use current font advances; other groups retain original 8/12 counting and controls.",
+  "right_anchor": 313,
+  "text_y": 22,
+  "decorative_geometry_and_animation": "unchanged original code",
+  "font_and_all_assets": "byte-exact 0.7.10",
+  "release": false,
+  "live_validation": "pending",
+  "unchanged_other_group_cases": 2984,
+  "native_header_geometry_cases": 512,
+  "SH4_instructions": 2640544,
+  "checks": [
+    "All location widths match original native font advances in both banks",
+    "All other valid name rows match the prior native measurement exactly",
+    "Only the measurement function differs; location placement, caps, body sizing and animation remain byte-exact"
+  ],
+  "limits": [
+    "Native location geometry executes; final text/GPU submission endpoints are bounded fixtures.",
+    "Live GPU appearance and physical hardware pending",
+    "Stage 6 issue #1 unresolved"
+  ],
+  "location_rows": 256,
+  "font_banks": 2,
+  "example_summoning_facility": [
+    {
+      "font_bank": "HD",
+      "id": "names.g06.008",
+      "old_width": 232,
+      "width": 138,
+      "text_x": 175,
+      "ink_right": 138.5,
+      "right_margin": 6.5
+    },
+    {
+      "font_bank": "Native",
+      "id": "names.g06.008",
+      "old_width": 232,
+      "width": 138,
+      "text_x": 175,
+      "ink_right": 138.5,
+      "right_margin": 6.5
+    }
+  ],
+  "proof": "work/output/0.7.11/location-header-native-test.json"
+}

@@ -1,0 +1,611 @@
+{
+  "version": "0.7.10",
+  "source_build": "0.7.9",
+  "files": {
+    "1ST_READ.BIN": {
+      "size": 1135588,
+      "sha256": "964cd002839faab5ea519683ec9e4c20c0d071122e038257d528cb64c9e3c788"
+    },
+    "D_NAMES.BIN": {
+      "size": 33944,
+      "sha256": "ee007e16e659c1d3e34c18ec21316bbf413f952607d21ddf856412cff9656881"
+    },
+    "ITM00.AFS": {
+      "size": 1349632,
+      "sha256": "0d840ddb427b0d23ebb1d93cabc402644d57c700b9833571f0f8122293643870"
+    }
+  },
+  "signed_number_change": {
+    "range": [
+      "0x2c1ae",
+      "0x2c1ca"
+    ],
+    "positive": "+",
+    "negative": "-",
+    "neutral": "+0 instead of the unavailable original plus/minus symbol",
+    "magnitude_and_gameplay": "unchanged"
+  },
+  "text_changes": [
+    {
+      "id": "names.g00.107",
+      "before": "Register Topic",
+      "after": "Topic Log"
+    },
+    {
+      "id": "names.g00.199",
+      "before": "There are not enough free blocks on the memory card.<NL>Saving this game requires<NL>at least 8 free blocks.",
+      "after": "Not enough free blocks.<NL>Saving requires at least<NL>8 free blocks."
+    }
+  ],
+  "room_tags": [
+    {
+      "sprite": 35,
+      "en": "Lodis",
+      "name_id": "names.g02.017",
+      "name_source_sha256": "b6059430f5563f79a202307607479097bd75ef8cae3402eb6ac72f90b298995c",
+      "box": [
+        256,
+        128,
+        288,
+        144
+      ],
+      "mask_size": [
+        17,
+        8
+      ],
+      "source_pixels_sha256": "ff5496372ac3856294a40bba07a52d70728161447647deb537cd420141c3ffcd"
+    },
+    {
+      "sprite": 36,
+      "en": "Roa",
+      "name_id": "names.g02.089",
+      "name_source_sha256": "783b00a50d6224bcd919afa9fc15ac370dc3ba7658a4a67eb6ad944f148d58c3",
+      "box": [
+        256,
+        144,
+        288,
+        160
+      ],
+      "mask_size": [
+        11,
+        8
+      ],
+      "source_pixels_sha256": "d0fe80ad65cb3090ddc65ec76f87400b1a455399229cc9e89b333e1f8af4b81a"
+    },
+    {
+      "sprite": 37,
+      "en": "Ymir",
+      "name_id": "names.g02.003",
+      "name_source_sha256": "fffb0fe18549082f81e3d90442c42e685ea4787ca2ad55ca48a457c49b26bde1",
+      "box": [
+        256,
+        160,
+        288,
+        176
+      ],
+      "mask_size": [
+        15,
+        8
+      ],
+      "source_pixels_sha256": "2dd1eab9b42835539299728e6682b4c16d88eaff784e6807ec998938462519bb"
+    },
+    {
+      "sprite": 38,
+      "en": "Ai",
+      "name_id": "names.g02.002",
+      "name_source_sha256": "d9175eb5b83b90c19148a16f78781ccdaa54175cac1fa0d377ce409ea150e8f9",
+      "box": [
+        256,
+        176,
+        288,
+        192
+      ],
+      "mask_size": [
+        6,
+        8
+      ],
+      "source_pixels_sha256": "bdff4ad4ee35149abe308b27af7724ec413f9375d9ee0df43cae3dc610f47189"
+    },
+    {
+      "sprite": 39,
+      "en": "Kasumi",
+      "name_id": "names.g02.004",
+      "name_source_sha256": "af923393d50d921c032da6b17fd5faeb0202acfffad848afdce5aac50b05ec13",
+      "box": [
+        256,
+        192,
+        288,
+        208
+      ],
+      "mask_size": [
+        22,
+        8
+      ],
+      "source_pixels_sha256": "6fa589605be2436eeb53e374b6ca4acfbf271982c46ce94a2f78f27de5dc9f19"
+    },
+    {
+      "sprite": 40,
+      "en": "Clovis",
+      "name_id": "names.g02.006",
+      "name_source_sha256": "4269ceae349e2bbf9557c198876353e0c8d33bc3dfee05eae073b0d04f80d563",
+      "box": [
+        256,
+        208,
+        288,
+        224
+      ],
+      "mask_size": [
+        21,
+        8
+      ],
+      "source_pixels_sha256": "355ec1078d7c30e8b3b5072e58f986632eb49a83e01f9deb789dc7ba251c29f8"
+    },
+    {
+      "sprite": 41,
+      "en": "Xiujian",
+      "name_id": "names.g02.005",
+      "name_source_sha256": "8376202d4bfef66d6734935b3d67691d5d98b25bec2a55fcb3971405cd21eb08",
+      "box": [
+        256,
+        224,
+        288,
+        240
+      ],
+      "mask_size": [
+        23,
+        8
+      ],
+      "source_pixels_sha256": "02f55b3bd9289934d18851dcd081a0e657110a58f4e9c56371cc6e9f17c86a56"
+    },
+    {
+      "sprite": 42,
+      "en": "Fain",
+      "name_id": "names.g02.007",
+      "name_source_sha256": "35df577947334b7c407c2037a9f02aa0d7c312a110529eb752c651d173469c20",
+      "box": [
+        256,
+        240,
+        288,
+        256
+      ],
+      "mask_size": [
+        13,
+        8
+      ],
+      "source_pixels_sha256": "9bc766af7e40945f0a57da9b027b47020f70e443d45c5c21f2cf2504a2606a4a"
+    },
+    {
+      "sprite": 43,
+      "en": "Arthur",
+      "name_id": "names.g02.011",
+      "name_source_sha256": "0ca9c4997d48478b18535f2475712eddefcd6a25a1af5840b194a81b68729901",
+      "box": [
+        288,
+        128,
+        320,
+        144
+      ],
+      "mask_size": [
+        24,
+        8
+      ],
+      "source_pixels_sha256": "c38532048cfad1956563b2b4821085e876385d526041da381c346c33d48f7b6d"
+    },
+    {
+      "sprite": 44,
+      "en": "Melissa",
+      "name_id": "names.g02.015",
+      "name_source_sha256": "00e3ac4aad4a07420d3a2ab91ed0d4ee017297e002e4ba8a9966c5a8e57b462b",
+      "box": [
+        288,
+        144,
+        320,
+        160
+      ],
+      "mask_size": [
+        24,
+        8
+      ],
+      "source_pixels_sha256": "5c873b9ec1f8c675c735669e190481d59875c2c34735e16be6ba1e3cea7a989e"
+    },
+    {
+      "sprite": 45,
+      "en": "Celica",
+      "name_id": "names.g02.016",
+      "name_source_sha256": "ce33b5bf243813a781fb97c97a8fe3d1950933681890343d7534e867d0e7c68a",
+      "box": [
+        288,
+        160,
+        320,
+        176
+      ],
+      "mask_size": [
+        20,
+        8
+      ],
+      "source_pixels_sha256": "2f1b0ef6fcb6329a8a089cd8c89a34aa9c850763bc3c772f1671c78702cd4efb"
+    },
+    {
+      "sprite": 46,
+      "en": "Gen",
+      "name_id": "names.g02.009",
+      "name_source_sha256": "1643d2840c9661d51a0cce1e503fdc290c1d8c64e08b369e44deef7ed31eaeb3",
+      "box": [
+        288,
+        176,
+        320,
+        192
+      ],
+      "mask_size": [
+        12,
+        8
+      ],
+      "source_pixels_sha256": "4a6bdf0a2be524b24ae98ed17b83c659b73a892e75467545f20ed68ea46e6fdd"
+    },
+    {
+      "sprite": 47,
+      "en": "Kururu",
+      "name_id": "names.g02.014",
+      "name_source_sha256": "0f354c1ac1ba0c4a07c638ef69b7d82e7faad324e1fcfda90d32eec539c61652",
+      "box": [
+        288,
+        192,
+        320,
+        208
+      ],
+      "mask_size": [
+        23,
+        8
+      ],
+      "source_pixels_sha256": "ad529fd1d3bb7dbe9223e1505e338c01f7963d07fbf1201a991eed619870b66c"
+    },
+    {
+      "sprite": 48,
+      "en": "Melvi",
+      "name_id": "names.g02.012",
+      "name_source_sha256": "7d4eff8cbb679590d1e63094cba4c5ffe971491511c9c0506567107dfed8c29f",
+      "box": [
+        288,
+        208,
+        320,
+        224
+      ],
+      "mask_size": [
+        17,
+        8
+      ],
+      "source_pixels_sha256": "ed4f5f5249fe412d557e6e535640786694e7afe2508a9f6f71509916501b4e93"
+    },
+    {
+      "sprite": 49,
+      "en": "Oswald",
+      "name_id": "names.g02.138",
+      "name_source_sha256": "82a070d67e3810d389f038551432041b1e2b88282a5b68182d3dd23304c65565",
+      "box": [
+        288,
+        224,
+        320,
+        240
+      ],
+      "mask_size": [
+        23,
+        8
+      ],
+      "source_pixels_sha256": "67d534145188ede00d0d605feb6f2767cf6a8e2025f3e6af6db3e7f6d7d89957"
+    },
+    {
+      "sprite": 50,
+      "en": "Miyasco",
+      "name_id": "names.g02.084",
+      "name_source_sha256": "dfcf733ff2fb43f32f6bc78ecadc5746fd429acb30b552615c2d5d113cb394a9",
+      "box": [
+        288,
+        240,
+        320,
+        256
+      ],
+      "mask_size": [
+        26,
+        8
+      ],
+      "source_pixels_sha256": "6a24dc96272859ae7b8dd987ba07836f5129244624cb675b286771d9f85074c7"
+    },
+    {
+      "sprite": 51,
+      "en": "Bart",
+      "name_id": "names.g02.087",
+      "name_source_sha256": "c1bf2c983376184642b2021cdc5589487cca7ebd6788b879fed0cb8ac772f09a",
+      "box": [
+        320,
+        128,
+        352,
+        144
+      ],
+      "mask_size": [
+        15,
+        8
+      ],
+      "source_pixels_sha256": "7aa11a0fff4030c89c25b242f5f194ed27500b8e973ad549ca0da2cf7829a0ec"
+    },
+    {
+      "sprite": 52,
+      "en": "Barkin",
+      "name_id": "names.g02.053",
+      "name_source_sha256": "7cd9923a5662403f9d12b26f9de94b3c34e10f9075e659c19c460fa21aed8dae",
+      "box": [
+        320,
+        144,
+        352,
+        160
+      ],
+      "mask_size": [
+        21,
+        8
+      ],
+      "source_pixels_sha256": "bcec4544ff29662077a097dccf85f76173064ef922c9ad3a45f91b365140b182"
+    },
+    {
+      "sprite": 53,
+      "en": "Derock",
+      "name_id": "names.g02.086",
+      "name_source_sha256": "bab2cd30ab8711b912cfe0ef727656fa7b01c0a705c600184f933439ae230dd4",
+      "box": [
+        320,
+        160,
+        352,
+        176
+      ],
+      "mask_size": [
+        23,
+        8
+      ],
+      "source_pixels_sha256": "c00e27e951c2aa60571bd85b1d8247b77fbddf9d6d085c8ff5cfbefb9f62b4fc"
+    },
+    {
+      "sprite": 54,
+      "en": "Sisk",
+      "name_id": "names.g02.088",
+      "name_source_sha256": "9f5e1bc2858e87411ac9c29c25596aba691fc74f4d485def103794dfd3733471",
+      "box": [
+        320,
+        176,
+        352,
+        192
+      ],
+      "mask_size": [
+        14,
+        8
+      ],
+      "source_pixels_sha256": "b213d218876f9a945f0e8dca56a5d063ee591bac309dcec876d4da362b208375"
+    },
+    {
+      "sprite": 55,
+      "en": "Rosalie",
+      "name_id": "names.g02.008",
+      "name_source_sha256": "b4e7fdc6f88b573b9dbae88d12886dc8379ad39120703f42e6cec751f2e1697e",
+      "box": [
+        320,
+        192,
+        352,
+        208
+      ],
+      "mask_size": [
+        23,
+        8
+      ],
+      "source_pixels_sha256": "a8938e6541826fef176f2405c87d908461baccac3d6a4a78fb17ffd7bb8772e5"
+    },
+    {
+      "sprite": 56,
+      "en": "Maki",
+      "name_id": "names.g02.100",
+      "name_source_sha256": "355509dcb7aad1bb5a37a29a75b47eb55c8024a1002babc8fad7930a9884f573",
+      "box": [
+        320,
+        208,
+        352,
+        224
+      ],
+      "mask_size": [
+        14,
+        8
+      ],
+      "source_pixels_sha256": "feb26815626fce7205c60511115bccdaa9c1f0a6b4549f3dda868f1ad30ef1ff"
+    },
+    {
+      "sprite": 57,
+      "en": "Leone",
+      "name_id": "names.g02.013",
+      "name_source_sha256": "5d52cbc56fba966346a10b554cc4e64f14c41b11bb69c571ee80bf71e5806bfe",
+      "box": [
+        320,
+        224,
+        352,
+        240
+      ],
+      "mask_size": [
+        19,
+        8
+      ],
+      "source_pixels_sha256": "56c9f15286924dbe4c3f92869bdddc28da341bf7f796a5d4b5625af422d8942e"
+    },
+    {
+      "sprite": 58,
+      "en": "Ciel",
+      "name_id": "names.g02.023",
+      "name_source_sha256": "538eb80b814493f188c7a35fafca0fafffe1f043e146ce172f3ab574a1f75a99",
+      "box": [
+        320,
+        240,
+        352,
+        256
+      ],
+      "mask_size": [
+        12,
+        8
+      ],
+      "source_pixels_sha256": "d2a251849b3c3c09d8262bc18b3acf654a4cd1c775d2e2b47cc73ef2dc319d74"
+    },
+    {
+      "sprite": 59,
+      "en": "Rishuna",
+      "name_id": "names.g02.032",
+      "name_source_sha256": "9da06433bdad335ae0b66c6ceb7127362080dd27b82872418143a14f0378246c",
+      "box": [
+        352,
+        128,
+        384,
+        144
+      ],
+      "mask_size": [
+        25,
+        8
+      ],
+      "source_pixels_sha256": "c79b59efc78ce404f3dd045c7b6e804c04d7a40788fce2e2e878ef58aa767005"
+    },
+    {
+      "sprite": 60,
+      "en": "Yamato",
+      "name_id": "names.g02.019",
+      "name_source_sha256": "824f2bbc2334eb6f41610673ebf4bd5e993f9adc179ab071fa0efc54643d6281",
+      "box": [
+        352,
+        144,
+        384,
+        160
+      ],
+      "mask_size": [
+        25,
+        8
+      ],
+      "source_pixels_sha256": "a3173583aefb1d5174d2fac4f55aab2332a4062500b434257845f5ed2a1562a5"
+    },
+    {
+      "sprite": 61,
+      "en": "Aurelie",
+      "name_id": "names.g02.010",
+      "name_source_sha256": "91e0c66e33d55dbd890ad21453c99ce340cb3313b2dc1bf954b2a635a7f38cfc",
+      "box": [
+        352,
+        160,
+        384,
+        176
+      ],
+      "mask_size": [
+        24,
+        8
+      ],
+      "source_pixels_sha256": "ac407cb88645939a69b5a5520449e636fc5cce0e1b43ca45bb372484e7c462e9"
+    },
+    {
+      "sprite": 62,
+      "en": "Alforina",
+      "name_id": "names.g02.090",
+      "name_source_sha256": "ec010231cbe93353dc71284cfbf188378cb78750c70417700648f3a030d42453",
+      "box": [
+        352,
+        176,
+        384,
+        192
+      ],
+      "mask_size": [
+        28,
+        8
+      ],
+      "source_pixels_sha256": "44680bbaf4201d802fcae05cc624cd9521f7b6bdf48778f1d87b07c2691a5d39"
+    },
+    {
+      "sprite": 63,
+      "en": "Garyud",
+      "name_id": "names.g02.020",
+      "name_source_sha256": "6c20370f2ba31d3db9125d6f14f5655337ad8f9e9904e425ce6002ba794e0f1e",
+      "box": [
+        352,
+        192,
+        384,
+        208
+      ],
+      "mask_size": [
+        24,
+        8
+      ],
+      "source_pixels_sha256": "d43c74f343e1a6ee5006798b896bc5bb33ab50a1e2e97274f3807ad2556aad28"
+    },
+    {
+      "sprite": 64,
+      "en": "Reduce",
+      "name_id": "names.g02.021",
+      "name_source_sha256": "47cadda23d53f661ea25a4aa86bc9a967d1d685036557d1bf64e15eda23075dd",
+      "box": [
+        352,
+        208,
+        384,
+        224
+      ],
+      "mask_size": [
+        23,
+        8
+      ],
+      "source_pixels_sha256": "0757fd61a4bef09a7dba178c9b7653f20e91e2373a3891ba522960e5a21a34ec"
+    },
+    {
+      "sprite": 65,
+      "en": "Ciel",
+      "name_id": "names.g02.023",
+      "name_source_sha256": "538eb80b814493f188c7a35fafca0fafffe1f043e146ce172f3ab574a1f75a99",
+      "box": [
+        352,
+        224,
+        384,
+        240
+      ],
+      "mask_size": [
+        12,
+        8
+      ],
+      "source_pixels_sha256": "1c103ec5d3bdfd530d43c1df9be8de37a3cca6134c293463d00abb81c093cde3"
+    },
+    {
+      "sprite": 67,
+      "en": "Cain",
+      "name_id": "names.g02.047",
+      "name_source_sha256": "30889b06785c4ebc94d07957dfc64d9b58c4da17ef5026a0bfb66f8022ec76da",
+      "box": [
+        384,
+        128,
+        416,
+        144
+      ],
+      "mask_size": [
+        14,
+        8
+      ],
+      "source_pixels_sha256": "12b4eb437ba77739e122888f844f8709f5f6d150ed57d9f2f58ca1ae257eddae"
+    },
+    {
+      "sprite": 68,
+      "en": "Grad",
+      "name_id": "names.g02.042",
+      "name_source_sha256": "e90a8169a6cf0beb0d4416adae3fc220c7d5bb39a3706a00c5f4c92d9a42434f",
+      "box": [
+        384,
+        144,
+        416,
+        160
+      ],
+      "mask_size": [
+        16,
+        8
+      ],
+      "source_pixels_sha256": "fee1049eac3a7721ed46391ed050b527773ef75888dde2f7687c5c0995cca8b7"
+    }
+  ],
+  "source_ITM00_sha256": "bb9464206385f2fbdefaa64e493a14eb79ad7693e6accff578a946e4adcb7fd3",
+  "texture_sha256": "1208b256d5019e086efb1024b535972176adcb5174a043d278a304037769df04",
+  "name_tag_scope": "33 source-read tags, including Clovis and Arthur; unidentified sprite 66 remains exact.",
+  "font": "Uniform 1/3 reduction of original Skies USA Dreamcast 12x24 VQ pixels; no individual letter stretching",
+  "unrelated_ITM00_members": "All 25 other payloads and sprite geometry exact",
+  "names_decoded_sha256": "41f08dfa44fca33df5e5bc3556a8991dd53855c010457543b24a4b73af804bc0",
+  "live_validation": "pending",
+  "release": false
+}

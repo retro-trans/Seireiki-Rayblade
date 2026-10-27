@@ -1,0 +1,168 @@
+{
+  "version": "0.7.7",
+  "previous_build": "0.7.6",
+  "weapon_pen_limit": 136,
+  "movie_pen_limit": 240,
+  "aliases": [
+    {
+      "id": "names.g04.005",
+      "before": "True One-Sword Art: Vanishing Shadow",
+      "after": "Vanishing Shadow",
+      "old_pen_width": 182,
+      "pen_width": 81,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.006",
+      "before": "First Blade: Mighty Thunder Triumph Slash",
+      "after": "1st Blade: Thunder Slash",
+      "old_pen_width": 197,
+      "pen_width": 116,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.020",
+      "before": "Seven Flashes: Dragon Command Rift Breaker",
+      "after": "Seven Flashes: Dragon Rift",
+      "old_pen_width": 218,
+      "pen_width": 131,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.026",
+      "before": "Second Blade: Dragon Slayer",
+      "after": "2nd Blade: Dragon Slayer",
+      "old_pen_width": 137,
+      "pen_width": 119,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.082",
+      "before": "Phantom Night Blade: Heaven Soar, Sky Rend",
+      "after": "Phantom Blade: Sky Rend",
+      "old_pen_width": 212,
+      "pen_width": 118,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.084",
+      "before": "Heavenly Blade: Violet Flame Supreme Victory Slash",
+      "after": "Heavenly Blade: Violet Flame",
+      "old_pen_width": 245,
+      "pen_width": 134,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.087",
+      "before": "Twin Supremacy: Gale Demon Wolf Flash Slash",
+      "after": "Twin Might: Demon Wolf Flash",
+      "old_pen_width": 210,
+      "pen_width": 132,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.093",
+      "before": "Fury: Flame Wave, Heavenward Thunder Burst",
+      "after": "Fury: Heavenward Thunder",
+      "old_pen_width": 215,
+      "pen_width": 126,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.100",
+      "before": "Rondo in a Breeze of Sorrow",
+      "after": "Sorrow-Wind Rondo",
+      "old_pen_width": 137,
+      "pen_width": 90,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.103",
+      "before": "Pleasures of the Mortal Form",
+      "after": "Mortal Pleasures",
+      "old_pen_width": 143,
+      "pen_width": 82,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.201",
+      "before": "True One-Sword Art: Vanishing Shadow",
+      "after": "Vanishing Shadow",
+      "old_pen_width": 182,
+      "pen_width": 81,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.202",
+      "before": "Mighty Sword Zeulear (Malfunctioning)",
+      "after": "Mighty Zeulear (Broken)",
+      "old_pen_width": 179,
+      "pen_width": 113,
+      "limit": 136
+    },
+    {
+      "id": "names.g04.217",
+      "before": "Mighty Sword Zeulear (Malfunctioning)",
+      "after": "Mighty Zeulear (Broken)",
+      "old_pen_width": 179,
+      "pen_width": 113,
+      "limit": 136
+    },
+    {
+      "id": "names.g12.020",
+      "before": "Rayblade: True One-Sword Art: Vanishing Shadow",
+      "after": "Rayblade: Vanishing Shadow",
+      "old_pen_width": 231,
+      "pen_width": 130,
+      "limit": 240
+    },
+    {
+      "id": "names.g12.021",
+      "before": "Rayblade: First Blade: Mighty Thunder Triumph Slash",
+      "after": "Rayblade: 1st Blade: Thunder Slash",
+      "old_pen_width": 246,
+      "pen_width": 165,
+      "limit": 240
+    },
+    {
+      "id": "names.g12.029",
+      "before": "Zeifon: Second Blade: Dragon Slayer",
+      "after": "Zeifon: 2nd Blade: Dragon Slayer",
+      "old_pen_width": 173,
+      "pen_width": 155,
+      "limit": 240
+    },
+    {
+      "id": "names.g12.030",
+      "before": "Zeifon: True One-Sword Art: Vanishing Shadow",
+      "after": "Zeifon: Vanishing Shadow",
+      "old_pen_width": 218,
+      "pen_width": 117,
+      "limit": 240
+    },
+    {
+      "id": "names.g12.031",
+      "before": "Hongshenguang: Seven Flashes: Dragon Command Rift Breaker",
+      "after": "Hongshenguang: Seven Flashes: Dragon Rift",
+      "old_pen_width": 296,
+      "pen_width": 209,
+      "limit": 240
+    },
+    {
+      "id": "names.g12.040",
+      "before": "Parthenos: Rondo in a Breeze of Sorrow",
+      "after": "Parthenos: Sorrow-Wind Rondo",
+      "old_pen_width": 193,
+      "pen_width": 146,
+      "limit": 240
+    },
+    {
+      "id": "names.g12.041",
+      "before": "Eleana: Pleasures of the Mortal Form",
+      "after": "Eleana: Mortal Pleasures",
+      "old_pen_width": 179,
+      "pen_width": 118,
+      "limit": 240
+    }
+  ]
+}

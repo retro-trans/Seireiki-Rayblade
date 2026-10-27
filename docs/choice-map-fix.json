@@ -1,0 +1,71 @@
+{
+  "version": "0.7.6",
+  "source_build": "0.7.5",
+  "kind": "Local choice/map fix; no GitHub release",
+  "files": {
+    "1ST_READ.BIN": {
+      "size": 1135588,
+      "sha256": "ff6b1ca63c6923ec545d90270c89df6d4cafc01205f5790858c0f438f709ae48"
+    },
+    "D_SCE.AFS": {
+      "size": 4079616,
+      "sha256": "34774f359f2f22f6ea3f93de5150f7efe87be552f945fc66431152d900fa98c8"
+    },
+    "WMAP.AFS": {
+      "size": 5179392,
+      "sha256": "d0d0e39b575df0a9d8a20af0a2d4defb6a691c6d193fe74ac666bbbd443db09b"
+    }
+  },
+  "story_choices": {
+    "commands": 961,
+    "changed_commands": 952,
+    "compact_commands": 13,
+    "wording": "unchanged",
+    "row_pitch_logical_pixels": 16,
+    "reported_options": [
+      "Let them pass",
+      "Attack"
+    ],
+    "normal_dialogue_streams_unchanged": 49312
+  },
+  "map": {
+    "glyph_source": "Original Skies of Arcadia USA Dreamcast 12x24 Latin glyphs",
+    "texture_dimensions": [
+      512,
+      128
+    ],
+    "VRAM_bytes": 131072,
+    "position": "Whole physical pixels, restricted to English map labels",
+    "markers_and_terrain": "unchanged",
+    "cause_status": "Separate texture scaling/sampling and subpixel placement addressed; animation as the sole cause is not established"
+  },
+  "validation": {
+    "native": "pass; all 961 list format/parser/VM cases, three loader cases, map source pixels/alpha, registration, geometry, PRS and 126 hook cases",
+    "disc": {
+      "reextracted_files": "all 14 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "live": "Flycast VGA/1x cold boot and opening inspected; exact choice/menu/map motion remain pending"
+  },
+  "limits": [
+    "Native choices, map glyphs/geometry/draw hook and loader/decode pass; see choice-map-native-test.json and choice-map-loader-PRS-test.json",
+    "Flycast cold boot and opening playback inspected; requested choice and moving map were not reached during live inspection",
+    "Physical hardware/non-VGA/full-game validation pending"
+  ],
+  "records": [
+    "work/output/0.7.6/choice-map-native-test.json",
+    "work/output/0.7.6/choice-map-loader-PRS-test.json",
+    "work/output/0.7.6/english-disc-report.json"
+  ],
+  "tools": [
+    "tools/build_choice_map_fix.py",
+    "tools/build_choice_map_fix_disc.py",
+    "tools/choice_layout.py",
+    "tools/test_choice_map_fix.py"
+  ]
+}

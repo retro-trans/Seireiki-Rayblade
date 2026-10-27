@@ -118,14 +118,23 @@ def mem(a,size,ptr,offset,reg,write=False,scratch=0):
     else:a.load(size,scratch,reg)
 
 
-def assemble(*,wide=False,small_data=SMALL_DATA,medium_data=MEDIUM_DATA,antialias=False):
+def assemble(*,wide=False,small_data=SMALL_DATA,medium_data=MEDIUM_DATA,antialias=False,
+             font_mode_address=None, native_font_offset=0, native_surface_exponent=0,
+             native_shadow_pixels=None):
     assert not antialias or wide
+    assert native_surface_exponent in (0,1)
     a=Assembler(BASE+START)
     a.label('raster')
     local_bytes=56 if antialias else 40 if wide else 24
     prologue(a,locals=local_bytes)
     a.lit(0x8c1f36ba,0);a.load('b',0,13);a.rr('extu.b',13,13)
     a.lit(0x8c1f36a4,0);a.load('l',0,8)
+    if font_mode_address is not None:
+        assert antialias and native_font_offset > 0
+        a.lit(font_mode_address,0);a.load('b',0,0);a.rr('tst',0,0)
+        a.branch('bf','r_selected_font')
+        a.lit(native_font_offset,0);a.rr('add',0,8)
+        a.label('r_selected_font')
     a.rr('mov',13,0);a.emit(0xc840);a.branch('bt','r_medium')
     a.rr('mov',4,0);a.addi(-32,0);a.emit(0xc97f);a.rr('mov',0,4)
     a.imm(len(SMALL),0);a.rr('cmp/hs',0,4);a.branch('bf','r_small_valid');a.imm(SMALL_Q,4)
@@ -169,6 +178,12 @@ def assemble(*,wide=False,small_data=SMALL_DATA,medium_data=MEDIUM_DATA,antialia
         a.unary('shlr',12);a.unary('shll',2);a.emit(0x1f22)
         a.label('r_aa_counts_done')
     a.imm(2,2);a.rr('shld',1,2);a.emit(0x1f23) # physical shadow offset
+    if native_shadow_pixels is not None:
+        assert font_mode_address is not None and native_shadow_pixels in (1,2)
+        a.lit(font_mode_address,0);a.load('b',0,0);a.rr('tst',0,0)
+        a.branch('bf','r_shadow_selected')
+        a.imm(native_shadow_pixels*2,0);a.emit(0x1f03)
+        a.label('r_shadow_selected')
     a.lit(0x8c1f36b4,0);a.load('w',0,0);a.addi(-17,0);a.unary('shll',0);a.rr('mov',0,2)
     a.rr('mov',13,0);a.emit(0xc90e);a.rr('add',2,0);a.rr('extu.w',0,0);a.unary('shll',0)
     a.lit(0x8c0980a8,1);a.rr('add',1,0);a.addi(2,0);a.load('w',0,14)
@@ -241,7 +256,18 @@ def assemble(*,wide=False,small_data=SMALL_DATA,medium_data=MEDIUM_DATA,antialia
     a.label('a_native_width');a.lit(513,0)
     a.rr('cmp/hs',0,9);a.branch('bf','a_native_height');a.imm(0,11)
     a.label('a_native_height');a.rr('cmp/hs',0,10);a.branch('bf','a_scan');a.imm(0,12)
-    a.label('a_scan');a.imm(0,13);a.lit(0x8c1f0d3c,1);a.imm(48,2)
+    a.label('a_scan')
+    if font_mode_address is not None:
+        a.lit(font_mode_address,0);a.load('b',0,0);a.rr('tst',0,0)
+        a.branch('bf','a_selected_scale');a.imm(0,11);a.imm(0,12)
+        if native_surface_exponent:
+            # UI coordinates are 320x240. Two texels per coordinate produce
+            # one texel per physical pixel at the game's 640x480 output.
+            a.lit(513,0);a.rr('cmp/hs',0,9);a.branch('bt','a_native_x_done');a.imm(1,11)
+            a.label('a_native_x_done')
+            a.rr('cmp/hs',0,10);a.branch('bt','a_selected_scale');a.imm(1,12)
+        a.label('a_selected_scale')
+    a.imm(0,13);a.lit(0x8c1f0d3c,1);a.imm(48,2)
     a.label('a_scan_loop');a.load('l',1,3);a.rr('tst',3,3);a.branch('bt','a_scan_next')
     mem(a,'l',3,20,6);a.addi(32,6);a.rr('add',6,13)
     a.label('a_scan_next');a.addi(92,1);a.unary('dt',2);a.branch('bf','a_scan_loop')

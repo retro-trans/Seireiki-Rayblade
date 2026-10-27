@@ -1,6 +1,6 @@
 {
-  "version": "0.7.2",
-  "stage": "VGA integration and original Japanese opening/demo movies; English translation payloads retained from 0.7.0, full review and live gameplay checks pending",
+  "version": "0.7.11",
+  "stage": "Native/HD font selection, 640x480 output and accumulated 0.7.3-0.7.11 UI/map/numeric/room/header fixes; Stage 6 issue #1 unresolved; newest live appearance and full review pending",
   "glossary": {
     "entries": 851,
     "categories": {
@@ -21444,5 +21444,16 @@
     "movie_record": "docs/original-opening-movies.json",
     "vga_record": "docs/vga-support.json",
     "independent_full_proofreading": "unfinished"
+  },
+  "release_0_7_11": {
+    "source_build": "0.7.11",
+    "notes": "docs/releases/v0.7.11.md",
+    "native_font_record": "docs/native-font-640.json",
+    "header_record": "docs/location-headers.json",
+    "modified_payloads": 15,
+    "story_holds": 503,
+    "unidentified_room_tag": 66,
+    "issue_1": "unresolved",
+    "live_latest_UI": "pending"
   }
 }

@@ -1,0 +1,132 @@
+{
+  "version": "0.7.5",
+  "date": "2026-10-27",
+  "kind": "Local test; no public release",
+  "source_render_candidate": "0.7.4, work/output/skies-render-test",
+  "disc_preservation_base": "0.7.3, verified complete disc",
+  "executable_sha256": "690bb984eb87bf657070fffefae4a568fe33425e61545ab8ee15aa7744be4d87",
+  "WIN00_sha256": "3483d353e24b456e6cb7688de9594f7e0d0a10ac00c14343b300d88c4d5462ad",
+  "changed_executable_bytes_from_074": 28,
+  "native_font": {
+    "source": "Original Skies of Arcadia USA Dreamcast Latin font",
+    "main_source_cell": [
+      12,
+      24
+    ],
+    "compact_cell": [
+      8,
+      16
+    ],
+    "source_alpha_levels": [
+      0,
+      85,
+      187,
+      255
+    ],
+    "normal_main_sampling": "One original glyph texel per framebuffer pixel at normal 640x480 Native surfaces",
+    "physical_framebuffer": [
+      640,
+      480
+    ],
+    "previous_engine_render_area": [
+      320,
+      240
+    ],
+    "logical_UI_grid": [
+      320,
+      240
+    ],
+    "sprite_coordinate_scale": 2,
+    "max_texture_dimension": 1024,
+    "texture_replacement": false,
+    "HD_bank_sha256": "5fe1480136b8c7d2bb15a32b17588edc0459fcf9c1079c9aa4b1075e11a4d181",
+    "native_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+    "allocation_fallback": "Existing 2 MiB surface budget/failure fallback remains; crowded surfaces may use lower texture density"
+  },
+  "movie_fix": {
+    "setters": [
+      {
+        "setter": "position",
+        "pointer_offset": "0x2a150",
+        "original": "0x8c09fccc",
+        "entry": "0x8c07b7a8",
+        "bytes": 16
+      },
+      {
+        "setter": "size",
+        "pointer_offset": "0x2a154",
+        "original": "0x8c09fd18",
+        "entry": "0x8c07b7b8",
+        "bytes": 16
+      }
+    ],
+    "source_pixels": "Original movie payloads remain byte-exact",
+    "mapping": "Uniform 2x position and size in the 640x480 framebuffer; aspect ratio and letterboxing retained",
+    "changed_executable_bytes_from_074": 28
+  },
+  "native_checks": {
+    "movie_entries": 129,
+    "drawing_adapter_cases": 14,
+    "geometry_instructions": 29064,
+    "font_glyph_cases": 402,
+    "font_allocation_cases": 14,
+    "font_instructions": 16024016,
+    "title_selector_instructions": 20856,
+    "original_Skies_main_masks_exact": 96
+  },
+  "live": {
+    "emulator": "Flycast",
+    "cable": "VGA",
+    "resolution_setting": "1x / 480",
+    "opening": "Original movie visually fits the full 640-pixel width, with top/bottom letterboxing; playback and title return checked",
+    "movie_xywh": [
+      0,
+      48,
+      640,
+      384
+    ],
+    "movie_telemetry_samples": 780,
+    "clip_xy_max": [
+      639,
+      479
+    ],
+    "framebuffer_read_size": "0x00177ddf",
+    "scaler": "0x00000400",
+    "normal_save": "Loaded copied normal VMU save via load confirmation, intermission, then Touya status",
+    "compact_status": "Lv 3 Exp41 and HP 420/420 legible; main and compact text inspected",
+    "runtime_kernel_and_entire_font": "Exact current build; title selector removed after leaving title",
+    "witnesses": [
+      "work/ui/font-modes/0.7.5/opening-movie.png",
+      "work/ui/font-modes/0.7.5/native-status.png",
+      "work/ui/font-modes/0.7.5/native-runtime.json"
+    ]
+  },
+  "disc": {
+    "new_sector_substitutions": 69,
+    "validation": {
+      "reextracted_files": "all 14 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "original_movie_payloads": {
+      "MOV055.SFD": {
+        "size": 22302720,
+        "sha256": "d2a8fe52bd4f0b3e70d7fec9299a2891ad244ddb7f68a479bd571ce8628e6518"
+      },
+      "MOV072.SFD": {
+        "size": 37392384,
+        "sha256": "fa51656d0d7dc8c337b1e7effc4c6a7168f64b9dd96b9dd18f30f6bf76fe8084"
+      }
+    },
+    "font_archive": "Exact 0.7.4 rendering candidate; all wording and compiled wrapping retained"
+  },
+  "limits": [
+    "Physical Dreamcast and non-VGA rendering unverified",
+    "All movie fit cases executed, but only opening playback visually reviewed",
+    "Full route, battle, long-session and translation review remain incomplete"
+  ]
+}
