@@ -1,0 +1,262 @@
+{
+  "version": "0.7.18",
+  "source_build": "0.7.17",
+  "release": false,
+  "problem": "White-block Touya/Ymir world-map portraits during replacements",
+  "cause": "Existing map/dialogue/portrait residency leaves only 2048 bytes free; the unchanged native allocator rejects another 8192-byte portrait before replacement completes.",
+  "fix": {
+    "version": "0.7.18",
+    "source_build": "0.7.17",
+    "executable_sha256": "922663079f2f95229e47432433b839e74d4e1e06087343b8c2eca1d5d4692bc5",
+    "literal_file_offset": "0x6b910",
+    "TA_allocator_units": 2064384,
+    "TA_VRAM_bytes": 4128768,
+    "previous_TA_VRAM_bytes": 4194304,
+    "additional_texture_capacity_bytes": 65536,
+    "tradeoff": "Geometry reservation reduced by 1.5625 percent; full-game maximum geometry usage remains unverified.",
+    "preserved": "Every other executable byte, all disc assets, Native Skies font pixels/advances/alpha, all wording and movies exact 0.7.17.",
+    "release": false,
+    "live_validation": "pass: portrait-memory-live-test.json"
+  },
+  "changed_executable_byte_offsets": [
+    "0x6b911",
+    "0x6b912"
+  ],
+  "disc_changed_sectors": 1,
+  "all_other_14_payloads_exact_0717": true,
+  "native": {
+    "version": "0.7.18",
+    "source_build": "0.7.17",
+    "executable_sha256": "922663079f2f95229e47432433b839e74d4e1e06087343b8c2eca1d5d4692bc5",
+    "literal_file_offset": "0x6b910",
+    "TA_allocator_units": 2064384,
+    "TA_VRAM_bytes": 4128768,
+    "previous_TA_VRAM_bytes": 4194304,
+    "additional_texture_capacity_bytes": 65536,
+    "tradeoff": "Geometry reservation reduced by 1.5625 percent; full-game maximum geometry usage remains unverified.",
+    "preserved": "Every other executable byte, all disc assets, Native Skies font pixels/advances/alpha, all wording and movies exact 0.7.17.",
+    "release": false,
+    "live_validation": "pending",
+    "actual_SDK_budget_and_minimum_check": [
+      {
+        "version": "0.7.17",
+        "TA_allocator_units": 2097152,
+        "TA_VRAM_bytes": 4194304,
+        "SDK_minimum_units": 64800,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      },
+      {
+        "version": "0.7.18",
+        "TA_allocator_units": 2064384,
+        "TA_VRAM_bytes": 4128768,
+        "SDK_minimum_units": 64800,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      }
+    ],
+    "scope": "Actual SDK budget/minimum/allocator-entry checks and unchanged native portrait allocation against live snapshots. GPU appearance is recorded separately in portrait-memory-live-test.json.",
+    "actual_SDK_portrait_allocation_cases": [
+      {
+        "version": "0.7.17",
+        "snapshot_sha256": "e1a91eb6d67efa971649986c799bba041d4990d0cb7100b9ea9656c72efb84d9",
+        "VM": "0x8c013349",
+        "largest_free_blocks": [
+          0,
+          2048
+        ],
+        "portrait_bytes": 8192,
+        "native_allocate_result": 3,
+        "native_instructions": 530
+      },
+      {
+        "version": "0.7.18",
+        "snapshot_sha256": "59cf70213356e7d645ff61b49b49c2b4bd121da49add24fa136efda998a31716",
+        "VM": "0x8c01346b",
+        "largest_free_blocks": [
+          57344,
+          10240
+        ],
+        "portrait_bytes": 8192,
+        "native_allocate_result": 0,
+        "native_instructions": 719,
+        "portrait": "touya"
+      },
+      {
+        "version": "0.7.18",
+        "snapshot_sha256": "804cc415bf62db397e534b41f62f69312c6a1b72f638ffe9020b84642779e81a",
+        "VM": "0x8c0135ab",
+        "largest_free_blocks": [
+          57344,
+          10240
+        ],
+        "portrait_bytes": 8192,
+        "native_allocate_result": 0,
+        "native_instructions": 719,
+        "portrait": "ymir"
+      }
+    ]
+  },
+  "live": {
+    "version": "0.7.18",
+    "release": false,
+    "startup": "pass",
+    "framebuffer_creation": "pass",
+    "map_scene": "pass",
+    "native_font": "pass",
+    "Touya": "pass",
+    "Ymir": "pass",
+    "subsequent_portraits": "pass",
+    "conditions": {
+      "cold_boot": true,
+      "normal_VMU_file": 3,
+      "emulator_save_states": false,
+      "cable": "VGA",
+      "resolution": [
+        640,
+        480
+      ],
+      "render_scale": "1x",
+      "custom_textures": false,
+      "guest_memory_writes": false
+    },
+    "executable_sha256": "922663079f2f95229e47432433b839e74d4e1e06087343b8c2eca1d5d4692bc5",
+    "first_completed_framebuffer_sample": "780,00000000,640,480,00800004,00177d3f,00200000,0,614400,0,614400",
+    "framebuffers": {
+      "format": "RGB565",
+      "buffers": 2,
+      "bytes_each": 614400
+    },
+    "reported_portraits": {
+      "touya": {
+        "VM": "0x8c01346b",
+        "portrait_GBIX": "0x157c",
+        "portrait_bytes": 8192,
+        "free_bytes_by_bank": [
+          57344,
+          10240
+        ],
+        "all_map_window_dialogue_textures_resident": true,
+        "actual_game_capture": "work/ui/0.7.18/touya-fixed-game.jpg",
+        "capture_sha256": "45dd191e0f8a81c0e780500e083af11ff9cc1651124c98519d24eecddb27ae38",
+        "visual_review": "Portrait restored; no white block; map labels and dialogue normal."
+      },
+      "ymir": {
+        "VM": "0x8c0135ab",
+        "portrait_GBIX": "0x15aa",
+        "portrait_bytes": 8192,
+        "free_bytes_by_bank": [
+          57344,
+          10240
+        ],
+        "all_map_window_dialogue_textures_resident": true,
+        "actual_game_capture": "work/ui/0.7.18/ymir-fixed-game.jpg",
+        "capture_sha256": "e88c1b6ce0e440150d5f7ba37a2264c2e5539d4d62b5627262f576178226926d",
+        "visual_review": "Portrait restored; no white block; map labels and dialogue normal."
+      }
+    },
+    "later_swaps": {
+      "resident_points": {
+        "8c01346b": "19380,8c01346b,0,free0=57344,face=0000157c:8192,free1=10240",
+        "8c0135ab": "22620,8c0135ab,0,free0=57344,face=000015aa:8192,free1=10240",
+        "8c0135ee": "22680,8c0135ee,0,free0=57344,face=000015a0:8192,free1=10240",
+        "8c01362b": "22686,8c01362b,0,free0=57344,face=0000157c:8192,free1=272384",
+        "8c013659": "22740,8c013659,0,free0=57344,face=0000159f:8192,free1=10240",
+        "8c013688": "22746,8c013688,0,free0=57344,face=0000157c:8192,free1=272384",
+        "8c0136b6": "22800,8c0136b6,0,free0=57344,face=000015aa:8192,free1=10240",
+        "8c0136d2": "22806,8c0136d2,0,free0=57344,face=0000157c:8192,free1=272384",
+        "8c01371b": "22860,8c01371b,0,free0=57344,face=000015da:8192,free1=10240",
+        "8c013731": "22866,8c013731,0,free0=57344,face=00001601:8192,free1=272384"
+      },
+      "Clovis_game_capture": "work/ui/0.7.18/clovis-after-swaps-game.jpg",
+      "visual_review": "Clovis restored after Ai/Touya/Ymir switches; stable placement and normal dialogue."
+    },
+    "runtime_kernel_and_font_exact": true,
+    "whole_loaded_English_scenario_exact": true,
+    "limits": [
+      "Physical Dreamcast confirmation pending",
+      "Full-game maximum geometry demand and route/long-session review pending",
+      "Stage 6 issue #1 remains unresolved",
+      "Sampled scene appearance; not a claim of complete game coverage"
+    ]
+  },
+  "validation_files": {
+    "work/output/0.7.18/portrait-memory-native-test.json": "96a7788fe85419cf7375a9088753335d0d3c31ec5ae66ac1103f133de5649fc9",
+    "work/output/0.7.18/portrait-memory-live-test.json": "42b0c112685371ef75277c4f7b3d1d4244bfba000520445ec06faa1b9e4e60c6",
+    "work/output/0.7.18/touya-residency-live.json": "7962435a4948271f2ba47cf20cbb4ce627aa8429547e5f476ac8897f6dc89b05",
+    "work/output/0.7.18/ymir-residency-live.json": "d5f72c25c8245abf9401d88bd5d678b3726668457b0257078d1ad177d92a6714",
+    "work/output/0.7.18/english-disc-report.json": "bc5c4a62e19edf9bede0265ab1b69b0ebec6f41a1609506409e7b87e6fda3011"
+  },
+  "limits": [
+    "Physical Dreamcast confirmation pending",
+    "Full-game maximum geometry demand and route/long-session review pending",
+    "Stage 6 issue #1 remains unresolved",
+    "Sampled scene appearance; not a claim of complete game coverage"
+  ],
+  "package_validation": {
+    "full": {
+      "version": "0.7.18",
+      "release": false,
+      "package": "work/output/release-0.7.18/Rayblade-English-v0.7.18-xdelta.zip",
+      "bytes": 8164013,
+      "sha256": "40f7e1a073a9ebb0a2b3c177673fb75edea205f97d5518b396b0c98ade9d4a32",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "upgrade": {
+      "from": "0.7.17",
+      "to": "0.7.18",
+      "native_xdelta_roundtrips": 3,
+      "Retro_Trans_Automatic_isolated_test": "pass",
+      "xdelta_operations": 1,
+      "all_six_files_equal_verified_target": true,
+      "source_preserved": true,
+      "unchanged_components": [
+        "Seireiki Rayblade (Japan) (Track 1).bin",
+        "Seireiki Rayblade (Japan) (Track 2).bin",
+        "Seireiki Rayblade (Japan) (Track 3).bin",
+        "Seireiki Rayblade (Japan) (Track 4).bin",
+        "Seireiki Rayblade English v0.7.18.gdi"
+      ],
+      "outputs": {
+        "Seireiki Rayblade (Japan) (Track 1).bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "Seireiki Rayblade (Japan) (Track 2).bin": {
+          "bytes": 2389632,
+          "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+        },
+        "Seireiki Rayblade (Japan) (Track 3).bin": {
+          "bytes": 26535264,
+          "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+        },
+        "Seireiki Rayblade (Japan) (Track 4).bin": {
+          "bytes": 2036832,
+          "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+        },
+        "Seireiki Rayblade (Japan) (Track 5).bin": {
+          "bytes": 1157188704,
+          "sha256": "0f73213369e046064576b69311d64764dd667ea7fc1a8aec8b815bc5b98e91da"
+        },
+        "Seireiki Rayblade English v0.7.18.gdi": {
+          "bytes": 312,
+          "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+        }
+      },
+      "published_catalog_changed": false,
+      "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+      "package": {
+        "path": "work/output/upgrade-0.7.17-to-0.7.18/Rayblade-English-v0.7.17-to-v0.7.18-upgrade.zip",
+        "bytes": 10656,
+        "sha256": "d9a9f50ed7aa11574b860f623af6c3df28020647f85b2645f70044c16d452f6a"
+      }
+    }
+  },
+  "recipe_sha256": {
+    "tools/build_portrait_memory_fix.py": "e43ce5c462d5996301a3450a8ff735af60b2777db93a3f488f167ea9283a2cb7",
+    "tools/test_portrait_memory.py": "7ad20e8d915d7f41133e9bce44aaa5f35b5db0c95018328d62d2e251ecdbe225",
+    "tools/inspect_vram_residency.py": "c30910a4c31e28e4c7ab6ffe03734842d62abf82311aea437fa04fd0b6272ddd",
+    "tools/package_portrait_memory_fix.py": "dfdd2bf3d91d23a29267c22b1f190916787dad5226ecf9891f198304725cf625"
+  }
+}

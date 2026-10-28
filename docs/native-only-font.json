@@ -1,0 +1,749 @@
+{
+  "version": "0.7.15",
+  "source_build": "0.7.14",
+  "native_only": true,
+  "native_surface_scale": 2,
+  "output_resolution": [
+    640,
+    480
+  ],
+  "logical_UI_grid": [
+    320,
+    240
+  ],
+  "font": "Original Skies of Arcadia USA Dreamcast Native bank; exact 0.7.14 pixels, widths and four alpha levels",
+  "font_member_bytes": 99072,
+  "native_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+  "font_banks": 1,
+  "removed": [
+    "HD font bank",
+    "Title X/Y font selector, labels and state",
+    "HD-dependent raster, shadow and allocation branches",
+    "0.7.14 HD surface fallback helper"
+  ],
+  "native_filter": "Nearest; fixed for dynamic text resource only",
+  "surface_policy": "Preferred one texel per 640x480 output pixel (two per 320x240 logical coordinate); legacy 1024-edge and CPU allocation-failure guards retained",
+  "source_executable_sha256": "ac36a95e34ab898d07db60068cd044dcc2148fae171cc7bd7459e167841f619e",
+  "executable_sha256": "47e090741db86b412638524f4ac168a7a62c40a46bbc7dcb97832320a670743c",
+  "archive_sha256": "8cb2b2fee00b7ad932caa83eb114929204c84750b4f510afaec0c07df2ef24db",
+  "kernel_bytes": 1038,
+  "labels": {
+    "raster": 2349314702,
+    "r_small_valid": 2349314752,
+    "r_medium": 2349314792,
+    "r_medium_valid": 2349314802,
+    "r_surface": 2349314832,
+    "r_aa_counts_done": 2349314938,
+    "r_row": 2349315026,
+    "r_pixel": 2349315054,
+    "r_binary_sample": 2349315072,
+    "r_coverage_color": 2349315082,
+    "r_bg_clipped": 2349315132,
+    "r_no_bg": 2349315142,
+    "r_no_fg": 2349315148,
+    "r_next": 2349315148,
+    "r_row_next": 2349315176,
+    "allocate": 2349315280,
+    "a_nonzero_width": 2349315320,
+    "a_bounded_width": 2349315330,
+    "a_nonzero_height": 2349315338,
+    "a_bounded_height": 2349315348,
+    "a_height": 2349315360,
+    "a_native_width": 2349315366,
+    "a_native_height": 2349315374,
+    "a_scan": 2349315380,
+    "a_scan_loop": 2349315386,
+    "a_scan_next": 2349315402,
+    "a_try": 2349315408,
+    "a_malloc": 2349315442,
+    "a_reduce": 2349315464,
+    "a_reduce_y": 2349315474,
+    "a_success": 2349315480,
+    "a_reject": 2349315526,
+    "a_return": 2349315528,
+    "initialize": 2349315572,
+    "flush": 2349315720
+  },
+  "archive_other_members_exact": 89,
+  "archive_layout": {
+    "source_sha256": "3483d353e24b456e6cb7688de9594f7e0d0a10ac00c14343b300d88c4d5462ad",
+    "target_sha256": "8cb2b2fee00b7ad932caa83eb114929204c84750b4f510afaec0c07df2ef24db",
+    "archive_bytes": 1677312,
+    "first_data_offset": 393216,
+    "used_bytes": 1559640,
+    "spare_bytes": 117672,
+    "validation": "One Native font bank; all 89 other members byte-exact; SDK compact-sector offsets and sector read extents pass"
+  },
+  "preserved": "VGA/640x480 output, original movies and movie-edge fix, loading placement, dialogue wrapping, menu layout and all other payloads",
+  "release": false,
+  "live_validation": "native-only-live-test.json: cold boot title, Load File, Status list and character panels pass in Flycast at 1x VGA",
+  "native_test": {
+    "version": "0.7.15",
+    "source_build": "0.7.14",
+    "native_only": true,
+    "native_surface_scale": 2,
+    "output_resolution": [
+      640,
+      480
+    ],
+    "logical_UI_grid": [
+      320,
+      240
+    ],
+    "font": "Original Skies of Arcadia USA Dreamcast Native bank; exact 0.7.14 pixels, widths and four alpha levels",
+    "font_member_bytes": 99072,
+    "native_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+    "font_banks": 1,
+    "removed": [
+      "HD font bank",
+      "Title X/Y font selector, labels and state",
+      "HD-dependent raster, shadow and allocation branches",
+      "0.7.14 HD surface fallback helper"
+    ],
+    "native_filter": "Nearest; fixed for dynamic text resource only",
+    "surface_policy": "Preferred one texel per 640x480 output pixel (two per 320x240 logical coordinate); legacy 1024-edge and CPU allocation-failure guards retained",
+    "source_executable_sha256": "ac36a95e34ab898d07db60068cd044dcc2148fae171cc7bd7459e167841f619e",
+    "executable_sha256": "47e090741db86b412638524f4ac168a7a62c40a46bbc7dcb97832320a670743c",
+    "archive_sha256": "8cb2b2fee00b7ad932caa83eb114929204c84750b4f510afaec0c07df2ef24db",
+    "kernel_bytes": 1038,
+    "labels": {
+      "raster": 2349314702,
+      "r_small_valid": 2349314752,
+      "r_medium": 2349314792,
+      "r_medium_valid": 2349314802,
+      "r_surface": 2349314832,
+      "r_aa_counts_done": 2349314938,
+      "r_row": 2349315026,
+      "r_pixel": 2349315054,
+      "r_binary_sample": 2349315072,
+      "r_coverage_color": 2349315082,
+      "r_bg_clipped": 2349315132,
+      "r_no_bg": 2349315142,
+      "r_no_fg": 2349315148,
+      "r_next": 2349315148,
+      "r_row_next": 2349315176,
+      "allocate": 2349315280,
+      "a_nonzero_width": 2349315320,
+      "a_bounded_width": 2349315330,
+      "a_nonzero_height": 2349315338,
+      "a_bounded_height": 2349315348,
+      "a_height": 2349315360,
+      "a_native_width": 2349315366,
+      "a_native_height": 2349315374,
+      "a_scan": 2349315380,
+      "a_scan_loop": 2349315386,
+      "a_scan_next": 2349315402,
+      "a_try": 2349315408,
+      "a_malloc": 2349315442,
+      "a_reduce": 2349315464,
+      "a_reduce_y": 2349315474,
+      "a_success": 2349315480,
+      "a_reject": 2349315526,
+      "a_return": 2349315528,
+      "initialize": 2349315572,
+      "flush": 2349315720
+    },
+    "archive_other_members_exact": 89,
+    "archive_layout": {
+      "source_sha256": "3483d353e24b456e6cb7688de9594f7e0d0a10ac00c14343b300d88c4d5462ad",
+      "target_sha256": "8cb2b2fee00b7ad932caa83eb114929204c84750b4f510afaec0c07df2ef24db",
+      "archive_bytes": 1677312,
+      "first_data_offset": 393216,
+      "used_bytes": 1559640,
+      "spare_bytes": 117672,
+      "validation": "One Native font bank; all 89 other members byte-exact; SDK compact-sector offsets and sector read extents pass"
+    },
+    "preserved": "VGA/640x480 output, original movies and movie-edge fix, loading placement, dialogue wrapping, menu layout and all other payloads",
+    "release": false,
+    "live_validation": "pending",
+    "glyph_cases": 402,
+    "status_allocations": [
+      {
+        "status_panel": 0,
+        "logical": [
+          256,
+          128
+        ],
+        "physical": [
+          512,
+          256
+        ],
+        "pixel_bytes": 262144
+      },
+      {
+        "status_panel": 1,
+        "logical": [
+          256,
+          128
+        ],
+        "physical": [
+          512,
+          256
+        ],
+        "pixel_bytes": 262144
+      },
+      {
+        "status_panel": 2,
+        "logical": [
+          128,
+          128
+        ],
+        "physical": [
+          256,
+          256
+        ],
+        "pixel_bytes": 131072
+      },
+      {
+        "status_panel": 3,
+        "logical": [
+          128,
+          128
+        ],
+        "physical": [
+          256,
+          256
+        ],
+        "pixel_bytes": 131072
+      }
+    ],
+    "native_gpu_cases": [
+      {
+        "capture": "hd-white-load.ram",
+        "pool_capacity": 903168,
+        "logical": [
+          256,
+          128
+        ],
+        "physical": [
+          512,
+          256
+        ],
+        "native_allocation_status": 0
+      },
+      {
+        "capture": "hd-white-load.ram",
+        "pool_capacity": 903168,
+        "logical": [
+          256,
+          256
+        ],
+        "physical": [
+          512,
+          512
+        ],
+        "native_allocation_status": 0
+      },
+      {
+        "capture": "hd-fixed-status-white.ram",
+        "pool_capacity": 641024,
+        "logical": [
+          256,
+          128
+        ],
+        "physical": [
+          512,
+          256
+        ],
+        "native_allocation_status": 0
+      },
+      {
+        "capture": "hd-fixed-status-white.ram",
+        "pool_capacity": 641024,
+        "logical": [
+          256,
+          256
+        ],
+        "physical": [
+          512,
+          512
+        ],
+        "native_allocation_status": 0
+      }
+    ],
+    "filter_cases": [
+      {
+        "resource": null,
+        "requested": 0,
+        "actual": 0
+      },
+      {
+        "resource": null,
+        "requested": 1,
+        "actual": 1
+      },
+      {
+        "resource": null,
+        "requested": 3,
+        "actual": 3
+      },
+      {
+        "resource": 62,
+        "requested": 0,
+        "actual": 0
+      },
+      {
+        "resource": 62,
+        "requested": 1,
+        "actual": 1
+      },
+      {
+        "resource": 62,
+        "requested": 3,
+        "actual": 3
+      },
+      {
+        "resource": 63,
+        "requested": 0,
+        "actual": 0
+      },
+      {
+        "resource": 63,
+        "requested": 1,
+        "actual": 0
+      },
+      {
+        "resource": 63,
+        "requested": 3,
+        "actual": 0
+      }
+    ],
+    "title_callback": "Original frame callback restored; selector code and labels erased",
+    "SH4_instructions": 5514061,
+    "pixels_advances_ABI_guard_bytes": "pass",
+    "historical_assembler_modes_byte_exact": true,
+    "archive_native_layout": "pass",
+    "limits": [
+      "Heap/clear endpoints are bounded fixtures; GPU allocation executes on copied native free lists",
+      "Live title/load/status confirmation required",
+      "Physical Dreamcast/full-game coverage pending",
+      "Stage 6 issue #1 unresolved"
+    ]
+  },
+  "live_test": {
+    "version": "0.7.15",
+    "executable_sha256": "47e090741db86b412638524f4ac168a7a62c40a46bbc7dcb97832320a670743c",
+    "archive_sha256": "8cb2b2fee00b7ad932caa83eb114929204c84750b4f510afaec0c07df2ef24db",
+    "title_selector_removed": "pass",
+    "load_file": "pass",
+    "status_list": "pass",
+    "character_status": "pass",
+    "method": "Isolated Flycast, cold boot, normal VMU save, 640x480/1x VGA, no replacement textures. Existing title probe presses Y; no font selection is displayed or activated.",
+    "visual_checks": [
+      "Title has no font selector/footer",
+      "Load File shows three readable save entries and selection highlight",
+      "Status list shows unit/pilot/HP/Prana/level/EXP",
+      "Character status: all four panels readable with uniform Native texture density; Trust/Skills markers aligned"
+    ],
+    "probes": {
+      "load": {
+        "kernel_sha256": "f9ef5c86c5c3bf3c319c6a2d374703ceaeeeba0470362c7e6a66818d9f481c9c",
+        "font_payload_matches": true,
+        "surfaces": [
+          {
+            "slot": 0,
+            "logical": [
+              256,
+              32
+            ],
+            "physical": [
+              512,
+              64
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 65536,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              32
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 1223,
+            "foreground_bounds": [
+              2,
+              3,
+              363,
+              24
+            ],
+            "mixed_subpixel_cells": 282,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 437,
+            "payload_sha256": "328bd0d9d99d3fefcdcbed1d847d926b3391b4076fe40114215000be928668ab",
+            "capture": "work\\ui\\0.7.15\\native-load\\slot-00-512x64.png"
+          },
+          {
+            "slot": 1,
+            "logical": [
+              256,
+              128
+            ],
+            "physical": [
+              512,
+              256
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 262144,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              128
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 7882,
+            "foreground_bounds": [
+              2,
+              3,
+              311,
+              249
+            ],
+            "mixed_subpixel_cells": 1511,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 2957,
+            "payload_sha256": "41ede6e3f90619f3785339db7bcc684190e1dc1a227796c3cd796f4b25ea06dc",
+            "capture": "work\\ui\\0.7.15\\native-load\\slot-01-512x256.png"
+          }
+        ]
+      },
+      "status": {
+        "kernel_sha256": "f9ef5c86c5c3bf3c319c6a2d374703ceaeeeba0470362c7e6a66818d9f481c9c",
+        "font_payload_matches": true,
+        "surfaces": [
+          {
+            "slot": 0,
+            "logical": [
+              256,
+              32
+            ],
+            "physical": [
+              512,
+              64
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 65536,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              32
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 576,
+            "foreground_bounds": [
+              2,
+              3,
+              121,
+              24
+            ],
+            "mixed_subpixel_cells": 189,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 220,
+            "payload_sha256": "7907100a562df283a549b46265b9a45d71721232f1467b47d8c033abbdf5eec9",
+            "capture": "work\\ui\\0.7.15\\native-status-list\\slot-00-512x64.png"
+          },
+          {
+            "slot": 1,
+            "logical": [
+              256,
+              32
+            ],
+            "physical": [
+              512,
+              64
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 65536,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              32
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 609,
+            "foreground_bounds": [
+              8,
+              4,
+              111,
+              25
+            ],
+            "mixed_subpixel_cells": 148,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 212,
+            "payload_sha256": "1576d8dbd70b7b6d925c89404723fbb38085a763baf05d0f718ce885e52cbcaa",
+            "capture": "work\\ui\\0.7.15\\native-status-list\\slot-01-512x64.png"
+          },
+          {
+            "slot": 2,
+            "logical": [
+              256,
+              256
+            ],
+            "physical": [
+              512,
+              512
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 524288,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              256
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 2017,
+            "foreground_bounds": [
+              0,
+              3,
+              444,
+              47
+            ],
+            "mixed_subpixel_cells": 473,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 1051,
+            "payload_sha256": "6bd6bf5b440a2878b5cc9eeabb90348e44c6a35cd4fcbfffb881cc3a123ed7f6",
+            "capture": "work\\ui\\0.7.15\\native-status-list\\slot-02-512x512.png"
+          }
+        ]
+      },
+      "character": {
+        "kernel_sha256": "f9ef5c86c5c3bf3c319c6a2d374703ceaeeeba0470362c7e6a66818d9f481c9c",
+        "font_payload_matches": true,
+        "surfaces": [
+          {
+            "slot": 0,
+            "logical": [
+              256,
+              128
+            ],
+            "physical": [
+              512,
+              256
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 262144,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              128
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 2412,
+            "foreground_bounds": [
+              2,
+              4,
+              226,
+              136
+            ],
+            "mixed_subpixel_cells": 540,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 1294,
+            "payload_sha256": "4dbf496db4ec23a6ccf450abc586be50584f7dd856d15fac586c53b1b9931d1d",
+            "capture": "work\\ui\\0.7.15\\native-character\\slot-00-512x256.png"
+          },
+          {
+            "slot": 3,
+            "logical": [
+              256,
+              128
+            ],
+            "physical": [
+              512,
+              256
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 262144,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              128
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 4900,
+            "foreground_bounds": [
+              2,
+              3,
+              238,
+              152
+            ],
+            "mixed_subpixel_cells": 1146,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 2274,
+            "payload_sha256": "515eb4550f89c520adb3a2775fc185ea4795483b0df6ac552f7865f7c7d9056f",
+            "capture": "work\\ui\\0.7.15\\native-character\\slot-03-512x256.png"
+          },
+          {
+            "slot": 7,
+            "logical": [
+              128,
+              128
+            ],
+            "physical": [
+              256,
+              256
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 131072,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              128,
+              128
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 2356,
+            "foreground_bounds": [
+              2,
+              4,
+              162,
+              120
+            ],
+            "mixed_subpixel_cells": 458,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 1176,
+            "payload_sha256": "45cd6a526fb8a67e36e3cb4f0a15ed0b7d29ac4300205678f3599f46d429fc85",
+            "capture": "work\\ui\\0.7.15\\native-character\\slot-07-256x256.png"
+          },
+          {
+            "slot": 11,
+            "logical": [
+              128,
+              128
+            ],
+            "physical": [
+              256,
+              256
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 131072,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              128,
+              128
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 365,
+            "foreground_bounds": [
+              18,
+              4,
+              63,
+              23
+            ],
+            "mixed_subpixel_cells": 65,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 133,
+            "payload_sha256": "97d5e1087283656b9779b984e6ff746b085c68830d6621c41844b91128b6330e",
+            "capture": "work\\ui\\0.7.15\\native-character\\slot-11-256x256.png"
+          }
+        ]
+      }
+    },
+    "screenshots": [
+      "work/ui/0.7.15/native-title-game.jpg",
+      "work/ui/0.7.15/native-character-game.jpg"
+    ],
+    "limits": [
+      "Physical Dreamcast unverified",
+      "Full-game/route and long-session review pending",
+      "Stage 6 issue #1 unresolved"
+    ]
+  },
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "Cold-booted 1x VGA Flycast: title selector absent; Load File, Status list and all four character-status panels visually checked with exact single Native bank and [1,1] surface exponents."
+  },
+  "builder_sha256": {
+    "tools/build_native_only_font.py": "906bcda23bd62bf2104aea9664c0c6d2922924c70101a6bfca24d1f3b239ec77",
+    "tools/build_font4x_patch.py": "3ff59b4ee2386676900b0ad2aca57d6067e18c48511da9b0cb717c2d1e1ca4f2"
+  },
+  "packages": [
+    "work/output/release-0.7.15/Rayblade-English-v0.7.15-xdelta.zip",
+    "work/output/upgrade-0.7.14-to-0.7.15/Rayblade-English-v0.7.14-to-v0.7.15-upgrade.zip"
+  ],
+  "full_package_validation": {
+    "version": "0.7.15",
+    "release": false,
+    "package": "work/output/release-0.7.15/Rayblade-English-v0.7.15-xdelta.zip",
+    "bytes": 8163989,
+    "sha256": "26db250922fdb116fd1899393fca3391b84dc77b8b0f9d00c87717f3103706fa",
+    "zip_crc_and_member_hashes": "pass",
+    "Retro_Trans_roundtrip": "all six exact"
+  },
+  "upgrade_validation": {
+    "from": "0.7.14",
+    "to": "0.7.15",
+    "native_xdelta_roundtrips": 3,
+    "Retro_Trans_Automatic_isolated_test": "pass",
+    "xdelta_operations": 1,
+    "all_six_files_equal_verified_target": true,
+    "source_preserved": true,
+    "unchanged_components": [
+      "Seireiki Rayblade (Japan) (Track 1).bin",
+      "Seireiki Rayblade (Japan) (Track 2).bin",
+      "Seireiki Rayblade (Japan) (Track 3).bin",
+      "Seireiki Rayblade (Japan) (Track 4).bin",
+      "Seireiki Rayblade English v0.7.15.gdi"
+    ],
+    "outputs": {
+      "Seireiki Rayblade (Japan) (Track 1).bin": {
+        "bytes": 705600,
+        "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+      },
+      "Seireiki Rayblade (Japan) (Track 2).bin": {
+        "bytes": 2389632,
+        "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+      },
+      "Seireiki Rayblade (Japan) (Track 3).bin": {
+        "bytes": 26535264,
+        "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+      },
+      "Seireiki Rayblade (Japan) (Track 4).bin": {
+        "bytes": 2036832,
+        "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+      },
+      "Seireiki Rayblade (Japan) (Track 5).bin": {
+        "bytes": 1157188704,
+        "sha256": "0e5b72d475cf8b0728890b9840351280b65194d199abb049a38a9f6b5ffd407c"
+      },
+      "Seireiki Rayblade English v0.7.15.gdi": {
+        "bytes": 312,
+        "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+      }
+    },
+    "published_catalog_changed": false,
+    "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+    "package": {
+      "path": "work/output/upgrade-0.7.14-to-0.7.15/Rayblade-English-v0.7.14-to-v0.7.15-upgrade.zip",
+      "bytes": 68512,
+      "sha256": "e8dec18b684565bff30969a3fc1fdf3bc16308e8a6cf521fc01bcb613b03cb80"
+    }
+  }
+}

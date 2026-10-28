@@ -1,0 +1,911 @@
+{
+  "version": "0.7.14",
+  "source_build": "0.7.13",
+  "source_executable_sha256": "252576e10772c14204a8474a46d8b1c63bdc1123045858edca52dd9463d515a1",
+  "executable_sha256": "ac36a95e34ab898d07db60068cd044dcc2148fae171cc7bd7459e167841f619e",
+  "helper_entry": "0x8c07bb7c",
+  "helper_bytes": 64,
+  "hook_offset": "0x6b5a8",
+  "query": "0x8c0e59e6",
+  "pool": "Bank 1 largest available block, safe for default/automatic bank selection",
+  "maximum_surface_pixel_bytes": 524288,
+  "policy": "Before each heap attempt, lower surface density if physical texture bytes exceed 512 KiB or current video-memory block capacity. The per-surface cap leaves headroom for pending uploads. Retain original minimum-density/heap-failure handling.",
+  "unchanged": "Both font banks, pixels, widths, wording, preferred Native/HD scales, 1024-edge limit, 2 MiB CPU budget, headers and upload code",
+  "release": false,
+  "live_validation": "hd-surface-live-test.json: HD Load File and Status list pass at 1x VGA Flycast",
+  "root_cause": {
+    "Load_File": "Valid 1 MiB CPU text buffer; native VRAM allocator status 3 and game surface error 6 with largest bank-1 block 903168 bytes.",
+    "Status": "Query-only candidate still failed: 1 MiB list texture prepared before other uploads; after failure, largest bank-1 block 641024 bytes. Candidate discarded before delivery.",
+    "repair": "Check current native free block, plus reduce individual textures toward at most 512 KiB while retaining the original minimum-density escape."
+  },
+  "font_archive_sha256": "3483d353e24b456e6cb7688de9594f7e0d0a10ac00c14343b300d88c4d5462ad",
+  "font_banks_and_all_assets_exact_0_7_13": true,
+  "native_test": {
+    "version": "0.7.14",
+    "source_build": "0.7.13",
+    "source_executable_sha256": "252576e10772c14204a8474a46d8b1c63bdc1123045858edca52dd9463d515a1",
+    "executable_sha256": "ac36a95e34ab898d07db60068cd044dcc2148fae171cc7bd7459e167841f619e",
+    "helper_entry": "0x8c07bb7c",
+    "helper_bytes": 64,
+    "hook_offset": "0x6b5a8",
+    "query": "0x8c0e59e6",
+    "pool": "Bank 1 largest available block, safe for default/automatic bank selection",
+    "maximum_surface_pixel_bytes": 524288,
+    "policy": "Before each heap attempt, lower surface density if physical texture bytes exceed 512 KiB or current video-memory block capacity. The per-surface cap leaves headroom for pending uploads. Retain original minimum-density/heap-failure handling.",
+    "unchanged": "Both font banks, pixels, widths, wording, preferred Native/HD scales, 1024-edge limit, 2 MiB CPU budget, headers and upload code",
+    "release": false,
+    "live_validation": "pending",
+    "captured_ram_sha256": "81f095bfd056d63e92fe94df12352a58ab13f65cf7015da326cdd2ccdb59ed7b",
+    "source_capture": "0.7.13 HD Load File white panel",
+    "captured_largest_free_blocks": [
+      0,
+      903168
+    ],
+    "allocation_and_native_surface_cases": [
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          32
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          512,
+          64
+        ],
+        "new_physical": [
+          512,
+          64
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          32
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          256,
+          64
+        ],
+        "new_physical": [
+          256,
+          64
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          32
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          256,
+          32
+        ],
+        "new_physical": [
+          256,
+          32
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          128,
+          128
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          256,
+          256
+        ],
+        "new_physical": [
+          256,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          128,
+          128
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          128,
+          256
+        ],
+        "new_physical": [
+          128,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          128,
+          128
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          128,
+          128
+        ],
+        "new_physical": [
+          128,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          128
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          512,
+          256
+        ],
+        "new_physical": [
+          512,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          128
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          256,
+          256
+        ],
+        "new_physical": [
+          256,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          128
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          256,
+          128
+        ],
+        "new_physical": [
+          256,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          256
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          512,
+          512
+        ],
+        "new_physical": [
+          512,
+          512
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          256
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          256,
+          512
+        ],
+        "new_physical": [
+          256,
+          512
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          256,
+          256
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          256,
+          256
+        ],
+        "new_physical": [
+          256,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          512,
+          64
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          1024,
+          128
+        ],
+        "new_physical": [
+          1024,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          512,
+          64
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          512,
+          128
+        ],
+        "new_physical": [
+          512,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "Native",
+        "logical": [
+          512,
+          64
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          512,
+          64
+        ],
+        "new_physical": [
+          512,
+          64
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          32
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          1024,
+          128
+        ],
+        "new_physical": [
+          1024,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          32
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          512,
+          128
+        ],
+        "new_physical": [
+          512,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          32
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          512,
+          64
+        ],
+        "new_physical": [
+          512,
+          64
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          128,
+          128
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          512,
+          512
+        ],
+        "new_physical": [
+          512,
+          512
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          128,
+          128
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          256,
+          512
+        ],
+        "new_physical": [
+          256,
+          512
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          128,
+          128
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          256,
+          256
+        ],
+        "new_physical": [
+          256,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          128
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          1024,
+          512
+        ],
+        "new_physical": [
+          512,
+          512
+        ],
+        "old_create_status": 3,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          128
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          512,
+          512
+        ],
+        "new_physical": [
+          512,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          128
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          512,
+          256
+        ],
+        "new_physical": [
+          256,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          256
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          512,
+          1024
+        ],
+        "new_physical": [
+          512,
+          512
+        ],
+        "old_create_status": 3,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          256
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          512,
+          512
+        ],
+        "new_physical": [
+          256,
+          512
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          256,
+          256
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          256,
+          512
+        ],
+        "new_physical": [
+          256,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          512,
+          64
+        ],
+        "heap_failures": 0,
+        "old_physical": [
+          1024,
+          256
+        ],
+        "new_physical": [
+          1024,
+          256
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          512,
+          64
+        ],
+        "heap_failures": 1,
+        "old_physical": [
+          1024,
+          128
+        ],
+        "new_physical": [
+          1024,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      },
+      {
+        "mode": "HD",
+        "logical": [
+          512,
+          64
+        ],
+        "heap_failures": 2,
+        "old_physical": [
+          512,
+          128
+        ],
+        "new_physical": [
+          512,
+          128
+        ],
+        "old_create_status": 0,
+        "new_create_status": 0
+      }
+    ],
+    "optimistic_query_pending_upload_cases": [
+      {
+        "logical": [
+          256,
+          128
+        ],
+        "query_fixture_bytes": 2097152,
+        "upload_free_bytes": 903168,
+        "old_physical": [
+          1024,
+          512
+        ],
+        "new_physical": [
+          512,
+          512
+        ],
+        "old_create_status": 3,
+        "new_create_status": 0
+      },
+      {
+        "logical": [
+          256,
+          256
+        ],
+        "query_fixture_bytes": 2097152,
+        "upload_free_bytes": 903168,
+        "old_physical": [
+          512,
+          1024
+        ],
+        "new_physical": [
+          512,
+          512
+        ],
+        "old_create_status": 3,
+        "new_create_status": 0
+      }
+    ],
+    "SH4_instructions": 65475,
+    "checks": [
+      "Actual SDK free-block query, text allocator, PVR format validation and video-memory allocator execute on copied live state",
+      "Both modes, five surface dimensions, repeated heap failures, size bounds, CPU budget and ABI retained",
+      "Old large HD textures reproduce native allocation failure; all corrected witnesses allocate successfully"
+    ],
+    "limits": [
+      "CPU heap allocation is a bounded fixture; native video-memory allocator executes against the captured live free lists",
+      "Two additional pending-upload witnesses replace only the query with an optimistic capacity; actual texture creation still executes on the captured native pool",
+      "Concurrent future uploads, complete VRAM pressure coverage and hardware require live confirmation",
+      "Stage 6 issue #1 unresolved"
+    ]
+  },
+  "live_test": {
+    "version": "0.7.14",
+    "executable_sha256": "ac36a95e34ab898d07db60068cd044dcc2148fae171cc7bd7459e167841f619e",
+    "HD_load_file": "pass",
+    "HD_status_list": "pass",
+    "method": "Cold boot of an isolated Flycast runtime, Y selects HD at title; normal VMU save only. VGA 1x, 640x480, original filtering, no replacement textures.",
+    "visual_checks": [
+      "Load File: three readable save entries, highlight and memory-card header",
+      "Status: Zeifon/Touya, HP, Prana, level/EXP and bar visible; no white rectangle"
+    ],
+    "surface_evidence": {
+      "load": {
+        "kernel_sha256": "5e9b7ce6e846a7126c69cbbf057ea283b82e091ae8caaf3f064df3b313f70079",
+        "surfaces": [
+          {
+            "slot": 0,
+            "logical": [
+              256,
+              32
+            ],
+            "physical": [
+              1024,
+              128
+            ],
+            "scale_exponents": [
+              2,
+              2
+            ],
+            "bytes": 262144,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              32
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 4892,
+            "foreground_bounds": [
+              4,
+              6,
+              726,
+              48
+            ],
+            "mixed_subpixel_cells": 282,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 1804,
+            "payload_sha256": "d834ed6a3473707cb596a5bd3c6ea160c98f2e06bb1316276788f894c913e296",
+            "capture": "work\\ui\\0.7.14\\hd-load-final\\slot-00-1024x128.png"
+          },
+          {
+            "slot": 1,
+            "logical": [
+              256,
+              128
+            ],
+            "physical": [
+              512,
+              512
+            ],
+            "scale_exponents": [
+              1,
+              2
+            ],
+            "bytes": 524288,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              128
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 15764,
+            "foreground_bounds": [
+              2,
+              6,
+              311,
+              498
+            ],
+            "mixed_subpixel_cells": 1511,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 6250,
+            "payload_sha256": "66dbb65a6aa35dd62c4e883925ddaa26863a93f68d24a4a6ca12d886741873d0",
+            "capture": "work\\ui\\0.7.14\\hd-load-final\\slot-01-512x512.png"
+          }
+        ]
+      },
+      "status": {
+        "kernel_sha256": "5e9b7ce6e846a7126c69cbbf057ea283b82e091ae8caaf3f064df3b313f70079",
+        "surfaces": [
+          {
+            "slot": 0,
+            "logical": [
+              256,
+              32
+            ],
+            "physical": [
+              1024,
+              128
+            ],
+            "scale_exponents": [
+              2,
+              2
+            ],
+            "bytes": 262144,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              32
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 2304,
+            "foreground_bounds": [
+              4,
+              6,
+              242,
+              48
+            ],
+            "mixed_subpixel_cells": 189,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 940,
+            "payload_sha256": "5de9bd0d3d1ae7c12b018afd1fe283fb8e50b8d8b69e81dd794087f7710ef24e",
+            "capture": "work\\ui\\0.7.14\\hd-status-final\\slot-00-1024x128.png"
+          },
+          {
+            "slot": 1,
+            "logical": [
+              256,
+              32
+            ],
+            "physical": [
+              1024,
+              128
+            ],
+            "scale_exponents": [
+              2,
+              2
+            ],
+            "bytes": 262144,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              32
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 2436,
+            "foreground_bounds": [
+              16,
+              8,
+              222,
+              50
+            ],
+            "mixed_subpixel_cells": 148,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 856,
+            "payload_sha256": "e61aaea12221e249a1386a250a21e80c0483adfdf731792583bfce0fa411e7ca",
+            "capture": "work\\ui\\0.7.14\\hd-status-final\\slot-01-1024x128.png"
+          },
+          {
+            "slot": 2,
+            "logical": [
+              256,
+              256
+            ],
+            "physical": [
+              512,
+              512
+            ],
+            "scale_exponents": [
+              1,
+              1
+            ],
+            "bytes": 524288,
+            "pvr_header_valid": true,
+            "sprite_size": [
+              256,
+              256
+            ],
+            "sprite_preserves_logical_size": true,
+            "foreground_pixels": 1605,
+            "foreground_bounds": [
+              2,
+              3,
+              444,
+              46
+            ],
+            "mixed_subpixel_cells": 425,
+            "pixel_format": "ARGB4444",
+            "partial_alpha_pixels": 584,
+            "payload_sha256": "d53348cf6e205c8d4550df7025d80afe137d481832a6932550e9a09113d6b24b",
+            "capture": "work\\ui\\0.7.14\\hd-status-final\\slot-02-512x512.png"
+          }
+        ]
+      }
+    },
+    "screenshot": "work/ui/0.7.14/hd-status-game.jpg",
+    "limits": [
+      "Original Dreamcast hardware unverified",
+      "Complete video-memory pressure and long-session/route coverage pending",
+      "Stage 6 issue #1 unresolved"
+    ]
+  },
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "HD Load File and Status list visually verified at 1x VGA Flycast; full hardware/game coverage remains pending."
+  },
+  "local_packages": [
+    "work/output/release-0.7.14/Rayblade-English-v0.7.14-xdelta.zip",
+    "work/output/upgrade-0.7.13-to-0.7.14/Rayblade-English-v0.7.13-to-v0.7.14-upgrade.zip"
+  ],
+  "builder": "tools/build_hd_surface_fix.py",
+  "builder_sha256": "6b8b757b245f0fd82ea6875919219a91651210c6a983a9a6ef4a480a5c356677",
+  "package_validation": {
+    "full": {
+      "version": "0.7.14",
+      "release": false,
+      "package": "work/output/release-0.7.14/Rayblade-English-v0.7.14-xdelta.zip",
+      "bytes": 8172361,
+      "sha256": "eac847531586c55d48a491840c363c948f0314a1e3fd1a3d6dddbb0f9756975f",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "upgrade": {
+      "from": "0.7.13",
+      "to": "0.7.14",
+      "native_xdelta_roundtrips": 3,
+      "Retro_Trans_Automatic_isolated_test": "pass",
+      "xdelta_operations": 1,
+      "all_six_files_equal_verified_target": true,
+      "source_preserved": true,
+      "unchanged_components": [
+        "Seireiki Rayblade (Japan) (Track 1).bin",
+        "Seireiki Rayblade (Japan) (Track 2).bin",
+        "Seireiki Rayblade (Japan) (Track 3).bin",
+        "Seireiki Rayblade (Japan) (Track 4).bin",
+        "Seireiki Rayblade English v0.7.14.gdi"
+      ],
+      "outputs": {
+        "Seireiki Rayblade (Japan) (Track 1).bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "Seireiki Rayblade (Japan) (Track 2).bin": {
+          "bytes": 2389632,
+          "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+        },
+        "Seireiki Rayblade (Japan) (Track 3).bin": {
+          "bytes": 26535264,
+          "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+        },
+        "Seireiki Rayblade (Japan) (Track 4).bin": {
+          "bytes": 2036832,
+          "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+        },
+        "Seireiki Rayblade (Japan) (Track 5).bin": {
+          "bytes": 1157188704,
+          "sha256": "9433140617e737e48299e739605ed5004697df0c90991b574f738446f535e997"
+        },
+        "Seireiki Rayblade English v0.7.14.gdi": {
+          "bytes": 312,
+          "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+        }
+      },
+      "published_catalog_changed": false,
+      "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+      "package": {
+        "path": "work/output/upgrade-0.7.13-to-0.7.14/Rayblade-English-v0.7.13-to-v0.7.14-upgrade.zip",
+        "bytes": 10901,
+        "sha256": "845cf6050641ae1a5ff99ec08d037fa44702d69760dfb1ce1bdc66515516d204"
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "version": "0.7.13",
+  "source_build": "0.7.12",
+  "executable_sha256": "252576e10772c14204a8474a46d8b1c63bdc1123045858edca52dd9463d515a1",
+  "source_executable_sha256": "065f742bd5726ff355036f385096f3c7599e19fdfb285ac3893f290f3a1e7d4c",
+  "patch_range": [
+    "0xac2e4",
+    "0xac3f4"
+  ],
+  "change": "Sofdec four-corner UVs inset half a texel on each outer edge, derived independently from texture width/height.",
+  "scope": "Screen rectangle, depth, colors, animation, original SFD video/audio and all other assets unchanged.",
+  "startup_guard": "Zero/negative texture dimensions or UV spans retain zero inset for that axis.",
+  "release": false,
+  "live_validation": {
+    "version": "0.7.13",
+    "Flycast": "isolated existing project test runtime",
+    "output": "VGA, 640x480, 1x, original texture filtering, no replacement textures",
+    "live_read_only_telemetry": {
+      "before": {
+        "verified_vblank_observations": 319,
+        "first_frame": 1470,
+        "last_frame": 12000,
+        "screen_rectangle": [
+          0,
+          48,
+          640,
+          384
+        ],
+        "texture": [
+          512,
+          256
+        ],
+        "picture": [
+          320,
+          192
+        ]
+      },
+      "after": {
+        "verified_vblank_observations": 152,
+        "first_frame": 1470,
+        "last_frame": 6990,
+        "screen_rectangle": [
+          0,
+          48,
+          640,
+          384
+        ],
+        "texture": [
+          512,
+          256
+        ],
+        "picture": [
+          320,
+          192
+        ],
+        "note": "Read-only logging ends at vblank 12000. Counts include periods retaining the last movie vertices; this is not an every-frame video capture.",
+        "telemetry_end_vblank": 12000
+      }
+    },
+    "vertices": [
+      {
+        "mode": "before",
+        "vertices": [
+          {
+            "xy": [
+              0.0,
+              48.0
+            ],
+            "uv": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "xy": [
+              640.0,
+              48.0
+            ],
+            "uv": [
+              0.625,
+              0.0
+            ]
+          },
+          {
+            "xy": [
+              0.0,
+              432.0
+            ],
+            "uv": [
+              0.0,
+              0.75
+            ]
+          },
+          {
+            "xy": [
+              640.0,
+              432.0
+            ],
+            "uv": [
+              0.625,
+              0.75
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "after",
+        "vertices": [
+          {
+            "xy": [
+              0.0,
+              48.0
+            ],
+            "uv": [
+              0.0009765625,
+              0.001953125
+            ]
+          },
+          {
+            "xy": [
+              640.0,
+              48.0
+            ],
+            "uv": [
+              0.6240234375,
+              0.001953125
+            ]
+          },
+          {
+            "xy": [
+              0.0,
+              432.0
+            ],
+            "uv": [
+              0.0009765625,
+              0.748046875
+            ]
+          },
+          {
+            "xy": [
+              640.0,
+              432.0
+            ],
+            "uv": [
+              0.6240234375,
+              0.748046875
+            ]
+          }
+        ]
+      }
+    ],
+    "visual_review": "Three sampled candidate opening frames (bright action, white flash and dark action) show a clean lower boundary. Continuous every-frame capture and physical Dreamcast testing not performed.",
+    "source_video_bytes": "Unchanged retail movies",
+    "issue_1": "unresolved",
+    "emulator_sha256": "f41c1a4243274caf9a183114bd610407835521a011a48b18326e5e957e6f4e6b"
+  },
+  "source_movie_dimensions": [
+    [
+      160,
+      160
+    ],
+    [
+      320,
+      192
+    ]
+  ],
+  "geometry_cases": 20,
+  "SH4_instructions": 7114,
+  "movie_witnesses": [
+    {
+      "source": [
+        160,
+        160
+      ],
+      "texture": [
+        256,
+        256
+      ],
+      "old_bottom_v": 0.625,
+      "new_bottom_v": 0.623046875,
+      "screen_pixels": [
+        320,
+        320
+      ]
+    },
+    {
+      "source": [
+        320,
+        192
+      ],
+      "texture": [
+        512,
+        256
+      ],
+      "old_bottom_v": 0.75,
+      "new_bottom_v": 0.748046875,
+      "screen_pixels": [
+        640,
+        384
+      ]
+    }
+  ],
+  "checks": [
+    "Actual old/new Sofdec raw quad generation executes; only UV fields differ",
+    "All table source sizes at 1x/2x/4x, zero/nonzero crop origins, initialization guards, ABI and input guards pass",
+    "Bilinear pixel-center footprints stay within valid decoded rows/columns"
+  ],
+  "limits": [
+    "Video decoding, texture upload and GPU rasterization require live validation",
+    "Physical hardware pending",
+    "Stage 6 issue #1 unresolved"
+  ],
+  "builder_sha256": "1ad982a4c5ba708a19e59ecdef7315e76a1055383f5cf22de8877f4278bb6bad",
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "retro_trans_complete_disc_application": {
+    "version": "0.7.13",
+    "source_build": "0.7.13",
+    "source_commit": "ea0639136c638299cd6c4032eaf9d43d659e9fd5",
+    "retro_trans_source_commit": "d5e7957e9c49aacad4c8801f3054441881f5a94b",
+    "manifest_schema": 2,
+    "full_delta_roundtrips": 3,
+    "real_automatic_solution_application": "pass",
+    "all_six_output_files_match_verified_local_build": true,
+    "output_hashes": {
+      "Seireiki Rayblade (Japan) (Track 1).bin": {
+        "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664",
+        "bytes": 705600
+      },
+      "Seireiki Rayblade (Japan) (Track 2).bin": {
+        "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b",
+        "bytes": 2389632
+      },
+      "Seireiki Rayblade (Japan) (Track 3).bin": {
+        "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929",
+        "bytes": 26535264
+      },
+      "Seireiki Rayblade (Japan) (Track 4).bin": {
+        "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa",
+        "bytes": 2036832
+      },
+      "Seireiki Rayblade (Japan) (Track 5).bin": {
+        "sha256": "887b774e7363f9548d21a40a23f117f7d89225a5e844153e43b6a4e84bfce85d",
+        "bytes": 1157188704
+      },
+      "Seireiki Rayblade English v0.7.13.gdi": {
+        "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142",
+        "bytes": 312
+      }
+    },
+    "recognized_source": "original Japanese five-track CUE set",
+    "recognized_output": "0.7.13",
+    "GDI_all_five_track_references_exist": true,
+    "original_inputs_preserved": true,
+    "canonical_release_directory_validation": "pass",
+    "local_game_validation": {
+      "reextracted_files": "all 15 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "pending": [
+      "Live newest map labels/VRAM/fade and menu appearance",
+      "Independent meaning review and full-route/long-session testing",
+      "503 held/untranslated story rows",
+      "Original Dreamcast hardware support unverified"
+    ]
+  }
+}

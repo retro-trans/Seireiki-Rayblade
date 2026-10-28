@@ -36,7 +36,7 @@ def main():
     if not re.fullmatch(r'0\.\d+\.\d+',args.version):raise ValueError('Expected a 0.x.y component version')
     VERSION=args.version
     component_dir=args.component_dir or ROOT/'work/output'/VERSION
-    print('Inspect only PID {}: locate HD font kernel and read emulated font/surface headers.'.format(args.pid))
+    print('Inspect only PID {}: locate integrated font kernel and read emulated font/surface headers.'.format(args.pid))
     if args.report:print('Evidence report destination:',args.report)
     if args.capture_dir:print('CPU text-surface capture destination:',args.capture_dir)
     if args.dump_game_ram:
@@ -61,11 +61,12 @@ def main():
         if not api.QueryFullProcessImageNameW(handle,0,path,C.byref(length)):raise OSError('Cannot verify executable path')
         if Path(path.value).resolve()!=args.exe_path.resolve():raise ValueError('Selected PID is not the explicitly selected Flycast executable')
         target=(component_dir/'1ST_READ.BIN').read_bytes()[START:END]
-        mutable=None
+        mutable=None;component={};native_only_font=False
         for filename in ('font-mode-details.json','font-mode-component.json'):
             component_path=component_dir/filename
             if component_path.exists():
                 component=json.loads(component_path.read_text('utf-8'))
+                native_only_font=native_only_font or component.get('native_only',False)
                 if 'mode_address' in component:
                     mutable=int(component['mode_address'],16)-0x8c010000-START
                     assert 0<=mutable<=len(target)-32
@@ -236,6 +237,9 @@ def main():
             report['font_modes']={'selected':'native' if state[0]==0 else 'HD',
                 'selector_active':bool(state[1]),'mutable_state_bytes':32,
                 'kernel_comparison':'All executable code and constant bytes exact; declared mutable state excluded'}
+        elif native_only_font:
+            report['font_modes']={'selected':'Native','selection_available':False,'font_banks':1,
+                'kernel_comparison':'All executable code, constants and former selector-state bytes exact'}
         print(json.dumps(report,indent=2))
         if args.report:
             args.report.parent.mkdir(parents=True,exist_ok=True)

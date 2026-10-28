@@ -1,0 +1,250 @@
+{
+  "version": "0.7.20",
+  "release": false,
+  "component": {
+    "version": "0.7.20",
+    "source_build": "0.7.19",
+    "source_executable_sha256": "60e0bc9bb2675845893b1c46f0fbdfa3ea7884fc214a939033c9576f4fa39dd2",
+    "executable_sha256": "09450c046a3bd4604a83e79466b73e63f738faa11829ae26bbcc0966f6435463",
+    "adapter": "0x8c07b940",
+    "adapter_bytes": 88,
+    "draw_pointer_file_offset": "0x360c8",
+    "changed_executable_bytes": 86,
+    "cause": "Battle range fill bypassed the 640x480 sprite/polygon adapters; its vertices remained on the 320x240 logical grid.",
+    "mapping": "Copy the descriptor and polygon-count * vertices-per-polygon XY pairs to the stack; multiply XY by 2 exactly once at the battle fill call.",
+    "preserved": "Input geometry, colors, priority, flags, primitive counts, UVs, all other executable bytes, every disc asset, Native 1x font and 0.7.19 memory allocation.",
+    "release": false,
+    "live_validation": "pending"
+  },
+  "native": {
+    "version": "0.7.20",
+    "source_build": "0.7.19",
+    "source_executable_sha256": "60e0bc9bb2675845893b1c46f0fbdfa3ea7884fc214a939033c9576f4fa39dd2",
+    "executable_sha256": "09450c046a3bd4604a83e79466b73e63f738faa11829ae26bbcc0966f6435463",
+    "adapter": "0x8c07b940",
+    "adapter_bytes": 88,
+    "draw_pointer_file_offset": "0x360c8",
+    "changed_executable_bytes": 86,
+    "cause": "Battle range fill bypassed the 640x480 sprite/polygon adapters; its vertices remained on the 320x240 logical grid.",
+    "mapping": "Copy the descriptor and polygon-count * vertices-per-polygon XY pairs to the stack; multiply XY by 2 exactly once at the battle fill call.",
+    "preserved": "Input geometry, colors, priority, flags, primitive counts, UVs, all other executable bytes, every disc asset, Native 1x font and 0.7.19 memory allocation.",
+    "release": false,
+    "live_validation": "pending",
+    "RAM_sha256": "05de5bc31380611a3459127f3e5bbbe1ff3d95d095a4f7eb906cac4ae5923675",
+    "scenario": "S001 first battle, captured from user Flycast 0.7.19",
+    "actual_game_fill_cases": [
+      {
+        "camera_offset": [
+          0,
+          0
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      },
+      {
+        "camera_offset": [
+          48,
+          24
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      },
+      {
+        "camera_offset": [
+          -96,
+          -48
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      },
+      {
+        "camera_offset": [
+          19,
+          -7
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      }
+    ],
+    "adapter_fixtures": 5,
+    "SH4_instructions": 410482,
+    "selected_unit_tile": [
+      7,
+      9
+    ],
+    "range_center_before_pixels": [
+      160,
+      120
+    ],
+    "range_center_after_pixels": [
+      320,
+      240
+    ],
+    "selection_arrow_center_pixels": [
+      320,
+      240
+    ],
+    "logical_unit_anchor": [
+      158,
+      122
+    ],
+    "ABI_source_geometry_and_range_mask_preserved": "pass",
+    "scope": "Actual game fill and 2x adapter execute; SDK renderer endpoint records arguments. GPU appearance needs separate live validation."
+  },
+  "source_images": [
+    {
+      "path": "work/ui/0.7.20/reported-grid-01.png",
+      "sha256": "b41e2ad7e385694cfd96101fdb82527457dc8c4da8ee4a8d9618d64daf57f269"
+    },
+    {
+      "path": "work/ui/0.7.20/reported-grid-02.png",
+      "sha256": "9195378d71a2a4dd993466b2c4d08b27db6792b583f07d21504a8d298b2804ee"
+    }
+  ],
+  "disc": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "asset_preservation": "14 of 15 payloads byte-exact 0.7.19; only 1ST_READ.BIN changes",
+  "live": {
+    "version": "0.7.20",
+    "executable_sha256": "09450c046a3bd4604a83e79466b73e63f738faa11829ae26bbcc0966f6435463",
+    "range_grid_alignment": "pass",
+    "cursor_camera_redraw": "pass",
+    "startup": "pass",
+    "Native_1x_font": "pass",
+    "emulator": "Isolated Flycast profile; VGA, 480 / 1x output",
+    "boot": "New Game after a full boot; no emulator save state, no emulated RAM writes",
+    "review": "Actual GPU captures show filled tiles aligned with Touya and the selection arrows; after Down input, the camera pans and the cursor follows the displayed tile corners.",
+    "cases": [
+      {
+        "scene": "selected Touya",
+        "probe": "work/output/cursor-investigation/fresh-0720.json",
+        "RAM_sha256": "6894a0ce41bfb59eb85ebc44c35f36869d38b4b776659e5b4776747e9b07a155",
+        "camera": [
+          -224,
+          -128
+        ],
+        "runtime_adapter_and_pointer_exact": true,
+        "texture_error": 0
+      },
+      {
+        "scene": "cursor and camera redraw",
+        "probe": "work/output/cursor-investigation/redraw-0720.json",
+        "RAM_sha256": "b3d1e11285ba237f7fc346c747bc7ce7f0e41ca319b4a7f8f89f6e2412d83020",
+        "camera": [
+          -224,
+          -150
+        ],
+        "runtime_adapter_and_pointer_exact": true,
+        "texture_error": 0
+      }
+    ],
+    "captures": [
+      {
+        "path": "work/ui/0.7.20/touya-range-game.jpg",
+        "sha256": "6f85533f373e2c043219aa37af2c5652c7eca5fd00b5c6959979a8a87ef4ddda"
+      },
+      {
+        "path": "work/ui/0.7.20/cursor-range-redraw-game.jpg",
+        "sha256": "a1fb46017e0becbde71ead4d65f65ef06acb638ba86dad131d00a3c8ccc2f5ec"
+      }
+    ],
+    "user_session": "Read-only process inspection; no game inputs, file changes or process termination in the user Flycast instance.",
+    "limits": [
+      "S001 first-battle visual/input scope only",
+      "Four camera cases use native instruction execution with the SDK draw endpoint recorded",
+      "Physical Dreamcast and full-game/long-session coverage remain pending"
+    ]
+  },
+  "packages": {
+    "full_original_input": {
+      "version": "0.7.20",
+      "release": false,
+      "package": "work/output/release-0.7.20/Rayblade-English-v0.7.20-xdelta.zip",
+      "bytes": 8164548,
+      "sha256": "b00d815848b152e32174fcee94c2bcb82c4446ad8d4d25b8eb35108fe06e1e5a",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "upgrade_0_7_19": {
+      "path": "work/output/upgrade-0.7.19-to-0.7.20/Rayblade-English-v0.7.19-to-v0.7.20-upgrade.zip",
+      "bytes": 10919,
+      "sha256": "429b43fb4765d797df8252973b050c121d4b1a721d729324d8a97eef55661862"
+    },
+    "upgrade_complete_disc": "all six exact; originals preserved; one Track 5 xdelta operation",
+    "publication": false,
+    "Windows_test_runner": "gc.set_threshold(1,1,1) for deterministic reader-handle collection during atomic output publication; Retro Trans source unchanged"
+  },
+  "Retro_Trans": {
+    "version": "0.7.20",
+    "source_build": "0.7.20",
+    "source_commit": "ea0639136c638299cd6c4032eaf9d43d659e9fd5",
+    "retro_trans_source_commit": "d5e7957e9c49aacad4c8801f3054441881f5a94b",
+    "manifest_schema": 2,
+    "full_delta_roundtrips": 3,
+    "real_automatic_solution_application": "pass",
+    "all_six_output_files_match_verified_local_build": true,
+    "output_hashes": {
+      "Seireiki Rayblade (Japan) (Track 1).bin": {
+        "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664",
+        "bytes": 705600
+      },
+      "Seireiki Rayblade (Japan) (Track 2).bin": {
+        "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b",
+        "bytes": 2389632
+      },
+      "Seireiki Rayblade (Japan) (Track 3).bin": {
+        "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929",
+        "bytes": 26535264
+      },
+      "Seireiki Rayblade (Japan) (Track 4).bin": {
+        "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa",
+        "bytes": 2036832
+      },
+      "Seireiki Rayblade (Japan) (Track 5).bin": {
+        "sha256": "3fdd91fb28a08f66405d13feccfd0f8d3ccc5e31370c5a7739ccd5bf1eea9b6f",
+        "bytes": 1157188704
+      },
+      "Seireiki Rayblade English v0.7.20.gdi": {
+        "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142",
+        "bytes": 312
+      }
+    },
+    "recognized_source": "original Japanese five-track CUE set",
+    "recognized_output": "0.7.20",
+    "GDI_all_five_track_references_exist": true,
+    "original_inputs_preserved": true,
+    "canonical_release_directory_validation": "pass",
+    "local_game_validation": {
+      "reextracted_files": "all 15 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "pending": [
+      "Live newest map labels/VRAM/fade and menu appearance",
+      "Independent meaning review and full-route/long-session testing",
+      "503 held/untranslated story rows",
+      "Original Dreamcast hardware support unverified"
+    ]
+  },
+  "recipe_sha256": {
+    "tools/build_battle_grid_fix.py": "61d639c827eedb293e264a06e652e03f68743e10006346178680f3452e2d447d",
+    "tools/test_battle_grid.py": "489c986e03cf5305d32d48668960effb930bbf7ba0a44e19433bc4afc65f1ae4",
+    "tools/package_battle_grid_fix.py": "62e63cd2c4d2395066be9b318b66ae71638634b21fcda10dc59eca5e6267b6d1",
+    "tools/record_battle_grid_build.py": "8cfc14d42275629ed77ade9e1d467c5c745743841fc7f0eabf3beaf27da5afdd"
+  }
+}

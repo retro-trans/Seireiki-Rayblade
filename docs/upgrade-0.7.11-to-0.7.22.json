@@ -1,0 +1,49 @@
+{
+  "from": "0.7.11",
+  "to": "0.7.22",
+  "native_xdelta_roundtrips": 3,
+  "Retro_Trans_Automatic_isolated_test": "pass",
+  "xdelta_operations": 1,
+  "all_six_files_equal_verified_target": true,
+  "source_preserved": true,
+  "unchanged_components": [
+    "Seireiki Rayblade (Japan) (Track 1).bin",
+    "Seireiki Rayblade (Japan) (Track 2).bin",
+    "Seireiki Rayblade (Japan) (Track 3).bin",
+    "Seireiki Rayblade (Japan) (Track 4).bin",
+    "Seireiki Rayblade English v0.7.22.gdi"
+  ],
+  "outputs": {
+    "Seireiki Rayblade (Japan) (Track 1).bin": {
+      "bytes": 705600,
+      "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+    },
+    "Seireiki Rayblade (Japan) (Track 2).bin": {
+      "bytes": 2389632,
+      "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+    },
+    "Seireiki Rayblade (Japan) (Track 3).bin": {
+      "bytes": 26535264,
+      "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+    },
+    "Seireiki Rayblade (Japan) (Track 4).bin": {
+      "bytes": 2036832,
+      "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+    },
+    "Seireiki Rayblade (Japan) (Track 5).bin": {
+      "bytes": 1157188704,
+      "sha256": "93efa3c2faa8e82a8a3abf1189c6b19db71f000eb7ff18c501260c18ca1e6094"
+    },
+    "Seireiki Rayblade English v0.7.22.gdi": {
+      "bytes": 312,
+      "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+    }
+  },
+  "published_catalog_changed": false,
+  "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+  "package": {
+    "path": "work/output/upgrade-0.7.11-to-0.7.22/Rayblade-English-v0.7.11-to-v0.7.22-upgrade.zip",
+    "bytes": 98397,
+    "sha256": "b0f4fff89dc802b1ff7aa30e44185ad2647090fa771fbc2e16863676f7147a55"
+  }
+}

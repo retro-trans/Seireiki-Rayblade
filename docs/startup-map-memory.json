@@ -1,0 +1,428 @@
+{
+  "version": "0.7.17",
+  "date": "2026-10-28",
+  "release": false,
+  "source_build": "0.7.16",
+  "executable_sha256": "5a17f99bb9f93e0304835aba6ab32c274705f9a07afd52f2f0867b1d56deddac",
+  "WIN00_sha256": "2bef618d319d5fcbbdb49a1a80aae45c74131453651875fa9b5aff2f1f70e4d3",
+  "WMAP_sha256": "58cf2333b41fe7bd7733035671c473d9cce108f7c82e0075539fe4a5c8e8274c",
+  "component": {
+    "version": "0.7.17",
+    "source_build": "0.7.16",
+    "executable_sha256": "5a17f99bb9f93e0304835aba6ab32c274705f9a07afd52f2f0867b1d56deddac",
+    "window_atlas": {
+      "old_dimensions": [
+        512,
+        512
+      ],
+      "new_dimensions": [
+        512,
+        256
+      ],
+      "sprites": 125,
+      "saved_VRAM_bytes": 262144,
+      "original_upper_half_pixels_sha256": "a8cd339084134b401a66eb0f37e3dc36efeeffe31e28c2658e7509e22bdd9e0b",
+      "archive_sha256": "2bef618d319d5fcbbdb49a1a80aae45c74131453651875fa9b5aff2f1f70e4d3",
+      "other_members_exact": 88,
+      "font_member_exact": true,
+      "preservation": "Entire upper half and all 125 sprite sizes/anchors/IDs unchanged; only normalized V coordinates doubled; discarded rows entirely zero"
+    },
+    "startup_hook": {
+      "entry": "0x8c07b900",
+      "original_tail": "0x8c0d2356",
+      "bytes": 24,
+      "TA_allocator_units": 2097152,
+      "TA_reservation_bytes": 4194304,
+      "matches_0715_reservation": true,
+      "cause": "Inherited unsigned geometry-budget subtraction wraps at 24 bpp but yields only 176 allocator units at 16 bpp; initialization fails before framebuffer creation",
+      "scope": "Explicitly retain existing 4 MiB geometry reservation; original SDK framebuffer creation/clearing and remaining initialization execute normally"
+    },
+    "display": {
+      "SDK_enum": 0,
+      "format": "RGB565",
+      "resolution": [
+        640,
+        480
+      ],
+      "buffers": 2,
+      "framebuffer_bytes": 1228800,
+      "corrected_prior_claim": "0.7.16 enum 1 selects RGB555, not RGB565"
+    },
+    "combined_VRAM_saving_from_0715": 1335296,
+    "preserved": "Native-only font pixels, widths, alpha, dynamic surface allocation, all window sprite pixels/anchors, WMAP lossless marker repack, all wording and original movies",
+    "release": false,
+    "live_validation": "pending"
+  },
+  "native": {
+    "version": "0.7.17",
+    "source_build": "0.7.16",
+    "executable_sha256": "5a17f99bb9f93e0304835aba6ab32c274705f9a07afd52f2f0867b1d56deddac",
+    "window_atlas": {
+      "old_dimensions": [
+        512,
+        512
+      ],
+      "new_dimensions": [
+        512,
+        256
+      ],
+      "sprites": 125,
+      "saved_VRAM_bytes": 262144,
+      "original_upper_half_pixels_sha256": "a8cd339084134b401a66eb0f37e3dc36efeeffe31e28c2658e7509e22bdd9e0b",
+      "archive_sha256": "2bef618d319d5fcbbdb49a1a80aae45c74131453651875fa9b5aff2f1f70e4d3",
+      "other_members_exact": 88,
+      "font_member_exact": true,
+      "preservation": "Entire upper half and all 125 sprite sizes/anchors/IDs unchanged; only normalized V coordinates doubled; discarded rows entirely zero"
+    },
+    "startup_hook": {
+      "entry": "0x8c07b900",
+      "original_tail": "0x8c0d2356",
+      "bytes": 24,
+      "TA_allocator_units": 2097152,
+      "TA_reservation_bytes": 4194304,
+      "matches_0715_reservation": true,
+      "cause": "Inherited unsigned geometry-budget subtraction wraps at 24 bpp but yields only 176 allocator units at 16 bpp; initialization fails before framebuffer creation",
+      "scope": "Explicitly retain existing 4 MiB geometry reservation; original SDK framebuffer creation/clearing and remaining initialization execute normally"
+    },
+    "display": {
+      "SDK_enum": 0,
+      "format": "RGB565",
+      "resolution": [
+        640,
+        480
+      ],
+      "buffers": 2,
+      "framebuffer_bytes": 1228800,
+      "corrected_prior_claim": "0.7.16 enum 1 selects RGB555, not RGB565"
+    },
+    "combined_VRAM_saving_from_0715": 1335296,
+    "preserved": "Native-only font pixels, widths, alpha, dynamic surface allocation, all window sprite pixels/anchors, WMAP lossless marker repack, all wording and original movies",
+    "release": false,
+    "live_validation": "pending",
+    "actual_SDK_geometry_budget_cases": [
+      {
+        "build": "0715",
+        "TA_allocator_units": 2097152,
+        "TA_VRAM_bytes": 4194304,
+        "reaches_native_allocator": true,
+        "instructions": 37
+      },
+      {
+        "build": "0716",
+        "TA_allocator_units": 176,
+        "TA_VRAM_bytes": 352,
+        "reaches_native_allocator": false,
+        "instructions": 32
+      },
+      {
+        "build": "0717",
+        "TA_allocator_units": 2097152,
+        "TA_VRAM_bytes": 4194304,
+        "reaches_native_allocator": true,
+        "instructions": 41
+      }
+    ],
+    "actual_SDK_format_cases": [
+      {
+        "enum": 0,
+        "bits_per_pixel": 16,
+        "write_format": 1,
+        "read_format": 1,
+        "instructions": 108
+      },
+      {
+        "enum": 1,
+        "bits_per_pixel": 16,
+        "write_format": 0,
+        "read_format": 0,
+        "instructions": 111
+      },
+      {
+        "enum": 4,
+        "bits_per_pixel": 24,
+        "write_format": 4,
+        "read_format": 2,
+        "instructions": 105
+      }
+    ],
+    "window_native_instructions": 4720221,
+    "window_native_geometry_cases": 125,
+    "window_native_archive_lookups": 90,
+    "window_pixel_and_filtering_neighborhoods": "all 125 exact; all 131072 upper-half texels exact",
+    "limits": [
+      "Actual display/GPU and early startup require live cold-boot review",
+      "Physical Dreamcast pending",
+      "Stage 6 issue #1 unresolved"
+    ]
+  },
+  "live": {
+    "version": "0.7.17",
+    "release": false,
+    "startup": "pass",
+    "framebuffer_creation": "pass",
+    "map_scene": "pass",
+    "native_font": "pass",
+    "opening_movie": "pass",
+    "environment": {
+      "emulator": "Flycast",
+      "cable": "VGA (0)",
+      "resolution": "1x / 640x480",
+      "custom_textures": false,
+      "save_states": false
+    },
+    "startup_observation": "Fresh boot through pre-title/loading/title and normal copied VMU save; graphics initialization completes, two valid 614400-byte framebuffers; no startup garbage in checked corrected boot",
+    "movie_observation": "Separate fresh boot without input; sampled opening frame fills 640x384 at y48 with black bars, normal colors and a clean lower edge",
+    "map_observation": "Exact S003 Ai/Clovis line, VM 0x8c013349, normal map labels, marker, portrait, Native text and red prompt visible together",
+    "adjacent_dialogue": "Advanced two input steps to VM 0x8c013388; native texture error stayed 0 after the next portrait/dialogue upload",
+    "residency": {
+      "version": "0.7.17",
+      "VM": "0x8c013349",
+      "scenario": "s_003.bin",
+      "native_texture_error": 0,
+      "framebuffer_bytes_each": 614400,
+      "largest_free_blocks": [
+        0,
+        2048
+      ],
+      "resident_allocations": [
+        {
+          "bank": 0,
+          "VRAM_offset": "0x0",
+          "bytes": 4194304,
+          "owner": "0x8c00f358"
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x400000",
+          "bytes": 1228800,
+          "owner": "0x8c419560"
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x52c000",
+          "bytes": 6144,
+          "owner": "0x8c4222f0"
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x52d800",
+          "bytes": 32768,
+          "owner": "0x8cf40298",
+          "gbix": "0xfffffff0",
+          "width": 128,
+          "height": 128
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x535800",
+          "bytes": 32768,
+          "owner": "0x8cf402dc",
+          "gbix": "0xfffffff1",
+          "width": 128,
+          "height": 128
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x53d800",
+          "bytes": 65536,
+          "owner": "0x8cf40320",
+          "gbix": "0xfffffff2",
+          "width": 256,
+          "height": 128
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x54d800",
+          "bytes": 524288,
+          "owner": "0x8cf40364",
+          "gbix": "0x2329",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x5cd800",
+          "bytes": 524288,
+          "owner": "0x8cf403a8",
+          "gbix": "0x232a",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x64d800",
+          "bytes": 524288,
+          "owner": "0x8cf403ec",
+          "gbix": "0x232b",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x6cd800",
+          "bytes": 524288,
+          "owner": "0x8cf40430",
+          "gbix": "0x232c",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x74d800",
+          "bytes": 65536,
+          "owner": "0x8cf40474",
+          "gbix": "0x2328",
+          "width": 256,
+          "height": 128
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x75d800",
+          "bytes": 131072,
+          "owner": "0x8cf404b8",
+          "gbix": "0xed0076",
+          "width": 512,
+          "height": 128
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x77d800",
+          "bytes": 262144,
+          "owner": "0x8cf404fc",
+          "gbix": "0x1f40",
+          "width": 512,
+          "height": 256
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x7bd800",
+          "bytes": 8192,
+          "owner": "0x8cf40540",
+          "gbix": "0x15a3",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "bank": 1,
+          "VRAM_offset": "0x7bf800",
+          "bytes": 262144,
+          "owner": "0x8cf40584",
+          "gbix": "0x400",
+          "width": 1024,
+          "height": 128
+        }
+      ],
+      "required_texture_dimensions_exact": true
+    },
+    "english_scenario": {
+      "english_heap_pointer": "0x8cd55700",
+      "heap_in_RAM": true,
+      "original_script_base": "0x8c010080",
+      "original_base_preserved": true,
+      "VM_pointer": "0x8c013349",
+      "member_loaded": true,
+      "note": "A member can be checked after the game actually loads a scenario.",
+      "native_hook_checks": [
+        {
+          "address": "0x8c018800",
+          "bytes": 264,
+          "matches": true
+        },
+        {
+          "address": "0x8c018c00",
+          "bytes": 252,
+          "matches": true
+        }
+      ],
+      "bank_pointer": "0x8cd59a5c",
+      "member": "s_003.bin",
+      "english_commands": 317,
+      "bank_entry_bytes": 8,
+      "entire_English_member_matches": true,
+      "original_VM_prefix_matches": true,
+      "word_wrapped_commands_in_bank": 317,
+      "special_control_commands_in_bank": 0
+    },
+    "font_modes": {
+      "selected": "Native",
+      "selection_available": false,
+      "font_banks": 1,
+      "kernel_comparison": "All executable code, constants and former selector-state bytes exact"
+    },
+    "witnesses": [
+      "work/ui/0.7.17/map-fixed-game.jpg",
+      "work/ui/0.7.17/opening-game.jpg",
+      "work/output/map-surface-investigation/runtime-0717e/telemetry.csv",
+      "work/output/map-surface-investigation/runtime-0717e/video.csv",
+      "work/output/map-surface-investigation/runtime-0717-movie/video-probe.csv"
+    ],
+    "limits": [
+      "Only 2048 bytes remain in the texture pool at this scene; other scenes and long-session memory pressure require further playtesting",
+      "Physical Dreamcast and non-VGA regression unverified",
+      "Sampled movie frames, not continuous frame-by-frame video capture",
+      "Stage 6 issue #1 unresolved"
+    ]
+  },
+  "package_verification": {
+    "full": {
+      "version": "0.7.17",
+      "release": false,
+      "package": "work/output/release-0.7.17/Rayblade-English-v0.7.17-xdelta.zip",
+      "bytes": 8167940,
+      "sha256": "d10bfff23fc02e8612f96dad99e2cee8e6ad3e87095b244a6f856413e9359716",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "upgrade": {
+      "from": "0.7.16",
+      "to": "0.7.17",
+      "native_xdelta_roundtrips": 3,
+      "Retro_Trans_Automatic_isolated_test": "pass",
+      "xdelta_operations": 1,
+      "all_six_files_equal_verified_target": true,
+      "source_preserved": true,
+      "unchanged_components": [
+        "Seireiki Rayblade (Japan) (Track 1).bin",
+        "Seireiki Rayblade (Japan) (Track 2).bin",
+        "Seireiki Rayblade (Japan) (Track 3).bin",
+        "Seireiki Rayblade (Japan) (Track 4).bin",
+        "Seireiki Rayblade English v0.7.17.gdi"
+      ],
+      "outputs": {
+        "Seireiki Rayblade (Japan) (Track 1).bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "Seireiki Rayblade (Japan) (Track 2).bin": {
+          "bytes": 2389632,
+          "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+        },
+        "Seireiki Rayblade (Japan) (Track 3).bin": {
+          "bytes": 26535264,
+          "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+        },
+        "Seireiki Rayblade (Japan) (Track 4).bin": {
+          "bytes": 2036832,
+          "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+        },
+        "Seireiki Rayblade (Japan) (Track 5).bin": {
+          "bytes": 1157188704,
+          "sha256": "4f252b36700740972c2f1a429f885276eeaecdd1b4ae529874f84cd3c2dc8a66"
+        },
+        "Seireiki Rayblade English v0.7.17.gdi": {
+          "bytes": 312,
+          "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+        }
+      },
+      "published_catalog_changed": false,
+      "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+      "package": {
+        "path": "work/output/upgrade-0.7.16-to-0.7.17/Rayblade-English-v0.7.16-to-v0.7.17-upgrade.zip",
+        "bytes": 68595,
+        "sha256": "e5fd223227ae7b500cf08930ed9fa363342b36a95764a21a16aa79782c301adb"
+      }
+    },
+    "published": false,
+    "Retro_Trans_complete_disc": "Both original-input full patch and 0.7.16 upgrade produced all six exact target files; source inputs preserved"
+  }
+}

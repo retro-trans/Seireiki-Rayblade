@@ -1,0 +1,107 @@
+{
+  "version": "0.7.12",
+  "source_build": "0.7.11",
+  "source_executable_sha256": "9ce5d3bb16532d4af081673894982855f69b303a0d22b413e4d457b2475f9d84",
+  "executable_sha256": "065f742bd5726ff355036f385096f3c7599e19fdfb285ac3893f290f3a1e7d4c",
+  "changed_byte": "0x9c692",
+  "SDK_print_default_cell_pixels": {
+    "before": 8,
+    "after": 16
+  },
+  "loading_cell_origin": [
+    27,
+    26
+  ],
+  "physical_origin_before": [
+    216,
+    208
+  ],
+  "physical_origin_after": [
+    432,
+    416
+  ],
+  "reason": "Ninja SDK print bypasses the game sprite/polygon adapters. Its cell size also controls cell coordinates.",
+  "scope": "SDK print default only; loading character cells, animation, colors, all game font banks and assets unchanged.",
+  "release": false,
+  "live_validation": "pending",
+  "animation_frame_cases": 121,
+  "native_glyph_quads": 2420,
+  "SH4_instructions": 770646,
+  "pre_640_reference": "0.7.2 loading routine, SDK print code and character/color data are byte-exact in 0.7.11",
+  "checks": [
+    "Actual SDK initialization, loading function, SDK string renderer and four-corner submissions execute",
+    "Each old glyph corner maps uniformly 2x; cell gaps, Z, UV, headers, colors and full 121-frame counter cycle retained",
+    "Only one executable byte changes; all other game bytes retained"
+  ],
+  "limits": [
+    "Store queues captured before GPU; allocation and the 12-byte color copy are bounded fixtures",
+    "Live VGA/physical hardware confirmation pending",
+    "Stage 6 issue #1 unresolved"
+  ],
+  "builder_sha256": "02092ce1f5caac526d01009b0ba810f6b72ae9f8ba65f6f14c27e3422324bead",
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "retro_trans_complete_disc_application": {
+    "version": "0.7.12",
+    "source_build": "0.7.12",
+    "source_commit": "ea0639136c638299cd6c4032eaf9d43d659e9fd5",
+    "retro_trans_source_commit": "d5e7957e9c49aacad4c8801f3054441881f5a94b",
+    "manifest_schema": 2,
+    "full_delta_roundtrips": 3,
+    "real_automatic_solution_application": "pass",
+    "all_six_output_files_match_verified_local_build": true,
+    "output_hashes": {
+      "Seireiki Rayblade (Japan) (Track 1).bin": {
+        "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664",
+        "bytes": 705600
+      },
+      "Seireiki Rayblade (Japan) (Track 2).bin": {
+        "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b",
+        "bytes": 2389632
+      },
+      "Seireiki Rayblade (Japan) (Track 3).bin": {
+        "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929",
+        "bytes": 26535264
+      },
+      "Seireiki Rayblade (Japan) (Track 4).bin": {
+        "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa",
+        "bytes": 2036832
+      },
+      "Seireiki Rayblade (Japan) (Track 5).bin": {
+        "sha256": "c796363fc7c56e7b2791f6f42d30d61e4cd13c1c251283e163302a5d31f33cda",
+        "bytes": 1157188704
+      },
+      "Seireiki Rayblade English v0.7.12.gdi": {
+        "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142",
+        "bytes": 312
+      }
+    },
+    "recognized_source": "original Japanese five-track CUE set",
+    "recognized_output": "0.7.12",
+    "GDI_all_five_track_references_exist": true,
+    "original_inputs_preserved": true,
+    "canonical_release_directory_validation": "pass",
+    "local_game_validation": {
+      "reextracted_files": "all 15 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "pending": [
+      "Live newest map labels/VRAM/fade and menu appearance",
+      "Independent meaning review and full-route/long-session testing",
+      "503 held/untranslated story rows",
+      "Original Dreamcast hardware support unverified"
+    ]
+  }
+}

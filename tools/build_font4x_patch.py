@@ -120,9 +120,10 @@ def mem(a,size,ptr,offset,reg,write=False,scratch=0):
 
 def assemble(*,wide=False,small_data=SMALL_DATA,medium_data=MEDIUM_DATA,antialias=False,
              font_mode_address=None, native_font_offset=0, native_surface_exponent=0,
-             native_shadow_pixels=None):
+             native_shadow_pixels=None, native_only=False):
     assert not antialias or wide
     assert native_surface_exponent in (0,1)
+    assert not native_only or (font_mode_address is None and native_font_offset==0 and native_surface_exponent==1)
     a=Assembler(BASE+START)
     a.label('raster')
     local_bytes=56 if antialias else 40 if wide else 24
@@ -179,11 +180,12 @@ def assemble(*,wide=False,small_data=SMALL_DATA,medium_data=MEDIUM_DATA,antialia
         a.label('r_aa_counts_done')
     a.imm(2,2);a.rr('shld',1,2);a.emit(0x1f23) # physical shadow offset
     if native_shadow_pixels is not None:
-        assert font_mode_address is not None and native_shadow_pixels in (1,2)
-        a.lit(font_mode_address,0);a.load('b',0,0);a.rr('tst',0,0)
-        a.branch('bf','r_shadow_selected')
+        assert (font_mode_address is not None or native_only) and native_shadow_pixels in (1,2)
+        if not native_only:
+            a.lit(font_mode_address,0);a.load('b',0,0);a.rr('tst',0,0)
+            a.branch('bf','r_shadow_selected')
         a.imm(native_shadow_pixels*2,0);a.emit(0x1f03)
-        a.label('r_shadow_selected')
+        if not native_only:a.label('r_shadow_selected')
     a.lit(0x8c1f36b4,0);a.load('w',0,0);a.addi(-17,0);a.unary('shll',0);a.rr('mov',0,2)
     a.rr('mov',13,0);a.emit(0xc90e);a.rr('add',2,0);a.rr('extu.w',0,0);a.unary('shll',0)
     a.lit(0x8c0980a8,1);a.rr('add',1,0);a.addi(2,0);a.load('w',0,14)
@@ -250,7 +252,7 @@ def assemble(*,wide=False,small_data=SMALL_DATA,medium_data=MEDIUM_DATA,antialia
         a.branch('bra','a_reject');a.emit(0x0009);a.label('a_nonzero_'+name)
         a.lit(1025,0);a.rr('cmp/hs',0,reg);a.branch('bf','a_bounded_'+name)
         a.branch('bra','a_reject');a.emit(0x0009);a.label('a_bounded_'+name)
-    a.imm(2,11);a.imm(2,12);a.lit(257,0)
+    a.imm(1 if native_only else 2,11);a.imm(1 if native_only else 2,12);a.lit(257,0)
     a.rr('cmp/hs',0,9);a.branch('bf','a_height');a.imm(1,11)
     a.label('a_height');a.rr('cmp/hs',0,10);a.branch('bf','a_native_width');a.imm(1,12)
     a.label('a_native_width');a.lit(513,0)

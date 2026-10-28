@@ -1,0 +1,3042 @@
+{
+  "version": "0.7.22",
+  "issue": "https://github.com/retro-trans/Seireiki-Rayblade/issues/1",
+  "status": "Issue #1 supplied-save reproduction and fix pass in Flycast; local full/upgrade packages",
+  "prior_version": "0.7.21",
+  "reproduction": {
+    "0.7.0": "Missing princess dialogue at S0c8 VM 0x8c0108ec, after Reduce's warning, reproduced from the issue's VMU.",
+    "0.7.21": "Later bridge white panel at S0c8 VM 0x8c010cbe, with intact English script and CPU text plane; native texture error 6."
+  },
+  "cause": "Uncompressed generated text exhausts available video texture memory.",
+  "change": "Lossless exact-block PVR VQ for representable Native text, retaining editable RGB source and persistent upload staging in the same CPU allocation. Unsupported surfaces retain their uncompressed upload.",
+  "pixels": "Glyph shapes, four alpha levels, colors, current 1x font density, layout and wording remain exact.",
+  "failed_allocation": {
+    "dimensions": [
+      1024,
+      128
+    ],
+    "uncompressed_bytes": 262144,
+    "lossless_VQ_bytes": 34816,
+    "captured_actual_SDK_result_before": 3,
+    "captured_actual_SDK_result_after": 0
+  },
+  "final_executable_sha256": "b14a82cbab8e7b00f9dd7db3ac39f947b8e0ecba637ec027112d20668ced8b2a",
+  "native_proof": "work/output/0.7.22/stage6-text-native-test.json",
+  "live_bridge_proof": "work/output/issue-1/final-bridge-codec-live.json",
+  "limits": [
+    "Physical Dreamcast untested",
+    "Complete routes and extended sessions untested"
+  ],
+  "publication": "Local build only; no GitHub release, issue comment or issue closure.",
+  "live_proof": "work/output/0.7.22/stage6-text-live-test.json",
+  "live": {
+    "version": "0.7.22",
+    "issue": "https://github.com/retro-trans/Seireiki-Rayblade/issues/1",
+    "issue_1_reproduction_and_fix": "pass",
+    "executable_sha256": "b14a82cbab8e7b00f9dd7db3ac39f947b8e0ecba637ec027112d20668ced8b2a",
+    "method": "Fresh boot, supplied issue VMU File 1, Next, full S0c8 bridge replay to Stage 6 battle. Supported controller input; read-only RAM/telemetry. No emulator save states or guest RAM writes.",
+    "supplied_VMU_sha256": "23670a05accbcb3311b93f3812b5244733394698b4691cf876abe4c96badb01e",
+    "dialogue": {
+      "first_princess_VM": "0x8c0108ec",
+      "later_bridge_VM": "0x8c010cbe",
+      "visual_review": "Both formerly missing/white dialogue scenes display correctly.",
+      "codec": [
+        {
+          "scene": "princess",
+          "VM": "0x8c0108ec",
+          "error": 0,
+          "all_seven_code_spans_match": true,
+          "decoded_text_texels_exact": true,
+          "textures": [
+            {
+              "node": "0x8c471e28",
+              "flags": "0x25",
+              "VRAM_offset": "0x35d180",
+              "bytes": 10240,
+              "owner": "0x8cf40cf4",
+              "gbix": "0x400",
+              "width": 512,
+              "height": 64
+            },
+            {
+              "node": "0x8c471e88",
+              "flags": "0x25",
+              "VRAM_offset": "0x3a1980",
+              "bytes": 34816,
+              "owner": "0x8cf40e04",
+              "gbix": "0x401",
+              "width": 1024,
+              "height": 128
+            }
+          ],
+          "free": [
+            351872,
+            245760
+          ]
+        },
+        {
+          "scene": "later-bridge",
+          "VM": "0x8c010cbe",
+          "error": 0,
+          "all_seven_code_spans_match": true,
+          "decoded_text_texels_exact": true,
+          "textures": [
+            {
+              "node": "0x8c471e28",
+              "flags": "0x25",
+              "VRAM_offset": "0x35d180",
+              "bytes": 10240,
+              "owner": "0x8cf40cf4",
+              "gbix": "0x400",
+              "width": 512,
+              "height": 64
+            },
+            {
+              "node": "0x8c471ea0",
+              "flags": "0x25",
+              "VRAM_offset": "0x3bf980",
+              "bytes": 34816,
+              "owner": "0x8cf40e48",
+              "gbix": "0x401",
+              "width": 1024,
+              "height": 128
+            }
+          ],
+          "free": [
+            228992,
+            237568
+          ]
+        }
+      ]
+    },
+    "battle_menu_visual_review": {
+      "Allied Unit List": "pass",
+      "Counters": "pass",
+      "System / Unit Profiles list and Almaris detail": "pass",
+      "System / Character Profiles list and Arthur detail": "pass",
+      "Save list and Save complete message": "pass"
+    },
+    "save_load": {
+      "private_VMU_only": true,
+      "saved_to": "Port A Slot 1, previously empty File 4, Touya Lv6 / Turns 1 / Chapter 6",
+      "saved_VMU_sha256": "6208465cf3de3a7f24dd75a15fb2b0faf7413d66fcc90cf9cae1d163af75395a",
+      "method": "Closed private emulator; copied its saved VMU to a separate private profile; cold booted same final disc and selected File 4 in normal Load File UI.",
+      "after_reload": "Allied Unit List, Counters, Unit Profile detail and Character Profile detail visually pass; native texture error remains zero."
+    },
+    "screenshots": {
+      "allied-unit-list": {
+        "path": "work/ui/issue-1/0.7.22/allied-unit-list.jpg",
+        "sha256": "d783b52890fd78331f59b6534adc2ac93f724505ef31b7006c537a2aab32a5a2"
+      },
+      "character-profile-detail": {
+        "path": "work/ui/issue-1/0.7.22/character-profile-detail.jpg",
+        "sha256": "115e20e61afd3b9311c84df2c65246c6258d87d78dfe7d23dc05636a2afdb762"
+      },
+      "character-profile-list": {
+        "path": "work/ui/issue-1/0.7.22/character-profile-list.jpg",
+        "sha256": "b21ed6773d25a2f63626187cd6d47533406bdacf6c52ce39f41b33be95da5ece"
+      },
+      "counters": {
+        "path": "work/ui/issue-1/0.7.22/counters.jpg",
+        "sha256": "6d1f6f62517cfbea30ea1704d14060e9f216750ceac8f8259c4b72af8d0c5378"
+      },
+      "later-bridge-dialogue": {
+        "path": "work/ui/issue-1/0.7.22/later-bridge-dialogue.jpg",
+        "sha256": "cb60321e2f93db401a6c77b7784f60d568ea86b651f2b9fd0003dcc0f460158b"
+      },
+      "load-battle-file4": {
+        "path": "work/ui/issue-1/0.7.22/load-battle-file4.jpg",
+        "sha256": "307b7952cd3a6c73abc5a29ceace481204d9bb33fe498780328df1e555de1f9f"
+      },
+      "princess-dialogue": {
+        "path": "work/ui/issue-1/0.7.22/princess-dialogue.jpg",
+        "sha256": "25bc47db0978373ccde12bfa0440552325faece4d085d032ab2173f767cd4faa"
+      },
+      "reload-allied-unit-list": {
+        "path": "work/ui/issue-1/0.7.22/reload-allied-unit-list.jpg",
+        "sha256": "d0e6339383a9b659a7232ee278ff3efccaf8e4b6194c390da2fa420c398b10ae"
+      },
+      "reload-character-profile-detail": {
+        "path": "work/ui/issue-1/0.7.22/reload-character-profile-detail.jpg",
+        "sha256": "31aa8abc5874236e626f515bb28bb2e2d43630bb08d168c872e34f3a67f11170"
+      },
+      "reload-counters": {
+        "path": "work/ui/issue-1/0.7.22/reload-counters.jpg",
+        "sha256": "7812005a295aa6937f5c322f5e6fee2bf42b224399434e0d15939129b3e92053"
+      },
+      "reload-unit-profile-detail": {
+        "path": "work/ui/issue-1/0.7.22/reload-unit-profile-detail.jpg",
+        "sha256": "9c67a8b75bf8cc2baa4e9bd4ef8ae8005db29f05c9c7bc0f409cdfbf6d6e26e4"
+      },
+      "save-complete": {
+        "path": "work/ui/issue-1/0.7.22/save-complete.jpg",
+        "sha256": "414fbf05c71d235fceb4d1885f0394e279416906eb338666db859a1cd14e7ab0"
+      },
+      "unit-profile-detail": {
+        "path": "work/ui/issue-1/0.7.22/unit-profile-detail.jpg",
+        "sha256": "5b8704cabca02b916071a8e660927b75aa525078efcdd3831a11f79373db7f12"
+      },
+      "unit-profile-list": {
+        "path": "work/ui/issue-1/0.7.22/unit-profile-list.jpg",
+        "sha256": "52ce2d0ef6ac40df23e9aed66776fedf50e3fbca01b89410e4766421c3202952"
+      }
+    },
+    "baseline_reproductions": {
+      "work/ui/issue-1/0.7.0/princess-missing-dialogue.jpg": "e0a0526e8d02418bc0b5532f55ac2f12469990e0042d7b32178e51fe08ec327f",
+      "work/ui/issue-1/0.7.21/later-bridge-white-panel.jpg": "48eaec1c5a4e5983b5216bdd366a1f5cb1edb7c6e3ebe332fcdca6c143cbab31"
+    },
+    "RAM": {
+      "princess": {
+        "path": "work/source/issue-1/princess-final-0722.ram",
+        "sha256": "d966c3e31f2cb40f518ca703cf132b22c20fefac09469bbee786e6168bad3c5b",
+        "all_seven_patch_spans_exact": true,
+        "residency": {
+          "VM": "0x8c0108ec",
+          "native_texture_error": 0,
+          "TA_allocator_units": 384176,
+          "banks": [
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471a50",
+                  "flags": "0x2005",
+                  "VRAM_offset": "0x0",
+                  "bytes": 768384,
+                  "owner": "0x8c00f358"
+                },
+                {
+                  "node": "0x8c471a80",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbb980",
+                  "bytes": 6144,
+                  "owner": "0x8c4222f0",
+                  "gbix": "0x0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a98",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbd180",
+                  "bytes": 32768,
+                  "owner": "0x8cf40298",
+                  "gbix": "0xfffffff0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ab0",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xc5180",
+                  "bytes": 32768,
+                  "owner": "0x8cf402dc",
+                  "gbix": "0xfffffff1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ac8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xcd180",
+                  "bytes": 65536,
+                  "owner": "0x8cf40320",
+                  "gbix": "0xfffffff2",
+                  "width": 256,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a38",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xdd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40364",
+                  "gbix": "0x20",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471af8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x15d180",
+                  "bytes": 524288,
+                  "owner": "0x8cf403ec",
+                  "gbix": "0xc6",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b40",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x1dd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40474",
+                  "gbix": "0xc8",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b70",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x25d180",
+                  "bytes": 1048576,
+                  "owner": "0x8cf404fc",
+                  "gbix": "0x174",
+                  "width": 1024,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471e28",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x35d180",
+                  "bytes": 10240,
+                  "owner": "0x8cf40cf4",
+                  "gbix": "0x400",
+                  "width": 512,
+                  "height": 64
+                },
+                {
+                  "node": "0x8c471e40",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x35f980",
+                  "bytes": 262144,
+                  "owner": "0x8cf40d38",
+                  "gbix": "0x1bdb",
+                  "width": 512,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471e70",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x39f980",
+                  "bytes": 8192,
+                  "owner": "0x8cf40dc0",
+                  "gbix": "0x1603",
+                  "width": 64,
+                  "height": 64
+                },
+                {
+                  "node": "0x8c471e88",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x3a1980",
+                  "bytes": 34816,
+                  "owner": "0x8cf40e04",
+                  "gbix": "0x401",
+                  "width": 1024,
+                  "height": 128
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c471a20",
+                  "flags": "0x1",
+                  "VRAM_offset": "0x3aa180",
+                  "bytes": 351872,
+                  "owner": "0x0"
+                }
+              ],
+              "bank": 0,
+              "total_free": 351872,
+              "largest_free": 351872
+            },
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471a68",
+                  "flags": "0xd",
+                  "VRAM_offset": "0x400000",
+                  "bytes": 1228800,
+                  "owner": "0x8c419560",
+                  "gbix": "0x0",
+                  "width": 640,
+                  "height": 480
+                },
+                {
+                  "node": "0x8c471ae0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x52c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf403a8",
+                  "gbix": "0xc5",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b10",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x5ac000",
+                  "bytes": 524288,
+                  "owner": "0x8cf40430",
+                  "gbix": "0xc7",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b58",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x62c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf404b8",
+                  "gbix": "0xc9",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b88",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ac000",
+                  "bytes": 131072,
+                  "owner": "0x8cf40540",
+                  "gbix": "0x1f4c",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471ba0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6cc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40584",
+                  "gbix": "0x1eba",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bb8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ce000",
+                  "bytes": 8192,
+                  "owner": "0x8cf405c8",
+                  "gbix": "0x1ebb",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bd0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4060c",
+                  "gbix": "0x1e24",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471be8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40650",
+                  "gbix": "0x1e25",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c00",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40694",
+                  "gbix": "0x1d90",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c18",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf406d8",
+                  "gbix": "0x1d91",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c30",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4071c",
+                  "gbix": "0x1eb8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c48",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6da000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40760",
+                  "gbix": "0x1eb9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c60",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6dc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407a4",
+                  "gbix": "0x1e22",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c78",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6de000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407e8",
+                  "gbix": "0x1e23",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c90",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4082c",
+                  "gbix": "0x1d8e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ca8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40870",
+                  "gbix": "0x1d8f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cc0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408b4",
+                  "gbix": "0x1e94",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cd8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408f8",
+                  "gbix": "0x1e95",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cf0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4093c",
+                  "gbix": "0x1dfe",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d08",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ea000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40980",
+                  "gbix": "0x1dff",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d20",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ec000",
+                  "bytes": 8192,
+                  "owner": "0x8cf409c4",
+                  "gbix": "0x1d6a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d38",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ee000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a08",
+                  "gbix": "0x1d6b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d50",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a4c",
+                  "gbix": "0x1f06",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d68",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a90",
+                  "gbix": "0x1f07",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d80",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ad4",
+                  "gbix": "0x1e60",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d98",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b18",
+                  "gbix": "0x1e61",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471db0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b5c",
+                  "gbix": "0x1dcc",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471dc8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fa000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ba0",
+                  "gbix": "0x1dcd",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471de0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fc000",
+                  "bytes": 32768,
+                  "owner": "0x8cf40be4",
+                  "gbix": "0x2174",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471df8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x704000",
+                  "bytes": 262144,
+                  "owner": "0x8cf40c6c",
+                  "gbix": "0x1f40",
+                  "width": 512,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471e10",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x744000",
+                  "bytes": 262144,
+                  "owner": "0x8cf40cb0",
+                  "gbix": "0x13c7",
+                  "width": 512,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471e58",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x784000",
+                  "bytes": 262144,
+                  "owner": "0x8cf40d7c",
+                  "gbix": "0x1bdc",
+                  "width": 512,
+                  "height": 256
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c471b28",
+                  "flags": "0x41",
+                  "VRAM_offset": "0x7c4000",
+                  "bytes": 245760,
+                  "owner": "0x8cf40474"
+                }
+              ],
+              "bank": 1,
+              "total_free": 245760,
+              "largest_free": 245760
+            }
+          ]
+        }
+      },
+      "later-bridge": {
+        "path": "work/source/issue-1/later-bridge-final-0722.ram",
+        "sha256": "bda9c63dd817791eb3ec3b7ea50f48eeb20c73a0a7c63dbb8e85a4fc7832401d",
+        "all_seven_patch_spans_exact": true,
+        "residency": {
+          "VM": "0x8c010cbe",
+          "native_texture_error": 0,
+          "TA_allocator_units": 384176,
+          "banks": [
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471a50",
+                  "flags": "0x2005",
+                  "VRAM_offset": "0x0",
+                  "bytes": 768384,
+                  "owner": "0x8c00f358"
+                },
+                {
+                  "node": "0x8c471a80",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbb980",
+                  "bytes": 6144,
+                  "owner": "0x8c4222f0",
+                  "gbix": "0x0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a98",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbd180",
+                  "bytes": 32768,
+                  "owner": "0x8cf40298",
+                  "gbix": "0xfffffff0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ab0",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xc5180",
+                  "bytes": 32768,
+                  "owner": "0x8cf402dc",
+                  "gbix": "0xfffffff1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ac8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xcd180",
+                  "bytes": 65536,
+                  "owner": "0x8cf40320",
+                  "gbix": "0xfffffff2",
+                  "width": 256,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a38",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xdd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40364",
+                  "gbix": "0x20",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471af8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x15d180",
+                  "bytes": 524288,
+                  "owner": "0x8cf403ec",
+                  "gbix": "0xc6",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b40",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x1dd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40474",
+                  "gbix": "0xc8",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b70",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x25d180",
+                  "bytes": 1048576,
+                  "owner": "0x8cf404fc",
+                  "gbix": "0x174",
+                  "width": 1024,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471e28",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x35d180",
+                  "bytes": 10240,
+                  "owner": "0x8cf40cf4",
+                  "gbix": "0x400",
+                  "width": 512,
+                  "height": 64
+                },
+                {
+                  "node": "0x8c471e40",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x35f980",
+                  "bytes": 131072,
+                  "owner": "0x8cf40d38",
+                  "gbix": "0x1bed",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471e58",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x37f980",
+                  "bytes": 131072,
+                  "owner": "0x8cf40d7c",
+                  "gbix": "0x1bee",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471e88",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x39f980",
+                  "bytes": 131072,
+                  "owner": "0x8cf40e04",
+                  "gbix": "0x1c5e",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471ea0",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x3bf980",
+                  "bytes": 34816,
+                  "owner": "0x8cf40e48",
+                  "gbix": "0x401",
+                  "width": 1024,
+                  "height": 128
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c471a20",
+                  "flags": "0x1",
+                  "VRAM_offset": "0x3c8180",
+                  "bytes": 228992,
+                  "owner": "0x0"
+                }
+              ],
+              "bank": 0,
+              "total_free": 228992,
+              "largest_free": 228992
+            },
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471a68",
+                  "flags": "0xd",
+                  "VRAM_offset": "0x400000",
+                  "bytes": 1228800,
+                  "owner": "0x8c419560",
+                  "gbix": "0x0",
+                  "width": 640,
+                  "height": 480
+                },
+                {
+                  "node": "0x8c471ae0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x52c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf403a8",
+                  "gbix": "0xc5",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b10",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x5ac000",
+                  "bytes": 524288,
+                  "owner": "0x8cf40430",
+                  "gbix": "0xc7",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b58",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x62c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf404b8",
+                  "gbix": "0xc9",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b88",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ac000",
+                  "bytes": 131072,
+                  "owner": "0x8cf40540",
+                  "gbix": "0x1f4c",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471ba0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6cc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40584",
+                  "gbix": "0x1eba",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bb8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ce000",
+                  "bytes": 8192,
+                  "owner": "0x8cf405c8",
+                  "gbix": "0x1ebb",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bd0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4060c",
+                  "gbix": "0x1e24",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471be8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40650",
+                  "gbix": "0x1e25",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c00",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40694",
+                  "gbix": "0x1d90",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c18",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf406d8",
+                  "gbix": "0x1d91",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c30",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4071c",
+                  "gbix": "0x1eb8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c48",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6da000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40760",
+                  "gbix": "0x1eb9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c60",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6dc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407a4",
+                  "gbix": "0x1e22",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c78",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6de000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407e8",
+                  "gbix": "0x1e23",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c90",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4082c",
+                  "gbix": "0x1d8e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ca8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40870",
+                  "gbix": "0x1d8f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cc0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408b4",
+                  "gbix": "0x1e94",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cd8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408f8",
+                  "gbix": "0x1e95",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cf0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4093c",
+                  "gbix": "0x1dfe",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d08",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ea000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40980",
+                  "gbix": "0x1dff",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d20",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ec000",
+                  "bytes": 8192,
+                  "owner": "0x8cf409c4",
+                  "gbix": "0x1d6a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d38",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ee000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a08",
+                  "gbix": "0x1d6b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d50",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a4c",
+                  "gbix": "0x1f06",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d68",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a90",
+                  "gbix": "0x1f07",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d80",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ad4",
+                  "gbix": "0x1e60",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d98",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b18",
+                  "gbix": "0x1e61",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471db0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b5c",
+                  "gbix": "0x1dcc",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471dc8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fa000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ba0",
+                  "gbix": "0x1dcd",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471de0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fc000",
+                  "bytes": 32768,
+                  "owner": "0x8cf40be4",
+                  "gbix": "0x2174",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471df8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x704000",
+                  "bytes": 262144,
+                  "owner": "0x8cf40c6c",
+                  "gbix": "0x1f40",
+                  "width": 512,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471e10",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x744000",
+                  "bytes": 262144,
+                  "owner": "0x8cf40cb0",
+                  "gbix": "0x13c7",
+                  "width": 512,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471e70",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x784000",
+                  "bytes": 262144,
+                  "owner": "0x8cf40dc0",
+                  "gbix": "0x1c5d",
+                  "width": 512,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471ed0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x7c4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ed0",
+                  "gbix": "0x1695",
+                  "width": 64,
+                  "height": 64
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c471b28",
+                  "flags": "0x41",
+                  "VRAM_offset": "0x7c6000",
+                  "bytes": 237568,
+                  "owner": "0x8cf40474"
+                }
+              ],
+              "bank": 1,
+              "total_free": 237568,
+              "largest_free": 237568
+            }
+          ]
+        }
+      },
+      "battle": {
+        "path": "work/source/issue-1/battle-final-0722.ram",
+        "sha256": "4b93ee0356f40069d84d337d11cc3251a9e45137562085068e89cf96a3b1a2ad",
+        "all_seven_patch_spans_exact": true,
+        "residency": {
+          "VM": "0x8c01ed95",
+          "native_texture_error": 0,
+          "TA_allocator_units": 384176,
+          "banks": [
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471ac8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xcd180",
+                  "bytes": 65536,
+                  "owner": "0x8cf40320",
+                  "gbix": "0xfffffff2",
+                  "width": 256,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ab0",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xc5180",
+                  "bytes": 32768,
+                  "owner": "0x8cf402dc",
+                  "gbix": "0xfffffff1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a98",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbd180",
+                  "bytes": 32768,
+                  "owner": "0x8cf40298",
+                  "gbix": "0xfffffff0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a80",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbb980",
+                  "bytes": 6144,
+                  "owner": "0x8c4222f0",
+                  "gbix": "0x0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a50",
+                  "flags": "0x2005",
+                  "VRAM_offset": "0x0",
+                  "bytes": 768384,
+                  "owner": "0x8c00f358"
+                },
+                {
+                  "node": "0x8c471a38",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xdd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40364",
+                  "gbix": "0x8",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471af8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x15d180",
+                  "bytes": 524288,
+                  "owner": "0x8cf403ec",
+                  "gbix": "0x5c",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b40",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x1dd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40474",
+                  "gbix": "0x5e",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b70",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x25d180",
+                  "bytes": 1048576,
+                  "owner": "0x8cf404fc",
+                  "gbix": "0x15c",
+                  "width": 1024,
+                  "height": 512
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c472200",
+                  "flags": "0x21",
+                  "VRAM_offset": "0x35d180",
+                  "bytes": 667264,
+                  "owner": "0x8cf40c28"
+                }
+              ],
+              "bank": 0,
+              "total_free": 667264,
+              "largest_free": 667264
+            },
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471a68",
+                  "flags": "0xd",
+                  "VRAM_offset": "0x400000",
+                  "bytes": 1228800,
+                  "owner": "0x8c419560",
+                  "gbix": "0x0",
+                  "width": 640,
+                  "height": 480
+                },
+                {
+                  "node": "0x8c471ae0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x52c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf403a8",
+                  "gbix": "0x5b",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b10",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x5ac000",
+                  "bytes": 524288,
+                  "owner": "0x8cf40430",
+                  "gbix": "0x5d",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b58",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x62c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf404b8",
+                  "gbix": "0x5f",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b88",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ac000",
+                  "bytes": 131072,
+                  "owner": "0x8cf40540",
+                  "gbix": "0x1f4c",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471ba0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6cc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40584",
+                  "gbix": "0x1eba",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bb8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ce000",
+                  "bytes": 8192,
+                  "owner": "0x8cf405c8",
+                  "gbix": "0x1ebb",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bd0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4060c",
+                  "gbix": "0x1e24",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471be8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40650",
+                  "gbix": "0x1e25",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c00",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40694",
+                  "gbix": "0x1d90",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c18",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf406d8",
+                  "gbix": "0x1d91",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c30",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4071c",
+                  "gbix": "0x1eb8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c48",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6da000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40760",
+                  "gbix": "0x1eb9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c60",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6dc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407a4",
+                  "gbix": "0x1e22",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c78",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6de000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407e8",
+                  "gbix": "0x1e23",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c90",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4082c",
+                  "gbix": "0x1d8e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ca8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40870",
+                  "gbix": "0x1d8f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cc0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408b4",
+                  "gbix": "0x1e94",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cd8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408f8",
+                  "gbix": "0x1e95",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cf0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4093c",
+                  "gbix": "0x1dfe",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d08",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ea000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40980",
+                  "gbix": "0x1dff",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d20",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ec000",
+                  "bytes": 8192,
+                  "owner": "0x8cf409c4",
+                  "gbix": "0x1d6a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d38",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ee000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a08",
+                  "gbix": "0x1d6b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d50",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a4c",
+                  "gbix": "0x1f16",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d68",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a90",
+                  "gbix": "0x1f17",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d80",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ad4",
+                  "gbix": "0x1e70",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d98",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b18",
+                  "gbix": "0x1e71",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471db0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b5c",
+                  "gbix": "0x1ddc",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471dc8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fa000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ba0",
+                  "gbix": "0x1ddd",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471df8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x704000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40c6c",
+                  "gbix": "0x1e8e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e10",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x706000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40cb0",
+                  "gbix": "0x1e8f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e28",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x708000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40cf4",
+                  "gbix": "0x1df8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e40",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x70a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40d38",
+                  "gbix": "0x1df9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e58",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x70c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40d7c",
+                  "gbix": "0x1d64",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e70",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x70e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40dc0",
+                  "gbix": "0x1d65",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e88",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x710000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40e04",
+                  "gbix": "0x1ee0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ea0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x712000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40e48",
+                  "gbix": "0x1ee1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471eb8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x714000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40e8c",
+                  "gbix": "0x1e40",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ed0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x716000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ed0",
+                  "gbix": "0x1e41",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ee8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x718000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40f14",
+                  "gbix": "0x1dac",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f00",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x71a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40f58",
+                  "gbix": "0x1dad",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f18",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x71c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40f9c",
+                  "gbix": "0x1ea0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f30",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x71e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40fe0",
+                  "gbix": "0x1ea1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f48",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x720000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41024",
+                  "gbix": "0x1e0a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f60",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x722000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41068",
+                  "gbix": "0x1e0b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f78",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x724000",
+                  "bytes": 8192,
+                  "owner": "0x8cf410ac",
+                  "gbix": "0x1d76",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f90",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x726000",
+                  "bytes": 8192,
+                  "owner": "0x8cf410f0",
+                  "gbix": "0x1d77",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471fa8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x728000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41134",
+                  "gbix": "0x1e8a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471fc0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x72a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41178",
+                  "gbix": "0x1e8b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471fd8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x72c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf411bc",
+                  "gbix": "0x1df4",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ff0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x72e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41200",
+                  "gbix": "0x1df5",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472008",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x730000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41244",
+                  "gbix": "0x1d60",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472020",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x732000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41288",
+                  "gbix": "0x1d61",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472038",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x734000",
+                  "bytes": 8192,
+                  "owner": "0x8cf412cc",
+                  "gbix": "0x1ed8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472050",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x736000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41310",
+                  "gbix": "0x1ed9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472068",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x738000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41354",
+                  "gbix": "0x1e38",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472080",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x73a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41398",
+                  "gbix": "0x1e39",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472098",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x73c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf413dc",
+                  "gbix": "0x1da4",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720b0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x73e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41420",
+                  "gbix": "0x1da5",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720c8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x740000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41464",
+                  "gbix": "0x1f06",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720e0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x742000",
+                  "bytes": 8192,
+                  "owner": "0x8cf414a8",
+                  "gbix": "0x1f07",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720f8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x744000",
+                  "bytes": 8192,
+                  "owner": "0x8cf414ec",
+                  "gbix": "0x1e60",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472110",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x746000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41530",
+                  "gbix": "0x1e61",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472128",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x748000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41574",
+                  "gbix": "0x1dcc",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472140",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x74a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf415b8",
+                  "gbix": "0x1dcd",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472158",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x74c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf415fc",
+                  "gbix": "0x1e78",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472170",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x74e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41640",
+                  "gbix": "0x1e79",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472188",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x750000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41684",
+                  "gbix": "0x1de2",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4721a0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x752000",
+                  "bytes": 8192,
+                  "owner": "0x8cf416c8",
+                  "gbix": "0x1de3",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4721b8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x754000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4170c",
+                  "gbix": "0x1d4e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4721d0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x756000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41750",
+                  "gbix": "0x1d4f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a20",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x758000",
+                  "bytes": 6144,
+                  "owner": "0x8cf40be4",
+                  "gbix": "0x400",
+                  "width": 256,
+                  "height": 64
+                },
+                {
+                  "node": "0x8c4721e8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x759800",
+                  "bytes": 18432,
+                  "owner": "0x8cf40c28",
+                  "gbix": "0x401",
+                  "width": 128,
+                  "height": 512
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c471de0",
+                  "flags": "0x41",
+                  "VRAM_offset": "0x6fc000",
+                  "bytes": 32768,
+                  "owner": "0x8cf40be4"
+                },
+                {
+                  "node": "0x8c471b28",
+                  "flags": "0x41",
+                  "VRAM_offset": "0x75e000",
+                  "bytes": 663552,
+                  "owner": "0x8cf40474"
+                }
+              ],
+              "bank": 1,
+              "total_free": 696320,
+              "largest_free": 663552
+            }
+          ]
+        }
+      },
+      "reload": {
+        "path": "work/source/issue-1/reload-final-0722.ram",
+        "sha256": "3e38b3e2f3acb362fec80e4174c3f552705a864910fa980c844e25dd48db49c2",
+        "all_seven_patch_spans_exact": true,
+        "residency": {
+          "VM": "0x8c01f658",
+          "native_texture_error": 0,
+          "TA_allocator_units": 384176,
+          "banks": [
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471a50",
+                  "flags": "0x2005",
+                  "VRAM_offset": "0x0",
+                  "bytes": 768384,
+                  "owner": "0x8c00f358"
+                },
+                {
+                  "node": "0x8c471a80",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbb980",
+                  "bytes": 6144,
+                  "owner": "0x8c4222f0",
+                  "gbix": "0x0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471a98",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xbd180",
+                  "bytes": 32768,
+                  "owner": "0x8cf40298",
+                  "gbix": "0xfffffff0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ab0",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xc5180",
+                  "bytes": 32768,
+                  "owner": "0x8cf402dc",
+                  "gbix": "0xfffffff1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ac8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xcd180",
+                  "bytes": 65536,
+                  "owner": "0x8cf40320",
+                  "gbix": "0xfffffff2",
+                  "width": 256,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ae0",
+                  "flags": "0x25",
+                  "VRAM_offset": "0xdd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40364",
+                  "gbix": "0x8",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b10",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x15d180",
+                  "bytes": 524288,
+                  "owner": "0x8cf403ec",
+                  "gbix": "0x5c",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b40",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x1dd180",
+                  "bytes": 524288,
+                  "owner": "0x8cf40474",
+                  "gbix": "0x5e",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b70",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x25d180",
+                  "bytes": 1048576,
+                  "owner": "0x8cf404fc",
+                  "gbix": "0x15c",
+                  "width": 1024,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c4721e8",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x35d180",
+                  "bytes": 8192,
+                  "owner": "0x8cf41750",
+                  "gbix": "0x15fb",
+                  "width": 64,
+                  "height": 64
+                },
+                {
+                  "node": "0x8c472200",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x35f180",
+                  "bytes": 34816,
+                  "owner": "0x8cf41794",
+                  "gbix": "0x403",
+                  "width": 512,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c472218",
+                  "flags": "0x25",
+                  "VRAM_offset": "0x367980",
+                  "bytes": 18432,
+                  "owner": "0x8cf417d8",
+                  "gbix": "0x400",
+                  "width": 512,
+                  "height": 128
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c471a20",
+                  "flags": "0x1",
+                  "VRAM_offset": "0x36c180",
+                  "bytes": 605824,
+                  "owner": "0x0"
+                }
+              ],
+              "bank": 0,
+              "total_free": 605824,
+              "largest_free": 605824
+            },
+            {
+              "allocated": [
+                {
+                  "node": "0x8c471a68",
+                  "flags": "0xd",
+                  "VRAM_offset": "0x400000",
+                  "bytes": 1228800,
+                  "owner": "0x8c419560",
+                  "gbix": "0x0",
+                  "width": 640,
+                  "height": 480
+                },
+                {
+                  "node": "0x8c471af8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x52c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf403a8",
+                  "gbix": "0x5b",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b28",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x5ac000",
+                  "bytes": 524288,
+                  "owner": "0x8cf40430",
+                  "gbix": "0x5d",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b58",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x62c000",
+                  "bytes": 524288,
+                  "owner": "0x8cf404b8",
+                  "gbix": "0x5f",
+                  "width": 512,
+                  "height": 512
+                },
+                {
+                  "node": "0x8c471b88",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ac000",
+                  "bytes": 131072,
+                  "owner": "0x8cf40540",
+                  "gbix": "0x1f4c",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "node": "0x8c471ba0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6cc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40584",
+                  "gbix": "0x1eba",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bb8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ce000",
+                  "bytes": 8192,
+                  "owner": "0x8cf405c8",
+                  "gbix": "0x1ebb",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471bd0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4060c",
+                  "gbix": "0x1e24",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471be8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40650",
+                  "gbix": "0x1e25",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c00",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40694",
+                  "gbix": "0x1d90",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c18",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf406d8",
+                  "gbix": "0x1d91",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c30",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6d8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4071c",
+                  "gbix": "0x1eb8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c48",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6da000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40760",
+                  "gbix": "0x1eb9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c60",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6dc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407a4",
+                  "gbix": "0x1e22",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c78",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6de000",
+                  "bytes": 8192,
+                  "owner": "0x8cf407e8",
+                  "gbix": "0x1e23",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471c90",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4082c",
+                  "gbix": "0x1d8e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ca8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40870",
+                  "gbix": "0x1d8f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cc0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408b4",
+                  "gbix": "0x1e94",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cd8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf408f8",
+                  "gbix": "0x1e95",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471cf0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6e8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf4093c",
+                  "gbix": "0x1dfe",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d08",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ea000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40980",
+                  "gbix": "0x1dff",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d20",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ec000",
+                  "bytes": 8192,
+                  "owner": "0x8cf409c4",
+                  "gbix": "0x1d6a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d38",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6ee000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a08",
+                  "gbix": "0x1d6b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d50",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f0000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a4c",
+                  "gbix": "0x1f16",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d68",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f2000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40a90",
+                  "gbix": "0x1f17",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d80",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f4000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ad4",
+                  "gbix": "0x1e70",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471d98",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f6000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b18",
+                  "gbix": "0x1e71",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471db0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6f8000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40b5c",
+                  "gbix": "0x1ddc",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471dc8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fa000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ba0",
+                  "gbix": "0x1ddd",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471de0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fc000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40be4",
+                  "gbix": "0x1e8e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471df8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x6fe000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40c28",
+                  "gbix": "0x1e8f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e10",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x700000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40c6c",
+                  "gbix": "0x1df8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e28",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x702000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40cb0",
+                  "gbix": "0x1df9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e40",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x704000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40cf4",
+                  "gbix": "0x1d64",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e58",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x706000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40d38",
+                  "gbix": "0x1d65",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e70",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x708000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40d7c",
+                  "gbix": "0x1ee0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471e88",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x70a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40dc0",
+                  "gbix": "0x1ee1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ea0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x70c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40e04",
+                  "gbix": "0x1e40",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471eb8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x70e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40e48",
+                  "gbix": "0x1e41",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ed0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x710000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40e8c",
+                  "gbix": "0x1dac",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ee8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x712000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40ed0",
+                  "gbix": "0x1dad",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f00",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x714000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40f14",
+                  "gbix": "0x1ea0",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f18",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x716000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40f58",
+                  "gbix": "0x1ea1",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f30",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x718000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40f9c",
+                  "gbix": "0x1e0a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f48",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x71a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf40fe0",
+                  "gbix": "0x1e0b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f60",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x71c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41024",
+                  "gbix": "0x1d76",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f78",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x71e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41068",
+                  "gbix": "0x1d77",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471f90",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x720000",
+                  "bytes": 8192,
+                  "owner": "0x8cf410ac",
+                  "gbix": "0x1e8a",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471fa8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x722000",
+                  "bytes": 8192,
+                  "owner": "0x8cf410f0",
+                  "gbix": "0x1e8b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471fc0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x724000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41134",
+                  "gbix": "0x1df4",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471fd8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x726000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41178",
+                  "gbix": "0x1df5",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c471ff0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x728000",
+                  "bytes": 8192,
+                  "owner": "0x8cf411bc",
+                  "gbix": "0x1d60",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472008",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x72a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41200",
+                  "gbix": "0x1d61",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472020",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x72c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41244",
+                  "gbix": "0x1ed8",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472038",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x72e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41288",
+                  "gbix": "0x1ed9",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472050",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x730000",
+                  "bytes": 8192,
+                  "owner": "0x8cf412cc",
+                  "gbix": "0x1e38",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472068",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x732000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41310",
+                  "gbix": "0x1e39",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472080",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x734000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41354",
+                  "gbix": "0x1da4",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472098",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x736000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41398",
+                  "gbix": "0x1da5",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720b0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x738000",
+                  "bytes": 8192,
+                  "owner": "0x8cf413dc",
+                  "gbix": "0x1f06",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720c8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x73a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41420",
+                  "gbix": "0x1f07",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720e0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x73c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41464",
+                  "gbix": "0x1e60",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4720f8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x73e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf414a8",
+                  "gbix": "0x1e61",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472110",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x740000",
+                  "bytes": 8192,
+                  "owner": "0x8cf414ec",
+                  "gbix": "0x1dcc",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472128",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x742000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41530",
+                  "gbix": "0x1dcd",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472140",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x744000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41574",
+                  "gbix": "0x1e78",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472158",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x746000",
+                  "bytes": 8192,
+                  "owner": "0x8cf415b8",
+                  "gbix": "0x1e79",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472170",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x748000",
+                  "bytes": 8192,
+                  "owner": "0x8cf415fc",
+                  "gbix": "0x1de2",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c472188",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x74a000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41640",
+                  "gbix": "0x1de3",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4721a0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x74c000",
+                  "bytes": 8192,
+                  "owner": "0x8cf41684",
+                  "gbix": "0x1d4e",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4721b8",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x74e000",
+                  "bytes": 8192,
+                  "owner": "0x8cf416c8",
+                  "gbix": "0x1d4f",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "node": "0x8c4721d0",
+                  "flags": "0x45",
+                  "VRAM_offset": "0x750000",
+                  "bytes": 524288,
+                  "owner": "0x8cf4170c",
+                  "gbix": "0x1f53",
+                  "width": 512,
+                  "height": 512
+                }
+              ],
+              "free": [
+                {
+                  "node": "0x8c471a38",
+                  "flags": "0x1",
+                  "VRAM_offset": "0x7d0000",
+                  "bytes": 196608,
+                  "owner": "0x0"
+                }
+              ],
+              "bank": 1,
+              "total_free": 196608,
+              "largest_free": 196608
+            }
+          ]
+        }
+      }
+    },
+    "sessions": {
+      "final": {
+        "native_texture_error_rows": 0,
+        "residency_observations": 3966,
+        "telemetry_sha256": "552ebdc850161b90323df90d54df7452b605dc321d562c1c1a118e479f028a8d",
+        "driver_sha256": "77472173c83955b6dcfe8f2f93b161236dd771d3fca3a1fe794724dc5a1cbb6e"
+      },
+      "reload": {
+        "native_texture_error_rows": 0,
+        "residency_observations": 518,
+        "telemetry_sha256": "e80bd567ed236221f6f01286c66c324e4a573fe05f9f40202b6472bfaf29667b",
+        "driver_sha256": "3d6d6371980905ada44c464aa2c01605823235a06b8a8ec88484a0616abc098a"
+      }
+    },
+    "limits": [
+      "Physical Dreamcast untested",
+      "Complete routes and extended sessions untested",
+      "This is a targeted texture-corruption check, not complete UI proofreading; the existing long Chapter 6 save label overlaps the In Battle label."
+    ],
+    "publication": "Local build only; no GitHub release, issue comment or closure."
+  },
+  "packages": {
+    "full": {
+      "version": "0.7.22",
+      "release": false,
+      "package": "work/output/release-0.7.22/Rayblade-English-v0.7.22-xdelta.zip",
+      "bytes": 8173021,
+      "sha256": "71374c15327d3a399a42a223e9024ab16199eec4bd38584de18504e8afdb2fcc",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "upgrade": {
+      "from": "0.7.21",
+      "to": "0.7.22",
+      "native_xdelta_roundtrips": 3,
+      "Retro_Trans_Automatic_isolated_test": "pass",
+      "xdelta_operations": 1,
+      "all_six_files_equal_verified_target": true,
+      "source_preserved": true,
+      "unchanged_components": [
+        "Seireiki Rayblade (Japan) (Track 1).bin",
+        "Seireiki Rayblade (Japan) (Track 2).bin",
+        "Seireiki Rayblade (Japan) (Track 3).bin",
+        "Seireiki Rayblade (Japan) (Track 4).bin",
+        "Seireiki Rayblade English v0.7.22.gdi"
+      ],
+      "outputs": {
+        "Seireiki Rayblade (Japan) (Track 1).bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "Seireiki Rayblade (Japan) (Track 2).bin": {
+          "bytes": 2389632,
+          "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+        },
+        "Seireiki Rayblade (Japan) (Track 3).bin": {
+          "bytes": 26535264,
+          "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+        },
+        "Seireiki Rayblade (Japan) (Track 4).bin": {
+          "bytes": 2036832,
+          "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+        },
+        "Seireiki Rayblade (Japan) (Track 5).bin": {
+          "bytes": 1157188704,
+          "sha256": "93efa3c2faa8e82a8a3abf1189c6b19db71f000eb7ff18c501260c18ca1e6094"
+        },
+        "Seireiki Rayblade English v0.7.22.gdi": {
+          "bytes": 312,
+          "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+        }
+      },
+      "published_catalog_changed": false,
+      "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+      "package": {
+        "path": "work/output/upgrade-0.7.21-to-0.7.22/Rayblade-English-v0.7.21-to-v0.7.22-upgrade.zip",
+        "bytes": 12535,
+        "sha256": "41558d36bfdcd39df7f44ebdb221dc8f370cf5622fe96af7a42f292be9159615"
+      }
+    }
+  }
+}

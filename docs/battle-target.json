@@ -1,0 +1,709 @@
+{
+  "version": "0.7.21",
+  "release": false,
+  "component": {
+    "version": "0.7.21",
+    "source_build": "0.7.20",
+    "source_executable_sha256": "09450c046a3bd4604a83e79466b73e63f738faa11829ae26bbcc0966f6435463",
+    "executable_sha256": "e72f6440313a56003ad369f8721e1036aa54512580c3692fcb2896a9efb1a522",
+    "adapters": [
+      {
+        "entry": "0x8c07b9a0",
+        "callee": "0x8c0ab898",
+        "vertex_stride": 24,
+        "bytes": 88,
+        "kind": "raw strip"
+      },
+      {
+        "entry": "0x8c07b9f8",
+        "callee": "0x8c0ab714",
+        "vertex_stride": 16,
+        "bytes": 88,
+        "kind": "raw strip"
+      },
+      {
+        "entry": "0x8c07ba50",
+        "callee": "0x8c0a93bc",
+        "bytes": 88,
+        "kind": "counted line descriptor"
+      }
+    ],
+    "pointer_edits": [
+      {
+        "file_offset": "0x16a98",
+        "old": "0x8c0ab898",
+        "new": "0x8c07b9a0"
+      },
+      {
+        "file_offset": "0x174b4",
+        "old": "0x8c0ab898",
+        "new": "0x8c07b9a0"
+      },
+      {
+        "file_offset": "0x17ea8",
+        "old": "0x8c0ab714",
+        "new": "0x8c07b9f8"
+      },
+      {
+        "file_offset": "0x18664",
+        "old": "0x8c0ab714",
+        "new": "0x8c07b9f8"
+      },
+      {
+        "file_offset": "0x18b84",
+        "old": "0x8c0a93bc",
+        "new": "0x8c07ba50"
+      },
+      {
+        "file_offset": "0x18bec",
+        "old": "0x8c0a93bc",
+        "new": "0x8c07ba50"
+      }
+    ],
+    "helper_bytes": 264,
+    "changed_executable_bytes": 259,
+    "cause": "Animation colored/textured strips and lines bypassed the 640x480 display adapters, leaving reticles and other animation geometry at half position/size.",
+    "mapping": "Scale only XY at the animation engine graphics boundary; preserve Z, inverse depth, UV, color, blend arguments, selected target and original input arrays.",
+    "scope": "Six animation-engine call-site literals only; SDK initialization/fade and other draw callers remain unchanged. All disc assets and other executable bytes exact 0.7.20.",
+    "release": false,
+    "live_validation": "pass: separate live record"
+  },
+  "reported_issue": {
+    "image": "work/ui/0.7.21/reported-offset.png",
+    "image_sha256": "6358822a759995efb03cbadbb7494e77f4b54e6ea03f3764026d714e44977a6e",
+    "old_center": [
+      158,
+      98
+    ],
+    "correct_center": [
+      316,
+      196
+    ]
+  },
+  "native": {
+    "version": "0.7.21",
+    "source_build": "0.7.20",
+    "source_executable_sha256": "09450c046a3bd4604a83e79466b73e63f738faa11829ae26bbcc0966f6435463",
+    "executable_sha256": "e72f6440313a56003ad369f8721e1036aa54512580c3692fcb2896a9efb1a522",
+    "adapters": [
+      {
+        "entry": "0x8c07b9a0",
+        "callee": "0x8c0ab898",
+        "vertex_stride": 24,
+        "bytes": 88,
+        "kind": "raw strip"
+      },
+      {
+        "entry": "0x8c07b9f8",
+        "callee": "0x8c0ab714",
+        "vertex_stride": 16,
+        "bytes": 88,
+        "kind": "raw strip"
+      },
+      {
+        "entry": "0x8c07ba50",
+        "callee": "0x8c0a93bc",
+        "bytes": 88,
+        "kind": "counted line descriptor"
+      }
+    ],
+    "pointer_edits": [
+      {
+        "file_offset": "0x16a98",
+        "old": "0x8c0ab898",
+        "new": "0x8c07b9a0"
+      },
+      {
+        "file_offset": "0x174b4",
+        "old": "0x8c0ab898",
+        "new": "0x8c07b9a0"
+      },
+      {
+        "file_offset": "0x17ea8",
+        "old": "0x8c0ab714",
+        "new": "0x8c07b9f8"
+      },
+      {
+        "file_offset": "0x18664",
+        "old": "0x8c0ab714",
+        "new": "0x8c07b9f8"
+      },
+      {
+        "file_offset": "0x18b84",
+        "old": "0x8c0a93bc",
+        "new": "0x8c07ba50"
+      },
+      {
+        "file_offset": "0x18bec",
+        "old": "0x8c0a93bc",
+        "new": "0x8c07ba50"
+      }
+    ],
+    "helper_bytes": 264,
+    "changed_executable_bytes": 259,
+    "cause": "Animation colored/textured strips and lines bypassed the 640x480 display adapters, leaving reticles and other animation geometry at half position/size.",
+    "mapping": "Scale only XY at the animation engine graphics boundary; preserve Z, inverse depth, UV, color, blend arguments, selected target and original input arrays.",
+    "scope": "GPU submission/material allocation endpoints are bounded stubs; SDK raw vertex emission is actual. Line endpoint records descriptors. Live reticle and combat review separate.",
+    "release": false,
+    "live_validation": "pending",
+    "SDK_raw_packet_cases": 32,
+    "SDK_emitted_packets": 256,
+    "raw_cases": [
+      {
+        "vertex_stride": 24,
+        "count": 3,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 3,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 3,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 3,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 4,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 4,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 4,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 4,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 8,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 8,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 8,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 8,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 17,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 17,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 17,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 24,
+        "count": 17,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 3,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 3,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 3,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 3,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 4,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 4,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 4,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 4,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 4,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 8,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 8,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 8,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 8,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 8,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 17,
+        "blend": 0,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 17,
+        "blend": 0,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 17,
+        "blend": 1,
+        "center": [
+          158.0,
+          98.0
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      },
+      {
+        "vertex_stride": 16,
+        "count": 17,
+        "blend": 1,
+        "center": [
+          -15.25,
+          260.5
+        ],
+        "SDK_packets": 17,
+        "XY_only_doubled": true
+      }
+    ],
+    "line_descriptor_cases": [
+      {
+        "polygons": 1,
+        "vertices_each": 2,
+        "XY_only_doubled": true
+      },
+      {
+        "polygons": 4,
+        "vertices_each": 2,
+        "XY_only_doubled": true
+      },
+      {
+        "polygons": 2,
+        "vertices_each": 3,
+        "XY_only_doubled": true
+      },
+      {
+        "polygons": 0,
+        "vertices_each": 2,
+        "XY_only_doubled": true
+      }
+    ],
+    "SH4_instructions": 20556,
+    "checks": [
+      "Original SDK strip-to-PVR vertex emission executes",
+      "Only packet X/Y change; Z, UV, ARGB, primitive commands and output pointer exact",
+      "Original blend/texture header arguments retained",
+      "Source arrays, callee-saved registers, FPU registers and stack restored",
+      "0.7.19 memory literal/startup and 0.7.20 grid code byte-exact"
+    ]
+  },
+  "live": {
+    "version": "0.7.21",
+    "target_alignment": "pass",
+    "executable_sha256": "e72f6440313a56003ad369f8721e1036aa54512580c3692fcb2896a9efb1a522",
+    "emulator": "Private Flycast profile, VGA, 480 / 1x; no texture replacements",
+    "boot": "Fresh New Game with blank private VMU; no emulator save states or emulated RAM writes",
+    "scenario": "S001 tutorial battle, first player attack completed, enemy attack/counterattack completed, second player target selection reached forecast",
+    "Native_1x_font": "pass",
+    "runtime_adapters_and_six_pointers_exact": true,
+    "texture_error": 0,
+    "stock_TA_geometry_units": 384176,
+    "RAM_sha256": "9dba6c16a3bdd46e0287384d12a01d32f9ae09443e05735edf3c5db62b66ca25",
+    "runtime_probe": "work/output/target-investigation/forecast-0721.json",
+    "english_scenario_member_exact": true,
+    "original_VM_prefix_exact": true,
+    "enemy_sprite_anchor_logical": [
+      158,
+      122
+    ],
+    "enemy_aim_logical": [
+      158,
+      98
+    ],
+    "enemy_aim_physical": [
+      316,
+      196
+    ],
+    "camera": [
+      -224,
+      -128
+    ],
+    "captures": [
+      {
+        "case": "Player attack: black enemy mech",
+        "source": "work/ui/0.7.21/sequence/player-02.jpg",
+        "source_sha256": "b4dc45aa561676b9bc61f8b1460ad720defb100ce9461017ab78400548f89c41",
+        "game_capture": "work/ui/0.7.21/enemy-target-game.png",
+        "crop_pixels": [
+          1,
+          31,
+          641,
+          511
+        ],
+        "green_bounds_inclusive": [
+          257,
+          138,
+          375,
+          254
+        ],
+        "reticle_center": [
+          316.0,
+          196.0
+        ],
+        "review": "Green ring and crosshair centered on the targeted mech torso; no half-position offset.",
+        "game_capture_sha256": "a7b503be5d741ad0275e5b0c555e90f3b53520437124e5a7e1e7a0486376baa9"
+      },
+      {
+        "case": "Enemy attack: Touya",
+        "source": "work/ui/0.7.21/sequence/enemy-09.jpg",
+        "source_sha256": "9f4acc316bdc579a0a2e6db9cc972b15b521b072df03a820dfcd96feee3cd624",
+        "game_capture": "work/ui/0.7.21/player-target-game.png",
+        "crop_pixels": [
+          1,
+          31,
+          641,
+          511
+        ],
+        "green_bounds_inclusive": [
+          256,
+          133,
+          376,
+          257
+        ],
+        "reticle_center": [
+          316.0,
+          195.0
+        ],
+        "review": "Green ring and crosshair centered on the targeted mech torso; no half-position offset.",
+        "game_capture_sha256": "9dfb598633356af760d9d03c8a6b7bbc98fb90d3c7494f7f273d8a7f4a254f72"
+      }
+    ],
+    "user_session": "Read-only inspection of user Flycast 0.7.20; no game input, guest RAM writes, file changes or termination in that instance.",
+    "limits": [
+      "S001 visual/input coverage only; both attacking sides reviewed",
+      "GPU strip emission is live-tested here; line descriptors additionally have native ABI/source-preservation tests",
+      "Physical Dreamcast, full-game/long-session animation coverage and Stage 6 issue #1 remain pending"
+    ]
+  },
+  "disc": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "Retro_Trans": {
+    "version": "0.7.21",
+    "source_build": "0.7.21",
+    "source_commit": "ea0639136c638299cd6c4032eaf9d43d659e9fd5",
+    "retro_trans_source_commit": "d5e7957e9c49aacad4c8801f3054441881f5a94b",
+    "manifest_schema": 2,
+    "full_delta_roundtrips": 3,
+    "real_automatic_solution_application": "pass",
+    "all_six_output_files_match_verified_local_build": true,
+    "output_hashes": {
+      "Seireiki Rayblade (Japan) (Track 1).bin": {
+        "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664",
+        "bytes": 705600
+      },
+      "Seireiki Rayblade (Japan) (Track 2).bin": {
+        "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b",
+        "bytes": 2389632
+      },
+      "Seireiki Rayblade (Japan) (Track 3).bin": {
+        "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929",
+        "bytes": 26535264
+      },
+      "Seireiki Rayblade (Japan) (Track 4).bin": {
+        "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa",
+        "bytes": 2036832
+      },
+      "Seireiki Rayblade (Japan) (Track 5).bin": {
+        "sha256": "1cb9acd2612873326671c5808ce41d2c5d48566f065ba43b98ca999388834d64",
+        "bytes": 1157188704
+      },
+      "Seireiki Rayblade English v0.7.21.gdi": {
+        "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142",
+        "bytes": 312
+      }
+    },
+    "recognized_source": "original Japanese five-track CUE set",
+    "recognized_output": "0.7.21",
+    "GDI_all_five_track_references_exist": true,
+    "original_inputs_preserved": true,
+    "canonical_release_directory_validation": "pass",
+    "local_game_validation": {
+      "reextracted_files": "all 15 exact",
+      "changed_sector_EDC_ECC": "pass",
+      "unrelated_ISO_entries": "unchanged",
+      "unrelated_track_bytes": "all unchanged",
+      "track_bytes_compared": 1188856032,
+      "audio_movie_sectors": "all 4041 original sectors exact",
+      "in_game": "pending"
+    },
+    "pending": [
+      "Live newest map labels/VRAM/fade and menu appearance",
+      "Independent meaning review and full-route/long-session testing",
+      "503 held/untranslated story rows",
+      "Original Dreamcast hardware support unverified"
+    ]
+  },
+  "packages": {
+    "full": {
+      "version": "0.7.21",
+      "release": false,
+      "package": "work/output/release-0.7.21/Rayblade-English-v0.7.21-xdelta.zip",
+      "bytes": 8166380,
+      "sha256": "622a9c9725fcdf22c0cabcdbeb14ba85db5494ed3bdccc576098c7ba146027ae",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "upgrade": {
+      "path": "work/output/upgrade-0.7.20-to-0.7.21/Rayblade-English-v0.7.20-to-v0.7.21-upgrade.zip",
+      "bytes": 11568,
+      "sha256": "648d2cf4a821f2ddab820049914573969a819d8bf2c09287375dfac851ae4673"
+    },
+    "upgrade_validation": "docs/upgrade-0.7.20-to-0.7.21.json",
+    "upgrade_all_six_exact": true,
+    "verification_note": "The first upgrade verification hit a transient Windows directory rename lock. An unchanged-backend --finish retry passed; no Retro Trans code modification or verification bypass.",
+    "cleanup": "Owned test emulator closed; user Flycast PID 69828 left running unchanged."
+  }
+}

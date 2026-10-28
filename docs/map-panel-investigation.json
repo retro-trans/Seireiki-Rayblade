@@ -1,0 +1,223 @@
+{
+  "tested_version": "0.7.18",
+  "reported_problem": "White UI panels overlay the map at Ai: What? You too?!",
+  "source_screenshot": "C:/Users/Binh/AppData/Local/Temp/codex-clipboard-e4d2f05d-a492-4470-9325-56618aa69942.png",
+  "status": "Not reproduced in fresh-boot 0.7.18 1x VGA replay of the exact reported line. User build and boot/save-state conditions requested; cause remains unconfirmed.",
+  "new_build_created": false,
+  "patches_changed": false,
+  "VM": "0x8c0141fb",
+  "scenario": "s_003.bin",
+  "command": "scenario.s_003.o0417a",
+  "conditions": {
+    "cold_boot": true,
+    "normal_VMU_save_file": 3,
+    "emulator_save_state": false,
+    "internal_resolution": 480,
+    "cable": "VGA",
+    "custom_textures": false
+  },
+  "actual_game_capture": "work/ui/0.7.18/map-what-you-too-clean.jpg",
+  "capture_sha256": "92a291c83990862d660487dcfd7403dbd9fbd172577b421a0dd6497061c551ab",
+  "executable_sha256": "922663079f2f95229e47432433b839e74d4e1e06087343b8c2eca1d5d4692bc5",
+  "runtime_kernel_and_font_exact": true,
+  "English_scenario_exact": true,
+  "texture_residency": {
+    "VM": "0x8c0141fb",
+    "native_texture_error": 0,
+    "TA_allocator_units": 2064384,
+    "banks": [
+      {
+        "allocated": [
+          {
+            "node": "0x8c471a50",
+            "flags": "0x2005",
+            "VRAM_offset": "0x0",
+            "bytes": 4128768,
+            "owner": "0x8c00f358"
+          },
+          {
+            "node": "0x8c471ba0",
+            "flags": "0x25",
+            "VRAM_offset": "0x3f2000",
+            "bytes": 8192,
+            "owner": "0x8cf40584",
+            "gbix": "0x159f",
+            "width": 64,
+            "height": 64
+          }
+        ],
+        "free": [
+          {
+            "node": "0x8c471a20",
+            "flags": "0x1",
+            "VRAM_offset": "0x3f4000",
+            "bytes": 49152,
+            "owner": "0x0"
+          },
+          {
+            "node": "0x8c471bb8",
+            "flags": "0x21",
+            "VRAM_offset": "0x3f0000",
+            "bytes": 8192,
+            "owner": "0x8cf405c8"
+          }
+        ],
+        "bank": 0,
+        "total_free": 57344,
+        "largest_free": 49152
+      },
+      {
+        "allocated": [
+          {
+            "node": "0x8c471a68",
+            "flags": "0xd",
+            "VRAM_offset": "0x400000",
+            "bytes": 1228800,
+            "owner": "0x8c419560",
+            "gbix": "0x0",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "node": "0x8c471a80",
+            "flags": "0x45",
+            "VRAM_offset": "0x52c000",
+            "bytes": 6144,
+            "owner": "0x8c4222f0",
+            "gbix": "0x0",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471a98",
+            "flags": "0x45",
+            "VRAM_offset": "0x52d800",
+            "bytes": 32768,
+            "owner": "0x8cf40298",
+            "gbix": "0xfffffff0",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471ab0",
+            "flags": "0x45",
+            "VRAM_offset": "0x535800",
+            "bytes": 32768,
+            "owner": "0x8cf402dc",
+            "gbix": "0xfffffff1",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471ac8",
+            "flags": "0x45",
+            "VRAM_offset": "0x53d800",
+            "bytes": 65536,
+            "owner": "0x8cf40320",
+            "gbix": "0xfffffff2",
+            "width": 256,
+            "height": 128
+          },
+          {
+            "node": "0x8c471a38",
+            "flags": "0x45",
+            "VRAM_offset": "0x54d800",
+            "bytes": 524288,
+            "owner": "0x8cf40364",
+            "gbix": "0x2329",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471ae0",
+            "flags": "0x45",
+            "VRAM_offset": "0x5cd800",
+            "bytes": 524288,
+            "owner": "0x8cf403a8",
+            "gbix": "0x232a",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471af8",
+            "flags": "0x45",
+            "VRAM_offset": "0x64d800",
+            "bytes": 524288,
+            "owner": "0x8cf403ec",
+            "gbix": "0x232b",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471b10",
+            "flags": "0x45",
+            "VRAM_offset": "0x6cd800",
+            "bytes": 524288,
+            "owner": "0x8cf40430",
+            "gbix": "0x232c",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471b40",
+            "flags": "0x45",
+            "VRAM_offset": "0x74d800",
+            "bytes": 65536,
+            "owner": "0x8cf40474",
+            "gbix": "0x2328",
+            "width": 256,
+            "height": 128
+          },
+          {
+            "node": "0x8c471b58",
+            "flags": "0x45",
+            "VRAM_offset": "0x75d800",
+            "bytes": 131072,
+            "owner": "0x8cf404b8",
+            "gbix": "0xed0076",
+            "width": 512,
+            "height": 128
+          },
+          {
+            "node": "0x8c471b70",
+            "flags": "0x45",
+            "VRAM_offset": "0x77d800",
+            "bytes": 262144,
+            "owner": "0x8cf404fc",
+            "gbix": "0x1f40",
+            "width": 512,
+            "height": 256
+          },
+          {
+            "node": "0x8c471b88",
+            "flags": "0x45",
+            "VRAM_offset": "0x7bd800",
+            "bytes": 262144,
+            "owner": "0x8cf40540",
+            "gbix": "0x400",
+            "width": 1024,
+            "height": 128
+          }
+        ],
+        "free": [
+          {
+            "node": "0x8c471b28",
+            "flags": "0x41",
+            "VRAM_offset": "0x7fd800",
+            "bytes": 10240,
+            "owner": "0x8cf40430"
+          }
+        ],
+        "bank": 1,
+        "total_free": 10240,
+        "largest_free": 10240
+      }
+    ]
+  },
+  "known_configuration_difference": {
+    "user_profile_internal_resolution": 1440,
+    "test_internal_resolution": 480,
+    "causal_relationship": "Not established"
+  },
+  "scope": "This line is clean in the tested run. Does not establish the cause of the supplied screenshot or dismiss the reported failure."
+}

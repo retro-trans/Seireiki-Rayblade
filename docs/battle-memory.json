@@ -1,0 +1,1315 @@
+{
+  "version": "0.7.19",
+  "source_build": "0.7.18",
+  "release": false,
+  "problem": "Fresh-boot white battle textures confirmed by read-only inspection of the user session",
+  "user_failure": {
+    "VM": "0x8c010202",
+    "native_texture_error": 6,
+    "TA_allocator_units": 2064384,
+    "banks": [
+      {
+        "allocated": [
+          {
+            "node": "0x8c471a50",
+            "flags": "0x2005",
+            "VRAM_offset": "0x0",
+            "bytes": 4128768,
+            "owner": "0x8c00f358"
+          },
+          {
+            "node": "0x8c471ba0",
+            "flags": "0x25",
+            "VRAM_offset": "0x3f0000",
+            "bytes": 8192,
+            "owner": "0x8cf40584",
+            "gbix": "0x1dfe",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471bd0",
+            "flags": "0x25",
+            "VRAM_offset": "0x3f2000",
+            "bytes": 8192,
+            "owner": "0x8cf4060c",
+            "gbix": "0x1d6a",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471c00",
+            "flags": "0x25",
+            "VRAM_offset": "0x3f4000",
+            "bytes": 8192,
+            "owner": "0x8cf40694",
+            "gbix": "0x1eb8",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471c30",
+            "flags": "0x25",
+            "VRAM_offset": "0x3f6000",
+            "bytes": 8192,
+            "owner": "0x8cf4071c",
+            "gbix": "0x1e22",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471c60",
+            "flags": "0x25",
+            "VRAM_offset": "0x3f8000",
+            "bytes": 8192,
+            "owner": "0x8cf407a4",
+            "gbix": "0x1d8e",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471c90",
+            "flags": "0x25",
+            "VRAM_offset": "0x3fa000",
+            "bytes": 8192,
+            "owner": "0x8cf4082c",
+            "gbix": "0x1eba",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471cc0",
+            "flags": "0x25",
+            "VRAM_offset": "0x3fc000",
+            "bytes": 8192,
+            "owner": "0x8cf408b4",
+            "gbix": "0x1e24",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471a20",
+            "flags": "0x25",
+            "VRAM_offset": "0x3fe000",
+            "bytes": 8192,
+            "owner": "0x8cf4093c",
+            "gbix": "0x1d90",
+            "width": 128,
+            "height": 128
+          }
+        ],
+        "free": [],
+        "bank": 0,
+        "total_free": 0,
+        "largest_free": 0
+      },
+      {
+        "allocated": [
+          {
+            "node": "0x8c471a68",
+            "flags": "0xd",
+            "VRAM_offset": "0x400000",
+            "bytes": 1228800,
+            "owner": "0x8c419560",
+            "gbix": "0x0",
+            "width": 640,
+            "height": 480
+          },
+          {
+            "node": "0x8c471a80",
+            "flags": "0x45",
+            "VRAM_offset": "0x52c000",
+            "bytes": 6144,
+            "owner": "0x8c4222f0",
+            "gbix": "0x0",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471a98",
+            "flags": "0x45",
+            "VRAM_offset": "0x52d800",
+            "bytes": 32768,
+            "owner": "0x8cf40298",
+            "gbix": "0xfffffff0",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471ab0",
+            "flags": "0x45",
+            "VRAM_offset": "0x535800",
+            "bytes": 32768,
+            "owner": "0x8cf402dc",
+            "gbix": "0xfffffff1",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471ac8",
+            "flags": "0x45",
+            "VRAM_offset": "0x53d800",
+            "bytes": 65536,
+            "owner": "0x8cf40320",
+            "gbix": "0xfffffff2",
+            "width": 256,
+            "height": 128
+          },
+          {
+            "node": "0x8c471ae0",
+            "flags": "0x45",
+            "VRAM_offset": "0x54d800",
+            "bytes": 524288,
+            "owner": "0x8cf40364",
+            "gbix": "0x39",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471af8",
+            "flags": "0x45",
+            "VRAM_offset": "0x5cd800",
+            "bytes": 524288,
+            "owner": "0x8cf403a8",
+            "gbix": "0x13e",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471b10",
+            "flags": "0x45",
+            "VRAM_offset": "0x64d800",
+            "bytes": 524288,
+            "owner": "0x8cf403ec",
+            "gbix": "0x13f",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471b28",
+            "flags": "0x45",
+            "VRAM_offset": "0x6cd800",
+            "bytes": 524288,
+            "owner": "0x8cf40430",
+            "gbix": "0x140",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471b40",
+            "flags": "0x45",
+            "VRAM_offset": "0x74d800",
+            "bytes": 524288,
+            "owner": "0x8cf40474",
+            "gbix": "0x141",
+            "width": 512,
+            "height": 512
+          },
+          {
+            "node": "0x8c471b58",
+            "flags": "0x45",
+            "VRAM_offset": "0x7cd800",
+            "bytes": 131072,
+            "owner": "0x8cf404b8",
+            "gbix": "0x1f4c",
+            "width": 256,
+            "height": 256
+          },
+          {
+            "node": "0x8c471b70",
+            "flags": "0x45",
+            "VRAM_offset": "0x7ed800",
+            "bytes": 8192,
+            "owner": "0x8cf404fc",
+            "gbix": "0x1e94",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471b88",
+            "flags": "0x45",
+            "VRAM_offset": "0x7ef800",
+            "bytes": 8192,
+            "owner": "0x8cf40540",
+            "gbix": "0x1e95",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471bb8",
+            "flags": "0x45",
+            "VRAM_offset": "0x7f1800",
+            "bytes": 8192,
+            "owner": "0x8cf405c8",
+            "gbix": "0x1dff",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471be8",
+            "flags": "0x45",
+            "VRAM_offset": "0x7f3800",
+            "bytes": 8192,
+            "owner": "0x8cf40650",
+            "gbix": "0x1d6b",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471c18",
+            "flags": "0x45",
+            "VRAM_offset": "0x7f5800",
+            "bytes": 8192,
+            "owner": "0x8cf406d8",
+            "gbix": "0x1eb9",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471c48",
+            "flags": "0x45",
+            "VRAM_offset": "0x7f7800",
+            "bytes": 8192,
+            "owner": "0x8cf40760",
+            "gbix": "0x1e23",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471c78",
+            "flags": "0x45",
+            "VRAM_offset": "0x7f9800",
+            "bytes": 8192,
+            "owner": "0x8cf407e8",
+            "gbix": "0x1d8f",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471ca8",
+            "flags": "0x45",
+            "VRAM_offset": "0x7fb800",
+            "bytes": 8192,
+            "owner": "0x8cf40870",
+            "gbix": "0x1ebb",
+            "width": 128,
+            "height": 128
+          },
+          {
+            "node": "0x8c471cd8",
+            "flags": "0x45",
+            "VRAM_offset": "0x7fd800",
+            "bytes": 8192,
+            "owner": "0x8cf408f8",
+            "gbix": "0x1e25",
+            "width": 128,
+            "height": 128
+          }
+        ],
+        "free": [
+          {
+            "node": "0x8c471a38",
+            "flags": "0x1",
+            "VRAM_offset": "0x7ff800",
+            "bytes": 2048,
+            "owner": "0x0"
+          }
+        ],
+        "bank": 1,
+        "total_free": 2048,
+        "largest_free": 2048
+      }
+    ]
+  },
+  "user_runtime_kernel_and_Native_font_exact_0718": true,
+  "fix": {
+    "version": "0.7.19",
+    "source_build": "0.7.18",
+    "executable_sha256": "60e0bc9bb2675845893b1c46f0fbdfa3ea7884fc214a939033c9576f4fa39dd2",
+    "literal_file_offset": "0x6b910",
+    "TA_allocator_units": 384176,
+    "TA_VRAM_bytes": 768352,
+    "previous_TA_VRAM_bytes": 4128768,
+    "additional_texture_capacity_bytes": 3360416,
+    "texture_capacity_bytes": 7620256,
+    "cause": "Fresh-boot S004 exhausts the 0.7.18 pool: five 512x512 terrain textures, battle atlas and unit sprites leave 2048 bytes; dialogue upload returns error 6.",
+    "geometry_source": "Original Japanese disc cold-boot SDK telemetry: 384176 units / 768352 bytes. This is the stock geometry reservation.",
+    "tradeoff": "Restores stock geometry capacity; the 640x480 minimum is larger than the original 320x240 minimum, so physical/full-game geometry headroom remains unverified.",
+    "preserved": "Every other executable byte and all disc assets, including Native Skies pixels/widths/alpha, all wording and original movies, exact 0.7.18.",
+    "release": false,
+    "live_validation": "pass: battle-memory-live-test.json"
+  },
+  "stock_geometry_source": "Original Japanese disc cold boot and original SDK arithmetic agree on 384176 allocator units / 768352 physical bytes.",
+  "changed_executable_byte_offsets": [
+    "0x6b910",
+    "0x6b911",
+    "0x6b912"
+  ],
+  "all_other_14_payloads_exact_0718": true,
+  "changed_disc_sectors": 1,
+  "native": {
+    "version": "0.7.19",
+    "source_build": "0.7.18",
+    "executable_sha256": "60e0bc9bb2675845893b1c46f0fbdfa3ea7884fc214a939033c9576f4fa39dd2",
+    "literal_file_offset": "0x6b910",
+    "TA_allocator_units": 384176,
+    "TA_VRAM_bytes": 768352,
+    "previous_TA_VRAM_bytes": 4128768,
+    "additional_texture_capacity_bytes": 3360416,
+    "texture_capacity_bytes": 7620256,
+    "cause": "Fresh-boot S004 exhausts the 0.7.18 pool: five 512x512 terrain textures, battle atlas and unit sprites leave 2048 bytes; dialogue upload returns error 6.",
+    "geometry_source": "Original Japanese disc cold-boot SDK telemetry: 384176 units / 768352 bytes. This is the stock geometry reservation.",
+    "tradeoff": "Restores stock geometry capacity; the 640x480 minimum is larger than the original 320x240 minimum, so physical/full-game geometry headroom remains unverified.",
+    "preserved": "Every other executable byte and all disc assets, including Native Skies pixels/widths/alpha, all wording and original movies, exact 0.7.18.",
+    "release": false,
+    "live_validation": "pending",
+    "actual_SDK_budget_minimum_and_allocator_entry": [
+      {
+        "version": "original Japanese",
+        "configuration_query_result": 0,
+        "TA_allocator_units": 384176,
+        "TA_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 230400,
+        "SDK_minimum_units": 17280,
+        "reaches_native_allocator": true,
+        "instructions": 37
+      },
+      {
+        "version": "original Japanese",
+        "configuration_query_result": 1,
+        "TA_allocator_units": 384176,
+        "TA_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 230400,
+        "SDK_minimum_units": 17280,
+        "reaches_native_allocator": true,
+        "instructions": 37
+      },
+      {
+        "version": "0.7.18",
+        "configuration_query_result": 0,
+        "TA_allocator_units": 2064384,
+        "TA_VRAM_bytes": 4128768,
+        "framebuffer_bytes_each": 614400,
+        "SDK_minimum_units": 64800,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      },
+      {
+        "version": "0.7.18",
+        "configuration_query_result": 1,
+        "TA_allocator_units": 2064384,
+        "TA_VRAM_bytes": 4128768,
+        "framebuffer_bytes_each": 614400,
+        "SDK_minimum_units": 64800,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      },
+      {
+        "version": "0.7.19",
+        "configuration_query_result": 0,
+        "TA_allocator_units": 384176,
+        "TA_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 614400,
+        "SDK_minimum_units": 64800,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      },
+      {
+        "version": "0.7.19",
+        "configuration_query_result": 1,
+        "TA_allocator_units": 384176,
+        "TA_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 614400,
+        "SDK_minimum_units": 64800,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      }
+    ],
+    "scope": "Actual SDK arithmetic and both configuration branches; real battle residency/GPU appearance require live cold-boot evidence.",
+    "actual_SDK_battle_allocation_cases": [
+      {
+        "version": "0.7.18",
+        "snapshot_sha256": "697c5a3477aa31e8c984d831a02c1f3cbb40772f462471994ff683eefe02b84f",
+        "VM": "0x8c010202",
+        "initial_free_bytes": [
+          0,
+          2048
+        ],
+        "allocations": [
+          {
+            "label": "dialogue",
+            "dimensions": [
+              1024,
+              128
+            ],
+            "bytes": 262144,
+            "native_result": 3,
+            "instructions": 497
+          }
+        ]
+      },
+      {
+        "version": "0.7.19",
+        "snapshot_sha256": "8135338806b6deca8295119744b094c70719974467d13e4c2b06ed5d2cb7117a",
+        "VM": "0x8c010202",
+        "initial_free_bytes": [
+          667264,
+          843776
+        ],
+        "allocations": [
+          {
+            "label": "status-0",
+            "dimensions": [
+              512,
+              256
+            ],
+            "bytes": 262144,
+            "native_result": 0,
+            "instructions": 854
+          },
+          {
+            "label": "status-1",
+            "dimensions": [
+              512,
+              256
+            ],
+            "bytes": 262144,
+            "native_result": 0,
+            "instructions": 868
+          },
+          {
+            "label": "status-2",
+            "dimensions": [
+              256,
+              256
+            ],
+            "bytes": 131072,
+            "native_result": 0,
+            "instructions": 879
+          },
+          {
+            "label": "status-3",
+            "dimensions": [
+              256,
+              256
+            ],
+            "bytes": 131072,
+            "native_result": 0,
+            "instructions": 893
+          },
+          {
+            "label": "next-portrait",
+            "dimensions": [
+              64,
+              64
+            ],
+            "bytes": 8192,
+            "native_result": 0,
+            "instructions": 900
+          },
+          {
+            "label": "another-portrait",
+            "dimensions": [
+              64,
+              64
+            ],
+            "bytes": 8192,
+            "native_result": 0,
+            "instructions": 914
+          }
+        ]
+      }
+    ],
+    "stress_scope": "Four additional full status surfaces and two more portraits fit while the entire captured battle residency, current portrait and dialogue remain loaded. The actual status menu is reviewed separately."
+  },
+  "live": {
+    "version": "0.7.19",
+    "release": false,
+    "startup": "pass",
+    "framebuffer_creation": "pass",
+    "native_font": "pass",
+    "battle_dialogue": "pass",
+    "battle_portrait": "pass",
+    "battle_windows": "pass",
+    "map_portraits": "pass",
+    "HUD_allocation_stress": "pass",
+    "status_menu": "pass",
+    "office_cutaway": "pass",
+    "later_S004_sequence": "pass",
+    "executable_sha256": "60e0bc9bb2675845893b1c46f0fbdfa3ea7884fc214a939033c9576f4fa39dd2",
+    "conditions": {
+      "cold_boot": true,
+      "normal_VMU_save": true,
+      "emulator_save_states": false,
+      "render_scale": "1x",
+      "cable": "VGA",
+      "framebuffer": [
+        640,
+        480
+      ],
+      "custom_textures": false,
+      "guest_memory_writes": false
+    },
+    "original_Japanese_SDK_cold_boot": {
+      "8c4621a4": 384176,
+      "8c4621a8": 1789864,
+      "8c4621ac": 230400,
+      "8c4621b0": 17280,
+      "8c41956c": 320,
+      "8c419570": 240,
+      "8c419574": 230400
+    },
+    "stock_geometry_bytes": 768352,
+    "current_framebuffer_bytes_each": 614400,
+    "residency_checks": {
+      "battle": {
+        "VM": "0x8c010202",
+        "free_bytes_by_bank": [
+          667264,
+          843776
+        ],
+        "native_upload_error": 0,
+        "snapshot_sha256": "8135338806b6deca8295119744b094c70719974467d13e4c2b06ed5d2cb7117a",
+        "textures": {
+          "null": [
+            null,
+            null
+          ],
+          "0x0": [
+            640,
+            480
+          ],
+          "0xfffffff0": [
+            128,
+            128
+          ],
+          "0xfffffff1": [
+            128,
+            128
+          ],
+          "0xfffffff2": [
+            256,
+            128
+          ],
+          "0x39": [
+            512,
+            512
+          ],
+          "0x13f": [
+            512,
+            512
+          ],
+          "0x141": [
+            512,
+            512
+          ],
+          "0x18d": [
+            1024,
+            512
+          ],
+          "0x13e": [
+            512,
+            512
+          ],
+          "0x140": [
+            512,
+            512
+          ],
+          "0x142": [
+            512,
+            512
+          ],
+          "0x1f4c": [
+            256,
+            256
+          ],
+          "0x1e94": [
+            128,
+            128
+          ],
+          "0x1e95": [
+            128,
+            128
+          ],
+          "0x1dfe": [
+            128,
+            128
+          ],
+          "0x1dff": [
+            128,
+            128
+          ],
+          "0x1d6a": [
+            128,
+            128
+          ],
+          "0x1d6b": [
+            128,
+            128
+          ],
+          "0x1eb8": [
+            128,
+            128
+          ],
+          "0x1eb9": [
+            128,
+            128
+          ],
+          "0x1e22": [
+            128,
+            128
+          ],
+          "0x1e23": [
+            128,
+            128
+          ],
+          "0x1d8e": [
+            128,
+            128
+          ],
+          "0x1d8f": [
+            128,
+            128
+          ],
+          "0x1eba": [
+            128,
+            128
+          ],
+          "0x1ebb": [
+            128,
+            128
+          ],
+          "0x1e24": [
+            128,
+            128
+          ],
+          "0x1e25": [
+            128,
+            128
+          ],
+          "0x1d90": [
+            128,
+            128
+          ],
+          "0x1d91": [
+            128,
+            128
+          ],
+          "0x16f3": [
+            64,
+            64
+          ],
+          "0x400": [
+            1024,
+            128
+          ]
+        }
+      },
+      "office": {
+        "VM": "0x8c01052e",
+        "free_bytes_by_bank": [
+          77440,
+          57344
+        ],
+        "native_upload_error": 0,
+        "snapshot_sha256": "b27383572b696e3095e759424021eaca778626210cadb55d4276c62c83311754",
+        "textures": {
+          "null": [
+            null,
+            null
+          ],
+          "0x0": [
+            640,
+            480
+          ],
+          "0xfffffff0": [
+            128,
+            128
+          ],
+          "0xfffffff1": [
+            128,
+            128
+          ],
+          "0xfffffff2": [
+            256,
+            128
+          ],
+          "0x39": [
+            512,
+            512
+          ],
+          "0x13f": [
+            512,
+            512
+          ],
+          "0x141": [
+            512,
+            512
+          ],
+          "0x18d": [
+            1024,
+            512
+          ],
+          "0x400": [
+            512,
+            64
+          ],
+          "0x1bdb": [
+            512,
+            256
+          ],
+          "0x1bdc": [
+            512,
+            256
+          ],
+          "0x13e": [
+            512,
+            512
+          ],
+          "0x140": [
+            512,
+            512
+          ],
+          "0x142": [
+            512,
+            512
+          ],
+          "0x1f4c": [
+            256,
+            256
+          ],
+          "0x1e94": [
+            128,
+            128
+          ],
+          "0x1e95": [
+            128,
+            128
+          ],
+          "0x1dfe": [
+            128,
+            128
+          ],
+          "0x1dff": [
+            128,
+            128
+          ],
+          "0x1d6a": [
+            128,
+            128
+          ],
+          "0x1d6b": [
+            128,
+            128
+          ],
+          "0x1eb8": [
+            128,
+            128
+          ],
+          "0x1eb9": [
+            128,
+            128
+          ],
+          "0x1e22": [
+            128,
+            128
+          ],
+          "0x1e23": [
+            128,
+            128
+          ],
+          "0x1d8e": [
+            128,
+            128
+          ],
+          "0x1d8f": [
+            128,
+            128
+          ],
+          "0x1eba": [
+            128,
+            128
+          ],
+          "0x1ebb": [
+            128,
+            128
+          ],
+          "0x1e24": [
+            128,
+            128
+          ],
+          "0x1e25": [
+            128,
+            128
+          ],
+          "0x1d90": [
+            128,
+            128
+          ],
+          "0x1d91": [
+            128,
+            128
+          ],
+          "0x1f40": [
+            512,
+            256
+          ],
+          "0x1390": [
+            512,
+            512
+          ],
+          "0x1603": [
+            64,
+            64
+          ],
+          "0x401": [
+            1024,
+            128
+          ]
+        }
+      },
+      "status": {
+        "VM": "0x8c01ef45",
+        "free_bytes_by_bank": [
+          2371200,
+          2301952
+        ],
+        "native_upload_error": 0,
+        "snapshot_sha256": "7956d71b2f81f28a0e740825450ac27f930e0b225573c5f06bb23afff9b4b393",
+        "textures": {
+          "null": [
+            null,
+            null
+          ],
+          "0x0": [
+            640,
+            480
+          ],
+          "0xfffffff0": [
+            128,
+            128
+          ],
+          "0xfffffff1": [
+            128,
+            128
+          ],
+          "0xfffffff2": [
+            256,
+            128
+          ],
+          "0x1f40": [
+            512,
+            256
+          ],
+          "0x1f53": [
+            512,
+            512
+          ],
+          "0x407": [
+            256,
+            256
+          ],
+          "0x157c": [
+            64,
+            64
+          ],
+          "0x400": [
+            512,
+            256
+          ],
+          "0x403": [
+            512,
+            256
+          ],
+          "0x40b": [
+            256,
+            256
+          ]
+        }
+      },
+      "map": {
+        "VM": "0x8c0136b6",
+        "free_bytes_by_bank": [
+          1773184,
+          1654784
+        ],
+        "native_upload_error": 0,
+        "snapshot_sha256": "b9739634dd9d3d6467bf115fd2b014cfa243846fb8b3e5baf7f309272eba4b62",
+        "textures": {
+          "null": [
+            null,
+            null
+          ],
+          "0x0": [
+            640,
+            480
+          ],
+          "0xfffffff0": [
+            128,
+            128
+          ],
+          "0xfffffff1": [
+            128,
+            128
+          ],
+          "0xfffffff2": [
+            256,
+            128
+          ],
+          "0x2329": [
+            512,
+            512
+          ],
+          "0x232b": [
+            512,
+            512
+          ],
+          "0x2328": [
+            256,
+            128
+          ],
+          "0xed0076": [
+            512,
+            128
+          ],
+          "0x1f40": [
+            512,
+            256
+          ],
+          "0x15aa": [
+            64,
+            64
+          ],
+          "0x232a": [
+            512,
+            512
+          ],
+          "0x232c": [
+            512,
+            512
+          ],
+          "0x400": [
+            1024,
+            128
+          ]
+        }
+      },
+      "later": {
+        "VM": "0x8c01ef45",
+        "free_bytes_by_bank": [
+          691840,
+          720896
+        ],
+        "native_upload_error": 0,
+        "snapshot_sha256": "3db1ba7ea3d5113cf40b2067cb84707f9f2dcecbdc288f2b54e74dfe7d47aa8a",
+        "textures": {
+          "null": [
+            null,
+            null
+          ],
+          "0x0": [
+            640,
+            480
+          ],
+          "0xfffffff0": [
+            128,
+            128
+          ],
+          "0xfffffff1": [
+            128,
+            128
+          ],
+          "0xfffffff2": [
+            256,
+            128
+          ],
+          "0x25": [
+            512,
+            512
+          ],
+          "0xdd": [
+            512,
+            512
+          ],
+          "0xdf": [
+            512,
+            512
+          ],
+          "0x179": [
+            1024,
+            256
+          ],
+          "0x1e71": [
+            128,
+            128
+          ],
+          "0x1ddd": [
+            128,
+            128
+          ],
+          "0x1e8a": [
+            128,
+            128
+          ],
+          "0x1e8b": [
+            128,
+            128
+          ],
+          "0x1df4": [
+            128,
+            128
+          ],
+          "0x1df5": [
+            128,
+            128
+          ],
+          "0x1d61": [
+            128,
+            128
+          ],
+          "0x1ea1": [
+            128,
+            128
+          ],
+          "0x1e0b": [
+            128,
+            128
+          ],
+          "0x1d77": [
+            128,
+            128
+          ],
+          "0x1e8f": [
+            128,
+            128
+          ],
+          "0x1df9": [
+            128,
+            128
+          ],
+          "0x1d65": [
+            128,
+            128
+          ],
+          "0x400": [
+            512,
+            256
+          ],
+          "0x407": [
+            256,
+            256
+          ],
+          "0xdc": [
+            512,
+            512
+          ],
+          "0xde": [
+            512,
+            512
+          ],
+          "0xe0": [
+            512,
+            512
+          ],
+          "0x1f4c": [
+            256,
+            256
+          ],
+          "0x1e94": [
+            128,
+            128
+          ],
+          "0x1e95": [
+            128,
+            128
+          ],
+          "0x1dfe": [
+            128,
+            128
+          ],
+          "0x1dff": [
+            128,
+            128
+          ],
+          "0x1d6a": [
+            128,
+            128
+          ],
+          "0x1d6b": [
+            128,
+            128
+          ],
+          "0x1f16": [
+            128,
+            128
+          ],
+          "0x1f17": [
+            128,
+            128
+          ],
+          "0x1e70": [
+            128,
+            128
+          ],
+          "0x1ddc": [
+            128,
+            128
+          ],
+          "0x1d60": [
+            128,
+            128
+          ],
+          "0x1ea0": [
+            128,
+            128
+          ],
+          "0x1e0a": [
+            128,
+            128
+          ],
+          "0x1d76": [
+            128,
+            128
+          ],
+          "0x1e8e": [
+            128,
+            128
+          ],
+          "0x1df8": [
+            128,
+            128
+          ],
+          "0x1d64": [
+            128,
+            128
+          ],
+          "0x157c": [
+            64,
+            64
+          ],
+          "0x403": [
+            512,
+            256
+          ],
+          "0x40b": [
+            256,
+            256
+          ]
+        }
+      }
+    },
+    "full_status_surfaces": [
+      [
+        512,
+        256
+      ],
+      [
+        512,
+        256
+      ],
+      [
+        256,
+        256
+      ],
+      [
+        256,
+        256
+      ]
+    ],
+    "observed_S004_native_error_samples": 631,
+    "observed_S004_native_errors": 0,
+    "actual_game_captures": {
+      "work/ui/0.7.19/battle-stock-game.jpg": "0517827fcf869916a6bf8899a7625bd570b52439e648fc8951f061057cfea3d9",
+      "work/ui/0.7.19/office-stock-game.jpg": "9865614f21bba3764e542669e2292736d0323f3366e4ed48647c868ba296bd58",
+      "work/ui/0.7.19/status-stock-game.jpg": "a1bd70536847797e1145ce8bc3e16051ab277834b03d4708d4dec4e2427b8b64",
+      "work/ui/0.7.19/touya-stock-game.jpg": "e46928ed1368dc840732bdfb7ca05940ef2cba5ba4bbb7d20af8814e395b1e47",
+      "work/ui/0.7.19/ymir-stock-game.jpg": "8e27bd9475a716dc4748bd150e19af2a010d194ceaa3258d9c16610bb237ca57",
+      "work/ui/0.7.19/later-battle-stock-game.jpg": "7b5c7190b8d8e7f16728ec05d0d701621bbde7ac6180f96d86c743b3f47adb47"
+    },
+    "scope": "Exact reported S004 first dialogue; complete status screen; Office cutaway and later S004/world-map sequence; Touya/Ymir map captures. Snapshots may be at adjacent dialogue lines when input advances between capture and read-only inspection.",
+    "limits": [
+      "Physical Dreamcast confirmation pending",
+      "Full-route/long-session review pending",
+      "640x480 minimum tile-list allocation exceeds the original 320x240 minimum; full-game geometry headroom unverified",
+      "Stage 6 issue #1 remains unresolved"
+    ]
+  },
+  "validation_files": {
+    "work/output/0.7.19/battle-memory-native-test.json": "d5c5ca8e5cbf763b5bf4f7f108ad2b3e8898ae02aecaa40a9dd1303e4286ce9b",
+    "work/output/0.7.19/battle-memory-live-test.json": "c88db2a27b5e694f2ee12f49b70c2afbc1b25a4d984c18e3abb5d3321bebc67b",
+    "work/output/0.7.19/english-disc-report.json": "8622687b7efa246a4f09eb806b51c419139b1ec7ebffc8116429ae0553d1fc4c"
+  },
+  "package_validation": {
+    "full": {
+      "version": "0.7.19",
+      "release": false,
+      "package": "work/output/release-0.7.19/Rayblade-English-v0.7.19-xdelta.zip",
+      "bytes": 8165884,
+      "sha256": "861e274a00cd4442800906eab64c1be993b965abba5f250a41691cdfb0582754",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "upgrade": {
+      "from": "0.7.18",
+      "to": "0.7.19",
+      "native_xdelta_roundtrips": 3,
+      "Retro_Trans_Automatic_isolated_test": "pass",
+      "xdelta_operations": 1,
+      "all_six_files_equal_verified_target": true,
+      "source_preserved": true,
+      "unchanged_components": [
+        "Seireiki Rayblade (Japan) (Track 1).bin",
+        "Seireiki Rayblade (Japan) (Track 2).bin",
+        "Seireiki Rayblade (Japan) (Track 3).bin",
+        "Seireiki Rayblade (Japan) (Track 4).bin",
+        "Seireiki Rayblade English v0.7.19.gdi"
+      ],
+      "outputs": {
+        "Seireiki Rayblade (Japan) (Track 1).bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "Seireiki Rayblade (Japan) (Track 2).bin": {
+          "bytes": 2389632,
+          "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+        },
+        "Seireiki Rayblade (Japan) (Track 3).bin": {
+          "bytes": 26535264,
+          "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+        },
+        "Seireiki Rayblade (Japan) (Track 4).bin": {
+          "bytes": 2036832,
+          "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+        },
+        "Seireiki Rayblade (Japan) (Track 5).bin": {
+          "bytes": 1157188704,
+          "sha256": "1bd10889616a96eb8d787a9b2da8251ebf83c3070674a3975bd77c7e4f35c28d"
+        },
+        "Seireiki Rayblade English v0.7.19.gdi": {
+          "bytes": 312,
+          "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+        }
+      },
+      "published_catalog_changed": false,
+      "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+      "package": {
+        "path": "work/output/upgrade-0.7.18-to-0.7.19/Rayblade-English-v0.7.18-to-v0.7.19-upgrade.zip",
+        "bytes": 10811,
+        "sha256": "97a1d93413b4ddf6ab22e0496c8a735992679a316888404c7862b4d20cc45dbb"
+      }
+    }
+  },
+  "limits": [
+    "Physical Dreamcast confirmation pending",
+    "Full-route/long-session review pending",
+    "640x480 minimum tile-list allocation exceeds the original 320x240 minimum; full-game geometry headroom unverified",
+    "Stage 6 issue #1 remains unresolved"
+  ],
+  "recipe_sha256": {
+    "tools/build_battle_memory_fix.py": "57e6978e193091bb4244cfc4c6cce059c798985347e94ec800be8753967d47da",
+    "tools/test_battle_memory.py": "6343f261eeb57eac5509b672957340592ef3c967383e7491ea691ee1767c45ee",
+    "tools/package_battle_memory_fix.py": "ff426d565ff8a01985667cf1b289a6330bdf9b807e9e3b293bbeb95694aedbf9",
+    "tools/inspect_vram_residency.py": "c30910a4c31e28e4c7ab6ffe03734842d62abf82311aea437fa04fd0b6272ddd"
+  },
+  "scope_note": "Only the stock-geometry final build with executable SHA256 60e0bc9bb2675845893b1c46f0fbdfa3ea7884fc214a939033c9576f4fa39dd2 is packaged. Larger unpublished geometry candidates were rejected during testing."
+}

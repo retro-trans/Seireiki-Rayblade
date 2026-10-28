@@ -1,0 +1,197 @@
+{
+  "version": "0.7.23",
+  "component": {
+    "version": "0.7.23",
+    "source_build": "0.7.22",
+    "executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+    "source_executable_sha256": "b14a82cbab8e7b00f9dd7db3ac39f947b8e0ecba637ec027112d20668ced8b2a",
+    "clip_helper": "0x8c07bbac",
+    "helper_bytes": 36,
+    "clip_wrapper_tail_literal": "0x6b7a4",
+    "mapping": "For SDK mode 2 tile rectangles: min *= 2, max = max * 2 + 1. Existing wrapper performs the multiplication; helper adds one to the two inclusive maximum tile indices. Other modes retain previous behavior.",
+    "remaining_line_pointers": [
+      "0x320d0",
+      "0x328f8",
+      "0x329c4",
+      "0x32a90",
+      "0x32b5c",
+      "0x32c0c",
+      "0x5b5e8",
+      "0x5c958",
+      "0x69a5c",
+      "0x69b58"
+    ],
+    "line_adapter": "0x8c07ba50",
+    "line_scope": "Remaining application 2D line descriptors use the existing XY-only 2x adapter. SDK internal callers and adapter callee literal remain untouched.",
+    "selection_bars": [
+      {
+        "offset": "0xe727",
+        "before_tiles": 7,
+        "after_tiles": 15,
+        "label": "Counterattack forecast"
+      },
+      {
+        "offset": "0xfddb",
+        "before_tiles": 9,
+        "after_tiles": 15,
+        "label": "Counter policies"
+      },
+      {
+        "offset": "0xf056",
+        "before_tiles": 4,
+        "after_tiles": 8,
+        "label": "Unit action menu"
+      }
+    ],
+    "changed_executable_bytes": 68,
+    "font_assets_wording_gameplay": "All unchanged from 0.7.22. Native Skies 1x only; lossless text VQ and Stage 6 fix preserved.",
+    "release": false,
+    "validation": "Native SDK/selection/line cases and fresh normal-VMU live combat/highlight checks pass; battle-clip-live-test.json"
+  },
+  "live": {
+    "version": "0.7.23",
+    "battle_clipping_and_selection_bars": "pass",
+    "executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+    "method": "Private Flycast, VGA, fresh boot with normal Stage 6 battle VMU File 4 made during the issue #1 replay. No emulator save states, guest RAM edits or texture replacements.",
+    "VMU_source_sha256": "6208465cf3de3a7f24dd75a15fb2b0faf7413d66fcc90cf9cae1d163af75395a",
+    "visual_review": [
+      "Counterattack and Select Weapon green bars fully cover their labels",
+      "Always Counterattack and Abilities fit inside their selection bars with original frame spacing",
+      "Enemy attack and Clovis counterattack complete; subsequent enemy attack against Ai reaches settled split panes and continues",
+      "The former x160 partial divider and x288\u2013319 blank strip are absent; the divider follows the central split"
+    ],
+    "dark_full_height_columns_before": [
+      [
+        288,
+        319
+      ]
+    ],
+    "dark_full_height_columns_after": [
+      [
+        317,
+        320
+      ]
+    ],
+    "game_crop": [
+      1,
+      31,
+      641,
+      511
+    ],
+    "stage6_lossless_fix_byte_exact": true,
+    "stage6_proof": "work/output/0.7.22/stage6-text-live-test.json",
+    "all_14_other_payloads_exact_0722": true,
+    "native_texture_error_rows": 0,
+    "residency_observations": 1230,
+    "RAM": [
+      {
+        "path": "work/source/issue-1/forecast-0723.ram",
+        "sha256": "1d20aaa8fc9024b931c117a2f71e8e807c466e6d6b12f710eecea0c22a522d39",
+        "all_modified_spans_match": true,
+        "native_texture_error": 0
+      },
+      {
+        "path": "work/source/issue-1/split-final-0723.ram",
+        "sha256": "1831322802e56d2c2f4c43559f1378096e42ab5e661b82d18655daec6ca8117a",
+        "all_modified_spans_match": true,
+        "native_texture_error": 0
+      }
+    ],
+    "captures": [
+      {
+        "path": "work/ui/battle-clip/0.7.23/final/action-abilities.jpg",
+        "sha256": "938ed8c1b7482b7e79a722a6a8bcdcd5cdab380c5f9ad3fa01ecb75a63c0a94b"
+      },
+      {
+        "path": "work/ui/battle-clip/0.7.23/final/counter-policy.jpg",
+        "sha256": "b48288a724813d505ed69287e7173af6695843a0b06260883a81928e9b82b15a"
+      },
+      {
+        "path": "work/ui/battle-clip/0.7.23/final/counterattack-highlight.jpg",
+        "sha256": "98b0b316e8ea462ad897da60b05301f83afc465f15743d17b96583c45be56c73"
+      },
+      {
+        "path": "work/ui/battle-clip/0.7.23/final/select-weapon-highlight.jpg",
+        "sha256": "afdcc848446bdc78262e690fb551b7dc9a9f455820077151ad4d59703d60bd21"
+      },
+      {
+        "path": "work/ui/battle-clip/0.7.23/final/ai-split-0.jpg",
+        "sha256": "6a022c99c849b6c4a925f35d70db8bc5b1dbf3b9102af3828565dd16184b72ac"
+      },
+      {
+        "path": "work/ui/battle-clip/0.7.23/final/ai-split-1.jpg",
+        "sha256": "b1b138c53c454a4f20aa9c31e7443a7f2da7b72ad17ef0221afeaaab3ee3e5a7"
+      },
+      {
+        "path": "work/ui/battle-clip/0.7.23/final/ai-split-2.jpg",
+        "sha256": "7fb3adf5e5a537f58f4a775f566711d0403b7a084c5efc4c29e11409fb875b86"
+      }
+    ],
+    "native_proof": "work/output/0.7.23/battle-clip-native-test.json",
+    "limits": [
+      "Physical Dreamcast untested",
+      "Complete routes, extended sessions and independent translation proofreading remain pending"
+    ],
+    "publication": "Release held at user request; public upgrade must be from the last public release, 0.7.11, to 0.7.23."
+  },
+  "packages": {
+    "full": {
+      "version": "0.7.23",
+      "release": false,
+      "package": "work/output/release-0.7.23/Rayblade-English-v0.7.23-xdelta.zip",
+      "bytes": 8175324,
+      "sha256": "d5110324df9731461bdf36fafd73c117bbe09b674c2311bce8ceb42abdebe228",
+      "zip_crc_and_member_hashes": "pass",
+      "Retro_Trans_roundtrip": "all six exact"
+    },
+    "last_public_release_upgrade": {
+      "from": "0.7.11",
+      "to": "0.7.23",
+      "native_xdelta_roundtrips": 3,
+      "Retro_Trans_Automatic_isolated_test": "pass",
+      "xdelta_operations": 1,
+      "all_six_files_equal_verified_target": true,
+      "source_preserved": true,
+      "unchanged_components": [
+        "Seireiki Rayblade (Japan) (Track 1).bin",
+        "Seireiki Rayblade (Japan) (Track 2).bin",
+        "Seireiki Rayblade (Japan) (Track 3).bin",
+        "Seireiki Rayblade (Japan) (Track 4).bin",
+        "Seireiki Rayblade English v0.7.23.gdi"
+      ],
+      "outputs": {
+        "Seireiki Rayblade (Japan) (Track 1).bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "Seireiki Rayblade (Japan) (Track 2).bin": {
+          "bytes": 2389632,
+          "sha256": "4e62562304cd5995cf525d0edead622f1286195d43dc9ba613a443d57536474b"
+        },
+        "Seireiki Rayblade (Japan) (Track 3).bin": {
+          "bytes": 26535264,
+          "sha256": "aa52a77f4fb1b52e3c47172ef48e8db994c55a6a268d8b924fae10a933740929"
+        },
+        "Seireiki Rayblade (Japan) (Track 4).bin": {
+          "bytes": 2036832,
+          "sha256": "0f417136fb40bb897fd90c7185312133bbba5c94f1e99f8ec3739bb9909eadfa"
+        },
+        "Seireiki Rayblade (Japan) (Track 5).bin": {
+          "bytes": 1157188704,
+          "sha256": "3bcd0dba28fd990954acdb7a097467034ef339d6322b9d1631e3f5c8ff3b53b9"
+        },
+        "Seireiki Rayblade English v0.7.23.gdi": {
+          "bytes": 312,
+          "sha256": "25e23a903fc55476eda48eb35cb9df36a06d17fc7a5529cf1410dff0f3638142"
+        }
+      },
+      "published_catalog_changed": false,
+      "note": "Automatic test uses an isolated catalog containing the new upgrade route. Use Apply xdelta manually until a future explicitly requested release publishes a route.",
+      "package": {
+        "path": "work/output/upgrade-0.7.11-to-0.7.23/Rayblade-English-v0.7.11-to-v0.7.23-upgrade.zip",
+        "bytes": 99240,
+        "sha256": "8edc666cbc423f2dc25f1c652a194b56cf06efc25b8ceb493e9e1dc81329df46"
+      }
+    }
+  }
+}
