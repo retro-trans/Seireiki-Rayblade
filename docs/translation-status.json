@@ -1,11 +1,11 @@
 {
   "version": "0.7.23",
   "stage": "Native Skies 1x only, 640x480 output and accumulated UI/movie/memory/grid/reticle/clipping/highlight repairs; Stage 6 issue #1 supplied-save bridge, battle menus and normal VMU save/load pass; complete proofreading and full-route review remain pending",
-  "current_battle_clip": {"status": "native and live split-battle/selection bars pass", "record": "docs/battle-clip.json", "publication": "0.7.23 release authorized; full original-input and last-public 0.7.11 upgrade"},
+  "current_battle_clip": {"status": "native and live split-battle/selection bars pass", "record": "docs/battle-clip.json", "publication": "0.7.23 published; full original-input and last-public 0.7.11 upgrade; docs/releases/v0.7.23-publication.json"},
   "current_issue_1": {
     "status": "supplied-save reproduction and fix pass in Flycast on 0.7.22",
     "record": "docs/stage6-text.json",
-    "publication": "included in authorized public 0.7.23 release"
+    "publication": "included in public 0.7.23; docs/releases/v0.7.23-publication.json"
   },
   "glossary": {
     "entries": 851,

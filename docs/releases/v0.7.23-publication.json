@@ -1,0 +1,50 @@
+{
+  "version": "0.7.23",
+  "published": "2026-10-28T15:26:16Z",
+  "release_url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.23",
+  "release_id": 426843803,
+  "release_source_commit": "f84d6096f81a45d691dd76b8b89e3812006e1671",
+  "assets": 20,
+  "uploaded_asset_SHA256": "All 20 GitHub asset digests and independently downloaded contents match local sealed assets.",
+  "manifest_schema": 2,
+  "canonical_manifest_patches": 6,
+  "full_original_input_delta_roundtrips": 3,
+  "upgrade_delta_roundtrips": 3,
+  "upgrade_from_last_public_release": "0.7.11",
+  "combined_manifest_Automatic": {
+    "original_Japanese_to_0.7.23": "pass; three delta operations; all five tracks and GDI exact; inputs preserved",
+    "public_0.7.11_to_0.7.23": "pass; one changed-track operation; all five tracks and GDI exact; inputs preserved"
+  },
+  "catalog_refresh_run": 40715945137,
+  "catalog_refresh_conclusion": "success",
+  "catalog_record_matches_uploaded_manifest": true,
+  "catalog_blob_sha": "3d388070500a954cfc058d3b4676fa11384754d8",
+  "actual_public_catalog_plans": "Original inputs select 0.7.23 with three operations; public 0.7.11 selects 0.7.23 with one operation. All six patch names match the release.",
+  "public_ZIP": {
+    "asset": "Rayblade-English-v0.7.23-xdelta.zip",
+    "bytes": 8271701,
+    "sha256": "b69989fa4d612237b9b259f115e93fd7dcd7a8cc706e6f0cd4392051d5abb47d"
+  },
+  "public_upgrade_ZIP": {
+    "asset": "Rayblade-English-v0.7.11-to-v0.7.23-upgrade.zip",
+    "bytes": 265260,
+    "sha256": "abc718ad2b87e8cf5e5ed7a34d4fd24e98668c3039dc440c3f1af2683d38a937"
+  },
+  "game_payloads": "Exact verified local 0.7.23 game. The six delta files remain byte-exact local full/upgrade files; public metadata pins the release commit. Delivered local ZIPs are preserved.",
+  "native_font": "Original Skies 1x only; no HD bank or selector",
+  "issue_1": "Supplied-save bridge exchanges, battle menus and separate cold-boot normal VMU save/reload pass in 0.7.22; all seven fix spans remain exact in 0.7.23, whose fresh Stage 6 battle replay passes with zero texture errors.",
+  "evidence": [
+    "docs/stage6-text.json",
+    "docs/battle-clip.json",
+    "docs/upgrade-0.7.11-to-0.7.23.json",
+    "GAME-VALIDATION-v0.7.23.json in the release assets",
+    "SHA256SUMS.txt in the release assets"
+  ],
+  "pending": [
+    "Physical Dreamcast VGA/TV compatibility",
+    "Complete routes and extended sessions",
+    "503 held story rows and independent meaning review",
+    "Unidentified room tag 66",
+    "Long Chapter 6 save label overlaps In Battle"
+  ]
+}
