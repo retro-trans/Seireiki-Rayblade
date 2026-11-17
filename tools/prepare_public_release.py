@@ -43,7 +43,7 @@ Tools for translating **Seireiki Rayblade** (Dreamcast, Japanese edition, **T-42
 
 The translation is a work in progress. Bug reports, Japanese-to-English proofreading and route playtesting are welcome. Include the release version, chapter/location and a screenshot when reporting a problem.
 
-**[discord.gg/MssepShjmB](https://discord.gg/MssepShjmB)** · [Report an issue](https://github.com/retro-trans/Seireiki-Rayblade/issues)
+**[discord.gg/nZBZfTDfCP](https://discord.gg/nZBZfTDfCP)** · [Report an issue](https://github.com/retro-trans/Seireiki-Rayblade/issues)
 
 ## Play it
 
@@ -195,7 +195,7 @@ The automatically generated **Source code (zip)** is the repository snapshot at 
 
 Bug reports, proofreading and playtesting are welcome:
 
-**[discord.gg/MssepShjmB](https://discord.gg/MssepShjmB)** · [Issues](https://github.com/retro-trans/Seireiki-Rayblade/issues)
+**[discord.gg/nZBZfTDfCP](https://discord.gg/nZBZfTDfCP)** · [Issues](https://github.com/retro-trans/Seireiki-Rayblade/issues)
 
 ---
 
@@ -233,7 +233,7 @@ For proofreading, compare your own Japanese source and examine the surrounding c
 
 For code/layout changes, follow `AGENTS.md` and `BASE_RULES.md`, preserve game controls/statistics, run relevant native/structural checks, and state what still needs live testing. Read `TRANSLATING.md` before changing exports. Public releases require explicit maintainer authorization and must pass the Retro Trans manifest/round-trip contract.
 
-Discussion: https://discord.gg/MssepShjmB
+Discussion: https://discord.gg/nZBZfTDfCP
 '''
     updates={ROOT/'README.md':README,ROOT/'TRANSLATING.md':translating,ROOT/'CONTRIBUTING.md':contributing,
         ROOT/'THIRD_PARTY_NOTICES.txt':notices,ROOT/'docs/releases/v0.7.0.md':NOTES}

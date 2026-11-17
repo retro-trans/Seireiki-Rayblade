@@ -6,4 +6,4 @@ For proofreading, compare your own Japanese source and examine the surrounding c
 
 For code/layout changes, follow `AGENTS.md` and `BASE_RULES.md`, preserve game controls/statistics, run relevant native/structural checks, and state what still needs live testing. Read `TRANSLATING.md` before changing exports. Public releases require explicit maintainer authorization and must pass the Retro Trans manifest/round-trip contract.
 
-Discussion: https://discord.gg/MssepShjmB
+Discussion: https://discord.gg/nZBZfTDfCP

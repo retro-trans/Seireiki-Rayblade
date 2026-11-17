@@ -6,7 +6,7 @@ Tools for translating **Seireiki Rayblade** (Dreamcast, Japanese edition, **T-42
 
 The translation is a work in progress. Bug reports, Japanese-to-English proofreading and route playtesting are welcome. Include the release version, chapter/location and a screenshot when reporting a problem.
 
-**[discord.gg/MssepShjmB](https://discord.gg/MssepShjmB)** · [Report an issue](https://github.com/retro-trans/Seireiki-Rayblade/issues)
+**[discord.gg/nZBZfTDfCP](https://discord.gg/nZBZfTDfCP)** · [Report an issue](https://github.com/retro-trans/Seireiki-Rayblade/issues)
 
 ## Play it
 
