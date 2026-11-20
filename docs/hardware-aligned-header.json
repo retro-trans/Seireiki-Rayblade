@@ -1,0 +1,3049 @@
+{
+  "version": "0.7.48",
+  "date": "2026-11-18",
+  "source_build": "0.7.45",
+  "failed_comparison": [
+    "0.7.46",
+    "0.7.47"
+  ],
+  "source_executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+  "executable_sha256": "6de79055e4edabd428cf778385719086ee21db312c3bd9a48101897e326c0be6",
+  "kind": "Alignment-safe Native location measurement",
+  "patch_range": [
+    "0x66d38",
+    "0x66e4e"
+  ],
+  "changed_bytes_from_working": 268,
+  "changed_bytes_from_failed": 223,
+  "changed_bytes_from_0_7_47": 223,
+  "width_table_source": "Exact 101 Native advances from 0.7.45 WIN00.AFS member 0, bank offset 99072 + 0xa0",
+  "width_table_sha256": "c8a6e4607402920b7c3b14eeed96fec771817bf31fbfb7c680d6fbd312f58d15",
+  "scope": "Only the location measurement routine differs from 0.7.45. Retain 0.7.47 static Native advances and replace its unaligned MOV.L offset read with four byte reads. All assets and other code remain exact 0.7.45.",
+  "defect": "0.7.46 and 0.7.47 use MOV.L @r2,r10 to read relative offsets from name groups packed at non-four-byte boundaries. The original reconstructs the offset bytewise. Group 8, used by the dialogue caller, starts at decoded offset 0x4c85; group 6 starts at 0x4115.",
+  "faulting_instruction": {
+    "address": "0x8c076d5c",
+    "file_offset": "0x66d5c",
+    "instruction": "MOV.L @r2,r10",
+    "scope": "Confirmed in bounded strict-alignment reproduction, not a hardware exception capture"
+  },
+  "architecture_source": "https://www.renesas.com/en/document/mas/sh-4-software-manual?r=1055166",
+  "on_pass": "Confirms the alignment-safe replacement resolves the tested hardware regression; full-route coverage remains unproven.",
+  "on_fail": "Keep 0.7.45; inspect remaining measurement differences and caller state. The reproduced alignment defect is corrected, but another problem remains.",
+  "excluded": [
+    "Status hooks",
+    "Signed SP formatting",
+    "Stage 6 runtime text compression",
+    "Custom map filename/snapping hook"
+  ],
+  "hardware_result": "Reported passing on tested hardware paths",
+  "hardware_root_cause_confirmed": false,
+  "limits": [
+    "Passing report refers to the 0.7.48 diagnostic. Individual checkpoints, repeated cold boots and full-route coverage were not separately enumerated.",
+    "Not full feature parity; excluded code remains absent."
+  ],
+  "public_release": false,
+  "upgrade_patch": false,
+  "hardware_evidence": "docs/hardware-0748-follow-up.json",
+  "diagnosis_status": "Unaligned name-offset read reproduced in strict instruction tests; correcting it is now supported by a passing hardware report. No physical exception trace was captured.",
+  "native_validation": {
+    "version": "0.7.46",
+    "executable_sha256": "6de79055e4edabd428cf778385719086ee21db312c3bd9a48101897e326c0be6",
+    "names_PRS_instructions": 1846558,
+    "headers": {
+      "version": "0.7.48",
+      "date": "2026-11-18",
+      "source_build": "0.7.45",
+      "failed_comparison": [
+        "0.7.46",
+        "0.7.47"
+      ],
+      "source_executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+      "executable_sha256": "6de79055e4edabd428cf778385719086ee21db312c3bd9a48101897e326c0be6",
+      "kind": "Alignment-safe Native location measurement",
+      "patch_range": [
+        "0x66d38",
+        "0x66e4e"
+      ],
+      "changed_bytes_from_working": 268,
+      "changed_bytes_from_failed": 223,
+      "width_table_source": "Exact 101 Native advances from 0.7.45 WIN00.AFS member 0, bank offset 99072 + 0xa0",
+      "width_table_sha256": "c8a6e4607402920b7c3b14eeed96fec771817bf31fbfb7c680d6fbd312f58d15",
+      "scope": "Only the location measurement routine differs from 0.7.45. Retain 0.7.47 static Native advances and replace its unaligned MOV.L offset read with four byte reads. All assets and other code remain exact 0.7.45.",
+      "defect": "0.7.46 and 0.7.47 use MOV.L @r2,r10 to read relative offsets from name groups packed at non-four-byte boundaries. The original reconstructs the offset bytewise. Group 8, used by the dialogue caller, starts at decoded offset 0x4c85; group 6 starts at 0x4115.",
+      "architecture_source": "https://www.renesas.com/en/document/mas/sh-4-software-manual?r=1055166",
+      "on_pass": "Confirms the alignment-safe replacement resolves the tested hardware regression; full-route coverage remains unproven.",
+      "on_fail": "Keep 0.7.45; inspect remaining measurement differences and caller state. The reproduced alignment defect is corrected, but another problem remains.",
+      "excluded": [
+        "Status hooks",
+        "Signed SP formatting",
+        "Stage 6 runtime text compression",
+        "Custom map filename/snapping hook"
+      ],
+      "hardware_result": "pending",
+      "hardware_root_cause_confirmed": false,
+      "limits": [
+        "Native location geometry executes; final text/GPU submission endpoints are bounded fixtures.",
+        "Live GPU appearance and physical hardware pending",
+        "Stage 6 issue #1 unresolved"
+      ],
+      "public_release": false,
+      "upgrade_patch": false,
+      "location_cases": [
+        {
+          "font_bank": "Native",
+          "id": "names.g06.000",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.001",
+          "old_width": 72,
+          "width": 49,
+          "text_x": 264,
+          "ink_right": 50.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.002",
+          "old_width": 112,
+          "width": 73,
+          "text_x": 240,
+          "ink_right": 73.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.003",
+          "old_width": 96,
+          "width": 65,
+          "text_x": 248,
+          "ink_right": 66.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.004",
+          "old_width": 96,
+          "width": 65,
+          "text_x": 248,
+          "ink_right": 66.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.005",
+          "old_width": 88,
+          "width": 54,
+          "text_x": 259,
+          "ink_right": 55.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.006",
+          "old_width": 160,
+          "width": 95,
+          "text_x": 218,
+          "ink_right": 95.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.007",
+          "old_width": 88,
+          "width": 55,
+          "text_x": 258,
+          "ink_right": 55.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.008",
+          "old_width": 232,
+          "width": 138,
+          "text_x": 175,
+          "ink_right": 138.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.009",
+          "old_width": 48,
+          "width": 32,
+          "text_x": 281,
+          "ink_right": 32.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.010",
+          "old_width": 208,
+          "width": 135,
+          "text_x": 178,
+          "ink_right": 136.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.011",
+          "old_width": 208,
+          "width": 135,
+          "text_x": 178,
+          "ink_right": 136.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.012",
+          "old_width": 112,
+          "width": 79,
+          "text_x": 234,
+          "ink_right": 80.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.013",
+          "old_width": 112,
+          "width": 76,
+          "text_x": 237,
+          "ink_right": 77.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.014",
+          "old_width": 216,
+          "width": 136,
+          "text_x": 177,
+          "ink_right": 136.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.015",
+          "old_width": 72,
+          "width": 46,
+          "text_x": 267,
+          "ink_right": 46.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.016",
+          "old_width": 72,
+          "width": 46,
+          "text_x": 267,
+          "ink_right": 46.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.017",
+          "old_width": 72,
+          "width": 46,
+          "text_x": 267,
+          "ink_right": 46.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.018",
+          "old_width": 128,
+          "width": 78,
+          "text_x": 235,
+          "ink_right": 78.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.019",
+          "old_width": 56,
+          "width": 34,
+          "text_x": 279,
+          "ink_right": 34.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.020",
+          "old_width": 120,
+          "width": 84,
+          "text_x": 229,
+          "ink_right": 85.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.021",
+          "old_width": 96,
+          "width": 63,
+          "text_x": 250,
+          "ink_right": 64.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.022",
+          "old_width": 144,
+          "width": 90,
+          "text_x": 223,
+          "ink_right": 90.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.023",
+          "old_width": 112,
+          "width": 71,
+          "text_x": 242,
+          "ink_right": 72.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.024",
+          "old_width": 128,
+          "width": 80,
+          "text_x": 233,
+          "ink_right": 80.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.025",
+          "old_width": 128,
+          "width": 80,
+          "text_x": 233,
+          "ink_right": 80.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.026",
+          "old_width": 88,
+          "width": 54,
+          "text_x": 259,
+          "ink_right": 55.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.027",
+          "old_width": 88,
+          "width": 54,
+          "text_x": 259,
+          "ink_right": 55.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.028",
+          "old_width": 56,
+          "width": 41,
+          "text_x": 272,
+          "ink_right": 42.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.029",
+          "old_width": 56,
+          "width": 41,
+          "text_x": 272,
+          "ink_right": 42.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.030",
+          "old_width": 48,
+          "width": 32,
+          "text_x": 281,
+          "ink_right": 32.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.031",
+          "old_width": 192,
+          "width": 123,
+          "text_x": 190,
+          "ink_right": 123.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.032",
+          "old_width": 88,
+          "width": 58,
+          "text_x": 255,
+          "ink_right": 58.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.033",
+          "old_width": 144,
+          "width": 91,
+          "text_x": 222,
+          "ink_right": 91.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.034",
+          "old_width": 104,
+          "width": 66,
+          "text_x": 247,
+          "ink_right": 67.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.035",
+          "old_width": 104,
+          "width": 66,
+          "text_x": 247,
+          "ink_right": 67.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.036",
+          "old_width": 120,
+          "width": 79,
+          "text_x": 234,
+          "ink_right": 80.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.037",
+          "old_width": 88,
+          "width": 57,
+          "text_x": 256,
+          "ink_right": 57.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.038",
+          "old_width": 32,
+          "width": 23,
+          "text_x": 290,
+          "ink_right": 23.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.039",
+          "old_width": 40,
+          "width": 22,
+          "text_x": 291,
+          "ink_right": 22.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.040",
+          "old_width": 88,
+          "width": 62,
+          "text_x": 251,
+          "ink_right": 63.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.041",
+          "old_width": 112,
+          "width": 69,
+          "text_x": 244,
+          "ink_right": 69.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.042",
+          "old_width": 136,
+          "width": 90,
+          "text_x": 223,
+          "ink_right": 90.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.043",
+          "old_width": 144,
+          "width": 92,
+          "text_x": 221,
+          "ink_right": 92.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.044",
+          "old_width": 40,
+          "width": 29,
+          "text_x": 284,
+          "ink_right": 29.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.045",
+          "old_width": 112,
+          "width": 63,
+          "text_x": 250,
+          "ink_right": 63.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.046",
+          "old_width": 112,
+          "width": 72,
+          "text_x": 241,
+          "ink_right": 72.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.047",
+          "old_width": 112,
+          "width": 72,
+          "text_x": 241,
+          "ink_right": 72.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.048",
+          "old_width": 56,
+          "width": 36,
+          "text_x": 277,
+          "ink_right": 37.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.049",
+          "old_width": 56,
+          "width": 36,
+          "text_x": 277,
+          "ink_right": 37.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.050",
+          "old_width": 120,
+          "width": 78,
+          "text_x": 235,
+          "ink_right": 78.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.051",
+          "old_width": 136,
+          "width": 87,
+          "text_x": 226,
+          "ink_right": 88.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.052",
+          "old_width": 136,
+          "width": 87,
+          "text_x": 226,
+          "ink_right": 87.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.053",
+          "old_width": 40,
+          "width": 30,
+          "text_x": 283,
+          "ink_right": 31.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.054",
+          "old_width": 80,
+          "width": 60,
+          "text_x": 253,
+          "ink_right": 60.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.055",
+          "old_width": 96,
+          "width": 64,
+          "text_x": 249,
+          "ink_right": 65.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.056",
+          "old_width": 104,
+          "width": 70,
+          "text_x": 243,
+          "ink_right": 71.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.057",
+          "old_width": 72,
+          "width": 52,
+          "text_x": 261,
+          "ink_right": 52.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.058",
+          "old_width": 64,
+          "width": 42,
+          "text_x": 271,
+          "ink_right": 42.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.059",
+          "old_width": 200,
+          "width": 137,
+          "text_x": 176,
+          "ink_right": 137.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.060",
+          "old_width": 88,
+          "width": 59,
+          "text_x": 254,
+          "ink_right": 59.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.061",
+          "old_width": 72,
+          "width": 46,
+          "text_x": 267,
+          "ink_right": 46.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.062",
+          "old_width": 72,
+          "width": 46,
+          "text_x": 267,
+          "ink_right": 46.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.063",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.064",
+          "old_width": 48,
+          "width": 31,
+          "text_x": 282,
+          "ink_right": 31.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.065",
+          "old_width": 80,
+          "width": 60,
+          "text_x": 253,
+          "ink_right": 60.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.066",
+          "old_width": 80,
+          "width": 60,
+          "text_x": 253,
+          "ink_right": 60.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.067",
+          "old_width": 144,
+          "width": 90,
+          "text_x": 223,
+          "ink_right": 90.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.068",
+          "old_width": 120,
+          "width": 82,
+          "text_x": 231,
+          "ink_right": 83.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.069",
+          "old_width": 72,
+          "width": 52,
+          "text_x": 261,
+          "ink_right": 53.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.070",
+          "old_width": 232,
+          "width": 139,
+          "text_x": 174,
+          "ink_right": 140.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.071",
+          "old_width": 120,
+          "width": 81,
+          "text_x": 232,
+          "ink_right": 82.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.072",
+          "old_width": 72,
+          "width": 45,
+          "text_x": 268,
+          "ink_right": 45.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.073",
+          "old_width": 88,
+          "width": 57,
+          "text_x": 256,
+          "ink_right": 58.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.074",
+          "old_width": 144,
+          "width": 98,
+          "text_x": 215,
+          "ink_right": 98.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.075",
+          "old_width": 72,
+          "width": 43,
+          "text_x": 270,
+          "ink_right": 44.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.076",
+          "old_width": 48,
+          "width": 28,
+          "text_x": 285,
+          "ink_right": 28.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.077",
+          "old_width": 40,
+          "width": 30,
+          "text_x": 283,
+          "ink_right": 30.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.078",
+          "old_width": 128,
+          "width": 87,
+          "text_x": 226,
+          "ink_right": 88.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.079",
+          "old_width": 88,
+          "width": 61,
+          "text_x": 252,
+          "ink_right": 62.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.080",
+          "old_width": 112,
+          "width": 73,
+          "text_x": 240,
+          "ink_right": 74.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.081",
+          "old_width": 80,
+          "width": 56,
+          "text_x": 257,
+          "ink_right": 57.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.082",
+          "old_width": 96,
+          "width": 65,
+          "text_x": 248,
+          "ink_right": 66.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.083",
+          "old_width": 104,
+          "width": 67,
+          "text_x": 246,
+          "ink_right": 68.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.084",
+          "old_width": 72,
+          "width": 44,
+          "text_x": 269,
+          "ink_right": 45.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.085",
+          "old_width": 104,
+          "width": 68,
+          "text_x": 245,
+          "ink_right": 69.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.086",
+          "old_width": 104,
+          "width": 67,
+          "text_x": 246,
+          "ink_right": 68.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.087",
+          "old_width": 112,
+          "width": 68,
+          "text_x": 245,
+          "ink_right": 69.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.088",
+          "old_width": 104,
+          "width": 64,
+          "text_x": 249,
+          "ink_right": 65.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.089",
+          "old_width": 112,
+          "width": 66,
+          "text_x": 247,
+          "ink_right": 67.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.090",
+          "old_width": 112,
+          "width": 70,
+          "text_x": 243,
+          "ink_right": 71.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.091",
+          "old_width": 96,
+          "width": 58,
+          "text_x": 255,
+          "ink_right": 59.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.092",
+          "old_width": 112,
+          "width": 70,
+          "text_x": 243,
+          "ink_right": 71.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.093",
+          "old_width": 104,
+          "width": 64,
+          "text_x": 249,
+          "ink_right": 65.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.094",
+          "old_width": 88,
+          "width": 55,
+          "text_x": 258,
+          "ink_right": 56.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.095",
+          "old_width": 88,
+          "width": 55,
+          "text_x": 258,
+          "ink_right": 56.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.096",
+          "old_width": 112,
+          "width": 73,
+          "text_x": 240,
+          "ink_right": 74.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.097",
+          "old_width": 96,
+          "width": 65,
+          "text_x": 248,
+          "ink_right": 66.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.098",
+          "old_width": 104,
+          "width": 71,
+          "text_x": 242,
+          "ink_right": 72.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.099",
+          "old_width": 88,
+          "width": 56,
+          "text_x": 257,
+          "ink_right": 57.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.100",
+          "old_width": 112,
+          "width": 74,
+          "text_x": 239,
+          "ink_right": 75.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.101",
+          "old_width": 88,
+          "width": 59,
+          "text_x": 254,
+          "ink_right": 60.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.102",
+          "old_width": 96,
+          "width": 64,
+          "text_x": 249,
+          "ink_right": 65.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.103",
+          "old_width": 80,
+          "width": 56,
+          "text_x": 257,
+          "ink_right": 57.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.104",
+          "old_width": 96,
+          "width": 65,
+          "text_x": 248,
+          "ink_right": 66.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.105",
+          "old_width": 112,
+          "width": 71,
+          "text_x": 242,
+          "ink_right": 72.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.106",
+          "old_width": 144,
+          "width": 90,
+          "text_x": 223,
+          "ink_right": 90.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.107",
+          "old_width": 128,
+          "width": 83,
+          "text_x": 230,
+          "ink_right": 84.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.108",
+          "old_width": 112,
+          "width": 63,
+          "text_x": 250,
+          "ink_right": 63.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.109",
+          "old_width": 72,
+          "width": 46,
+          "text_x": 267,
+          "ink_right": 46.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.110",
+          "old_width": 88,
+          "width": 58,
+          "text_x": 255,
+          "ink_right": 58.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.111",
+          "old_width": 88,
+          "width": 54,
+          "text_x": 259,
+          "ink_right": 55.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.112",
+          "old_width": 160,
+          "width": 95,
+          "text_x": 218,
+          "ink_right": 95.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.113",
+          "old_width": 24,
+          "width": 14,
+          "text_x": 299,
+          "ink_right": 15.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.114",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.115",
+          "old_width": 88,
+          "width": 58,
+          "text_x": 255,
+          "ink_right": 58.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.116",
+          "old_width": 48,
+          "width": 28,
+          "text_x": 285,
+          "ink_right": 28.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.117",
+          "old_width": 88,
+          "width": 55,
+          "text_x": 258,
+          "ink_right": 55.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.118",
+          "old_width": 144,
+          "width": 90,
+          "text_x": 223,
+          "ink_right": 90.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.119",
+          "old_width": 120,
+          "width": 78,
+          "text_x": 235,
+          "ink_right": 78.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.120",
+          "old_width": 136,
+          "width": 87,
+          "text_x": 226,
+          "ink_right": 88.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.121",
+          "old_width": 144,
+          "width": 90,
+          "text_x": 223,
+          "ink_right": 90.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.122",
+          "old_width": 88,
+          "width": 62,
+          "text_x": 251,
+          "ink_right": 62.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.123",
+          "old_width": 88,
+          "width": 60,
+          "text_x": 253,
+          "ink_right": 60.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.124",
+          "old_width": 56,
+          "width": 34,
+          "text_x": 279,
+          "ink_right": 34.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.125",
+          "old_width": 120,
+          "width": 74,
+          "text_x": 239,
+          "ink_right": 74.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.126",
+          "old_width": 176,
+          "width": 111,
+          "text_x": 202,
+          "ink_right": 111.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.127",
+          "old_width": 48,
+          "width": 27,
+          "text_x": 286,
+          "ink_right": 28.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.128",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.129",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.130",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.131",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.132",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.133",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.134",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.135",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.136",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.137",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.138",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.139",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.140",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.141",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.142",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.143",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.144",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.145",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.146",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.147",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.148",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.149",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.150",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.151",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.152",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.153",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.154",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.155",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.156",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.157",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.158",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.159",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.160",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.161",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.162",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.163",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.164",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.165",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.166",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.167",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.168",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.169",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.170",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.171",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.172",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.173",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.174",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.175",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.176",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.177",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.178",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.179",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.180",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.181",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.182",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.183",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.184",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.185",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.186",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.187",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.188",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.189",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.190",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.191",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.192",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.193",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.194",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.195",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.196",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.197",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.198",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.199",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.200",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.201",
+          "old_width": 160,
+          "width": 95,
+          "text_x": 218,
+          "ink_right": 95.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.202",
+          "old_width": 160,
+          "width": 95,
+          "text_x": 218,
+          "ink_right": 95.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.203",
+          "old_width": 160,
+          "width": 95,
+          "text_x": 218,
+          "ink_right": 95.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.204",
+          "old_width": 160,
+          "width": 95,
+          "text_x": 218,
+          "ink_right": 95.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.205",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.206",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.207",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.208",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.209",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.210",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.211",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.212",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.213",
+          "old_width": 232,
+          "width": 138,
+          "text_x": 175,
+          "ink_right": 138.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.214",
+          "old_width": 200,
+          "width": 137,
+          "text_x": 176,
+          "ink_right": 137.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.215",
+          "old_width": 200,
+          "width": 137,
+          "text_x": 176,
+          "ink_right": 137.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.216",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.217",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.218",
+          "old_width": 88,
+          "width": 57,
+          "text_x": 256,
+          "ink_right": 57.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.219",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.220",
+          "old_width": 88,
+          "width": 57,
+          "text_x": 256,
+          "ink_right": 57.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.221",
+          "old_width": 144,
+          "width": 89,
+          "text_x": 224,
+          "ink_right": 89.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.222",
+          "old_width": 176,
+          "width": 109,
+          "text_x": 204,
+          "ink_right": 109.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.223",
+          "old_width": 72,
+          "width": 51,
+          "text_x": 262,
+          "ink_right": 51.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.224",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.225",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.226",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.227",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.228",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.229",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.230",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.231",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.232",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.233",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.234",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.235",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.236",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.237",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.238",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.239",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.240",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.241",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.242",
+          "old_width": 120,
+          "width": 78,
+          "text_x": 235,
+          "ink_right": 78.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.243",
+          "old_width": 112,
+          "width": 65,
+          "text_x": 248,
+          "ink_right": 65.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.244",
+          "old_width": 56,
+          "width": 41,
+          "text_x": 272,
+          "ink_right": 42.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.245",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.246",
+          "old_width": 88,
+          "width": 55,
+          "text_x": 258,
+          "ink_right": 56.0,
+          "right_margin": 6.0
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.247",
+          "old_width": 112,
+          "width": 69,
+          "text_x": 244,
+          "ink_right": 69.5,
+          "right_margin": 6.5
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.248",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.249",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.250",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.251",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.252",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.253",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.254",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        },
+        {
+          "font_bank": "Native",
+          "id": "names.g06.255",
+          "old_width": 0,
+          "width": 0,
+          "text_x": 313,
+          "ink_right": 0,
+          "right_margin": 7
+        }
+      ],
+      "unchanged_other_group_cases": 1492,
+      "native_header_geometry_cases": 256,
+      "SH4_instructions": 1397924,
+      "checks": [
+        "All location widths match original font advances in selected banks",
+        "All other valid name rows match the prior native measurement exactly",
+        "Only the measurement function differs; location placement, caps, body sizing and animation remain byte-exact"
+      ]
+    },
+    "constructors": {
+      "version": "0.7.46",
+      "executable_sha256": "6de79055e4edabd428cf778385719086ee21db312c3bd9a48101897e326c0be6",
+      "constructor_cases": [
+        {
+          "script": "0xeee6",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xef01",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xef15",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xef29",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xe70b",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xfdbf",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xf634",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xf7ae",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        }
+      ],
+      "SH4_instructions": 251172,
+      "scope": "Actual constructor selected through the candidate dispatch pointer, compared against 0.7.40. Status gate/wrapper forbidden; VM/context memory and return ABI exact. Heap/graphics endpoints are bounded fixtures, not a live GPU/hardware test."
+    },
+    "scope": "Actual current-executable location widths, unchanged other-name-group measurements, header geometry and original constructors, using Native bank only. Bounded font/GPU endpoints; no live emulator or hardware claim. Every byte outside the measurement routine matches passing 0.7.45. Strict alignment is enabled for location measurement/geometry and other-name comparisons. Additional poisoned-pointer checks forbid font reads. Actual failed binaries reproduce an alignment error with real packed name data, including the original dialogue caller. These are bounded instruction tests, not a captured hardware exception trace.",
+    "font_independent_cases": 1488,
+    "failed_build_font_dependency_detected": true,
+    "alignment": {
+      "strict_alignment": true,
+      "failed_binary_reproductions": [
+        {
+          "version": "0.7.46",
+          "group": 6,
+          "pc": "0x8c076d5c",
+          "address": "0x8c904115",
+          "error": "SH4 unaligned read 8c904115+4 at 8c076d5c"
+        },
+        {
+          "version": "0.7.46",
+          "group": 8,
+          "pc": "0x8c076d5c",
+          "address": "0x8c904c85",
+          "error": "SH4 unaligned read 8c904c85+4 at 8c076d5c"
+        },
+        {
+          "version": "0.7.46",
+          "caller": "0x8c03e684 (dialogue group 8)",
+          "pc": "0x8c076d5c",
+          "address": "0x8c904c85",
+          "error": "SH4 unaligned read 8c904c85+4 at 8c076d5c"
+        },
+        {
+          "version": "0.7.47",
+          "group": 6,
+          "pc": "0x8c076d5c",
+          "address": "0x8c904115",
+          "error": "SH4 unaligned read 8c904115+4 at 8c076d5c"
+        },
+        {
+          "version": "0.7.47",
+          "group": 8,
+          "pc": "0x8c076d5c",
+          "address": "0x8c904c85",
+          "error": "SH4 unaligned read 8c904c85+4 at 8c076d5c"
+        },
+        {
+          "version": "0.7.47",
+          "caller": "0x8c03e684 (dialogue group 8)",
+          "pc": "0x8c076d5c",
+          "address": "0x8c904c85",
+          "error": "SH4 unaligned read 8c904c85+4 at 8c076d5c"
+        }
+      ],
+      "dialogue_caller_cases": [
+        {
+          "group8_index": 0,
+          "width": 152
+        },
+        {
+          "group8_index": 1,
+          "width": 184
+        },
+        {
+          "group8_index": 2,
+          "width": 120
+        },
+        {
+          "group8_index": 3,
+          "width": 272
+        },
+        {
+          "group8_index": 4,
+          "width": 192
+        },
+        {
+          "group8_index": 5,
+          "width": 232
+        },
+        {
+          "group8_index": 6,
+          "width": 160
+        },
+        {
+          "group8_index": 7,
+          "width": 0
+        },
+        {
+          "group8_index": 8,
+          "width": 272
+        },
+        {
+          "group8_index": 9,
+          "width": 304
+        },
+        {
+          "group8_index": 10,
+          "width": 264
+        },
+        {
+          "group8_index": 11,
+          "width": 144
+        },
+        {
+          "group8_index": 12,
+          "width": 256
+        },
+        {
+          "group8_index": 13,
+          "width": 176
+        },
+        {
+          "group8_index": 14,
+          "width": 288
+        },
+        {
+          "group8_index": 15,
+          "width": 192
+        },
+        {
+          "group8_index": 16,
+          "width": 264
+        },
+        {
+          "group8_index": 17,
+          "width": 168
+        },
+        {
+          "group8_index": 18,
+          "width": 192
+        },
+        {
+          "group8_index": 19,
+          "width": 200
+        },
+        {
+          "group8_index": 20,
+          "width": 0
+        },
+        {
+          "group8_index": 21,
+          "width": 272
+        },
+        {
+          "group8_index": 22,
+          "width": 192
+        },
+        {
+          "group8_index": 23,
+          "width": 200
+        },
+        {
+          "group8_index": 24,
+          "width": 184
+        },
+        {
+          "group8_index": 25,
+          "width": 0
+        },
+        {
+          "group8_index": 26,
+          "width": 248
+        },
+        {
+          "group8_index": 27,
+          "width": 288
+        },
+        {
+          "group8_index": 28,
+          "width": 240
+        },
+        {
+          "group8_index": 29,
+          "width": 0
+        },
+        {
+          "group8_index": 30,
+          "width": 256
+        },
+        {
+          "group8_index": 31,
+          "width": 152
+        },
+        {
+          "group8_index": 32,
+          "width": 304
+        },
+        {
+          "group8_index": 33,
+          "width": 200
+        },
+        {
+          "group8_index": 34,
+          "width": 136
+        },
+        {
+          "group8_index": 35,
+          "width": 232
+        },
+        {
+          "group8_index": 36,
+          "width": 280
+        },
+        {
+          "group8_index": 37,
+          "width": 280
+        },
+        {
+          "group8_index": 38,
+          "width": 48
+        },
+        {
+          "group8_index": 39,
+          "width": 48
+        },
+        {
+          "group8_index": 40,
+          "width": 48
+        },
+        {
+          "group8_index": 41,
+          "width": 48
+        },
+        {
+          "group8_index": 42,
+          "width": 48
+        },
+        {
+          "group8_index": 43,
+          "width": 48
+        },
+        {
+          "group8_index": 44,
+          "width": 48
+        },
+        {
+          "group8_index": 45,
+          "width": 48
+        },
+        {
+          "group8_index": 46,
+          "width": 48
+        },
+        {
+          "group8_index": 47,
+          "width": 48
+        },
+        {
+          "group8_index": 48,
+          "width": 0
+        },
+        {
+          "group8_index": 49,
+          "width": 0
+        },
+        {
+          "group8_index": 50,
+          "width": 0
+        },
+        {
+          "group8_index": 51,
+          "width": 0
+        },
+        {
+          "group8_index": 52,
+          "width": 0
+        },
+        {
+          "group8_index": 53,
+          "width": 0
+        },
+        {
+          "group8_index": 54,
+          "width": 0
+        },
+        {
+          "group8_index": 55,
+          "width": 0
+        },
+        {
+          "group8_index": 56,
+          "width": 0
+        },
+        {
+          "group8_index": 57,
+          "width": 0
+        },
+        {
+          "group8_index": 58,
+          "width": 0
+        },
+        {
+          "group8_index": 59,
+          "width": 0
+        },
+        {
+          "group8_index": 60,
+          "width": 0
+        },
+        {
+          "group8_index": 61,
+          "width": 0
+        },
+        {
+          "group8_index": 62,
+          "width": 0
+        },
+        {
+          "group8_index": 63,
+          "width": 0
+        },
+        {
+          "group8_index": 64,
+          "width": 0
+        },
+        {
+          "group8_index": 65,
+          "width": 0
+        },
+        {
+          "group8_index": 66,
+          "width": 0
+        },
+        {
+          "group8_index": 67,
+          "width": 0
+        },
+        {
+          "group8_index": 68,
+          "width": 0
+        },
+        {
+          "group8_index": 69,
+          "width": 0
+        },
+        {
+          "group8_index": 70,
+          "width": 0
+        },
+        {
+          "group8_index": 71,
+          "width": 0
+        },
+        {
+          "group8_index": 72,
+          "width": 0
+        },
+        {
+          "group8_index": 73,
+          "width": 0
+        },
+        {
+          "group8_index": 74,
+          "width": 0
+        },
+        {
+          "group8_index": 75,
+          "width": 0
+        },
+        {
+          "group8_index": 76,
+          "width": 0
+        },
+        {
+          "group8_index": 77,
+          "width": 0
+        },
+        {
+          "group8_index": 78,
+          "width": 0
+        },
+        {
+          "group8_index": 79,
+          "width": 0
+        },
+        {
+          "group8_index": 80,
+          "width": 0
+        },
+        {
+          "group8_index": 81,
+          "width": 0
+        },
+        {
+          "group8_index": 82,
+          "width": 0
+        },
+        {
+          "group8_index": 83,
+          "width": 0
+        },
+        {
+          "group8_index": 84,
+          "width": 0
+        },
+        {
+          "group8_index": 85,
+          "width": 0
+        },
+        {
+          "group8_index": 86,
+          "width": 0
+        },
+        {
+          "group8_index": 87,
+          "width": 0
+        },
+        {
+          "group8_index": 88,
+          "width": 0
+        },
+        {
+          "group8_index": 89,
+          "width": 0
+        },
+        {
+          "group8_index": 90,
+          "width": 0
+        },
+        {
+          "group8_index": 91,
+          "width": 0
+        },
+        {
+          "group8_index": 92,
+          "width": 0
+        },
+        {
+          "group8_index": 93,
+          "width": 0
+        },
+        {
+          "group8_index": 94,
+          "width": 0
+        },
+        {
+          "group8_index": 95,
+          "width": 0
+        },
+        {
+          "group8_index": 96,
+          "width": 0
+        },
+        {
+          "group8_index": 97,
+          "width": 0
+        },
+        {
+          "group8_index": 98,
+          "width": 0
+        },
+        {
+          "group8_index": 99,
+          "width": 0
+        },
+        {
+          "group8_index": 100,
+          "width": 0
+        },
+        {
+          "group8_index": 101,
+          "width": 0
+        },
+        {
+          "group8_index": 102,
+          "width": 0
+        },
+        {
+          "group8_index": 103,
+          "width": 0
+        },
+        {
+          "group8_index": 104,
+          "width": 0
+        },
+        {
+          "group8_index": 105,
+          "width": 0
+        },
+        {
+          "group8_index": 106,
+          "width": 0
+        },
+        {
+          "group8_index": 107,
+          "width": 0
+        },
+        {
+          "group8_index": 108,
+          "width": 0
+        },
+        {
+          "group8_index": 109,
+          "width": 0
+        },
+        {
+          "group8_index": 110,
+          "width": 0
+        },
+        {
+          "group8_index": 111,
+          "width": 0
+        },
+        {
+          "group8_index": 112,
+          "width": 0
+        },
+        {
+          "group8_index": 113,
+          "width": 0
+        },
+        {
+          "group8_index": 114,
+          "width": 0
+        },
+        {
+          "group8_index": 115,
+          "width": 0
+        },
+        {
+          "group8_index": 116,
+          "width": 0
+        },
+        {
+          "group8_index": 117,
+          "width": 0
+        },
+        {
+          "group8_index": 118,
+          "width": 0
+        },
+        {
+          "group8_index": 119,
+          "width": 0
+        },
+        {
+          "group8_index": 120,
+          "width": 0
+        },
+        {
+          "group8_index": 121,
+          "width": 0
+        },
+        {
+          "group8_index": 122,
+          "width": 0
+        },
+        {
+          "group8_index": 123,
+          "width": 0
+        },
+        {
+          "group8_index": 124,
+          "width": 0
+        },
+        {
+          "group8_index": 125,
+          "width": 0
+        },
+        {
+          "group8_index": 126,
+          "width": 0
+        },
+        {
+          "group8_index": 127,
+          "width": 0
+        }
+      ],
+      "offset_and_control_cases": 2576,
+      "actual_location_group_offset": "0x4115",
+      "actual_dialogue_group_offset": "0x4c85",
+      "architecture_source": "https://www.renesas.com/en/document/mas/sh-4-software-manual?r=1055166",
+      "limitation": "Instruction-level address-error reproduction using actual packed tables and caller. No physical hardware exception trace or full-game test."
+    }
+  },
+  "all_140_game_files_and_boot_checked": true,
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.48",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.48-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4616057,
+    "sha256": "9d56bb28e9d8abfa75bf6ba925a82c9b243901429cbf63c74469175f15993e3f",
+    "game_tree_sha256": "4a479a1288450543d6565a492f55e5002763b648d8e9c7947d73a829aa54bc13",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "Reported passing on tested hardware paths",
+    "path": "work/output/dcp-0.7.48-diagnostic/Rayblade-v0.7.48-HARDWARE-DIAGNOSTIC-DCP.zip"
+  }
+}

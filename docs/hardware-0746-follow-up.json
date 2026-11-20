@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-17",
+  "version": "0.7.46",
+  "version_confirmed": true,
+  "user_report": "Unfortunately, a black screen appears during dialogue in missions and when starting a New Game (0.7.46)",
+  "status": "Reported failed: mission dialogue and New Game black screens",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "hardware_root_cause_confirmed": false,
+  "interpretation": "Only the 260-byte location measurement change differs from reported-passing 0.7.45, with identical assets. This implicates that routine or its interaction with the retained runtime. It does not establish the faulting instruction or runtime font-pointer value.",
+  "next_test": "Keep 0.7.45 as the working fallback. Test the location routine using immutable Native font advances embedded in the executable, eliminating its loaded-font pointer dependency. Keep all other code and assets fixed; repeat New Game and previously failing mission dialogues."
+}

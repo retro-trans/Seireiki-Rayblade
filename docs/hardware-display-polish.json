@@ -1,0 +1,251 @@
+{
+  "version": "0.7.40",
+  "date": "2026-11-11",
+  "source_build": "0.7.39",
+  "source_executable_sha256": "f71a9bd77b7fb2f6028a4e327ad7414f02ef0c796b21cfd1f4cdc7b91ee1ce9c",
+  "executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+  "kind": "Loading position and movie-edge corrections on hardware-reported working 0.7.39",
+  "changed_executable_bytes": 259,
+  "allowed_spans": [
+    "0x9c692",
+    [
+      "0xac2e4",
+      "0xac3f4"
+    ]
+  ],
+  "loading": {
+    "SDK_print_default_cell_pixels": {
+      "before": 8,
+      "after": 16
+    },
+    "physical_origin_before": [
+      216,
+      208
+    ],
+    "physical_origin_after": [
+      432,
+      416
+    ],
+    "change": "Restore original proportional size/position at 640x480; keep cells, colors and animation."
+  },
+  "movie_edge": {
+    "patch_range": [
+      "0xac2e4",
+      "0xac3f4"
+    ],
+    "change": "Inset sampling half a texel on each edge; screen rectangle, movie streams and audio unchanged."
+  },
+  "evidence": "docs/hardware-0739-follow-up.json",
+  "retained": "All assets exact 0.7.39, including cropped window atlas and Native Skies 1x font; RGB565, original graphics reservation and all other code bytes exact.",
+  "excluded": "No custom map hook, font kernel, runtime compression, grid/target/clipping or unrelated UI feature restored.",
+  "hardware_result": "Reported working on hardware; user requests consolidated remaining bug fixes",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "limits": [
+    "Physical loading placement/movie-edge and regressions need confirmation.",
+    "User reports 0.7.39 working on hardware; no full-route coverage inferred.",
+    "This adds only the two requested cosmetics, not full emulator feature parity."
+  ],
+  "all_140_game_files_and_boot_checked": true,
+  "all_assets_exact_0_7_39": true,
+  "loading_validation": {
+    "version": "0.7.40",
+    "date": "2026-11-11",
+    "source_build": "0.7.39",
+    "source_executable_sha256": "f71a9bd77b7fb2f6028a4e327ad7414f02ef0c796b21cfd1f4cdc7b91ee1ce9c",
+    "executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+    "kind": "Loading position and movie-edge corrections on hardware-reported working 0.7.39",
+    "changed_executable_bytes": 259,
+    "allowed_spans": [
+      "0x9c692",
+      [
+        "0xac2e4",
+        "0xac3f4"
+      ]
+    ],
+    "loading": {
+      "SDK_print_default_cell_pixels": {
+        "before": 8,
+        "after": 16
+      },
+      "physical_origin_before": [
+        216,
+        208
+      ],
+      "physical_origin_after": [
+        432,
+        416
+      ],
+      "change": "Restore original proportional size/position at 640x480; keep cells, colors and animation."
+    },
+    "movie_edge": {
+      "patch_range": [
+        "0xac2e4",
+        "0xac3f4"
+      ],
+      "change": "Inset sampling half a texel on each edge; screen rectangle, movie streams and audio unchanged."
+    },
+    "evidence": "docs/hardware-0739-follow-up.json",
+    "retained": "All assets exact 0.7.39, including cropped window atlas and Native Skies 1x font; RGB565, original graphics reservation and all other code bytes exact.",
+    "excluded": "No custom map hook, font kernel, runtime compression, grid/target/clipping or unrelated UI feature restored.",
+    "hardware_result": "pending",
+    "hardware_root_cause_confirmed": false,
+    "public_release": false,
+    "upgrade_patch": false,
+    "limits": [
+      "Native routine fixtures do not validate physical GPU output or full-game compatibility."
+    ],
+    "SDK_print_default_cell_pixels": {
+      "before": 8,
+      "after": 16
+    },
+    "physical_origin_before": [
+      216,
+      208
+    ],
+    "physical_origin_after": [
+      432,
+      416
+    ],
+    "change": "Restore original proportional size/position at 640x480; keep cells, colors and animation.",
+    "animation_frame_cases": 121,
+    "native_glyph_quads": 2420,
+    "SH4_instructions": 770646,
+    "pre_640_reference": "0.7.2 loading routine, SDK print code and character/color data are byte-exact in 0.7.39.",
+    "checks": [
+      "Actual SDK initialization, loading function, SDK string renderer and four-corner submissions execute",
+      "Each old glyph corner maps uniformly 2x; cell gaps, Z, UV, headers, colors and full 121-frame counter cycle retained",
+      "Only the default-size byte and separately checked movie-quad span change in this combined build."
+    ]
+  },
+  "movie_edge_validation": {
+    "version": "0.7.40",
+    "date": "2026-11-11",
+    "source_build": "0.7.39",
+    "source_executable_sha256": "f71a9bd77b7fb2f6028a4e327ad7414f02ef0c796b21cfd1f4cdc7b91ee1ce9c",
+    "executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+    "kind": "Loading position and movie-edge corrections on hardware-reported working 0.7.39",
+    "changed_executable_bytes": 259,
+    "allowed_spans": [
+      "0x9c692",
+      [
+        "0xac2e4",
+        "0xac3f4"
+      ]
+    ],
+    "loading": {
+      "SDK_print_default_cell_pixels": {
+        "before": 8,
+        "after": 16
+      },
+      "physical_origin_before": [
+        216,
+        208
+      ],
+      "physical_origin_after": [
+        432,
+        416
+      ],
+      "change": "Restore original proportional size/position at 640x480; keep cells, colors and animation."
+    },
+    "movie_edge": {
+      "patch_range": [
+        "0xac2e4",
+        "0xac3f4"
+      ],
+      "change": "Inset sampling half a texel on each edge; screen rectangle, movie streams and audio unchanged."
+    },
+    "evidence": "docs/hardware-0739-follow-up.json",
+    "retained": "All assets exact 0.7.39, including cropped window atlas and Native Skies 1x font; RGB565, original graphics reservation and all other code bytes exact.",
+    "excluded": "No custom map hook, font kernel, runtime compression, grid/target/clipping or unrelated UI feature restored.",
+    "hardware_result": "pending",
+    "hardware_root_cause_confirmed": false,
+    "public_release": false,
+    "upgrade_patch": false,
+    "limits": [
+      "Native routine fixtures do not validate physical GPU output or full-game compatibility."
+    ],
+    "patch_range": [
+      "0xac2e4",
+      "0xac3f4"
+    ],
+    "change": "Inset sampling half a texel on each edge; screen rectangle, movie streams and audio unchanged.",
+    "source_movie_dimensions": [
+      [
+        160,
+        160
+      ],
+      [
+        320,
+        192
+      ]
+    ],
+    "geometry_cases": 20,
+    "SH4_instructions": 7114,
+    "movie_witnesses": [
+      {
+        "source": [
+          160,
+          160
+        ],
+        "texture": [
+          256,
+          256
+        ],
+        "old_bottom_v": 0.625,
+        "new_bottom_v": 0.623046875,
+        "screen_pixels": [
+          320,
+          320
+        ]
+      },
+      {
+        "source": [
+          320,
+          192
+        ],
+        "texture": [
+          512,
+          256
+        ],
+        "old_bottom_v": 0.75,
+        "new_bottom_v": 0.748046875,
+        "screen_pixels": [
+          640,
+          384
+        ]
+      }
+    ],
+    "checks": [
+      "Actual old/new Sofdec raw quad generation executes; only UV fields differ",
+      "All table source sizes at 1x/2x/4x, zero/nonzero crop origins, initialization guards, ABI and input guards pass",
+      "Bilinear pixel-center footprints stay within valid decoded rows/columns"
+    ]
+  },
+  "disc_validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.40",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.40-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4586634,
+    "sha256": "3204553989651df63856403f6109166dd7ac7831b677a235c36f90902a390160",
+    "game_tree_sha256": "fa9bb2eb27c56fad8d35bab6854a49294cd3fd0812363ca6b88f1a4327b92871",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.40-diagnostic/Rayblade-v0.7.40-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_evidence": "docs/hardware-0740-follow-up.json"
+}

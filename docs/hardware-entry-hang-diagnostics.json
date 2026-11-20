@@ -1,0 +1,1032 @@
+{
+  "date": "2026-11-01",
+  "focus": "Original immediate conversation-start / mission-entry hang",
+  "user_request": "Prepare both normalized 0.7.11 and 0.7.8 diagnostics for hardware testing.",
+  "known_results": {
+    "0.7.2": "Reported working: works fine",
+    "public_0.7.11": "Both selectable fonts reportedly hang immediately. Native selection still retained HD bank/selector.",
+    "0.7.27": "Native-only 0.7.6 enters New Game/missions, but freezes later in Hallway. Not a full pass.",
+    "0.7.29": "Reported unsuccessful: black screen after mission, new game",
+    "0.7.30": "Reported unsuccessful; conversation checkpoint clarification pending: freeze on conversation",
+    "0.7.28": "Reported working on tested paths, with quarter-screen movies: works (!), no black screen, no freezes; all movies on 1/4 screen",
+    "0.7.31": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain: Patch works fine, movies are on full screen. No black screens, no freezes on scenario. NOW LOADING positioned differently; small bottom green line during cutscene.",
+    "0.7.32": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid: 0.7.32 is mostly fine only problem with map, moving hex"
+  },
+  "hallway_probe": {
+    "version": "0.7.28",
+    "hardware_result": {
+      "status": "Reported working on tested paths, with quarter-screen movies",
+      "historical_source": "0.7.4 rendering experiment, Native-only",
+      "report": "works (!), no black screen, no freezes; all movies on 1/4 screen",
+      "scope_limit": "Tester report, not a full-game or independently observed exact-checkpoint pass. No new screenshot was supplied in this reply.",
+      "known_limitation": "Expected historical lack of 0.7.5 movie position/size correction."
+    },
+    "purpose": "Historical 0.7.4 probe for the later Hallway checkpoint; not an upper control for original entry hang.",
+    "evidence": "docs/hardware-hallway-midpoint.json"
+  },
+  "normalization_note": "All three comparison builds use byte-identical 438-byte executable normalization and the exact same complete WIN00 archive. Resource lengths/offsets remain historical; no later font renderer backport.",
+  "test_protocol": [
+    "Apply each full DCP independently to the original Japanese image; output GDI for GDEMU/VGA.",
+    "Cold boot each version. Start New Game and record whether first dialogue appears and advances, or immediate hang/black.",
+    "Separately load normal Clear 2 VMU save -> Next and record conversation entry.",
+    "If entry works, record later Koichiro/Kasumi Hallway behavior separately. Do not collapse it into an entry failure."
+  ],
+  "interpretation": {
+    "upper_control_fails_immediately": "If 0.7.29 fails at entry, use 0.7.30: entry pass narrows to 0.7.9-0.7.11; immediate fail narrows to 0.7.7-0.7.8, relative to 0.7.27.",
+    "upper_control_enters": "If 0.7.29 enters, original selectable 0.7.11 and normalized 0.7.11 differ in the shared normalization or its interaction. Do not blame or clear individual historical changes without further controls.",
+    "nonmonotonic_results": "If 0.7.30 fails at entry but 0.7.29 passes, stop monotonic bisection and investigate interactions or test reproducibility."
+  },
+  "cause_confirmed": false,
+  "symptoms_proven_independent_causes": false,
+  "public_release": false,
+  "upgrade_patches": false,
+  "builds": [
+    {
+      "version": "0.7.29",
+      "historical_source": "0.7.11",
+      "role": "Normalized upper control",
+      "normalization": {
+        "version": "0.7.29",
+        "date": "2026-11-01",
+        "source_build": "0.7.11",
+        "historical_midpoint": "0.7.11",
+        "kind": "Binary-search midpoint: 0.7.11 with HD removed",
+        "public_release": false,
+        "hardware_fix_confirmed": false,
+        "source_executable_sha256": "9ce5d3bb16532d4af081673894982855f69b303a0d22b413e4d457b2475f9d84",
+        "executable_sha256": "f149554da38d98e1ca533d042de59c27151e153520bd03b384dc24d79f8075a7",
+        "archive_sha256": "c7f7a6158029dfb7c3f552f00c840e7bdaeb5d09b5f9b7d12764b94e61585786",
+        "changed_executable_bytes": 438,
+        "normalization_edits": [
+          {
+            "offset": "0x6b2ac",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x6b38e",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x6b552",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x6b814",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x10150",
+            "bytes": 4,
+            "reason": "Restore original frame callback"
+          },
+          {
+            "offset": "0x6b900",
+            "bytes": 464,
+            "reason": "Erase title selector and its labels"
+          }
+        ],
+        "font_banks": 1,
+        "native_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+        "font_resource_bytes": 198144,
+        "zero_padding_bytes": 98560,
+        "padding_purpose": "Erase HD pixels without changing historical resource allocation, Native offsets or archive layout; shared header/metrics remain exact.",
+        "retained": [
+          "All historical 0.7.11 executable and assets except the identical Native-only normalization used for 0.7.27."
+        ],
+        "excluded": "All features introduced after historical 0.7.11; no later repairs backported.",
+        "other_payloads": "Every non-executable/non-WIN00 payload remains exact historical 0.7.11.",
+        "source_font_runtime_labels": {
+          "raster": 2349314702,
+          "r_selected_font": 2349314742,
+          "r_small_valid": 2349314764,
+          "r_medium": 2349314804,
+          "r_medium_valid": 2349314814,
+          "r_surface": 2349314844,
+          "r_aa_counts_done": 2349314950,
+          "r_shadow_selected": 2349314968,
+          "r_row": 2349315046,
+          "r_pixel": 2349315074,
+          "r_binary_sample": 2349315092,
+          "r_coverage_color": 2349315102,
+          "r_bg_clipped": 2349315152,
+          "r_no_bg": 2349315162,
+          "r_no_fg": 2349315168,
+          "r_next": 2349315168,
+          "r_row_next": 2349315196,
+          "allocate": 2349315308,
+          "a_nonzero_width": 2349315348,
+          "a_bounded_width": 2349315358,
+          "a_nonzero_height": 2349315366,
+          "a_bounded_height": 2349315376,
+          "a_height": 2349315388,
+          "a_native_width": 2349315394,
+          "a_native_height": 2349315402,
+          "a_scan": 2349315408,
+          "a_native_x_done": 2349315428,
+          "a_selected_scale": 2349315434,
+          "a_scan_loop": 2349315440,
+          "a_scan_next": 2349315456,
+          "a_try": 2349315462,
+          "a_malloc": 2349315496,
+          "a_reduce": 2349315518,
+          "a_reduce_y": 2349315528,
+          "a_success": 2349315534,
+          "a_reject": 2349315580,
+          "a_return": 2349315582,
+          "initialize": 2349315632,
+          "flush": 2349315780
+        },
+        "rendering": {
+          "physical_framebuffer": [
+            640,
+            480
+          ],
+          "sprite_wrapper": "0x8c07b6e0",
+          "polygon_wrapper": "0x8c07b728",
+          "clip_wrapper": "0x8c07b77c",
+          "wrapper_bytes": 200,
+          "pointer_edits": [
+            [
+              "0x1024c",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x12e60",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20650",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x20998",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20a64",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20b20",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20b9c",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x28f94",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x37fa0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x380ec",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x3822c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x383d0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x384d0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x3855c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x54218",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x584b0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x58850",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x58e44",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x591d8",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x597cc",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x59b1c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x59ed8",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x5a120",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x5d734",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x5f1cc",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x66124",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6633c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x693ac",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x69430",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x697d8",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x69958",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x69be4",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6c778",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6c7d4",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6d40c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x72420",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x72514",
+              "0x8c0a9db0"
+            ]
+          ],
+          "cable_verified": "VGA only; TV and physical hardware unverified"
+        },
+        "limits": [
+          "Historical 0.7.11 bugs and memory behavior are intentionally retained.",
+          "Native-only normalization means this is not byte-identical historical 0.7.11.",
+          "A passing midpoint narrows the normalized code path; removed HD/selector behavior must not be ruled out without a similarly normalized upper control.",
+          "Real Dreamcast result pending; no fix or hardware success is claimed."
+        ],
+        "test": "Cold boot each original-input GDI separately on GDEMU/VGA. Test New Game conversation entry, then Clear 2 VMU save -> Next. Record immediate black/hang separately from any later Hallway freeze.",
+        "upgrade_patch": false,
+        "investigation": "Original immediate conversation-start / mission-entry hang",
+        "role": "Normalized upper control",
+        "comparison_baseline": "0.7.27: Native-only historical 0.7.6; tester passes entry but later freezes in the Hallway.",
+        "result_interpretation": "If Native-only 0.7.11 still fails immediately, use 0.7.8 to split 0.7.7-0.7.11. If Native-only 0.7.11 enters, do not blame that interval; investigate the shared normalization or its interaction. Later Hallway behavior is a separate observation, not proof of a separate root cause."
+      },
+      "identical_438_byte_normalization_to_0_7_27": true,
+      "entire_WIN00_identical_to_0_7_27": true,
+      "all_other_payloads_exact_parent": true,
+      "payload_count": 15,
+      "native_validation": {
+        "version": "0.7.29",
+        "executable_sha256": "f149554da38d98e1ca533d042de59c27151e153520bd03b384dc24d79f8075a7",
+        "native_glyph_cases": 804,
+        "allocation_cases": [
+          {
+            "logical": [
+              32,
+              32
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              1,
+              1,
+              8192,
+              64,
+              64
+            ]
+          },
+          {
+            "logical": [
+              256,
+              128
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              512,
+              256
+            ]
+          },
+          {
+            "logical": [
+              512,
+              64
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              1024,
+              128
+            ]
+          },
+          {
+            "logical": [
+              1024,
+              32
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              0,
+              1,
+              131072,
+              1024,
+              64
+            ]
+          },
+          {
+            "logical": [
+              32,
+              32
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              1,
+              1,
+              8192,
+              64,
+              64
+            ]
+          },
+          {
+            "logical": [
+              256,
+              128
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              512,
+              256
+            ]
+          },
+          {
+            "logical": [
+              512,
+              64
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              1024,
+              128
+            ]
+          },
+          {
+            "logical": [
+              1024,
+              32
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.11",
+            "descriptor": [
+              0,
+              1,
+              131072,
+              1024,
+              64
+            ]
+          }
+        ],
+        "VGA_cases": 96,
+        "movie_cases": 129,
+        "SH4_instructions": 11072858,
+        "scope": "Actual historical Native raster/allocator, video commit and movie initialization with bounded endpoint fixtures; no physical GPU success claimed."
+      },
+      "disc_validation": {
+        "reextracted_files": "all 15 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "unrelated_track_bytes": "all unchanged",
+        "track_bytes_compared": 1188856032,
+        "audio_movie_sectors": "all 4041 original sectors exact",
+        "in_game": "pending"
+      },
+      "DCP": {
+        "version": "0.7.29",
+        "diagnostic": true,
+        "public_release": false,
+        "original_only": true,
+        "asset": "Rayblade-v0.7.29-HARDWARE-DIAGNOSTIC-DCP.zip",
+        "bytes": 4614843,
+        "sha256": "e9f2334a874a1046e5f8b14daa8dc3a3b19918fef95b32879148e42ae5ed89bd",
+        "game_tree_sha256": "2526e5bb4fe1c2aa69d298d3a82e0f9771da60f6dad44e05666b92d10240ff32",
+        "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+        "audio_content_preserved": true,
+        "VGA_boot_flag": "1",
+        "hardware_result": "pending",
+        "path": "work/output/dcp-0.7.29-diagnostic/Rayblade-v0.7.29-HARDWARE-DIAGNOSTIC-DCP.zip"
+      },
+      "hardware_result": {
+        "status": "Reported unsuccessful",
+        "historical_source": "0.7.11, Native-only",
+        "report": "black screen after mission, new game",
+        "exact_checkpoint": "Not yet identified; preserve the reporter's wording.",
+        "fix_confirmed": false
+      }
+    },
+    {
+      "version": "0.7.30",
+      "historical_source": "0.7.8",
+      "role": "Normalized midpoint after 0.7.6",
+      "normalization": {
+        "version": "0.7.30",
+        "date": "2026-11-01",
+        "source_build": "0.7.8",
+        "historical_midpoint": "0.7.8",
+        "kind": "Binary-search midpoint: 0.7.8 with HD removed",
+        "public_release": false,
+        "hardware_fix_confirmed": false,
+        "source_executable_sha256": "2d1df901aa5a83312dd8e1125eec6e9a1b1fd4698c34884b0398bf7989553d84",
+        "executable_sha256": "1beb33ca8fad81d85b060aa7277511d9308af54665d7ace58c8395ebb00a2938",
+        "archive_sha256": "c7f7a6158029dfb7c3f552f00c840e7bdaeb5d09b5f9b7d12764b94e61585786",
+        "changed_executable_bytes": 438,
+        "normalization_edits": [
+          {
+            "offset": "0x6b2ac",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x6b38e",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x6b552",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x6b814",
+            "bytes": 2,
+            "reason": "Constant Native selection, retaining historical branch layout"
+          },
+          {
+            "offset": "0x10150",
+            "bytes": 4,
+            "reason": "Restore original frame callback"
+          },
+          {
+            "offset": "0x6b900",
+            "bytes": 464,
+            "reason": "Erase title selector and its labels"
+          }
+        ],
+        "font_banks": 1,
+        "native_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+        "font_resource_bytes": 198144,
+        "zero_padding_bytes": 98560,
+        "padding_purpose": "Erase HD pixels without changing historical resource allocation, Native offsets or archive layout; shared header/metrics remain exact.",
+        "retained": [
+          "All historical 0.7.8 executable and assets except the identical Native-only normalization used for 0.7.27."
+        ],
+        "excluded": "All features introduced after historical 0.7.8; no later repairs backported.",
+        "other_payloads": "Every non-executable/non-WIN00 payload remains exact historical 0.7.8.",
+        "source_font_runtime_labels": {
+          "raster": 2349314702,
+          "r_selected_font": 2349314742,
+          "r_small_valid": 2349314764,
+          "r_medium": 2349314804,
+          "r_medium_valid": 2349314814,
+          "r_surface": 2349314844,
+          "r_aa_counts_done": 2349314950,
+          "r_shadow_selected": 2349314968,
+          "r_row": 2349315046,
+          "r_pixel": 2349315074,
+          "r_binary_sample": 2349315092,
+          "r_coverage_color": 2349315102,
+          "r_bg_clipped": 2349315152,
+          "r_no_bg": 2349315162,
+          "r_no_fg": 2349315168,
+          "r_next": 2349315168,
+          "r_row_next": 2349315196,
+          "allocate": 2349315308,
+          "a_nonzero_width": 2349315348,
+          "a_bounded_width": 2349315358,
+          "a_nonzero_height": 2349315366,
+          "a_bounded_height": 2349315376,
+          "a_height": 2349315388,
+          "a_native_width": 2349315394,
+          "a_native_height": 2349315402,
+          "a_scan": 2349315408,
+          "a_native_x_done": 2349315428,
+          "a_selected_scale": 2349315434,
+          "a_scan_loop": 2349315440,
+          "a_scan_next": 2349315456,
+          "a_try": 2349315462,
+          "a_malloc": 2349315496,
+          "a_reduce": 2349315518,
+          "a_reduce_y": 2349315528,
+          "a_success": 2349315534,
+          "a_reject": 2349315580,
+          "a_return": 2349315582,
+          "initialize": 2349315632,
+          "flush": 2349315780
+        },
+        "rendering": {
+          "physical_framebuffer": [
+            640,
+            480
+          ],
+          "sprite_wrapper": "0x8c07b6e0",
+          "polygon_wrapper": "0x8c07b728",
+          "clip_wrapper": "0x8c07b77c",
+          "wrapper_bytes": 200,
+          "pointer_edits": [
+            [
+              "0x1024c",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x12e60",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20650",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x20998",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20a64",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20b20",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x20b9c",
+              "0x8c0a7c06"
+            ],
+            [
+              "0x28f94",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x37fa0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x380ec",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x3822c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x383d0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x384d0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x3855c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x54218",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x584b0",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x58850",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x58e44",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x591d8",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x597cc",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x59b1c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x59ed8",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x5a120",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x5d734",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x5f1cc",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x66124",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6633c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x693ac",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x69430",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x697d8",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x69958",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x69be4",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6c778",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6c7d4",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x6d40c",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x72420",
+              "0x8c0a9db0"
+            ],
+            [
+              "0x72514",
+              "0x8c0a9db0"
+            ]
+          ],
+          "cable_verified": "VGA only; TV and physical hardware unverified"
+        },
+        "limits": [
+          "Historical 0.7.8 bugs and memory behavior are intentionally retained.",
+          "Native-only normalization means this is not byte-identical historical 0.7.8.",
+          "A passing midpoint narrows the normalized code path; removed HD/selector behavior must not be ruled out without a similarly normalized upper control.",
+          "Real Dreamcast result pending; no fix or hardware success is claimed."
+        ],
+        "test": "Cold boot each original-input GDI separately on GDEMU/VGA. Test New Game conversation entry, then Clear 2 VMU save -> Next. Record immediate black/hang separately from any later Hallway freeze.",
+        "upgrade_patch": false,
+        "investigation": "Original immediate conversation-start / mission-entry hang",
+        "role": "Normalized midpoint after 0.7.6",
+        "comparison_baseline": "0.7.27: Native-only historical 0.7.6; tester passes entry but later freezes in the Hallway.",
+        "result_interpretation": "If Native-only 0.7.11 still fails immediately, use 0.7.8 to split 0.7.7-0.7.11. If Native-only 0.7.11 enters, do not blame that interval; investigate the shared normalization or its interaction. Later Hallway behavior is a separate observation, not proof of a separate root cause."
+      },
+      "identical_438_byte_normalization_to_0_7_27": true,
+      "entire_WIN00_identical_to_0_7_27": true,
+      "all_other_payloads_exact_parent": true,
+      "payload_count": 14,
+      "native_validation": {
+        "version": "0.7.30",
+        "executable_sha256": "1beb33ca8fad81d85b060aa7277511d9308af54665d7ace58c8395ebb00a2938",
+        "native_glyph_cases": 804,
+        "allocation_cases": [
+          {
+            "logical": [
+              32,
+              32
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              1,
+              1,
+              8192,
+              64,
+              64
+            ]
+          },
+          {
+            "logical": [
+              256,
+              128
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              512,
+              256
+            ]
+          },
+          {
+            "logical": [
+              512,
+              64
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              1024,
+              128
+            ]
+          },
+          {
+            "logical": [
+              1024,
+              32
+            ],
+            "poisoned_mode": 0,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              0,
+              1,
+              131072,
+              1024,
+              64
+            ]
+          },
+          {
+            "logical": [
+              32,
+              32
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              1,
+              1,
+              8192,
+              64,
+              64
+            ]
+          },
+          {
+            "logical": [
+              256,
+              128
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              512,
+              256
+            ]
+          },
+          {
+            "logical": [
+              512,
+              64
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              1,
+              1,
+              262144,
+              1024,
+              128
+            ]
+          },
+          {
+            "logical": [
+              1024,
+              32
+            ],
+            "poisoned_mode": 1,
+            "matches_historical_Native": "0.7.8",
+            "descriptor": [
+              0,
+              1,
+              131072,
+              1024,
+              64
+            ]
+          }
+        ],
+        "VGA_cases": 96,
+        "movie_cases": 129,
+        "SH4_instructions": 11072858,
+        "scope": "Actual historical Native raster/allocator, video commit and movie initialization with bounded endpoint fixtures; no physical GPU success claimed."
+      },
+      "disc_validation": {
+        "reextracted_files": "all 14 exact",
+        "changed_sector_EDC_ECC": "pass",
+        "unrelated_ISO_entries": "unchanged",
+        "unrelated_track_bytes": "all unchanged",
+        "track_bytes_compared": 1188856032,
+        "audio_movie_sectors": "all 4041 original sectors exact",
+        "in_game": "pending"
+      },
+      "DCP": {
+        "version": "0.7.30",
+        "diagnostic": true,
+        "public_release": false,
+        "original_only": true,
+        "asset": "Rayblade-v0.7.30-HARDWARE-DIAGNOSTIC-DCP.zip",
+        "bytes": 4586085,
+        "sha256": "b97f2beb9c2fffee68faf07f76c813ecdeb897228b7980a4a58d49edd68b448b",
+        "game_tree_sha256": "6bb0e472d757ff0f46adbd2d0ec457fe39dcd322f21c14226687b88e93016809",
+        "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+        "audio_content_preserved": true,
+        "VGA_boot_flag": "1",
+        "hardware_result": "pending",
+        "path": "work/output/dcp-0.7.30-diagnostic/Rayblade-v0.7.30-HARDWARE-DIAGNOSTIC-DCP.zip"
+      },
+      "hardware_result": {
+        "status": "Reported unsuccessful; conversation checkpoint clarification pending",
+        "historical_source": "0.7.8, Native-only",
+        "report": "freeze on conversation",
+        "exact_checkpoint": "Unclear whether immediate dialogue entry, the known later Koichiro/Kasumi Hallway exchange, or another conversation.",
+        "fix_confirmed": false
+      }
+    }
+  ],
+  "last_updated": "2026-11-04",
+  "hardware_follow_up": {
+    "date": "2026-11-03",
+    "device_context": "Same reported real Dreamcast / GDEMU / VGA investigation",
+    "user_report_verbatim": "user report: 0.7.2 works fine\n.29 - black screen after mission, new game\n30 - freeze on conversation",
+    "results": {
+      "0.7.2": {
+        "status": "Reported working",
+        "report": "works fine",
+        "scope_limit": "Do not infer a complete-game pass beyond the tester's report."
+      },
+      "0.7.29": {
+        "status": "Reported unsuccessful",
+        "historical_source": "0.7.11, Native-only",
+        "report": "black screen after mission, new game",
+        "exact_checkpoint": "Not yet identified; preserve the reporter's wording.",
+        "fix_confirmed": false
+      },
+      "0.7.30": {
+        "status": "Reported unsuccessful; conversation checkpoint clarification pending",
+        "historical_source": "0.7.8, Native-only",
+        "report": "freeze on conversation",
+        "exact_checkpoint": "Unclear whether immediate dialogue entry, the known later Koichiro/Kasumi Hallway exchange, or another conversation.",
+        "fix_confirmed": false
+      },
+      "0.7.28": {
+        "status": "Reported working on tested paths, with quarter-screen movies",
+        "historical_source": "0.7.4 rendering experiment, Native-only",
+        "report": "works (!), no black screen, no freezes; all movies on 1/4 screen",
+        "scope_limit": "Tester report, not a full-game or independently observed exact-checkpoint pass. No new screenshot was supplied in this reply.",
+        "known_limitation": "Expected historical lack of 0.7.5 movie position/size correction."
+      },
+      "0.7.31": {
+        "reported_date": "2026-11-04",
+        "status": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain",
+        "historical_source": "0.7.5, Native-only",
+        "report": "Patch works fine, movies are on full screen. No black screens, no freezes on scenario. NOW LOADING positioned differently; small bottom green line during cutscene.",
+        "scope_limit": "Tester report on tested paths, not a full-game pass. Clear 2 -> Next is not independently singled out in this reply.",
+        "known_issues": [
+          "NOW LOADING physical position/size",
+          "Green bottom edge during movies"
+        ]
+      },
+      "0.7.32": {
+        "reported_date": "2026-11-04",
+        "status": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid",
+        "historical_source": "0.7.31 plus loading/movie-edge corrections",
+        "report": "0.7.32 is mostly fine only problem with map, moving hex",
+        "scope_limit": "Three photographs show rendering defects; no physical RAM/VRAM capture or independent mission-transition/full-route pass supplied.",
+        "evidence": "work/ui/hardware-0732-map-grid-20261104/index.json",
+        "known_issues": [
+          "World-map label/dialogue areas are pale blank rectangles; partial portrait visible.",
+          "Blue movement tiles are displaced from the selection arrows and units.",
+          "Pale rectangles appear below units and across the lower dialogue area."
+        ]
+      }
+    },
+    "interpretation": {
+      "confirmed": "Neither 0.7.29 nor 0.7.30 is reported fully working. HD removal alone has not established a fix for those controls; 0.7.28 is separately reported working with quarter-screen movies.",
+      "pending_question": "Does 0.7.30 freeze immediately when conversation starts, at the later Koichiro/Kasumi hallway exchange, or elsewhere?",
+      "if_0_7_30_immediate": "Compare matched Native-only historical 0.7.6 and 0.7.8; probe 0.7.7 to split the two historical changes, subject to matching trigger and repeatability.",
+      "if_0_7_30_later_hallway": "Record entry as passed only for that tested path. For the original entry hang, compare 0.7.8 against 0.7.11; track the later Hallway checkpoint separately.",
+      "cause_confirmed": false,
+      "symptoms_proven_independent_causes": false,
+      "new_build_created": "0.7.33 map texture-capacity/range-grid candidate; physical result pending",
+      "additional_evidence": "Native-only 640x480 baseline 0.7.28 is reported working on tested paths. Resolution alone is not a sufficient explanation for every reported failure.",
+      "working_baseline_next_test": "0.7.33: retain 0.7.32 except restoring the original Japanese graphics reservation and the isolated battle range-fill XY adapter; test reported map/battle defects and prior conversation transitions on real hardware.",
+      "regression_boundary": "Reported working 0.7.31 (Native-only 0.7.5) versus failing 0.7.27 (Native-only 0.7.6) narrows the matched earlier scenario freeze to 0.7.6 story-choice/map changes or their interaction. Exact cause is not established; 0.7.30 checkpoint remains unclear."
+    },
+    "local_payload_comparison": {
+      "0.7.6_to_0.7.7": {
+        "changed_payloads": [
+          "D_NAMES.BIN"
+        ],
+        "executable_changed_bytes": 0,
+        "feature": "Compact weapon display names and matching event-movie titles"
+      },
+      "0.7.7_to_0.7.8": {
+        "changed_payloads": [
+          "1ST_READ.BIN",
+          "D_NAMES.BIN"
+        ],
+        "executable_changed_bytes": 161,
+        "feature": "Trust/Skills status marker alignment and heading indent",
+        "code_scope": "The wrapper is installed at a shared VM UI-constructor pointer. Its coordinate adjustment is guarded for two status contexts, but delegation is invoked for other contexts too. No faulty instruction is established."
+      },
+      "0.7.8_to_0.7.11": {
+        "changed_payloads": [
+          "1ST_READ.BIN",
+          "D_NAMES.BIN",
+          "ITM00.AFS"
+        ],
+        "executable_changed_bytes": 281,
+        "features": [
+          "Complete Trust help / compact popup aliases",
+          "Signed SP formatting / compact notices / room-map names",
+          "Measured location headers"
+        ]
+      },
+      "method": "Compare stored english-disc-report.json payload identities and executable bytes for each historical boundary. Source report/build files remain unchanged."
+    },
+    "follow_up_verbatim": "I will ask about it, another test on .28: works (!), no black screen, no freezes, to fix - all movies is on 1/4 screen (screenshot)",
+    "last_updated": "2026-11-04",
+    "follow_up_0_7_31_verbatim": "about 0.7.31 Patch works fine, movies are on full screen. No black screens, no freezes on scenario. Little two issues which we know: -\"Now Loading\" is positioned differently -Small bootom green line during cutscene",
+    "follow_up_0_7_32_verbatim": "0.7.32 is mostly fine only problem with map, moving hex"
+  },
+  "hardware_follow_up_source": "docs/hardware-entry-hang-results.json"
+}

@@ -1,0 +1,65 @@
+{
+  "hardware_report": {
+    "reported_date": "2026-11-05",
+    "status": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+    "report": "All the fixes work, with the exception of the game freezing when starting a \"New Game\" or entering subsequent missions in the scenario. Surprisingly, it does load the scenario \"Clear 3: A Girl's Resolve\" for a brief moment (perhaps this will help with the diagnosis \u2013 see screenshot). However, once the all dialogue ends, it just goes to a black screen.",
+    "version_basis": "Follow-up to the supplied 0.7.34 test; version is inferred from conversation context, not shown in either photograph.",
+    "device": "Previously established real Dreamcast / GDEMU / VGA",
+    "evidence": "work/ui/hardware-0734-transition-20261105/index.json",
+    "observed_script": "scenario.s_004.o00181",
+    "new_game_exact_checkpoint": "Awaiting clarification: before first dialogue or later in a conversation",
+    "Clear_3_exact_final_line": "Awaiting clarification; supplied dialogue is the first command in s_004",
+    "alignment_repair_sufficient": false,
+    "hardware_fix_confirmed": false,
+    "scope_limit": "Reporter says other fixes work; do not expand this into a complete-game or every-feature pass."
+  },
+  "evidence": {
+    "date": "2026-11-05",
+    "version": "0.7.34",
+    "version_basis": "Follow-up to the supplied 0.7.34 test; version is inferred from conversation context, not shown in either photograph.",
+    "images": [
+      {
+        "source": "local-attachment:codex-clipboard-e1608aff-0fed-47e0-a90d-3ee5d1252724.png",
+        "copy": "work/ui/hardware-0734-transition-20261105/01-vmu-clear2-clear3.png",
+        "sha256": "67e056ff81be958ae9ebc50cc18987401390f2c7124a4a72b2dd009414209e1b",
+        "observation": "Load screen lists Clear 2 and Clear 3 saves. The highlighted row is Clear 2; the still image alone does not prove which save was subsequently loaded."
+      },
+      {
+        "source": "local-attachment:codex-clipboard-aa86ec97-0f03-4631-a54d-73551c7ef7eb.png",
+        "copy": "work/ui/hardware-0734-transition-20261105/02-s004-reamond-dialogue.png",
+        "sha256": "10603ba178f72bf10e1150d595fb7051e765b080645d2c3b1af1604578bc1913",
+        "observation": "Battle terrain, units, selection arrows, portrait and Reamond dialogue are visible. No pale unit rectangles in this frame. This is the opening command scenario.s_004.o00181, not evidence of the exact final line before failure."
+      }
+    ]
+  },
+  "scenario_comparison": [
+    {
+      "member": "s_001.bin",
+      "original_VM_program_exact_0_7_2_31_34": true,
+      "entire_decoded_member_exact_0_7_31_34": true,
+      "decoded_bytes": 16632,
+      "decoded_sha256": "7df0e54135252ea0ead216e7dcdbd05edcdfe8c2286ab256499cfcdb9e973719",
+      "packed_member_exact_0_7_31_34": true,
+      "dialogue_command_count": 127,
+      "first_command": "scenario.s_001.o000c0",
+      "last_command": "scenario.s_001.o0207b",
+      "scope": "Member contents are equal; this does not establish identical archive offsets, runtime resources, I/O or hardware execution."
+    },
+    {
+      "member": "s_004.bin",
+      "original_VM_program_exact_0_7_2_31_34": true,
+      "entire_decoded_member_exact_0_7_31_34": true,
+      "decoded_bytes": 5832,
+      "decoded_sha256": "6003f891e653b055b559921c9bace4b5c44106d3991dce7d6fa8878b9dbb6dc9",
+      "packed_member_exact_0_7_31_34": true,
+      "dialogue_command_count": 31,
+      "first_command": "scenario.s_004.o00181",
+      "last_command": "scenario.s_004.o00aee",
+      "scope": "Member contents are equal; this does not establish identical archive offsets, runtime resources, I/O or hardware execution."
+    }
+  ],
+  "interpretation": "At least one battle/dialogue scene renders before failure. Alignment-only repair did not solve the reported transitions. Identical early scenario payloads favor inspecting runtime/resource transitions, without proving a cause.",
+  "next_control": "0.7.35 bypasses only the custom map-label sniff/snap hook on 0.7.34; all assets/final fixes remain.",
+  "on_pass": "The bypass implicates the shared custom hook or its interaction for the matched tested transition. Confirm repeated passes before generalizing.",
+  "on_fail": "The shared-hook bypass is insufficient; keep the result and split remaining runtime/asset groups against the passing baseline. Do not repeat the alignment-only repair as a claimed fix."
+}

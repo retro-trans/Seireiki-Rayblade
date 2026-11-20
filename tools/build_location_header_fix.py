@@ -17,14 +17,24 @@ OUT=ROOT/'work/output/location-header-candidate'
 START,END=0x66d38,0x66e4e
 
 
-def measure_code():
+def measure_code(*, static_widths=None, bytewise_offset=False):
     a=Assembler(BASE+START)
     for r in (8,9,10):a.push(r)
     a.emit(0x4f22);a.rr('mov',4,8);a.imm(0,9)
     a.rr('mov',4,0);a.unary('shlr8',0);a.imm(31,4);a.rr('and',0,4)
     a.lit(0x8c034bde,3);a.emit(0x430b);a.emit(0x0009)
     a.rr('mov',0,2);a.rr('mov',8,0);a.emit(0xc9ff);a.unary('shll2',0)
-    a.rr('add',0,2);a.load('l',2,10);a.rr('add',2,10)
+    a.rr('add',0,2)
+    if bytewise_offset:
+        # Text groups are packed without 4-byte alignment. SH-4 MOV.L cannot
+        # read these offsets safely; reconstruct the little-endian value.
+        a.rr('mov',2,1);a.addi(3,1);a.imm(0,10);a.imm(4,3)
+        a.label('offset_byte');a.unary('shll8',10);a.load('b',1,0)
+        a.rr('extu.b',0,0);a.rr('or',0,10);a.addi(-1,1)
+        a.unary('dt',3);a.branch('bf','offset_byte')
+    else:
+        a.load('l',2,10)
+    a.rr('add',2,10)
     a.rr('mov',8,0);a.unary('shlr8',0);a.emit(0xc91f);a.emit(0x8806);a.emit(0x0829)
     a.label('loop');a.lit(320,1);a.rr('cmp/hs',1,9);a.branch('bt','overflow')
     a.load('b',10,0);a.rr('extu.b',0,0);a.lit(255,1);a.rr('cmp/eq',1,0);a.branch('bt','done')
@@ -32,8 +42,19 @@ def measure_code():
     a.rr('tst',8,8);a.branch('bt','fixed')
     a.imm(len(MEDIUM),1);a.rr('cmp/hs',1,0);a.branch('bf','latin')
     a.imm(MEDIUM.index('?'),0)
-    a.label('latin');a.lit(0x8c1f36a4,1);a.load('l',1,1);a.lit(0xa0,2)
-    a.rr('add',2,1);a.rr('add',0,1);a.load('b',1,0);a.rr('extu.b',0,0)
+    a.label('latin')
+    if static_widths is None:
+        a.lit(0x8c1f36a4,1);a.load('l',1,1);a.lit(0xa0,2)
+        a.rr('add',2,1);a.rr('add',0,1);a.load('b',1,0);a.rr('extu.b',0,0)
+    else:
+        assert len(static_widths)==len(MEDIUM) and all(0<=v<16 for v in static_widths)
+        # Two advances per byte, embedded in this same executable routine.
+        # Measurement must not depend on the lifetime of a loaded font bank.
+        a.rr('mov',0,2);a.unary('shlr',0);a.lit('native_widths',1)
+        a.rr('add',0,1);a.load('b',1,0);a.rr('extu.b',0,0)
+        a.imm(1,1);a.rr('tst',1,2);a.branch('bt','low_nibble')
+        a.unary('shlr2',0);a.unary('shlr2',0)
+        a.label('low_nibble');a.emit(0xc90f)
     a.rr('add',0,9);a.branch('bra','next');a.emit(0x0009)
     a.label('fixed');a.addi(8,9);a.branch('bra','next');a.emit(0x0009)
     a.label('wide_control');a.lit(0xfa,1);a.rr('cmp/hs',1,0);a.branch('bt','control')
@@ -45,7 +66,14 @@ def measure_code():
     a.label('done');a.rr('mov',9,0);a.emit(0x4f26)
     for r in (10,9,8):a.pop(r)
     a.emit(0x000b);a.emit(0x0009)
-    code=a.pool_and_finish();assert len(code)<=END-START
+    if static_widths is not None:
+        a.align();a.labels['native_widths']=a.pc+len(a.pool)*4
+    code=a.pool_and_finish()
+    if static_widths is not None:
+        values=list(static_widths)+[0]
+        code+=bytes(values[i]|values[i+1]<<4 for i in range(0,len(static_widths),2))
+        if len(code)%2:code+=b'\x00'
+    assert len(code)<=END-START
     return code+bytes.fromhex('0900')*((END-START-len(code))//2)
 
 
@@ -73,8 +101,9 @@ class LocationCPU(HeaderCPU):
         return super().execute(pc,delay)
 
 
-def header_phase(exe,font,paper,names,index):
+def header_phase(exe,font,paper,names,index,*,strict_alignment=False):
     c=setup(exe,font,paper,names);c.__class__=LocationCPU;c.geometry=[]
+    c.strict_alignment=strict_alignment
     c.regions.append((0x8c480000,bytearray(0x4000)));c.write(0x8c09b2b4,0x8c480000,4)
     c.reg[1]=0x8c09b2b4;c.write(0x8c701800+24,index,2)
     steps=call(c,0x8c0843a4,stop=0x8c08448e)
@@ -85,11 +114,16 @@ def check():
     exe,component=compose();base=ROOT/'work/output'/PRIOR
     old=(base/'1ST_READ.BIN').read_bytes();names=(base/'text/D_NAMES.en.dec.bin').read_bytes()
     paper=(base/'text/D_PAPER.en.dec.bin').read_bytes();banks=member((base/'WIN00.AFS').read_bytes(),0)
+    return check_candidate(exe,old,names,paper,banks,component)
+
+
+def check_candidate(exe,old,names,paper,banks,component,*,modes=(0,1),strict_alignment=False):
     rows=json.loads((ROOT/'work/translation/en/ui/names.json').read_text('utf-8'))
     cases=[];steps=0;regressions=0;geometry_cases=0
-    for mode in (0,1):
+    for mode in modes:
         font=banks[mode*99072:(mode+1)*99072]
         current=setup(exe,font,paper,names);prior=setup(old,font,paper,names)
+        current.strict_alignment=prior.strict_alignment=strict_alignment
         for row in rows:
             if row['source_record_kind']=='unused_table_root_sentinel':continue
             _,g,idx=row['id'].split('.');group=int(g[1:]);idx=int(idx);handle=group*256+idx
@@ -105,7 +139,7 @@ def check():
             bounds={ch:Image.fromarray(legacy_mask(font,ch,False)).getbbox() for ch,x,y,s in gs}
             right=max((x+bounds[ch][2]/4+1 for ch,x,y,s in gs if bounds[ch]),default=0)
             assert right<=width+1,(row['id'],right,width)
-            geometry,n=header_phase(exe,font,paper,names,idx);steps+=n;geometry_cases+=1
+            geometry,n=header_phase(exe,font,paper,names,idx,strict_alignment=strict_alignment);steps+=n;geometry_cases+=1
             assert [g[0] for g in geometry]==[0x8c078e20,0x8c078a30,0x8c076afc,0x8c02fb6c,0x8c02fb6c,0x8c0312c4]
             assert geometry[0][1][1:3]==[313-width,22]
             assert geometry[2][1][:2]==[7,handle]
@@ -116,7 +150,7 @@ def check():
             cases.append({'font_bank':('HD','Native')[mode],'id':row['id'],'old_width':before,'width':width,
                 'text_x':313-width,'ink_right':right,'right_margin':320-(313-width+right)})
     return {**component,'location_cases':cases,'unchanged_other_group_cases':regressions,'native_header_geometry_cases':geometry_cases,
-        'SH4_instructions':steps,'checks':['All location widths match original native font advances in both banks',
+        'SH4_instructions':steps,'checks':['All location widths match original font advances in selected banks',
             'All other valid name rows match the prior native measurement exactly',
             'Only the measurement function differs; location placement, caps, body sizing and animation remain byte-exact'],
         'limits':['Native location geometry executes; final text/GPU submission endpoints are bounded fixtures.',

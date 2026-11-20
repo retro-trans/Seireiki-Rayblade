@@ -1,0 +1,106 @@
+{
+  "version": "0.7.43",
+  "date": "2026-11-13",
+  "source_build": "0.7.42",
+  "kind": "Shared status-constructor bypass; single-pointer diagnostic",
+  "source_executable_sha256": "ce66d2b4ea9a6d8a6d50913ee6eebe42e740d9c58439b0540e59b1a707c6ac94",
+  "executable_sha256": "463e54d5244ca008410c8a47369b3f2a6e42906303dc8eaa6143b46b415c2c55",
+  "changed_executable_bytes": 3,
+  "pointer_file_offset": "0x8b1d4",
+  "before": "0x8c018d00",
+  "after": "0x8c07d978",
+  "reason": "0.7.42 still black-screens during mission dialogue and New Game. The shared constructor dispatch still enters the restored status gate even for non-status dialogue contexts.",
+  "change": "Dispatch directly to the original constructor as in working 0.7.40. Leave unused helper bodies unchanged to isolate the call target.",
+  "retained": "Every asset and all other code exact 0.7.42: UI text, headers, room/map assets, grid, targeting, clipping, selectors, Native font, memory repairs, loading and movies.",
+  "disabled": [
+    "Trust/Skills vertical marker-alignment adjustment (two logical pixels)",
+    "Runtime text compression remains disabled exactly as in 0.7.42"
+  ],
+  "on_pass": "A matched 0.7.42 fail / 0.7.43 pass implicates invocation of the status gate/wrapper or its interaction. It does not identify a faulty instruction or explain every historical freeze.",
+  "on_fail": "The remaining restored code/assets are sufficient to reproduce the failure without either status hook or text compression; split remaining UI/header versus battle/asset changes against 0.7.40.",
+  "limits": [
+    "Diagnostic only; hardware confirmation pending.",
+    "Trust/Skills vertical marker alignment may be slightly off; Skills horizontal indentation and all wording remain.",
+    "Stage 6 missing/white text can return because compression is still disabled.",
+    "0.7.42 failure proves compression removal alone insufficient, not that compression is harmless."
+  ],
+  "evidence": "docs/hardware-0742-follow-up.json",
+  "hardware_result": "Failed hardware test: mission-dialogue and New Game black screens persist",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "native_validation": {
+    "version": "0.7.43",
+    "executable_sha256": "463e54d5244ca008410c8a47369b3f2a6e42906303dc8eaa6143b46b415c2c55",
+    "constructor_cases": [
+      {
+        "script": "0xeee6",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      },
+      {
+        "script": "0xef01",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      },
+      {
+        "script": "0xef15",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      },
+      {
+        "script": "0xef29",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      },
+      {
+        "script": "0xe70b",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      },
+      {
+        "script": "0xfdbf",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      },
+      {
+        "script": "0xf634",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      },
+      {
+        "script": "0xf7ae",
+        "return_and_VM_context_memory_exact_0_7_40": true,
+        "status_helpers_entered": false
+      }
+    ],
+    "SH4_instructions": 251172,
+    "scope": "Actual constructor selected through the candidate dispatch pointer, compared against 0.7.40. Status gate/wrapper forbidden; VM/context memory and return ABI exact. Heap/graphics endpoints are bounded fixtures, not a live GPU/hardware test."
+  },
+  "all_140_game_files_and_boot_checked": true,
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.43",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.43-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4616164,
+    "sha256": "27216325f5d146bf3e7cfce2806e6ecc320fddb2dde2f69ad66a72ba2665247b",
+    "game_tree_sha256": "bd14a099e866bdf358ff37f29611607407e13842f39ec732ae407b097a767063",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "Failed hardware test: mission-dialogue and New Game black screens persist",
+    "path": "work/output/dcp-0.7.43-diagnostic/Rayblade-v0.7.43-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_evidence": "docs/hardware-0743-follow-up.json"
+}

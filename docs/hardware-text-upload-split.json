@@ -1,0 +1,184 @@
+{
+  "version": "0.7.42",
+  "date": "2026-11-12",
+  "source_build": "0.7.41",
+  "upload_baseline": "0.7.40",
+  "kind": "Controlled runtime text-compression removal from failed combined build",
+  "source_executable_sha256": "1632f331219b96ffa982b4a647cd29987060847fc5042800debafaadf23b5b84",
+  "executable_sha256": "ce66d2b4ea9a6d8a6d50913ee6eebe42e740d9c58439b0540e59b1a707c6ac94",
+  "changed_executable_bytes": 705,
+  "reverted_spans": [
+    {
+      "file_offset": "0x8d60",
+      "bytes": 540,
+      "restored_sha256": "f7bce5f450d01d8da55246e6c310697e2e1f3f6b90b328177d64d793d06fcea8"
+    },
+    {
+      "file_offset": "0x8f80",
+      "bytes": 100,
+      "restored_sha256": "cd00e292c5970d3c5e2f0ffa5171e555bc46bfc4faddfb4a418b6840b86e79a3"
+    },
+    {
+      "file_offset": "0x6bb7c",
+      "bytes": 36,
+      "restored_sha256": "5227a682e443262bc41c37d08735525160278e5ddbe7e75df1786fcfc5079f72"
+    },
+    {
+      "file_offset": "0x22d1a",
+      "bytes": 78,
+      "restored_sha256": "054c4247a4c2714f23c376ea912ef9e154c78d2da5f558c24b032b52743cfa89"
+    },
+    {
+      "file_offset": "0x6b5a8",
+      "bytes": 4,
+      "restored_sha256": "0b7c3a294201dea7fa8231a8ec9098ebc2f255467c8fad3fbc4955875fa1bb23"
+    },
+    {
+      "file_offset": "0xb8f60",
+      "bytes": 4,
+      "restored_sha256": "de6c51c50b6ebb999c15401778d7420bbfdb15e50f213616396bce20adec66f0"
+    },
+    {
+      "file_offset": "0xe21e0",
+      "bytes": 4,
+      "restored_sha256": "de6c51c50b6ebb999c15401778d7420bbfdb15e50f213616396bce20adec66f0"
+    }
+  ],
+  "retained": "All 0.7.41 assets, translation/UI changes, status-only routing, grid/target/line/clip/selector fixes and all working 0.7.40 graphics, font, loading and movie repairs.",
+  "disabled": "Runtime generated-text VQ encoder, extended CPU allocation, encoded upload selection and rectangular-VQ SDK admission; all seven regions restored together.",
+  "font": "Native Skies 1x only; unchanged font resource, no HD or selector",
+  "hardware_result": "Failed hardware test: mission-dialogue and New Game black screens persist",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "evidence": "docs/hardware-0741-follow-up.json",
+  "on_pass": "If the same cold-boot/New Game/mission dialogue paths now pass, the removed compression group or its interaction is implicated on this combined baseline. Repair that group before claiming feature parity.",
+  "on_fail": "The remaining 0.7.41 additions or their interactions are still sufficient to fail; return to 0.7.40 and split those remaining changes. A failed test does not prove compression harmless.",
+  "limits": [
+    "This is a diagnostic, not a confirmed hardware fix.",
+    "Stage 6 missing/white text may return because its text-memory repair is disabled.",
+    "Earlier 0.7.24 also disabled compression on a different baseline that retained other failing changes; its failure does not settle this comparison.",
+    "Test matching New Game and mission dialogue checkpoints from a cold boot using normal VMU saves."
+  ],
+  "dependency_review": {
+    "retained_status_gate": "0x8c018d00..0x8c018d60 remains exactly 0.7.41; it is not part of the removed codec group.",
+    "limits": "A result tests compression removal on this baseline only. It cannot distinguish every shared memory/cache/timing interaction or establish that the status gate and other retained features are safe.",
+    "historical_capture_observation": "Existing Office/Stage 6 emulator RAM snapshots retain the old map helper bytes at 0x8c018d00. They do not establish physical hardware behavior."
+  },
+  "native_validation": {
+    "version": "0.7.42",
+    "executable_sha256": "ce66d2b4ea9a6d8a6d50913ee6eebe42e740d9c58439b0540e59b1a707c6ac94",
+    "allocation_upload_cases": [
+      {
+        "logical": [
+          16,
+          16
+        ],
+        "allocation_bytes": 2080,
+        "upload_sectors": 2,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      },
+      {
+        "logical": [
+          64,
+          32
+        ],
+        "allocation_bytes": 16416,
+        "upload_sectors": 9,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      },
+      {
+        "logical": [
+          128,
+          128
+        ],
+        "allocation_bytes": 131104,
+        "upload_sectors": 65,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      },
+      {
+        "logical": [
+          256,
+          64
+        ],
+        "allocation_bytes": 131104,
+        "upload_sectors": 65,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      },
+      {
+        "logical": [
+          256,
+          128
+        ],
+        "allocation_bytes": 262176,
+        "upload_sectors": 129,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      },
+      {
+        "logical": [
+          512,
+          64
+        ],
+        "allocation_bytes": 262176,
+        "upload_sectors": 129,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      },
+      {
+        "logical": [
+          512,
+          256
+        ],
+        "allocation_bytes": 1048608,
+        "upload_sectors": 513,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      },
+      {
+        "logical": [
+          1024,
+          128
+        ],
+        "allocation_bytes": 524320,
+        "upload_sectors": 257,
+        "source_pointer": "original editable surface",
+        "matches_0_7_40": true
+      }
+    ],
+    "SH4_instructions": 6502,
+    "removed_encoder_helper_and_validator": "Never executed in these cases; both SDK entry literals restored",
+    "other_feature_evidence": "0.7.41 native tests are historical; corresponding feature bytes and assets unchanged, not a new live pass.",
+    "scope": "Actual retained allocator and restored upload worker compared with 0.7.40. Heap endpoint is bounded; GPU/DMA timing and physical dialogue transitions remain untested."
+  },
+  "all_140_game_files_and_boot_checked": true,
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.42",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.42-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4616148,
+    "sha256": "60fc0926176a04432035b4a85c7b8b47b314607e964776d15781d3083baf9574",
+    "game_tree_sha256": "c218ceb495a4ee5c26700e4a170a70656b5514669c37dbdb443a307e377c4126",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.42-diagnostic/Rayblade-v0.7.42-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_evidence": "docs/hardware-0742-follow-up.json"
+}

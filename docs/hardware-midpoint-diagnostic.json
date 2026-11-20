@@ -1,0 +1,470 @@
+{
+  "version": "0.7.27",
+  "date": "2026-11-01",
+  "source_build": "0.7.6",
+  "kind": "Binary-search midpoint: 0.7.6 with HD removed",
+  "public_release": false,
+  "hardware_fix_confirmed": false,
+  "source_executable_sha256": "ff6b1ca63c6923ec545d90270c89df6d4cafc01205f5790858c0f438f709ae48",
+  "executable_sha256": "1f0e62fd6d1c95077ae9febce8132598df443b5f800a9736ceafad4afff47a20",
+  "archive_sha256": "c7f7a6158029dfb7c3f552f00c840e7bdaeb5d09b5f9b7d12764b94e61585786",
+  "changed_executable_bytes": 438,
+  "normalization_edits": [
+    {
+      "offset": "0x6b2ac",
+      "bytes": 2,
+      "reason": "Constant Native selection, retaining historical branch layout"
+    },
+    {
+      "offset": "0x6b38e",
+      "bytes": 2,
+      "reason": "Constant Native selection, retaining historical branch layout"
+    },
+    {
+      "offset": "0x6b552",
+      "bytes": 2,
+      "reason": "Constant Native selection, retaining historical branch layout"
+    },
+    {
+      "offset": "0x6b814",
+      "bytes": 2,
+      "reason": "Constant Native selection, retaining historical branch layout"
+    },
+    {
+      "offset": "0x10150",
+      "bytes": 4,
+      "reason": "Restore original frame callback"
+    },
+    {
+      "offset": "0x6b900",
+      "bytes": 464,
+      "reason": "Erase title selector and its labels"
+    }
+  ],
+  "font_banks": 1,
+  "native_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+  "font_resource_bytes": 198144,
+  "zero_padding_bytes": 98560,
+  "padding_purpose": "Erase HD pixels without changing historical resource allocation, Native offsets or archive layout; shared header/metrics remain exact.",
+  "retained": [
+    "0.7.3 Native font runtime, forced Native only; no selector",
+    "0.7.4 Native glyphs and 640x480 video/adapters",
+    "0.7.5 movie position/size conversion",
+    "0.7.6 story-choice fixes and English map labels"
+  ],
+  "excluded": "All changes introduced in 0.7.7 through 0.7.26, except no new features are imported to remove HD: only fixed mode reads, erased HD pixels and original frame callback.",
+  "other_payloads": "All twelve non-executable/non-WIN00 modified payloads remain exact historical 0.7.6.",
+  "source_font_runtime_labels": {
+    "raster": 2349314702,
+    "r_selected_font": 2349314742,
+    "r_small_valid": 2349314764,
+    "r_medium": 2349314804,
+    "r_medium_valid": 2349314814,
+    "r_surface": 2349314844,
+    "r_aa_counts_done": 2349314950,
+    "r_shadow_selected": 2349314968,
+    "r_row": 2349315046,
+    "r_pixel": 2349315074,
+    "r_binary_sample": 2349315092,
+    "r_coverage_color": 2349315102,
+    "r_bg_clipped": 2349315152,
+    "r_no_bg": 2349315162,
+    "r_no_fg": 2349315168,
+    "r_next": 2349315168,
+    "r_row_next": 2349315196,
+    "allocate": 2349315308,
+    "a_nonzero_width": 2349315348,
+    "a_bounded_width": 2349315358,
+    "a_nonzero_height": 2349315366,
+    "a_bounded_height": 2349315376,
+    "a_height": 2349315388,
+    "a_native_width": 2349315394,
+    "a_native_height": 2349315402,
+    "a_scan": 2349315408,
+    "a_native_x_done": 2349315428,
+    "a_selected_scale": 2349315434,
+    "a_scan_loop": 2349315440,
+    "a_scan_next": 2349315456,
+    "a_try": 2349315462,
+    "a_malloc": 2349315496,
+    "a_reduce": 2349315518,
+    "a_reduce_y": 2349315528,
+    "a_success": 2349315534,
+    "a_reject": 2349315580,
+    "a_return": 2349315582,
+    "initialize": 2349315632,
+    "flush": 2349315780
+  },
+  "rendering": {
+    "physical_framebuffer": [
+      640,
+      480
+    ],
+    "sprite_wrapper": "0x8c07b6e0",
+    "polygon_wrapper": "0x8c07b728",
+    "clip_wrapper": "0x8c07b77c",
+    "wrapper_bytes": 200,
+    "pointer_edits": [
+      [
+        "0x1024c",
+        "0x8c0a7c06"
+      ],
+      [
+        "0x12e60",
+        "0x8c0a7c06"
+      ],
+      [
+        "0x20650",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x20998",
+        "0x8c0a7c06"
+      ],
+      [
+        "0x20a64",
+        "0x8c0a7c06"
+      ],
+      [
+        "0x20b20",
+        "0x8c0a7c06"
+      ],
+      [
+        "0x20b9c",
+        "0x8c0a7c06"
+      ],
+      [
+        "0x28f94",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x37fa0",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x380ec",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x3822c",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x383d0",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x384d0",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x3855c",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x54218",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x584b0",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x58850",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x58e44",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x591d8",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x597cc",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x59b1c",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x59ed8",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x5a120",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x5d734",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x5f1cc",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x66124",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x6633c",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x693ac",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x69430",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x697d8",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x69958",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x69be4",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x6c778",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x6c7d4",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x6d40c",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x72420",
+        "0x8c0a9db0"
+      ],
+      [
+        "0x72514",
+        "0x8c0a9db0"
+      ]
+    ],
+    "cable_verified": "VGA only; TV and physical hardware unverified"
+  },
+  "limits": [
+    "Historical 0.7.6 bugs and memory behavior are intentionally retained.",
+    "Native-only normalization means this is not byte-identical historical 0.7.6.",
+    "A passing midpoint narrows the normalized code path; removed HD/selector behavior must not be ruled out without a similarly normalized upper control.",
+    "Real Dreamcast result pending; no fix or hardware success is claimed."
+  ],
+  "test": "Original Japanese input only; GDI output; cold boot GDEMU/VGA; New Game, then separately Clear 2 normal VMU save -> Next.",
+  "upgrade_patch": false,
+  "native_validation": {
+    "version": "0.7.27",
+    "executable_sha256": "1f0e62fd6d1c95077ae9febce8132598df443b5f800a9736ceafad4afff47a20",
+    "native_glyph_cases": 804,
+    "allocation_cases": [
+      {
+        "logical": [
+          32,
+          32
+        ],
+        "poisoned_mode": 0,
+        "matches_076_Native": true,
+        "descriptor": [
+          1,
+          1,
+          8192,
+          64,
+          64
+        ]
+      },
+      {
+        "logical": [
+          256,
+          128
+        ],
+        "poisoned_mode": 0,
+        "matches_076_Native": true,
+        "descriptor": [
+          1,
+          1,
+          262144,
+          512,
+          256
+        ]
+      },
+      {
+        "logical": [
+          512,
+          64
+        ],
+        "poisoned_mode": 0,
+        "matches_076_Native": true,
+        "descriptor": [
+          1,
+          1,
+          262144,
+          1024,
+          128
+        ]
+      },
+      {
+        "logical": [
+          1024,
+          32
+        ],
+        "poisoned_mode": 0,
+        "matches_076_Native": true,
+        "descriptor": [
+          0,
+          1,
+          131072,
+          1024,
+          64
+        ]
+      },
+      {
+        "logical": [
+          32,
+          32
+        ],
+        "poisoned_mode": 1,
+        "matches_076_Native": true,
+        "descriptor": [
+          1,
+          1,
+          8192,
+          64,
+          64
+        ]
+      },
+      {
+        "logical": [
+          256,
+          128
+        ],
+        "poisoned_mode": 1,
+        "matches_076_Native": true,
+        "descriptor": [
+          1,
+          1,
+          262144,
+          512,
+          256
+        ]
+      },
+      {
+        "logical": [
+          512,
+          64
+        ],
+        "poisoned_mode": 1,
+        "matches_076_Native": true,
+        "descriptor": [
+          1,
+          1,
+          262144,
+          1024,
+          128
+        ]
+      },
+      {
+        "logical": [
+          1024,
+          32
+        ],
+        "poisoned_mode": 1,
+        "matches_076_Native": true,
+        "descriptor": [
+          0,
+          1,
+          131072,
+          1024,
+          64
+        ]
+      }
+    ],
+    "VGA_cases": 96,
+    "movie_cases": 129,
+    "SH4_instructions": 11072858,
+    "scope": "Actual historical Native raster/allocator, video commit and movie initialization with bounded endpoint fixtures; no physical GPU success claimed."
+  },
+  "disc_validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP_status": "Full original-input-only DCP verified; physical result pending",
+  "hardware_result": "Partial improvement, not fixed: missions and New Game enter; opening Hallway transition freezes.",
+  "recipe": "tools/build_midpoint_hardware_diagnostic.py",
+  "recipe_sha256": "d19dad91e4afa63defc796d22afaf91abd7ce73f4b1d3eee7397a9a758efa466",
+  "binary_search": {
+    "reported_good": "0.7.2",
+    "reported_bad": "0.7.11 (both font choices)",
+    "midpoint": "0.7.6 with Native-only normalization",
+    "on_failure": "Investigate the early 0.7.3-0.7.6 changes on the same hardware and save.",
+    "on_success": "Investigate the later half using the same Native-only normalization. A matching 0.7.11 upper control is needed before excluding the removed selector/HD behavior.",
+    "conditions": "Same Dreamcast, GDEMU, VGA cable; original Japanese source; GDI output; cold boot; normal VMU save."
+  },
+  "DCP": {
+    "version": "0.7.27",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.27-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4585607,
+    "sha256": "aa0f398254c641424670992fcd0e4ca995e57b348d57ad642be81c505661c33f",
+    "game_tree_sha256": "13ceb61e2000a441616bfa525938bb627743d5395675e5f688094b97941093cb",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.27-diagnostic/Rayblade-v0.7.27-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "patch": {
+      "asset": "Rayblade-English-v0.7.27-HARDWARE-DIAGNOSTIC.dcp",
+      "bytes": 4583340,
+      "sha256": "b029225d9a0443aeed0fa35f396a099ed33b9fd70a1dc705aa1726abc61195c4",
+      "metadata": {
+        "retro_trans_dcp": 1,
+        "game_id": "seireiki-rayblade",
+        "source_version": "original",
+        "version": "0.7.27",
+        "diagnostic": true,
+        "source_tree_sha256": "81addd42981923ba95636d06e912598b61f275069082cef62938add7d0416db3",
+        "target_tree_sha256": "13ceb61e2000a441616bfa525938bb627743d5395675e5f688094b97941093cb",
+        "game_files": 140,
+        "engine": "Universal Dreamcast Patcher 2.1.8",
+        "upstream_commit": "8b352f959bcc56ab39174c9e311b7ab7f0d522a2",
+        "font": "Native Skies 1x only",
+        "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+        "historical_midpoint": "0.7.6"
+      },
+      "VGA_boot_flag": "1"
+    },
+    "validation_scope": "Actual application to the previously verified normalized original Japanese GDI. Complete source and rebuilt 140-game-file identities, boot-code invariants and audio content verified; CUE conversion reused."
+  },
+  "packaging_recipe": "tools/prepare_original_diagnostic_dcp.py",
+  "packaging_recipe_sha256": "f8678c9645b3de1ed45f46d19fdf36483062bf391f82bb38e855fa3200b47f6b",
+  "hardware_report": {
+    "reported_date": "2026-11-01",
+    "mission_entry": "passes according to tester",
+    "new_game_entry": "passes according to tester",
+    "hallway": "Freezes after Koichiro Oh, s-sorry... before Kasumi Oh... appears",
+    "exact_scene_072_baseline": "User confirms 0.7.2 passes on same hardware",
+    "audit": "docs/hardware-hallway-freeze.json",
+    "screenshots": [
+      "work/ui/hardware-0727-hallway-20261101/01-koichiro-prompt.png",
+      "work/ui/hardware-0727-hallway-20261101/02-kasumi-transition.png"
+    ]
+  }
+}

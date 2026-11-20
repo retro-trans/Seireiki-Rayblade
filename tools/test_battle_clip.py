@@ -46,7 +46,12 @@ def fresh(exe):
     return c
 
 def check():
-    exe,component=compose();old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes();steps=0;rects=[];bars=[];lines=[]
+    exe,component=compose()
+    return check_candidate(exe,component)
+
+
+def check_candidate(exe,component,*,relocated_text_allocator=False,text_memory_baseline=None):
+    old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes();steps=0;rects=[];bars=[];lines=[]
     for box in [(0.,0.,4.,6.),(5.,0.,9.,6.),(0.,0.,9.,6.),(0.,0.,9.,3.),(0.,4.,9.,6.),(1.,2.,7.,5.)]:
       for mode in (0,1,2):
         c=fresh(exe);p=0x8cf00000;c.reg[4:6]=[mode,p];raw=struct.pack('<4f',*box)
@@ -87,7 +92,14 @@ def check():
     assert exe[0x6baa4:0x6baa8]==old[0x6baa4:0x6baa8] # adapter callee must not recurse
     stage=json.loads((ROOT/'work/output/0.7.22/stage-six-text-component.json').read_text('utf-8'))
     for e in stage['edits']:
-        p=int(e['file_offset'],16);n=e['bytes'];assert exe[p:p+n]==old[p:p+n]
+        p=int(e['file_offset'],16);n=e['bytes']
+        # A compatibility renderer may have a different allocation entry.
+        # Its full allocation/upload behavior is checked by test_stage6_text.
+        if relocated_text_allocator and p in (0x6bb7c,0x6b572):continue
+        # Diagnostic builds can keep compression disabled. Verify these regions
+        # against their unchanged baseline rather than requiring the 0.7.22 codec.
+        reference=old if text_memory_baseline is None else text_memory_baseline
+        assert exe[p:p+n]==reference[p:p+n]
     return {**component,'clip_cases':rects,'selection_cases':bars,'line_cases':lines,'SH4_instructions':steps,
         'scope':'Real clip wrapper and SDK tile-to-pixel bounds execute; GPU/material submission and byte-copy endpoint are bounded. Actual selection field parser and line adapter execute. Separate live battle review is required.'}
 

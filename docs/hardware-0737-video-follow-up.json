@@ -1,0 +1,327 @@
+{
+  "date": "2026-11-10",
+  "version": "0.7.37",
+  "version_confirmed": false,
+  "version_basis": "Inferred from feedback following supplied 0.7.37 diagnostic; video does not display a build version.",
+  "device": "Previously established real Dreamcast / GDEMU / VGA",
+  "user_report": "It\u2019s better; the game doesn\u2019t freeze anymore. Graphical glitches appear during some dialogues. I\u2019ve attached a short video to check the locations precisely.",
+  "source_url": "Reporter recording retained locally; sharing URL omitted from public source",
+  "local_video": "incoming/hardware-0737-20261110/20261109_235847.mp4",
+  "bytes": 119739880,
+  "sha256": "b71dbdd3bfa9c0747052d152a3a900aba55dab1965d57eb621a257eb86210bc8",
+  "duration_seconds": 132.099489,
+  "resolution": [
+    1280,
+    720
+  ],
+  "codec": "HEVC",
+  "nominal_fps": "30/1",
+  "review_method": "Visual review of 28 timed overview samples and 24 exact-time witness frames. No audio transcription or claim of exhaustive every-frame review.",
+  "observations": [
+    {
+      "seconds": [
+        0,
+        5
+      ],
+      "scene": "Clear 3: A Girl's Resolve save selection and intermission",
+      "result": "Visible selection is File 2 Clear 3; this is not a Clear 2 test."
+    },
+    {
+      "seconds": [
+        20,
+        27
+      ],
+      "scene": "s_004 early battle, Fores/Reamond conversation",
+      "result": "Normal shaped dark unit shadows and readable portrait/text; old white backing rectangles absent in sampled frames."
+    },
+    {
+      "seconds": [
+        30,
+        34
+      ],
+      "scene": "Office cutaway with Alforina",
+      "result": "Room background becomes a white rectangle. A second pale rectangle covers dialogue and part of portrait. Large character remains visible. At 34 seconds the lower character is visible again as the scene fades.",
+      "likely_dialogue_command": "scenario.s_004.o004ad",
+      "command_basis": "Alforina Office cutaway between Reamond internal monologue and rock ambush; text itself obscured. Source line is It's begun...; identity inferred from sequence."
+    },
+    {
+      "seconds": [
+        40,
+        45,
+        70,
+        80
+      ],
+      "scene": "Reamond rock warning, aftermath and reply to Fores",
+      "result": "Readable portraits/dialogue, normal shadows in samples; scene continues."
+    },
+    {
+      "seconds": [
+        60
+      ],
+      "scene": "Ambush effect",
+      "result": "White frame within explosion sequence; not classified as a texture defect without a reference."
+    },
+    {
+      "seconds": [
+        95
+      ],
+      "scene": "Loading transition",
+      "result": "Small central NOW LOADING remains; historical diagnostic limitation."
+    },
+    {
+      "seconds": [
+        100,
+        105
+      ],
+      "scene": "World-map conversation and transition",
+      "result": "Arthur dialogue and labels visible; advances to chapter card."
+    },
+    {
+      "seconds": [
+        115,
+        116,
+        120
+      ],
+      "scene": "Chapter 4 title entrance",
+      "result": "Overlapping title copies at 115 settle to readable title at 116 and remain stable through 120. Entrance animation versus defect unresolved; do not classify as persistent corruption."
+    },
+    {
+      "seconds": [
+        129,
+        132
+      ],
+      "scene": "Chapter 4 battle and Ymir dialogue",
+      "dialogue_source": "work/translation/en/scenario/s_085.en.json",
+      "result": "New battle appears and Ymir says Be careful! It's that unit from earlier! with visible portrait/text. This confirms progression beyond the preceding scenario in the recording."
+    }
+  ],
+  "scope_limit": "Clear 3 selected, scenario advances through Office, world map, Chapter 4 title and Ymir battle dialogue. New Game, Hallway, Clear 2 choice, completion of Chapter 4 and full-game stability are not demonstrated.",
+  "interpretation": "Improvement after reservation change supports further testing of resource pressure; white Office background/dialogue remains. No physical allocator trace and no root cause confirmed.",
+  "hardware_root_cause_confirmed": false,
+  "frames": [
+    {
+      "path": "work/ui/hardware-0737-video-20261110/detail-1.jpg",
+      "sha256": "d72ec5bb5625e77ac7dd3d1e5c18b755587313f20120a9a724d57563080fe038"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/detail-2.jpg",
+      "sha256": "5bbc484573155819315f98f3feac2d017b8307a53cc4131bf3e98a3083b54220"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/overview-1.jpg",
+      "sha256": "896b573726f99b70b516c05b8da36b181bf68907ef2601e6c624b96939cad404"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/overview-2.jpg",
+      "sha256": "54989fd5938889332675ddd8fe688af5c23f4bed745bb396b9346f2d7ec8d1ea"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/000.0s.jpg",
+      "sha256": "f43d503ca89b2f28b5aba301b44d5eaa80cfec55b58ec74edafa359066788bfe"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/005.0s.jpg",
+      "sha256": "b4d84a74d994bea99951ea85ee2c58f659cdcd1f34a4d3d3763ca87266298641"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/010.0s.jpg",
+      "sha256": "d992cc80bba9a4140c628258d910d6bde3841023866a74eb9fabe866cf32ff95"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/015.0s.jpg",
+      "sha256": "c36368da391a49f39d174d0577a64695be37db4d873dec4ca1fdba965d7b4814"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/020.0s.jpg",
+      "sha256": "dcc52fed8932d57daaf3332eded8d8b547461e1109ff8694465acdd62c96c600"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/025.0s.jpg",
+      "sha256": "28c3c7fed2f732d98963e895c51356d97b6bffbd5ebf60afd0b5a43f2dd15f9a"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/030.0s.jpg",
+      "sha256": "26d698f4b0bc4a5a0e8746d05149553606400797ebfea9ab63a1828bd936e5ea"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/035.0s.jpg",
+      "sha256": "7acfdf5e3d90f0f454bf31198bce342e4639125eecf4741348aa6f70121b4617"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/040.0s.jpg",
+      "sha256": "75723c1c1d6ae3e944824f6e3ff53b5c4cd0af1646db4660990a44d7c74bcfb2"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/045.0s.jpg",
+      "sha256": "9b32f790ba07440eeca24f542e7598006c5fa0489907af4030f0d82cc2ca1a78"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/050.0s.jpg",
+      "sha256": "f31a8e1b09185f35696d5b0cc9f7c30e0a43bfe1a034d1371a2726d24f341d35"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/055.0s.jpg",
+      "sha256": "214b434230da3cd00ca14dad9a67d24cf2089fc5fb83da467aa0b72ecefca017"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/060.0s.jpg",
+      "sha256": "99972fbcde733d033196ff827efe80e966fc68bf28a1fc9e81e69b6089130697"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/065.0s.jpg",
+      "sha256": "bb811840e5b8d184cb04d7f248f0b8c1dd436292f333d474691ea7ba3af4e866"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/070.0s.jpg",
+      "sha256": "06881cf5d050f6e149ba635f31156387adf10fadf878860088d10af01dc0c522"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/075.0s.jpg",
+      "sha256": "f7605640485c2350722bf29ddf42775fe084ebcd1273764bde7013ca67a72ff8"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/080.0s.jpg",
+      "sha256": "53d908eff33f5bb4415f9c682c6c49fa8ac65f543bb6c0a5c06cf05d25e424fd"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/085.0s.jpg",
+      "sha256": "1480baa9fde60380d6d836a06578d0e9cdaf061357d0873ca828d2f63ea306b4"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/090.0s.jpg",
+      "sha256": "98d326e47b34914e1670897b7c64f0a24d4de9164274a3da993890d8deb9196c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/095.0s.jpg",
+      "sha256": "ad3debcdee2a892374e3f22eee81512f6a0b7793ba7bed098a3ce8ad3ce1547c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/100.0s.jpg",
+      "sha256": "8b06e7048916222419baf24d33ffba22241e03deb366985335b1d7e7ea1f3d0c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/105.0s.jpg",
+      "sha256": "bb35401c2ae3eb998d617b812bbc6323aaaf8523136ccb581ab0924c33990ce9"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/110.0s.jpg",
+      "sha256": "19f3a31c465ea4a25c818b7e323c95f4360760af587c1e9b9582d18e10e3da99"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/115.0s.jpg",
+      "sha256": "694e4d07a606bceea322ae3cd014b17d0a1a66f580a160268bdd2ff0f603e67c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/120.0s.jpg",
+      "sha256": "3bfe710762c4af9b31ddd46a5be221ef511616a5523239d064f0142dec8bac0c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/125.0s.jpg",
+      "sha256": "b9dc160adcdc0ee5cd79bd366b5d736b4037baedf84caedf6b599a6f62c8e37a"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/130.0s.jpg",
+      "sha256": "77f3de8cda8af0c4e827b917fb0080e200d26b482f3fc513f12fd4f267b0caff"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/samples/132.0s.jpg",
+      "sha256": "f46bf9b345d60bcc475b2362672743c1ae1813747bd4bfcb36bf963fe43449f0"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/026s.png",
+      "sha256": "680e2486539e5c7653d3295401be6fa5c9cf94f84b4d618fe15b362a427924f3"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/027s.png",
+      "sha256": "9c2a7503ae0a06f7395a3f94002c1b73b7268d9a1812cf4ae67a97261121ee5a"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/028s.png",
+      "sha256": "1b156eef08c1a4baf9f0e5d850325672585ae3b5ec5992199187479d2bc7e8cf"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/029s.png",
+      "sha256": "468b09035459a614f44d14acf993982690b15371d9e695f9405086ad19db7e7a"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/030s.png",
+      "sha256": "db0efe353b10530145be94378157f3905a4247d739e7cb266d1ee002bcf1e278"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/031s.png",
+      "sha256": "ef79f0bd22babdef93b3be30dffaffc89fb2d4e3f6ed4f7b1abcd96784bc806c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/032s.png",
+      "sha256": "21a1107400ad4f9d64522dcfaaab50c1e2fdf27d16594339f839f6d47050ce58"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/033s.png",
+      "sha256": "374c83b2ef8276f2d619715226d5422588d3443eaf9b340f478441179e1a3231"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/034s.png",
+      "sha256": "94f18513b406456a9b12a29ee9ef1177117d44b416e805e9258ac975dc1482fc"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/035s.png",
+      "sha256": "a488f862639bb389d13cd7b009afa144b1139ed2e5476176628e9d6da1dfc92f"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/112s.png",
+      "sha256": "276d4db0c027ac4176bc45b97f9a78357845b861b79c125bd2021c3f9252c240"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/113s.png",
+      "sha256": "2bd2dec0a5968215f849e897a2e337a26ac8180dff97f97220ee8bdb6e4ed0a7"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/114s.png",
+      "sha256": "b12f656d5146e684eed05ce2ce27d290a772baa72d59beadb6c965668a860c8c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/115s.png",
+      "sha256": "16294cee7f9e0e58513dbe711de03bf7ddf4db681efb29d6c775517006dafa1c"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/116s.png",
+      "sha256": "35d31d261b701b5bcd706efba6a91d88bbe36898b0dd201509d76b7bdc14bb89"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/117s.png",
+      "sha256": "452278fc834eca826f44db43505ca6ac196d50d9a85d7227160e256e0a22dbb1"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/118s.png",
+      "sha256": "bb48f4ab63bb9dc51b4927f07b9fd8608bd76c871dcc70c430cca09421bc56f0"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/119s.png",
+      "sha256": "71021d11aea5374ebed6d42a6a7662749f241274891353a9a55a7da77a06872b"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/120s.png",
+      "sha256": "739d1738f59f92a2da80860c57a809e8826a0cc0195ab2cc19fa0e6121f9677d"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/121s.png",
+      "sha256": "238206eccc90d5130e79c0fb16292f5eff54fcabb42a36eb303d2e92fd593792"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/122s.png",
+      "sha256": "a8abe1d330f97af712b863fcce9ef38c0d6633ab4ee50e8899016756c96460ba"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/123s.png",
+      "sha256": "9280301e04acf33ffd52b19dcfd0e715f5da3551d82411ed496acaf475fdfd51"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/129s.png",
+      "sha256": "607312b743c931311f12170df9386821a71e1386673b98c4123fc8588cc9e72e"
+    },
+    {
+      "path": "work/ui/hardware-0737-video-20261110/witnesses/132s.png",
+      "sha256": "208b13b09047b968beec22db713e4dd4c91d0db6ebb587f1543045acfbd7f04b"
+    }
+  ]
+}

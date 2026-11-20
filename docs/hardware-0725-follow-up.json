@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-01",
+  "version": "0.7.25",
+  "hardware_fix_confirmed": false,
+  "reported_hardware": "Real Dreamcast / GDEMU / VGA",
+  "reported_full_result": "Freezes when leaving menus to start any mission and when launching the game; font appearance differs.",
+  "reported_upgrade_result": "Tester describes no VGA support and a freeze on the memory-card screen while loading or starting New Game.",
+  "report_clarification": "User confirms VGA cable; exact patching application, output format, rejection message and hashes of tester output remain unavailable.",
+  "patches": [
+    {
+      "name": "Rayblade-English-v0.7.23-to-v0.7.25-HARDWARE-DIAGNOSTIC.dcp",
+      "sha256": "fc331c576014c74950f74c20f47dd46cf631c2b6c473d8654b169a769900a3d2",
+      "bootsector_sha256": "2bbc884342abd4cea0da0e23e4e3066fb13e7a449dfb02a35d4a543586ea8cb7",
+      "hardware_flags": "0199810 ",
+      "VGA_flag": "1"
+    },
+    {
+      "name": "Rayblade-English-v0.7.25-HARDWARE-DIAGNOSTIC.dcp",
+      "sha256": "cd77061cecd43f607fda6784a9cdfcf92d60d7b79b21a8901c4b9425a2b96ee2",
+      "bootsector_sha256": "2bbc884342abd4cea0da0e23e4e3066fb13e7a449dfb02a35d4a543586ea8cb7",
+      "hardware_flags": "0199810 ",
+      "VGA_flag": "1"
+    }
+  ],
+  "routes": {
+    "original": {
+      "freshly_verified_output_files": {
+        "disc.gdi": {
+          "bytes": 147,
+          "sha256": "1afc9826037987a5857c8f1b502a841dce972f74ff5442d143adc9ea288c022f"
+        },
+        "track01.bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "track02.raw": {
+          "bytes": 2036832,
+          "sha256": "6048a4e8afe13531b53581b879be8f157687f64d590bfaced522a8908d2b2d50"
+        },
+        "track03.bin": {
+          "bytes": 26497632,
+          "sha256": "3a2c0de1e9425ac747016dba54cfe9fdee579ca8c43b78fb4ebad348b408cd7c"
+        },
+        "track04.raw": {
+          "bytes": 1860432,
+          "sha256": "66de529d83c27de27f54a54b41487e04cff061b2d19269da51f7682893f15fdf"
+        },
+        "track05.bin": {
+          "bytes": 1156697136,
+          "sha256": "602b1bee24252a642b1d252f95639a48f5c5782a0ffa6f2cefbbf2adec4c5381"
+        }
+      },
+      "bootsector_sha256": "15b3d9d52eaf7502fc6d1fe25217f1c40cef08d80430aa17d4c7382b04c5a17d",
+      "hardware_flags": "0199810 ",
+      "bootsector_changes_from_patch": [
+        "0x108",
+        "0x109",
+        "0x10c"
+      ],
+      "changes_limited_to_rebuilt_track_table": true
+    },
+    "previous": {
+      "freshly_verified_output_files": {
+        "disc.gdi": {
+          "bytes": 147,
+          "sha256": "1afc9826037987a5857c8f1b502a841dce972f74ff5442d143adc9ea288c022f"
+        },
+        "track01.bin": {
+          "bytes": 705600,
+          "sha256": "7b1aa484d8182e4cde8df5e9d7027d15e653528948c1c4ad5f62e940124f2664"
+        },
+        "track02.raw": {
+          "bytes": 2036832,
+          "sha256": "6048a4e8afe13531b53581b879be8f157687f64d590bfaced522a8908d2b2d50"
+        },
+        "track03.bin": {
+          "bytes": 26497632,
+          "sha256": "3a2c0de1e9425ac747016dba54cfe9fdee579ca8c43b78fb4ebad348b408cd7c"
+        },
+        "track04.raw": {
+          "bytes": 1860432,
+          "sha256": "66de529d83c27de27f54a54b41487e04cff061b2d19269da51f7682893f15fdf"
+        },
+        "track05.bin": {
+          "bytes": 1156697136,
+          "sha256": "602b1bee24252a642b1d252f95639a48f5c5782a0ffa6f2cefbbf2adec4c5381"
+        }
+      },
+      "bootsector_sha256": "15b3d9d52eaf7502fc6d1fe25217f1c40cef08d80430aa17d4c7382b04c5a17d",
+      "hardware_flags": "0199810 ",
+      "bootsector_changes_from_patch": [
+        "0x108",
+        "0x109",
+        "0x10c"
+      ],
+      "changes_limited_to_rebuilt_track_table": true
+    }
+  },
+  "full_and_upgrade_rebuilt_disc_files_byte_identical": true,
+  "working_072_executable_sha256": "a283914defa4e33e7a74600ad655604ae8ee122ef0994c300a04730feb409590",
+  "0725_executable_sha256": "ce117561eb4d67cdfd7d183a2f6b4aa4a00baac8c15c5fda9c8e2d83e5042df1",
+  "0725_stock_VGA_commit_exact_072": true,
+  "0725_remaining_changed_executable_bytes_vs_072": 2823,
+  "0725_remaining_changed_executable_spans": [
+    {
+      "start": "0x8d00",
+      "end_exclusive": "0x8fe2",
+      "changed_bytes": 679
+    },
+    {
+      "start": "0xe727",
+      "end_exclusive": "0xe728",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0xf056",
+      "end_exclusive": "0xf057",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0xfddb",
+      "end_exclusive": "0xfddc",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0x22118",
+      "end_exclusive": "0x22119",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0x22d1a",
+      "end_exclusive": "0x22d68",
+      "changed_bytes": 69
+    },
+    {
+      "start": "0x2c1af",
+      "end_exclusive": "0x2c1c8",
+      "changed_bytes": 21
+    },
+    {
+      "start": "0x66d38",
+      "end_exclusive": "0x66e4b",
+      "changed_bytes": 260
+    },
+    {
+      "start": "0x684b0",
+      "end_exclusive": "0x684b1",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0x6abe0",
+      "end_exclusive": "0x6abe1",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0x6b2a0",
+      "end_exclusive": "0x6b2a7",
+      "changed_bytes": 2
+    },
+    {
+      "start": "0x6b2dc",
+      "end_exclusive": "0x6b2dd",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0x6b2fa",
+      "end_exclusive": "0x6b311",
+      "changed_bytes": 3
+    },
+    {
+      "start": "0x6b338",
+      "end_exclusive": "0x6b347",
+      "changed_bytes": 2
+    },
+    {
+      "start": "0x6b380",
+      "end_exclusive": "0x6b69c",
+      "changed_bytes": 724
+    },
+    {
+      "start": "0x6b6e0",
+      "end_exclusive": "0x6b7c8",
+      "changed_bytes": 203
+    },
+    {
+      "start": "0x6b812",
+      "end_exclusive": "0x6b813",
+      "changed_bytes": 1
+    },
+    {
+      "start": "0x6b900",
+      "end_exclusive": "0x6b918",
+      "changed_bytes": 21
+    },
+    {
+      "start": "0x6b940",
+      "end_exclusive": "0x6baa8",
+      "changed_bytes": 324
+    },
+    {
+      "start": "0x6bad0",
+      "end_exclusive": "0x6bbd0",
+      "changed_bytes": 221
+    },
+    {
+      "start": "0x6bbe0",
+      "end_exclusive": "0x6bbff",
+      "changed_bytes": 16
+    },
+    {
+      "start": "0x8b1d4",
+      "end_exclusive": "0x8b1d6",
+      "changed_bytes": 2
+    },
+    {
+      "start": "0xac2e4",
+      "end_exclusive": "0xac3f4",
+      "changed_bytes": 258
+    },
+    {
+      "start": "0xb8f60",
+      "end_exclusive": "0xb8f63",
+      "changed_bytes": 3
+    },
+    {
+      "start": "0xc24b4",
+      "end_exclusive": "0xc24b8",
+      "changed_bytes": 4
+    },
+    {
+      "start": "0xe21e0",
+      "end_exclusive": "0xe21e3",
+      "changed_bytes": 3
+    }
+  ],
+  "assessment": [
+    "0.7.25 is unsuccessful on the reporting hardware. Reverting the video boundary alone was insufficient.",
+    "The two supplied DCP routes have identical VGA-enabled boot code and rebuild identical complete disc files with the pinned upstream engine.",
+    "This establishes local package identities only; it does not establish what the tester applied or exclude a different output/conversion path.",
+    "0.7.25 is not a complete 0.7.2 rollback: 2,823 executable bytes and multiple asset changes remain. Their interactions are not excluded.",
+    "0.7.11 already fails with both font choices; changing the font selection alone and the later codec-only rollback did not resolve the reports.",
+    "A black screen does not by itself distinguish a video-output failure, blocked file read, CPU exception or graphics wait."
+  ],
+  "next_required_evidence": [
+    "Identify the tester output format/application and compare actual generated files with this receipt, to resolve the reported full/upgrade difference.",
+    "Narrow the earliest failing runtime/assets against the known-working 0.7.2 without restoring HD mode in a new game build."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-18",
+  "version": "0.7.47",
+  "version_confirmed": true,
+  "user_report": "Report : 0.7.47 diagnostic DCP - black screen appears during dialogue in missions and when starting a New Game",
+  "status": "Reported failed: mission dialogue and New Game black screens",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "hardware_root_cause_confirmed": false,
+  "interpretation": "Removing the loaded-font dependency did not resolve the regression. The font-pointer hypothesis is insufficient. Inspecting the shared replacement reveals a MOV.L offset read from packed, potentially unaligned name tables, unlike the original bytewise reconstruction. Strict alignment reproduction and a bytewise fix are the next step.",
+  "next_test": "Use 0.7.45 as the working fallback. Test 0.7.48 with bytewise offset reading and all other code/assets fixed, repeating New Game and the failing mission dialogues.",
+  "investigation_result": "Strict alignment reproduces an address error at 0x8c076d5c (MOV.L @r2,r10) in both 0.7.46 and 0.7.47 with actual packed name groups 6 and 8, including the original dialogue caller. The original and corrected routine pass. Earlier tests allowed unaligned memory reads. See docs/hardware-aligned-header.json; physical retest remains pending."
+}

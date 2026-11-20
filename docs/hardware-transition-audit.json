@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-29",
+  "reported_device": "Dreamcast / GDEMU / VGA",
+  "reported_diagnostic_result": "User reports 0.7.24 did not fix the failure",
+  "hardware_root_cause_confirmed": false,
+  "SDK_layout_execution": [
+    {
+      "label": "older 320x240 snapshot",
+      "snapshot": "work/source/runtime/0.1.39-album-01.ram",
+      "snapshot_sha256": "5640bf9dbbf1860f4a115ea4fbd90bde44b31f84d8ac4f2ec856dd4bf62581d8",
+      "TA_allocator_units": 384176,
+      "geometry_reservation_bytes": 768352,
+      "instructions": 263,
+      "SDK_fields": {
+        "0x8c462008": "0x46584",
+        "0x8c46202c": "0x45d518",
+        "0x8c462034": "0x459900",
+        "0x8c462038": "0x446580"
+      },
+      "list_growth_interval_bytes": 78720
+    },
+    {
+      "label": "current 640x480 snapshot",
+      "snapshot": "work/source/runtime/battle-fixed-stock-0719.ram",
+      "snapshot_sha256": "8135338806b6deca8295119744b094c70719974467d13e4c2b06ed5d2cb7117a",
+      "TA_allocator_units": 384176,
+      "geometry_reservation_bytes": 768352,
+      "instructions": 263,
+      "SDK_fields": {
+        "0x8c462008": "0x46584",
+        "0x8c46202c": "0x45c078",
+        "0x8c462034": "0x44df00",
+        "0x8c462038": "0x446580"
+      },
+      "list_growth_interval_bytes": 31104
+    },
+    {
+      "label": "hypothetical larger reserve; NOT a build",
+      "snapshot": "work/source/runtime/battle-fixed-stock-0719.ram",
+      "snapshot_sha256": "8135338806b6deca8295119744b094c70719974467d13e4c2b06ed5d2cb7117a",
+      "TA_allocator_units": 574640,
+      "geometry_reservation_bytes": 1149280,
+      "instructions": 263,
+      "SDK_fields": {
+        "0x8c462008": "0x69384",
+        "0x8c46202c": "0x48a878",
+        "0x8c462034": "0x47c700",
+        "0x8c462038": "0x469380"
+      },
+      "list_growth_interval_bytes": 78720
+    }
+  ],
+  "observed_regression": "At the same total reservation, 640x480 reduces the SDK list-growth interval from 78,720 to 31,104 bytes.",
+  "hypothetical_reserve_increase": {
+    "bytes": 380928,
+    "published_or_built": false,
+    "warning": "A naive reserve increase exceeds free bank-0 space in known Stage 6 snapshots; it is not accepted as a fix."
+  },
+  "existing_resident_texture_pressure": [
+    {
+      "snapshot": "work/source/issue-1/princess-final-0722.ram",
+      "sha256": "d966c3e31f2cb40f518ca703cf132b22c20fefac09469bbee786e6168bad3c5b",
+      "free_bytes_by_bank": [
+        351872,
+        245760
+      ],
+      "hypothetical_extra_geometry_bytes": 380928,
+      "bank_0_free_minus_extra": -29056
+    },
+    {
+      "snapshot": "work/source/issue-1/later-bridge-final-0722.ram",
+      "sha256": "bda9c63dd817791eb3ec3b7ea50f48eeb20c73a0a7c63dbb8e85a4fc7832401d",
+      "free_bytes_by_bank": [
+        228992,
+        237568
+      ],
+      "hypothetical_extra_geometry_bytes": 380928,
+      "bank_0_free_minus_extra": -151936
+    },
+    {
+      "snapshot": "work/source/issue-1/forecast-0723.ram",
+      "sha256": "1d20aaa8fc9024b931c117a2f71e8e807c466e6d6b12f710eecea0c22a522d39",
+      "free_bytes_by_bank": [
+        626304,
+        616448
+      ],
+      "hypothetical_extra_geometry_bytes": 380928,
+      "bank_0_free_minus_extra": 245376
+    },
+    {
+      "snapshot": "work/source/issue-1/split-final-0723.ram",
+      "sha256": "1831322802e56d2c2f4c43559f1378096e42ab5e661b82d18655daec6ca8117a",
+      "free_bytes_by_bank": [
+        667264,
+        966656
+      ],
+      "hypothetical_extra_geometry_bytes": 380928,
+      "bank_0_free_minus_extra": 286336
+    }
+  ],
+  "early_scenario_comparison": [
+    {
+      "member": "s_002.bin",
+      "original_program_bytes": 15581,
+      "original_program_exact": true,
+      "changed_English_commands": [
+        "scenario.s_002.o0019c",
+        "scenario.s_002.o001bd",
+        "scenario.s_002.o001de",
+        "scenario.s_002.o00201",
+        "scenario.s_002.o00222",
+        "scenario.s_002.o00245",
+        "scenario.s_002.o00266",
+        "scenario.s_002.o00287",
+        "scenario.s_002.o002a8",
+        "scenario.s_002.o002c9",
+        "scenario.s_002.o002ea",
+        "scenario.s_002.o0030b",
+        "scenario.s_002.o0032c"
+      ],
+      "changed_choice_commands": [
+        "scenario.s_002.o0019c",
+        "scenario.s_002.o001bd",
+        "scenario.s_002.o001de",
+        "scenario.s_002.o00201",
+        "scenario.s_002.o00222",
+        "scenario.s_002.o00245",
+        "scenario.s_002.o00266",
+        "scenario.s_002.o00287",
+        "scenario.s_002.o002a8",
+        "scenario.s_002.o002c9",
+        "scenario.s_002.o002ea",
+        "scenario.s_002.o0030b",
+        "scenario.s_002.o0032c"
+      ],
+      "scope": "Source VM program is exact. English bank/layout changes remain a separate possible cause; this does not prove hardware execution."
+    },
+    {
+      "member": "s_003.bin",
+      "original_program_bytes": 17241,
+      "original_program_exact": true,
+      "changed_English_commands": [
+        "scenario.s_003.o0415c"
+      ],
+      "changed_choice_commands": [
+        "scenario.s_003.o0415c"
+      ],
+      "scope": "Source VM program is exact. English bank/layout changes remain a separate possible cause; this does not prove hardware execution."
+    }
+  ],
+  "primary_hardware_reference": "https://github.com/KallistiOS/KallistiOS/blob/master/kernel/arch/dreamcast/hardware/pvr/pvr_internal.h",
+  "reference_scope": "Describes vertex, object-pointer and tile-matrix buffers and growth/overflow. Does not diagnose this game.",
+  "pending": [
+    "Tester result for public 0.7.11 on the same Clear 2 VMU save and GDEMU/VGA system",
+    "Physical failure location/IRQ evidence; no new diagnostic build selected yet"
+  ]
+}

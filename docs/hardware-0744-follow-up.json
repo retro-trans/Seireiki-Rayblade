@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-14",
+  "version": "0.7.44",
+  "version_confirmed": true,
+  "version_basis": "User corrected the initially named 0.7.43 to 0.7.44. This is not a passing retest of 0.7.43.",
+  "initial_report_verbatim": "Tests on 0.7.43 passed. This time - game does not freeze",
+  "correction_verbatim": "the user meant 0.7.44",
+  "clarification_reply_verbatim": "no",
+  "status": "Reported passing: 0.7.44 does not freeze on tested paths",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "scope_limit": "Exact checkpoints and repeat-run/full-route coverage were not separately enumerated. The no reply was to a bundled setup-change/checkpoint question; do not infer detailed coverage from it.",
+  "hardware_root_cause_confirmed": false,
+  "interpretation": "0.7.43 remains reported failed. Exact 0.7.40 code with newer assets passes reported paths in 0.7.44. This points to removed executable changes or their interactions; no individual hook or instruction is proven responsible.",
+  "next_test": "Use 0.7.44 as the reported-passing baseline and split removed executable changes into coherent groups; keep assets fixed."
+}

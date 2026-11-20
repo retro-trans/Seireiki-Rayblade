@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-19",
+  "version": "0.7.48",
+  "version_confirmed": true,
+  "version_basis": "User replies 'it works' directly to the 0.7.48 diagnostic and requested hardware retest.",
+  "user_report": "it works",
+  "status": "Reported passing on tested hardware paths",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "scope_limit": "Passing report refers to the 0.7.48 diagnostic. Individual checkpoints, repeated cold boots and full-route coverage were not separately enumerated.",
+  "hardware_root_cause_confirmed": false,
+  "diagnosis_status": "Unaligned name-offset read reproduced in strict instruction tests; correcting it is now supported by a passing hardware report. No physical exception trace was captured.",
+  "interpretation": "0.7.46 and 0.7.47 failed; 0.7.48 replaces their unaligned MOV.L name-offset read with bytewise reconstruction and is reported working. Adopt 0.7.48 as the hardware baseline. This strongly supports the alignment defect as the cause of this regression, without establishing full-game stability or complete emulator feature parity.",
+  "next_test": "Preserve bytewise name-offset reads and strict alignment checks. Use 0.7.48 for subsequent controlled restoration of remaining features; status hooks, signed SP formatting and Stage 6 runtime compression remain excluded. Keep issue #5 separate. No new build or release requested by this passing report."
+}

@@ -86,6 +86,11 @@ def fixture(exe,params):
 
 def check():
     exe,component=compose();old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes()
+    return check_candidate(exe,old,component)
+
+
+def check_candidate(exe,old,component):
+    """Exercise the edge fix on a supplied build without rebuilding its parent."""
     dimensions=sorted({tuple(struct.unpack_from('<2I',exe,0x88e78+12*i)) for i in range(129)})
     dimensions=[(w,h) for w,h in dimensions if w and h]
     cases=steps=0;witness=[]

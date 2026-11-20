@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-01",
+  "reported_version": "0.7.27",
+  "device": "Real Dreamcast / GDEMU / VGA",
+  "result": "Partial improvement only: New Game and missions now enter, but a later opening hallway dialogue freezes.",
+  "working_exact_scene_baseline": "User confirms 0.7.2 passes this exact hallway on the same hardware.",
+  "last_visible_line": {
+    "id": "scenario.s_001.o00cdf",
+    "en": "Koichiro: \"Oh, s-sorry...\""
+  },
+  "next_scripted_dialogue": {
+    "id": "scenario.s_001.o00d2f",
+    "en": "Kasumi: \"Oh...\""
+  },
+  "screenshot_observation": "First frame has Koichiro text/prompt. Later frame has Koichiro and Kasumi with no dialogue visible. These still images do not identify a blocking instruction.",
+  "comparisons": {
+    "0.7.2": {
+      "archive_sha256": "a89eba46dbfec18004ed07c725dd42bf5fa22bfeac3144b0effbbe4e913ac24c",
+      "member_decoded_sha256": "7df0e54135252ea0ead216e7dcdbd05edcdfe8c2286ab256499cfcdb9e973719",
+      "original_program_bytes": 8398,
+      "original_program_sha256": "3c73da2f375b43d0d08eed8c88800d0acde5220993554290894ab379979ca3fc",
+      "dialogue": {
+        "scenario.s_001.o00cce": {
+          "source_offset": 3281,
+          "source_bytes": 10,
+          "english_offset": 12883,
+          "english_bytes": 13,
+          "english_sha256": "1dbbbbe40839f988a5a944d0807c639b1fdf6bebea8a41831c7038787d9c9bd3"
+        },
+        "scenario.s_001.o00cdf": {
+          "source_offset": 3298,
+          "source_bytes": 20,
+          "english_offset": 12896,
+          "english_bytes": 27,
+          "english_sha256": "268cb431aa796cfc5d31cbd489aeffa79c4fbcc4e6d8ca1b7d2f8b2e409880b4"
+        },
+        "scenario.s_001.o00d2f": {
+          "source_offset": 3378,
+          "source_bytes": 12,
+          "english_offset": 12923,
+          "english_bytes": 16,
+          "english_sha256": "df1e7ba39d6fddc8770c90ee8a1cf9337191120543c435fe1ddea9ce3d666742"
+        },
+        "scenario.s_001.o00d42": {
+          "source_offset": 3397,
+          "source_bytes": 30,
+          "english_offset": 12939,
+          "english_bytes": 58,
+          "english_sha256": "cc717503c37646615cb7ec3aea105e24a48e40e25be441014e45ab98db6b2547"
+        }
+      },
+      "transition_after_sorry": {
+        "start": "0xcf6",
+        "end_exclusive": "0xd2f",
+        "bytes": 57,
+        "sha256": "ebfda7b48863ceb3c4014645bc5a09ebb06f8c83d8010a533ab16f78a2abc101"
+      }
+    },
+    "0.7.27": {
+      "archive_sha256": "34774f359f2f22f6ea3f93de5150f7efe87be552f945fc66431152d900fa98c8",
+      "member_decoded_sha256": "7df0e54135252ea0ead216e7dcdbd05edcdfe8c2286ab256499cfcdb9e973719",
+      "original_program_bytes": 8398,
+      "original_program_sha256": "3c73da2f375b43d0d08eed8c88800d0acde5220993554290894ab379979ca3fc",
+      "dialogue": {
+        "scenario.s_001.o00cce": {
+          "source_offset": 3281,
+          "source_bytes": 10,
+          "english_offset": 12883,
+          "english_bytes": 13,
+          "english_sha256": "1dbbbbe40839f988a5a944d0807c639b1fdf6bebea8a41831c7038787d9c9bd3"
+        },
+        "scenario.s_001.o00cdf": {
+          "source_offset": 3298,
+          "source_bytes": 20,
+          "english_offset": 12896,
+          "english_bytes": 27,
+          "english_sha256": "268cb431aa796cfc5d31cbd489aeffa79c4fbcc4e6d8ca1b7d2f8b2e409880b4"
+        },
+        "scenario.s_001.o00d2f": {
+          "source_offset": 3378,
+          "source_bytes": 12,
+          "english_offset": 12923,
+          "english_bytes": 16,
+          "english_sha256": "df1e7ba39d6fddc8770c90ee8a1cf9337191120543c435fe1ddea9ce3d666742"
+        },
+        "scenario.s_001.o00d42": {
+          "source_offset": 3397,
+          "source_bytes": 30,
+          "english_offset": 12939,
+          "english_bytes": 58,
+          "english_sha256": "cc717503c37646615cb7ec3aea105e24a48e40e25be441014e45ab98db6b2547"
+        }
+      },
+      "transition_after_sorry": {
+        "start": "0xcf6",
+        "end_exclusive": "0xd2f",
+        "bytes": 57,
+        "sha256": "ebfda7b48863ceb3c4014645bc5a09ebb06f8c83d8010a533ab16f78a2abc101"
+      }
+    }
+  },
+  "original_program_exact": true,
+  "transition_span_exact": true,
+  "nearby_English_streams_exact": true,
+  "assessment": [
+    "The reported hallway freeze is present in the Native-only 0.7.6 midpoint and absent in the confirmed 0.7.2 baseline.",
+    "The next Kasumi wording, surrounding compiled English streams and original VM transition bytes are identical. No translation-content fix is justified by this comparison.",
+    "Runtime execution, allocations, scene-resource state and timing are not proven by identical script bytes. Root cause remains unconfirmed.",
+    "Treat mission-entry improvement and the later hallway failure as separate test observations; do not mark 0.7.27 fully working or rule out interactions."
+  ],
+  "next_midpoint": "0.7.4 rendering experiment, normalized to Native-only as 0.7.28; no 0.7.5 movie fit or 0.7.6 story/map changes.",
+  "next_test": "Full DCP from original Japanese image, GDI output, cold boot on the same GDEMU/VGA hardware; advance past this exact hallway exchange."
+}

@@ -15,6 +15,23 @@ DRAW=0x8c0ab660
 @lru_cache(maxsize=1)
 def compose():
     old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes();exe=bytearray(old)
+    code=adapter_code();off=ENTRY-0x8c010000
+    assert off>=0x6b918 and off+len(code)<=0x6bad0
+    assert old[off:off+len(code)]==bytes.fromhex('0900')*(len(code)//2)
+    assert struct.unpack_from('<I',old,POINTER)[0]==DRAW
+    exe[off:off+len(code)]=code;struct.pack_into('<I',exe,POINTER,ENTRY)
+    allowed=set(range(off,off+len(code)))|set(range(POINTER,POINTER+4))
+    changed=[i for i,(x,y) in enumerate(zip(old,exe)) if x!=y];assert set(changed)<=allowed
+    return bytes(exe),{'version':VERSION,'source_build':PRIOR,'source_executable_sha256':digest(old),
+        'executable_sha256':digest(exe),'adapter':hex(ENTRY),'adapter_bytes':len(code),'draw_pointer_file_offset':hex(POINTER),
+        'changed_executable_bytes':len(changed),'cause':'Battle range fill bypassed the 640x480 sprite/polygon adapters; its vertices remained on the 320x240 logical grid.',
+        'mapping':'Copy the descriptor and polygon-count * vertices-per-polygon XY pairs to the stack; multiply XY by 2 exactly once at the battle fill call.',
+        'preserved':'Input geometry, colors, priority, flags, primitive counts, UVs, all other executable bytes, every disc asset, Native 1x font and 0.7.19 memory allocation.',
+        'release':False,'live_validation':'pending'}
+
+
+def adapter_code():
+    """Return only the range overlay adapter, independent of a historical parent."""
     # This SDK API receives a count of polygons, each with descriptor[12]
     # vertices. The earlier 2D adapter receives a count of vertices instead.
     a=Assembler(ENTRY);a.push(8);a.emit(0x4f22);a.rr('mov',15,8)
@@ -28,19 +45,7 @@ def compose():
     a.label('points');a.emit(0xf019);a.emit(0xf000);a.emit(0xf20a);a.addi(4,2);a.unary('dt',3);a.branch('bf','points')
     a.label('draw');a.rr('mov',15,4);a.lit(DRAW,3);a.emit(0x430b);a.emit(0x0009)
     a.rr('mov',8,15);a.emit(0x4f26);a.pop(8);a.emit(0x000b);a.emit(0x0009)
-    code=a.pool_and_finish();off=ENTRY-0x8c010000
-    assert off>=0x6b918 and off+len(code)<=0x6bad0
-    assert old[off:off+len(code)]==bytes.fromhex('0900')*(len(code)//2)
-    assert struct.unpack_from('<I',old,POINTER)[0]==DRAW
-    exe[off:off+len(code)]=code;struct.pack_into('<I',exe,POINTER,ENTRY)
-    allowed=set(range(off,off+len(code)))|set(range(POINTER,POINTER+4))
-    changed=[i for i,(x,y) in enumerate(zip(old,exe)) if x!=y];assert set(changed)<=allowed
-    return bytes(exe),{'version':VERSION,'source_build':PRIOR,'source_executable_sha256':digest(old),
-        'executable_sha256':digest(exe),'adapter':hex(ENTRY),'adapter_bytes':len(code),'draw_pointer_file_offset':hex(POINTER),
-        'changed_executable_bytes':len(changed),'cause':'Battle range fill bypassed the 640x480 sprite/polygon adapters; its vertices remained on the 320x240 logical grid.',
-        'mapping':'Copy the descriptor and polygon-count * vertices-per-polygon XY pairs to the stack; multiply XY by 2 exactly once at the battle fill call.',
-        'preserved':'Input geometry, colors, priority, flags, primitive counts, UVs, all other executable bytes, every disc asset, Native 1x font and 0.7.19 memory allocation.',
-        'release':False,'live_validation':'pending'}
+    return a.pool_and_finish()
 
 
 def plan():

@@ -1,0 +1,188 @@
+{
+  "version": "0.7.26",
+  "date": "2026-11-01",
+  "source_build": "0.7.25",
+  "public_release": false,
+  "hardware_fix_confirmed": false,
+  "kind": "Combined stock-video and uncompressed-text hardware diagnostic",
+  "source_executable_sha256": "ce117561eb4d67cdfd7d183a2f6b4aa4a00baac8c15c5fda9c8e2d83e5042df1",
+  "executable_sha256": "ca7cae8c793eeef144dcbb0846f0e112b49de50cb86c44d8ff921f4e553b2b1a",
+  "changed_bytes_from_0725": 705,
+  "changed_bytes_from_public_0723": 889,
+  "video": {
+    "logical_framebuffer": [
+      320,
+      240
+    ],
+    "format": "RGB888",
+    "VGA_scanout": [
+      640,
+      480
+    ],
+    "mode_and_VGA_commit": "Exact working 0.7.2 path",
+    "graphics_coordinate_adapters": "Bypassed consistently for sprites, polygons, clipping, grid, animations, lines, movies and loading text"
+  },
+  "upload": "Restore the seven pre-0.7.22 upload/allocation/admission spans; no runtime VQ encoder is used.",
+  "reverted_upload_spans": [
+    {
+      "file_offset": "0x8d60",
+      "bytes": 540
+    },
+    {
+      "file_offset": "0x8f80",
+      "bytes": 100
+    },
+    {
+      "file_offset": "0x6bb7c",
+      "bytes": 36
+    },
+    {
+      "file_offset": "0x22d1a",
+      "bytes": 78
+    },
+    {
+      "file_offset": "0x6b572",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xb8f60",
+      "bytes": 4
+    },
+    {
+      "file_offset": "0xe21e0",
+      "bytes": 4
+    }
+  ],
+  "font": "Exact existing single Native Skies 1x bank; no HD bank or selector.",
+  "other_assets": "All fourteen non-executable payloads remain byte-exact 0.7.25/0.7.23.",
+  "purpose": "Test the combination of changes previously tested separately in 0.7.24 and 0.7.25. No individual cause is established.",
+  "known_limitations": [
+    "Stage 6 text-memory repair is disabled; missing/white text can return.",
+    "Stock 320x240 rendering can reduce apparent font sharpness.",
+    "Real Dreamcast compatibility is unconfirmed until tested."
+  ],
+  "distribution": "Full DCP from original Japanese image only; no upgrade patch.",
+  "native_validation": {
+    "executable_sha256": "ca7cae8c793eeef144dcbb0846f0e112b49de50cb86c44d8ff921f4e553b2b1a",
+    "native_VGA_cases": 96,
+    "SDK_budget_cases": [
+      {
+        "configuration": 0,
+        "TA_allocator_units": 384176,
+        "matches_072": true
+      },
+      {
+        "configuration": 1,
+        "TA_allocator_units": 384176,
+        "matches_072": true
+      }
+    ],
+    "native_movie_cases": 129,
+    "native_font_cases": 402,
+    "native_font_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+    "sequential_status_allocations": [
+      {
+        "logical": [
+          256,
+          128
+        ],
+        "physical": [
+          512,
+          256
+        ],
+        "pixel_bytes": 262144
+      },
+      {
+        "logical": [
+          256,
+          128
+        ],
+        "physical": [
+          512,
+          256
+        ],
+        "pixel_bytes": 262144
+      },
+      {
+        "logical": [
+          128,
+          128
+        ],
+        "physical": [
+          256,
+          256
+        ],
+        "pixel_bytes": 131072
+      },
+      {
+        "logical": [
+          128,
+          128
+        ],
+        "physical": [
+          256,
+          256
+        ],
+        "pixel_bytes": 131072
+      }
+    ],
+    "scope": "Native VGA/movie/geometry arithmetic, Native glyph pixels/advances and uncompressed surface allocations. No physical hardware pass claimed."
+  },
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "native_evidence": "work/output/0.7.26/combined-hardware-native-test.json",
+  "recipe": "tools/build_combined_hardware_diagnostic.py",
+  "recipe_sha256": "9ac81dae5f98af5b30a730a885b24eac32211adb8615b25c08c7a0a9d1da638d",
+  "packaging_recipe": "tools/prepare_original_diagnostic_dcp.py",
+  "DCP_status": "Verified local full DCP from original only; hardware result pending",
+  "hardware_result": "pending",
+  "DCP": {
+    "version": "0.7.26",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.26-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4615081,
+    "sha256": "892d77d5c972b8e3a7f0a61b6342aa0b539d0d31ff9e91d2fbcca60ae089d669",
+    "game_tree_sha256": "a717a100a6c6610a0514e234c8cce8181c204785adac440a6a27754f6bf99b5d",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.26-diagnostic/Rayblade-v0.7.26-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "patch": {
+      "asset": "Rayblade-English-v0.7.26-HARDWARE-DIAGNOSTIC.dcp",
+      "bytes": 4612897,
+      "sha256": "ffc586e1e1e08ce4d2e89289f95ca27f082996b67627619f7142a132b12340c2",
+      "metadata": {
+        "retro_trans_dcp": 1,
+        "game_id": "seireiki-rayblade",
+        "source_version": "original",
+        "version": "0.7.26",
+        "diagnostic": true,
+        "source_tree_sha256": "81addd42981923ba95636d06e912598b61f275069082cef62938add7d0416db3",
+        "target_tree_sha256": "a717a100a6c6610a0514e234c8cce8181c204785adac440a6a27754f6bf99b5d",
+        "game_files": 140,
+        "engine": "Universal Dreamcast Patcher 2.1.8",
+        "upstream_commit": "8b352f959bcc56ab39174c9e311b7ab7f0d522a2",
+        "font": "Native Skies 1x only",
+        "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+      },
+      "VGA_boot_flag": "1"
+    },
+    "verification": {
+      "game_tree_sha256": "a717a100a6c6610a0514e234c8cce8181c204785adac440a6a27754f6bf99b5d",
+      "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+      "audio_tracks_preserved": true,
+      "scope": "Actual DCP application to the previously verified normalized original Japanese GDI. Complete source and rebuilt game-tree/boot/audio checks pass; original CUE conversion is reused."
+    }
+  },
+  "packaging_recipe_sha256": "8dbc58cc3847cb6c07c37121c39bc18a521fc09205301f3036c3639bf9c39a8b"
+}

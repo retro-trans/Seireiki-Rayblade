@@ -1,0 +1,577 @@
+{
+  "date": "2026-10-29",
+  "last_updated": "2026-11-20",
+  "reported_version": "0.7.23",
+  "reported_device": "Real Dreamcast with GDEMU and VGA",
+  "trigger": "Intermission: Clear 2: Agarthia, Another World -> Next",
+  "symptom": "Black screen; music continues; cannot advance to the next chapter",
+  "working_baseline_reported_by_user": "0.7.2 on the same hardware does not freeze",
+  "emulator_result_reported_by_user": "The latest public build advances in Flycast",
+  "root_cause": "Not established. Do not label this a script or hardware failure without further evidence.",
+  "local_save_copy": {
+    "source": "M:/Program/FlyCast/data/T42201M_vmu_save_A1.bin",
+    "sha256": "a9eb6f928712b256852b4488cb19e8cb31d3ad4b2f626018dc73858d5466183a",
+    "bytes": 131072,
+    "original_preserved": true,
+    "copy": "work/output/hardware-transition/runtime-0.7.23-framebuffer/data/T42201M_vmu_save_A1.bin",
+    "slot_identity": "User reports the Stage 2 cleared save is available; the copied card has RAYBLADE_001 and RAYBLADE_002. The matching slot has not yet been independently confirmed."
+  },
+  "investigation": [
+    "Audit changes after public 0.7.2, including 640x480 adapters, geometry allocation and generated text uploads.",
+    "Private Flycast approximation enables framebuffer/render-to-texture emulation, interpreter CPU and ordinary GD-ROM timing. This does not establish physical compatibility.",
+    "Inspect the existing native cache-flush routine: it rounds the start down and covers partial cache lines. No cache-flush defect has been established.",
+    "Do not infer that rectangular VQ is the cause simply from the SDK's original admission check. The diagnostic below tests the runtime compression feature as a whole.",
+    "DCP conversion audio differences are DAT/format silence padding. Non-silent CDDA content and four-byte sample alignment match; no audio corruption is established.",
+    "2026-10-29: execute unchanged SDK layout code against saved 320x240 and 640x480 states. At the same reservation, the graphics-list growth interval shrinks from 78,720 to 31,104 bytes. An unbuilt reserve adjustment restores it, but its extra 380,928 bytes exceed known Stage 6 bank-0 free space; do not blindly ship that change as a fix.",
+    "2026-10-30: public 0.7.11 also fails with both fonts and New Game, so neither the 0.7.22 codec nor the 0.7.19 list-growth reduction alone explains all reports. Prepare stock-rendering diagnostic 0.7.25; no hardware fix claimed."
+  ],
+  "diagnostic": {
+    "version": "0.7.24",
+    "source": "0.7.23",
+    "public_release": false,
+    "status": "Reporter/user result: unsuccessful; does not resolve the black screen",
+    "change": "Revert only the seven 0.7.22 runtime text-compression spans; 705 executable bytes differ from 0.7.23.",
+    "preserved": "Native Skies 1x glyphs, all assets and wording, VGA code, 640x480, battle coordinates, clipping and selection bars",
+    "known_regression": "The Stage 6 text-memory repair is disabled, so white or missing Stage 6 text can return.",
+    "package": "work/output/hardware-transition/Rayblade-v0.7.24-HARDWARE-DIAGNOSTIC-from-v0.7.23.zip",
+    "verification": "All target payloads re-extract exactly; changed-sector EDC/ECC and unrelated-track preservation pass; all three upgrade deltas pass native decode/full-target verification.",
+    "required_retest": "Cold boot the diagnostic GDI on the reporting GDEMU/VGA system, load the normal Clear 2 VMU save, choose Next, and report whether chapter 3 opens.",
+    "DCP": {
+      "version": "0.7.24",
+      "diagnostic": true,
+      "public_release": false,
+      "asset": "Rayblade-v0.7.24-HARDWARE-DIAGNOSTIC-DCP.zip",
+      "bytes": 4629990,
+      "sha256": "578f4d4b8c4aac52a5d70fabf6fb11f77bd2885890e9e80114cb3b694859a342",
+      "routes": {
+        "original": {
+          "game_tree_sha256": "9744764dd323e1fb28a07abb3925c242bc012bad19eff15fd981f2c402c7c132",
+          "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+          "audio_content_preserved": true
+        },
+        "previous": {
+          "game_tree_sha256": "9744764dd323e1fb28a07abb3925c242bc012bad19eff15fd981f2c402c7c132",
+          "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+          "audio_content_preserved": true
+        }
+      },
+      "path": "work/output/dcp-0.7.24-diagnostic/Rayblade-v0.7.24-HARDWARE-DIAGNOSTIC-DCP.zip",
+      "packages": [
+        {
+          "asset": "Rayblade-English-v0.7.24-HARDWARE-DIAGNOSTIC.dcp",
+          "bytes": 4613339,
+          "sha256": "dcc92c40ddb031c9446453e6be5327c4ef658270a930cfdc0803bcb219978dad",
+          "metadata": {
+            "retro_trans_dcp": 1,
+            "game_id": "seireiki-rayblade",
+            "source_version": "original",
+            "version": "0.7.24",
+            "diagnostic": true,
+            "source_tree_sha256": "81addd42981923ba95636d06e912598b61f275069082cef62938add7d0416db3",
+            "target_tree_sha256": "9744764dd323e1fb28a07abb3925c242bc012bad19eff15fd981f2c402c7c132",
+            "game_files": 140,
+            "engine": "Universal Dreamcast Patcher 2.1.8",
+            "upstream_commit": "8b352f959bcc56ab39174c9e311b7ab7f0d522a2",
+            "font": "Native Skies 1x only",
+            "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+          },
+          "native_builder": {
+            "success": true,
+            "output": "E:\\Projects\\Seireiki Rayblade\\work\\output\\dcp-0.7.24-diagnostic\\packages\\Rayblade-English-v0.7.24-HARDWARE-DIAGNOSTIC.dcp",
+            "files_diffed": 13,
+            "files_added": 0
+          }
+        },
+        {
+          "asset": "Rayblade-English-v0.7.23-to-v0.7.24-HARDWARE-DIAGNOSTIC.dcp",
+          "bytes": 14175,
+          "sha256": "7a7784c472e6c412003f271aac5fdfe6b0e873cac05983eee5c6594ce130cde5",
+          "metadata": {
+            "retro_trans_dcp": 1,
+            "game_id": "seireiki-rayblade",
+            "source_version": "0.7.23",
+            "version": "0.7.24",
+            "diagnostic": true,
+            "source_tree_sha256": "c1f73e677d4edf93fea4f897a0d07ef78e510a8e712feba5ca926e587512d476",
+            "target_tree_sha256": "9744764dd323e1fb28a07abb3925c242bc012bad19eff15fd981f2c402c7c132",
+            "game_files": 140,
+            "engine": "Universal Dreamcast Patcher 2.1.8",
+            "upstream_commit": "8b352f959bcc56ab39174c9e311b7ab7f0d522a2",
+            "font": "Native Skies 1x only",
+            "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+          },
+          "native_builder": {
+            "success": true,
+            "output": "E:\\Projects\\Seireiki Rayblade\\work\\output\\dcp-0.7.24-diagnostic\\packages\\Rayblade-English-v0.7.23-to-v0.7.24-HARDWARE-DIAGNOSTIC.dcp",
+            "files_diffed": 1,
+            "files_added": 0
+          }
+        }
+      ],
+      "application": "Universal Dreamcast Patcher 2.1.8 or local Retro Trans Tools 0.5.19 DCP build. GDI output for GDEMU. Select included source CUE beside the five public 0.7.23 BIN files for upgrade.",
+      "physical_result": "User reports not fixed after receiving the 0.7.24 DCP diagnostic; no exact device trace supplied."
+    },
+    "reported_result": {
+      "date": "2026-10-29",
+      "user_message": "not fixed yet",
+      "assessment": "Disabling runtime text compression alone did not resolve the reported failure. This does not establish that compression is harmless in combination with other changes."
+    }
+  },
+  "DCP_work": "Full 0.7.23 and public-0.7.11 upgrade DCP packages have passed complete game-file and boot-code reconstruction. Uploads are held while the hardware progression report is investigated.",
+  "resolved": false,
+  "next_test": {
+    "version": "public 0.7.11",
+    "conditions": "Same Clear 2 VMU save, cold boot, GDEMU/VGA, choose Next",
+    "status": "Completed by reporter: 0.7.11 black in both Native and HD; all missions and New Game reported affected",
+    "purpose": "Narrow regression to changes already present in 0.7.11 or changes introduced later. Neither outcome alone identifies a cause.",
+    "reported_date": "2026-10-30"
+  },
+  "follow_up_audit": "docs/hardware-transition-audit.json",
+  "reported_scope_2026_10_30": "0.7.11: both NATIVE and HD black during all missions and New Game",
+  "compatibility_candidate": {
+    "version": "0.7.25",
+    "status": "Unsuccessful on reporting hardware; tester result received 2026-11-01",
+    "documentation": "docs/hardware-legacy-video-diagnostic.json",
+    "DCP": "work/output/dcp-0.7.25-diagnostic/Rayblade-v0.7.25-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "change": "Restore working 0.7.2 video/rendering boundary; preserve current Native bank/assets and Stage 6 compression",
+    "reported_result": {
+      "date": "2026-11-01",
+      "full": "Freezes when exiting the menu to start any mission and when launching the game; different font appearance reported.",
+      "upgrade_from_0_7_23": "Tester reports no VGA support and freezing on memory-card loading/New Game.",
+      "clarification": "User confirms a VGA cable. Exact patching application/output format and tester output hashes remain unavailable.",
+      "local_package_audit": "Both supplied DCPs embed the same VGA-enabled boot sector. Rehashed complete local outputs from both routes are identical; this does not identify the tester's actual output.",
+      "evidence": "docs/hardware-0725-follow-up.json"
+    },
+    "required_test": [
+      "Cold boot the diagnostic GDI on the reporting Dreamcast with GDEMU/VGA.",
+      "Start New Game and report whether the opening game scene loads.",
+      "Separately load the normal Clear 2 VMU save, choose Next, and report whether chapter 3 loads."
+    ]
+  },
+  "next_compatibility_candidate": {
+    "version": "0.7.50",
+    "documentation": "docs/hardware-complete-fixes.json",
+    "DCP": "work/output/dcp-0.7.50-diagnostic/Rayblade-v0.7.50-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported passing on tested hardware paths",
+    "public_release": false,
+    "upgrade_patch": false
+  },
+  "hallway_bisection": {
+    "good": "0.7.28: Native-only historical 0.7.4, reported no black screen/freezes on tested paths; quarter-screen movies remain",
+    "bad": "0.7.27: Native-only historical 0.7.6, hallway freezes",
+    "next_version": null,
+    "next_midpoint": "Next regression control must separate 0.7.6 story choices from map assets/hook",
+    "on_fail": "Investigate 0.7.5 movie scaling or its interaction with the working baseline on matched test paths",
+    "on_pass": "Investigate 0.7.6 choice/map group for matched Hallway failure",
+    "full_original_input_only": true,
+    "upgrade_patch": false,
+    "hardware_cause_confirmed": false,
+    "narrowed_group": "Historical 0.7.5 movie scaling versus 0.7.6 choice/map changes, for matched Hallway behavior",
+    "cause_confirmed": false,
+    "latest_result": {
+      "reported_date": "2026-11-04",
+      "status": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain",
+      "historical_source": "0.7.5, Native-only",
+      "report": "Patch works fine, movies are on full screen. No black screens, no freezes on scenario. NOW LOADING positioned differently; small bottom green line during cutscene.",
+      "scope_limit": "Tester report on tested paths, not a full-game pass. Clear 2 -> Next is not independently singled out in this reply.",
+      "known_issues": [
+        "NOW LOADING physical position/size",
+        "Green bottom edge during movies"
+      ]
+    }
+  },
+  "previous_compatibility_candidate": {
+    "version": "0.7.27",
+    "historical_midpoint": "0.7.6",
+    "status": "0.7.27 partial improvement; Hallway freeze remains",
+    "documentation": "docs/hardware-midpoint-diagnostic.json",
+    "public_release": false,
+    "upgrade_patch": false,
+    "source": "Original Japanese image only",
+    "requested_by_user": "2026-11-01",
+    "DCP": "work/output/dcp-0.7.27-diagnostic/Rayblade-v0.7.27-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "hardware_report": "docs/hardware-hallway-freeze.json"
+  },
+  "current_focus": "Original immediate conversation-start / mission-entry hang; later Hallway tracked separately",
+  "entry_hang_investigation": {
+    "documentation": "docs/hardware-entry-hang-diagnostics.json",
+    "status": "Both diagnostics reported unsuccessful; 0.7.30 conversation checkpoint clarification pending",
+    "upper_control": "0.7.29 = Native-only historical 0.7.11",
+    "midpoint": "0.7.30 = Native-only historical 0.7.8",
+    "baseline": "0.7.27 = Native-only historical 0.7.6; passes entry only",
+    "cause_confirmed": false,
+    "hardware_follow_up": "docs/hardware-entry-hang-results.json",
+    "latest_results": {
+      "0.7.2": {
+        "status": "Reported working",
+        "report": "works fine",
+        "scope_limit": "Do not infer a complete-game pass beyond the tester's report."
+      },
+      "0.7.29": {
+        "status": "Reported unsuccessful",
+        "historical_source": "0.7.11, Native-only",
+        "report": "black screen after mission, new game",
+        "exact_checkpoint": "Not yet identified; preserve the reporter's wording.",
+        "fix_confirmed": false
+      },
+      "0.7.30": {
+        "status": "Reported unsuccessful; conversation checkpoint clarification pending",
+        "historical_source": "0.7.8, Native-only",
+        "report": "freeze on conversation",
+        "exact_checkpoint": "Unclear whether immediate dialogue entry, the known later Koichiro/Kasumi Hallway exchange, or another conversation.",
+        "fix_confirmed": false
+      },
+      "0.7.28": {
+        "status": "Reported working on tested paths, with quarter-screen movies",
+        "historical_source": "0.7.4 rendering experiment, Native-only",
+        "report": "works (!), no black screen, no freezes; all movies on 1/4 screen",
+        "scope_limit": "Tester report, not a full-game or independently observed exact-checkpoint pass. No new screenshot was supplied in this reply.",
+        "known_limitation": "Expected historical lack of 0.7.5 movie position/size correction."
+      },
+      "0.7.31": {
+        "reported_date": "2026-11-04",
+        "status": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain",
+        "historical_source": "0.7.5, Native-only",
+        "report": "Patch works fine, movies are on full screen. No black screens, no freezes on scenario. NOW LOADING positioned differently; small bottom green line during cutscene.",
+        "scope_limit": "Tester report on tested paths, not a full-game pass. Clear 2 -> Next is not independently singled out in this reply.",
+        "known_issues": [
+          "NOW LOADING physical position/size",
+          "Green bottom edge during movies"
+        ]
+      },
+      "0.7.32": {
+        "reported_date": "2026-11-04",
+        "status": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid",
+        "historical_source": "0.7.31 plus loading/movie-edge corrections",
+        "report": "0.7.32 is mostly fine only problem with map, moving hex",
+        "scope_limit": "Three photographs show rendering defects; no physical RAM/VRAM capture or independent mission-transition/full-route pass supplied.",
+        "evidence": "work/ui/hardware-0732-map-grid-20261104/index.json",
+        "known_issues": [
+          "World-map label/dialogue areas are pale blank rectangles; partial portrait visible.",
+          "Blue movement tiles are displaced from the selection arrows and units.",
+          "Pale rectangles appear below units and across the lower dialogue area."
+        ]
+      }
+    },
+    "next_step": "Does 0.7.30 freeze immediately when conversation starts, at the later Koichiro/Kasumi hallway exchange, or elsewhere?"
+  },
+  "hallway_compatibility_candidate": {
+    "version": "0.7.28",
+    "historical_midpoint": "0.7.4 rendering experiment",
+    "status": "Reported working on tested paths, with quarter-screen movies",
+    "documentation": "docs/hardware-hallway-midpoint.json",
+    "DCP": "work/output/dcp-0.7.28-diagnostic/Rayblade-v0.7.28-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "public_release": false,
+    "upgrade_patch": false,
+    "source": "Original Japanese image only",
+    "test": "Cold boot GDI on GDEMU/VGA; pass Koichiro/Kasumi Hallway transition. Quarter-sized opening movie expected.",
+    "hardware_report": {
+      "status": "Reported working on tested paths, with quarter-screen movies",
+      "historical_source": "0.7.4 rendering experiment, Native-only",
+      "report": "works (!), no black screen, no freezes; all movies on 1/4 screen",
+      "scope_limit": "Tester report, not a full-game or independently observed exact-checkpoint pass. No new screenshot was supplied in this reply.",
+      "known_limitation": "Expected historical lack of 0.7.5 movie position/size correction."
+    }
+  },
+  "additional_entry_hang_candidate": {
+    "version": "0.7.30",
+    "historical_midpoint": "0.7.8",
+    "role": "Normalized midpoint after 0.7.6",
+    "status": "Reported unsuccessful; conversation checkpoint clarification pending",
+    "documentation": "docs/hardware-entry-hang-diagnostics.json",
+    "DCP": "work/output/dcp-0.7.30-diagnostic/Rayblade-v0.7.30-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "public_release": false,
+    "upgrade_patch": false,
+    "source": "Original Japanese image only",
+    "test": "Cold boot GDI on GDEMU/VGA; original immediate conversation-start hang first; later Hallway separately"
+  },
+  "working_baseline_movie_control": {
+    "version": "0.7.31",
+    "source": "0.7.28 plus only historical movie scaling",
+    "documentation": "docs/hardware-movie-only-diagnostic.json",
+    "DCP": "work/output/dcp-0.7.31-diagnostic/Rayblade-v0.7.31-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "reported_date": "2026-11-04",
+      "status": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain",
+      "historical_source": "0.7.5, Native-only",
+      "report": "Patch works fine, movies are on full screen. No black screens, no freezes on scenario. NOW LOADING positioned differently; small bottom green line during cutscene.",
+      "scope_limit": "Tester report on tested paths, not a full-game pass. Clear 2 -> Next is not independently singled out in this reply.",
+      "known_issues": [
+        "NOW LOADING physical position/size",
+        "Green bottom edge during movies"
+      ]
+    }
+  },
+  "tested_entry_upper_control": {
+    "version": "0.7.29",
+    "historical_midpoint": "0.7.11",
+    "role": "Normalized upper control",
+    "status": "Reported unsuccessful",
+    "documentation": "docs/hardware-entry-hang-diagnostics.json",
+    "DCP": "work/output/dcp-0.7.29-diagnostic/Rayblade-v0.7.29-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "public_release": false,
+    "upgrade_patch": false,
+    "source": "Original Japanese image only",
+    "test": "Cold boot GDI on GDEMU/VGA; original immediate conversation-start hang first; later Hallway separately"
+  },
+  "reported_working_baseline": {
+    "version": "0.7.40",
+    "evidence": "docs/hardware-0740-follow-up.json",
+    "scope": "Passing result for the tester paths only; no enumerated full-route or Stage 6 pass inferred."
+  },
+  "cosmetic_candidate": {
+    "version": "0.7.32",
+    "source": "0.7.31 plus only loading geometry and movie-edge sampling",
+    "documentation": "docs/hardware-cosmetic-fixes.json",
+    "DCP": "work/output/dcp-0.7.32-diagnostic/Rayblade-v0.7.32-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "reported_date": "2026-11-04",
+      "status": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid",
+      "historical_source": "0.7.31 plus loading/movie-edge corrections",
+      "report": "0.7.32 is mostly fine only problem with map, moving hex",
+      "scope_limit": "Three photographs show rendering defects; no physical RAM/VRAM capture or independent mission-transition/full-route pass supplied.",
+      "evidence": "work/ui/hardware-0732-map-grid-20261104/index.json",
+      "known_issues": [
+        "World-map label/dialogue areas are pale blank rectangles; partial portrait visible.",
+        "Blue movement tiles are displaced from the selection arrows and units.",
+        "Pale rectangles appear below units and across the lower dialogue area."
+      ]
+    }
+  },
+  "map_grid_candidate": {
+    "version": "0.7.33",
+    "source": "0.7.32 plus only stock geometry reservation and range-fill XY adapter",
+    "documentation": "docs/hardware-map-grid-diagnostic.json",
+    "DCP": "work/output/dcp-0.7.33-diagnostic/Rayblade-v0.7.33-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Full original-input DCP verified locally; physical map/grid and scenario/busy-battle retest pending",
+    "public_release": false,
+    "upgrade_patch": false
+  },
+  "full_catchup_candidate": {
+    "version": "0.7.34",
+    "source": "Complete final local 0.7.23, with alignment-safe shared map filename reads",
+    "documentation": "docs/hardware-full-catchup.json",
+    "DCP": "work/output/dcp-0.7.34-diagnostic/Rayblade-v0.7.34-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+    "user_request": "Restore all final emulator fixes in one combined candidate",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "reported_date": "2026-11-05",
+      "status": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+      "report": "All the fixes work, with the exception of the game freezing when starting a \"New Game\" or entering subsequent missions in the scenario. Surprisingly, it does load the scenario \"Clear 3: A Girl's Resolve\" for a brief moment (perhaps this will help with the diagnosis \u2013 see screenshot). However, once the all dialogue ends, it just goes to a black screen.",
+      "version_basis": "Follow-up to the supplied 0.7.34 test; version is inferred from conversation context, not shown in either photograph.",
+      "device": "Previously established real Dreamcast / GDEMU / VGA",
+      "evidence": "work/ui/hardware-0734-transition-20261105/index.json",
+      "observed_script": "scenario.s_004.o00181",
+      "new_game_exact_checkpoint": "Awaiting clarification: before first dialogue or later in a conversation",
+      "Clear_3_exact_final_line": "Awaiting clarification; supplied dialogue is the first command in s_004",
+      "alignment_repair_sufficient": false,
+      "hardware_fix_confirmed": false,
+      "scope_limit": "Reporter says other fixes work; do not expand this into a complete-game or every-feature pass."
+    }
+  },
+  "map_hook_bypass_candidate": {
+    "version": "0.7.35",
+    "source": "0.7.34 with one shared draw target changed",
+    "documentation": "docs/hardware-map-hook-bypass.json",
+    "DCP": "work/output/dcp-0.7.35-diagnostic/Rayblade-v0.7.35-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported unsuccessful: New Game does not start; black screen after dialogue persists",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "reported_date": "2026-11-07",
+      "status": "Reported unsuccessful: New Game does not start; black screen after dialogue persists",
+      "report": "1. The same effect on 0.7.35. New Game don't start. And black screen after the dialogue.",
+      "version_basis": "Explicit 0.7.35 in user report",
+      "device": "Previously established real Dreamcast / GDEMU / VGA",
+      "map_hook_bypass_sufficient": false,
+      "hardware_fix_confirmed": false,
+      "exact_checkpoint": "New Game does not start; exact final dialogue line and physical fault address remain unknown.",
+      "scope_limit": "Failure of the bypass on the full build does not exonerate the hook in the earlier 0.7.27 regression or establish independent causes."
+    }
+  },
+  "asset_runtime_split_candidate": {
+    "version": "0.7.36",
+    "documentation": "docs/hardware-asset-runtime-split.json",
+    "DCP": "work/output/dcp-0.7.36-diagnostic/Rayblade-v0.7.36-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reporter says no freezes; video shows scenario progression with early white-rectangle rendering corruption and later readable dialogue",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "reported_date": "2026-11-09",
+      "status": "Reporter says no freezes; video shows scenario progression with early white-rectangle rendering corruption and later readable dialogue",
+      "report": "The game doesn't freeze, but there are similar graphical glitches to those seen previously. I've attached a longer video so you can identify which elements aren't displaying correctly and which dialogues are fine.",
+      "version_basis": "User explicitly confirmed on 2026-11-09: Yes, 0.7.36. The recording itself does not display a version.",
+      "device": "Previously established real Dreamcast / GDEMU / VGA",
+      "scope_limits": [
+        "New Game entry, the Hallway and the Clear 2 menu choice are not shown.",
+        "Video ends during scenario.s_004.o00a04; it does not show the entire s_004 script or next mission completing.",
+        "No hardware memory capture, fault address, texture residency measurement or full-game pass."
+      ],
+      "hardware_root_cause_confirmed": false,
+      "evidence": "docs/hardware-0736-video-follow-up.json",
+      "version_confirmed": true
+    }
+  },
+  "texture_budget_candidate": {
+    "version": "0.7.37",
+    "documentation": "docs/hardware-texture-budget-diagnostic.json",
+    "DCP": "work/output/dcp-0.7.37-diagnostic/Rayblade-v0.7.37-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported no freezes; video crosses into Chapter 4, with Office white rectangles remaining",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "reported_date": "2026-11-10",
+      "status": "Reported no freezes; video crosses into Chapter 4, with Office white rectangles remaining",
+      "version_basis": "Inferred from feedback following supplied 0.7.37 diagnostic; video does not display a build version.",
+      "version_confirmed": false,
+      "report": "It\u2019s better; the game doesn\u2019t freeze anymore. Graphical glitches appear during some dialogues. I\u2019ve attached a short video to check the locations precisely.",
+      "evidence": "docs/hardware-0737-video-follow-up.json",
+      "scope_limit": "Clear 3 selected, scenario advances through Office, world map, Chapter 4 title and Ymir battle dialogue. New Game, Hallway, Clear 2 choice, completion of Chapter 4 and full-game stability are not demonstrated.",
+      "hardware_root_cause_confirmed": false
+    }
+  },
+  "framebuffer_candidate": {
+    "version": "0.7.38",
+    "documentation": "docs/hardware-framebuffer-diagnostic.json",
+    "DCP": "work/output/dcp-0.7.38-diagnostic/Rayblade-v0.7.38-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Mountain scene reported fixed; Office background/dialogue white rectangles persist",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "reported_date": "2026-11-10",
+      "status": "Mountain scene reported fixed; Office background/dialogue white rectangles persist",
+      "report": "Next test on scenario dialogs: Alforina\u2019s Office - still the gfx glitch. Scene on mountain (1:30) is now fixed.",
+      "version_basis": "Follow-up to supplied 0.7.38; no version shown in screenshot.",
+      "version_confirmed": false,
+      "evidence": "docs/hardware-0738-follow-up.json",
+      "scope_limit": "This follow-up reports graphics only; no new independent New Game/Hallway/full-route stability result.",
+      "hardware_root_cause_confirmed": false
+    }
+  },
+  "window_atlas_candidate": {
+    "version": "0.7.39",
+    "documentation": "docs/hardware-window-atlas-diagnostic.json",
+    "DCP": "work/output/dcp-0.7.39-diagnostic/Rayblade-v0.7.39-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported working on hardware; loading size/position and green bottom movie line remain",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_report": {
+      "date": "2026-11-11",
+      "status": "Reported working on hardware; loading size/position and green bottom movie line remain",
+      "user_report": "it's working on hardware, now we still have 2 issue, the now loading in the middle of screen and the greenline at the bottom of cg",
+      "version_basis": "Follow-up to supplied 0.7.39; user names hardware but no build label appears in screenshots.",
+      "version_confirmed": false,
+      "scope_limit": "Working hardware result recorded for tested paths. Do not infer a full-game pass or a separately enumerated New Game/Hallway/Stage 6 test.",
+      "hardware_root_cause_confirmed": false,
+      "evidence": "docs/hardware-0739-follow-up.json"
+    }
+  },
+  "display_polish_candidate": {
+    "version": "0.7.40",
+    "documentation": "docs/hardware-display-polish.json",
+    "DCP": "work/output/dcp-0.7.40-diagnostic/Rayblade-v0.7.40-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported working on hardware (tested paths)",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0740-follow-up.json"
+  },
+  "consolidated_candidate": {
+    "version": "0.7.41",
+    "documentation": "docs/hardware-consolidated-fixes.json",
+    "DCP": "work/output/dcp-0.7.41-diagnostic/Rayblade-v0.7.41-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "runtime_baseline": "0.7.40",
+    "status": "Reported failure: black screens during mission dialogues and New Game returned",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0741-follow-up.json"
+  },
+  "text_upload_split_candidate": {
+    "version": "0.7.42",
+    "documentation": "docs/hardware-text-upload-split.json",
+    "DCP": "work/output/dcp-0.7.42-diagnostic/Rayblade-v0.7.42-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Failed hardware test: mission-dialogue and New Game black screens persist",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0742-follow-up.json"
+  },
+  "status_bypass_candidate": {
+    "version": "0.7.43",
+    "documentation": "docs/hardware-status-bypass.json",
+    "DCP": "work/output/dcp-0.7.43-diagnostic/Rayblade-v0.7.43-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Failed hardware test: mission-dialogue and New Game black screens persist",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0743-follow-up.json"
+  },
+  "code_asset_split_candidate": {
+    "version": "0.7.44",
+    "documentation": "docs/hardware-code-asset-split.json",
+    "DCP": "work/output/dcp-0.7.44-diagnostic/Rayblade-v0.7.44-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported passing: 0.7.44 does not freeze on tested paths",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0744-follow-up.json"
+  },
+  "latest_hardware_follow_up": "docs/hardware-0750-follow-up.json",
+  "battle_split_candidate": {
+    "version": "0.7.45",
+    "documentation": "docs/hardware-battle-split.json",
+    "DCP": "work/output/dcp-0.7.45-diagnostic/Rayblade-v0.7.45-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported passing on tested hardware paths",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0745-follow-up.json"
+  },
+  "header_split_candidate": {
+    "version": "0.7.46",
+    "documentation": "docs/hardware-header-split.json",
+    "DCP": "work/output/dcp-0.7.46-diagnostic/Rayblade-v0.7.46-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported failed: mission dialogue and New Game black screens",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0746-follow-up.json"
+  },
+  "aligned_header_candidate": {
+    "version": "0.7.48",
+    "documentation": "docs/hardware-aligned-header.json",
+    "DCP": "work/output/dcp-0.7.48-diagnostic/Rayblade-v0.7.48-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported passing on tested hardware paths",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0748-follow-up.json"
+  },
+  "working_hardware_baseline": {
+    "version": "0.7.50",
+    "documentation": "docs/hardware-complete-fixes.json",
+    "DCP": "work/output/dcp-0.7.50-diagnostic/Rayblade-v0.7.50-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported passing on tested hardware paths",
+    "public_release": false,
+    "upgrade_patch": false,
+    "hardware_evidence": "docs/hardware-0750-follow-up.json"
+  },
+  "signed_fields_candidate": {
+    "version": "0.7.49",
+    "documentation": "docs/hardware-signed-fields.json",
+    "DCP": "work/output/dcp-0.7.49-diagnostic/Rayblade-v0.7.49-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "pending",
+    "public_release": false,
+    "upgrade_patch": false
+  },
+  "complete_candidate": {
+    "version": "0.7.50",
+    "documentation": "docs/hardware-complete-fixes.json",
+    "DCP": "work/output/dcp-0.7.50-diagnostic/Rayblade-v0.7.50-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "status": "Reported passing on tested hardware paths",
+    "public_release": false,
+    "upgrade_patch": false
+  },
+  "next_step": "Publish the unchanged tested 0.7.50 payloads in verified original-input and last-public-release upgrade DCP packages. Continue route testing and keep the separate Stage 9 CG issue #5 open."
+}

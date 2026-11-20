@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-20",
+  "version": "0.7.50",
+  "version_confirmed": true,
+  "version_basis": "User reports success directly after receiving the combined 0.7.50 diagnostic.",
+  "user_report": "it work, now release a new version on github, now with support for DCP instead of xdelta",
+  "status": "Reported passing on tested hardware paths",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "scope_limit": "Individual checkpoints, repeated cold boots and full-route coverage were not separately enumerated.",
+  "interpretation": "The combined 0.7.50 candidate is reported working with the bytewise name-offset repair and restored emulator fixes. Adopt 0.7.50 as the hardware baseline; retain the tested game payloads for publication.",
+  "release_authorized": true,
+  "release_format": "DCP instead of xdelta",
+  "next_test": "Publish the unchanged tested 0.7.50 payloads in verified original-input and last-public-release upgrade DCP packages. Continue route testing and keep the separate Stage 9 CG issue #5 open."
+}

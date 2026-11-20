@@ -1,0 +1,53 @@
+{
+  "version": "0.7.44",
+  "date": "2026-11-13",
+  "source_build": "0.7.43",
+  "runtime_baseline": "0.7.40",
+  "executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+  "source_executable_sha256": "463e54d5244ca008410c8a47369b3f2a6e42906303dc8eaa6143b46b415c2c55",
+  "executable_exact_0_7_40": true,
+  "changed_executable_bytes_from_0_7_43": 921,
+  "changed_game_files_from_0_7_40": [
+    "D_NAMES.BIN",
+    "ITM00.AFS",
+    "WMAP.AFS"
+  ],
+  "kind": "Remaining executable versus asset regression split",
+  "reason": "0.7.43 still black-screens in New Game and mission dialogue despite status/map hook bypass and disabled text compression.",
+  "scope": "Exact reported-working 0.7.40 executable, including every unused helper byte; every other file exact 0.7.43. No selective code transplantation.",
+  "retained": "0.7.40 Native-only font, hardware memory/window repairs, loading placement and movie fixes; newer D_NAMES.BIN, ITM00.AFS and WMAP.AFS assets.",
+  "tradeoffs": "Later executable UI/status/SP/header and battle grid/target/line/clip/selector fixes revert to 0.7.40. Stage 6 text compression remains absent. Some visual defects may return.",
+  "on_pass": "On matching checkpoints, the newer assets alone are insufficient to cause the failure. Split the removed executable changes, including their interaction with assets; do not conclude every asset is harmless.",
+  "on_fail": "If matched 0.7.40 still passes, split the three changed data files and their interaction with the baseline runtime. Recheck image identity and cold boot before attributing a cause.",
+  "hardware_result": "Reported passing: 0.7.44 does not freeze on tested paths",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "validation_scope": "Byte identity and disc/package integrity; no new live emulator or hardware execution claimed.",
+  "all_140_game_files_and_boot_checked": true,
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.44",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.44-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4615473,
+    "sha256": "8694be13f0449b7fa9f470762360ed6d2d169c0b8e42a4469ea4a0baac9a2c8a",
+    "game_tree_sha256": "1dee7d90c9a250539ce7260579f05e518d6f71195647097f60b5456a04393880",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "Reported passing: 0.7.44 does not freeze on tested paths",
+    "path": "work/output/dcp-0.7.44-diagnostic/Rayblade-v0.7.44-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_evidence": "docs/hardware-0744-follow-up.json"
+}

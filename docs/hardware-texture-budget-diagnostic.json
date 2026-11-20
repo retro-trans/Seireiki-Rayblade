@@ -1,0 +1,129 @@
+{
+  "version": "0.7.37",
+  "date": "2026-11-09",
+  "source_build": "0.7.36",
+  "kind": "Graphics reservation only on the reported no-freeze asset split",
+  "source_executable_sha256": "054d99fbd8a29d981d4ba478b05a3817181c8dfd77267e30208bdbb0b15de020",
+  "executable_sha256": "f04e4b011fa2ff42107a72ac65dda99733a0cc537fa529867014ea9b3dcf191a",
+  "changed_executable_bytes": 33,
+  "allowed_spans": [
+    [
+      "0x6b900",
+      "0x6b918"
+    ],
+    [
+      "0xc234e",
+      "0xc2356"
+    ],
+    [
+      "0xc24b4",
+      "0xc24b8"
+    ]
+  ],
+  "graphics_reservation": {
+    "before_bytes": 4194304,
+    "after_bytes": 768352,
+    "texture_capacity_recovered_bytes": 3425952,
+    "source": "Original Japanese SDK reservation; no framebuffer-format or video-mode change"
+  },
+  "reason": "Video shows early white rectangles in battle overlays/dialogue, then readable portraits/text/shadows and further scene progression. Test graphics resource pressure with one functional change.",
+  "evidence": "docs/hardware-0736-video-follow-up.json",
+  "baseline_version_basis": "User explicitly confirmed on 2026-11-09: Yes, 0.7.36. The recording itself does not display a version.",
+  "retained": "Every asset and other executable byte exact 0.7.36: Native 1x only, story choices, map lettering, original sprite draw target, RGB888, full-size movies. No font selector.",
+  "excluded": "No map sniff/snap hook, RGB565 conversion, runtime text compression, atlas compaction, grid/target/clipping or loading/movie-edge correction is introduced.",
+  "limits": [
+    "Video is consistent with graphics resource pressure but provides no physical memory capture; cause remains unconfirmed.",
+    "A smaller geometry reservation trades list-growth headroom for texture space. Busy-battle and scenario regressions need physical testing.",
+    "This is not full emulator feature parity. Small/misplaced loading text and other historical graphical issues can remain."
+  ],
+  "hardware_result": "Reported no freezes; video crosses into Chapter 4, with Office white rectangles remaining",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "all_140_game_files_and_boot_checked": true,
+  "all_13_other_modified_payloads_exact_0_7_36": true,
+  "native_validation": {
+    "executable_sha256": "f04e4b011fa2ff42107a72ac65dda99733a0cc537fa529867014ea9b3dcf191a",
+    "actual_SDK_budget_cases": [
+      {
+        "version": "0.7.36",
+        "query": 0,
+        "geometry_units": 2097152,
+        "geometry_VRAM_bytes": 4194304,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 38
+      },
+      {
+        "version": "0.7.36",
+        "query": 1,
+        "geometry_units": 4194304,
+        "geometry_VRAM_bytes": 8388608,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 38
+      },
+      {
+        "version": "0.7.37",
+        "query": 0,
+        "geometry_units": 384176,
+        "geometry_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 43
+      },
+      {
+        "version": "0.7.37",
+        "query": 1,
+        "geometry_units": 384176,
+        "geometry_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 43
+      }
+    ],
+    "fixture_note": "Query 0 matches the prior observed default; query 1 exercises the alternate cap with the same bounded RAM fields, not a measured physical reservation.",
+    "scope": "Actual SDK arithmetic, cap/redirect, minimum check and allocator entry; no physical residency/headroom claim.",
+    "version": "0.7.37",
+    "baseline": "0.7.36"
+  },
+  "disc_validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.37",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.37-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4585952,
+    "sha256": "5e8cd47609504997eff6f30832b53fb35ecfb3dcdb7a8206114fae5ae9240442",
+    "game_tree_sha256": "1ee96f00aac8fd797b82c4f36fe1da4fa2f2524eb5face210345b2aeb7ded09b",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.37-diagnostic/Rayblade-v0.7.37-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_report": {
+    "reported_date": "2026-11-10",
+    "status": "Reported no freezes; video crosses into Chapter 4, with Office white rectangles remaining",
+    "version_basis": "Inferred from feedback following supplied 0.7.37 diagnostic; video does not display a build version.",
+    "version_confirmed": false,
+    "report": "It\u2019s better; the game doesn\u2019t freeze anymore. Graphical glitches appear during some dialogues. I\u2019ve attached a short video to check the locations precisely.",
+    "evidence": "docs/hardware-0737-video-follow-up.json",
+    "scope_limit": "Clear 3 selected, scenario advances through Office, world map, Chapter 4 title and Ymir battle dialogue. New Game, Hallway, Clear 2 choice, completion of Chapter 4 and full-game stability are not demonstrated.",
+    "hardware_root_cause_confirmed": false
+  },
+  "hardware_follow_up": "docs/hardware-0737-video-follow-up.json"
+}

@@ -1,0 +1,288 @@
+{
+  "version": "0.7.33",
+  "date": "2026-11-04",
+  "source_build": "0.7.32",
+  "source_executable_sha256": "1df8579f57db1300848c41c8f9b3fda0c8122a20d7994c239af26888cb4bcec6",
+  "executable_sha256": "4e281dd960965bc94f38d8e7b5e5d7c43ff7fd742ce40376343aa4fce8736144",
+  "kind": "Stock texture budget and range-grid coordinates on hardware-tested baseline",
+  "changed_executable_bytes": 119,
+  "allowed_spans": [
+    [
+      "0x6b900",
+      "0x6b918"
+    ],
+    [
+      "0xc234e",
+      "0xc2356"
+    ],
+    [
+      "0xc24b4",
+      "0xc24b8"
+    ],
+    [
+      "0x6b940",
+      "0x6b998"
+    ],
+    [
+      "0x360c8",
+      "0x360cc"
+    ]
+  ],
+  "graphics_reservation": {
+    "before_bytes": 4194304,
+    "after_bytes": 768352,
+    "texture_capacity_recovered_bytes": 3425952,
+    "source": "Original Japanese SDK reservation; no framebuffer-format or video-mode change"
+  },
+  "range_grid": {
+    "adapter": "0x8c07b940",
+    "adapter_bytes": 88,
+    "draw_pointer": "0x360c8",
+    "change": "Double XY once for the range-fill API, retaining masks, tile selection, camera logic, colors, flags and source arrays."
+  },
+  "retained": "All assets, Native 1x font, 0.7.32 loading/movie corrections, RGB888 output, full-size movies and every other executable byte.",
+  "excluded": "0.7.6 story-choice/map-label changes, HD/selector, RGB565 conversion, texture repacks and runtime text compression remain absent.",
+  "limits": [
+    "Photos match earlier texture-allocation failures, but current physical allocation state was not captured; memory cause is a supported hypothesis, not directly proven on this build.",
+    "Stock geometry reservation has a smaller list-growth interval at 640x480 than at 320x240; busy-battle/full-route hardware headroom still requires testing.",
+    "Captured-RAM grid checks execute game code but are not a physical GPU or screenshot-scene replay."
+  ],
+  "hardware_result": "pending",
+  "original_conversation_freeze_fixed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "test": "Original Japanese image -> full DCP -> GDI; cold boot GDEMU/VGA. Revisit blank world-map dialogue/labels and battle unit shadows/dialogue; move the cursor and verify grid/arrow/unit alignment. Also retest New Game Hallway and normal Clear 2 VMU save -> Next.",
+  "baseline_hardware_report": {
+    "reported_date": "2026-11-04",
+    "status": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid",
+    "historical_source": "0.7.31 plus loading/movie-edge corrections",
+    "report": "0.7.32 is mostly fine only problem with map, moving hex",
+    "scope_limit": "Three photographs show rendering defects; no physical RAM/VRAM capture or independent mission-transition/full-route pass supplied.",
+    "evidence": "work/ui/hardware-0732-map-grid-20261104/index.json",
+    "known_issues": [
+      "World-map label/dialogue areas are pale blank rectangles; partial portrait visible.",
+      "Blue movement tiles are displaced from the selection arrows and units.",
+      "Pale rectangles appear below units and across the lower dialogue area."
+    ]
+  },
+  "screenshot_evidence": {
+    "date": "2026-11-04",
+    "version": "0.7.32",
+    "images": [
+      {
+        "source": "local-attachment:codex-clipboard-a731f8e7-517e-400e-91cd-037c92a6059d.png",
+        "copy": "work/ui/hardware-0732-map-grid-20261104/01-map-blank-panels.png",
+        "sha256": "c02c04eda5249fa2840d2f225642cfa139ebc63acefa3bf298cdde3b74dcc7b3",
+        "observation": "World-map label/dialogue areas are pale blank rectangles; partial portrait visible.",
+        "coordinates": "Not inferred from a photograph of the display."
+      },
+      {
+        "source": "local-attachment:codex-clipboard-500fcbf7-258e-4a8b-8068-1162407735a9.png",
+        "copy": "work/ui/hardware-0732-map-grid-20261104/02-range-grid-offset.png",
+        "sha256": "63bee12c3b3d4154b26f58878040325ff1781f9b9772e1fb9c115da8a3aa79e7",
+        "observation": "Blue movement tiles are displaced from the selection arrows and units.",
+        "coordinates": "Not inferred from a photograph of the display."
+      },
+      {
+        "source": "local-attachment:codex-clipboard-86c5b96b-3985-42da-bf54-7a4df32c206f.png",
+        "copy": "work/ui/hardware-0732-map-grid-20261104/03-unit-pale-rectangles.png",
+        "sha256": "a68092e2c476bd67ff9d1829d925f28f54d6a3da91dfbb21faf0fd979b483df5",
+        "observation": "Pale rectangles appear below units and across the lower dialogue area.",
+        "coordinates": "Not inferred from a photograph of the display."
+      }
+    ]
+  },
+  "all_13_other_modified_payloads_exact_baseline": true,
+  "complete_WIN00_exact_baseline": true,
+  "all_140_game_files_checked": true,
+  "budget_validation": {
+    "executable_sha256": "4e281dd960965bc94f38d8e7b5e5d7c43ff7fd742ce40376343aa4fce8736144",
+    "actual_SDK_budget_cases": [
+      {
+        "version": "0.7.32",
+        "query": 0,
+        "geometry_units": 2097152,
+        "geometry_VRAM_bytes": 4194304,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 38
+      },
+      {
+        "version": "0.7.32",
+        "query": 1,
+        "geometry_units": 4194304,
+        "geometry_VRAM_bytes": 8388608,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 38
+      },
+      {
+        "version": "0.7.33",
+        "query": 0,
+        "geometry_units": 384176,
+        "geometry_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 43
+      },
+      {
+        "version": "0.7.33",
+        "query": 1,
+        "geometry_units": 384176,
+        "geometry_VRAM_bytes": 768352,
+        "framebuffer_bytes_each": 921600,
+        "SDK_minimum_units": 64800,
+        "reaches_allocator": true,
+        "instructions": 43
+      }
+    ],
+    "scope": "Actual SDK arithmetic, cap/redirect, minimum check and allocator entry; no physical residency/headroom claim.",
+    "fixture_note": "Query 0 matches the prior observed default; query 1 exercises the alternate cap with the same bounded RAM fields, not a measured physical reservation."
+  },
+  "grid_validation": {
+    "version": "0.7.33",
+    "date": "2026-11-04",
+    "source_build": "0.7.32",
+    "source_executable_sha256": "1df8579f57db1300848c41c8f9b3fda0c8122a20d7994c239af26888cb4bcec6",
+    "executable_sha256": "4e281dd960965bc94f38d8e7b5e5d7c43ff7fd742ce40376343aa4fce8736144",
+    "kind": "Stock texture budget and range-grid coordinates on hardware-tested baseline",
+    "changed_executable_bytes": 119,
+    "allowed_spans": [
+      [
+        "0x6b900",
+        "0x6b918"
+      ],
+      [
+        "0xc234e",
+        "0xc2356"
+      ],
+      [
+        "0xc24b4",
+        "0xc24b8"
+      ],
+      [
+        "0x6b940",
+        "0x6b998"
+      ],
+      [
+        "0x360c8",
+        "0x360cc"
+      ]
+    ],
+    "graphics_reservation": {
+      "before_bytes": 4194304,
+      "after_bytes": 768352,
+      "texture_capacity_recovered_bytes": 3425952,
+      "source": "Original Japanese SDK reservation; no framebuffer-format or video-mode change"
+    },
+    "range_grid": {
+      "adapter": "0x8c07b940",
+      "adapter_bytes": 88,
+      "draw_pointer": "0x360c8",
+      "change": "Double XY once for the range-fill API, retaining masks, tile selection, camera logic, colors, flags and source arrays."
+    },
+    "retained": "All assets, Native 1x font, 0.7.32 loading/movie corrections, RGB888 output, full-size movies and every other executable byte.",
+    "excluded": "0.7.6 story-choice/map-label changes, HD/selector, RGB565 conversion, texture repacks and runtime text compression remain absent.",
+    "limits": [
+      "Photos match earlier texture-allocation failures, but current physical allocation state was not captured; memory cause is a supported hypothesis, not directly proven on this build.",
+      "Stock geometry reservation has a smaller list-growth interval at 640x480 than at 320x240; busy-battle/full-route hardware headroom still requires testing.",
+      "Captured-RAM grid checks execute game code but are not a physical GPU or screenshot-scene replay."
+    ],
+    "hardware_result": "pending",
+    "original_conversation_freeze_fixed": false,
+    "public_release": false,
+    "upgrade_patch": false,
+    "test": "Original Japanese image -> full DCP -> GDI; cold boot GDEMU/VGA. Revisit blank world-map dialogue/labels and battle unit shadows/dialogue; move the cursor and verify grid/arrow/unit alignment. Also retest New Game Hallway and normal Clear 2 VMU save -> Next.",
+    "RAM_sha256": "05de5bc31380611a3459127f3e5bbbe1ff3d95d095a4f7eb906cac4ae5923675",
+    "scenario": "S001 first battle, captured from user Flycast 0.7.19",
+    "actual_game_fill_cases": [
+      {
+        "camera_offset": [
+          0,
+          0
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      },
+      {
+        "camera_offset": [
+          48,
+          24
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      },
+      {
+        "camera_offset": [
+          -96,
+          -48
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      },
+      {
+        "camera_offset": [
+          19,
+          -7
+        ],
+        "filled_tiles": 41,
+        "vertices": 492,
+        "all_xy_exactly_doubled": true
+      }
+    ],
+    "adapter_fixtures": 5,
+    "SH4_instructions": 410482,
+    "selected_unit_tile": [
+      7,
+      9
+    ],
+    "range_center_before_pixels": [
+      160,
+      120
+    ],
+    "range_center_after_pixels": [
+      320,
+      240
+    ],
+    "selection_arrow_center_pixels": [
+      320,
+      240
+    ],
+    "logical_unit_anchor": [
+      158,
+      122
+    ],
+    "ABI_source_geometry_and_range_mask_preserved": "pass",
+    "scope": "Actual game fill and 2x adapter execute; SDK renderer endpoint records arguments. GPU appearance needs separate live validation."
+  },
+  "disc_validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.33",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.33-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4598906,
+    "sha256": "bdf60c2efbf59106ad70d795758f24b84621cb167dd757ee79250b0f7cd9ae85",
+    "game_tree_sha256": "d951d648ffabd9b55116f374e4160e6c3b438649b00c8d00ba37bc48df4e7fe1",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.33-diagnostic/Rayblade-v0.7.33-HARDWARE-DIAGNOSTIC-DCP.zip"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "date": "2026-11-03",
+  "device_context": "Same reported real Dreamcast / GDEMU / VGA investigation",
+  "user_report_verbatim": "user report: 0.7.2 works fine\n.29 - black screen after mission, new game\n30 - freeze on conversation",
+  "results": {
+    "0.7.2": {
+      "status": "Reported working",
+      "report": "works fine",
+      "scope_limit": "Do not infer a complete-game pass beyond the tester's report."
+    },
+    "0.7.29": {
+      "status": "Reported unsuccessful",
+      "historical_source": "0.7.11, Native-only",
+      "report": "black screen after mission, new game",
+      "exact_checkpoint": "Not yet identified; preserve the reporter's wording.",
+      "fix_confirmed": false
+    },
+    "0.7.30": {
+      "status": "Reported unsuccessful; conversation checkpoint clarification pending",
+      "historical_source": "0.7.8, Native-only",
+      "report": "freeze on conversation",
+      "exact_checkpoint": "Unclear whether immediate dialogue entry, the known later Koichiro/Kasumi Hallway exchange, or another conversation.",
+      "fix_confirmed": false
+    },
+    "0.7.28": {
+      "status": "Reported working on tested paths, with quarter-screen movies",
+      "historical_source": "0.7.4 rendering experiment, Native-only",
+      "report": "works (!), no black screen, no freezes; all movies on 1/4 screen",
+      "scope_limit": "Tester report, not a full-game or independently observed exact-checkpoint pass. No new screenshot was supplied in this reply.",
+      "known_limitation": "Expected historical lack of 0.7.5 movie position/size correction."
+    },
+    "0.7.31": {
+      "reported_date": "2026-11-04",
+      "status": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain",
+      "historical_source": "0.7.5, Native-only",
+      "report": "Patch works fine, movies are on full screen. No black screens, no freezes on scenario. NOW LOADING positioned differently; small bottom green line during cutscene.",
+      "scope_limit": "Tester report on tested paths, not a full-game pass. Clear 2 -> Next is not independently singled out in this reply.",
+      "known_issues": [
+        "NOW LOADING physical position/size",
+        "Green bottom edge during movies"
+      ]
+    },
+    "0.7.32": {
+      "reported_date": "2026-11-04",
+      "status": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid",
+      "historical_source": "0.7.31 plus loading/movie-edge corrections",
+      "report": "0.7.32 is mostly fine only problem with map, moving hex",
+      "scope_limit": "Three photographs show rendering defects; no physical RAM/VRAM capture or independent mission-transition/full-route pass supplied.",
+      "evidence": "work/ui/hardware-0732-map-grid-20261104/index.json",
+      "known_issues": [
+        "World-map label/dialogue areas are pale blank rectangles; partial portrait visible.",
+        "Blue movement tiles are displaced from the selection arrows and units.",
+        "Pale rectangles appear below units and across the lower dialogue area."
+      ]
+    },
+    "0.7.34": {
+      "reported_date": "2026-11-05",
+      "status": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+      "report": "All the fixes work, with the exception of the game freezing when starting a \"New Game\" or entering subsequent missions in the scenario. Surprisingly, it does load the scenario \"Clear 3: A Girl's Resolve\" for a brief moment (perhaps this will help with the diagnosis \u2013 see screenshot). However, once the all dialogue ends, it just goes to a black screen.",
+      "version_basis": "Follow-up to the supplied 0.7.34 test; version is inferred from conversation context, not shown in either photograph.",
+      "device": "Previously established real Dreamcast / GDEMU / VGA",
+      "evidence": "work/ui/hardware-0734-transition-20261105/index.json",
+      "observed_script": "scenario.s_004.o00181",
+      "new_game_exact_checkpoint": "Awaiting clarification: before first dialogue or later in a conversation",
+      "Clear_3_exact_final_line": "Awaiting clarification; supplied dialogue is the first command in s_004",
+      "alignment_repair_sufficient": false,
+      "hardware_fix_confirmed": false,
+      "scope_limit": "Reporter says other fixes work; do not expand this into a complete-game or every-feature pass."
+    },
+    "0.7.35": {
+      "reported_date": "2026-11-07",
+      "status": "Reported unsuccessful: New Game does not start; black screen after dialogue persists",
+      "report": "1. The same effect on 0.7.35. New Game don't start. And black screen after the dialogue.",
+      "version_basis": "Explicit 0.7.35 in user report",
+      "device": "Previously established real Dreamcast / GDEMU / VGA",
+      "map_hook_bypass_sufficient": false,
+      "hardware_fix_confirmed": false,
+      "exact_checkpoint": "New Game does not start; exact final dialogue line and physical fault address remain unknown.",
+      "scope_limit": "Failure of the bypass on the full build does not exonerate the hook in the earlier 0.7.27 regression or establish independent causes."
+    },
+    "0.7.36": {
+      "reported_date": "2026-11-09",
+      "status": "Reporter says no freezes; video shows scenario progression with early white-rectangle rendering corruption and later readable dialogue",
+      "report": "The game doesn't freeze, but there are similar graphical glitches to those seen previously. I've attached a longer video so you can identify which elements aren't displaying correctly and which dialogues are fine.",
+      "version_basis": "User explicitly confirmed on 2026-11-09: Yes, 0.7.36. The recording itself does not display a version.",
+      "device": "Previously established real Dreamcast / GDEMU / VGA",
+      "scope_limits": [
+        "New Game entry, the Hallway and the Clear 2 menu choice are not shown.",
+        "Video ends during scenario.s_004.o00a04; it does not show the entire s_004 script or next mission completing.",
+        "No hardware memory capture, fault address, texture residency measurement or full-game pass."
+      ],
+      "hardware_root_cause_confirmed": false,
+      "evidence": "docs/hardware-0736-video-follow-up.json",
+      "version_confirmed": true
+    },
+    "0.7.37": {
+      "reported_date": "2026-11-10",
+      "status": "Reported no freezes; video crosses into Chapter 4, with Office white rectangles remaining",
+      "version_basis": "Inferred from feedback following supplied 0.7.37 diagnostic; video does not display a build version.",
+      "version_confirmed": false,
+      "report": "It\u2019s better; the game doesn\u2019t freeze anymore. Graphical glitches appear during some dialogues. I\u2019ve attached a short video to check the locations precisely.",
+      "evidence": "docs/hardware-0737-video-follow-up.json",
+      "scope_limit": "Clear 3 selected, scenario advances through Office, world map, Chapter 4 title and Ymir battle dialogue. New Game, Hallway, Clear 2 choice, completion of Chapter 4 and full-game stability are not demonstrated.",
+      "hardware_root_cause_confirmed": false
+    },
+    "0.7.38": {
+      "reported_date": "2026-11-10",
+      "status": "Mountain scene reported fixed; Office background/dialogue white rectangles persist",
+      "report": "Next test on scenario dialogs: Alforina\u2019s Office - still the gfx glitch. Scene on mountain (1:30) is now fixed.",
+      "version_basis": "Follow-up to supplied 0.7.38; no version shown in screenshot.",
+      "version_confirmed": false,
+      "evidence": "docs/hardware-0738-follow-up.json",
+      "scope_limit": "This follow-up reports graphics only; no new independent New Game/Hallway/full-route stability result.",
+      "hardware_root_cause_confirmed": false
+    },
+    "0.7.39": {
+      "date": "2026-11-11",
+      "status": "Reported working on hardware; loading size/position and green bottom movie line remain",
+      "user_report": "it's working on hardware, now we still have 2 issue, the now loading in the middle of screen and the greenline at the bottom of cg",
+      "version_basis": "Follow-up to supplied 0.7.39; user names hardware but no build label appears in screenshots.",
+      "version_confirmed": false,
+      "scope_limit": "Working hardware result recorded for tested paths. Do not infer a full-game pass or a separately enumerated New Game/Hallway/Stage 6 test.",
+      "hardware_root_cause_confirmed": false,
+      "evidence": "docs/hardware-0739-follow-up.json"
+    },
+    "0.7.40": {
+      "date": "2026-11-12",
+      "version": "0.7.40",
+      "version_confirmed": false,
+      "version_basis": "User follow-up to the supplied 0.7.40 cosmetic diagnostic; no new build label or capture provided.",
+      "user_report": "it work I think you can now incorporate all the bugs fixes in one now",
+      "status": "Reported working on hardware; user requests consolidated remaining bug fixes",
+      "device": "Established Dreamcast/GDEMU/VGA investigation",
+      "scope_limit": "Passing result for the tester paths only; no enumerated full-route or Stage 6 pass inferred.",
+      "hardware_root_cause_confirmed": false,
+      "next_change": "Consolidated 0.7.41 candidate retaining the working renderer and hardware repairs; original-input DCP only, no release."
+    },
+    "0.7.41": {
+      "date": "2026-11-12",
+      "version": "0.7.41",
+      "version_confirmed": false,
+      "version_basis": "Immediate follow-up to the supplied combined 0.7.41 DCP; version inferred from conversation.",
+      "user_report": "the black screen issue during mission dialogues\u2014and even when starting a NEW GAME\u2014has returned.",
+      "status": "Reported failure: black screens during mission dialogues and New Game returned",
+      "device": "Established real Dreamcast/GDEMU/VGA testing context",
+      "scope_limit": "Exact dialogue/checkpoint and physical fault trace not supplied. This reports a regression, not its cause.",
+      "hardware_root_cause_confirmed": false,
+      "next_test": "0.7.42: remove only the runtime text-compression group from 0.7.41, keep every other change and all assets."
+    },
+    "0.7.42": {
+      "date": "2026-11-13",
+      "version": "0.7.42",
+      "version_confirmed": true,
+      "version_basis": "User explicitly names 0.7.42.",
+      "user_report": "Unfortunately on 0.7.42 also get the black screen issue during mission dialogues and NEW GAME.",
+      "status": "Failed hardware test: mission-dialogue and New Game black screens persist",
+      "device": "Established Dreamcast/GDEMU/VGA investigation",
+      "scope_limit": "No exact last dialogue line, fault address or physical trace supplied.",
+      "hardware_root_cause_confirmed": false,
+      "interpretation": "Compression removal alone is insufficient. Remaining changes or interactions still reproduce the failure; compression is not thereby exonerated.",
+      "next_test": "0.7.43: bypass only the shared status-constructor gate, restoring the original dispatch target used by 0.7.40. All other 0.7.42 code and assets retained."
+    },
+    "0.7.43": {
+      "date": "2026-11-13",
+      "version": "0.7.43",
+      "version_confirmed": true,
+      "version_basis": "User explicitly names 0.7.43.",
+      "user_report": "still the black screen issue during mission dialogues and NEW GAME on 0.7.43",
+      "status": "Failed hardware test: mission-dialogue and New Game black screens persist",
+      "device": "Established Dreamcast/GDEMU/VGA investigation",
+      "scope_limit": "Exact last line, physical fault trace and image identity not supplied.",
+      "hardware_root_cause_confirmed": false,
+      "interpretation": "Failure persists with map/status hooks bypassed and runtime text compression disabled. These removals are insufficient; no individual feature is thereby exonerated.",
+      "next_test": "0.7.44: exact reported-working 0.7.40 executable, all other files exact 0.7.43. Only D_NAMES.BIN, ITM00.AFS and WMAP.AFS differ from 0.7.40."
+    },
+    "0.7.44": {
+      "date": "2026-11-14",
+      "version": "0.7.44",
+      "version_confirmed": true,
+      "version_basis": "User corrected the initially named 0.7.43 to 0.7.44. This is not a passing retest of 0.7.43.",
+      "initial_report_verbatim": "Tests on 0.7.43 passed. This time - game does not freeze",
+      "correction_verbatim": "the user meant 0.7.44",
+      "clarification_reply_verbatim": "no",
+      "status": "Reported passing: 0.7.44 does not freeze on tested paths",
+      "device": "Established Dreamcast/GDEMU/VGA investigation",
+      "scope_limit": "Exact checkpoints and repeat-run/full-route coverage were not separately enumerated. The no reply was to a bundled setup-change/checkpoint question; do not infer detailed coverage from it.",
+      "hardware_root_cause_confirmed": false,
+      "interpretation": "0.7.43 remains reported failed. Exact 0.7.40 code with newer assets passes reported paths in 0.7.44. This points to removed executable changes or their interactions; no individual hook or instruction is proven responsible.",
+      "next_test": "Use 0.7.44 as the reported-passing baseline and split removed executable changes into coherent groups; keep assets fixed."
+    },
+    "0.7.45": {
+      "date": "2026-11-16",
+      "version": "0.7.45",
+      "version_confirmed": true,
+      "version_basis": "User explicitly names 0.7.45.",
+      "user_report": "0.7.45 is fine",
+      "status": "Reported passing on tested hardware paths",
+      "device": "Established Dreamcast/GDEMU/VGA investigation",
+      "scope_limit": "User reports the build is fine; exact checkpoints, visual checks, repeat-run and full-route coverage are not separately enumerated.",
+      "hardware_root_cause_confirmed": false,
+      "interpretation": "Restoring the 413-byte battle-display group on 0.7.44 is reported successful. The remaining 508 executable bytes versus failed 0.7.43, or their interactions with the retained code/data, remain to be isolated. This does not identify a faulty instruction or establish full feature parity.",
+      "next_test": "Use 0.7.45 as the reported-passing baseline. Split remaining menu/UI code into smaller groups with all assets fixed; keep status-hook invocation and runtime text compression disabled."
+    }
+  },
+  "interpretation": {
+    "confirmed": "Neither 0.7.29 nor 0.7.30 is reported fully working. HD removal alone has not established a fix for those controls; 0.7.28 is separately reported working with quarter-screen movies.",
+    "pending_question": "Does 0.7.30 freeze immediately when conversation starts, at the later Koichiro/Kasumi hallway exchange, or elsewhere?",
+    "if_0_7_30_immediate": "Compare matched Native-only historical 0.7.6 and 0.7.8; probe 0.7.7 to split the two historical changes, subject to matching trigger and repeatability.",
+    "if_0_7_30_later_hallway": "Record entry as passed only for that tested path. For the original entry hang, compare 0.7.8 against 0.7.11; track the later Hallway checkpoint separately.",
+    "cause_confirmed": false,
+    "symptoms_proven_independent_causes": false,
+    "new_build_created": "0.7.50: all remaining emulator fixes with passing 0.7.48 name-offset repair; separate status/map hooks",
+    "additional_evidence": "Native-only 640x480 baseline 0.7.28 is reported working on tested paths. Resolution alone is not a sufficient explanation for every reported failure.",
+    "working_baseline_next_test": "Publish the unchanged tested 0.7.50 payloads in verified original-input and last-public-release upgrade DCP packages. Continue route testing and keep the separate Stage 9 CG issue #5 open.",
+    "regression_boundary": "Reported working 0.7.31 (Native-only 0.7.5) versus failing 0.7.27 (Native-only 0.7.6) narrows the matched earlier scenario freeze to 0.7.6 story-choice/map changes or their interaction. Exact cause is not established; 0.7.30 checkpoint remains unclear.",
+    "full_feature_restore_request": "so we update it like normal? can you add all patch to it so it catch up with emu version?",
+    "synthetic_map_fault": "Old unaligned reads remain a demonstrated code defect, but repairing them alone was insufficient on hardware.",
+    "full_feature_report": "docs/hardware-0734-follow-up.json",
+    "latest_report": "0.7.50: Reported passing on tested hardware paths",
+    "pending_0_7_34_question": "Exact New Game checkpoint and last dialogue/scene before the Clear 3 black screen",
+    "map_hook_bypass": "Insufficient on full 0.7.35; do not infer the earlier hook is harmless.",
+    "text_compression_split_result": "Compression removal alone is insufficient. Remaining changes or interactions still reproduce the failure; compression is not thereby exonerated.",
+    "status_bypass_split_result": "Failure persists with map/status hooks bypassed and runtime text compression disabled. These removals are insufficient; no individual feature is thereby exonerated.",
+    "code_asset_split_result": "0.7.43 remains reported failed. Exact 0.7.40 code with newer assets passes reported paths in 0.7.44. This points to removed executable changes or their interactions; no individual hook or instruction is proven responsible.",
+    "battle_split_result": "Restoring the 413-byte battle-display group on 0.7.44 is reported successful. The remaining 508 executable bytes versus failed 0.7.43, or their interactions with the retained code/data, remain to be isolated. This does not identify a faulty instruction or establish full feature parity.",
+    "header_split_result": "Only the 260-byte location measurement change differs from reported-passing 0.7.45, with identical assets. This implicates that routine or its interaction with the retained runtime. It does not establish the faulting instruction or runtime font-pointer value.",
+    "static_header_result": "Removing the loaded-font dependency did not resolve the regression. The font-pointer hypothesis is insufficient. Inspecting the shared replacement reveals a MOV.L offset read from packed, potentially unaligned name tables, unlike the original bytewise reconstruction. Strict alignment reproduction and a bytewise fix are the next step.",
+    "aligned_header_result": "0.7.46 and 0.7.47 failed; 0.7.48 replaces their unaligned MOV.L name-offset read with bytewise reconstruction and is reported working. Adopt 0.7.48 as the hardware baseline. This strongly supports the alignment defect as the cause of this regression, without establishing full-game stability or complete emulator feature parity.",
+    "working_hardware_baseline": "0.7.48"
+  },
+  "local_payload_comparison": {
+    "0.7.6_to_0.7.7": {
+      "changed_payloads": [
+        "D_NAMES.BIN"
+      ],
+      "executable_changed_bytes": 0,
+      "feature": "Compact weapon display names and matching event-movie titles"
+    },
+    "0.7.7_to_0.7.8": {
+      "changed_payloads": [
+        "1ST_READ.BIN",
+        "D_NAMES.BIN"
+      ],
+      "executable_changed_bytes": 161,
+      "feature": "Trust/Skills status marker alignment and heading indent",
+      "code_scope": "The wrapper is installed at a shared VM UI-constructor pointer. Its coordinate adjustment is guarded for two status contexts, but delegation is invoked for other contexts too. No faulty instruction is established."
+    },
+    "0.7.8_to_0.7.11": {
+      "changed_payloads": [
+        "1ST_READ.BIN",
+        "D_NAMES.BIN",
+        "ITM00.AFS"
+      ],
+      "executable_changed_bytes": 281,
+      "features": [
+        "Complete Trust help / compact popup aliases",
+        "Signed SP formatting / compact notices / room-map names",
+        "Measured location headers"
+      ]
+    },
+    "method": "Compare stored english-disc-report.json payload identities and executable bytes for each historical boundary. Source report/build files remain unchanged."
+  },
+  "follow_up_verbatim": "I will ask about it, another test on .28: works (!), no black screen, no freezes, to fix - all movies is on 1/4 screen (screenshot)",
+  "last_updated": "2026-11-20",
+  "follow_up_0_7_31_verbatim": "about 0.7.31 Patch works fine, movies are on full screen. No black screens, no freezes on scenario. Little two issues which we know: -\"Now Loading\" is positioned differently -Small bootom green line during cutscene",
+  "follow_up_0_7_32_verbatim": "0.7.32 is mostly fine only problem with map, moving hex",
+  "latest_hardware_follow_up": {
+    "date": "2026-11-19",
+    "version": "0.7.48",
+    "version_confirmed": true,
+    "version_basis": "User replies 'it works' directly to the 0.7.48 diagnostic and requested hardware retest.",
+    "user_report": "it works",
+    "status": "Reported passing on tested hardware paths",
+    "device": "Established Dreamcast/GDEMU/VGA investigation",
+    "scope_limit": "Passing report refers to the 0.7.48 diagnostic. Individual checkpoints, repeated cold boots and full-route coverage were not separately enumerated.",
+    "hardware_root_cause_confirmed": false,
+    "diagnosis_status": "Unaligned name-offset read reproduced in strict instruction tests; correcting it is now supported by a passing hardware report. No physical exception trace was captured.",
+    "interpretation": "0.7.46 and 0.7.47 failed; 0.7.48 replaces their unaligned MOV.L name-offset read with bytewise reconstruction and is reported working. Adopt 0.7.48 as the hardware baseline. This strongly supports the alignment defect as the cause of this regression, without establishing full-game stability or complete emulator feature parity.",
+    "next_test": "Preserve bytewise name-offset reads and strict alignment checks. Use 0.7.48 for subsequent controlled restoration of remaining features; status hooks, signed SP formatting and Stage 6 runtime compression remain excluded. Keep issue #5 separate. No new build or release requested by this passing report."
+  }
+}

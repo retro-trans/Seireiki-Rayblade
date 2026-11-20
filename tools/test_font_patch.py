@@ -56,10 +56,14 @@ class CPU:
         raise ValueError('Unmapped access {:08x}+{}'.format(address,count))
 
     def read(self, address, count):
+        if getattr(self, 'strict_alignment', False) and count in (2, 4) and address % count:
+            raise ValueError('SH4 unaligned read {:08x}+{} at {:08x}'.format(address,count,self.pc))
         data, off = self.area(address,count)
         return int.from_bytes(data[off:off+count],'little')
 
     def write(self,address,value,count):
+        if getattr(self, 'strict_alignment', False) and count in (2, 4) and address % count:
+            raise ValueError('SH4 unaligned write {:08x}+{} at {:08x}'.format(address,count,self.pc))
         data, off = self.area(address,count)
         data[off:off+count]=(value & ((1 << (count*8))-1)).to_bytes(count,'little')
 

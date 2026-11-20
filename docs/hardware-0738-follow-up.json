@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-10",
+  "version": "0.7.38",
+  "version_confirmed": false,
+  "version_basis": "Follow-up to supplied 0.7.38; no version shown in screenshot.",
+  "device": "Previously established Dreamcast/GDEMU/VGA",
+  "user_report": "Next test on scenario dialogs: Alforina\u2019s Office - still the gfx glitch. Scene on mountain (1:30) is now fixed.",
+  "image": "incoming/hardware-0738-20261110/office-reported.png",
+  "image_sha256": "dc523964e8acb774183a623bbd0eea27a4c9b2ebce21c30d23ce5f985b0355b4",
+  "observed": "Office label and upper character visible. White background rectangle and broad pale lower rectangle obscure room, dialogue and most small portrait.",
+  "mountain_result": "Fixed according to tester; no new mountain image/video attached. Time 01:30 refers to preceding clip.",
+  "freeze_scope": "This follow-up reports graphics only; no new independent New Game/Hallway/full-route stability result.",
+  "older_emulator_reference": {
+    "version": "0.7.19",
+    "snapshot": "work/source/runtime/office-stock-0719.ram",
+    "sha256": "b27383572b696e3095e759424021eaca778626210cadb55d4276c62c83311754",
+    "free_bytes_by_bank": [
+      77440,
+      57344
+    ],
+    "largest_free_by_bank": [
+      77440,
+      57344
+    ],
+    "native_texture_error": 0,
+    "window_texture": [
+      {
+        "node": "0x8c471d50",
+        "flags": "0x45",
+        "VRAM_offset": "0x6f0000",
+        "bytes": 262144,
+        "owner": "0x8cf40a4c",
+        "gbix": "0x1f40",
+        "width": 512,
+        "height": 256
+      }
+    ],
+    "scene_texture_assets_verified_in_0_7_38": [
+      {
+        "member": 19,
+        "name_hints": [
+          "a_bg09"
+        ],
+        "outer_GBIX_index": 5008,
+        "width": 512,
+        "height": 512,
+        "packed_sha256": "5a99ff028408230d9973da5c45434936a9f1ad22524b241ee6fe4d8abd360636"
+      }
+    ],
+    "scope": "Historical working emulator Office capture, not physical 0.7.38 state. Battle terrain/unit allocations are still present alongside Office assets."
+  },
+  "current_window_difference": {
+    "archive": "WIN00.AFS",
+    "member": 2,
+    "GBIX": "0x1f40",
+    "current_dimensions": [
+      512,
+      512
+    ],
+    "older_working_dimensions": [
+      512,
+      256
+    ],
+    "additional_current_bytes": 262144,
+    "source_members_1_2_match_0_7_16": true,
+    "font_member_52_exact_0_7_19": true
+  },
+  "interpretation": "Framebuffer change helped the reported mountain scene but is insufficient for Office. Historical Office has only 134784 total free bytes even with smaller window atlas; test the lossless crop next. Current physical residency/fragmentation and root cause remain unmeasured.",
+  "hardware_root_cause_confirmed": false
+}

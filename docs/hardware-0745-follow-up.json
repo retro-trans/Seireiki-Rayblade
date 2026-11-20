@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-16",
+  "version": "0.7.45",
+  "version_confirmed": true,
+  "version_basis": "User explicitly names 0.7.45.",
+  "user_report": "0.7.45 is fine",
+  "status": "Reported passing on tested hardware paths",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "scope_limit": "User reports the build is fine; exact checkpoints, visual checks, repeat-run and full-route coverage are not separately enumerated.",
+  "hardware_root_cause_confirmed": false,
+  "interpretation": "Restoring the 413-byte battle-display group on 0.7.44 is reported successful. The remaining 508 executable bytes versus failed 0.7.43, or their interactions with the retained code/data, remain to be isolated. This does not identify a faulty instruction or establish full feature parity.",
+  "next_test": "Use 0.7.45 as the reported-passing baseline. Split remaining menu/UI code into smaller groups with all assets fixed; keep status-hook invocation and runtime text compression disabled."
+}

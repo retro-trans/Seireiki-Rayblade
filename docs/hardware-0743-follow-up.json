@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-13",
+  "version": "0.7.43",
+  "version_confirmed": true,
+  "version_basis": "User explicitly names 0.7.43.",
+  "user_report": "still the black screen issue during mission dialogues and NEW GAME on 0.7.43",
+  "status": "Failed hardware test: mission-dialogue and New Game black screens persist",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "scope_limit": "Exact last line, physical fault trace and image identity not supplied.",
+  "hardware_root_cause_confirmed": false,
+  "interpretation": "Failure persists with map/status hooks bypassed and runtime text compression disabled. These removals are insufficient; no individual feature is thereby exonerated.",
+  "next_test": "0.7.44: exact reported-working 0.7.40 executable, all other files exact 0.7.43. Only D_NAMES.BIN, ITM00.AFS and WMAP.AFS differ from 0.7.40."
+}

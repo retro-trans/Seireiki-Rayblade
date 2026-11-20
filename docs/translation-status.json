@@ -1,7 +1,11 @@
 {
-  "version": "0.7.23",
+  "version": "0.7.50",
   "stage": "Native Skies 1x only, 640x480 output and accumulated UI/movie/memory/grid/reticle/clipping/highlight repairs; Stage 6 issue #1 supplied-save bridge, battle menus and normal VMU save/load pass; complete proofreading and full-route review remain pending",
-  "current_battle_clip": {"status": "native and live split-battle/selection bars pass", "record": "docs/battle-clip.json", "publication": "0.7.23 published; full original-input and last-public 0.7.11 upgrade; docs/releases/v0.7.23-publication.json"},
+  "current_battle_clip": {
+    "status": "native and live split-battle/selection bars pass",
+    "record": "docs/battle-clip.json",
+    "publication": "0.7.23 published; full original-input and last-public 0.7.11 upgrade; docs/releases/v0.7.23-publication.json"
+  },
   "current_issue_1": {
     "status": "supplied-save reproduction and fix pass in Flycast on 0.7.22",
     "record": "docs/stage6-text.json",
@@ -21442,13 +21446,13 @@
     "release": false
   },
   "latest_release": {
-    "version": "0.7.2",
-    "source_build": "0.7.2",
-    "previous_public_version": "0.7.0",
+    "version": "0.7.50",
+    "source_build": "0.7.50",
+    "previous_public_version": "0.7.23",
+    "format": "DCP",
+    "release_notes": "docs/releases/v0.7.50.md",
+    "hardware_record": "docs/hardware-0750-follow-up.json",
     "translation_wording_changes": 0,
-    "opening_movies": "Original Japanese MOV055.SFD and MOV072.SFD restored exactly",
-    "movie_record": "docs/original-opening-movies.json",
-    "vga_record": "docs/vga-support.json",
     "independent_full_proofreading": "unfinished"
   },
   "release_0_7_11": {
@@ -21461,5 +21465,12 @@
     "unidentified_room_tag": 66,
     "issue_1": "unresolved",
     "live_latest_UI": "pending"
+  },
+  "current_hardware": {
+    "version": "0.7.50",
+    "status": "User-reported passing on tested Dreamcast/GDEMU/VGA paths, 2026-11-20",
+    "record": "docs/hardware-0750-follow-up.json",
+    "release_notes": "docs/releases/v0.7.50.md",
+    "limits": "Full routes, extended sessions and other hardware/video setups remain unverified; Stage 9 CG issue #5 remains open."
   }
 }

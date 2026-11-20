@@ -69,6 +69,11 @@ def setup(exe):
 
 def check():
     exe,component=compose();old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes()
+    return check_candidate(exe,old,component)
+
+
+def check_candidate(exe,old,component):
+    """Exercise the loading fix on a supplied build without rebuilding its parent."""
     legacy=(ROOT/'work/output/0.7.2/1ST_READ.BIN').read_bytes()
     for lo,hi in ((0x10a50,0x10c9c),(0x9c5c0,0x9c970),(0x873e0,0x8740c)):
         assert legacy[lo:hi]==old[lo:hi],('Pre-640 loading code changed',hex(lo))

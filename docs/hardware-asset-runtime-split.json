@@ -1,0 +1,69 @@
+{
+  "version": "0.7.36",
+  "date": "2026-11-07",
+  "source_build": "0.7.27",
+  "runtime_baseline": "0.7.31",
+  "executable_sha256": "054d99fbd8a29d981d4ba478b05a3817181c8dfd77267e30208bdbb0b15de020",
+  "executable_exact_passing_baseline": true,
+  "changed_executable_bytes_from_0_7_27": 86,
+  "changed_game_files_from_passing_baseline": [
+    "D_SCE.AFS",
+    "WMAP.AFS"
+  ],
+  "kind": "Historical asset/runtime regression split",
+  "reason": "0.7.35 still fails New Game and post-dialogue transitions. Return to the small earlier 0.7.31/0.7.27 boundary instead of mixing later changes.",
+  "scope": "Exact 0.7.31 code and font; exact 0.7.27 assets. Only story-choice and map-label archives differ from 0.7.31. No custom map hook remains, including its unused body.",
+  "known_limitations": "Later loading, movie-edge, compact UI, memory, grid, targeting and clipping fixes are intentionally absent. Earlier visual defects can return. Native 1x only; no HD bank or selector.",
+  "on_pass": "The two assets alone are insufficient for the matched earlier failure; investigate the removed hook or its interaction. This does not identify the remaining full-feature 0.7.35 failure.",
+  "on_fail": "For a matched failure absent in 0.7.31, split D_SCE.AFS versus WMAP.AFS and archive/resource loading. Do not conclude that dialogue wording is faulty.",
+  "test_paths": [
+    "New Game first dialogue and later Koichiro/Kasumi Hallway",
+    "Clear 2 normal VMU save -> Next",
+    "Clear 3 save through all dialogue and the following scene"
+  ],
+  "hardware_result": "Reporter says no freezes; video shows scenario progression with early white-rectangle rendering corruption and later readable dialogue",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "all_140_game_files_and_boot_checked": true,
+  "disc_validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.36",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.36-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4585820,
+    "sha256": "28eae3b0353a85b0e372a82eacd37b908bd272189c87034573c942aade5d7d82",
+    "game_tree_sha256": "116f76d3870c11ca42f9c1677cd4ff1ada4be35b8ae8529b44c606d40763455e",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "Reporter says no freezes; video shows scenario progression with early white-rectangle rendering corruption and later readable dialogue",
+    "path": "work/output/dcp-0.7.36-diagnostic/Rayblade-v0.7.36-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_follow_up": {
+    "reported_date": "2026-11-09",
+    "status": "Reporter says no freezes; video shows scenario progression with early white-rectangle rendering corruption and later readable dialogue",
+    "report": "The game doesn't freeze, but there are similar graphical glitches to those seen previously. I've attached a longer video so you can identify which elements aren't displaying correctly and which dialogues are fine.",
+    "version_basis": "User explicitly confirmed on 2026-11-09: Yes, 0.7.36. The recording itself does not display a version.",
+    "device": "Previously established real Dreamcast / GDEMU / VGA",
+    "scope_limits": [
+      "New Game entry, the Hallway and the Clear 2 menu choice are not shown.",
+      "Video ends during scenario.s_004.o00a04; it does not show the entire s_004 script or next mission completing.",
+      "No hardware memory capture, fault address, texture residency measurement or full-game pass."
+    ],
+    "hardware_root_cause_confirmed": false,
+    "evidence": "docs/hardware-0736-video-follow-up.json",
+    "version_confirmed": true
+  },
+  "last_updated": "2026-11-09"
+}

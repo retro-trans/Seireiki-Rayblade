@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-13",
+  "version": "0.7.42",
+  "version_confirmed": true,
+  "version_basis": "User explicitly names 0.7.42.",
+  "user_report": "Unfortunately on 0.7.42 also get the black screen issue during mission dialogues and NEW GAME.",
+  "status": "Failed hardware test: mission-dialogue and New Game black screens persist",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "scope_limit": "No exact last dialogue line, fault address or physical trace supplied.",
+  "hardware_root_cause_confirmed": false,
+  "interpretation": "Compression removal alone is insufficient. Remaining changes or interactions still reproduce the failure; compression is not thereby exonerated.",
+  "next_test": "0.7.43: bypass only the shared status-constructor gate, restoring the original dispatch target used by 0.7.40. All other 0.7.42 code and assets retained."
+}

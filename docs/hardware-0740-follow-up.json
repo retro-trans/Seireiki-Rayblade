@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-12",
+  "version": "0.7.40",
+  "version_confirmed": false,
+  "version_basis": "User follow-up to the supplied 0.7.40 cosmetic diagnostic; no new build label or capture provided.",
+  "user_report": "it work I think you can now incorporate all the bugs fixes in one now",
+  "status": "Reported working on hardware; user requests consolidated remaining bug fixes",
+  "device": "Established Dreamcast/GDEMU/VGA investigation",
+  "scope_limit": "Passing result for the tester paths only; no enumerated full-route or Stage 6 pass inferred.",
+  "hardware_root_cause_confirmed": false,
+  "next_change": "Consolidated 0.7.41 candidate retaining the working renderer and hardware repairs; original-input DCP only, no release."
+}

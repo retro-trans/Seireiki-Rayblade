@@ -1,0 +1,1395 @@
+{
+  "version": "0.7.45",
+  "date": "2026-11-14",
+  "source_build": "0.7.44",
+  "failed_comparison": "0.7.43",
+  "source_executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+  "executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+  "kind": "Battle display code half-split on passing 0.7.44",
+  "feature_groups": [
+    {
+      "before": "0.7.19",
+      "after": "0.7.20",
+      "feature": "Movement/range grid",
+      "changed_bytes": 86
+    },
+    {
+      "before": "0.7.20",
+      "after": "0.7.21",
+      "feature": "Targeting and animation graphics",
+      "changed_bytes": 259
+    },
+    {
+      "before": "0.7.22",
+      "after": "0.7.23",
+      "feature": "Lines, split clipping and selection bars",
+      "changed_bytes": 68
+    }
+  ],
+  "changed_executable_bytes": 413,
+  "remaining_failed_build_bytes": 508,
+  "scope": "413 of the 921 differing bytes restored exactly from failed 0.7.43; all other executable bytes and every asset exact 0.7.44.",
+  "restored": [
+    "Movement/range grid alignment",
+    "Targeting/animation graphics coordinates",
+    "Application line coordinates",
+    "Inclusive split-battle clipping",
+    "Full-width menu selection bars"
+  ],
+  "excluded": [
+    "Status wrapper/gate and vertical alignment",
+    "Signed SP formatting and measured location-header code",
+    "Stage 6 runtime text compression",
+    "Custom map filename/snapping hook"
+  ],
+  "retained": "Passing 0.7.44 Native font, hardware memory/window repairs, loading/movie fixes and all newer data files.",
+  "on_pass": "Battle code alone does not reproduce the failure on matched tested paths. Split the remaining 508 bytes and their interactions; do not restore every remaining change together.",
+  "on_fail": "Split this 413-byte group: movement/targeting versus clipping/lines/selectors, retaining the passing 0.7.44 assets and code baseline.",
+  "limits": [
+    "Hardware confirmation pending; no full-route or physical GPU/timing claim.",
+    "Status/header/SP fixes and Stage 6 compression remain absent; associated defects may persist."
+  ],
+  "hardware_result": "Reported passing on tested hardware paths",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "native_validation": {
+    "version": "0.7.45",
+    "executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+    "grid": {
+      "version": "0.7.45",
+      "date": "2026-11-14",
+      "source_build": "0.7.44",
+      "failed_comparison": "0.7.43",
+      "source_executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+      "executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+      "kind": "Battle display code half-split on passing 0.7.44",
+      "feature_groups": [
+        {
+          "before": "0.7.19",
+          "after": "0.7.20",
+          "feature": "Movement/range grid",
+          "changed_bytes": 86
+        },
+        {
+          "before": "0.7.20",
+          "after": "0.7.21",
+          "feature": "Targeting and animation graphics",
+          "changed_bytes": 259
+        },
+        {
+          "before": "0.7.22",
+          "after": "0.7.23",
+          "feature": "Lines, split clipping and selection bars",
+          "changed_bytes": 68
+        }
+      ],
+      "changed_executable_bytes": 413,
+      "remaining_failed_build_bytes": 508,
+      "scope": "Actual game fill and 2x adapter execute; SDK renderer endpoint records arguments. GPU appearance needs separate live validation.",
+      "restored": [
+        "Movement/range grid alignment",
+        "Targeting/animation graphics coordinates",
+        "Application line coordinates",
+        "Inclusive split-battle clipping",
+        "Full-width menu selection bars"
+      ],
+      "excluded": [
+        "Status wrapper/gate and vertical alignment",
+        "Signed SP formatting and measured location-header code",
+        "Stage 6 runtime text compression",
+        "Custom map filename/snapping hook"
+      ],
+      "retained": "Passing 0.7.44 Native font, hardware memory/window repairs, loading/movie fixes and all newer data files.",
+      "on_pass": "Battle code alone does not reproduce the failure on matched tested paths. Split the remaining 508 bytes and their interactions; do not restore every remaining change together.",
+      "on_fail": "Split this 413-byte group: movement/targeting versus clipping/lines/selectors, retaining the passing 0.7.44 assets and code baseline.",
+      "limits": [
+        "Hardware confirmation pending; no full-route or physical GPU/timing claim.",
+        "Status/header/SP fixes and Stage 6 compression remain absent; associated defects may persist."
+      ],
+      "hardware_result": "pending",
+      "hardware_root_cause_confirmed": false,
+      "public_release": false,
+      "upgrade_patch": false,
+      "RAM_sha256": "05de5bc31380611a3459127f3e5bbbe1ff3d95d095a4f7eb906cac4ae5923675",
+      "scenario": "S001 first battle, captured from user Flycast 0.7.19",
+      "actual_game_fill_cases": [
+        {
+          "camera_offset": [
+            0,
+            0
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        },
+        {
+          "camera_offset": [
+            48,
+            24
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        },
+        {
+          "camera_offset": [
+            -96,
+            -48
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        },
+        {
+          "camera_offset": [
+            19,
+            -7
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        }
+      ],
+      "adapter_fixtures": 5,
+      "SH4_instructions": 410482,
+      "selected_unit_tile": [
+        7,
+        9
+      ],
+      "range_center_before_pixels": [
+        160,
+        120
+      ],
+      "range_center_after_pixels": [
+        320,
+        240
+      ],
+      "selection_arrow_center_pixels": [
+        320,
+        240
+      ],
+      "logical_unit_anchor": [
+        158,
+        122
+      ],
+      "ABI_source_geometry_and_range_mask_preserved": "pass"
+    },
+    "target": {
+      "version": "0.7.45",
+      "date": "2026-11-14",
+      "source_build": "0.7.44",
+      "failed_comparison": "0.7.43",
+      "source_executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+      "executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+      "kind": "Battle display code half-split on passing 0.7.44",
+      "feature_groups": [
+        {
+          "before": "0.7.19",
+          "after": "0.7.20",
+          "feature": "Movement/range grid",
+          "changed_bytes": 86
+        },
+        {
+          "before": "0.7.20",
+          "after": "0.7.21",
+          "feature": "Targeting and animation graphics",
+          "changed_bytes": 259
+        },
+        {
+          "before": "0.7.22",
+          "after": "0.7.23",
+          "feature": "Lines, split clipping and selection bars",
+          "changed_bytes": 68
+        }
+      ],
+      "changed_executable_bytes": 413,
+      "remaining_failed_build_bytes": 508,
+      "scope": "GPU submission/material allocation endpoints are bounded stubs; SDK raw vertex emission is actual. Line endpoint records descriptors. Live reticle and combat review separate.",
+      "restored": [
+        "Movement/range grid alignment",
+        "Targeting/animation graphics coordinates",
+        "Application line coordinates",
+        "Inclusive split-battle clipping",
+        "Full-width menu selection bars"
+      ],
+      "excluded": [
+        "Status wrapper/gate and vertical alignment",
+        "Signed SP formatting and measured location-header code",
+        "Stage 6 runtime text compression",
+        "Custom map filename/snapping hook"
+      ],
+      "retained": "Passing 0.7.44 Native font, hardware memory/window repairs, loading/movie fixes and all newer data files.",
+      "on_pass": "Battle code alone does not reproduce the failure on matched tested paths. Split the remaining 508 bytes and their interactions; do not restore every remaining change together.",
+      "on_fail": "Split this 413-byte group: movement/targeting versus clipping/lines/selectors, retaining the passing 0.7.44 assets and code baseline.",
+      "limits": [
+        "Hardware confirmation pending; no full-route or physical GPU/timing claim.",
+        "Status/header/SP fixes and Stage 6 compression remain absent; associated defects may persist."
+      ],
+      "hardware_result": "pending",
+      "hardware_root_cause_confirmed": false,
+      "public_release": false,
+      "upgrade_patch": false,
+      "SDK_raw_packet_cases": 32,
+      "SDK_emitted_packets": 256,
+      "raw_cases": [
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        }
+      ],
+      "line_descriptor_cases": [
+        {
+          "polygons": 1,
+          "vertices_each": 2,
+          "XY_only_doubled": true
+        },
+        {
+          "polygons": 4,
+          "vertices_each": 2,
+          "XY_only_doubled": true
+        },
+        {
+          "polygons": 2,
+          "vertices_each": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "polygons": 0,
+          "vertices_each": 2,
+          "XY_only_doubled": true
+        }
+      ],
+      "SH4_instructions": 20556,
+      "checks": [
+        "Original SDK strip-to-PVR vertex emission executes",
+        "Only packet X/Y change; Z, UV, ARGB, primitive commands and output pointer exact",
+        "Original blend/texture header arguments retained",
+        "Source arrays, callee-saved registers, FPU registers and stack restored",
+        "0.7.19 memory literal/startup and 0.7.20 grid code byte-exact"
+      ]
+    },
+    "clip": {
+      "version": "0.7.45",
+      "date": "2026-11-14",
+      "source_build": "0.7.44",
+      "failed_comparison": "0.7.43",
+      "source_executable_sha256": "1426cd32cbc942bed643ad6f5cd3e8e0fdcd0b1370867eb5599dc73e6a3a4d90",
+      "executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+      "kind": "Battle display code half-split on passing 0.7.44",
+      "feature_groups": [
+        {
+          "before": "0.7.19",
+          "after": "0.7.20",
+          "feature": "Movement/range grid",
+          "changed_bytes": 86
+        },
+        {
+          "before": "0.7.20",
+          "after": "0.7.21",
+          "feature": "Targeting and animation graphics",
+          "changed_bytes": 259
+        },
+        {
+          "before": "0.7.22",
+          "after": "0.7.23",
+          "feature": "Lines, split clipping and selection bars",
+          "changed_bytes": 68
+        }
+      ],
+      "changed_executable_bytes": 413,
+      "remaining_failed_build_bytes": 508,
+      "scope": "Real clip wrapper and SDK tile-to-pixel bounds execute; GPU/material submission and byte-copy endpoint are bounded. Actual selection field parser and line adapter execute. Separate live battle review is required.",
+      "restored": [
+        "Movement/range grid alignment",
+        "Targeting/animation graphics coordinates",
+        "Application line coordinates",
+        "Inclusive split-battle clipping",
+        "Full-width menu selection bars"
+      ],
+      "excluded": [
+        "Status wrapper/gate and vertical alignment",
+        "Signed SP formatting and measured location-header code",
+        "Stage 6 runtime text compression",
+        "Custom map filename/snapping hook"
+      ],
+      "retained": "Passing 0.7.44 Native font, hardware memory/window repairs, loading/movie fixes and all newer data files.",
+      "on_pass": "Battle code alone does not reproduce the failure on matched tested paths. Split the remaining 508 bytes and their interactions; do not restore every remaining change together.",
+      "on_fail": "Split this 413-byte group: movement/targeting versus clipping/lines/selectors, retaining the passing 0.7.44 assets and code baseline.",
+      "limits": [
+        "Hardware confirmation pending; no full-route or physical GPU/timing claim.",
+        "Status/header/SP fixes and Stage 6 compression remain absent; associated defects may persist."
+      ],
+      "hardware_result": "pending",
+      "hardware_root_cause_confirmed": false,
+      "public_release": false,
+      "upgrade_patch": false,
+      "clip_cases": [
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            0.0,
+            4.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            8.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            0.0,
+            4.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            8.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            0.0,
+            4.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            0.0,
+            319.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            5.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            10.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            5.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            10.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            5.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            10.0,
+            0.0,
+            19.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            320.0,
+            0.0,
+            639.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            19.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            0.0,
+            639.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            3.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            6.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            3.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            6.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            3.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            19.0,
+            7.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            0.0,
+            639.0,
+            255.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            4.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            8.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            4.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            8.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            4.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            8.0,
+            19.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            256.0,
+            639.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            1.0,
+            2.0,
+            7.0,
+            5.0
+          ],
+          "submitted_tiles": [
+            2.0,
+            4.0,
+            14.0,
+            10.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            1.0,
+            2.0,
+            7.0,
+            5.0
+          ],
+          "submitted_tiles": [
+            2.0,
+            4.0,
+            14.0,
+            10.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            1.0,
+            2.0,
+            7.0,
+            5.0
+          ],
+          "submitted_tiles": [
+            2.0,
+            4.0,
+            15.0,
+            11.0
+          ],
+          "pixel_bounds": [
+            64.0,
+            128.0,
+            511.0,
+            383.0
+          ]
+        }
+      ],
+      "selection_cases": [
+        {
+          "label": "Counterattack forecast",
+          "width_before": 56,
+          "width_after": 120,
+          "other_selection_fields_exact": true
+        },
+        {
+          "label": "Counter policies",
+          "width_before": 72,
+          "width_after": 120,
+          "other_selection_fields_exact": true
+        },
+        {
+          "label": "Unit action menu",
+          "width_before": 32,
+          "width_after": 64,
+          "other_selection_fields_exact": true
+        }
+      ],
+      "line_cases": [
+        {
+          "site": "0x320d0",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x320d0",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x328f8",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x328f8",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x329c4",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x329c4",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x32a90",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x32a90",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x32b5c",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x32b5c",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x32c0c",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x32c0c",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x5b5e8",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x5b5e8",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x5c958",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x5c958",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x69a5c",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x69a5c",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x69b58",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x69b58",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        }
+      ],
+      "SH4_instructions": 9248
+    },
+    "constructors": {
+      "version": "0.7.45",
+      "executable_sha256": "d13d6cf267e5ce6ec07a70439205901596174912042e41feed39fbc885bf107f",
+      "constructor_cases": [
+        {
+          "script": "0xeee6",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xef01",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xef15",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xef29",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xe70b",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xfdbf",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xf634",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        },
+        {
+          "script": "0xf7ae",
+          "return_and_VM_context_memory_exact_0_7_40": true,
+          "status_helpers_entered": false
+        }
+      ],
+      "SH4_instructions": 251172,
+      "scope": "Actual constructor selected through the candidate dispatch pointer, compared against 0.7.40. Status gate/wrapper forbidden; VM/context memory and return ABI exact. Heap/graphics endpoints are bounded fixtures, not a live GPU/hardware test."
+    },
+    "scope": "Current-executable SH-4 grid, targeting, clipping, line and selection fixtures; eight original constructors match 0.7.40. Text-memory regions remain exact 0.7.44. Bounded GPU/heap endpoints and historical RAM fixture; no new live emulator or physical test."
+  },
+  "all_140_game_files_and_boot_checked": true,
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.45",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.45-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4615782,
+    "sha256": "f2a2f6b2f96ec264cb21eed142900d91b42d19de05989e40abd4d34da028fc33",
+    "game_tree_sha256": "6ab6ca59cd7c110fb40fd165d87b7a3b6e97e5b49f2f86307f4b5312ab91d0d4",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "Reported passing on tested hardware paths",
+    "path": "work/output/dcp-0.7.45-diagnostic/Rayblade-v0.7.45-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_evidence": "docs/hardware-0745-follow-up.json"
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-11",
+  "version": "0.7.39",
+  "version_confirmed": false,
+  "version_basis": "Follow-up to supplied 0.7.39; user names hardware but no build label appears in screenshots.",
+  "user_report": "it's working on hardware, now we still have 2 issue, the now loading in the middle of screen and the greenline at the bottom of cg",
+  "status": "Reported working on hardware; loading size/position and green bottom movie line remain",
+  "device": "User explicitly reports hardware; same established Dreamcast/GDEMU/VGA investigation.",
+  "images": [
+    {
+      "path": "incoming/hardware-0739-20261111/01-loading.png",
+      "sha256": "26b5ecf5e3fce3056458e470eb680ae65f190e1e008e9910b77c2291b908235a",
+      "observation": "NOW LOADING is small at approximately (216,208), rather than original proportional bottom-right position in 640x480 output."
+    },
+    {
+      "path": "incoming/hardware-0739-20261111/02-movie-edge.png",
+      "sha256": "eb258f14f096edb27225ffd6f7139073c96b875e1c0c7824aae5e5b130d24168",
+      "observation": "Thin green line follows the lower movie edge near y=431 above the bottom black bar. Full movie placement remains visible."
+    }
+  ],
+  "capture_platform": "Not independently established for the attached images; hardware result is the user report.",
+  "scope_limit": "Working hardware result recorded for tested paths. Do not infer a full-game pass or a separately enumerated New Game/Hallway/Stage 6 test.",
+  "hardware_root_cause_confirmed": false,
+  "next_change": "Apply only existing loading geometry and Sofdec edge-sampling fixes to 0.7.39; retain memory repairs and all assets."
+}

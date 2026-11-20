@@ -30,7 +30,12 @@ def fresh(exe,ram):
 
 
 def check():
-    exe,component=compose();old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes();ram=RAM.read_bytes();steps=0;rows=[]
+    exe,component=compose();old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes()
+    return check_candidate(exe,old,component)
+
+
+def check_candidate(exe,old,component):
+    ram=RAM.read_bytes();steps=0;rows=[]
     # Exercise actual game bit-field queries, elevation, range mask iteration,
     # camera offsets, triangle construction and final patched call site.
     for dx,dy in ((0,0),(48,24),(-96,-48),(19,-7)):

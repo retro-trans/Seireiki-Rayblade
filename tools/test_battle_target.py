@@ -35,7 +35,12 @@ def fresh(exe):
 
 
 def check():
-    exe,component=compose();old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes();steps=0;cases=[]
+    exe,component=compose()
+    return check_candidate(exe,component)
+
+
+def check_candidate(exe,component):
+    old=(ROOT/'work/output'/PRIOR/'1ST_READ.BIN').read_bytes();steps=0;cases=[]
     for callee,(stride,sites) in RAW_SITES.items():
         for count in (3,4,8,17):
           for blend in (0,1):

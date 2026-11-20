@@ -1,0 +1,1739 @@
+{
+  "version": "0.7.34",
+  "date": "2026-11-04",
+  "source_build": "0.7.23",
+  "kind": "Full emulator-feature catch-up plus alignment-safe map filename guard",
+  "source_executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+  "executable_sha256": "68f7102790efaaa52889da69bf4e1208671f72e27be7dd44fa0b88767ef250e8",
+  "changed_executable_bytes_from_latest": 99,
+  "allowed_spans": [
+    [
+      "0x6b69c",
+      "0x6b6c8"
+    ],
+    [
+      "0x8d00",
+      "0x8d60"
+    ]
+  ],
+  "helper": "0x8c07b69c",
+  "helper_bytes": 44,
+  "map_guard": "0x8c018d00",
+  "map_guard_bytes": 96,
+  "features": [
+    {
+      "versions": "0.7.6",
+      "features": "All 961 story-choice boundaries; native-density map lettering/markers, with repaired shared filename guard."
+    },
+    {
+      "versions": "0.7.7-0.7.11",
+      "features": "Compact weapon/movie names; status marker alignment; complete Trust help and popup aliases; signed SP; compact notices; room tags; fitted location banners."
+    },
+    {
+      "versions": "0.7.12-0.7.15",
+      "features": "Loading placement and movie-edge correction; final Native-only font/kernel. HD bank and selector remain removed; superseded HD-only helpers are excluded."
+    },
+    {
+      "versions": "0.7.16-0.7.19",
+      "features": "Final lossless marker/window atlas compaction, corrected RGB565 startup and original stock graphics reservation. Superseded broken startup/temporary reserve values are excluded."
+    },
+    {
+      "versions": "0.7.20-0.7.23",
+      "features": "Movement grid, animation targeting/lines, Stage 6 lossless generated-text compression, split-battle clipping and full-width selectors."
+    },
+    {
+      "versions": "0.7.24-0.7.33",
+      "features": "Diagnostic rollbacks are not cumulative features. Final loading/movie/grid/stock-reservation spans already match 0.7.33; its RGB888 and padded legacy font runtime are superseded by the final emulator implementation."
+    }
+  ],
+  "all_assets": "Every game asset exact final local 0.7.23; no authored translation changes.",
+  "repair": "Compare texture filenames byte by byte, including null; guard missing name arrays/filenames and preserve caller PR, stack and descriptor.",
+  "defect_reference": {
+    "manual": "https://www.renesas.com/en/document/mas/sh-4-software-manual",
+    "PDF_page": 39,
+    "printed_page": 17,
+    "rule": "SH-4 word/longword reads require 2/4-byte alignment; byte reads accept any address.",
+    "claim_limit": "Old guard can fault on valid unaligned filename pointers. Whether this exact condition occurred on the reporting Dreamcast remains unproven."
+  },
+  "hardware_changes_vs_0_7_33": [
+    "Final RGB565 framebuffer setup replaces RGB888, matching emulator build.",
+    "Final single Native bank/kernel, compact atlases, later UI/animation paths and Stage 6 text upload codec restored together at explicit user request."
+  ],
+  "known_limits": [
+    "Catch-up restores the full final feature set at once; this is a combined hardware candidate, not a confirmed hardware fix.",
+    "No full-game pass is claimed; retest original conversation transitions, map/grid, battles, Stage 6 issue #1, saves and movies.",
+    "Unidentified room tag and previously recorded long save-label/full-translation limitations remain."
+  ],
+  "font": "Original Skies Native 1x only; no HD bank or selector",
+  "public_release": false,
+  "upgrade_patch": false,
+  "hardware_result": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+  "all_14_other_modified_payloads_exact_0_7_23": true,
+  "all_140_game_files_and_boot_compared_to_latest": true,
+  "only_executable_differs_from_latest": true,
+  "complete_WIN00_exact_latest": true,
+  "shared_0_7_33_repair_spans_exact": [
+    [
+      "0x6b900",
+      "0x6b918"
+    ],
+    [
+      "0x6b940",
+      "0x6b998"
+    ],
+    [
+      "0xc234e",
+      "0xc2356"
+    ],
+    [
+      "0xc24b4",
+      "0xc24b8"
+    ],
+    [
+      "0x360c8",
+      "0x360cc"
+    ],
+    [
+      "0xac2e4",
+      "0xac3f4"
+    ],
+    [
+      "0x9c690",
+      "0x9c694"
+    ],
+    [
+      "0x2a150",
+      "0x2a158"
+    ]
+  ],
+  "adjacent_Stage6_encoder_preserved": true,
+  "native_validation": {
+    "version": "0.7.34",
+    "executable_sha256": "68f7102790efaaa52889da69bf4e1208671f72e27be7dd44fa0b88767ef250e8",
+    "alignment": {
+      "strict_alignment_cases": 674,
+      "legacy_fault_witnesses": [
+        {
+          "filename_alignment": 1,
+          "error": "0x8c018d20: unaligned 4-byte read at 0x8c502041"
+        },
+        {
+          "filename_alignment": 2,
+          "error": "0x8c018d20: unaligned 4-byte read at 0x8c502042"
+        },
+        {
+          "filename_alignment": 3,
+          "error": "0x8c018d20: unaligned 4-byte read at 0x8c502043"
+        }
+      ],
+      "SH4_instructions": 56008,
+      "manual": "https://www.renesas.com/en/document/mas/sh-4-software-manual",
+      "scope": "SH-4 integer/FPU execution with documented aligned-read checks and an SDK draw endpoint. No actual reporter filename address or fault register was captured."
+    },
+    "original_map_contexts": {
+      "cases": 126,
+      "instructions": 10746,
+      "caller_data_and_ABI": "pass",
+      "label_pixel_alignment": "pass",
+      "other_sprites": "Scaled exactly as 0.7.5; no snapping"
+    },
+    "font": {
+      "Native_glyph_cases": 402,
+      "Native_bank_sha256": "1b909b7fc3e2755a74f2d2da5dbc0b9b67dad90d31eb808ad5ed016adb71820e",
+      "SH4_instructions": 5510020,
+      "pixels_advances_and_guards": "pass"
+    },
+    "target": {
+      "version": "0.7.34",
+      "date": "2026-11-04",
+      "source_build": "0.7.23",
+      "kind": "Full emulator-feature catch-up plus alignment-safe map filename guard",
+      "source_executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+      "executable_sha256": "68f7102790efaaa52889da69bf4e1208671f72e27be7dd44fa0b88767ef250e8",
+      "changed_executable_bytes_from_latest": 99,
+      "allowed_spans": [
+        [
+          "0x6b69c",
+          "0x6b6c8"
+        ],
+        [
+          "0x8d00",
+          "0x8d60"
+        ]
+      ],
+      "helper": "0x8c07b69c",
+      "helper_bytes": 44,
+      "map_guard": "0x8c018d00",
+      "map_guard_bytes": 96,
+      "features": [
+        {
+          "versions": "0.7.6",
+          "features": "All 961 story-choice boundaries; native-density map lettering/markers, with repaired shared filename guard."
+        },
+        {
+          "versions": "0.7.7-0.7.11",
+          "features": "Compact weapon/movie names; status marker alignment; complete Trust help and popup aliases; signed SP; compact notices; room tags; fitted location banners."
+        },
+        {
+          "versions": "0.7.12-0.7.15",
+          "features": "Loading placement and movie-edge correction; final Native-only font/kernel. HD bank and selector remain removed; superseded HD-only helpers are excluded."
+        },
+        {
+          "versions": "0.7.16-0.7.19",
+          "features": "Final lossless marker/window atlas compaction, corrected RGB565 startup and original stock graphics reservation. Superseded broken startup/temporary reserve values are excluded."
+        },
+        {
+          "versions": "0.7.20-0.7.23",
+          "features": "Movement grid, animation targeting/lines, Stage 6 lossless generated-text compression, split-battle clipping and full-width selectors."
+        },
+        {
+          "versions": "0.7.24-0.7.33",
+          "features": "Diagnostic rollbacks are not cumulative features. Final loading/movie/grid/stock-reservation spans already match 0.7.33; its RGB888 and padded legacy font runtime are superseded by the final emulator implementation."
+        }
+      ],
+      "all_assets": "Every game asset exact final local 0.7.23; no authored translation changes.",
+      "repair": "Compare texture filenames byte by byte, including null; guard missing name arrays/filenames and preserve caller PR, stack and descriptor.",
+      "defect_reference": {
+        "manual": "https://www.renesas.com/en/document/mas/sh-4-software-manual",
+        "PDF_page": 39,
+        "printed_page": 17,
+        "rule": "SH-4 word/longword reads require 2/4-byte alignment; byte reads accept any address.",
+        "claim_limit": "Old guard can fault on valid unaligned filename pointers. Whether this exact condition occurred on the reporting Dreamcast remains unproven."
+      },
+      "hardware_changes_vs_0_7_33": [
+        "Final RGB565 framebuffer setup replaces RGB888, matching emulator build.",
+        "Final single Native bank/kernel, compact atlases, later UI/animation paths and Stage 6 text upload codec restored together at explicit user request."
+      ],
+      "known_limits": [
+        "Catch-up restores the full final feature set at once; this is a combined hardware candidate, not a confirmed hardware fix.",
+        "No full-game pass is claimed; retest original conversation transitions, map/grid, battles, Stage 6 issue #1, saves and movies.",
+        "Unidentified room tag and previously recorded long save-label/full-translation limitations remain."
+      ],
+      "font": "Original Skies Native 1x only; no HD bank or selector",
+      "public_release": false,
+      "upgrade_patch": false,
+      "hardware_result": "pending",
+      "SDK_raw_packet_cases": 32,
+      "SDK_emitted_packets": 256,
+      "raw_cases": [
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 24,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 3,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 4,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 4,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 8,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 8,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 0,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            158.0,
+            98.0
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        },
+        {
+          "vertex_stride": 16,
+          "count": 17,
+          "blend": 1,
+          "center": [
+            -15.25,
+            260.5
+          ],
+          "SDK_packets": 17,
+          "XY_only_doubled": true
+        }
+      ],
+      "line_descriptor_cases": [
+        {
+          "polygons": 1,
+          "vertices_each": 2,
+          "XY_only_doubled": true
+        },
+        {
+          "polygons": 4,
+          "vertices_each": 2,
+          "XY_only_doubled": true
+        },
+        {
+          "polygons": 2,
+          "vertices_each": 3,
+          "XY_only_doubled": true
+        },
+        {
+          "polygons": 0,
+          "vertices_each": 2,
+          "XY_only_doubled": true
+        }
+      ],
+      "SH4_instructions": 20556,
+      "checks": [
+        "Original SDK strip-to-PVR vertex emission executes",
+        "Only packet X/Y change; Z, UV, ARGB, primitive commands and output pointer exact",
+        "Original blend/texture header arguments retained",
+        "Source arrays, callee-saved registers, FPU registers and stack restored",
+        "0.7.19 memory literal/startup and 0.7.20 grid code byte-exact"
+      ],
+      "scope": "GPU submission/material allocation endpoints are bounded stubs; SDK raw vertex emission is actual. Line endpoint records descriptors. Live reticle and combat review separate."
+    },
+    "clip": {
+      "version": "0.7.34",
+      "date": "2026-11-04",
+      "source_build": "0.7.23",
+      "kind": "Full emulator-feature catch-up plus alignment-safe map filename guard",
+      "source_executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+      "executable_sha256": "68f7102790efaaa52889da69bf4e1208671f72e27be7dd44fa0b88767ef250e8",
+      "changed_executable_bytes_from_latest": 99,
+      "allowed_spans": [
+        [
+          "0x6b69c",
+          "0x6b6c8"
+        ],
+        [
+          "0x8d00",
+          "0x8d60"
+        ]
+      ],
+      "helper": "0x8c07b69c",
+      "helper_bytes": 44,
+      "map_guard": "0x8c018d00",
+      "map_guard_bytes": 96,
+      "features": [
+        {
+          "versions": "0.7.6",
+          "features": "All 961 story-choice boundaries; native-density map lettering/markers, with repaired shared filename guard."
+        },
+        {
+          "versions": "0.7.7-0.7.11",
+          "features": "Compact weapon/movie names; status marker alignment; complete Trust help and popup aliases; signed SP; compact notices; room tags; fitted location banners."
+        },
+        {
+          "versions": "0.7.12-0.7.15",
+          "features": "Loading placement and movie-edge correction; final Native-only font/kernel. HD bank and selector remain removed; superseded HD-only helpers are excluded."
+        },
+        {
+          "versions": "0.7.16-0.7.19",
+          "features": "Final lossless marker/window atlas compaction, corrected RGB565 startup and original stock graphics reservation. Superseded broken startup/temporary reserve values are excluded."
+        },
+        {
+          "versions": "0.7.20-0.7.23",
+          "features": "Movement grid, animation targeting/lines, Stage 6 lossless generated-text compression, split-battle clipping and full-width selectors."
+        },
+        {
+          "versions": "0.7.24-0.7.33",
+          "features": "Diagnostic rollbacks are not cumulative features. Final loading/movie/grid/stock-reservation spans already match 0.7.33; its RGB888 and padded legacy font runtime are superseded by the final emulator implementation."
+        }
+      ],
+      "all_assets": "Every game asset exact final local 0.7.23; no authored translation changes.",
+      "repair": "Compare texture filenames byte by byte, including null; guard missing name arrays/filenames and preserve caller PR, stack and descriptor.",
+      "defect_reference": {
+        "manual": "https://www.renesas.com/en/document/mas/sh-4-software-manual",
+        "PDF_page": 39,
+        "printed_page": 17,
+        "rule": "SH-4 word/longword reads require 2/4-byte alignment; byte reads accept any address.",
+        "claim_limit": "Old guard can fault on valid unaligned filename pointers. Whether this exact condition occurred on the reporting Dreamcast remains unproven."
+      },
+      "hardware_changes_vs_0_7_33": [
+        "Final RGB565 framebuffer setup replaces RGB888, matching emulator build.",
+        "Final single Native bank/kernel, compact atlases, later UI/animation paths and Stage 6 text upload codec restored together at explicit user request."
+      ],
+      "known_limits": [
+        "Catch-up restores the full final feature set at once; this is a combined hardware candidate, not a confirmed hardware fix.",
+        "No full-game pass is claimed; retest original conversation transitions, map/grid, battles, Stage 6 issue #1, saves and movies.",
+        "Unidentified room tag and previously recorded long save-label/full-translation limitations remain."
+      ],
+      "font": "Original Skies Native 1x only; no HD bank or selector",
+      "public_release": false,
+      "upgrade_patch": false,
+      "hardware_result": "pending",
+      "clip_cases": [
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            0.0,
+            4.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            8.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            0.0,
+            4.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            8.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            0.0,
+            4.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            0.0,
+            319.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            5.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            10.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            5.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            10.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            5.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            10.0,
+            0.0,
+            19.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            320.0,
+            0.0,
+            639.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            19.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            0.0,
+            639.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            3.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            6.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            3.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            18.0,
+            6.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            0.0,
+            9.0,
+            3.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            0.0,
+            19.0,
+            7.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            0.0,
+            639.0,
+            255.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            0.0,
+            4.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            8.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            0.0,
+            4.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            8.0,
+            18.0,
+            12.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            0.0,
+            4.0,
+            9.0,
+            6.0
+          ],
+          "submitted_tiles": [
+            0.0,
+            8.0,
+            19.0,
+            13.0
+          ],
+          "pixel_bounds": [
+            0.0,
+            256.0,
+            639.0,
+            447.0
+          ]
+        },
+        {
+          "mode": 0,
+          "source_tiles": [
+            1.0,
+            2.0,
+            7.0,
+            5.0
+          ],
+          "submitted_tiles": [
+            2.0,
+            4.0,
+            14.0,
+            10.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 1,
+          "source_tiles": [
+            1.0,
+            2.0,
+            7.0,
+            5.0
+          ],
+          "submitted_tiles": [
+            2.0,
+            4.0,
+            14.0,
+            10.0
+          ],
+          "pixel_bounds": "full-screen SDK fallback retained"
+        },
+        {
+          "mode": 2,
+          "source_tiles": [
+            1.0,
+            2.0,
+            7.0,
+            5.0
+          ],
+          "submitted_tiles": [
+            2.0,
+            4.0,
+            15.0,
+            11.0
+          ],
+          "pixel_bounds": [
+            64.0,
+            128.0,
+            511.0,
+            383.0
+          ]
+        }
+      ],
+      "selection_cases": [
+        {
+          "label": "Counterattack forecast",
+          "width_before": 56,
+          "width_after": 120,
+          "other_selection_fields_exact": true
+        },
+        {
+          "label": "Counter policies",
+          "width_before": 72,
+          "width_after": 120,
+          "other_selection_fields_exact": true
+        },
+        {
+          "label": "Unit action menu",
+          "width_before": 32,
+          "width_after": 64,
+          "other_selection_fields_exact": true
+        }
+      ],
+      "line_cases": [
+        {
+          "site": "0x320d0",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x320d0",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x328f8",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x328f8",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x329c4",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x329c4",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x32a90",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x32a90",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x32b5c",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x32b5c",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x32c0c",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x32c0c",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x5b5e8",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x5b5e8",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x5c958",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x5c958",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x69a5c",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x69a5c",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        },
+        {
+          "site": "0x69b58",
+          "source": [
+            160.0,
+            0.0,
+            160.0,
+            256.0
+          ],
+          "output": [
+            320.0,
+            0.0,
+            320.0,
+            512.0
+          ]
+        },
+        {
+          "site": "0x69b58",
+          "source": [
+            -8.5,
+            12.0,
+            318.0,
+            232.0
+          ],
+          "output": [
+            -17.0,
+            24.0,
+            636.0,
+            464.0
+          ]
+        }
+      ],
+      "SH4_instructions": 9248,
+      "scope": "Real clip wrapper and SDK tile-to-pixel bounds execute; GPU/material submission and byte-copy endpoint are bounded. Actual selection field parser and line adapter execute. Separate live battle review is required."
+    },
+    "grid": {
+      "version": "0.7.34",
+      "date": "2026-11-04",
+      "source_build": "0.7.23",
+      "kind": "Full emulator-feature catch-up plus alignment-safe map filename guard",
+      "source_executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+      "executable_sha256": "68f7102790efaaa52889da69bf4e1208671f72e27be7dd44fa0b88767ef250e8",
+      "changed_executable_bytes_from_latest": 99,
+      "allowed_spans": [
+        [
+          "0x6b69c",
+          "0x6b6c8"
+        ],
+        [
+          "0x8d00",
+          "0x8d60"
+        ]
+      ],
+      "helper": "0x8c07b69c",
+      "helper_bytes": 44,
+      "map_guard": "0x8c018d00",
+      "map_guard_bytes": 96,
+      "features": [
+        {
+          "versions": "0.7.6",
+          "features": "All 961 story-choice boundaries; native-density map lettering/markers, with repaired shared filename guard."
+        },
+        {
+          "versions": "0.7.7-0.7.11",
+          "features": "Compact weapon/movie names; status marker alignment; complete Trust help and popup aliases; signed SP; compact notices; room tags; fitted location banners."
+        },
+        {
+          "versions": "0.7.12-0.7.15",
+          "features": "Loading placement and movie-edge correction; final Native-only font/kernel. HD bank and selector remain removed; superseded HD-only helpers are excluded."
+        },
+        {
+          "versions": "0.7.16-0.7.19",
+          "features": "Final lossless marker/window atlas compaction, corrected RGB565 startup and original stock graphics reservation. Superseded broken startup/temporary reserve values are excluded."
+        },
+        {
+          "versions": "0.7.20-0.7.23",
+          "features": "Movement grid, animation targeting/lines, Stage 6 lossless generated-text compression, split-battle clipping and full-width selectors."
+        },
+        {
+          "versions": "0.7.24-0.7.33",
+          "features": "Diagnostic rollbacks are not cumulative features. Final loading/movie/grid/stock-reservation spans already match 0.7.33; its RGB888 and padded legacy font runtime are superseded by the final emulator implementation."
+        }
+      ],
+      "all_assets": "Every game asset exact final local 0.7.23; no authored translation changes.",
+      "repair": "Compare texture filenames byte by byte, including null; guard missing name arrays/filenames and preserve caller PR, stack and descriptor.",
+      "defect_reference": {
+        "manual": "https://www.renesas.com/en/document/mas/sh-4-software-manual",
+        "PDF_page": 39,
+        "printed_page": 17,
+        "rule": "SH-4 word/longword reads require 2/4-byte alignment; byte reads accept any address.",
+        "claim_limit": "Old guard can fault on valid unaligned filename pointers. Whether this exact condition occurred on the reporting Dreamcast remains unproven."
+      },
+      "hardware_changes_vs_0_7_33": [
+        "Final RGB565 framebuffer setup replaces RGB888, matching emulator build.",
+        "Final single Native bank/kernel, compact atlases, later UI/animation paths and Stage 6 text upload codec restored together at explicit user request."
+      ],
+      "known_limits": [
+        "Catch-up restores the full final feature set at once; this is a combined hardware candidate, not a confirmed hardware fix.",
+        "No full-game pass is claimed; retest original conversation transitions, map/grid, battles, Stage 6 issue #1, saves and movies.",
+        "Unidentified room tag and previously recorded long save-label/full-translation limitations remain."
+      ],
+      "font": "Original Skies Native 1x only; no HD bank or selector",
+      "public_release": false,
+      "upgrade_patch": false,
+      "hardware_result": "pending",
+      "RAM_sha256": "05de5bc31380611a3459127f3e5bbbe1ff3d95d095a4f7eb906cac4ae5923675",
+      "scenario": "S001 first battle, captured from user Flycast 0.7.19",
+      "actual_game_fill_cases": [
+        {
+          "camera_offset": [
+            0,
+            0
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        },
+        {
+          "camera_offset": [
+            48,
+            24
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        },
+        {
+          "camera_offset": [
+            -96,
+            -48
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        },
+        {
+          "camera_offset": [
+            19,
+            -7
+          ],
+          "filled_tiles": 41,
+          "vertices": 492,
+          "all_xy_exactly_doubled": true
+        }
+      ],
+      "adapter_fixtures": 5,
+      "SH4_instructions": 410482,
+      "selected_unit_tile": [
+        7,
+        9
+      ],
+      "range_center_before_pixels": [
+        160,
+        120
+      ],
+      "range_center_after_pixels": [
+        320,
+        240
+      ],
+      "selection_arrow_center_pixels": [
+        320,
+        240
+      ],
+      "logical_unit_anchor": [
+        158,
+        122
+      ],
+      "ABI_source_geometry_and_range_mask_preserved": "pass",
+      "scope": "Actual game fill and 2x adapter execute; SDK renderer endpoint records arguments. GPU appearance needs separate live validation."
+    },
+    "stage6_text": {
+      "version": "0.7.34",
+      "date": "2026-11-04",
+      "source_build": "0.7.23",
+      "kind": "Full emulator-feature catch-up plus alignment-safe map filename guard",
+      "source_executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+      "executable_sha256": "68f7102790efaaa52889da69bf4e1208671f72e27be7dd44fa0b88767ef250e8",
+      "changed_executable_bytes_from_latest": 99,
+      "allowed_spans": [
+        [
+          "0x6b69c",
+          "0x6b6c8"
+        ],
+        [
+          "0x8d00",
+          "0x8d60"
+        ]
+      ],
+      "helper": "0x8c07b69c",
+      "helper_bytes": 44,
+      "map_guard": "0x8c018d00",
+      "map_guard_bytes": 96,
+      "features": [
+        {
+          "versions": "0.7.6",
+          "features": "All 961 story-choice boundaries; native-density map lettering/markers, with repaired shared filename guard."
+        },
+        {
+          "versions": "0.7.7-0.7.11",
+          "features": "Compact weapon/movie names; status marker alignment; complete Trust help and popup aliases; signed SP; compact notices; room tags; fitted location banners."
+        },
+        {
+          "versions": "0.7.12-0.7.15",
+          "features": "Loading placement and movie-edge correction; final Native-only font/kernel. HD bank and selector remain removed; superseded HD-only helpers are excluded."
+        },
+        {
+          "versions": "0.7.16-0.7.19",
+          "features": "Final lossless marker/window atlas compaction, corrected RGB565 startup and original stock graphics reservation. Superseded broken startup/temporary reserve values are excluded."
+        },
+        {
+          "versions": "0.7.20-0.7.23",
+          "features": "Movement grid, animation targeting/lines, Stage 6 lossless generated-text compression, split-battle clipping and full-width selectors."
+        },
+        {
+          "versions": "0.7.24-0.7.33",
+          "features": "Diagnostic rollbacks are not cumulative features. Final loading/movie/grid/stock-reservation spans already match 0.7.33; its RGB888 and padded legacy font runtime are superseded by the final emulator implementation."
+        }
+      ],
+      "all_assets": "Every game asset exact final local 0.7.23; no authored translation changes.",
+      "repair": "Compare texture filenames byte by byte, including null; guard missing name arrays/filenames and preserve caller PR, stack and descriptor.",
+      "defect_reference": {
+        "manual": "https://www.renesas.com/en/document/mas/sh-4-software-manual",
+        "PDF_page": 39,
+        "printed_page": 17,
+        "rule": "SH-4 word/longword reads require 2/4-byte alignment; byte reads accept any address.",
+        "claim_limit": "Old guard can fault on valid unaligned filename pointers. Whether this exact condition occurred on the reporting Dreamcast remains unproven."
+      },
+      "hardware_changes_vs_0_7_33": [
+        "Final RGB565 framebuffer setup replaces RGB888, matching emulator build.",
+        "Final single Native bank/kernel, compact atlases, later UI/animation paths and Stage 6 text upload codec restored together at explicit user request."
+      ],
+      "known_limits": [
+        "Catch-up restores the full final feature set at once; this is a combined hardware candidate, not a confirmed hardware fix.",
+        "No full-game pass is claimed; retest original conversation transitions, map/grid, battles, Stage 6 issue #1, saves and movies.",
+        "Unidentified room tag and previously recorded long save-label/full-translation limitations remain."
+      ],
+      "font": "Original Skies Native 1x only; no HD bank or selector",
+      "public_release": false,
+      "upgrade_patch": false,
+      "hardware_result": "pending",
+      "encoder_cases": [
+        {
+          "physical": [
+            1024,
+            128
+          ],
+          "RGB_bytes": 262144,
+          "upload_bytes": 34816,
+          "lossless": true,
+          "compressed": true,
+          "instructions": 1039224,
+          "case": "Actual S0c8 dialogue"
+        },
+        {
+          "physical": [
+            1024,
+            128
+          ],
+          "RGB_bytes": 262144,
+          "upload_bytes": 34816,
+          "lossless": true,
+          "compressed": true,
+          "instructions": 961781,
+          "case": "Actual white-panel source at S0c8 VM 0x8c010cbe"
+        },
+        {
+          "physical": [
+            64,
+            32
+          ],
+          "RGB_bytes": 4096,
+          "upload_bytes": 2560,
+          "lossless": true,
+          "compressed": true,
+          "instructions": 24061,
+          "case": "Rectangular twiddle and exact 16-bit values"
+        },
+        {
+          "physical": [
+            32,
+            128
+          ],
+          "RGB_bytes": 8192,
+          "upload_bytes": 3072,
+          "lossless": true,
+          "compressed": true,
+          "instructions": 48235,
+          "case": "Rectangular twiddle and exact 16-bit values"
+        },
+        {
+          "physical": [
+            64,
+            64
+          ],
+          "RGB_bytes": 8192,
+          "upload_bytes": 3072,
+          "lossless": true,
+          "compressed": true,
+          "instructions": 47827,
+          "case": "Rectangular twiddle and exact 16-bit values"
+        },
+        {
+          "physical": [
+            64,
+            64
+          ],
+          "RGB_bytes": 8192,
+          "upload_bytes": 8192,
+          "lossless": true,
+          "compressed": false,
+          "instructions": 270114,
+          "case": "Dictionary overflow fallback"
+        },
+        {
+          "physical": [
+            16,
+            16
+          ],
+          "RGB_bytes": 512,
+          "upload_bytes": 512,
+          "lossless": true,
+          "compressed": false,
+          "instructions": 29,
+          "case": "Small surface fallback"
+        },
+        {
+          "physical": [
+            64,
+            32
+          ],
+          "RGB_bytes": 4096,
+          "upload_bytes": 4096,
+          "lossless": true,
+          "compressed": false,
+          "instructions": 35,
+          "case": "Unchanged non-ARGB4444 source"
+        },
+        {
+          "physical": [
+            96,
+            64
+          ],
+          "RGB_bytes": 12288,
+          "upload_bytes": 12288,
+          "lossless": true,
+          "compressed": false,
+          "instructions": 80,
+          "case": "Invalid VQ dimensions retain original source"
+        },
+        {
+          "physical": [
+            4,
+            1024
+          ],
+          "RGB_bytes": 8192,
+          "upload_bytes": 8192,
+          "lossless": true,
+          "compressed": false,
+          "instructions": 80,
+          "case": "Invalid VQ dimensions retain original source"
+        }
+      ],
+      "append_reencoding": "exact",
+      "text_allocations": [
+        {
+          "logical": [
+            256,
+            64
+          ],
+          "RGB_bytes": 131072,
+          "allocation_bytes": 151584
+        },
+        {
+          "logical": [
+            256,
+            128
+          ],
+          "RGB_bytes": 262144,
+          "allocation_bytes": 299040
+        },
+        {
+          "logical": [
+            128,
+            128
+          ],
+          "RGB_bytes": 131072,
+          "allocation_bytes": 151584
+        },
+        {
+          "logical": [
+            512,
+            64
+          ],
+          "RGB_bytes": 262144,
+          "allocation_bytes": 299040
+        }
+      ],
+      "actual_failed_Stage6_SDK_allocation_cases": [
+        {
+          "format": "0x902",
+          "bytes": 262144,
+          "result": 3
+        },
+        {
+          "format": "0x302",
+          "bytes": 34816,
+          "result": 0
+        }
+      ],
+      "upload_worker_pointer_count_resume_ABI": "pass",
+      "SDK_admission_cases": 48,
+      "SH4_instructions": 2448841,
+      "scope": "Native encoder and SDK size/allocation execute. Memory-clear/cache-flush/heap endpoints are bounded fixtures. GPU and Stage 6 replay require separate live checks."
+    },
+    "scope": "Integrated current-executable SH-4 checks for safe map matching, exact Native glyphs, target/clip/grid and Stage 6 codec/SDK allocation. Heap/cache/draw endpoints and captured RAM remain bounded fixtures; physical hardware and full-game replay pending."
+  },
+  "disc_validation": {
+    "reextracted_files": "all 15 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.34",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.34-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4616683,
+    "sha256": "13e913019aec758c79ed40520d0d2951d8258c6f5c52fe504a7295e23aa183c8",
+    "game_tree_sha256": "67ce6dd8b52d32a3850a7b1c53a195570c21bda4acf391887d1045bb6e2d8fc2",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+    "path": "work/output/dcp-0.7.34-diagnostic/Rayblade-v0.7.34-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_status": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+  "hardware_follow_up": {
+    "reported_date": "2026-11-05",
+    "status": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
+    "report": "All the fixes work, with the exception of the game freezing when starting a \"New Game\" or entering subsequent missions in the scenario. Surprisingly, it does load the scenario \"Clear 3: A Girl's Resolve\" for a brief moment (perhaps this will help with the diagnosis \u2013 see screenshot). However, once the all dialogue ends, it just goes to a black screen.",
+    "version_basis": "Follow-up to the supplied 0.7.34 test; version is inferred from conversation context, not shown in either photograph.",
+    "device": "Previously established real Dreamcast / GDEMU / VGA",
+    "evidence": "work/ui/hardware-0734-transition-20261105/index.json",
+    "observed_script": "scenario.s_004.o00181",
+    "new_game_exact_checkpoint": "Awaiting clarification: before first dialogue or later in a conversation",
+    "Clear_3_exact_final_line": "Awaiting clarification; supplied dialogue is the first command in s_004",
+    "alignment_repair_sufficient": false,
+    "hardware_fix_confirmed": false,
+    "scope_limit": "Reporter says other fixes work; do not expand this into a complete-game or every-feature pass."
+  }
+}

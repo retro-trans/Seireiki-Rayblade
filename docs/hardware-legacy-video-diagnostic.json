@@ -1,0 +1,606 @@
+{
+  "version": "0.7.25",
+  "date": "2026-10-30",
+  "release": false,
+  "status": "Unsuccessful on the reporting hardware; tester result received 2026-11-01",
+  "hardware_result": {
+    "date": "2026-11-01",
+    "full": "Freezes on mission entry and launching the game; font appearance differs.",
+    "upgrade": "Tester reports no VGA support and memory-card loading/New Game freeze.",
+    "local_recheck": "Full and upgrade DCPs embed identical VGA-enabled boot code; both local rebuilt discs rehash identically. Tester output format/application/hash not established.",
+    "assessment": "Restoring the video boundary alone is insufficient. Root cause remains unconfirmed.",
+    "audit": "docs/hardware-0725-follow-up.json"
+  },
+  "triggering_report": {
+    "version": "0.7.11",
+    "font_modes": "Both NATIVE and HD",
+    "scope": "Black screen during all missions and when starting New Game",
+    "source": "User relays tester report on 2026-10-30",
+    "previous_reports": [
+      "0.7.2 works on the same GDEMU/VGA system",
+      "0.7.23 fails after Clear 2 -> Next",
+      "0.7.24 compression-disabled diagnostic did not resolve it"
+    ]
+  },
+  "interpretation": "The failure exists before the later Stage 6 codec and the 0.7.19 stock-geometry change. Font selection alone does not avoid it. The 0.7.19 graphics-list reduction is real but cannot by itself explain 0.7.11 failing. Different failures with similar symptoms remain possible.",
+  "component": {
+    "version": "0.7.25",
+    "source_build": "0.7.23",
+    "release": false,
+    "kind": "Stock-rendering hardware isolation diagnostic; not a confirmed fix",
+    "date": "2026-10-30",
+    "source_executable_sha256": "6899e263653b1a29de45ee7bf04778e1ad240c40a99763511bd2da7ce9abbffe",
+    "executable_sha256": "ce117561eb4d67cdfd7d183a2f6b4aa4a00baac8c15c5fda9c8e2d83e5042df1",
+    "changed_bytes": 184,
+    "edits": [
+      {
+        "file_offset": "0x10cb0",
+        "bytes": 4,
+        "before": "00e531e4",
+        "after": "04e500e4",
+        "reason": "Stock 320x240 RGB888 initialization"
+      },
+      {
+        "file_offset": "0xda696",
+        "bytes": 2,
+        "before": "0900",
+        "after": "0c31",
+        "reason": "Stock VGA scan-doubling compensation"
+      },
+      {
+        "file_offset": "0xc234e",
+        "bytes": 8,
+        "before": "59d02b4009000900",
+        "after": "58e0de0b64e0de03",
+        "reason": "Original SDK geometry-budget selection"
+      },
+      {
+        "file_offset": "0x1024c",
+        "bytes": 4,
+        "before": "7cb7078c",
+        "after": "067c0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x12e60",
+        "bytes": 4,
+        "before": "7cb7078c",
+        "after": "067c0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x20650",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x20998",
+        "bytes": 4,
+        "before": "7cb7078c",
+        "after": "067c0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x20a64",
+        "bytes": 4,
+        "before": "7cb7078c",
+        "after": "067c0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x20b20",
+        "bytes": 4,
+        "before": "7cb7078c",
+        "after": "067c0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x20b9c",
+        "bytes": 4,
+        "before": "7cb7078c",
+        "after": "067c0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x28f94",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x37fa0",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x380ec",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x3822c",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x383d0",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x384d0",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x3855c",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x54218",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x584b0",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x58850",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x58e44",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x591d8",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x597cc",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x59b1c",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x59ed8",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x5a120",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x5d734",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x5f1cc",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x66124",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x6633c",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x693ac",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x69430",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x697d8",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x69958",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x69be4",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x6c778",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x6c7d4",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x6d40c",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x72420",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x72514",
+        "bytes": 4,
+        "before": "28b7078c",
+        "after": "b09d0a8c",
+        "reason": "Original polygon/clipping call"
+      },
+      {
+        "file_offset": "0x6b8e4",
+        "bytes": 4,
+        "before": "e0b6078c",
+        "after": "70b90a8c",
+        "reason": "Original sprite submission"
+      },
+      {
+        "file_offset": "0x2a150",
+        "bytes": 4,
+        "before": "a8b7078c",
+        "after": "ccfc098c",
+        "reason": "Original movie setter / range-grid submission"
+      },
+      {
+        "file_offset": "0x2a154",
+        "bytes": 4,
+        "before": "b8b7078c",
+        "after": "18fd098c",
+        "reason": "Original movie setter / range-grid submission"
+      },
+      {
+        "file_offset": "0x360c8",
+        "bytes": 4,
+        "before": "40b9078c",
+        "after": "60b60a8c",
+        "reason": "Original movie setter / range-grid submission"
+      },
+      {
+        "file_offset": "0x16a98",
+        "bytes": 4,
+        "before": "a0b9078c",
+        "after": "98b80a8c",
+        "reason": "Original animation primitive submission"
+      },
+      {
+        "file_offset": "0x174b4",
+        "bytes": 4,
+        "before": "a0b9078c",
+        "after": "98b80a8c",
+        "reason": "Original animation primitive submission"
+      },
+      {
+        "file_offset": "0x17ea8",
+        "bytes": 4,
+        "before": "f8b9078c",
+        "after": "14b70a8c",
+        "reason": "Original animation primitive submission"
+      },
+      {
+        "file_offset": "0x18664",
+        "bytes": 4,
+        "before": "f8b9078c",
+        "after": "14b70a8c",
+        "reason": "Original animation primitive submission"
+      },
+      {
+        "file_offset": "0x18b84",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x18bec",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x320d0",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x328f8",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x329c4",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x32a90",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x32b5c",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x32c0c",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x5b5e8",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x5c958",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x69a5c",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x69b58",
+        "bytes": 4,
+        "before": "50ba078c",
+        "after": "bc930a8c",
+        "reason": "Original line submission"
+      },
+      {
+        "file_offset": "0x9c692",
+        "bytes": 1,
+        "before": "80",
+        "after": "00",
+        "reason": "Original NOW LOADING cell size"
+      }
+    ],
+    "rendering": {
+      "logical_framebuffer": [
+        320,
+        240
+      ],
+      "format": "RGB888",
+      "VGA_scanout": [
+        640,
+        480
+      ],
+      "mode_and_VGA_commit": "Exact working 0.7.2 path",
+      "graphics_coordinate_adapters": "Bypassed consistently for sprites, polygons, clipping, grid, animations, lines, movies and loading text"
+    },
+    "preserved": "All 14 non-executable payloads; Native-only Skies glyph bank, translation, UI sizing, original movies and Stage 6 lossless text compression.",
+    "font_caveat": "Native bank is exact and HD/selector stay removed. The stock lower-resolution renderer samples it at lower display detail; this is a compatibility diagnostic, not a final font-quality decision.",
+    "required_tests": "Original test request: cold boot, New Game, then Clear 2 VMU save -> Next. Tester subsequently reported failure on 2026-11-01."
+  },
+  "native_validation": {
+    "version": "0.7.25",
+    "executable_sha256": "ce117561eb4d67cdfd7d183a2f6b4aa4a00baac8c15c5fda9c8e2d83e5042df1",
+    "native_VGA_cases": 96,
+    "SDK_budget_cases": [
+      {
+        "configuration": 0,
+        "TA_allocator_units": 384176,
+        "matches_072": true
+      },
+      {
+        "configuration": 1,
+        "TA_allocator_units": 384176,
+        "matches_072": true
+      }
+    ],
+    "native_movie_cases": 129,
+    "native_instructions": 31496,
+    "scope": "Actual SH-4 VGA code/MMIO, original geometry-budget arithmetic and movie setters. Cable/configuration/allocation/start endpoints are fixtures. No physical GPU success claimed."
+  },
+  "coldboot_validation": {
+    "version": "0.7.25",
+    "profile": "work\\output\\hardware-transition\\runtime-0.7.25-legacy-video",
+    "method": "Private Flycast VGA cold boot by CLI with read-only Lua telemetry; no controller input, guest memory writes or save states. Profile VMU is a copy.",
+    "frames": 3600,
+    "sampled_frames": 60,
+    "samples_after_stock_SDK_initialized": 48,
+    "first_initialized_sample": 780,
+    "texture_error_in_all_samples": 0,
+    "stock_TA_allocator_units": 384176,
+    "stock_SDK_minimum_units": 17280,
+    "VGA_read_control": "0080000b",
+    "VGA_read_size": "0013bcef",
+    "code_spans_verified": 64,
+    "code_bytes_verified": 3807,
+    "code_probe_sha256": "52cec6074ba023157dff61f0df2786f5ed9a08719f619e67c1253e84c64e760f",
+    "code_probe_trigger": "After native geometry allocator initializes, rather than during the BIOS boot before game code loads.",
+    "scope": "Opening startup and stock video/geometry state only. All restored spans, retained Native font kernel and retained compression code match the candidate executable.",
+    "not_validated": [
+      "Visual New Game/mission navigation: Windows control failed with codex app-server exited before returning response after recovery.",
+      "Real Dreamcast/GDEMU progression",
+      "Final font quality under stock lower-resolution rendering"
+    ]
+  },
+  "DCP": {
+    "version": "0.7.25",
+    "diagnostic": true,
+    "public_release": false,
+    "asset": "Rayblade-v0.7.25-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4630627,
+    "sha256": "67495d7caab3c7727b394f69eb13aa61dfb4cf82410d4b249a1e6034e0ee2959",
+    "routes": {
+      "original": {
+        "game_tree_sha256": "cd1f5dcb577b61f5b1175b82bff4041f8ac38bcd7913880e61f763bc647d8cd5",
+        "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+        "audio_content_preserved": true
+      },
+      "previous": {
+        "game_tree_sha256": "cd1f5dcb577b61f5b1175b82bff4041f8ac38bcd7913880e61f763bc647d8cd5",
+        "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+        "audio_content_preserved": true
+      }
+    },
+    "path": "work/output/dcp-0.7.25-diagnostic/Rayblade-v0.7.25-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "patches": [
+      {
+        "asset": "Rayblade-English-v0.7.25-HARDWARE-DIAGNOSTIC.dcp",
+        "bytes": 4613453,
+        "sha256": "cd77061cecd43f607fda6784a9cdfcf92d60d7b79b21a8901c4b9425a2b96ee2",
+        "metadata": {
+          "retro_trans_dcp": 1,
+          "game_id": "seireiki-rayblade",
+          "source_version": "original",
+          "version": "0.7.25",
+          "diagnostic": true,
+          "source_tree_sha256": "81addd42981923ba95636d06e912598b61f275069082cef62938add7d0416db3",
+          "target_tree_sha256": "cd1f5dcb577b61f5b1175b82bff4041f8ac38bcd7913880e61f763bc647d8cd5",
+          "game_files": 140,
+          "engine": "Universal Dreamcast Patcher 2.1.8",
+          "upstream_commit": "8b352f959bcc56ab39174c9e311b7ab7f0d522a2",
+          "font": "Native Skies 1x only",
+          "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+        },
+        "native_builder": {
+          "success": true,
+          "output": "E:\\Projects\\Seireiki Rayblade\\work\\output\\dcp-0.7.25-diagnostic\\packages\\Rayblade-English-v0.7.25-HARDWARE-DIAGNOSTIC.dcp",
+          "files_diffed": 13,
+          "files_added": 0
+        }
+      },
+      {
+        "asset": "Rayblade-English-v0.7.23-to-v0.7.25-HARDWARE-DIAGNOSTIC.dcp",
+        "bytes": 14560,
+        "sha256": "fc331c576014c74950f74c20f47dd46cf631c2b6c473d8654b169a769900a3d2",
+        "metadata": {
+          "retro_trans_dcp": 1,
+          "game_id": "seireiki-rayblade",
+          "source_version": "0.7.23",
+          "version": "0.7.25",
+          "diagnostic": true,
+          "source_tree_sha256": "c1f73e677d4edf93fea4f897a0d07ef78e510a8e712feba5ca926e587512d476",
+          "target_tree_sha256": "cd1f5dcb577b61f5b1175b82bff4041f8ac38bcd7913880e61f763bc647d8cd5",
+          "game_files": 140,
+          "engine": "Universal Dreamcast Patcher 2.1.8",
+          "upstream_commit": "8b352f959bcc56ab39174c9e311b7ab7f0d522a2",
+          "font": "Native Skies 1x only",
+          "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+        },
+        "native_builder": {
+          "success": true,
+          "output": "E:\\Projects\\Seireiki Rayblade\\work\\output\\dcp-0.7.25-diagnostic\\packages\\Rayblade-English-v0.7.23-to-v0.7.25-HARDWARE-DIAGNOSTIC.dcp",
+          "files_diffed": 1,
+          "files_added": 0
+        }
+      }
+    ]
+  },
+  "required_hardware_test": [
+    "Cold boot the diagnostic GDI on the reporting Dreamcast with GDEMU/VGA.",
+    "Start New Game and report whether the opening game scene loads.",
+    "Separately load the normal Clear 2 VMU save, choose Next, and report whether chapter 3 loads."
+  ],
+  "known_limit": "Native font bank remains exact, but stock 320x240 rendering may reduce text sharpness. This is a compatibility diagnostic, not a final font-quality decision.",
+  "recipe": "tools/build_legacy_video_diagnostic.py",
+  "recipe_sha256": "eb8ef53e02f54a54735f4d22a86146b5cedd3c08213068292acc5827c3f53655"
+}

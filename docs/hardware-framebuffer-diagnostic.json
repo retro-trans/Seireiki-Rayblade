@@ -1,0 +1,142 @@
+{
+  "version": "0.7.38",
+  "date": "2026-11-10",
+  "source_build": "0.7.37",
+  "kind": "RGB565 framebuffer only on the no-freeze texture-budget diagnostic",
+  "source_executable_sha256": "f04e4b011fa2ff42107a72ac65dda99733a0cc537fa529867014ea9b3dcf191a",
+  "executable_sha256": "f71a9bd77b7fb2f6028a4e327ad7414f02ef0c796b21cfd1f4cdc7b91ee1ce9c",
+  "changed_executable_bytes": 1,
+  "offset": "0x10cb0",
+  "old_byte": "04",
+  "new_byte": "00",
+  "display": {
+    "SDK_enum": 0,
+    "format": "RGB565",
+    "resolution": [
+      640,
+      480
+    ],
+    "buffers": 2,
+    "old_framebuffer_bytes": 1843200,
+    "new_framebuffer_bytes": 1228800,
+    "saved_bytes": 614400
+  },
+  "reason": "The follow-up video progresses into Chapter 4 with normal battle shadows/dialogue, but the Office background and dialogue are white rectangles at 00:30-00:34. Test remaining texture pressure with one setting.",
+  "evidence": "docs/hardware-0737-video-follow-up.json",
+  "retained": "Every asset and other executable byte exact 0.7.37: original graphics reservation, Native Skies 1x only, story choices, map labels, stock sprite draw and full-size movies.",
+  "excluded": "No custom map hook, font-kernel update, atlas compaction, runtime text compression, loading/movie-edge, grid/target/clipping or later UI change.",
+  "limits": [
+    "Texture pressure is a hypothesis, not a physical memory measurement.",
+    "RGB565 has lower screen color precision; verify movies, fades and gradients on VGA.",
+    "Stock graphics reservation and historical visual issues remain. This is not full emulator feature parity.",
+    "New Game/Hallway, Clear 2 -> Next, Clear 3 -> Chapter 4 and busy battles need physical retesting."
+  ],
+  "hardware_result": "Mountain scene reported fixed; Office background/dialogue white rectangles persist",
+  "hardware_root_cause_confirmed": false,
+  "public_release": false,
+  "upgrade_patch": false,
+  "all_140_game_files_and_boot_checked": true,
+  "all_assets_exact_0_7_37": true,
+  "native_validation": {
+    "version": "0.7.38",
+    "executable_sha256": "f71a9bd77b7fb2f6028a4e327ad7414f02ef0c796b21cfd1f4cdc7b91ee1ce9c",
+    "scope": "Execute actual SDK format selection and budget/minimum/allocator-entry code with bounded inputs; no physical GPU or scene replay.",
+    "actual_SDK_format_cases": [
+      {
+        "version": "0.7.37",
+        "SDK_enum": 4,
+        "bits_per_pixel": 24,
+        "write_format": 4,
+        "read_format": 2,
+        "framebuffer_bytes_each": 921600,
+        "instructions": 105
+      },
+      {
+        "version": "0.7.38",
+        "SDK_enum": 0,
+        "bits_per_pixel": 16,
+        "write_format": 1,
+        "read_format": 1,
+        "framebuffer_bytes_each": 614400,
+        "instructions": 108
+      }
+    ],
+    "actual_SDK_budget_cases": [
+      {
+        "version": "0.7.37",
+        "query": 0,
+        "framebuffer_bytes_each": 921600,
+        "reservation_units": 384176,
+        "reservation_bytes": 768352,
+        "reaches_native_allocator": true,
+        "instructions": 43
+      },
+      {
+        "version": "0.7.37",
+        "query": 1,
+        "framebuffer_bytes_each": 921600,
+        "reservation_units": 384176,
+        "reservation_bytes": 768352,
+        "reaches_native_allocator": true,
+        "instructions": 43
+      },
+      {
+        "version": "0.7.38",
+        "query": 0,
+        "framebuffer_bytes_each": 614400,
+        "reservation_units": 384176,
+        "reservation_bytes": 768352,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      },
+      {
+        "version": "0.7.38",
+        "query": 1,
+        "framebuffer_bytes_each": 614400,
+        "reservation_units": 384176,
+        "reservation_bytes": 768352,
+        "reaches_native_allocator": true,
+        "instructions": 42
+      }
+    ],
+    "limits": [
+      "Configuration query outcomes are bounded fixtures; query 1 is not a measured hardware state.",
+      "Pixel bit depth is checked in SDK code; buffer byte counts follow 640x480*depth/8. Physical allocation/rendering remains unmeasured."
+    ]
+  },
+  "disc_validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.38",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.38-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4585971,
+    "sha256": "c26579f15b9924b78ad431d0111e5f2fa9d7937473f5540be9c05668ab2972be",
+    "game_tree_sha256": "86f04a30012029ecf6c48a4380fc6c126dc224cdf6ed670b246486aaff2322f3",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.38-diagnostic/Rayblade-v0.7.38-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "hardware_report": {
+    "reported_date": "2026-11-10",
+    "status": "Mountain scene reported fixed; Office background/dialogue white rectangles persist",
+    "report": "Next test on scenario dialogs: Alforina\u2019s Office - still the gfx glitch. Scene on mountain (1:30) is now fixed.",
+    "version_basis": "Follow-up to supplied 0.7.38; no version shown in screenshot.",
+    "version_confirmed": false,
+    "evidence": "docs/hardware-0738-follow-up.json",
+    "scope_limit": "This follow-up reports graphics only; no new independent New Game/Hallway/full-route stability result.",
+    "hardware_root_cause_confirmed": false
+  },
+  "hardware_follow_up": "docs/hardware-0738-follow-up.json"
+}

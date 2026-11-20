@@ -1,0 +1,270 @@
+{
+  "date": "2026-11-04",
+  "version": "0.7.32",
+  "source_build": "0.7.31",
+  "source_executable_sha256": "054d99fbd8a29d981d4ba478b05a3817181c8dfd77267e30208bdbb0b15de020",
+  "executable_sha256": "1df8579f57db1300848c41c8f9b3fda0c8122a20d7994c239af26888cb4bcec6",
+  "kind": "Loading position and movie-edge corrections on reported working 0.7.31",
+  "changed_executable_bytes": 259,
+  "allowed_spans": [
+    "0x9c692",
+    [
+      "0xac2e4",
+      "0xac3f4"
+    ]
+  ],
+  "loading": {
+    "SDK_print_default_cell_pixels": {
+      "before": 8,
+      "after": 16
+    },
+    "physical_origin_before": [
+      216,
+      208
+    ],
+    "physical_origin_after": [
+      432,
+      416
+    ],
+    "change": "Restore original proportional size/position in the existing 640x480 output; retain character cells, colors and animation."
+  },
+  "movie_edge": {
+    "change": "Inset four-corner sampling by half a texel to avoid unused padding; retain movie screen size, position, streams and audio.",
+    "patch_range": [
+      "0xac2e4",
+      "0xac3f4"
+    ]
+  },
+  "retained": "Every other executable byte and all 13 non-executable modified game payloads stay exact 0.7.31. Native 1x only; no HD font/selector.",
+  "excluded": "Historical 0.7.6 story-choice/map changes and every other later feature remain absent.",
+  "hardware_result": {
+    "reported_date": "2026-11-04",
+    "status": "Reported mostly fine, with blank map/dialogue textures, pale unit rectangles and displaced movement grid",
+    "historical_source": "0.7.31 plus loading/movie-edge corrections",
+    "report": "0.7.32 is mostly fine only problem with map, moving hex",
+    "scope_limit": "Three photographs show rendering defects; no physical RAM/VRAM capture or independent mission-transition/full-route pass supplied.",
+    "evidence": "work/ui/hardware-0732-map-grid-20261104/index.json",
+    "known_issues": [
+      "World-map label/dialogue areas are pale blank rectangles; partial portrait visible.",
+      "Blue movement tiles are displaced from the selection arrows and units.",
+      "Pale rectangles appear below units and across the lower dialogue area."
+    ]
+  },
+  "cause_of_original_freeze_confirmed": false,
+  "test": "Full original-input DCP -> GDI; cold boot GDEMU/VGA. Check NOW LOADING location, bottom movie edge and full-size playback, New Game first dialogue and Koichiro/Kasumi Hallway, then normal Clear 2 VMU save -> Next.",
+  "public_release": false,
+  "upgrade_patch": false,
+  "baseline_hardware_report": {
+    "reported_date": "2026-11-04",
+    "status": "Reported working on tested scenario paths; full-size movies; two known cosmetic issues remain",
+    "historical_source": "0.7.5, Native-only",
+    "report": "Patch works fine, movies are on full screen. No black screens, no freezes on scenario. NOW LOADING positioned differently; small bottom green line during cutscene.",
+    "scope_limit": "Tester report on tested paths, not a full-game pass. Clear 2 -> Next is not independently singled out in this reply.",
+    "known_issues": [
+      "NOW LOADING physical position/size",
+      "Green bottom edge during movies"
+    ]
+  },
+  "all_13_other_modified_payloads_exact_baseline": true,
+  "complete_WIN00_exact_baseline": true,
+  "all_140_game_files_checked": true,
+  "loading_validation": {
+    "date": "2026-11-04",
+    "version": "0.7.32",
+    "source_build": "0.7.31",
+    "source_executable_sha256": "054d99fbd8a29d981d4ba478b05a3817181c8dfd77267e30208bdbb0b15de020",
+    "executable_sha256": "1df8579f57db1300848c41c8f9b3fda0c8122a20d7994c239af26888cb4bcec6",
+    "kind": "Loading position and movie-edge corrections on reported working 0.7.31",
+    "changed_executable_bytes": 259,
+    "allowed_spans": [
+      "0x9c692",
+      [
+        "0xac2e4",
+        "0xac3f4"
+      ]
+    ],
+    "loading": {
+      "SDK_print_default_cell_pixels": {
+        "before": 8,
+        "after": 16
+      },
+      "physical_origin_before": [
+        216,
+        208
+      ],
+      "physical_origin_after": [
+        432,
+        416
+      ],
+      "change": "Restore original proportional size/position in the existing 640x480 output; retain character cells, colors and animation."
+    },
+    "movie_edge": {
+      "change": "Inset four-corner sampling by half a texel to avoid unused padding; retain movie screen size, position, streams and audio.",
+      "patch_range": [
+        "0xac2e4",
+        "0xac3f4"
+      ]
+    },
+    "retained": "Every other executable byte and all 13 non-executable modified game payloads stay exact 0.7.31. Native 1x only; no HD font/selector.",
+    "excluded": "Historical 0.7.6 story-choice/map changes and every other later feature remain absent.",
+    "hardware_result": "pending",
+    "cause_of_original_freeze_confirmed": false,
+    "test": "Full original-input DCP -> GDI; cold boot GDEMU/VGA. Check NOW LOADING location, bottom movie edge and full-size playback, New Game first dialogue and Koichiro/Kasumi Hallway, then normal Clear 2 VMU save -> Next.",
+    "public_release": false,
+    "upgrade_patch": false,
+    "SDK_print_default_cell_pixels": {
+      "before": 8,
+      "after": 16
+    },
+    "physical_origin_before": [
+      216,
+      208
+    ],
+    "physical_origin_after": [
+      432,
+      416
+    ],
+    "change": "Restore original proportional size/position in the existing 640x480 output; retain character cells, colors and animation.",
+    "animation_frame_cases": 121,
+    "native_glyph_quads": 2420,
+    "SH4_instructions": 770646,
+    "pre_640_reference": "0.7.2 loading routine, SDK print code and character/color data are byte-exact in baseline 0.7.31.",
+    "checks": [
+      "Actual SDK initialization, loading function, SDK string renderer and four-corner submissions execute",
+      "Each old glyph corner maps uniformly 2x; cell gaps, Z, UV, headers, colors and full 121-frame counter cycle retained",
+      "Loading geometry uses one default-size byte; the combined candidate also changes only the separately tested movie-quad span."
+    ],
+    "limits": [
+      "GPU output and physical hardware confirmation pending. Historical baseline bugs remain; no full-game compatibility claim."
+    ]
+  },
+  "movie_edge_validation": {
+    "date": "2026-11-04",
+    "version": "0.7.32",
+    "source_build": "0.7.31",
+    "source_executable_sha256": "054d99fbd8a29d981d4ba478b05a3817181c8dfd77267e30208bdbb0b15de020",
+    "executable_sha256": "1df8579f57db1300848c41c8f9b3fda0c8122a20d7994c239af26888cb4bcec6",
+    "kind": "Loading position and movie-edge corrections on reported working 0.7.31",
+    "changed_executable_bytes": 259,
+    "allowed_spans": [
+      "0x9c692",
+      [
+        "0xac2e4",
+        "0xac3f4"
+      ]
+    ],
+    "loading": {
+      "SDK_print_default_cell_pixels": {
+        "before": 8,
+        "after": 16
+      },
+      "physical_origin_before": [
+        216,
+        208
+      ],
+      "physical_origin_after": [
+        432,
+        416
+      ],
+      "change": "Restore original proportional size/position in the existing 640x480 output; retain character cells, colors and animation."
+    },
+    "movie_edge": {
+      "change": "Inset four-corner sampling by half a texel to avoid unused padding; retain movie screen size, position, streams and audio.",
+      "patch_range": [
+        "0xac2e4",
+        "0xac3f4"
+      ]
+    },
+    "retained": "Every other executable byte and all 13 non-executable modified game payloads stay exact 0.7.31. Native 1x only; no HD font/selector.",
+    "excluded": "Historical 0.7.6 story-choice/map changes and every other later feature remain absent.",
+    "hardware_result": "pending",
+    "cause_of_original_freeze_confirmed": false,
+    "test": "Full original-input DCP -> GDI; cold boot GDEMU/VGA. Check NOW LOADING location, bottom movie edge and full-size playback, New Game first dialogue and Koichiro/Kasumi Hallway, then normal Clear 2 VMU save -> Next.",
+    "public_release": false,
+    "upgrade_patch": false,
+    "change": "Inset four-corner sampling by half a texel to avoid unused padding; retain movie screen size, position, streams and audio.",
+    "patch_range": [
+      "0xac2e4",
+      "0xac3f4"
+    ],
+    "source_movie_dimensions": [
+      [
+        160,
+        160
+      ],
+      [
+        320,
+        192
+      ]
+    ],
+    "geometry_cases": 20,
+    "SH4_instructions": 7114,
+    "movie_witnesses": [
+      {
+        "source": [
+          160,
+          160
+        ],
+        "texture": [
+          256,
+          256
+        ],
+        "old_bottom_v": 0.625,
+        "new_bottom_v": 0.623046875,
+        "screen_pixels": [
+          320,
+          320
+        ]
+      },
+      {
+        "source": [
+          320,
+          192
+        ],
+        "texture": [
+          512,
+          256
+        ],
+        "old_bottom_v": 0.75,
+        "new_bottom_v": 0.748046875,
+        "screen_pixels": [
+          640,
+          384
+        ]
+      }
+    ],
+    "checks": [
+      "Actual old/new Sofdec raw quad generation executes; only UV fields differ",
+      "All table source sizes at 1x/2x/4x, zero/nonzero crop origins, initialization guards, ABI and input guards pass",
+      "Bilinear pixel-center footprints stay within valid decoded rows/columns"
+    ],
+    "limits": [
+      "GPU output and physical hardware confirmation pending. Historical baseline bugs remain; no full-game compatibility claim."
+    ]
+  },
+  "disc_validation": {
+    "reextracted_files": "all 14 exact",
+    "changed_sector_EDC_ECC": "pass",
+    "unrelated_ISO_entries": "unchanged",
+    "unrelated_track_bytes": "all unchanged",
+    "track_bytes_compared": 1188856032,
+    "audio_movie_sectors": "all 4041 original sectors exact",
+    "in_game": "pending"
+  },
+  "DCP": {
+    "version": "0.7.32",
+    "diagnostic": true,
+    "public_release": false,
+    "original_only": true,
+    "asset": "Rayblade-v0.7.32-HARDWARE-DIAGNOSTIC-DCP.zip",
+    "bytes": 4598617,
+    "sha256": "02f8060c0009494fb731ae0588ed806710a5d29181606fb02cf379e3d3daa960",
+    "game_tree_sha256": "a69591a3c68a1dbe753008baf45b068d249845d5aa74eea95b86ed508f134247",
+    "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853",
+    "audio_content_preserved": true,
+    "VGA_boot_flag": "1",
+    "hardware_result": "pending",
+    "path": "work/output/dcp-0.7.32-diagnostic/Rayblade-v0.7.32-HARDWARE-DIAGNOSTIC-DCP.zip"
+  },
+  "regression_boundary": "Working Native-only 0.7.5 baseline versus failing Native-only 0.7.6; story-choice/map changes or their interaction require separate isolation. No 0.7.6 changes are included here."
+}

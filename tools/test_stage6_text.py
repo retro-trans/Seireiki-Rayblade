@@ -55,7 +55,12 @@ def encode_case(exe,plane,w,h,expect=True,fmt=0x902):
     return c,n,{'physical':[w,h],'RGB_bytes':size,'upload_bytes':used,'lossless':True,'compressed':p!=PTR,'instructions':n}
 
 def check():
-    exe,component=compose();steps=0;cases=[]
+    exe,component=compose()
+    return check_candidate(exe,component)
+
+
+def check_candidate(exe,component,*,labels=None):
+    steps=0;cases=[]
     # Actual generated dialogue plane, plus rectangular/square layout witnesses.
     ram=(ROOT/'work/source/issue-1/current-0721.ram').read_bytes();p=struct.unpack_from('<I',ram,0x1f0cf8+0x44)[0]&0xffffff
     w,h=struct.unpack_from('<HH',ram,p+28);plane=ram[p+32:p+32+w*h*2]
@@ -93,7 +98,8 @@ def check():
     assert out==PTR+4096+32 and c.read(0x8c1716f8,4)==(2560+32+2047)//2048
     assert decode(bytes(c.regions[0][1][(out&0xffffff)+32:(out&0xffffff)+32+2560]),64,32)==updated
     # Run the real text allocator and verify its retained RGB metadata and tail capacity.
-    labels=json.loads((ROOT/'work/output'/PRIOR/'font-mode-details.json').read_text('utf-8'))['labels']
+    if labels is None:
+        labels=json.loads((ROOT/'work/output'/PRIOR/'font-mode-details.json').read_text('utf-8'))['labels']
     allocations=[]
     for w,h in ((256,64),(256,128),(128,128),(512,64)):
         c=fresh(exe);ctx=0x8cf60000;c.reg[8]=ctx;c.write(ctx+10,w,2);c.write(ctx+12,h,2)

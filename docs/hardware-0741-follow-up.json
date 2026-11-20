@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-12",
+  "version": "0.7.41",
+  "version_confirmed": false,
+  "version_basis": "Immediate follow-up to the supplied combined 0.7.41 DCP; version inferred from conversation.",
+  "user_report": "the black screen issue during mission dialogues\u2014and even when starting a NEW GAME\u2014has returned.",
+  "status": "Reported failure: black screens during mission dialogues and New Game returned",
+  "device": "Established real Dreamcast/GDEMU/VGA testing context",
+  "scope_limit": "Exact dialogue/checkpoint and physical fault trace not supplied. This reports a regression, not its cause.",
+  "hardware_root_cause_confirmed": false,
+  "next_test": "0.7.42: remove only the runtime text-compression group from 0.7.41, keep every other change and all assets."
+}
