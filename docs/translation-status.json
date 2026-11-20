@@ -21453,7 +21453,8 @@
     "release_notes": "docs/releases/v0.7.50.md",
     "hardware_record": "docs/hardware-0750-follow-up.json",
     "translation_wording_changes": 0,
-    "independent_full_proofreading": "unfinished"
+    "independent_full_proofreading": "unfinished",
+    "publication_record": "docs/releases/v0.7.50-publication.json"
   },
   "release_0_7_11": {
     "source_build": "0.7.11",
@@ -21472,5 +21473,13 @@
     "record": "docs/hardware-0750-follow-up.json",
     "release_notes": "docs/releases/v0.7.50.md",
     "limits": "Full routes, extended sessions and other hardware/video setups remain unverified; Stage 9 CG issue #5 remains open."
+  },
+  "public_release_0_7_50": {
+    "status": "Published",
+    "url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.50",
+    "record": "docs/releases/v0.7.50-publication.json",
+    "format": "DCP",
+    "upgrade_from": "0.7.23",
+    "catalog_verified": true
   }
 }

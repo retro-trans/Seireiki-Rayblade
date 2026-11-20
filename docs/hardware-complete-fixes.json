@@ -4769,5 +4769,13 @@
     "hardware_result": "Reported passing on tested hardware paths",
     "path": "work/output/dcp-0.7.50-diagnostic/Rayblade-v0.7.50-HARDWARE-DIAGNOSTIC-DCP.zip"
   },
-  "hardware_evidence": "docs/hardware-0750-follow-up.json"
+  "hardware_evidence": "docs/hardware-0750-follow-up.json",
+  "public_release_0_7_50": {
+    "status": "Published",
+    "url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.50",
+    "record": "docs/releases/v0.7.50-publication.json",
+    "format": "DCP",
+    "upgrade_from": "0.7.23",
+    "catalog_verified": true
+  }
 }

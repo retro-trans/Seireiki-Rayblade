@@ -1,0 +1,116 @@
+{
+  "version": "0.7.50",
+  "publication_date": "2026-11-20",
+  "published": "2026-11-20T00:36:34Z",
+  "release_url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.50",
+  "release_source_commit": "6939e92795c5926333613c849236f061d1ace76d",
+  "format": "DCP",
+  "assets": [
+    {
+      "name": "DCP-AUTOMATIC.json",
+      "bytes": 4555,
+      "sha256": "a08f0c2f31d1599f91e87ddb6ff2b1efb94e52013cd446b26fb04dd9dbc83bf0"
+    },
+    {
+      "name": "Rayblade-English-v0.7.23-to-v0.7.50-upgrade-DCP.zip",
+      "bytes": 21212,
+      "sha256": "762460c3f1a0f73c30961fa0335cf7ecbc000c762f83c51bfdd119ed7e06787e"
+    },
+    {
+      "name": "Rayblade-English-v0.7.23-to-v0.7.50-upgrade.dcp",
+      "bytes": 15537,
+      "sha256": "8344f59367c7aa1ee4ba8e5ad0ca065815901d6290aae70cadadd3fe50e274a8"
+    },
+    {
+      "name": "Rayblade-English-v0.7.50-DCP.zip",
+      "bytes": 4621024,
+      "sha256": "2a3aa2cc1ca7472a608f095210cc42dac40c3e5202d6185e18c6c1d30775d157"
+    },
+    {
+      "name": "Rayblade-English-v0.7.50.dcp",
+      "bytes": 4614327,
+      "sha256": "682e700c64d46e41499bd80c06534833623dbd9b91cd60595c6eda3f1a1f4a4b"
+    },
+    {
+      "name": "README-v0.7.50.txt",
+      "bytes": 1543,
+      "sha256": "04ec6ae6caeb01e2c4e39380f3d00c35b6b07f6f64e097582d4faab38f873a1c"
+    },
+    {
+      "name": "RELEASE-NOTES-v0.7.50.md",
+      "bytes": 3915,
+      "sha256": "cd5a48f153173e8dee57c9f4edb645ba8db58a8d7d58d094bdb622f00ee4ac25"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 868,
+      "sha256": "72ab49277d3f51f826fd82d0fa29bdd5ac4f6a76c6c2b469451836246f267c88"
+    },
+    {
+      "name": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 6048,
+      "sha256": "a371da0b17e05e54ec5fa9fc0ae36424d0576242279e78b389e3717a38544f3a"
+    },
+    {
+      "name": "VALIDATION.json",
+      "bytes": 2720,
+      "sha256": "7e5d287b810eea15c6b9c453bf6258210d9d1b40d60d69df151409dde783cb8d"
+    }
+  ],
+  "uploaded_assets": "All 10 publisher digests and independently downloaded assets match the sealed packages. No xdelta assets.",
+  "payloads": "Exact hardware-reported passing 0.7.50 diagnostic; no executable or game asset changes during publication.",
+  "hardware_report": "docs/hardware-0750-follow-up.json",
+  "upgrade_from_last_public_release": "0.7.23",
+  "last_public_verified_on": "2026-11-20",
+  "roundtrips": [
+    {
+      "source_version": "original",
+      "patch": "Rayblade-English-v0.7.50.dcp",
+      "patch_sha256": "682e700c64d46e41499bd80c06534833623dbd9b91cd60595c6eda3f1a1f4a4b",
+      "all_game_files_verified": 140,
+      "bootsector_verified": true,
+      "VGA_supported": true,
+      "audio_content_and_sample_alignment_preserved": true,
+      "source_preserved": true,
+      "target_tree_sha256": "8737c81a375894f55d0e8fc8a73f1e81f3836400e635c1f86ec072432ed5325c",
+      "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+    },
+    {
+      "source_version": "0.7.23",
+      "patch": "Rayblade-English-v0.7.23-to-v0.7.50-upgrade.dcp",
+      "patch_sha256": "8344f59367c7aa1ee4ba8e5ad0ca065815901d6290aae70cadadd3fe50e274a8",
+      "all_game_files_verified": 140,
+      "bootsector_verified": true,
+      "VGA_supported": true,
+      "audio_content_and_sample_alignment_preserved": true,
+      "source_preserved": true,
+      "target_tree_sha256": "8737c81a375894f55d0e8fc8a73f1e81f3836400e635c1f86ec072432ed5325c",
+      "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+    }
+  ],
+  "automatic": {
+    "catalog_run": 44647230216,
+    "conclusion": "success",
+    "public_manifest_matches": true,
+    "public_catalog_routes": [
+      {
+        "source": "original",
+        "target": "0.7.50",
+        "patch": "Rayblade-English-v0.7.50.dcp"
+      },
+      {
+        "source": "0.7.23",
+        "target": "0.7.50",
+        "patch": "Rayblade-English-v0.7.23-to-v0.7.50-upgrade.dcp"
+      }
+    ],
+    "public_offset_GDI_upgrade": "Use DCP tab; verified against actual 0.7.23 public GDI"
+  },
+  "pending": [
+    "Full-route and extended-session testing",
+    "Other hardware/video configurations",
+    "503 held story rows and independent proofreading",
+    "Unidentified room tag and long Chapter 6 save-label overlap",
+    "Stage 9 CG issue #5"
+  ]
+}

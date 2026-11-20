@@ -365,7 +365,7 @@
     "hardware_report": {
       "reported_date": "2026-11-05",
       "status": "Other fixes reported working; New Game/scenario freezes persist, including black screen after dialogue from Clear 3 save",
-      "report": "All the fixes work, with the exception of the game freezing when starting a \"New Game\" or entering subsequent missions in the scenario. Surprisingly, it does load the scenario \"Clear 3: A Girl's Resolve\" for a brief moment (perhaps this will help with the diagnosis \u2013 see screenshot). However, once the all dialogue ends, it just goes to a black screen.",
+      "report": "All the fixes work, with the exception of the game freezing when starting a \"New Game\" or entering subsequent missions in the scenario. Surprisingly, it does load the scenario \"Clear 3: A Girl's Resolve\" for a brief moment (perhaps this will help with the diagnosis – see screenshot). However, once the all dialogue ends, it just goes to a black screen.",
       "version_basis": "Follow-up to the supplied 0.7.34 test; version is inferred from conversation context, not shown in either photograph.",
       "device": "Previously established real Dreamcast / GDEMU / VGA",
       "evidence": "work/ui/hardware-0734-transition-20261105/index.json",
@@ -432,7 +432,7 @@
       "status": "Reported no freezes; video crosses into Chapter 4, with Office white rectangles remaining",
       "version_basis": "Inferred from feedback following supplied 0.7.37 diagnostic; video does not display a build version.",
       "version_confirmed": false,
-      "report": "It\u2019s better; the game doesn\u2019t freeze anymore. Graphical glitches appear during some dialogues. I\u2019ve attached a short video to check the locations precisely.",
+      "report": "It’s better; the game doesn’t freeze anymore. Graphical glitches appear during some dialogues. I’ve attached a short video to check the locations precisely.",
       "evidence": "docs/hardware-0737-video-follow-up.json",
       "scope_limit": "Clear 3 selected, scenario advances through Office, world map, Chapter 4 title and Ymir battle dialogue. New Game, Hallway, Clear 2 choice, completion of Chapter 4 and full-game stability are not demonstrated.",
       "hardware_root_cause_confirmed": false
@@ -448,7 +448,7 @@
     "hardware_report": {
       "reported_date": "2026-11-10",
       "status": "Mountain scene reported fixed; Office background/dialogue white rectangles persist",
-      "report": "Next test on scenario dialogs: Alforina\u2019s Office - still the gfx glitch. Scene on mountain (1:30) is now fixed.",
+      "report": "Next test on scenario dialogs: Alforina’s Office - still the gfx glitch. Scene on mountain (1:30) is now fixed.",
       "version_basis": "Follow-up to supplied 0.7.38; no version shown in screenshot.",
       "version_confirmed": false,
       "evidence": "docs/hardware-0738-follow-up.json",
@@ -573,5 +573,13 @@
     "public_release": false,
     "upgrade_patch": false
   },
-  "next_step": "Publish the unchanged tested 0.7.50 payloads in verified original-input and last-public-release upgrade DCP packages. Continue route testing and keep the separate Stage 9 CG issue #5 open."
+  "next_step": "Continue route/hardware testing and the separate Stage 9 CG investigation; 0.7.50 is the published hardware baseline.",
+  "public_release_0_7_50": {
+    "status": "Published",
+    "url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.50",
+    "record": "docs/releases/v0.7.50-publication.json",
+    "format": "DCP",
+    "upgrade_from": "0.7.23",
+    "catalog_verified": true
+  }
 }
