@@ -63,7 +63,25 @@ def build():
     assert track_identity(sources()['original']) == manifest['patches'][0]['source_tracks']
     target = dcp.inspect_disc(LOCAL/'roundtrip-original/disc.gdi', OUT/'inspect-target', progress=progress)
     save(OUT/'target-tree.json', target)
-    assert target['files'] == read(LOCAL/'target-tree.json')['files']
+    package()
+
+
+def package():
+    """Resume packaging from completed inspections without re-extracting discs."""
+    from retro_trans import dcp
+    manifest = public_manifest()
+    trees = {version: read(OUT/('tree-'+version+'.json')) for version in sources()}
+    target = read(OUT/'target-tree.json')
+    local_target = read(LOCAL/'target-tree.json')
+    # Rebuilt IP.BIN contains a new track table; compare game files and the
+    # invariant boot code, as the DCP applier does, rather than raw IP.BIN.
+    assert dcp.tree_hash(target['files']) == dcp.tree_hash(local_target['files'])
+    assert target['bootsector_invariant_sha256'] == local_target['bootsector_invariant_sha256']
+    old_meta = manifest['patches'][0]['metadata']
+    assert dcp.tree_hash(trees[PREVIOUS]['files']) == old_meta['target_tree_sha256']
+    assert dcp.tree_hash(trees['original']['files']) == old_meta['source_tree_sha256']
+    assert trees[PREVIOUS]['bootsector_invariant_sha256'] == old_meta['bootsector_invariant_sha256']
+    assert not any(READY.iterdir()), 'Refusing to overwrite staged packages'
     assert target['files']['1ST_READ.BIN']['sha256'] == EXE
     proof = read(ROOT/'work/output/0.7.51/screenshot-ui-native-test.json')
     assert proof['executable_sha256'] == EXE
@@ -201,8 +219,8 @@ Free fan patch; do not sell the patch or pre-patched images. Supply your own gam
 if __name__ == '__main__':
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--rtt',type=Path,required=True)
-    ap.add_argument('--phase',choices=('build','verify','seal'),required=True)
+    ap.add_argument('--phase',choices=('build','package','verify','seal'),required=True)
     ap.add_argument('--write',action='store_true')
     args=ap.parse_args();sys.path.insert(0,str(args.rtt.resolve()))
-    if args.write: {'build':build,'verify':verify,'seal':seal}[args.phase]()
+    if args.write: {'build':build,'package':package,'verify':verify,'seal':seal}[args.phase]()
     else: print('DRY RUN:',args.phase,READY)
