@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-27",
+  "status": "Open: hardware-specific ranged-attack failure reported; Flycast passes per project owner; cause and fix unconfirmed",
+  "report": {
+    "source": "Project owner's follow-up to screenshot 3",
+    "text": "A black screen always occurs during long-range attacks (all), regardless of whether the character is controlled by the player or the CPU. There is no animation whatsoever.",
+    "trigger": "Every long-range attack, as reported by tester",
+    "sides": [
+      "player",
+      "CPU"
+    ],
+    "reported_build": null,
+    "reported_platform": "Physical Dreamcast hardware",
+    "unknowns": [
+      "Exact build used for the hardware/Flycast comparison",
+      "Whether combat returns normally after the invisible sequence"
+    ],
+    "screenshot": "work/ui/0.7.51/reported-3.png",
+    "interpretation": "Investigate missing attack scene/animation first. Damage 77 placement cannot be judged from a missing scene alone. Do not classify this as the old New Game/mission-dialogue entry hang without evidence.",
+    "platform_follow_up": {
+      "date": "2026-11-27",
+      "source": "Project owner",
+      "text": "I checked and it seems it only happen on hardware, on flycast I also don't get this bug",
+      "interpretation": "Treat the failure as hardware-specific based on the report; emulator success does not validate a hardware repair. Exact emulator version, image identity and matched attack sequence were not restated."
+    }
+  },
+  "local_investigation": {
+    "candidate_inspected": "0.7.51",
+    "executable_sha256": "8f9a660cc3f586df2c3b34a5989acaa35d69e43118537852521a27399a4a75e1",
+    "current_build_change": "Only the two P/W marker coordinate instruction pairs differ from public 0.7.50; no battle-animation fix was included in 0.7.51.",
+    "unchanged_original_resources": [
+      "ANIME.AFS",
+      "BTT_FACE.AFS",
+      "CUTIN.AFS",
+      "D_UNIT.BIN"
+    ],
+    "resource_evidence": "work/output/dcp-0.7.51-local/original-tree.json and target-tree.json; full DCP round-trip already verified",
+    "caveat": "EFFECT.AFS contains translated labels and is not byte-identical to the original. Resource integrity does not establish successful runtime loading or rendering.",
+    "historical_comparison": {
+      "reference": "work/source/issue-1/split-final-0723.ram",
+      "exact_file_spans": [
+        [
+          "0x6b728",
+          "0x6b7c8"
+        ],
+        [
+          "0x6b940",
+          "0x6baa8"
+        ],
+        [
+          "0x6bbac",
+          "0x6bbd0"
+        ]
+      ],
+      "exact_animation_call_sites": [
+        "0x16a98",
+        "0x174b4",
+        "0x17ea8",
+        "0x18664",
+        "0x18b84",
+        "0x18bec"
+      ],
+      "scope": "Polygon/clip/movie geometry helpers, range/raw-strip/line adapters and clip helper match the captured 0.7.23 executable. Other runtime code differs. Historical split-screen captures are not a current all-ranged-attacks pass."
+    },
+    "bounded_audit_command": "python tools/audit_ranged_attack.py --report work/ui/ranged-attack-investigation/0.7.51-native-audit.json",
+    "live": {
+      "emulator": "Isolated work/output/dcp-emu-check-0.7.50/flycast.exe",
+      "disc": "work/output/dcp-0.7.51-local/roundtrip-original/disc.gdi",
+      "observed": "Cold boot, opening video and title screen render.",
+      "limitation": "Automated keys did not reliably reach the game menu; no ranged battle was reproduced. Asked project owner to prepare a battle save in the isolated window. Main emulator profile and VMU were not modified.",
+      "confirmation": "Project owner reports ranged attacks work in Flycast. No agent-observed ranged-battle pass is claimed.",
+      "preparation_request": "Superseded by the hardware-only clarification; owner need not prepare the isolated Flycast window solely to reproduce this failure."
+    },
+    "bounded_audit": {
+      "result": "pass within fixture scope only",
+      "raw_strip_cases": 32,
+      "clip_cases": 18,
+      "SH4_instructions": 57566,
+      "report": "work/ui/ranged-attack-investigation/0.7.51-native-audit.json",
+      "limitation": "Does not exercise an actual attack, live resource allocation or GPU rendering."
+    },
+    "hardware_review": {
+      "source": "tools/build_battle_memory_fix.py",
+      "finding": "The current graphics reservation restores the original 320x240 total while the game runs at 640x480; that builder explicitly leaves physical/full-game geometry headroom unverified. This is a concrete allocation difference to inspect, not a demonstrated cause.",
+      "other_checks": [
+        "Hardware alignment requirements in attack-path memory reads",
+        "Cache visibility and transfer completion for graphics uploads",
+        "Lifetime of temporary render buffers and interaction with text/cut-in rendering"
+      ],
+      "limitation": "No hardware trace or failing-path allocation result yet. Do not change multiple shared rendering paths or claim a fix based on Flycast alone."
+    }
+  },
+  "next_validation": [
+    "Use a repeatable player/CPU ranged-attack sequence on the affected hardware and record the exact build/image identity.",
+    "Keep Flycast as the passing control; compare against the original Japanese game on the same hardware where available.",
+    "Audit the ranged path for concrete alignment, memory-capacity, cache/transfer and buffer-lifetime defects; separate proven defects from hypotheses.",
+    "Prepare a narrowly scoped diagnostic only when its changed behavior and expected hardware result are explicit. A Flycast pass alone cannot establish the fix.",
+    "Require hardware retests of ranged attacks from both sides, melee, cut-ins/damage, New Game and mission dialogues before declaring the failure fixed."
+  ],
+  "new_build_created": false,
+  "fix_claimed": false,
+  "release_published": false
+}

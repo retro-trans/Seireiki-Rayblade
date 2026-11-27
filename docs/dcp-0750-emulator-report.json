@@ -1,0 +1,34 @@
+{
+  "version": "0.7.50",
+  "date": "2026-11-26",
+  "report": "User reports that applying DCP produces a game that does not load; requests Flycast testing.",
+  "reporter_details_pending": [
+    "Emulator version",
+    "Full or upgrade DCP",
+    "Selected output file and accompanying tracks",
+    "Exact failure screen"
+  ],
+  "emulator": "Flycast v2.7-1-g44e4c7b50",
+  "public_full_dcp_sha256": "682e700c64d46e41499bd80c06534833623dbd9b91cd60595c6eda3f1a1f4a4b",
+  "images": {
+    "test": "work/output/release-0.7.50-dcp/roundtrip-original/disc.gdi",
+    "control": "work/output/0.7.50/disc/Rayblade English Test 0.7.50.gdi"
+  },
+  "observations": [
+    "Public full DCP hash matches GitHub release asset metadata.",
+    "Isolated profiles preserve the user's normal emulator configuration and VMU saves.",
+    "With UseReios=yes, both images load the exact 0.7.50 font kernel, Native font payload and complete English names component into emulated RAM.",
+    "The runtime probe does not establish a successful title-screen boot or gameplay; no scenario member was loaded at sampling.",
+    "Desktop interaction failed with GetCursorPos access denied. Later window captures returned black for both test and control; these are inconclusive visual evidence.",
+    "Initial real-BIOS tests did not identify the loaded game kernel. This is not sufficient to diagnose BIOS or image failure under the inaccessible desktop.",
+    "Only the two isolated test processes were stopped after evidence collection. No game payloads or published assets changed.",
+    "Follow-up: the project owner tested the suggested DCP-rebuilt image and reports it works. In the resumed session the isolated Flycast window visibly rendered the opening movie; keyboard navigation remained denied by Windows."
+  ],
+  "local_evidence": [
+    "work/output/dcp-emu-check-0.7.50/image-recheck.json",
+    "work/output/dcp-emu-check-0.7.50/hle-runtime.json",
+    "work/output/dcp-emu-check-0.7.50-control/hle-runtime.json"
+  ],
+  "conclusion": "Project owner reports the DCP-rebuilt image works, and local Flycast visibly renders its opening movie. The original reporter's failure has not been reproduced or explained; full local gameplay navigation remains unverified.",
+  "next": "Obtain the original reporter's exact image/settings if the no-load claim persists; handle the newly reported UI defects separately."
+}

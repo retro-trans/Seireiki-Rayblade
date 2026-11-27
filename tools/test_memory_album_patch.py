@@ -185,7 +185,10 @@ def check(reuse_prs=False):
         c = CPU(exe,b'',0,0); c.regions.append((0x8c510000,bytearray(b'\xa5'*128)))
         c.reg[4:8] = [0x8c510020,1024,512,0x300]; saved=list(c.reg[8:])
         n = run(c,0x8c0e1c4c,STOP,10000)
-        assert c.reg[0] == 4 and c.reg[8:] == saved
+        # Error 4 is not successful registration: the SDK rejects rectangular
+        # VQ. The historical 0.1.40 build used to bless this failure. Its
+        # replacement is the square-page build/test_screenshot_ui_fix path.
+        assert c.reg[0] == 0 and c.reg[8:] == saved, 'Unsupported VQ dimensions; use supported square caption pages'
         assert [c.read(0x8c510020+i*4,4) for i in range(8)] == [0x03000002,1,0,1024,512,0x20800,12,0xa5a5a5a5]
         assert c.regions[-1][1][:32] == b'\xa5'*32 and c.regions[-1][1][60:] == b'\xa5'*68
         texture_cases.append({'page':page,'native_texture_info_instructions':n,'native_VRAM_bytes':0x20800,'VQ_roundtrip':'pixel-exact'})

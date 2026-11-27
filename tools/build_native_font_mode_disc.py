@@ -10,7 +10,7 @@ from package_archive_test_disc import substitute_payload_sector
 from build_movie_test_disc import write_plan
 
 
-def plan(*,compose_fn=compose,prior=PRIOR,version=VERSION):
+def plan(*,compose_fn=compose,prior=PRIOR,version=VERSION,component_files=None):
     exe,archive,font,_,component=compose_fn()
     base=ROOT/'work/output'/prior
     previous=json.loads((base/'english-disc-report.json').read_text('utf-8'))
@@ -26,9 +26,12 @@ def plan(*,compose_fn=compose,prior=PRIOR,version=VERSION):
         assert digest(raw)==row['sha256'] and len(raw)==row['size']
         assert disc.read(ent['lba'],ent['size'])==raw
         inherited[name]=raw
-    targets=dict(inherited,**{'1ST_READ.BIN':exe,'WIN00.AFS':archive})
+    replacements={'1ST_READ.BIN':exe,'WIN00.AFS':archive}
+    replacements.update(component_files or {})
+    assert set(replacements)<=set(inherited)
+    targets=dict(inherited,**replacements)
     changes=[];delta=0;original=Disc(next(ROOT.glob('*.cue')))
-    for name in ('1ST_READ.BIN','WIN00.AFS'):
+    for name in replacements:
         source,target=inherited[name],targets[name];ent=entries[name]
         assert len(source)==len(target)==ent['size']
         orig=original.read(ent['lba'],len(source))

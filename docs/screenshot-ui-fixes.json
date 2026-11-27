@@ -1,0 +1,336 @@
+{
+  "version": "0.7.51",
+  "source_build": "0.7.50",
+  "date": "2026-11-26",
+  "release": false,
+  "files": {
+    "1ST_READ.BIN": {
+      "sha256": "8f9a660cc3f586df2c3b34a5989acaa35d69e43118537852521a27399a4a75e1",
+      "size": 1135588
+    },
+    "D_NAMES.BIN": {
+      "sha256": "51b97ff06073a7aae3260e22549e1c9f864f3e0f8e519de7dac66e1fd2172189",
+      "size": 33944
+    },
+    "ALBUM.AFS": {
+      "sha256": "002ad246a43d0fbc1795424636cefbe5861d69cce95f26a7da36d3cbbbc03121",
+      "size": 22493184
+    },
+    "WIN00.AFS": {
+      "sha256": "9684b5c74e5fe2e0c0172277977b4f7cad13c8247c55e9f96f8a33bddb6591f0",
+      "size": 1677312
+    }
+  },
+  "executable_edits": [
+    {
+      "offset": "0x4f924",
+      "before": "f4852970",
+      "after": "58e00040",
+      "purpose": "P marker x176"
+    },
+    {
+      "offset": "0x4f95a",
+      "before": "f4852970",
+      "after": "5ce00040",
+      "purpose": "W marker x184"
+    }
+  ],
+  "sort_labels": {
+    "names.g00.176": "By HP",
+    "names.g00.177": "By Prana",
+    "names.g00.178": "By LV",
+    "names.g00.179": "By EXP"
+  },
+  "album": {
+    "cause": "Native texture-info routine returns error 4 for 1024x512 VQ, success 0 for square VQ.",
+    "format": "Seven lossless four-shade VQ 512x512 pages, 128x48 caption cells at 64x24 logical size.",
+    "sampling": "Uniform 2/3 area reduction of existing Skies captions, four coverage levels; 1 texel per output pixel at 640x480.",
+    "old_VRAM_bytes": 931840,
+    "new_VRAM_bytes": 473088,
+    "saved_VRAM_bytes": 458752,
+    "translated_captions": 203,
+    "unchanged": "All original photographs, thumbnail pixels, Coming Soon cells, caption wording, screen geometry, dispatcher and texture count."
+  },
+  "artwork": {
+    "header": "Memory Album",
+    "labels": [
+      {
+        "id": "win00.87.000",
+        "en": "Trust Gauge",
+        "box": [
+          0,
+          144,
+          80,
+          160
+        ],
+        "mask_size": [
+          60,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.002",
+        "en": "Ai",
+        "box": [
+          152,
+          144,
+          200,
+          160
+        ],
+        "mask_size": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.003",
+        "en": "Ymir",
+        "box": [
+          200,
+          144,
+          248,
+          160
+        ],
+        "mask_size": [
+          19,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.004",
+        "en": "Kasumi",
+        "box": [
+          0,
+          160,
+          48,
+          176
+        ],
+        "mask_size": [
+          31,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.005",
+        "en": "Xiujian",
+        "box": [
+          48,
+          160,
+          96,
+          176
+        ],
+        "mask_size": [
+          30,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.006",
+        "en": "Clovis",
+        "box": [
+          96,
+          160,
+          144,
+          176
+        ],
+        "mask_size": [
+          28,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.007",
+        "en": "Fain",
+        "box": [
+          144,
+          160,
+          192,
+          176
+        ],
+        "mask_size": [
+          19,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.008",
+        "en": "Rosalie",
+        "box": [
+          192,
+          160,
+          240,
+          176
+        ],
+        "mask_size": [
+          34,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.009",
+        "en": "Gen",
+        "box": [
+          0,
+          176,
+          48,
+          192
+        ],
+        "mask_size": [
+          17,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.010",
+        "en": "Aurelie",
+        "box": [
+          48,
+          176,
+          96,
+          192
+        ],
+        "mask_size": [
+          32,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.011",
+        "en": "Arthur",
+        "box": [
+          96,
+          176,
+          144,
+          192
+        ],
+        "mask_size": [
+          32,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.012",
+        "en": "Melvi",
+        "box": [
+          144,
+          176,
+          192,
+          192
+        ],
+        "mask_size": [
+          22,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.013",
+        "en": "Leone",
+        "box": [
+          192,
+          176,
+          240,
+          192
+        ],
+        "mask_size": [
+          29,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.014",
+        "en": "Kururu",
+        "box": [
+          0,
+          192,
+          48,
+          208
+        ],
+        "mask_size": [
+          31,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.015",
+        "en": "Melissa",
+        "box": [
+          48,
+          192,
+          96,
+          208
+        ],
+        "mask_size": [
+          34,
+          12
+        ]
+      },
+      {
+        "id": "win00.87.016",
+        "en": "Celica",
+        "box": [
+          96,
+          192,
+          144,
+          208
+        ],
+        "mask_size": [
+          28,
+          12
+        ]
+      }
+    ],
+    "font": "Original Skies Latin glyphs at uniform 1/2 scale; replaces historical supplied-bitmap labels only.",
+    "VRAM_change_bytes": 0,
+    "protected": "Native runtime font, all sprite geometry, other 88 members and untouched atlas pixels."
+  },
+  "battle_cutin": "2026-11-27 clarification: all long-range attacks show a black scene with no animation on hardware, for both player and CPU. Project owner reports Flycast does not exhibit it. Open; see docs/ranged-attack-black-screen.json. No fix claimed.",
+  "hardware_runtime": "Every executable byte outside the two weapon-marker coordinate sites is exact 0.7.50; Native font member and allocator unchanged.",
+  "live_validation": "Pending: desktop keyboard input denied. Public 0.7.50 DCP renders opening movie in Flycast; user reports it works.",
+  "proof": "work/output/0.7.51/screenshot-ui-native-test.json",
+  "disc": "work/output/0.7.51/disc/Rayblade English Test 0.7.51.gdi",
+  "test_plan": [
+    "Cold boot New Game and mission dialogue",
+    "Memory Album: heading and several caption pages, including locked cells",
+    "Trust command display: small heading and character tabs",
+    "Counter Orders: cycle all four sorting labels",
+    "Weapon list: long names, P-only, W-only and combined attributes",
+    "Retest player and CPU long-range attacks on physical hardware; Flycast passes per owner and is a control, not proof of a hardware fix."
+  ],
+  "reported_screenshots": [
+    {
+      "screenshot": 1,
+      "path": "work\\ui\\0.7.51\\reported-1.png",
+      "sha256": "c19e05c519c0155819bdb86030b2726383604984b29e5505381f7ed7a62f596d"
+    },
+    {
+      "screenshot": 2,
+      "path": "work\\ui\\0.7.51\\reported-2.png",
+      "sha256": "bf7ea0799cdd36bc207d8c329b99947a33031a3d4e4ad352013e2fc06b1bd8dd"
+    },
+    {
+      "screenshot": 3,
+      "path": "work\\ui\\0.7.51\\reported-3.png",
+      "sha256": "7cf1cdb7d8c6eb3ab72e7192a7fee73da1eb7870be7e19a4918788581af36394"
+    },
+    {
+      "screenshot": 4,
+      "path": "work\\ui\\0.7.51\\reported-4.png",
+      "sha256": "79171e476648b569452a12941a3b3588c214bb2be49a3e4538207c8a2e1dcf98"
+    },
+    {
+      "screenshot": 5,
+      "path": "work\\ui\\0.7.51\\reported-5.png",
+      "sha256": "b71cf13e5e672cec3ed4246bc0b04d721defc144849ea683fd623b1e7cf815d8"
+    }
+  ],
+  "package": {
+    "asset": "work\\output\\dcp-0.7.51-local\\Rayblade-English-v0.7.51-LOCAL-TEST.dcp",
+    "bytes": 4622482,
+    "sha256": "eead7faf5c806d81e21d01d602cf0c40fc2e21017aa1f4ea3c52cdc633e43ad8",
+    "roundtrip": "All 140 files, boot metadata and audio verified",
+    "published": false,
+    "rebuilt_gdi": "work/output/dcp-0.7.51-local/roundtrip-original/disc.gdi",
+    "verification": "work/output/dcp-0.7.51-local/original-apply-validation.json"
+  },
+  "follow_up": "docs/ranged-attack-black-screen.json"
+}

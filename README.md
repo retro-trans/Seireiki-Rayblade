@@ -10,7 +10,9 @@ The translation is a work in progress. Bug reports, Japanese-to-English proofrea
 
 ## Play it
 
-The current release is **[v0.7.50](https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.50)**. It repairs the reported New Game and mission-dialogue black screens on Dreamcast/GDEMU/VGA and combines the existing emulator fixes. The tested Native **1× font**, graphics-memory repairs, battle display, loading placement and fullscreen movies are retained. See the [release notes](docs/releases/v0.7.50.md).
+The current release is **[v0.7.51](https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.51)**. It fixes album captions/title, small battle labels, sorting-label overflow and weapon P/W marker placement, while preserving the Native **1x font** and earlier New Game/mission-dialogue runtime repairs. See the [release notes](docs/releases/v0.7.51.md).
+
+**Known hardware issue:** long-range attacks can show a black scene with no animation, for both player and CPU. This remains unresolved in 0.7.51; the project owner reports Flycast does not exhibit it.
 
 **This is an unfinished translation.** There are 503 held/untranslated story rows, unsupported original text can show fallback marks, and one room tag remains unidentified. Full routes and extended sessions remain unverified. The long Chapter 6 save label can overlap its “In Battle” label, and [Stage 9 CG issue #5](https://github.com/retro-trans/Seireiki-Rayblade/issues/5) remains open. A version number is not a completion percentage.
 
@@ -20,24 +22,24 @@ This release uses **DCP**, with one patch for each supported input. Download the
 
 | Input | Patch |
 |---|---|
-| Original Japanese CUE/BIN | `Rayblade-English-v0.7.50.dcp` |
-| Exact public 0.7.23 English GDI | `Rayblade-English-v0.7.23-to-v0.7.50-upgrade.dcp` |
+| Original Japanese CUE/BIN | `Rayblade-English-v0.7.51.dcp` |
+| Public 0.7.50 English image | `Rayblade-English-v0.7.50-to-v0.7.51-upgrade.dcp` |
 
-For the original game, refresh the catalog and choose **Automatic**, or select the image and full patch in the **DCP** tab. For a public 0.7.23 GDI, use the **DCP** tab and upgrade patch; Automatic does not recognize that older offset-based GDI layout.
+Refresh the catalog and choose **Automatic** for the supported original or verified 0.7.50 DCP-built GDI. Alternatively, select the image and matching patch in the **DCP** tab. Other 0.7.50 layouts must still match the expected game files and boot metadata.
 
 Choose **GDI** output and a new folder. Keep the rebuilt GDI and **all generated tracks** together. On GDEMU, replace the complete game folder. Cold-boot and load a normal VMU save; do not resume an old emulator save state.
 
-The upgrade is **0.7.23 → 0.7.50**. Other releases and local diagnostics must use the full patch with original Japanese input. Keep input verification enabled. DCP rebuilds the disc layout and verifies all game files, boot code and original CD audio; raw output-track hashes need not match older images. No per-track xdelta operations are needed. The ZIP downloads include the same DCPs with installation instructions and notices.
+The upgrade is **0.7.50 → 0.7.51**. Local 0.7.51 testers already have the same game files. Other releases and local diagnostics must use the full patch with original Japanese input. Keep input verification enabled. DCP rebuilds the disc layout and verifies all game files, boot code and original CD audio; raw output-track hashes need not match older images. No per-track xdelta operations are needed. The ZIP downloads include the same DCPs with installation instructions and notices.
 
 ### Sharper text
 
 The patch integrates the original **Skies of Arcadia USA Dreamcast Latin glyphs**, with variable spacing, consistent baselines and their four alpha levels. Every font texture stays at or below 1024 pixels per dimension. Map names use a 512×128 alpha atlas with native-scale lettering and a thin dark edge. Only the Native **1×** font is included; the HD bank and title-screen selector have been removed. The native main source cell is 12×24 pixels, with an 8×16 compact cell, rendered in a true 640×480 framebuffer. These changes are in the game assets; an emulator texture pack is not required.
 
-The combined 0.7.50 build is reported working on **Dreamcast/GDEMU/VGA**. Flycast remains the emulator test target; full routes and other hardware/video setups are not certified. Fresh-boot the GDI and load an ordinary in-game memory-card save after updating; emulator save states can retain older executable and graphics data.
+The earlier New Game/mission-dialogue repairs received a passing **Dreamcast/GDEMU/VGA** report. The newly reported hardware ranged-attack problem remains open, and 0.7.51 UI visual confirmation on hardware is pending. Flycast remains the emulator test target; full routes and other hardware/video setups are not certified. Fresh-boot the GDI and load an ordinary in-game memory-card save after updating; emulator save states can retain older executable and graphics data.
 
 ### VGA support and original movies
 
-**0.7.50** retains the retail VGA video changes from [Rolly (SEGA-SKY)'s patch v1.0](https://segasky.itch.io/seireiki-rayblade-vga-patch-for-sega-dreamcast), plus the VGA boot flag. Flycast cold-boot telemetry confirms 640×480 progressive VGA timing and a separate composite boot reaches the TV path. The tested Dreamcast/GDEMU/VGA setup now has a passing report; NTSC/PAL and full non-VGA regression testing remain necessary. Original region selection and translated disc artwork are retained. See [the integration record](docs/vga-support.json).
+**0.7.51** retains the retail VGA video changes from [Rolly (SEGA-SKY)'s patch v1.0](https://segasky.itch.io/seireiki-rayblade-vga-patch-for-sega-dreamcast), plus the VGA boot flag. Flycast cold-boot telemetry confirms 640×480 progressive VGA timing and a separate composite boot reaches the TV path. Earlier targeted Dreamcast/GDEMU/VGA checks passed; the hardware ranged-attack issue, NTSC/PAL and full non-VGA regression testing remain unresolved. Original region selection and translated disc artwork are retained. See [the integration record](docs/vga-support.json).
 
 Both modified movies, `MOV055.SFD` (opening) and `MOV072.SFD` (demo), are restored byte-for-byte from the original Japanese disc. Added English subtitles, captions and movie title/UI edits are removed. Their original video, audio and timing are preserved without re-encoding. Movie drawing now fills a centered 640×384 area in the 640×480 framebuffer; English gameplay text and the font remain intact.
 
