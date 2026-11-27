@@ -2,7 +2,7 @@
   "version": "0.7.51",
   "source_build": "0.7.50",
   "date": "2026-11-26",
-  "release": false,
+  "release": true,
   "files": {
     "1ST_READ.BIN": {
       "sha256": "8f9a660cc3f586df2c3b34a5989acaa35d69e43118537852521a27399a4a75e1",
@@ -332,5 +332,12 @@
     "rebuilt_gdi": "work/output/dcp-0.7.51-local/roundtrip-original/disc.gdi",
     "verification": "work/output/dcp-0.7.51-local/original-apply-validation.json"
   },
-  "follow_up": "docs/ranged-attack-black-screen.json"
+  "follow_up": "docs/ranged-attack-black-screen.json",
+  "publication": {
+    "date": "2026-11-27",
+    "url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.51",
+    "record": "docs/releases/v0.7.51-publication.json",
+    "game_payload_changed": false,
+    "known_hardware_ranged_attack_issue": "Unresolved; disclosed in release notes"
+  }
 }

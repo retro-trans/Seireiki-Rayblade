@@ -1,0 +1,116 @@
+{
+  "version": "0.7.51",
+  "publication_date": "2026-11-27",
+  "published": "2026-11-27T09:26:14Z",
+  "release_url": "https://github.com/retro-trans/Seireiki-Rayblade/releases/tag/v0.7.51",
+  "release_source_commit": "71081f6cc3ff29077dde63abf61b03f2756f2014",
+  "format": "DCP",
+  "assets": [
+    {
+      "name": "DCP-AUTOMATIC.json",
+      "bytes": 5556,
+      "sha256": "8985b80cf0f8041a0b8715e0704c86df109391a5b270b357d7b21a99cbd91827"
+    },
+    {
+      "name": "Rayblade-English-v0.7.50-to-v0.7.51-upgrade-DCP.zip",
+      "bytes": 166489,
+      "sha256": "2646ad59269b542838f32d583c8aa6265ecd901c4bb0b18e24ee6861ae2919de"
+    },
+    {
+      "name": "Rayblade-English-v0.7.50-to-v0.7.51-upgrade.dcp",
+      "bytes": 160929,
+      "sha256": "27f78d4a21ed2e51b20e52bee53910e0207c11d5e8ff1883f9b4d0b27e5524d9"
+    },
+    {
+      "name": "Rayblade-English-v0.7.51-DCP.zip",
+      "bytes": 4629524,
+      "sha256": "6295b30d939b5c28a96e8292e0955585f0c85bf3b721f6c6b0488c70e139a184"
+    },
+    {
+      "name": "Rayblade-English-v0.7.51.dcp",
+      "bytes": 4622959,
+      "sha256": "7c6a7e9756a4afd69309e476b7e79bf58773b553adb7535a51953aeebef86de5"
+    },
+    {
+      "name": "README-v0.7.51.txt",
+      "bytes": 1567,
+      "sha256": "a3a49692b630630e3dc7ca7d4d0a3f945659abe2d0a3247ce79fe503f92d0894"
+    },
+    {
+      "name": "RELEASE-NOTES-v0.7.51.md",
+      "bytes": 3688,
+      "sha256": "accbacf4de1e2935d2291abbd33a10c1e9e20267601dda398352ae20d36c87d4"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 868,
+      "sha256": "d7244a4068d6e81c7a3f5b0bbc5f0f344b6e79b8018e454275d906685eea2a4f"
+    },
+    {
+      "name": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 6048,
+      "sha256": "a371da0b17e05e54ec5fa9fc0ae36424d0576242279e78b389e3717a38544f3a"
+    },
+    {
+      "name": "VALIDATION.json",
+      "bytes": 2183,
+      "sha256": "94cc1c59db76ee9328af300d718a23f844f07d8faa2e1ff92c224636d1ff0d47"
+    }
+  ],
+  "uploaded_assets": "All 10 publisher digests and independently downloaded assets match the sealed packages. No xdelta assets.",
+  "payloads": "Exact local 0.7.51 game files; publication changes DCP metadata and packaging only.",
+  "upgrade_from_last_public_release": "0.7.50",
+  "last_public_verified_on": "2026-11-27",
+  "roundtrips": [
+    {
+      "source_version": "original",
+      "patch": "Rayblade-English-v0.7.51.dcp",
+      "patch_sha256": "7c6a7e9756a4afd69309e476b7e79bf58773b553adb7535a51953aeebef86de5",
+      "all_game_files_verified": 140,
+      "bootsector_verified": true,
+      "VGA_supported": true,
+      "audio_content_and_sample_alignment_preserved": true,
+      "source_preserved": true,
+      "target_tree_sha256": "4d5dffb17075eb5aa8685e93119de8609395b8ec0d02def89c92e022b28b1d4f",
+      "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+    },
+    {
+      "source_version": "0.7.50",
+      "patch": "Rayblade-English-v0.7.50-to-v0.7.51-upgrade.dcp",
+      "patch_sha256": "27f78d4a21ed2e51b20e52bee53910e0207c11d5e8ff1883f9b4d0b27e5524d9",
+      "all_game_files_verified": 140,
+      "bootsector_verified": true,
+      "VGA_supported": true,
+      "audio_content_and_sample_alignment_preserved": true,
+      "source_preserved": true,
+      "target_tree_sha256": "4d5dffb17075eb5aa8685e93119de8609395b8ec0d02def89c92e022b28b1d4f",
+      "bootsector_invariant_sha256": "05aadce6ab93f677cb121cbb1c7135d34ef516848976e66d4fdad81597148853"
+    }
+  ],
+  "automatic": {
+    "catalog_run": 45973702364,
+    "conclusion": "success",
+    "public_manifest_matches": true,
+    "public_catalog_routes": [
+      {
+        "source": "original",
+        "target": "0.7.51",
+        "patch": "Rayblade-English-v0.7.51.dcp"
+      },
+      {
+        "source": "0.7.50",
+        "target": "0.7.51",
+        "patch": "Rayblade-English-v0.7.50-to-v0.7.51-upgrade.dcp"
+      }
+    ]
+  },
+  "hardware_status": "Long-range attack animations remain missing/black on hardware for player and CPU, per tester report. Owner reports Flycast is unaffected. No fix is claimed.",
+  "pending": [
+    "Physical hardware visual confirmation of four UI fixes",
+    "Hardware ranged-attack investigation",
+    "Stage 9 CG issue #5",
+    "503 held story rows and independent proofreading",
+    "Unidentified room tag and long Chapter 6 save-label overlap",
+    "Full-route and extended-session testing"
+  ]
+}
